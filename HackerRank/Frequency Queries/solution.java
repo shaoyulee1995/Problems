@@ -11,10 +11,7 @@ public class Solution {
     // Complete the freqQuery function below.
     static List<Integer> freqQuery(List<List<Integer>> queries) {
         List<Integer> output = new ArrayList<Integer>();
-        
-        //      num         freq
         HashMap<Integer, Integer> cntMap = new HashMap<>();
-        
         
         for(int i = 0; i < queries.size(); i++){
             int command = queries.get(i).get(0),
@@ -22,7 +19,7 @@ public class Solution {
             if(command == 1){
                 if(!cntMap.containsKey(value)){
                     cntMap.put(value, 0);
-                }               
+                }
                 cntMap.put(value, cntMap.get(value) + 1);
             }else if(command == 2){
                 if(cntMap.containsKey(value) && cntMap.get(value) <= 0){
@@ -31,16 +28,14 @@ public class Solution {
                 if(cntMap.containsKey(value))
                     cntMap.put(value, cntMap.get(value) - 1);
             }else if(command == 3){
-                boolean inside = false;
-                for(Integer num: cntMap.keySet()){
-                    int freq = cntMap.get(num);
-                    if(freq == value){
-                        inside = true;
-                        output.add(1);
-                        break;
-                    }
+                if(value > queries.size()){
+                    output.add(0);
+                    continue;
                 }
-                if(!inside){
+                ArrayList<Integer> list = new ArrayList<Integer>(cntMap.values());
+                if(list.contains(value)){
+                    output.add(1);
+                }else{
                     output.add(0);
                 }
             }
