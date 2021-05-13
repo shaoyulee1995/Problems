@@ -1,7 +1,7 @@
 class Solution {
     public String longestPalindrome(String s) {
         
-        int start = 0, end = 0;
+        int start = 0, maxLength = 0;
         for(int i = 0; i < s.length(); i++){
             int len1 = MiddleExpansion(s,i,i), //if s is odd length
                 len2 = MiddleExpansion(s,i,i+1); //if s is even length
@@ -12,12 +12,12 @@ class Solution {
                 //aba
             //to    
                 //aabbaa
-            if(len > end - start){
+            if(len > maxLength){
+                maxLength = len;
                 start = i - ((len-1) / 2);
-                end = i + (len / 2);
             }
         }
-        return s.substring(start, end+1);
+        return s.substring(start, start+maxLength);
     }
     //length for palidrom
     public int MiddleExpansion(String s, int left, int right){
