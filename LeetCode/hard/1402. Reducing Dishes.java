@@ -6,7 +6,6 @@ class Solution {
         for(int i = b.length - 1; i >=0 && total > -b[i]; i--){
             total += b[i];
             res += total;
-            System.out.println("total: " + total + ". res: " + res);
         }
         return res;
     }
