@@ -1,10 +1,10 @@
 int shapeArea(int n) {
-    int ans = 0;
-    int size = n;
-    while(n != 0){
-         ans += (n);
-         n--;
+    int squareLength = n + (n-1);
+    int ans = squareLength * squareLength;
+    int whites = 0;
+    while(n-1 != 0){
+        whites += n-1;
+        n--;
     }
-    ans = ans* 4 - 4*size + 1;
-    return ans;
+    return ans - 4*whites;
 }
