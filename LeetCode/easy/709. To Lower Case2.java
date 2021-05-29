@@ -4,7 +4,8 @@ class Solution {
         
         for(int i = 0; i < str.length(); i++){
             char cur = (char)(str.charAt(i) | (char)(32));
-            c[i] = cur;
+            if(cur <=122 && cur >= 97)
+                c[i] = cur;
         }
         return new String(c);
     }

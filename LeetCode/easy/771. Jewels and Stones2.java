@@ -1,15 +1,14 @@
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
-        int[] count = new int[128];
-        
-        for(char c: jewels.toCharArray()){
-            count[c]++;
-        }
-        int output = 0;
+        int[] cnt = new int['z'-'A'+1];
         for(char c: stones.toCharArray()){
-            output+=count[c];
+            cnt[c-'A']++;
         }
         
-        return output;
+        int res = 0;
+        for(char c: jewels.toCharArray()){
+            res += cnt[c-'A'];
+        }
+        return res;
     }
 }
