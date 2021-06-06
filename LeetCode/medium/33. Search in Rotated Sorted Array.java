@@ -1,25 +1,46 @@
 class Solution {
     public int search(int[] nums, int target) {
-        int low = 0, high = nums.length - 1;
-        while(low < high){
-            int mid = (high + low) / 2;
-            if(nums[mid] == target){
-                return mid;
+        int i = 0, j = nums.length - 1;
+        while(i < j){
+            int m = i + (j-i)/2;
+            if(nums[m] == target){
+                return m;
             }
-            if(nums[low] <= nums[mid]){
-                if(target >= nums[low] && target < nums[mid]){
-                    high = mid - 1;
+            if(nums[i]<=nums[m]){
+                if(nums[i] <= target && target < nums[m]){
+                    j = m - 1;
                 }else{
-                    low = mid + 1;
+                    i = m + 1;
                 }
             }else{
-                if(target > nums[mid] && target <= nums[high]){
-                    low = mid + 1;
+                if(nums[m] < target && target <= nums[j]){
+                    i = m + 1;
                 }else{
-                    high = mid - 1;
+                    j = m -1;;
                 }
             }
         }
-        return nums[low] == target? low: -1;
+        return nums[i] == target? i : -1;
     }
 }
+
+/*
+nums = [4,5,6,7,0,1,2], target = 0
+
+4,5,6,7,0,1,2    target = 0
+i
+            j 
+          m
+target between nums[i] and nums[m]?
+
+target between nums[m] and nums[j]?
+
+      
+nums = [4,5,6,7,0,1,2], target = 3
+
+4,5,6,7,0,1,2    target = 3
+            i
+            j
+            m
+
+*/
