@@ -1,7 +1,7 @@
 # Java
 
-## [Easy](https://github.com/lsy-it-1995/Problems/tree/main/LeetCode/easy)
+## [Easy](https://github.com/lsy-it-1995/Problems/tree/main/LeetCode/Java/easy)
 
-## [Medium](https://github.com/lsy-it-1995/Problems/tree/main/LeetCode/hard)
+## [Medium](https://github.com/lsy-it-1995/Problems/tree/main/LeetCode/Java/hard)
 
-## [Hard](https://github.com/lsy-it-1995/Problems/tree/main/LeetCode/medium)
+## [Hard](https://github.com/lsy-it-1995/Problems/tree/main/LeetCode/Java/medium)
