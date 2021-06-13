@@ -1,3 +1,5 @@
+new Date().toDateString()
+
 # [LeetCode](https://github.com/lsy-it-1995/Problems/tree/main/LeetCode)
 
 <hr>
