@@ -1,17 +1,9 @@
-# [LeetCode](https://github.com/lsy-it-1995/Problems/tree/main/DailyCodingProblem)
+# [LeetCode](https://github.com/lsy-it-1995/Problems/tree/main/LeetCode)
 
-<hr>
+# [Daily Coding Problem] (https://github.com/lsy-it-1995/Problems/tree/main/DailyCodingProblem)
 
-# Daily Coding Problem
+# [HackerRank](https://github.com/lsy-it-1995/Problems/tree/main/HackerRank)
 
-<hr>
-
-# HackerRank
-
-<hr>
-
-# CodeSignal
-
-<hr>
+# [CodeSignal](https://github.com/lsy-it-1995/Problems/tree/main/CodeSignal)
 
 
