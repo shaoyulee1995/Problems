@@ -2,8 +2,7 @@
 
 <hr>
 
-# [Daily Coding Problem](https://github.com/lsy-it-1995/Problems/tree/main/DailyCodingProblem)
-
+# [Daily Coding Problem] (https://github.com/lsy-it-1995/Problems/tree/main/DailyCodingProblem)
 <hr>
 
 # [HackerRank](https://github.com/lsy-it-1995/Problems/tree/main/HackerRank)
