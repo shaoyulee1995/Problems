@@ -7,7 +7,7 @@ class Solution {
         for(int i = 2; i <= s.length(); i++){
             int oneDigit = Integer.valueOf(s.substring(i-1, i)),
                 twoDigit = Integer.valueOf(s.substring(i-2, i));
-            if(oneDigit >= 1){
+            if(oneDigit >= 1 && oneDigit <= 9){
                 dp[i] += dp[i-1];
             }
             if(twoDigit >= 10 && twoDigit <= 26){
