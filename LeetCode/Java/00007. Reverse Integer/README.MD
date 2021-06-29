@@ -1,3 +1,4 @@
+```
 class Solution {
     public int reverse(int x) {
         long ans = 0; 
@@ -11,3 +12,4 @@ class Solution {
         return (int)ans;
     }
 }
+```
