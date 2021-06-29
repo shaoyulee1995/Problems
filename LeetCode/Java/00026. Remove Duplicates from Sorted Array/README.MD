@@ -1,3 +1,4 @@
+```
 class Solution {
     public int removeDuplicates(int[] nums) {
         if(nums.length <= 1) return nums.length;
@@ -13,3 +14,4 @@ class Solution {
         return curIndex + 1;
     }
 }
+```

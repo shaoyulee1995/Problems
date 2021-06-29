@@ -1,3 +1,5 @@
+```
+# Solution 1
 class Solution {
     public int searchInsert(int[] nums, int target) {
         for(int i = 0; i < nums.length; i++){
@@ -11,6 +13,7 @@ class Solution {
     }
 }
 
+# Solution 2
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int i = 0, j = nums.length;
@@ -28,3 +31,4 @@ class Solution {
         return i;
     }
 }
+```

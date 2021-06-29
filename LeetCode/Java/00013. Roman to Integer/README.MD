@@ -1,3 +1,4 @@
+```
 class Solution {
     public int romanToInt(String s) {
         int[] num = new int[s.length()];
@@ -40,3 +41,4 @@ class Solution {
         return sum + num[num.length - 1];
     }
 }
+```
