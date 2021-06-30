@@ -1,6 +1,6 @@
-# Time Complexity: O(Nk) where N is the length of the Array, k is the length of the String
-
-# Space Complexity: O(k)
+Time Complexity: O(Nk) where N is the length of the Array, k is the length of the String
+<br />
+Space Complexity: O(k)
 
 ```
 class Solution {
