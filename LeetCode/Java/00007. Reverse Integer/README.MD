@@ -1,5 +1,4 @@
 Time Complexity: O(log(N))
-
 <br />
 Space Complexity: O(log(N))
 
