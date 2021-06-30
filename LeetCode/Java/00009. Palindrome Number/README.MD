@@ -1,3 +1,7 @@
+# Time Complexity: O(log(N))
+
+# Space Complexity: O(log(N))
+
 ```
 class Solution {
     public boolean isPalindrome(int x) {

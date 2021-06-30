@@ -1,3 +1,7 @@
+# Time Complexity: O(Nk) where N is the length of the Array, k is the length of the String
+
+# Space Complexity: O(k)
+
 ```
 class Solution {
     public String longestCommonPrefix(String[] strs) {

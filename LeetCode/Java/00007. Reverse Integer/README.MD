@@ -1,3 +1,7 @@
+# Time Complexity: O(log(N))
+
+# Space Complexity: O(log(N))
+
 ```
 class Solution {
     public int reverse(int x) {
