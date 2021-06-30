@@ -1,3 +1,4 @@
+# Solution 1
 ```
 /**
  * Definition for singly-linked list.
@@ -9,7 +10,6 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-# Solution 1
 
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
@@ -29,8 +29,9 @@ class Solution {
         }
     }
 }
-
+```
 # Solution 2
+```
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if(l1 == null){

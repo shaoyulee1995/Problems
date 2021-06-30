@@ -1,6 +1,7 @@
-# Time Complexity: O(log(N))
+Time Complexity: O(log(N))
 
-# Space Complexity: O(log(N))
+<br />
+Space Complexity: O(log(N))
 
 ```
 class Solution {
