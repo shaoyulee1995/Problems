@@ -5,8 +5,11 @@ class Solution {
         backtrack(list, new boolean[nums.length], new ArrayList(), nums);
         return list;
     }
-    private void backtrack(List<List<Integer>> list, boolean[] visited, List<Integer> temp, 
-                          int[] nums){
+    private void backtrack(List<List<Integer>> list, 
+						   boolean[] visited, 
+						   List<Integer> temp, 
+                           int[] nums){
+						   
         if(temp.size() == nums.length){
             list.add(new ArrayList(temp));
             return;
