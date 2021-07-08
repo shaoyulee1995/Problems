@@ -16,7 +16,7 @@
  */
 ```
 
-#Recursion
+# Recursion
 Time Complexity: O(N)
 <br />
 Space Complexity
@@ -40,7 +40,7 @@ class Solution {
     }
 }
 ```
-#Iterative
+# Iterative
 Time Complexity: O(N)
 <br />
 Space Complexity: O(N)
