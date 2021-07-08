@@ -17,7 +17,7 @@
 ```
 
 # Recursion
-Time Complexity: O(N)
+* Time Complexity: O(N)
 <br />
 * Space Complexity
 	* worst: O(N)
@@ -41,9 +41,9 @@ class Solution {
 }
 ```
 # Iterative
-Time Complexity: O(N)
+* Time Complexity: O(N)
 <br />
-Space Complexity: O(N)
+* Space Complexity: O(N)
 ```
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
