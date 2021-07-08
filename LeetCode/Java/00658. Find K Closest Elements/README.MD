@@ -1,6 +1,5 @@
-Time Complexity: O(N)
-<br />
-Space Complexity: O(N)
+* Time Complexity: O(N)
+* Space Complexity: O(N)
 ```
 class Solution {
     public List<Integer> findClosestElements(int[] arr, int k, int x) {

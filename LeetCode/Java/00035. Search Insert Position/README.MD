@@ -1,5 +1,8 @@
-```
+
 # Solution 1
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public int searchInsert(int[] nums, int target) {
         for(int i = 0; i < nums.length; i++){
@@ -12,8 +15,12 @@ class Solution {
         return nums.length;
     }
 }
+```
 
 # Solution 2
+* Time Complexity: O(log(N))
+* Space Complexity: O(1)
+```
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int i = 0, j = nums.length;

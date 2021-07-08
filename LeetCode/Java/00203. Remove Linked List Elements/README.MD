@@ -12,9 +12,8 @@
  ```
  
 # Iterative
-Time Complexity: O(N)
-<br />
-Space Complexity: O(1)
+* Time Complexity: O(N)
+* Space Complexity: O(1)
 ```
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
@@ -35,10 +34,9 @@ class Solution {
 }
 ```
 
-#Recursion
-Time Complexity: O(N)
-<br />
-Space Complexity: O(N)
+# Recursion
+* Time Complexity: O(N)
+* Space Complexity: O(N)
 ```
 class Solution {
     public ListNode removeElements(ListNode head, int val) {

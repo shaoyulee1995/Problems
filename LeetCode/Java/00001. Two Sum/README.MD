@@ -1,6 +1,5 @@
-Time Complexity: O(N)
-<br />
-Space Complexity: O(N)
+* Time Complexity: O(N)
+* Space Complexity: O(N)
 
 # Java
 ```
