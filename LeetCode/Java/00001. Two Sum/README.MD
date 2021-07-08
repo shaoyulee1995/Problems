@@ -2,7 +2,7 @@ Time Complexity: O(N)
 <br />
 Space Complexity: O(N)
 
-#Java
+# Java
 ```
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -20,7 +20,7 @@ class Solution {
 }
 ```
 
-#Python
+# Python
 ```
 class Solution(object):
     def twoSum(self, nums, target):
