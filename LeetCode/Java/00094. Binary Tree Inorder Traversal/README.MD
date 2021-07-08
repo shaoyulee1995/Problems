@@ -18,7 +18,6 @@
 
 # Recursion
 * Time Complexity: O(N)
-<br />
 * Space Complexity
 	* worst: O(N)
 	* average: O(log(N))
@@ -42,7 +41,6 @@ class Solution {
 ```
 # Iterative
 * Time Complexity: O(N)
-<br />
 * Space Complexity: O(N)
 ```
 class Solution {
