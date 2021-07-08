@@ -19,7 +19,7 @@
 # Recursion
 Time Complexity: O(N)
 <br />
-Space Complexity
+* Space Complexity
 	* worst: O(N)
 	* average: O(log(N))
 
