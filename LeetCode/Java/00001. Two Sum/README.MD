@@ -2,6 +2,7 @@ Time Complexity: O(N)
 <br />
 Space Complexity: O(N)
 
+#Java
 ```
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -17,4 +18,22 @@ class Solution {
         return new int[]{};
     }
 }
+```
+
+#Python
+```
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        d = {}
+        for i, n in enumerate(nums):
+            compl = target - n
+            if compl in d:
+                return [d[compl], i]
+            else:
+                d[n] = i
 ```

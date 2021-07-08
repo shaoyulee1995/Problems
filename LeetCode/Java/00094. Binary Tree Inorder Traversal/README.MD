@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,16 +14,45 @@
  *     }
  * }
  */
-class Solution {
+```
 
+#Recursion
+Time Complexity: O(N)
+<br />
+Space Complexity
+	* worst: O(N)
+	* average: O(log(N))
+
+```
+class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList();
-        if(root==null){
+        inorderTraversal(root, list);
+        return list;
+    }
+    private void inorderTraversal(TreeNode node, List<Integer> list){
+        if(node == null){
+            return;
+        }
+        inorderTraversal(node.left, list);
+        list.add(node.val);
+        inorderTraversal(node.right, list);
+    }
+}
+```
+#Iterative
+Time Complexity: O(N)
+<br />
+Space Complexity: O(N)
+```
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList();
+        if(root == null){
             return list;
         }
         Stack<TreeNode> stack = new Stack();
-        
-        while(!stack.isEmpty()||root != null){
+        while(root != null || !stack.isEmpty()){
             while(root != null){
                 stack.push(root);
                 root = root.left;
@@ -34,23 +64,4 @@ class Solution {
         return list;
     }
 }
-
-class Solution {
-    public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList();
-        if(root==null){
-            return list;
-        }
-        traversal(root, list);
-        return list;
-    }
-    private void traversal(TreeNode node, List<Integer> list){
-        if(node.left != null){
-            traversal(node.left, list);
-        }
-        list.add(node.val);
-        if(node.right != null){
-            traversal(node.right, list);
-        }
-    }
-}
+```
