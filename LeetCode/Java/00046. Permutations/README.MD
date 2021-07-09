@@ -1,3 +1,9 @@
+# Backtrack
+
+## Java
+* Time Complexity: O(n*n!)
+* Space Complexity: O(n*n!)
+### solution 1
 ```
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
@@ -23,6 +29,31 @@ class Solution {
             backtrack(list, visited, temp, nums);
             temp.remove(temp.size() - 1);
             visited[i] = false;
+        }
+    }
+}
+```
+### solution 2
+```
+class Solution {
+    List<List<Integer>> res;
+    public List<List<Integer>> permute(int[] nums) {
+        res = new LinkedList();
+        backtrack(nums, new LinkedList());
+        return res;
+    }
+    public void backtrack(int[] nums, LinkedList<Integer> track){
+        if(track.size() == nums.length){
+            res.add(new LinkedList(track));
+            return;
+        }
+        for(int i = 0; i < nums.length; i++){
+            if(track.contains(nums[i])){
+                continue;
+            }
+            track.add(nums[i]);
+            backtrack(nums, track);
+            track.removeLast();
         }
     }
 }

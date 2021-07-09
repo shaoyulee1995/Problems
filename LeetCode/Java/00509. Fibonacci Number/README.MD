@@ -94,3 +94,27 @@ public:
     }
 };
 ```
+
+# Traveral without Memorization
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
+class Solution {
+public:
+    int fib(int n) {
+        if(n < 1){
+            return 0;
+        }
+        if(n == 1){
+            return 1;
+        }
+        int prev = 0, cur = 1;
+        for(int i = 2; i <= n; i++){
+            int sum = prev + cur;
+            prev = cur;
+            cur = sum;
+        }
+        return cur;
+    }
+};
+```
