@@ -70,14 +70,14 @@ class Solution {
             return;
         }
         for(int col = 0; col < chess.length; col++){
-            if(valid(res, chess, row, col)){
+            if(valid(chess, row, col)){
                 chess[row][col] = 'Q';
                 solve(res, chess, row + 1);
                 chess[row][col] = '.';
             }
         }
     }
-    private boolean valid(List<List<String>> res, char[][] chess, int row, int col){
+    private boolean valid(char[][] chess, int row, int col){
         for(int i = 0; i < row; i++){
             if(chess[i][col] == 'Q'){
                 return false;
