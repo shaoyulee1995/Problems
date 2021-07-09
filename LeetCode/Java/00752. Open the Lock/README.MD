@@ -4,7 +4,7 @@
 
 * Time Complexity: O(b^d*d^2 + md) 
 * Space Complexity: O(b^d*d+m)
-** b for number incremented, d for turntable, m for combinations for deadends
+	* b for number incremented, d for turntable, m for combinations for deadends
 ```
 class Solution {
     public int openLock(String[] deadends, String target) {
