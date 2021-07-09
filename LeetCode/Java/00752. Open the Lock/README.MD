@@ -1,4 +1,4 @@
-# BFS
+# Regular BFS
 
 ## Java
 
@@ -63,6 +63,69 @@ class Solution {
             ch[i] -= 1;
         }
         return new String(ch);
+    }
+}
+```
+
+# Two-End BFS
+
+```
+class Solution {
+    public int openLock(String[] deadends, String target) {
+        HashSet<String> dead = new HashSet();
+        for(String d: deadends){
+            dead.add(d);
+        }
+        HashSet<String> q1 = new HashSet(),
+                        q2 = new HashSet();
+        HashSet<String> visit = new HashSet();
+        int step = 0;
+        q1.add("0000");
+        q2.add(target);
+        while(!q1.isEmpty() && !q2.isEmpty()){
+            HashSet<String> temp = new HashSet();
+            for(String cur: q1){
+                if(dead.contains(cur)){
+                    continue;
+                }
+                if(q2.contains(cur)){
+                    return step;
+                }
+                visit.add(cur);
+                for(int j = 0; j < 4; j++){
+                    String up = plus(cur, j);
+                    if(!visit.contains(up)){
+                        temp.add(up);
+                    }
+                    String down = minus(cur, j);
+                    if(!visit.contains(down)){
+                        temp.add(down);
+                    }
+                }
+            }
+            step++;
+            q1 = q2;
+            q2 = temp;
+        }
+        return -1;
+    }
+    public String plus(String s, int i){
+        char[] c = s.toCharArray();
+        if(c[i] == '9'){
+            c[i] = '0';
+        }else{
+            c[i] += 1;
+        }
+        return new String(c);
+    }
+    public String minus(String s, int i){
+        char[] c = s.toCharArray();
+        if(c[i] == '0'){
+            c[i] = '9';
+        }else{
+            c[i] -= 1;
+        }
+        return new String(c);
     }
 }
 ```
