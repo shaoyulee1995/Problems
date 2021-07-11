@@ -9,6 +9,7 @@
 * Time Complexity: O(log(N))
 * Space Complexity: O(1)
 
+### Java
 ```
 class Solution {
     public int[] searchRange(int[] nums, int target) {
@@ -52,4 +53,51 @@ class Solution {
         return right;
     }
 }
+```
+
+### C++
+```
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target) {
+        vector<int> result(2);
+        result[0] = leftBound(nums, target);
+        result[1] = rightBound(nums, target);
+        return result;
+    }
+    int leftBound(vector<int>& nums, int target){
+        int left = 0, right = nums.size() - 1;
+        while(left <= right){
+            int mid = left + (right - left)/2;
+            if(nums[mid] == target){
+                right = mid - 1;
+            }else if(nums[mid] < target){
+                left = mid + 1;
+            }else if(nums[mid] > target){
+                right = mid - 1;
+            }
+        }
+        if(left >= nums.size() || nums[left] != target){
+            return -1;
+        }
+        return left;
+    }
+    int rightBound(vector<int>& nums, int target){
+        int left = 0, right = nums.size() - 1;
+        while(left <= right){
+            int mid = left + (right - left)/2;
+            if(nums[mid] == target){
+                left = mid + 1;
+            }else if(nums[mid] < target){
+                left = mid + 1;
+            }else if(nums[mid] > target){
+                right = mid - 1;
+            }
+        }
+        if(right < 0 || target != nums[right]){
+            return -1;
+        }
+        return right;
+    }
+};
 ```
