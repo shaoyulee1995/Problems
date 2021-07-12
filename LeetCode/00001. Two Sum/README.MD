@@ -31,9 +31,8 @@ class Solution(object):
         """
         d = {}
         for i, n in enumerate(nums):
-            compl = target - n
-            if compl in d:
-                return [d[compl], i]
-            else:
-                d[n] = i
+            remaining = target - n
+            if remaining in d:
+                return [d[remaining], i]
+            d[n] = i
 ```
