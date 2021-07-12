@@ -3,6 +3,8 @@
 * sliding the windows on the left pointer to squeeze the windows' size; howevevr, you still have to contains all of the Character in String t
 
 ## Java
+* Time Complexity: O(N*N)
+* Space Complexity: O(N)
 ```
 class Solution {
     public String minWindow(String s, String t) {
