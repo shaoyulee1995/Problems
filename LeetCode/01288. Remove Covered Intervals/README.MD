@@ -1,7 +1,9 @@
 # Arrays
 * Time Complexity: O(Nlog(N))
 * Space Complexity: O(1)
-## Solution 1
+
+## Java
+### Solution 1
 ```
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
@@ -31,7 +33,7 @@ class Solution {
     }
 }
 ```
-## Solution 2
+### Solution 2
 ```
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
@@ -52,4 +54,26 @@ class Solution {
         return res;
     }
 }
+```
+
+## C++
+```
+class Solution {
+public:
+    int removeCoveredIntervals(vector<vector<int>>& intervals) {
+        sort(intervals.begin(), intervals.end(), [](const vector<int>& u, const vector<int>& v) {
+            return u[0] < v[0] || (u[0] == v[0] && u[1] > v[1]);
+        });
+        int res = intervals.size();
+        int curRight = intervals[0][1];
+        for(int i = 1; i < intervals.size(); i++){
+            if(intervals[i][1] <= curRight){
+                res--;
+            }else{
+                curRight = max(curRight, intervals[i][1]);
+            }
+        }
+        return res;
+    }
+};
 ```
