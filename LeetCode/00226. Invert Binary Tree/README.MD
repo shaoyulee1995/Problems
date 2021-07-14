@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,14 +14,23 @@
  *     }
  * }
  */
+```
+# Recursion
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public TreeNode invertTree(TreeNode root) {
         if(root == null){
             return null;
         }
-        TreeNode temp = root.right;
-        root.right = invertTree(root.left);
-        root.left = invertTree(temp);
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
+        
+        invertTree(root.left);
+        invertTree(root.right);
         return root;
     }
 }
+```
