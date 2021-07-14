@@ -66,8 +66,6 @@ class Solution {
                 head = head.next;
             }
         }
-        
-        
         return dummy.next;
     } 
     
@@ -84,7 +82,6 @@ class Solution {
         start.next = prev;
         first.next = current;
         return first;
-        
     }
 }
 ```
@@ -96,20 +93,16 @@ class Solution {
         if(head == null){
             return  null;
         }
-        
-        
         Stack<ListNode> stack = new Stack<>();
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode current = dummy,
                  next = dummy.next;
-        
         while(next!=null){
             for(int i = 0; i < k &&next != null; i++){
                 stack.push(next);
                 next = next.next;
             }
-            
             if(stack.size() != k){
                 return dummy.next;
             }
@@ -119,7 +112,6 @@ class Solution {
             }
             current.next = next;
         }
-        
         return dummy.next;
     }
 }
