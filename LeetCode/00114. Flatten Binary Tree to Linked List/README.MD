@@ -16,7 +16,7 @@
  */
 ```
 # Recursion
-* Time Complexity: O(N)
+* Time Complexity: O(N^2)
 * Space Complexity: O(N)
 ```
 class Solution {
