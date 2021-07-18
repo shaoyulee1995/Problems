@@ -1,6 +1,6 @@
 # Array
 
-## Solution 1
+## Java
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 ```
@@ -17,7 +17,7 @@ class Solution {
     }
 }
 ```
-## Solution 2
+## Java
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 ```
@@ -32,4 +32,15 @@ class Solution {
         return profit;
     }
 }
+```
+
+## Python 
+```
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        profit = 0
+        for i in range(len(prices) - 1):
+            if prices[i+1] > prices[i]:
+                profit += prices[i+1] - prices[i]
+        return profit
 ```
