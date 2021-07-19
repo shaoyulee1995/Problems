@@ -1,7 +1,7 @@
 # Dynamic Programming
 
 * Time Complexity: O(Nk)
-* Space Complexity: O(N)
+* Space Complexity: O(k)
 ```
 class Solution {
     public int maxProfit(int k, int[] prices) {
