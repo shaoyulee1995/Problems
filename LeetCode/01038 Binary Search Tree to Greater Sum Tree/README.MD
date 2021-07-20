@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,15 +14,25 @@
  *     }
  * }
  */
+```
+# Recursion
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
-    TreeNode found = null;
-    public TreeNode searchBST(TreeNode root, int val) {
-        if(root == null || root.val == val){
-            return root;
-        }    
-        if(root.val > val){
-            return searchBST(root.left, val);
+    int sum = 0;
+    public TreeNode bstToGst(TreeNode root) {
+        traverse(root);
+        return root;
+    }
+    public void traverse(TreeNode node){
+        if(node == null){
+            return;
         }
-        return searchBST(root.right, val);
+        traverse(node.right);
+        sum += node.val;
+        node.val = sum;
+        traverse(node.left);
     }
 }
+```
