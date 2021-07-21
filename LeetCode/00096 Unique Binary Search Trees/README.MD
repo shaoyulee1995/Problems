@@ -18,3 +18,32 @@ class Solution {
     }
 }
 ```
+
+# Recursion with Memorization
+* Time Complexity: O(N^2)
+* Space Complexity: O(N^2)
+```
+class Solution {
+    int[][] memo;
+    public int numTrees(int n) {
+        memo = new int[n+1][n+1];
+        return numTrees(1, n);
+    }
+    public int numTrees(int low, int high){
+        if(low > high){
+            return 1;
+        }
+        if(memo[low][high] != 0){
+            return memo[low][high];
+        }
+        int res = 0;
+        for(int mid = low; mid <= high; mid++){
+            int left = numTrees(low, mid-1);
+            int right = numTrees(mid+1, high);
+            res += left*right;
+        }
+        memo[low][high] = res;
+        return res;
+    }
+}
+```
