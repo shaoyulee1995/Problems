@@ -1,5 +1,4 @@
 # Dynamic Programming
-
 * Time Complexity: O(Nk)
 * Space Complexity: O(k)
 ```
