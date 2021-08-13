@@ -1,7 +1,7 @@
 # Arrays
 * Time Complexity: O(L)
 * Space Complexity: O(MN)
-** L is the length of indices array
+	* L is the length of indices array
 ```
 class Solution {
     public int oddCells(int m, int n, int[][] indices) {
