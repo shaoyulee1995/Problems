@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,24 +14,26 @@
  *     }
  * }
  */
+```
+# Tree
+* Time Complexity: O(N)
+* Space Complexity: O(H)
+	* H as height of tree
+```
 class Solution {
     int max = 0;
     public int diameterOfBinaryTree(TreeNode root) {
-        if(root == null){
-            return 0;
-        }
-        helper(root);
+        depth(root);
         return max;
     }
-    
-    public int helper(TreeNode root){
+    public int depth(TreeNode root){
         if(root == null){
             return 0;
         }
-        
-        int left =  helper(root.left),
-            right = helper(root.right);
-        max = Math.max(max, left+right);
-        return Math.max(left, right) + 1;
+        int L = depth(root.left),
+            R = depth(root.right);
+        max = Math.max(max, L+R);
+        return Math.max(L, R) + 1;
     }
 }
+```
