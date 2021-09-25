@@ -1,3 +1,5 @@
+* Time Complexity: O(N)
+* Space Complexity: O(1)
 ```
 boolean almostIncreasingSequence(int[] sequence) {
     int cnt = 0;
