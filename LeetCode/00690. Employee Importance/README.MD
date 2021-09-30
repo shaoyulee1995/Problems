@@ -1,3 +1,4 @@
+```
 /*
 // Definition for Employee.
 class Employee {
@@ -6,23 +7,28 @@ class Employee {
     public List<Integer> subordinates;
 };
 */
-
+```
+# HashMap, LinkedList
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public int getImportance(List<Employee> employees, int id) {
         HashMap<Integer, Employee> map = new HashMap();
         for(Employee e: employees){
             map.put(e.id, e);
         }
-        Queue<Employee> q = new LinkedList();
+        Queue<Employee> queue = new LinkedList();
+        queue.offer(map.get(id));
         int res = 0;
-        q.offer(map.get(id));
-        while(!q.isEmpty()){
-            Employee node = q.poll();
+        while(!queue.isEmpty()){
+            Employee node = queue.poll();
             res += node.importance;
             for(Integer sub: node.subordinates){
-                q.offer(map.get(sub));
+                queue.offer(map.get(sub));
             }
         }
         return res;
     }
 }
+```
