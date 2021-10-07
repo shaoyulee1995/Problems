@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,6 +14,11 @@
  *     }
  * }
  */
+```
+# Recursion
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public int sumNumbers(TreeNode root) {
         return sumNumbers(root, 0);
@@ -28,3 +34,4 @@ class Solution {
         return sumNumbers(root.left, curVal) + sumNumbers(root.right, curVal);
     }
 }
+```
