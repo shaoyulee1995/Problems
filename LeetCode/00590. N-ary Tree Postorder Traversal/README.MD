@@ -1,3 +1,4 @@
+```
 /*
 // Definition for a Node.
 class Node {
@@ -16,25 +17,29 @@ class Node {
     }
 };
 */
-
+```
+# Tree
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public List<Integer> postorder(Node root) {
+        List<Integer> list = new ArrayList();
         if(root == null){
-            return Collections.emptyList();
+            return list;
         }
-        Node temp = root;
-        List<Integer> ans = new ArrayList();
-        helper(ans, root);
-        ans.add(temp.val);
-        return ans;
+        postorder(root, list);
+        list.add(root.val);
+        return list;
     }
-    private void helper(List<Integer> list, Node node){
-        if(node == null){
+    public void postorder(Node root, List<Integer> list) {
+        if(root == null){
             return;
-        }
-        for(Node child: node.children){
-            helper(list, child);
-            list.add(child.val);
+        } 
+        for(Node node: root.children){
+            postorder(node, list);
+            list.add(node.val);
         }
     }
 }
+```
