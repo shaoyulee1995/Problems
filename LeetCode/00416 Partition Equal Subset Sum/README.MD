@@ -1,3 +1,5 @@
+# TLE
+```
 class Solution {
     public boolean canPartition(int[] nums) {
         int sum = 0;
@@ -8,22 +10,23 @@ class Solution {
             return false;
         }
         sum /= 2;
-        return helper(sum, nums, 0);
+        return canPartition(nums, sum, 0);
     }
-    private boolean helper(int target, int[] nums, int index){
+    public boolean canPartition(int[] nums,  int target, int index){
         if(target == 0){
             return true;
         }
-        if(target < 0 || index == nums.length){
+        if(index < 0 || index == nums.length){
             return false;
         }
-        if(helper(target - nums[index], nums, index + 1)){
+        if(canPartition(nums, target - nums[index], index + 1)){
             return true;
         }
         int j = index + 1;
         while(j < nums.length && nums[j] == nums[index]){
             j++;
         }
-        return helper(target, nums, j); 
-    }
+        return canPartition(nums, target, j);
+    } 
 }
+```
