@@ -1,3 +1,6 @@
+* Time Complexity: O(N*N)
+* Space Complexity: O(1)
+```
 class Solution {
     public void solveSudoku(char[][] board) {
         if(board.length == 0){
@@ -19,7 +22,7 @@ class Solution {
                            }
                        }
                    }
-                    return false;
+                   return false;
                 }
             }
         }
@@ -33,13 +36,12 @@ class Solution {
             if(board[row][i] != '.' && board[row][i] == c){
                 return false; //check col
             }
-            
             if(board[3 * (row/3) + i/3][3 * (col/3) + i%3] != '.' &&
                board[3 * (row/3) + i/3][3 * (col/3) + i%3] == c){
                 return false; //check box
-            }
-        
+            }     
         }
         return true;
     }
 }
+```
