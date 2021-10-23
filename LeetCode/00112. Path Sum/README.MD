@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,6 +14,11 @@
  *     }
  * }
  */
+```
+# Tree
+* Time Complexity: O(N)
+* Space Complexity: O(log(N))
+```
 class Solution {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if(root == null){
@@ -24,3 +30,4 @@ class Solution {
         return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val);
     }
 }
+```
