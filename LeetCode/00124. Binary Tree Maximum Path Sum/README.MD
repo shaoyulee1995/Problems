@@ -29,12 +29,10 @@ class Solution {
         if(root == null){
             return 0;
         }
-        int leftVal = Math.max(dfs(root.left), 0);
-        int rightVal = Math.max(dfs(root.right), 0);
-        
+        int leftVal = Math.max(dfs(root.left), 0),
+			rightVal = Math.max(dfs(root.right), 0);
         int val = leftVal + rightVal + root.val;
         max = Math.max(val, max);
-        
         return root.val + Math.max(leftVal, rightVal);
     }
 }
