@@ -1,3 +1,4 @@
+```
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -8,6 +9,12 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+```
+# ListNode LinkedList
+* Time Complexity: O(list1 + list2)
+* Space Complexity: O(1)
+```
+```
 class Solution {
     public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
         ListNode start = list1;
@@ -27,3 +34,4 @@ class Solution {
         return list1;
     }
 }
+```

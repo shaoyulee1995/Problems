@@ -1,5 +1,9 @@
+# String
+* Time Complexity: O(Max(W1, W2))
+* Space Complexity: O(M1+M2)
+```
 class Solution {
-    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+    public boolean arrayStringsAreEqual(String[] W1, String[] W2) {
         StringBuilder sb1 = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
 
@@ -12,3 +16,4 @@ class Solution {
         return sb1.toString().equals(sb2.toString());
     }
 }
+```
