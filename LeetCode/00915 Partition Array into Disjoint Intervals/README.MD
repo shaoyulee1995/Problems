@@ -1,3 +1,7 @@
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public int partitionDisjoint(int[] nums) {
         int[] L = new int[nums.length],
@@ -21,3 +25,4 @@ class Solution {
         return 0;
     }
 }
+```

@@ -1,3 +1,7 @@
+# HashMap
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public boolean hasGroupsSizeX(int[] deck) {
         HashMap<Integer, Integer> map = new HashMap();
@@ -14,3 +18,4 @@ class Solution {
         return b > 0? gcd(b, a%b): a;
     }
 }
+```
