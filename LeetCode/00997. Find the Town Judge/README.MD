@@ -1,3 +1,7 @@
+# Counting Sort
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public int findJudge(int N, int[][] trust) {
         int[] cnt = new int[N+1];
@@ -14,3 +18,4 @@ class Solution {
         return -1;
     }
 }
+```
