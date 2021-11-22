@@ -1,6 +1,6 @@
 # Graph, Heap
 * Time Complexity: O(Tlog(T))
-	** T represents length of times
+	* T represents length of times
 * Space Complexity: O(T + N)
 ```
 class Solution {
