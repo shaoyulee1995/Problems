@@ -1,3 +1,7 @@
+# HashMap
+* Time Complexity: O(N^2)
+* Space Complexity: O(N)
+```
 class Solution {
     public List<String> invalidTransactions(String[] transactions) {
         List<String> ans = new ArrayList();
@@ -11,7 +15,7 @@ class Solution {
         
         for(String s: transactions){
             Transaction t = new Transaction(s);
-            if(!isValid(t, map.getOrDefault(t.name, new ArrayList()))){
+            if(!isValid(t, map.get(t.name))){
                 ans.add(s);
             }
         }
@@ -22,7 +26,6 @@ class Solution {
         if(t.amount > 1000){
             return false;
         }
-        
         for(Transaction l: list){
             if(Math.abs(l.time - t.time) <= 60 && !l.city.equals(t.city)){
                 return false;
@@ -30,6 +33,7 @@ class Solution {
         }
         return true;
     }
+    
     class Transaction{
         String name, city;
         int amount, time;
@@ -43,3 +47,4 @@ class Solution {
         }
     }
 }
+```
