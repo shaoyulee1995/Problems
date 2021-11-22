@@ -1,3 +1,8 @@
+# Graph, Heap
+* Time Complexity: O(Tlog(T))
+	** T represents length of times
+* Space Complexity: O(T + N)
+```
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
         HashMap<Integer, HashMap<Integer, Integer> > map = new HashMap();
@@ -21,7 +26,7 @@ class Solution {
             res = totalTravel;
             n--;
             if(n == 0){
-                break;
+                return res;
             }
             
             if(map.containsKey(curNode)){
@@ -34,3 +39,4 @@ class Solution {
         
     }
 }
+```
