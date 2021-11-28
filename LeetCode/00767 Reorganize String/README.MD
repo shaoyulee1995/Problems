@@ -1,3 +1,7 @@
+# HashMap
+* Time Complexity: O(N^2log(N))
+* Space Complexity: O(N)
+```
 class Solution {
     public String reorganizeString(String S) {
         HashMap<Character, Integer> map = new HashMap();
@@ -36,3 +40,4 @@ class Solution {
         return sb.toString();
     }
 }
+```

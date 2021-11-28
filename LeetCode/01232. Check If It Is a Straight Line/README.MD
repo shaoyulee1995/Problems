@@ -1,3 +1,7 @@
+# Math
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public boolean checkStraightLine(int[][] coordinates) {
         int[] point1 = coordinates[0],
@@ -20,3 +24,4 @@ class Solution {
         return true;
     }
 }
+```

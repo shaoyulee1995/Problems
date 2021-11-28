@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,6 +14,11 @@
  *     }
  * }
  */
+```
+# Recursion
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public boolean isUnivalTree(TreeNode root) {
         return dfs(root, root.val);  
@@ -27,3 +33,4 @@ class Solution {
         return dfs(node.left, val) && dfs(node.right, val);
     }
 }
+```
