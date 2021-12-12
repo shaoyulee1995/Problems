@@ -1,3 +1,7 @@
+# DP
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public int rotatedDigits(int N) {
         int[] dp = new int[N+1];
@@ -23,3 +27,4 @@ class Solution {
         return goodNumber;
     }
 }
+```

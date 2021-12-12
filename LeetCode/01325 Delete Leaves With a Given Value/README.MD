@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,15 +14,22 @@
  *     }
  * }
  */
+```
+# Recursion
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public TreeNode removeLeafNodes(TreeNode root, int target) {
-        if(root.left != null){
-            root.left = removeLeafNodes(root.left, target);
+        if(root == null){
+            return null;
         }
-        if(root.right != null){
-            root.right = removeLeafNodes(root.right, target);
+        root.left = removeLeafNodes(root.left, target);
+        root.right = removeLeafNodes(root.right, target);
+        if(root.left == null && root.right == null && target == root.val){
+            return null;
         }
-        
-        return (root.val == target)&&(root.left == root.right)?null:root;
+        return root;
     }
 }
+```
