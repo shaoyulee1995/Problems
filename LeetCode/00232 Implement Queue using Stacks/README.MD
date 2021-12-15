@@ -1,3 +1,15 @@
+# Stack Array
+* Space Complexity: O(N)
+
+* push
+	* Time Complexity: O(1)
+* pop
+	* Time Complexity: O(N)
+* peek
+	* Time Complexity: O(N)
+* empty
+	* Time Complexity: O(1)
+```
 class MyQueue {
 
     Stack<Integer> s1, s2;
@@ -29,7 +41,9 @@ class MyQueue {
         return s1.isEmpty() && s2.isEmpty();
     }
 }
+```
 
+```
 /**
  * Your MyQueue object will be instantiated and called as such:
  * MyQueue obj = new MyQueue();
@@ -38,3 +52,4 @@ class MyQueue {
  * int param_3 = obj.peek();
  * boolean param_4 = obj.empty();
  */
+```

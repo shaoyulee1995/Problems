@@ -1,6 +1,6 @@
 # Heap
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
+* Time Complexity: O(Nlog(N))
+* Space Complexity: O(N)
 
 ```
 class MedianFinder {
