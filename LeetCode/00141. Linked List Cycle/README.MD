@@ -1,3 +1,4 @@
+```
 /**
  * Definition for singly-linked list.
  * class ListNode {
@@ -9,21 +10,23 @@
  *     }
  * }
  */
+```
+# LinkedList
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 public class Solution {
+    ListNode fast, slow;
     public boolean hasCycle(ListNode head) {
-        if(head == null){
-            return false;
-        }
-        ListNode slow = head,
-                 fast = head.next;
-        
-        while(fast!= null && fast.next != null){
-            if(fast == slow){
-                return true;
-            }
+        fast = slow = head;
+        while(fast != null && fast.next != null){
             fast = fast.next.next;
             slow = slow.next;
+            if(slow == fast){
+                return true;
+            }
         }
         return false;
     }
 }
+```

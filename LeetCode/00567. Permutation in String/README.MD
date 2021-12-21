@@ -1,6 +1,6 @@
 # Sliding Windows
 * Time Complexity: O(max(N, M))
-* Space Complexity: O(1)
+* Space Complexity: O(26)
 	* N: length of t
 	* M: length of p
 	

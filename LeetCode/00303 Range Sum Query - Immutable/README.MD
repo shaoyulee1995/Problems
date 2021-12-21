@@ -1,7 +1,7 @@
 # Array
 ## Solution 1
 * Space Complexity: O(N)
-sumRange
+##### sumRange
 	* Time Complexity: O(1)
 ```
 class NumArray {
@@ -20,7 +20,7 @@ class NumArray {
 ```
 ## Solution 2
 * Space Complexity: O(N)
-sumRange
+##### sumRange
 	* Time Complexity: O(N)
 ```
 class NumArray {

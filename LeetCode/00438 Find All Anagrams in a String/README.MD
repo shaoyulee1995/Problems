@@ -1,45 +1,45 @@
 # Sliding Windows
-* Time Complexity: O(max(N, M))
-* Space Complexity: O(1)
-	* N: length of t
-	* M: length of p
+* Time Complexity: O(S)
+* Space Complexity: O(P)
 
 ## Java
 
 ```
 class Solution {
-    public List<Integer> findAnagrams(String t, String p) {
+    public List<Integer> findAnagrams(String s, String p) {
         List<Integer> result = new LinkedList();
-        if(t.length() < p.length()){
+        if(s.length() < p.length()){
             return result;
         }
+        int left = 0, right = 0;
         HashMap<Character, Integer> map = new HashMap();
         for(char c: p.toCharArray()){
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        int counter = map.size();
-        int l = 0, r = 0, len = Integer.MAX_VALUE, head = 0;
-        while(r < t.length()){
-            char cur = t.charAt(r);
-            if(map.containsKey(cur)){
-                map.put(cur, map.get(cur) - 1);
-                if(map.get(cur) == 0){
-                    counter--;
-                }
-            }
-            r++;
-            while(counter == 0){
-                char temp = t.charAt(l);
-                if(map.containsKey(temp)){
-                    map.put(temp, map.get(temp) + 1);
-                    if(map.get(temp) > 0){
-                        counter++;
+        int size = map.size();
+        while(right < s.length()){
+            while(right < s.length() && size > 0){
+                char c = s.charAt(right);
+                if(map.containsKey(c)){
+                    map.put(c, map.get(c) - 1);
+                    if(map.get(c) == 0){
+                        size--;
                     }
                 }
-                if(r-l == p.length()){
-                    result.add(l);
+                right++;
+            }
+            while(size == 0){
+                char c = s.charAt(left);
+                if(map.containsKey(c)){
+                    map.put(c, map.get(c) + 1);
+                    if(map.get(c) > 0){
+                        size++;
+                    }
+                }   
+                if(right - left == p.length()){
+                    result.add(left);
                 }
-                l++;
+                left++;
             }
         }
         return result;

@@ -8,7 +8,6 @@ class Solution {
         for(int pile: piles){
             max = Math.max(max, pile);
         }
-      
         while(min < max){
             int mid = min + (max-min)/2;
             double k = 0;
