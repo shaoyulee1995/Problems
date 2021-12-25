@@ -13,7 +13,6 @@ class NumArray {
         }
     }
     public int sumRange(int left, int right) {
-        System.out.println(preSum[right+1]+ " " + preSum[left]);
         return preSum[right+1] - preSum[left];
     }
 }

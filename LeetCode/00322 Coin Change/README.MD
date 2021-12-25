@@ -48,8 +48,8 @@ class Solution:
 ```
 
 # Dynamic Programming
-* Time Complexity: O(nk)
-* Space Complexity: O(n)
+* Time Complexity: O(NK)
+* Space Complexity: O(N)
 ## C++
 ```
 class Solution {

@@ -8,7 +8,7 @@ class Solution {
     public int minFallingPathSum(int[][] matrix) {
         int[][] dp = new int[matrix.length][matrix[0].length];
         for(int i = 0; i < matrix[0].length; i++){
-            dp[0][i] = matrix[0][i];
+            dp[0][i] = matrix[0][i];`
         }
         for(int i = 1; i < matrix.length; i++){
             for(int j = 0; j < matrix[0].length; j++){
