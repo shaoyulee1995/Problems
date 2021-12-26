@@ -1,5 +1,5 @@
 # TreeMap
-* Time Complexity: O(N)
+* Time Complexity: O(Nlog(N))
 * Space Complexity: O(N)
 ```
 class Solution {

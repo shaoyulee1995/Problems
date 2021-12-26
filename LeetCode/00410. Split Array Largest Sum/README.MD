@@ -30,11 +30,10 @@ class Solution {
             curPiece = 1;
         for(int num: nums){
             if(tempSum + num > largestVal){
-                tempSum = num;
+                tempSum = 0;
                 curPiece++;
-            }else{
-                tempSum += num;
             }
+            tempSum += num;
         }
         return curPiece;
     }

@@ -1,6 +1,8 @@
 # Binary Search
-* Time Complexity: O(N)
+* Time Complexity: O(Plog(M))
 * Space Complexity: O(1)
+	* P represents length of piles
+	* M represents max
 ```
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
