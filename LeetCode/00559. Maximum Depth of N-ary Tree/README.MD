@@ -44,3 +44,20 @@ class Solution {
     }
 }
 ```
+# DFS
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
+class Solution {
+    public int maxDepth(Node root) {
+        if(root == null){
+            return 0;
+        }
+        int depth = 0;
+        for(Node node: root.children){
+            depth = Math.max(depth, maxDepth(node));
+        }
+        return depth + 1;
+    }
+}
+```

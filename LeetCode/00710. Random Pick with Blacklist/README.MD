@@ -1,5 +1,5 @@
 # HashMap
-* Time Complexity: O(1)
+* Time Complexity: O(B)
 * Space Complexity: O(N)
 ```
 class Solution {
