@@ -1,3 +1,4 @@
+```
 /*
 // Definition for a Node.
 class Node {
@@ -16,7 +17,11 @@ class Node {
     }
 };
 */
-
+```
+# BFS
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public int maxDepth(Node root) {
         if(root == null){
@@ -38,3 +43,4 @@ class Solution {
         return level;
     }
 }
+```
