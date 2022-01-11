@@ -1,3 +1,8 @@
+# DP
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+
+```
 class Solution {
     public int change(int amount, int[] coins) {
         int[] dp = new int[amount + 1];
@@ -10,3 +15,4 @@ class Solution {
         return dp[amount];
     }
 }
+```

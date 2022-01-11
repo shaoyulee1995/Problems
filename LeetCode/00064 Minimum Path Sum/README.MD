@@ -1,3 +1,7 @@
+# Top-Down
+* Time Complexity: O(NM)
+* Space Complexity: O(1)
+```
 class Solution {
     public int minPathSum(int[][] grid) {
         for(int i = 0; i < grid.length; i++){
@@ -20,7 +24,11 @@ class Solution {
         return grid[grid.length -1][grid[0].length -1];
     }
 }
-
+```
+# Botton-Up
+* Time Complexity: O(NM)
+* Space Complexity: O(1)
+```
 class Solution {
     public int minPathSum(int[][] grid) {
         int n = grid.length, m = grid[0].length;
@@ -43,3 +51,37 @@ class Solution {
         return grid[0][0];
     }
 }
+```
+# Memorization Recursion
+* Time Complexity: O(NM)
+* Space Complexity: O(NM)
+```
+class Solution {
+    int[][] dp;
+    public int minPathSum(int[][] grid) {
+        int n = grid.length,
+            m = grid[0].length;
+        dp = new int[n+1][m+1];
+        return minPathSum(grid, n-1, m-1);
+    }
+    public int minPathSum(int[][] grid, int n, int m){
+        if(n == 0 && m == 0){
+            return grid[0][0];
+        }
+        if(dp[n][m] != 0){
+            return dp[n][m];
+        }
+        if(n == 0){
+            dp[n][m] = minPathSum(grid, n, m-1) + grid[n][m];
+            return dp[n][m];
+        }
+        if(m == 0){
+            dp[n][m] = minPathSum(grid, n-1, m) + grid[n][m];
+            return dp[n][m];
+        }
+        dp[n][m] = grid[n][m] + Math.min(minPathSum(grid, n-1, m),
+                                     minPathSum(grid, n, m-1));
+        return dp[n][m];
+    }
+}
+```
