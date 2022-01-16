@@ -60,3 +60,39 @@ class Solution {
     }
 }
 ```
+# Memorized DP
+* Time Complexity: O(NS)
+* Space Complexity: O(NS)
+	* N is the length of nums
+	* S is the sum of nums
+```
+class Solution {
+    Boolean[][] dp;
+    public boolean canPartition(int[] nums) {
+        int n = nums.length,
+            sum = 0;
+        for(int num: nums){
+            sum += num;
+        }
+        if(sum % 2 != 0){
+            return false;
+        }
+        sum /= 2;
+        dp = new Boolean[n+1][sum + 1];
+        return canPartition(nums, 0, sum);
+    }
+    public boolean canPartition(int[] nums, int index, int sum){
+        if(sum == 0){
+            return true;
+        }
+        if(index == nums.length || sum < 0){
+            return false;
+        }
+        if(dp[index][sum] != null){
+            return dp[index][sum];
+        }
+        return dp[index][sum] = (canPartition(nums, index + 1, sum - nums[index]) || 
+                                canPartition(nums, index + 1, sum));
+    }
+}
+```
