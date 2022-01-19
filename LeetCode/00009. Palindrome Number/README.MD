@@ -1,6 +1,7 @@
-* Time Complexity: O(log(N))
-* Space Complexity: O(log(N))
-
+# Soltion 1
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+	* N as length of x
 ```
 class Solution {
     public boolean isPalindrome(int x) {
@@ -9,10 +10,29 @@ class Solution {
         }
         int original = x, reverse = 0;
         while(x != 0){
-            reverse = reverse*10 + x % 10;
+            reverse = reverse * 10 + x % 10;
             x /= 10;
         }
         return reverse == original;
+    }
+}
+```
+# Soltion 2
+* Time Complexity: O(log(N))
+* Space Complexity: O(1)
+	* N as length of x
+```
+class Solution {
+    public boolean isPalindrome(int x) {
+        if(x < 0 || x >= Integer.MAX_VALUE){
+            return false;
+        }
+        int res = 0;
+        while(x > res){
+            res = res * 10 + x % 10;
+            x /= 10;
+        }
+        return res == x || x == res/10;
     }
 }
 ```

@@ -10,18 +10,12 @@ class Solution {
             m = p.length();
         boolean[][] dp = new boolean[n+1][m+1];
         dp[0][0] = true;
-        
-        for(int i = 1; i <= n; i++){
-            dp[i][0] = false;
-        }
-        
         for(int j = 1; j <= m; j++){
             dp[0][j] = false;
             if(p.charAt(j-1) == '*'){
                 dp[0][j] = dp[0][j-2];
             }
         }
-        
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= m; j++){
                 if(s.charAt(i-1) == p.charAt(j-1) || p.charAt(j-1) == '.'){
