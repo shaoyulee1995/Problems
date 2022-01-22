@@ -1,7 +1,6 @@
 # Regular BFS
 
 ## Java
-
 * Time Complexity: O(b^d*d^2 + md) 
 * Space Complexity: O(b^d*d+m)
 	* b for number incremented
