@@ -18,7 +18,26 @@ class Node {
 };
 */
 ```
-# Solution 1 
+# Recursion 
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
+class Solution {
+    List<Integer> list = new ArrayList();
+    public List<Integer> preorder(Node root) {
+        if(root == null){
+            return new ArrayList();
+        }
+        list.add(root.val);
+        for(Node child: root.children){
+            preorder(child);
+        }
+        return list;
+    }
+}
+```
+
+# Iterate
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 ```
@@ -28,41 +47,16 @@ class Solution {
         if(root == null){
             return list;
         }
-        preorder(root, list);
-        return list;
-    }
-    public void preorder(Node root, List<Integer> list) {
-        if(root == null){
-            return;
-        }
-        list.add(root.val);
-        for(Node child: root.children){
-            preorder(child, list);
-        }
-    }
-}
-```
-
-# Solution 2
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-```
-class Solution {
-    public List<Integer> preorder(Node root) {
-        List<Integer> ans = new ArrayList();
-        Stack<Node> stack = new Stack<>();
+        Stack<Node> stack = new Stack();
         stack.push(root);
         while(!stack.isEmpty()){
             Node node = stack.pop();
-            if(node == null){
-                return ans;
-            }
-            ans.add(node.val);
-            for(int i = node.children.size() - 1; i >= 0; i--){
-                stack.add(node.children.get(i));
+            list.add(node.val);
+            for(int i = node.children.size() - 1; i >=0 ; i--){
+                stack.push(node.children.get(i));
             }
         }
-        return ans;
+        return list;
     }
 }
 ```

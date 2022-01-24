@@ -20,75 +20,43 @@
 * Space Complexity: O(1)
 ```
 class Solution {
-    public int countNodes(TreeNode root) {
+    int depth = 0;
+    public int maxDepth(TreeNode root) {
         if(root == null){
             return 0;
         }
-        int left = countNodes(root.left),
-            right =countNodes(root.right);
-        return 1 + left + right;
+        int left = maxDepth(root.left),
+            right = maxDepth(root.right);
+        depth = Math.max(left, right) + 1;
+        return depth;
     }
 }
-# Recursion 
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-```
-class Solution {
-    public int countNodes(TreeNode root) {
-        if(root == null){
-            return 0;
-        }
-        int left = goLeft(root),
-            right = goRight(root);
-        if(right == left){
-            return ((2 << left) - 1);
-        }
-        return 1 + countNodes(root.left) + countNodes(root.right);
-    }
-    public int goLeft(TreeNode root){
-        int res = 0;
-        while(root.left != null){
-            res++;
-            root = root.left;
-        }
-        return res;
-    }
-    public int goRight(TreeNode root){
-        int res = 0;
-        while(root.right != null){
-            root = root.right;
-            res++;
-        }
-        return res;
-    }
-}
-```
 ```
 # BFS
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 ```
 class Solution {
-    public int countNodes(TreeNode root) {
+    public int maxDepth(TreeNode root) {
         if(root == null){
             return 0;
         }
         Queue<TreeNode> q = new LinkedList();
         q.offer(root);
-        int res = 0;
+        int res = 0;        
         while(!q.isEmpty()){
             int size = q.size();
             while(size != 0){
                 TreeNode node = q.poll();
-                res++;
+                size--;
                 if(node.left != null){
                     q.offer(node.left);
                 }
                 if(node.right != null){
                     q.offer(node.right);
                 }
-                size--;
             }
+            res++;
         }
         return res;
     }

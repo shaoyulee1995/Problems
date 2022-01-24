@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,6 +14,12 @@
  *     }
  * }
  */
+```
+# Iterate
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as number of TreeNode
+```
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> list = new ArrayList();
@@ -40,3 +47,4 @@ class Solution {
         return list;
     }
 }
+```

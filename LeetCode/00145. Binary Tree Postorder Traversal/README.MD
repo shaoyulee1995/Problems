@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,17 +14,47 @@
  *     }
  * }
  */
+```
+# Recursion
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+	* N as number of TreeNode
+```
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList();
-        if(root==null){
+        if(root == null){
+            return list;
+        }
+        postorderTraversal(root, list);
+        return list;
+    }
+    public void postorderTraversal(TreeNode root, List<Integer> list) {
+        if(root == null){
+            return;
+        }
+        postorderTraversal(root.left, list);
+        postorderTraversal(root.right, list);
+        list.add(root.val);
+    }
+}
+```
+# Iterate
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as number of TreeNode
+```
+class Solution {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        LinkedList<Integer> list =  new LinkedList();
+        if(root == null){
             return list;
         }
         Stack<TreeNode> stack = new Stack();
         stack.push(root);
         while(!stack.isEmpty()){
             TreeNode node = stack.pop();
-            list.add(0, node.val);
+            list.addFirst(node.val);
             if(node.left != null){
                 stack.push(node.left);
             }
@@ -31,7 +62,7 @@ class Solution {
                 stack.push(node.right);
             }
         }
-        
         return list;
     }
 }
+```

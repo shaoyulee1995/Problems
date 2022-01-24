@@ -18,28 +18,21 @@ class Node {
 };
 */
 ```
-# Tree
+# Recursion
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 ```
 class Solution {
+    List<Integer> list = new ArrayList();
     public List<Integer> postorder(Node root) {
-        List<Integer> list = new ArrayList();
         if(root == null){
             return list;
         }
-        postorder(root, list);
+        for(Node child: root.children){
+            postorder(child);
+        }
         list.add(root.val);
         return list;
-    }
-    public void postorder(Node root, List<Integer> list) {
-        if(root == null){
-            return;
-        } 
-        for(Node node: root.children){
-            postorder(node, list);
-            list.add(node.val);
-        }
     }
 }
 ```

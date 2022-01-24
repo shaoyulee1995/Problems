@@ -18,29 +18,30 @@
 # Iterate
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as number of TreeNode
 ```
 class Solution {
-    public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        List<List<Integer>> list = new LinkedList();
+    public List<Integer> largestValues(TreeNode root) {
+        List<Integer> list = new ArrayList();
         if(root == null){
             return list;
         }
-        Queue<TreeNode> queue = new LinkedList();
-        queue.add(root);
-        while(!queue.isEmpty()){
-            List<Integer> level = new LinkedList();
-            int size = queue.size();
+        Queue<TreeNode> q = new LinkedList();
+        q.offer(root);
+        while(!q.isEmpty()){
+            int size = q.size();
+            int max = Integer.MIN_VALUE;
             for(int i = 0; i < size; i++){
-                TreeNode node = queue.poll();
-                level.add(node.val);
+                TreeNode node = q.poll();
+                max = Math.max(max, node.val);
                 if(node.left != null){
-                    queue.offer(node.left);
+                    q.offer(node.left);
                 }
                 if(node.right != null){
-                    queue.offer(node.right);
+                    q.offer(node.right);
                 }
-            }       
-            list.add(0, level);
+            }
+            list.add(max);
         }
         return list;
     }

@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,29 +14,39 @@
  *     }
  * }
  */
+```
+# Iterate
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as number of TreeNode
+	
+```
 class Solution {
-    public List<Integer> largestValues(TreeNode root) {
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> list = new ArrayList();
         if(root == null){
-            return new ArrayList();
+            return list;
         }
         Queue<TreeNode> q = new LinkedList();
-        q.add(root);
-        List<Integer> list = new ArrayList();
+        q.offer(root);
         while(!q.isEmpty()){
             int size = q.size();
-            int max = Integer.MIN_VALUE;
+            double val = 0;
             for(int i = 0; i < size; i++){
-                TreeNode child = q.poll();
-                if(child.left != null){
-                    q.add(child.left);
+                TreeNode node = q.poll();
+                val += node.val;
+                if(node.left != null){
+                    q.offer(node.left);
                 }
-                if(child.right != null){
-                    q.add(child.right);
+                if(node.right != null){
+                    q.offer(node.right);
                 }
-                max = Math.max(child.val, max);
             }
-            list.add(max);
+            val /= size;
+            list.add(val);
         }
         return list;
     }
 }
+
+```

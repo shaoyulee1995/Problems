@@ -26,16 +26,19 @@ class Solution {
         if(root == null){
             return true;
         }
-        return isSymmetricHelper(root.left, root.right);
+        return isSymmetric(root.left, root.right);
     }
-    public boolean isSymmetricHelper(TreeNode l, TreeNode r) {
-        if(l == null && r == null){
+    public boolean isSymmetric(TreeNode left, TreeNode right) {
+        if(left == null && right == null){
             return true;
         }
-        if(l == null || r == null || r.val != l.val){
+        if(left == null || right == null){
             return false;
         }
-        return isSymmetricHelper(l.right, r.left) && isSymmetricHelper(l.left, r.right);
+        if(left.val != right.val){
+            return false;
+        }
+        return isSymmetric(left.right, right.left) && isSymmetric(left.left, right.right);
     }
 }
 ```
@@ -62,28 +65,35 @@ public:
 ```
 
 # BFS
+* Time Complexity: O(N)
+* Space Complexity: O(N)
 ```
 class Solution {
     public boolean isSymmetric(TreeNode root) {
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
-        queue.add(root);
-        while(!queue.isEmpty()){
-            TreeNode son1 = queue.poll(),
-                     son2 = queue.poll();
-            
-            if(son1 == null && son2 == null){
+        if(root == null){
+            return true;
+        }
+        Queue<TreeNode> q = new LinkedList();
+        q.offer(root.left);
+        q.offer(root.right);
+        while(!q.isEmpty()){
+            TreeNode l = q.poll(),
+                     r = q.poll();
+            if(l == null && r == null){
                 continue;
             }
-            if(son1 == null || son2 == null || son1.val != son2.val){
+            if(l == null || r == null){
                 return false;
             }
-            
-            queue.add(son1.left);
-            queue.add(son2.right);
-            queue.add(son1.right);
-            queue.add(son2.left);
+            if(l.val != r.val){
+                return false;
+            }
+            q.offer(l.left);
+            q.offer(r.right);
+            q.offer(l.right);
+            q.offer(r.left);
         }
         return true;
     }
+}
 ```
