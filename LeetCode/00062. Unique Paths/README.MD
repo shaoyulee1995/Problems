@@ -23,7 +23,7 @@ class Solution {
 }
 ```
 # DFS [TLE]
-* Time Complexity: O(MN)
+* Time Complexity: O(2^(M + N -1)-1)
 * Space Complexity: O(1)
 	* M as m
 	* N as n

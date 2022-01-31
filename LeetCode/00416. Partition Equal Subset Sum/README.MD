@@ -38,8 +38,7 @@ class Solution {
 ```
 class Solution {
     public boolean canPartition(int[] nums) {
-        int sum = 0,
-            n = nums.length;
+        int sum = 0;
         for(int num: nums){
             sum += num;
         }
@@ -47,16 +46,13 @@ class Solution {
             return false;
         }
         sum /= 2;
-        boolean[] dp = new boolean[sum+1];
-        dp[0] = true;
+        int[] dp = new int[sum+1];
         for(int num: nums){
-            for(int i = sum; i > 0; i--){
-                if(i >= num){
-                    dp[i] = dp[i] || dp[i-num];
-                }
+            for(int i = sum; i >= num; i--){
+                dp[i] = Math.max(dp[i], dp[i - num] + num);
             }
         }
-        return dp[sum];
+        return dp[sum] == sum;
     }
 }
 ```
