@@ -10,17 +10,17 @@ class Solution {
         return list;
     }
     public void combinationSum3(int k, int n, int index, int sum){
-        if(path.size() > k || sum > n){
-            return;
-        }
-        if(sum == n && k == path.size()){
+        if(k == 0 && sum == n){
             list.add(new ArrayList(path));
             return;
         }
         for(int i = index; i <= 9; i++){
+            if(sum + i > n || k - 1 < 0){
+                break;
+            }
             sum += i;
             path.add(i);
-            combinationSum3(k, n, i+1, sum);
+            combinationSum3(k-1, n, i+1, sum);
             sum -= i;
             path.removeLast();
         }

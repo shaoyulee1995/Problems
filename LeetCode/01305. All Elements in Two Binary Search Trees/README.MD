@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,23 +14,28 @@
  *     }
  * }
  */
+```
+# InOrder
+* Time Complexity: O(N+M)
+* Space Complexity: O(N+M)
+	* N as number of nodes in root1 tree
+	* M as number of nodes in root2 tree
+```
 class Solution {
+    List<Integer> list = new ArrayList();
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
-        List<Integer> ans = new ArrayList();
-    
-        inorder(root1, ans);
-        inorder(root2, ans);
-        Collections.sort(ans);
-        System.gc();
-        return ans;
+        inOrder(root1);
+        inOrder(root2);
+        Collections.sort(list);
+        return list;
     }
-    private void inorder(TreeNode node, List<Integer> list){
-        if(node == null){
+    public void inOrder(TreeNode root){
+        if(root == null){
             return;
         }
-        list.add(node.val);
-        inorder(node.left, list);
-        inorder(node.right, list);
+        inOrder(root.left);
+        list.add(root.val);
+        inOrder(root.right);
     }
-    
 }
+```

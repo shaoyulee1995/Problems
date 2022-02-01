@@ -1,59 +1,29 @@
 # Backtrack
-
-## Java
-* Time Complexity: O(n*n!)
-* Space Complexity: O(n*n!)
-### solution 1
+* Time Complexity: O(N*N!)
+* Space Complexity: O(N*N!)
 ```
 class Solution {
+    List<List<Integer>> list = new ArrayList();
+    LinkedList<Integer> path = new LinkedList();
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> list = new ArrayList();
-        backtrack(list, new boolean[nums.length], new ArrayList(), nums);
+        boolean[] visited = new boolean[nums.length];
+        permute(nums, visited);
         return list;
     }
-    private void backtrack(List<List<Integer>> list, 
-						   boolean[] visited, 
-						   List<Integer> temp, 
-                           int[] nums){
-						   
-        if(temp.size() == nums.length){
-            list.add(new ArrayList(temp));
+    public void permute(int[] nums, boolean[] visited){
+        if(path.size() == nums.length){
+            list.add(new ArrayList(path));
             return;
         }
         for(int i = 0; i < nums.length; i++){
-            if(visited[i] == true){
+            if(visited[i]){
                 continue;
             }
             visited[i] = true;
-            temp.add(nums[i]);
-            backtrack(list, visited, temp, nums);
-            temp.remove(temp.size() - 1);
+            path.add(nums[i]);
+            permute(nums, visited);
             visited[i] = false;
-        }
-    }
-}
-```
-### solution 2
-```
-class Solution {
-    List<List<Integer>> res;
-    public List<List<Integer>> permute(int[] nums) {
-        res = new LinkedList();
-        backtrack(nums, new LinkedList());
-        return res;
-    }
-    public void backtrack(int[] nums, LinkedList<Integer> track){
-        if(track.size() == nums.length){
-            res.add(new LinkedList(track));
-            return;
-        }
-        for(int i = 0; i < nums.length; i++){
-            if(track.contains(nums[i])){
-                continue;
-            }
-            track.add(nums[i]);
-            backtrack(nums, track);
-            track.removeLast();
+            path.removeLast();
         }
     }
 }

@@ -6,27 +6,33 @@
 class Solution {
     List<List<Integer>> list = new ArrayList();
     LinkedList<Integer> path = new LinkedList();
-    public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        Arrays.sort(candidates);
-        combinationSum2(candidates, target, 0);
+    public List<List<Integer>> combinationSum2(int[] nums, int target) {
+        boolean[] visited = new boolean[nums.length];
+        Arrays.sort(nums);
+        combinationSum2(nums, target, 0, visited);
         return list;
     }
-    public void combinationSum2(int[] candidates, int target, int index){
+    public void combinationSum2(int[] nums, int target, int index, boolean[] visited){
         if(target == 0){
             list.add(new ArrayList(path));
             return;
         }
-        for(int i = index; i < candidates.length; i++){
-            if(i > index && candidates[i] == candidates[i-1]){
+        for(int i = index; i < nums.length; i++){
+            if(visited[i]){
                 continue;
             }
-            if(target - candidates[i] < 0){
+            if(i > index && nums[i] == nums[i-1] && !visited[i-1]){
                 continue;
             }
-            target -= candidates[i];
-            path.add(candidates[i]);
-            combinationSum2(candidates, target, i + 1);
-            target += candidates[i];
+            if(target - nums[i] < 0){
+                break;
+            }
+            visited[i] = true;
+            target -= nums[i];
+            path.add(nums[i]);
+            combinationSum2(nums, target, i+1, visited);
+            target += nums[i];
+            visited[i] = false;
             path.removeLast();
         }
     }

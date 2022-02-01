@@ -1,22 +1,20 @@
 # Backtrack
-* Time Complexity: O(N*N!)
+* Time Complexity: O(N*2^N)
 * Space Complexity: O(N)
 	* N as length of nums
 ```
 class Solution {
     List<List<Integer>> list = new ArrayList();
     LinkedList<Integer> path = new LinkedList();
-    public List<List<Integer>> permuteUnique(int[] nums) {
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        Arrays.sort(nums);
         boolean[] visited = new boolean[nums.length];
-        permuteUnique(nums, visited);
+        subsetsWithDup(nums, 0, visited);
         return list;
     }
-    public void permuteUnique(int[] nums, boolean[] visited){
-        if(nums.length == path.size()){
-            list.add(new ArrayList(path));
-            return;
-        }
-        for(int i = 0; i < nums.length; i++){
+    public void subsetsWithDup(int[] nums, int index, boolean[] visited){
+        list.add(new ArrayList(path));
+        for(int i = index; i < nums.length; i++){
             if(visited[i]){
                 continue;
             }
@@ -25,7 +23,7 @@ class Solution {
             }
             visited[i] = true;
             path.add(nums[i]);
-            permuteUnique(nums, visited);
+            subsetsWithDup(nums, i + 1, visited);
             path.removeLast();
             visited[i] = false;
         }
