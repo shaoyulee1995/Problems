@@ -1,3 +1,8 @@
+# String
+* Time Complexity: O((H-N)N)
+* Space Complexity: O(N)
+	* H as length of haystack
+	* N as length of needle
 ```
 class Solution {
     public int strStr(String haystack, String needle) {

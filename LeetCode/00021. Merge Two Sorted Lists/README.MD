@@ -11,7 +11,7 @@
  */
 ```
 
-# Solution 1
+# LinkedList
 * Time Complexity: O(N+M) where N is the length of l1 and M is the length of l2
 * Space Complexity: O(1)
 

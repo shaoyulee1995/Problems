@@ -1,6 +1,4 @@
 # Array
-
-## Java
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 ```
@@ -17,24 +15,24 @@ class Solution {
     }
 }
 ```
-## Java
+# Greedy
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 ```
 class Solution {
     public int maxProfit(int[] prices) {
-        int profit = 0;
+        int res = 0;
         for(int i = 1; i < prices.length; i++){
-            if(prices[i] > prices[i-1]){
-                profit += prices[i] - prices[i-1];
-            }
+            res += Math.max(prices[i] - prices[i-1], 0);
         }
-        return profit;
+        return res;
     }
 }
 ```
 
 ## Python 
+* Time Complexity: O(N)
+* Space Complexity: O(1)
 ```
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
