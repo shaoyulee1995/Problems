@@ -20,22 +20,22 @@
 * Space Complexity: O(1)
 ```
 class Solution {
-    public boolean isBalanced(TreeNode root) {
-        return isBalancedInt(root) != -1;
+    int height = 0, ans = 0;
+    public int findBottomLeftValue(TreeNode root) {
+        findBottomLeftValue(root, 1);
+        return ans;
     }
-    public int isBalancedInt(TreeNode node){
-        if(node == null){
-            return 0;
+    public void findBottomLeftValue(TreeNode root, int depth){
+        if(height < depth){
+            ans = root.val;
+            height = depth;
         }
-        int left = isBalancedInt(node.left),
-            right =isBalancedInt(node.right);
-        if(left == -1 || right == -1){
-            return -1;
+        if(root.left != null){
+            findBottomLeftValue(root.left, depth+1);
         }
-        if(Math.abs(left - right) > 1){
-            return -1;
+        if(root.right != null){
+            findBottomLeftValue(root.right, depth+1);
         }
-        return Math.max(right, left) + 1;
     }
 }
 ```

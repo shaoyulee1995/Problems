@@ -20,24 +20,30 @@
 * Space Complexity: O(log(N))
 ```
 class Solution {
-    List<List<Integer>> res = new ArrayList();
-    List<Integer> list = new ArrayList();
+    List<List<Integer>> list = new ArrayList();
+    LinkedList<Integer> path = new LinkedList();
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+        if(root == null){
+            return list;
+        }
         dfs(root, targetSum);
-        return res;
+        return list;
     }
     public void dfs(TreeNode root, int targetSum){
         if(root == null){
             return;
         }
+        path.add(root.val);
         targetSum -= root.val;
-        list.add(root.val);
         if(targetSum == 0 && root.left == null && root.right == null){
-            res.add(new ArrayList(list));
+            list.add(new ArrayList(path));
+            path.removeLast();
+            return;
+        }else{
+            dfs(root.left, targetSum);
+            dfs(root.right, targetSum);
         }
-        dfs(root.left, targetSum);
-        dfs(root.right, targetSum);
-        list.remove(list.size() - 1);
+        path.removeLast();
     }
 }
 ```

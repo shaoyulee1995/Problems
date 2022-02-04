@@ -52,59 +52,51 @@ public:
 ## Java
 ```
 class Solution {
-    
+    List<List<String>> paths = new ArrayList();
     public List<List<String>> solveNQueens(int n) {
-        char[][] chess = new char[n][n];
+        char[][] board = new char[n][n];
         for(int i = 0; i < n; i++){
-            for(int j = 0; j < n; j++){
-                chess[i][j] = '.';   
-            }
+            Arrays.fill(board[i], '.');
         }
-        List<List<String>> res = new ArrayList();
-        solve(res, chess, 0);
-        return res;
+        dfs(board, 0);
+        return paths;
     }
-    private void solve(List<List<String>> res, char[][] chess, int row){
-        if(chess.length == row){
-            res.add(construct(chess));
+    public void dfs(char[][] board, int row){
+        if(row == board.length){
+            paths.add(build(board));
             return;
         }
-        for(int col = 0; col < chess.length; col++){
-            if(valid(chess, row, col)){
-                chess[row][col] = 'Q';
-                solve(res, chess, row + 1);
-                chess[row][col] = '.';
+        for(int col = 0; col < board.length; col++){
+            if(!isValid(board, row, col)){
+                continue;
             }
+            board[row][col] = 'Q';
+            dfs(board, row + 1);
+            board[row][col] = '.';
         }
     }
-    private boolean valid(char[][] chess, int row, int col){
+    public boolean isValid(char[][] board, int row, int col){
         for(int i = 0; i < row; i++){
-            if(chess[i][col] == 'Q'){
+            if(board[i][col] == 'Q'){
+                return false;
+            }
+        }    
+        for(int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--){
+            if(board[i][j] == 'Q'){
                 return false;
             }
         }
-        //going top right
-        for(int i = row - 1, j = col + 1;
-            i >= 0 && j < chess.length;
-            i--, j++){
-            if(chess[i][j] == 'Q'){
-                return false;
-            }
-        }
-        //going top left
-        for(int i = row - 1, j = col - 1;
-            i >= 0 && j >= 0;
-            i--, j--){
-            if(chess[i][j] == 'Q'){
+        for(int i = row - 1, j = col + 1; i >= 0 && j < board.length; i--, j++){
+            if(board[i][j] == 'Q'){
                 return false;
             }
         }
         return true;
     }
-    private List<String> construct(char[][] chess){
+    public List<String> build(char[][] board){
         List<String> path = new ArrayList();
-        for(int i = 0; i < chess.length; i++){
-            path.add(new String(chess[i]));
+        for(int i = 0; i < board.length; i++){
+            path.add(new String(board[i]));
         }
         return path;
     }

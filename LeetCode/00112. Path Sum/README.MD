@@ -17,7 +17,7 @@
 ```
 # Tree
 * Time Complexity: O(N)
-* Space Complexity: O(log(N))
+* Space Complexity: O(1)
 ```
 class Solution {
     public boolean hasPathSum(TreeNode root, int targetSum) {
