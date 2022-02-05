@@ -1,3 +1,4 @@
+```
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -8,6 +9,13 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+```
+# PriorityQueue
+* Time Complexity: O(NKlog(K))
+* Space Complexity: O(K)
+	* K as length of lists
+	* N as length of nodes in lists
+```
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         if(lists==null || lists.length == 0){
@@ -32,7 +40,8 @@ class Solution {
         return dummy.next;
     }
 }
-
+```
+```
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         if(lists.length == 0 || lists == null){
@@ -64,3 +73,4 @@ class Solution {
         return l2;
     }
 }
+```

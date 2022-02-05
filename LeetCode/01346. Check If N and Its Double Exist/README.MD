@@ -1,3 +1,7 @@
+# TreeSet
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public boolean checkIfExist(int[] arr) {
         TreeSet<Integer> set = new TreeSet();
@@ -10,3 +14,4 @@ class Solution {
         return false;
     }
 }
+```

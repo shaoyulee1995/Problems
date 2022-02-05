@@ -12,7 +12,7 @@ class Solution {
         return list;
     }
     public void combine(int n, int k, int index){
-        if(path.size() == k  ){
+        if(path.size() == k){
             list.add(new ArrayList(path));
             return;
         }
