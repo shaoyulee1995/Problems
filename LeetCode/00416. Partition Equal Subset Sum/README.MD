@@ -30,32 +30,6 @@ class Solution {
     } 
 }
 ```
-# DP
-* Time Complexity: O(N*S)
-* Space Complexity: O(S)
-	* N is the length of nums
-	* S is the sum of nums
-```
-class Solution {
-    public boolean canPartition(int[] nums) {
-        int sum = 0;
-        for(int num: nums){
-            sum += num;
-        }
-        if(sum % 2 != 0){
-            return false;
-        }
-        sum /= 2;
-        int[] dp = new int[sum+1];
-        for(int num: nums){
-            for(int i = sum; i >= num; i--){
-                dp[i] = Math.max(dp[i], dp[i - num] + num);
-            }
-        }
-        return dp[sum] == sum;
-    }
-}
-```
 # Memorized DP
 * Time Complexity: O(NS)
 * Space Complexity: O(NS)
@@ -89,6 +63,69 @@ class Solution {
         }
         return dp[index][sum] = (canPartition(nums, index + 1, sum - nums[index]) || 
                                 canPartition(nums, index + 1, sum));
+    }
+}
+```
+# DP
+* Time Complexity: O(N*S)
+* Space Complexity: O(S)
+	* N is the length of nums
+	* S is the sum of nums
+```
+class Solution {
+    public boolean canPartition(int[] nums) {
+        int sum = 0;
+        for(int num: nums){
+            sum += num;
+        }
+        if(sum % 2 != 0){
+            return false;
+        }
+        sum /= 2;
+        int[] dp = new int[sum+1];
+        for(int num: nums){
+            for(int i = sum; i >= num; i--){
+                dp[i] = Math.max(dp[i], dp[i - num] + num);
+            }
+        }
+        return dp[sum] == sum;
+    }
+}
+```
+# DP (0/1 knapsack)
+* Time Complexity: O(NS)
+* Space Complexity: O(NS)
+	* N is the length of nums
+	* S is the sum of nums
+```
+class Solution {
+    public boolean canPartition(int[] nums) {
+        int sum = 0;
+        for(int num: nums){
+            sum += num;
+        }
+        if(sum % 2 == 1){
+            return false;
+        }
+        sum /= 2;
+        int n = nums.length;
+        boolean[][] dp = new boolean[n+1][sum+1];
+        
+        for(int i = 1; i < n+1; i++){
+            dp[i][0] = true;
+        }
+        for(int j = 1; j < sum+1; j++){
+            dp[0][j] = false;
+        }
+        for(int i = 1; i < n+1; i++){
+            for(int j = 1; j < sum+1; j++){
+                dp[i][j] = dp[i][j-1];
+                if(j>= nums[i-1]){
+                    dp[i][j] = (dp[i][j] || dp[i][j-nums[i-1]]);
+                }
+            }
+        }
+        return dp[n][sum];
     }
 }
 ```
