@@ -9,7 +9,6 @@ class Solution {
         findTargetSumWays(nums, target, 0);
         return res;
     }
-    
     public void findTargetSumWays(int[] nums, int target, int index) {
         if(index == nums.length){
             if(target == 0){
@@ -27,7 +26,6 @@ class Solution {
     }
 }
 ```
-
 # Recursion Memorized 
 * Time Complexity: O(NS)
 * Space Complexity: O(NS)
