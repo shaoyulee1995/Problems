@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,35 +14,42 @@
  *     }
  * }
  */
+```
+# BFS
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
+    List<List<Integer>> list;
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        List<List<Integer>> list = new ArrayList();
+        list = new ArrayList();
         if(root == null){
             return list;
         }
-        Queue<TreeNode> queue = new LinkedList();
-        queue.offer(root);
-        boolean shift = true;
-        while(!queue.isEmpty()){
-            int size = queue.size();
-            List<Integer> temp = new LinkedList();
-            while(size-- > 0){
-                TreeNode node = queue.poll();
-                if(shift){
-                    temp.add(node.val);
+        boolean flag = false;
+        Queue<TreeNode> q = new LinkedList();
+        q.offer(root);
+        while(!q.isEmpty()){
+            int size = q.size();
+            LinkedList<Integer> nodes = new LinkedList();
+            for(int i = 0; i < size; i++){
+                TreeNode node = q.poll();
+                if(flag){ 
+                    nodes.add(0, node.val);
                 }else{
-                    temp.add(0, node.val);
+                    nodes.add(node.val);
                 }
                 if(node.left != null){
-                    queue.offer(node.left);
+                    q.offer(node.left);
                 }
                 if(node.right != null){
-                    queue.offer(node.right);
+                    q.offer(node.right);
                 }
             }
-            shift = !shift;
-            list.add(new ArrayList(temp));
+            list.add(new ArrayList(nodes));
+            flag = !flag;
         }
         return list;
     }
 }
+```

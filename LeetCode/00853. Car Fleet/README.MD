@@ -10,8 +10,6 @@ class Solution {
             cars[i] = new double[] {position[i], (double)(target - position[i])/speed[i]};
         }
         Arrays.sort(cars, (a, b) -> Double.compare(a[0], b[0]));
-        System.out.println(Arrays.deepToString(cars));
-        //[[0.0, 12.0], [3.0, 3.0], [5.0, 7.0], [8.0, 1.0], [10.0, 1.0]]
         int res = 0;
         double cur = 0;
         for(int i = n - 1; i >= 0; i--){

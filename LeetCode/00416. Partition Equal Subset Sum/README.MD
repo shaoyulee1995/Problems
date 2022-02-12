@@ -66,7 +66,7 @@ class Solution {
     }
 }
 ```
-# DP
+# DP (0/1 knapsack)
 * Time Complexity: O(N*S)
 * Space Complexity: O(S)
 	* N is the length of nums
@@ -78,17 +78,18 @@ class Solution {
         for(int num: nums){
             sum += num;
         }
-        if(sum % 2 != 0){
+        if(sum % 2 == 1){
             return false;
         }
-        sum /= 2;
-        int[] dp = new int[sum+1];
+        int target = sum / 2;
+        boolean[] dp = new boolean[target+1];
+        dp[0] = true;
         for(int num: nums){
-            for(int i = sum; i >= num; i--){
-                dp[i] = Math.max(dp[i], dp[i - num] + num);
+            for(int i = target; i >= num; i--){
+                dp[i] = dp[i] || dp[i-num];
             }
         }
-        return dp[sum] == sum;
+        return dp[target];
     }
 }
 ```

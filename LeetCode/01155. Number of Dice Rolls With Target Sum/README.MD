@@ -38,10 +38,11 @@ class Solution {
     public int numRollsToTarget(int n, int k, int target) {
         int[][] dp = new int[n+1][target+1];
         dp[0][0] = 1;
+        int mod = (int)1e9+7;
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= target; j++){
-                for(int f = 1; f <= k && j >= f; f++){
-                    dp[i][j] += dp[i-1][j-f];
+                for(int f = 1; f <= k && j-f>=0; f++){
+                    dp[i][j] = (dp[i][j] + dp[i-1][j-f])%mod; 
                 }
             }
         }
