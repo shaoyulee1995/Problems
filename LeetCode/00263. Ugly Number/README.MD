@@ -1,3 +1,7 @@
+# Recursion
+* Time Complexity: O(log(N))
+* Space Complexity: O(1)
+```
 class Solution {
     public boolean isUgly(int n) {
         if(n <= 0){
@@ -18,3 +22,4 @@ class Solution {
         return false;
     }
 }
+```

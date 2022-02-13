@@ -37,7 +37,7 @@ class Solution {
     }
 }
 ```
-# DP
+# DP (Knapsack)
 * Time Complexity: O(SMN)
 * Space Complexity: O(MN)
 	* S is length of strs
