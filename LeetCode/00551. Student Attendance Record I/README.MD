@@ -1,3 +1,7 @@
+# String
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public boolean checkRecord(String s) {
         int absent = 0;
@@ -20,3 +24,4 @@ class Solution {
         return true;
     }
 }
+```
