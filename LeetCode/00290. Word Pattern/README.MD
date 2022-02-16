@@ -1,3 +1,7 @@
+# HashMap
+* Time Complexity: O(N^2)
+* Space Complexity: O(N)
+```
 class Solution {
     public boolean wordPattern(String pattern, String s) {
         HashMap<Character, String> map = new HashMap();
@@ -21,3 +25,4 @@ class Solution {
         return true;
     }
 }
+```

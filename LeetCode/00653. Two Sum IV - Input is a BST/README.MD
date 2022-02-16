@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,19 +14,26 @@
  *     }
  * }
  */
+```
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as nodes of tree
+```
 class Solution {
     public boolean findTarget(TreeNode root, int k) {
-        Set<Integer> set = new HashSet();
-        return find(root, k, set);
+        HashSet<Integer> set = new HashSet();
+        return findTarget(root, k, set);
     }
-    private boolean find(TreeNode node, int k, Set<Integer> set){
-        if(node == null){
+    public boolean findTarget(TreeNode root, int k, HashSet<Integer> set) {
+        if(root == null){
             return false;
         }
-        if(set.contains(k - node.val)){
+        if(set.contains(k-root.val)){
             return true;
         }
-        set.add(node.val);
-        return find(node.left, k, set) || find(node.right, k, set);
+        set.add(root.val);
+        return findTarget(root.left, k, set) || findTarget(root.right, k, set);
     }
 }
+```

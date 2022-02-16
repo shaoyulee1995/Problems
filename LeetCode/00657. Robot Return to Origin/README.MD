@@ -1,3 +1,7 @@
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public boolean judgeCircle(String moves) {
         int upDown = 0, leftRight = 0;
@@ -15,3 +19,5 @@ class Solution {
         return (leftRight == 0 && upDown == 0);
     }
 }
+
+```

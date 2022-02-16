@@ -20,32 +20,17 @@
 * Space Complexity: O(1)
 ```
 class Solution {
-    TreeNode me = null;
     public TreeNode searchBST(TreeNode root, int val) {
-        if(root == null){  
-            return null;    
-        }
-        if(searchInBST(root, val)){
-            return me;
-        }
-        return null;
-    }
-    public boolean searchInBST(TreeNode root, int val){
         if(root == null){
-            return false;
+            return null;
         }
         if(root.val == val){
-            me = root;
-            return true;
+            return root;
         }
-        if(root.val < val){
-            return searchInBST(root.right, val);
-        }
-        return searchInBST(root.left, val);
+        return (root.val < val)? searchBST(root.right, val): searchBST(root.left, val);
     }
 }
 ```
-
 # Iteration
 * Time Complexity: O(log(N))
 * Space Complexity: O(1)

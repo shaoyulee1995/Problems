@@ -1,3 +1,7 @@
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public boolean isOneBitCharacter(int[] bits) {
         int ones = 0;
@@ -7,3 +11,4 @@ class Solution {
         return ones%2 == 0;
     }
 }
+```
