@@ -1,3 +1,7 @@
+# Math
+* Time Complexity: O(log(N))
+* Space Complexity: O(1)
+```
 class Solution {
     public int subtractProductAndSum(int n) {
         int sum = 0, product = 1;
@@ -10,3 +14,4 @@ class Solution {
         return product - sum;
     }
 }
+```

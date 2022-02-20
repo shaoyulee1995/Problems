@@ -1,3 +1,4 @@
+```
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -8,13 +9,19 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+```
+# Bit Operation
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public int getDecimalValue(ListNode head) {
-        int ans = 0;
-        while(head!= null){
-            ans = (ans<<1) | head.val;
+        int res = 0;
+        while(head != null){
+            res = (res << 1) | head.val;
             head = head.next;
         }
-        return ans;
+        return res;
     }
 }
+```
