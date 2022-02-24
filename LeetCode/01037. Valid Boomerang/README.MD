@@ -1,3 +1,7 @@
+# Math
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public boolean isBoomerang(int[][] points) {
         if(points.length < 3){
@@ -19,3 +23,4 @@ class Solution {
         return true;
     }
 }
+```

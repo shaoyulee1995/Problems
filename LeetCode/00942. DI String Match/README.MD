@@ -1,17 +1,22 @@
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as length of s
+```
 class Solution {
     public int[] diStringMatch(String s) {
         int[] res = new int[s.length() + 1];
-        int low = 0,
-            high = s.length();
-        
+        int low = 0, high = s.length();
         for(int i = 0; i < s.length(); i++){
-            if(s.charAt(i) == 'I'){
+            char c = s.charAt(i);
+            if(c == 'I'){
                 res[i] = low++;
-            }else{
+            }else if(c == 'D'){
                 res[i] = high--;
             }
         }
-        res[res.length - 1] = low;
+        res[s.length()] = low;
         return res;
     }
 }
+```

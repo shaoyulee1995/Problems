@@ -1,3 +1,7 @@
+# Math
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
     public int titleToNumber(String columnTitle) {
         int ans = 0;
@@ -7,3 +11,4 @@ class Solution {
         return ans;
     }
 }
+```

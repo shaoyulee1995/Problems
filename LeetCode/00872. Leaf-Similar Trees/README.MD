@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,37 +14,37 @@
  *     }
  * }
  */
+```
+# Recursion 
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as nodes in tree
+```
 class Solution {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
-        List<Integer> list1 = new ArrayList(),
-                      list2 = new ArrayList();
-        inOrder(root1, list1);
-        inOrder(root2, list2);
-        
-        if(list1.size() != list2.size()){
+        List<Integer> tree1 = new ArrayList(),
+                      tree2 = new ArrayList();
+        traverse(root1, tree1);
+        traverse(root2, tree2);
+        if(tree1.size() != tree2.size()){
             return false;
         }
-        
-        for(int i = 0; i < list1.size(); i++){
-            if(list1.get(i) != list2.get(i)){
+        for(int i = 0; i < tree1.size(); i++){
+            if(tree1.get(i) != tree2.get(i)){
                 return false;
             }
         }
         return true;
     }
-    
-    private void inOrder(TreeNode node, List<Integer> l){
+    public void traverse(TreeNode node, List<Integer> list){
         if(node == null){
             return;
         }
-        if(node.left != null){
-            inOrder(node.left, l);
+        if(node.left == null && node.right == null){
+            list.add(node.val);
         }
-        if(node.right != null){
-            inOrder(node.right, l);
-        }
-        if(node.left == node.right){
-            l.add(node.val);
-        }
+        traverse(node.left, list);
+        traverse(node.right, list);
     }
 }
+```
