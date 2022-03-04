@@ -1,3 +1,7 @@
+# 2 Pointers
+* Time Complexity: O((sqrt(N))
+* Space Complexity: O(1)
+```
 class Solution {
     public boolean checkPerfectNumber(int num) {
         if(num == 1 || num <= 0){
@@ -12,3 +16,4 @@ class Solution {
         return num == sum + 1;
     }
 }
+```

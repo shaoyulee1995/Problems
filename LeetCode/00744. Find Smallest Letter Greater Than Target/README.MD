@@ -20,3 +20,22 @@ class Solution {
     }
 }
 ```
+# Comparator
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
+class Solution {
+    public char nextGreatestLetter(char[] letters, char target) {
+        char ans = ' ';
+        for(char c: letters){
+            if(c == target){
+                continue;
+            }
+            if((ans == ' ' || ans > c) && target < c){
+                ans = c;
+            }
+        }
+        return (ans == ' ')? letters[0]: ans;
+    }
+}
+```
