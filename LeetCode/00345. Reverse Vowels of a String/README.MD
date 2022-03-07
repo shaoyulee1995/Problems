@@ -1,13 +1,21 @@
+# 2 Pointers
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as length of s
+```
 class Solution {
     public String reverseVowels(String s) {
         char[] c = s.toCharArray();
         int i = 0, j = s.length() - 1;
         while(i < j){
-            if(!isVowel(c[i])){
+            while(i < j && !isVowel(c[i])){
                 i++;
             }
-            if(!isVowel(c[j])){
+            while(i < j && !isVowel(c[j])){
                 j--;
+            }
+            if(i >= j){
+                break;
             }
             if(isVowel(c[i]) && isVowel(c[j])){
                 swap(c, i, j);
@@ -26,3 +34,4 @@ class Solution {
             c =='A' || c =='E' || c =='I' || c =='O' || c =='U';
     }
 }
+```

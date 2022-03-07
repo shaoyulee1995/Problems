@@ -1,0 +1,25 @@
+```
+/* The isBadVersion API is defined in the parent class VersionControl.
+      boolean isBadVersion(int version); */
+```
+# Binary Search
+* Time Complexity: O(log(N))
+* Space Complexity: O(1)
+	* N as n
+```
+public class Solution extends VersionControl {
+    public int firstBadVersion(int n) {
+        int i = 1, 
+            j = n;
+        while(i < j){
+            int k = i + (j-i)/2;
+            if(isBadVersion(k)){
+                j = k;
+            }else{
+                i = k + 1;
+            }
+        } 
+        return i;
+    }
+}
+```
