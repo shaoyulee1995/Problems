@@ -48,7 +48,7 @@ class Solution {
         Arrays.fill(minStops, Integer.MAX_VALUE);
         Arrays.fill(minCosts, Integer.MAX_VALUE);
         minStops[src] = 0;
-        minStops[src] = 0;
+        minCosts[src] = 0;
         //src, cost, stop
         Queue<int[]> pq = new PriorityQueue<int[]>((a,b)-> a[1]-b[1]);
         pq.offer(new int[]{src, 0, 0});

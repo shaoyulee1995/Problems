@@ -26,7 +26,6 @@ class Solution {
     public int pick() {
         int p = r.nextInt(M);
         if(map.containsKey(p)){            
-            System.out.println(p + " " + map.get(p));
             return map.get(p);
         }
         return p;

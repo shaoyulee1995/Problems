@@ -22,7 +22,7 @@ class Solution {
         }
         int i = 1, j = n, res = n;
         while(i < j){
-            int  mid =  i + (j-i)/2;
+            int mid = i + (j-i)/2;
             int broken = superEggDrop(k-1, mid-1, dp);
             int unBroken = superEggDrop(k, n-mid, dp);
             res = Math.min(res, Math.max(broken, unBroken) + 1);
