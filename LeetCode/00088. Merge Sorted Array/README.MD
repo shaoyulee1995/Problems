@@ -1,3 +1,8 @@
+# 2 Pointers
+* Time Complexity: O(N1)
+* Space Complexity: O(1)
+	* N1 as length of nums1
+```
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1,
@@ -15,3 +20,4 @@ class Solution {
         }
     }
 }
+```

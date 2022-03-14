@@ -1,6 +1,10 @@
 # LRU
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+* get: 
+	* Time Complexity: O(1)
+* put: 
+	* Time Complexity: O(1)
+* LRU:
+	* Space Complexity: O(N)
 ```
 class LRUCache {
     private LinkedNodeList list;
@@ -24,8 +28,8 @@ class LRUCache {
     public void put(int key, int value) {
         Node node = map.get(key);
         if(node != null){
-            list.moveToHead(node);
             node.val = value;
+            list.moveToHead(node);
         }else{
             Node newNode = new Node(key,value);
             if(map.size() == cap){

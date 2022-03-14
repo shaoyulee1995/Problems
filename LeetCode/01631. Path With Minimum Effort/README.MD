@@ -1,33 +1,35 @@
+# Matrix
+* Time Complexity: O(NMlog(NM))
+* Space Complexity: O(NM)
+	* N as length of heights
+	* M as length of heights[0]
 ```
 class Solution {
     public int minimumEffortPath(int[][] heights) {
         int n = heights.length,
             m = heights[0].length;
-        //i, j, val
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b)-> Integer.compare(a[2], b[2]));
-        pq.offer(new int[] {0, 0, 0});
-        Integer[][] minDist = new Integer[n][m];
-        minDist[0][0] = 0;
+        Integer[][] dp = new Integer[n][m];
+        PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a,b)->a[2]-b[2]);
+        pq.offer(new int[]{0,0,0});
         int[][] dirs = new int[][]{{-1,0},{1,0},{0,1},{0,-1}};
-        
         while(!pq.isEmpty()){
             int[] node = pq.poll();
             int u = node[0],
                 v = node[1],
-                dist = node[2];
-            if(u == n - 1 && v == m - 1){
-                return dist;
-            }    
+                val = node[2];
+            if(u == n-1 && v == m-1){
+                return val;
+            }
             for(int[] dir: dirs){
-                int x = dir[0] + u,
-                    y = dir[1] + v;
-                if(x < 0 || y < 0 || x >= n || y >= m){
+                int x = u + dir[0],
+                    y = v + dir[1];
+                if(x < 0 || x == n || y < 0 || y == m){
                     continue;
                 }
-                int weights = Math.max(dist, Math.abs(heights[u][v] - heights[x][y]));
-                if(minDist[x][y] == null || minDist[x][y] > weights){
-                    minDist[x][y] = weights;
-                    pq.offer(new int[]{x, y, weights});
+                int weight = Math.max(val, Math.abs(heights[x][y] - heights[u][v]));
+                if(dp[x][y] == null || dp[x][y] > weight){
+                    pq.offer(new int[]{x, y, weight});
+                    dp[x][y] = weight;
                 }
             }
         }

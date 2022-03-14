@@ -1,20 +1,17 @@
+# HashMap
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+```
 class Solution {
-    //nums[i] - rev(nums[ji]) == nums[j] - rev(nums[j])
-    
-    /**
-    original: [42,11,1,97]
-    reverse:  [24,11,1,79]
-    diff:     [18,0,0,18]
-    */
     public int countNicePairs(int[] nums) {
         HashMap<Long, Integer> map = new HashMap();
         int cnt = 0;
-        int mod = (int)(Math.pow(10,9) + 7);
+        int mod = (int)(1E9+7);
         for(int num: nums){
             long rev = rev(num);
             long diff = num - rev;
             if(map.containsKey(diff)){
-                cnt = ((cnt%mod) + map.get(diff)%mod)%mod;
+                cnt = (cnt + map.get(diff))%mod;
             }
             map.put(diff, map.getOrDefault(diff, 0) + 1);
         }
@@ -29,3 +26,4 @@ class Solution {
         return ans;
     }
 }
+```

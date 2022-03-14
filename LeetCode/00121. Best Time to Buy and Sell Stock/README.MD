@@ -1,7 +1,6 @@
 # Kadane's Algorithm
 * Time Complexity: O(N)
 * Space Complexity: O(1)
-
 ```
 class Solution {
     public int maxProfit(int[] prices) {
@@ -18,7 +17,6 @@ class Solution {
 # Array
 * Time Complexity: O(N)
 * Space Complexity: O(1)
-
 ```
 class Solution {
     public int maxProfit(int[] prices) {
@@ -46,14 +44,6 @@ class Solution {
                 dp[i][1] = -prices[0];
                 continue;
             }
-            /*
-                dp[i][0] = sell
-                    * remain nothing
-                    * sell current stock
-                dp[i][1] = buy
-                    * remain nothing
-                    * buy current stock
-            */
             dp[i][0] = Math.max(dp[i-1][0], dp[i-1][1] + prices[i]);
             dp[i][1] = Math.max(dp[i-1][1], -prices[i]);
         }

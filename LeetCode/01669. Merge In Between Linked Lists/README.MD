@@ -10,10 +10,11 @@
  * }
  */
 ```
-# ListNode LinkedList
-* Time Complexity: O(list1 + list2)
+# LinkedList
+* Time Complexity: O(L1 + L2)
 * Space Complexity: O(1)
-```
+	* L1 is length of list1
+	* L2 is length of list2
 ```
 class Solution {
     public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
@@ -22,15 +23,14 @@ class Solution {
             start = start.next;
         }
         ListNode end = start;
-        for(int i = start.val; i <= b; i++){
-            end = end.next;   
+        for(int i= start.val; i <= b; i++){
+            end = end.next;
         }
         start.next = list2;
         while(list2.next != null){
             list2 = list2.next;
         }
         list2.next = end;
-        System.gc();
         return list1;
     }
 }

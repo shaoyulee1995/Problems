@@ -1,6 +1,7 @@
 # Arrays
 * Time Complexity: O(Nlog(N))
 * Space Complexity: O(N)
+	* N as length of intervals
 ```
 class Solution {
     public int[][] merge(int[][] intervals) {
