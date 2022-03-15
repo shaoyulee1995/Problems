@@ -78,3 +78,44 @@ class Solution {
     }
 }
 ```
+
+# Prim's Algorithm
+* Time Complexity: O(N^2)
+* Space Complexity: O(N)
+	* N as length of points
+```
+class Solution {
+    public int minCostConnectPoints(int[][] points) {
+        int n = points.length,
+            minCost = 0, 
+            edgeUsed = 0;
+        boolean[] visited = new boolean[n];
+        int[] minDist = new int[n];
+        for(int i = 0; i < n; i++){
+            minDist[i] = Integer.MAX_VALUE;
+        }
+        minDist[0] = 0;
+        while(edgeUsed < n){
+            int curMinEdge = Integer.MAX_VALUE,
+                curNode = -1;
+            for(int node = 0; node < n; node++){
+                if(!visited[node] && minDist[node] < curMinEdge){
+                    curNode = node;
+                    curMinEdge = minDist[node];
+                }
+            }
+            minCost += curMinEdge;
+            edgeUsed++;
+            visited[curNode] = true;
+            for(int nextNode = 0; nextNode < n; nextNode++){
+                int weight = Math.abs(points[curNode][0] - points[nextNode][0]) + 
+                             Math.abs(points[curNode][1] - points[nextNode][1]);
+                if(!visited[nextNode] && minDist[nextNode] > weight){
+                    minDist[nextNode] = weight;
+                }
+            }
+        }
+        return minCost;
+    }
+}
+```

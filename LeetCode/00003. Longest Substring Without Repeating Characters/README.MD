@@ -1,21 +1,23 @@
 # Sliding Windows
 * Time Complexity: O(N)
-* Space Complexity: O(1)
-## Java
+* Space Complexity: O(N)
 ```
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        int left = 0, right = 0, res = 0;
         HashSet<Character> set = new HashSet();
-        while(right < s.length()){
-            char c = s.charAt(right);
+        int i = 0,
+            j = 0,
+            res = 0,
+            n = s.length();
+        while(j < n){
+            char c = s.charAt(j);
             if(!set.contains(c)){
                 set.add(c);
-                right++;
+                j++;
                 res = Math.max(res, set.size());
             }else{
-                set.remove(s.charAt(left));
-                left++;
+                set.remove(s.charAt(i));
+                i++;
             }
         }
         return res;
