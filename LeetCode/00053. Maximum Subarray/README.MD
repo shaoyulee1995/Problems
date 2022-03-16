@@ -36,24 +36,3 @@ class Solution {
     }
 }
 ```
-# Greedy
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-```
-class Solution {
-    public int maxSubArray(int[] nums) {
-        int res = 0,
-            curMax = 0;
-        for(int i = 0; i < nums.length; i++){
-            curMax += nums[i];
-            if(res < curMax){
-                res = curMax;
-            }
-            if(curMax < 0){
-                curMax = 0;
-            }
-        }
-        return res;
-    }
-}
-```
