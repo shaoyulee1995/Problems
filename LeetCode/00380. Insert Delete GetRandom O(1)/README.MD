@@ -1,6 +1,12 @@
 # HashMap, Swap
-* Time Complexity: O(1)
+* insert
+	* Time Complexity: O(1)
+* remove
+	* Time Complexity: O(1)
+*getRandom
+	* Time Complexity: O(1)
 * Space Complexity: O(N)
+	* N as number of val in map
 ```
 class RandomizedSet {
     HashMap<Integer, Integer> map;

@@ -1,6 +1,7 @@
 # String
 * Time Complexity: O(N^2)
 * Space Complexity: O(1)
+	* N as length of s
 ```
 class Solution {
     public String longestPalindrome(String s) {
