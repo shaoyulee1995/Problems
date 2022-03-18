@@ -1,26 +1,26 @@
 # Array
-* Time Complexity: O(N*klog(k))
-* Space Complexity: O(Nk)
+* Time Complexity: O(N*wlog(w))
+* Space Complexity: O(N)
+	* N as length of strs
+	* w as length of w
 ```
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
-        List<List<String> > ans = new ArrayList<>();
-        HashMap<String, ArrayList<String>> map = new HashMap<>();
+        HashMap<String, List<String>> map = new HashMap();
         for(String str: strs){
-            char[] c = str.toCharArray();
-            Arrays.sort(c);
-            
-            String s = String.valueOf(c);
-            if(map.containsKey(s)){
-                map.get(s).add(str);
-            }else{
-                ArrayList<String> temp = new ArrayList<>();
-                temp.add(str);
-                map.put(s, temp);
+            char[] w = str.toCharArray();
+            Arrays.sort(w);
+            String word = new String(w);
+            if(!map.containsKey(word)){
+                map.put(word, new ArrayList());
             }
+            map.get(word).add(str);
         }
-        ans.addAll(map.values());
-        return ans;
+        List<List<String>> list = new ArrayList();
+        for(List<String> vals: map.values()){
+            list.add(vals);
+        }
+        return list;
     }
 }
 ```
