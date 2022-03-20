@@ -1,15 +1,20 @@
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public int getWinner(int[] arr, int k) {
-        int cur = arr[0], win = 0;
+        int cur = arr[0], wins = 0;
         for(int i = 1; i < arr.length; i++){
-            if(arr[i]>cur){
-                win = 0;
+            if(arr[i] > cur){
                 cur = arr[i];
+                wins = 0;
             }
-            if(++win == k){
+            if(++wins == k){
                 break;
             }
         }
         return cur;
     }
 }
+```

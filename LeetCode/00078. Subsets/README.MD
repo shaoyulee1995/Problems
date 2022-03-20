@@ -1,5 +1,5 @@
 # Backtrack
-* Time Complexity: O(N*2^N)
+* Time Complexity: O(N*2<sup>N</sup>)
 * Space Complexity: O(N)
 	* N as length of nums
 ```
