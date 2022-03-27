@@ -1,32 +1,43 @@
+# Array
+* CustomStack
+	* Space Complexity: O(N)
+		* N as maxSize
+* push
+	* Time Complexity: O(1)
+	* Space Complexity: O(1)
+* pop
+	* Time Complexity: O(1)
+	* Space Complexity: O(1)
+* increment
+	* Time Complexity: O(k)
+	* Space Complexity: O(1)
+```
 class CustomStack {
-
     int[] stack;
-    int index;
+    int length;
     public CustomStack(int maxSize) {
         stack = new int[maxSize];
-        index = 0;
+        length = 0;
     }
-    
     public void push(int x) {
-        if(index < stack.length){
-            stack[index++] = x;
+        if(length < stack.length){
+            stack[length++] = x;
         }
     }
-    
     public int pop() {
-        if(index == 0){
+        if(length == 0){
             return -1;
         }
-        return stack[--index];
+        return stack[--length];
     }
-    
     public void increment(int k, int val) {
         for(int i = 0; i < k && i < stack.length; i++){
-            stack[i]+=val;
+            stack[i] += val;
         }
     }
 }
-
+```
+```
 /**
  * Your CustomStack object will be instantiated and called as such:
  * CustomStack obj = new CustomStack(maxSize);
@@ -34,3 +45,4 @@ class CustomStack {
  * int param_2 = obj.pop();
  * obj.increment(k,val);
  */
+```

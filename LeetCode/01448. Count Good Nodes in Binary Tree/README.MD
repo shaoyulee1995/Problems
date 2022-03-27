@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,20 +14,22 @@
  *     }
  * }
  */
+```
+# Recursion 
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+	* N as nodes in tree
+```
 class Solution {
-    //the root itself is the "max" (temporatory)
     public int goodNodes(TreeNode root) {
-        return preOrder(root, root.val);
+        return goodNodes(root, root.val);
     }
-    public int preOrder(TreeNode node, int val){
-        if(node == null){
+    public int goodNodes(TreeNode root, int val){
+        if(root == null){
             return 0;
         }
-        int max = Math.max(node.val, val);
-        
-        return (node.val >= val? 1: 0) + 
-            preOrder(node.left, max) + 
-            preOrder(node.right, max); //update the max along the path
-        
+        int max = Math.max(root.val, val);
+        return (root.val >= val? 1: 0) + goodNodes(root.left, max) + goodNodes(root.right, max);
     }
 }
+```
