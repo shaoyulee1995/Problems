@@ -42,7 +42,6 @@ class Solution {
     }
 }
 ```
-
 # Union Find
 * Time Complexity: O(MN)
 * Space Complexity: O(MN)
@@ -119,6 +118,5 @@ class Solution {
     public int node(int i, int j){
         return i*cols + j;
     }
-    
 }
 ```

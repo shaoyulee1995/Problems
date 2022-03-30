@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,6 +14,11 @@
  *     }
  * }
  */
+```
+# Recurseion
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
 class Solution {
     public int sumEvenGrandparent(TreeNode root) {
         if(root == null){
@@ -21,11 +27,13 @@ class Solution {
         return helper(root, 1, 1);
     }
     
-    public int helper(TreeNode root, int p, int gp){
+    public int sumEvenGrandparent(TreeNode root, int p, int gp){
         if(root == null){
             return 0;
         }
-        return helper(root.left, root.val, p) + helper(root.right, root.val, p) + 
-            (gp%2 == 0?  root.val: 0);
+        return sumEvenGrandparent(root.left, root.val, p) + 
+                sumEvenGrandparent(root.right, root.val, p) + 
+                (gp%2 == 0?  root.val: 0);
     }
 }
+```
