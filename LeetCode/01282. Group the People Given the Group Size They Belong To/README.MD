@@ -1,3 +1,8 @@
+# HashMap
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as length of groupSizes
+```
 class Solution {
     public List<List<Integer>> groupThePeople(int[] groupSizes) {
         HashMap<Integer, List<Integer> > map = new HashMap<>();
@@ -20,3 +25,4 @@ class Solution {
         return ans;
     }
 }
+```

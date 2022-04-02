@@ -16,10 +16,11 @@
  */
 ```
 # InOrder
-* Time Complexity: O(N+M)
-* Space Complexity: O(N+M)
+* Time Complexity: O(ClogC)
+* Space Complexity: O(C)
 	* N as number of nodes in root1 tree
 	* M as number of nodes in root2 tree
+	* C as N + M
 ```
 class Solution {
     List<Integer> list = new ArrayList();

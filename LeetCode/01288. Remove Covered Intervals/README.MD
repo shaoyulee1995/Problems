@@ -1,39 +1,34 @@
 # Arrays
 * Time Complexity: O(Nlog(N))
 * Space Complexity: O(1)
+	* N as length of intervals
 
 ## Java
-### Solution 1
+### 2 Pointers
 ```
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
-        Arrays.sort(intervals, (a,b) ->{
-            if(a[0] == b[0]){
-                return b[1] - a[1];
-            }
-            return a[0] - b[0];
-        });
-        
+        Arrays.sort(intervals, (a, b) -> ((a[0] == b[0])? b[1] - a[1]:  a[0] - b[0]));
         int left = intervals[0][0],
             right = intervals[0][1];
-        
-        int res = 0;
-        for(int i = 1; i < intervals.length; i++){
-            int[] curRange = intervals[i];
-            if(left <= curRange[0] && right >= curRange[1]){
-                res++;
-            }else if(right >= curRange[0] && right <= curRange[1]){
-                right = curRange[1];
-            }else if(right < curRange[0]){
-                left = curRange[0];
-                right = curRange[1];
+        int deletion = 0, n = intervals.length;
+        for(int i = 1; i < n; i++){
+            int curLeft = intervals[i][0],
+                curRight = intervals[i][1];
+            if(left <= curLeft && right >= curRight){
+                deletion++;
+            }else if(right > curLeft && right < curRight){
+                right = curRight;
+            }else if(right < curRight){
+                left = curLeft;
+                right = curRight;
             }
         }
-        return intervals.length - res;
+        return n - deletion;
     }
 }
 ```
-### Solution 2
+### 1 Pointer
 ```
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
