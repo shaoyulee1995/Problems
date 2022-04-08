@@ -42,3 +42,23 @@ class Solution {
     }
 }
 ```
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as n
+```
+class Solution {
+    public int[] corpFlightBookings(int[][] bookings, int n) {
+        int[] res = new int[n];
+        for(int[] book: bookings){
+            int i = book[0]-1,
+                j = book[1]-1,
+                cost = book[2];
+            for(int k = i; k <= j; k++){
+                res[k] += cost;
+            }
+        }
+        return res;
+    }
+}
+```
