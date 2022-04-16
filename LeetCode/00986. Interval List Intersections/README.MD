@@ -1,27 +1,33 @@
 # Arrays
-* Time Complexity: O(M + N)
-* Space Complexity: O(M + N)
+* Time Complexity: O(Min(M, N))
+* Space Complexity: O(Min(M, N))
+	* M as length of firstList
+	* N as length of secondList
 ## Java
 ```
 class Solution {
     public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
-        int i = 0, j = 0;
-        LinkedList<int[]> list = new LinkedList();
-        while(i < firstList.length && j < secondList.length){
+        LinkedList<int[]> res = new LinkedList();
+        int i = 0,
+            j = 0,
+            n = firstList.length,
+            m = secondList.length;
+        while(i < n && j < m){
             int[] a = firstList[i],
                   b = secondList[j];
             if(b[1] >= a[0] && a[1] >= b[0]){
-                list.add(new int[]{Math.max(a[0], b[0]), Math.min(a[1], b[1])});
+                res.add(new int[]{Math.max(a[0], b[0]), Math.min(a[1], b[1])});
             }
-            if(b[1] > a[1]){
+            if(a[1] < b[1]){
                 i++;
             }else{
                 j++;
             }
         }
-        return list.toArray(new int[0][]);
+        return res.toArray(new int[0][]);
     }
 }
+`
 ```
 
 ## Python

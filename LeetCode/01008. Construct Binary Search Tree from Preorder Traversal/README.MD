@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -13,18 +14,22 @@
  *     }
  * }
  */
+```
+# preOrder
+* Time Complexity: O(Nlog(N))
+* Space Complexity: O(N)
+	* N as length of preorder
+```
 class Solution {
     public TreeNode bstFromPreorder(int[] preorder) {
         TreeNode root = new TreeNode(preorder[0]);
         
         for(int i = 1; i < preorder.length; i++){
-            setNode(root, preorder[i]);            
+            setNode(root, preorder[i]);
         }
-        // System.gc();
         return root;
     }
-    
-    private void setNode(TreeNode node, int val){
+    public void setNode(TreeNode node, int val){
         if(node.val < val){
             if(node.right == null){
                 node.right = new TreeNode(val);
@@ -40,3 +45,4 @@ class Solution {
         }
     }
 }
+```
