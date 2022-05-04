@@ -1,4 +1,4 @@
-# Array
+.# Array
 
 ## Solution 1
 * Time Complexity: O(N)
@@ -21,7 +21,7 @@ class Solution {
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 ```
-class Solution {
+class Soluton {
     public int maxProfit(int[] prices, int fee) {
         int buy = -prices[0], sell = 0;
         for(int i = 1; i < prices.length; i++){

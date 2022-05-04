@@ -1,27 +1,27 @@
 # HashMap
-* Time Complexity: O(NS)
+* Time Complexity: O(NC)
 * Space Complexity: O(N)
 	* N as length of cpdomains
-	* S as length of each domain
+	* C as length of each domain
 ```
 class Solution {
     public List<String> subdomainVisits(String[] cpdomains) {
+        List<String> res = wnew ArrayList();
         HashMap<String, Integer> map = new HashMap();
-        for(String cp: cpdomains){
-            int i  = cp.indexOf(' ');
-            Integer rep = Integer.valueOf(cp.substring(0, i));
-            String s = cp.substring(i+1);
-            for(i = 0; i < s.length(); i++){
-                if(s.charAt(i) == '.'){
-                    String d = s.substring(i+1);
-                    map.put(d, map.getOrDefault(d, 0) + rep);
+        for(String cpdomain: cpdomains){
+            int space = cpdomain.indexOf(' ');
+            Integer rep = Integer.valueOf(cpdomain.substring(0, space));
+            String domain = cpdomain.substring(space+1);
+            for(int i = 0; i < domain.length(); i++){
+                if(domain.charAt(i) == '.'){
+                    String subd = domain.substring(i+1);
+                    map.put(subd, map.getOrDefault(subd, 0) + rep);
                 }
             }
-            map.put(s, map.getOrDefault(s, 0) + rep);
+            map.put(domain, map.getOrDefault(domain, 0) + rep);
         }
-        List<String> res = new ArrayList();
-        for(String key: map.keySet()){
-            res.add(map.get(key) + " " + key);
+        for(String k: map.keySet()){
+            res.add(map.get(k) +" " + k);
         }
         return res;
     }

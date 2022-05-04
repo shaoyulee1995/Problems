@@ -1,3 +1,8 @@
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+	* N as length of nums
+```
 class Solution {
     public int findUnsortedSubarray(int[] nums) {
         int min = Integer.MAX_VALUE,
@@ -7,9 +12,9 @@ class Solution {
                 min = Math.min(min, nums[i]);
             }
         }
-        for(int i = nums.length - 2; i >= 0; i--){
-            if(nums[i]>nums[i+1]){
-                max = Math.max(max, nums[i]);
+        for(int j = nums.length - 2; j >= 0; j--){
+            if(nums[j] > nums[j+1]){
+                max = Math.max(max, nums[j]);
             }
         }
         int i = 0;
@@ -19,11 +24,12 @@ class Solution {
             }
         }
         int j = nums.length - 1;
-        for(;j>=0; j--){
-            if(nums[j]<max){
+        for(; j >= 0; j--){
+            if(nums[j] < max){
                 break;
             }
         }
-        return (i>j)?0:j-i+1;
+        return (i>j)?0:(j-i+1);    
     }
 }
+```

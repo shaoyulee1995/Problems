@@ -1,11 +1,11 @@
 # Regular BFS
 
 ## Java
-* Time Complexity: O(b^d*d^2 + md) 
-* Space Complexity: O(b^d*d+m)
-	* b for number incremented
-	* d for turntable
-	* m for combinations for deadends
+* Time Complexity: O(N<sup>2</sup>A<sup>N</sup>+D) 
+* Space Complexity: O(A<sup>N</sup>+D)
+	* N as length of the lock
+	* A as possible digit
+	* D as deadlock
 ```
 class Solution {
     public int openLock(String[] deadends, String target) {
