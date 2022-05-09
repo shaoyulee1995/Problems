@@ -1,7 +1,7 @@
 # Backtrack
-* Time Complexity: O(IDK)
-* Space Complexity: O(IDK)
-	* IDK as I don't know
+* Time Complexity: O(2<sup>N</sup>N)
+* Space Complexity: O(N)
+	* N as length of nums
 ```
 class Solution {
     Set<List<Integer>> list = new HashSet();
