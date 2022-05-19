@@ -14,7 +14,7 @@
  * }
  */
 ```
-# Recursion with Memorization
+# Memorization Recursion
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 ```
@@ -27,19 +27,19 @@ class Solution {
         if(map.containsKey(root)){
             return map.get(root);
         }
-        int rob = root.val  
-            + (root.left == null ? 0: rob(root.left.left) + rob(root.left.right))
-            + (root.right == null ? 0: rob(root.right.left) + rob(root.right.right));
-        int notRob = rob(root.left) + rob(root.right);
-        int res = Math.max(rob, notRob);
-        map.put(root, res);
-        return res;
+        int rob = root.val + 
+                  (root.left != null? rob(root.left.left) + rob(root.left.right): 0) + 
+                  (root.right != null? rob(root.right.left) + rob(root.right.right): 0);  
+        int not_rob = rob(root.left) + rob(root.right);
+        int val = Math.max(rob, not_rob);
+        map.put(root, val);
+        return val;
     }
 }
 ```
 # Array
 * Time Complexity: O(N)
-* Space Complexity: O(1)
+* Space Complexity: O(N)
 ```
 class Solution {
     public int rob(TreeNode root) {

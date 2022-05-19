@@ -4,17 +4,17 @@
 ```
 class Solution {
     public int wiggleMaxLength(int[] nums) {
-        if(nums.length <= 1){
-            return nums.length;
+        if(nums.length == 1){
+            return 1;
         }
-        int curDiff = 0,
-            prevDiff = 0,
-            res = 1;
-        for(int i = 0; i + 1 < nums.length; i++){
-            curDiff = nums[i+1] - nums[i];
-            if((curDiff > 0 && prevDiff <= 0 )|| (curDiff < 0 && prevDiff >= 0)){
-                prevDiff = curDiff;
+        int res = 1,    
+            curDiff = 0,
+            prevDiff = 0;
+        for(int i = 1; i < nums.length; i++){
+            curDiff = nums[i] - nums[i-1];
+            if((curDiff > 0 && prevDiff <= 0) || (curDiff < 0 && prevDiff >= 0)){
                 res++;
+                prevDiff = curDiff;
             }
         }
         return res;

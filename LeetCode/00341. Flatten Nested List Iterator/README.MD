@@ -22,33 +22,30 @@
 * Space Complexity: O(N)
 ```
 public class NestedIterator implements Iterator<Integer> {
-    private Iterator<Integer> it;
-    
+    Iterator<Integer> it;
     public NestedIterator(List<NestedInteger> nestedList) {
-        List<Integer> list = new LinkedList();
-        for(NestedInteger node: nestedList){
-            traverse(node, list);
+        LinkedList<Integer> list = new LinkedList();
+        for(NestedInteger curList: nestedList){
+            traverse(curList, list);
         }
         this.it = list.iterator();
     }
-    public void traverse(NestedInteger node, List<Integer> list){
-        if(node.isInteger()){
-            list.add(node.getInteger());
+    public void traverse(NestedInteger curList, LinkedList<Integer> list){
+        if(curList.isInteger()){
+            list.add(curList.getInteger());
             return;
-        }    
-        for(NestedInteger child: node.getList()){
+        }
+        for(NestedInteger child: curList.getList()){
             traverse(child, list);
         }
     }
-    
     @Override
     public Integer next() {
-        return it.next();
+        return this.it.next();
     }
-
     @Override
     public boolean hasNext() {
-        return it.hasNext();
+        return this.it.hasNext();
     }
 }
 ```
