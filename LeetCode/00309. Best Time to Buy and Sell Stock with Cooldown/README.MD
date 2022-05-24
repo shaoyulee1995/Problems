@@ -1,6 +1,4 @@
 # Array
-
-## Solution 1
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 ```
@@ -19,8 +17,6 @@ class Solution {
     }
 }
 ```
-
-## Solution 2
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 ```
@@ -36,6 +32,30 @@ class Solution {
             sell = buy + price;
         }
         return Math.max(sell, cooldown);
+    }
+}
+```
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
+class Solution {
+    public int maxProfit(int[] prices) {
+        if(prices.length < 2){
+            return 0;
+        }
+        int cool_down = 0,
+            buy = -prices[0],
+            sell = 0,
+            hold = -prices[0];
+        for(int i = 1; i < prices.length; i++){
+            int original_hold = hold,
+                original_sell = sell;
+            hold = Math.max(buy, hold);
+            sell = prices[i] + Math.max(buy, original_hold);
+            buy = cool_down - prices[i];
+            cool_down = Math.max(cool_down, original_sell);
+        }
+        return Math.max(cool_down, sell);
     }
 }
 ```

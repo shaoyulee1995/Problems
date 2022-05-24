@@ -1,4 +1,4 @@
-# 2D Traversal
+# Search Space Reduction
 * Time Complexity: O(N+M)
 * Space Complexity: O(1)
 	* N as length of matrix
