@@ -22,6 +22,8 @@ class Solution {
 ```
 * Time Complexity: O(Ns)
 * Space Complexity: O(N)
+	* N as n
+	* s as square root of n
 ```
 class Solution {
     public int numSquares(int n) {

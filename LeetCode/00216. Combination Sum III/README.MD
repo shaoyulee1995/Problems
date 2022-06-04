@@ -1,6 +1,8 @@
 # Backtrack
 * Time Complexity: O(c(9, k)*k)
 * Space Complexity: O(9)
+	* c as combination
+	* k as k
 ```
 class Solution {
     List<List<Integer>> res = new ArrayList();

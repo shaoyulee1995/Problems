@@ -13,6 +13,7 @@
 # Recursion 
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as length of linkedlist
 ```
 class Solution {
     ListNode successor = null;

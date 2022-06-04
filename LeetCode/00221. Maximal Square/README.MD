@@ -1,3 +1,8 @@
+# Matrix
+* Time Complexity: O(NM)
+* Space Complexity: O(NM)
+	* N as length of matrix
+	* M as length of matrix[0]
 ```
 class Solution {
     public int maximalSquare(char[][] matrix) {

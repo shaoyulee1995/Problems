@@ -1,6 +1,7 @@
 # Recursion Map
 * Time Complexity: O(N^2)
 * Space Complexity: O(N^2)
+	* N as length of expression
 ```
 class Solution {
     HashMap<String, List<Integer>> map = new HashMap();

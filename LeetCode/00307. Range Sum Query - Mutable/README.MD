@@ -1,5 +1,6 @@
 # Segment Tree
 * Space Complexity: O(N)
+	* N as length of nums
 * buildTree
 	* Time Complexity: O(N)
 * update
