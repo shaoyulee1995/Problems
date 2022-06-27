@@ -1,6 +1,8 @@
 # String
-* Time Complexity: O(N)
+* Time Complexity: O(Ww)
 * Space Complexity: O(1)
+	* W as length of words
+	* w as the maximum length word
 ```
 class Solution {
     public int countPrefixes(String[] words, String s) {
