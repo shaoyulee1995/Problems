@@ -1,7 +1,6 @@
 # Arrays
 * Time Complexity: O(NlogN)
 * Space Complexity: O(1)
-
 ```
 class Solution {
     public int minPairSum(int[] nums) {
