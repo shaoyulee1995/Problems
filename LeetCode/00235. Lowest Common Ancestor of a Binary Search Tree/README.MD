@@ -1,3 +1,4 @@
+```
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -7,7 +8,11 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-
+```
+# Recursion
+* Time Complexity: O(log(N))
+* Space Complexity: O(1)
+```
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root.val > p.val && root.val > q.val){
@@ -19,7 +24,11 @@ class Solution {
         return root;
     }
 }
-
+```
+# Iteration
+* Time Complexity: O(log(N))
+* Space Complexity: O(1)
+```
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         while(true){
@@ -33,3 +42,4 @@ class Solution {
         }
     }
 }
+```
