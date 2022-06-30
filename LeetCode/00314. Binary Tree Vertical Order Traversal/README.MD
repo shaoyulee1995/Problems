@@ -51,12 +51,66 @@ class Solution {
     }
 }
 ```
-# BFS
+# BFS without Pair
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 	* N as number of nodes in tree
 ```
 class Solution {
+    public List<List<Integer>> verticalOrder(TreeNode root) {
+        List<List<Integer>> list = new ArrayList();
+        if(root == null){
+            return list;
+        }
+        HashMap<Integer, ArrayList<Integer>> map = new HashMap();
+        Queue<Integer> cols = new LinkedList();
+        Queue<TreeNode> queue = new LinkedList<>();
+        cols.add(0);
+        queue.add(root);
+        int min = 0, max = 0;
+        while(!queue.isEmpty()){
+            TreeNode node = queue.poll();
+            int col = cols.poll();
+            
+            if(!map.containsKey(col)){
+                map.put(col, new ArrayList());
+            }
+            map.get(col).add(node.val);
+            
+            if(node.left != null){
+                cols.add(col-1);
+                queue.add(node.left);
+                min = Math.min(min, col-1);
+            }
+            if(node.right != null){
+                cols.add(col+1);
+                queue.add(node.right);
+                max = Math.max(max, col+1);
+            }
+        }
+        for(int i = min; i <= max; i++){
+            list.add(map.get(i));
+        }
+        return list;
+    }
+}
+```
+
+
+# BFS with Pair
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as number of nodes in tree
+```
+class Solution {
+	class Pair{
+		TreeNode node;
+		int col;
+		public Pair(TreeNode node, int col){
+			this.col = col;
+			this.node = node;
+		}
+	}
     TreeMap<Integer, List<Integer>> map;
     public List<List<Integer>> verticalOrder(TreeNode root) {
         map = new TreeMap();
@@ -71,29 +125,21 @@ class Solution {
         if(root == null){
             return;
         }
-        class Pair{
-            TreeNode node;
-            int offset;
-            public Pair(TreeNode node, int offset){
-                this.offset = offset;
-                this.node = node;
-            }
-        }
         Queue<Pair> q = new LinkedList();
         q.offer(new Pair(root, 0));
         while(!q.isEmpty()){
             int size = q.size();
             for(int i = 0; i < size; i++){
                 Pair cur = q.poll();
-                if(!map.containsKey(cur.offset)){
-                    map.put(cur.offset, new LinkedList());
+                if(!map.containsKey(cur.col)){
+                    map.put(cur.col, new LinkedList());
                 }
-                map.get(cur.offset).add(cur.node.val);
+                map.get(cur.col).add(cur.node.val);
                 if(cur.node.left != null){
-                    q.offer(new Pair(cur.node.left, cur.offset-1));
+                    q.offer(new Pair(cur.node.left, cur.col-1));
                 }
                 if(cur.node.right != null){
-                    q.offer(new Pair(cur.node.right, cur.offset+1));
+                    q.offer(new Pair(cur.node.right, cur.col+1));
                 }
             }
         }
