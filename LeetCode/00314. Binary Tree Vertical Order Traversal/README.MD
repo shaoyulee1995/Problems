@@ -95,8 +95,6 @@ class Solution {
     }
 }
 ```
-
-
 # BFS with Pair
 * Time Complexity: O(N)
 * Space Complexity: O(N)
