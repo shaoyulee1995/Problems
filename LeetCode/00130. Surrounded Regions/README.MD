@@ -45,6 +45,8 @@ class Solution {
 # Union Find
 * Time Complexity: O(MN)
 * Space Complexity: O(MN)
+	* N as rows
+	* M as cols
 ```
 class Solution {
     class UnionFind{
