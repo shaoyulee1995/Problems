@@ -1,3 +1,8 @@
+# Sweep Line
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as length of s
+```
 class Solution {
     public List<Integer> partitionLabels(String s) {
         int[] cnt = new int[26];
@@ -17,3 +22,4 @@ class Solution {
         return list;
     }
 }
+```

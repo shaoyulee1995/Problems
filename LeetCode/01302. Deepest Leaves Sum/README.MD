@@ -46,29 +46,25 @@ class Solution {
 * Space Complexity: O(N)
 ```
 class Solution {
-    int deepest = 0, ans = 0;
+    int maxDepth = 0,
+        sum = 0;
     public int deepestLeavesSum(TreeNode root) {
-        if(root == null){
-            return 0;
-        }
         deepestLeavesSum(root, 0);
-        return ans;
+        return sum;
     }
-    public void deepestLeavesSum(TreeNode root, int level) {
+    public void deepestLeavesSum(TreeNode root, int depth){
         if(root == null){
             return;
         }
-        if(root.left == null && root.right == null){
-            if(deepest == level){
-                ans += root.val;
-            }else if(deepest < level){
-                deepest = level;
-                ans = 0;
-                ans += root.val;
-            }
+        if(maxDepth < depth){
+            maxDepth = depth;
+            sum = root.val;
+        }else if(maxDepth == depth){
+            sum += root.val;
         }
-        deepestLeavesSum(root.left, level + 1);
-        deepestLeavesSum(root.right, level + 1);
+        deepestLeavesSum(root.right, depth+1);
+        deepestLeavesSum(root.left, depth+1);
+        
     }
 }
 ```

@@ -12,8 +12,8 @@ class Solution {
               cols = new int[m];
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
-                rows[i] = Math.max(grid[i][j], rows[i]);
-                cols[j] = Math.max(grid[i][j], cols[j]);
+                rows[i] = Math.max(rows[i], grid[i][j]);
+                cols[j] = Math.max(cols[j], grid[i][j]);
             }
         }
         int res = 0;
