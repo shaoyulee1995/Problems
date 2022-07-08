@@ -21,30 +21,29 @@
 ```
 class Solution {
     public List<TreeNode> allPossibleFBT(int n) {
-        List<TreeNode> res = new ArrayList();
-        if(n%2 == 0){
-            return res;
+        if(n%2 == 0 || n <= 0){
+            return new ArrayList();
         }
+        List<TreeNode> res = new ArrayList();
         if(n == 1){
             res.add(new TreeNode(0));
             return res;
         }
-        for(int l = 1; l <= n-1; l+=2){
-            int r = n-1-l;
-            List<TreeNode> leftTree = allPossibleFBT(l),
-                           rightTree = allPossibleFBT(r);
-            for(TreeNode left: leftTree){
-                for(TreeNode right: rightTree){
+        for(int i = 1; i < n; i+=2){
+            List<TreeNode> left = allPossibleFBT(i),
+                           right = allPossibleFBT(n-1-i);
+            for(TreeNode l: left){
+                for(TreeNode r: right){
                     TreeNode node = new TreeNode(0);
-                    node.left = left;
-                    node.right = right;
+                    node.left = l;
+                    node.right = r;
                     res.add(node);
                 }
             }
         }
         return res;
     }
-} 
+}
 ```
 # Memorization HashMap
 * Time Complexity: O(2<sup>N</sup>)
