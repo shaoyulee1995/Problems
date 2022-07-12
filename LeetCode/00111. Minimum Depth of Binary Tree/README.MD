@@ -21,21 +21,20 @@
 ```
 class Solution {
     public int minDepth(TreeNode root) {
+        Queue<TreeNode> q = new LinkedList();
         if(root == null){
             return 0;
         }
-        Queue<TreeNode> q = new LinkedList();
         q.offer(root);
-        int min = Integer.MAX_VALUE;
-        int level = 0;
+        int height = 1;
         while(!q.isEmpty()){
             int size = q.size();
-            level++;
             for(int i = 0; i < size; i++){
                 TreeNode node = q.poll();
                 if(node.left == null && node.right == null){
-                    min = Math.min(level, min);
+                    return height;
                 }
+                
                 if(node.left != null){
                     q.offer(node.left);
                 }
@@ -43,8 +42,9 @@ class Solution {
                     q.offer(node.right);
                 }
             }
+            height++;
         }
-        return min;
+        return 0;
     }
 }
 ```

@@ -1,14 +1,10 @@
 # Stack Array
+* Time Complexity:
+	* push: O(1)
+	* pop: O(N)
+	* peek: O(N)
+	* empty: O(1)
 * Space Complexity: O(N)
-
-* push
-	* Time Complexity: O(1)
-* pop
-	* Time Complexity: O(N)
-* peek
-	* Time Complexity: O(N)
-* empty
-	* Time Complexity: O(1)
 ```
 class MyQueue {
 
