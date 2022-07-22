@@ -9,33 +9,37 @@ class Solution {
         int sum = 0,
             max = 0;
         for(int num: nums){
-            max = Math.max(num, max);
             sum += num;
+            max = Math.max(num, max);
         }
-        int low = max,
-            high = sum;
-        while(low < high){
-            int mid = low + (high - low)/2;
-            int pieces = split(nums, mid);
-            if(pieces > m){
-                low = mid + 1;
+        
+        int i = max, j = sum;
+        while(i < j){
+            int k = i + (j-i)/2;
+            int pieces = split(nums, m, k);
+            if(pieces == -1){
+                i = k + 1;
             }else{
-                high = mid;
+                j = k;
             }
         }
-        return low;
+        return i;
     }
-    private int split(int[] nums, int largestVal){
-        int tempSum = 0,
-            curPiece = 1;
+    
+    public int split(int[] nums, int m, int k){
+        int curSum = 0, 
+            piece = 1;
         for(int num: nums){
-            if(tempSum + num > largestVal){
-                tempSum = 0;
-                curPiece++;
+            if(curSum + num > k){
+                piece++;
+                curSum = 0;
             }
-            tempSum += num;
+            if(piece > m){
+                return -1;
+            }
+            curSum += num;
         }
-        return curPiece;
+        return piece;
     }
 }
 ```

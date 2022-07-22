@@ -4,28 +4,24 @@
 	* N as length of nums
 ```
 class Solution {
-    List<List<Integer>> list = new ArrayList();
-    LinkedList<Integer> path = new LinkedList();
+    List<List<Integer>> res;
+    LinkedList<Integer> path;
     public List<List<Integer>> subsetsWithDup(int[] nums) {
+        res = new ArrayList();
+        path = new LinkedList();
         Arrays.sort(nums);
-        boolean[] visited = new boolean[nums.length];
-        subsetsWithDup(nums, 0, visited);
-        return list;
+        dfs(nums, 0);
+        return res;
     }
-    public void subsetsWithDup(int[] nums, int index, boolean[] visited){
-        list.add(new ArrayList(path));
+    public void dfs(int[] nums, int index){
+        res.add(new ArrayList(path));
         for(int i = index; i < nums.length; i++){
-            if(visited[i]){
+            if(i > index && nums[i] == nums[i-1]){
                 continue;
             }
-            if(i > 0 && nums[i] == nums[i-1] && !visited[i-1]){
-                continue;
-            }
-            visited[i] = true;
             path.add(nums[i]);
-            subsetsWithDup(nums, i + 1, visited);
+            dfs(nums, i+1);
             path.removeLast();
-            visited[i] = false;
         }
     }
 }

@@ -1,30 +1,32 @@
 # Backtrack
 * Time Complexity: O(N*N!)
-* Space Complexity: O(N*N!)
+* Space Complexity: O(N!)
 ```
 class Solution {
-    List<List<Integer>> list = new ArrayList();
-    LinkedList<Integer> path = new LinkedList();
+    List<List<Integer>> res;
+    LinkedList<Integer> path;
     public List<List<Integer>> permute(int[] nums) {
-        boolean[] visited = new boolean[nums.length];
-        permute(nums, visited);
-        return list;
+        res = new ArrayList();
+        path = new LinkedList();
+        HashSet<Integer> set = new HashSet();
+        dfs(nums, set);
+        return res;
     }
-    public void permute(int[] nums, boolean[] visited){
+    public void dfs(int[] nums, HashSet<Integer> set){
         if(path.size() == nums.length){
-            list.add(new ArrayList(path));
+            res.add(new ArrayList(path));
             return;
         }
         for(int i = 0; i < nums.length; i++){
-            if(visited[i]){
+            if(set.contains(nums[i])){
                 continue;
             }
-            visited[i] = true;
             path.add(nums[i]);
-            permute(nums, visited);
-            visited[i] = false;
+            set.add(nums[i]);
+            dfs(nums, set);
             path.removeLast();
+            set.remove(nums[i]);
         }
-    }
+    }    
 }
 ```

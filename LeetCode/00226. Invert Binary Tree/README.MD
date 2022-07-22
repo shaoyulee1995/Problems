@@ -18,6 +18,7 @@
 # Recursion
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as number of nodes in tree
 ```
 class Solution {
     public TreeNode invertTree(TreeNode root) {

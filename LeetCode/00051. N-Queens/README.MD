@@ -52,53 +52,59 @@ public:
 ## Java
 ```
 class Solution {
-    List<List<String>> paths = new ArrayList();
+    List<List<String>> res;
     public List<List<String>> solveNQueens(int n) {
-        char[][] board = new char[n][n];
+        res = new ArrayList();
+        char[][] grid = new char[n][n];
         for(int i = 0; i < n; i++){
-            Arrays.fill(board[i], '.');
+            Arrays.fill(grid[i], '.');
         }
-        dfs(board, 0);
-        return paths;
+        dfs(grid, 0);
+        return res;
     }
-    public void dfs(char[][] board, int row){
-        if(row == board.length){
-            paths.add(build(board));
+    public void dfs(char[][] grid, int row){
+        if(row == grid.length){
+            res.add(toAnswer(grid));
             return;
         }
-        for(int col = 0; col < board.length; col++){
-            if(!isValid(board, row, col)){
-                continue;
+        for(int c = 0; c < grid.length; c++){
+            if(valid(grid, row, c)){
+                grid[row][c] = 'Q';
+                dfs(grid, row+1);
+                grid[row][c] = '.';
             }
-            board[row][col] = 'Q';
-            dfs(board, row + 1);
-            board[row][col] = '.';
         }
+        
     }
-    public boolean isValid(char[][] board, int row, int col){
-        for(int i = 0; i < row; i++){
-            if(board[i][col] == 'Q'){
-                return false;
-            }
-        }    
-        for(int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--){
-            if(board[i][j] == 'Q'){
+    public boolean valid(char[][] grid, int row, int col){
+        for(int i = 0; i < grid.length; i++){
+            if(grid[i][col] == 'Q'){
                 return false;
             }
         }
-        for(int i = row - 1, j = col + 1; i >= 0 && j < board.length; i--, j++){
-            if(board[i][j] == 'Q'){
+        
+        for(int i = row - 1, j = col - 1; i >=0 && j >= 0; i--, j--){
+            if(grid[i][j] == 'Q'){
+                return false;
+            }
+        }
+        
+        for(int i = row - 1, j = col + 1; i >= 0 && j < grid[0].length; i--, j++){
+            if(grid[i][j] == 'Q'){
                 return false;
             }
         }
         return true;
+        
+        
     }
-    public List<String> build(char[][] board){
-        List<String> path = new ArrayList();
-        for(int i = 0; i < board.length; i++){
-            path.add(new String(board[i]));
+    
+    public List<String> toAnswer(char[][] grid){
+        List<String> res = new ArrayList();
+        for(int i = 0; i < grid.length; i++){
+            res.add(new String(grid[i]));
         }
-        return path;
+        return res;
     }
 }
 ```

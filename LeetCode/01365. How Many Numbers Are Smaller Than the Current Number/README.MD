@@ -38,3 +38,31 @@ class Solution {
     }
 }
 ```
+# Count Array
+* Time Complexity: O(Max(N, m))
+* Space Complexity: O(m)
+	* N as length of nums
+	* m as max
+```
+class Solution {
+    public int[] smallerNumbersThanCurrent(int[] nums) {
+        int max = 0;
+        for(int num: nums){
+            max = Math.max(num, max);
+        }
+        int[] res = new int[max+2];
+        for(int i = 0; i < nums.length; i++){
+            res[nums[i] + 1]++;
+        }
+        
+        for(int i = 0; i + 1 < res.length; i++){
+            res[i+1] += res[i];
+        }
+        
+        for(int i = 0; i < nums.length; i++){
+            nums[i] = res[nums[i]];
+        }
+        return nums;
+    }
+}
+```

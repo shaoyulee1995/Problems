@@ -4,16 +4,19 @@
 	* N as length of nums
 ```
 class Solution {
-    List<List<Integer>> list = new ArrayList();
-    LinkedList<Integer> path = new LinkedList();
+    List<List<Integer>> res;
+    LinkedList<Integer> path;
     public List<List<Integer>> permuteUnique(int[] nums) {
+        Arrays.sort(nums);
+        res = new ArrayList();
+        path = new LinkedList();
         boolean[] visited = new boolean[nums.length];
-        permuteUnique(nums, visited);
-        return list;
+        dfs(nums, visited);
+        return res;
     }
-    public void permuteUnique(int[] nums, boolean[] visited){
-        if(nums.length == path.size()){
-            list.add(new ArrayList(path));
+    public void dfs(int[] nums, boolean[] visited){
+        if(path.size() == nums.length){
+            res.add(new ArrayList(path));
             return;
         }
         for(int i = 0; i < nums.length; i++){
@@ -23,11 +26,11 @@ class Solution {
             if(i > 0 && nums[i] == nums[i-1] && !visited[i-1]){
                 continue;
             }
-            visited[i] = true;
             path.add(nums[i]);
-            permuteUnique(nums, visited);
-            path.removeLast();
+            visited[i] = true;
+            dfs(nums, visited);
             visited[i] = false;
+            path.removeLast();
         }
     }
 }

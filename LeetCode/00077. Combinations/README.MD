@@ -3,23 +3,23 @@
 * Space Complexity: O(k)
 ```
 class Solution {
-    List<List<Integer>> list;
+    List<List<Integer>> res;
     LinkedList<Integer> path;
     public List<List<Integer>> combine(int n, int k) {
-        list = new LinkedList();
+        res = new ArrayList();
         path = new LinkedList();
-        combine(n, k, 1);
-        return list;
+        dfs(n, k, 1);
+        return res;
     }
-    public void combine(int n, int k, int index){
+    public void dfs(int n, int k, int num){
         if(path.size() == k){
-            list.add(new ArrayList(path));
-            return;
-        }
-        for (int i = index; i <= n - (k - path.size()) + 1; i++){
-            path.add(i);
-            combine(n, k, i + 1);
-            path.removeLast();
+            res.add(new ArrayList(path));
+        }else{
+            for(int val = num; val <= n - (k - path.size())+1; val++){
+                path.add(val);
+                dfs(n, k, val+1);
+                path.removeLast();
+            }
         }
     }
 }
