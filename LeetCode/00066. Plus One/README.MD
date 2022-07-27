@@ -1,14 +1,20 @@
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as length of digits
+```
 class Solution {
     public int[] plusOne(int[] digits) {
         for(int i = digits.length - 1; i >= 0; i--){
             if(digits[i] < 9){
-                digits[i]++; 
+                digits[i] += 1;
                 return digits;
             }
             digits[i] = 0;
         }
-        int[] moreDigit = new int[digits.length + 1];
-        moreDigit[0] = 1;
-        return moreDigit;
+        int[] res = new int[digits.length + 1];
+        res[0] = 1;
+        return res;
     }
 }
+```

@@ -6,24 +6,18 @@
 class Solution {
     public int minDeletions(String s) {
         int[] cnt = new int[26];
+        HashSet<Integer> set = new HashSet();
         for(char c: s.toCharArray()){
             cnt[c-'a']++;
         }
-        HashSet<Integer> set = new HashSet();
-        int moves = 0;
+        int res = 0;
         for(int i = 0; i < 26; i++){
-            if(cnt[i] == 0){
-                continue;
-            }
-            while(set.contains(cnt[i])){
+            while(cnt[i] > 0 && !set.add(cnt[i])){
                 cnt[i]--;
-                moves++;
-            }
-            if(cnt[i] > 0){
-                set.add(cnt[i]);
+                res++;
             }
         }
-        return moves;
+        return res;
     }
 }
 ```

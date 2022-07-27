@@ -1,6 +1,7 @@
 # Monotonic Stack
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as length of nums2
 ```
 class Solution {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {

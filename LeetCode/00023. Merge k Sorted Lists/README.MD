@@ -41,6 +41,11 @@ class Solution {
     }
 }
 ```
+# Divide and Conquer
+* Time Complexity: O(Nlog(K))
+* Space Complexity: O(K)
+	* K as length of lists
+	* N as length of nodes in lists
 ```
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
