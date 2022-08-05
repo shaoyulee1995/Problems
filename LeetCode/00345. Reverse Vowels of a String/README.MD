@@ -5,33 +5,75 @@
 ```
 class Solution {
     public String reverseVowels(String s) {
-        char[] c = s.toCharArray();
-        int i = 0, j = s.length() - 1;
+        char[] words = s.toCharArray();
+        int i = 0,
+            j = s.length() - 1;
         while(i < j){
-            while(i < j && !isVowel(c[i])){
+            while(i < j && !isVowel(words[i])){
                 i++;
             }
-            while(i < j && !isVowel(c[j])){
+            while(i < j && !isVowel(words[j])){
                 j--;
             }
             if(i >= j){
                 break;
             }
-            if(isVowel(c[i]) && isVowel(c[j])){
-                swap(c, i, j);
-                i++;j--;
+            if(isVowel(words[i]) && isVowel(words[j])){
+                swap(words, i++, j--);
             }
+            
         }
-        return new String(c);
+        return new String(words);
     }
-    private void swap(char[] c, int i, int j){
-        char temp = c[i];
-        c[i] = c[j];
-        c[j] = temp;
+    public void swap(char[] words, int i, int j){
+        char temp = words[i];
+        words[i] = words[j];
+        words[j] = temp;
     }
-    private boolean isVowel(char c){
+    public boolean isVowel(char c){
         return c =='a' || c =='e' || c =='i' || c =='o' || c =='u' || 
             c =='A' || c =='E' || c =='I' || c =='O' || c =='U';
+    }
+}
+```
+# 2 Pointers HashSet
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as length of s
+```
+class Solution {
+    public String reverseVowels(String s) {
+        HashSet<Character> set = new HashSet<>(Arrays.asList('a','e','i','o','u','A','I','O','U','E'));
+        int i = 0,
+            j = s.length()-1,
+            n = s.length();
+        StringBuilder sb = new StringBuilder(s);
+        while(i < j && i < n && j >= 0){
+            char a = s.charAt(i),
+                 b = s.charAt(j);
+            while(!set.contains(a)){
+                i++;
+                if(i == n){
+                    break;
+                }
+                a = s.charAt(i);
+            }
+            while(!set.contains(b)){
+                j--;
+                if(j < 0){
+                    break;
+                }
+                b = s.charAt(j);
+            }
+            if(set.contains(a) && set.contains(b)){
+                sb.setCharAt(i, b);
+                sb.setCharAt(j, a);
+                i++;
+                j--; 
+            }
+            
+        }
+        return sb.toString();
     }
 }
 ```

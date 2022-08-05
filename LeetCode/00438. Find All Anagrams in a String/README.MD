@@ -3,7 +3,6 @@
 * Space Complexity: O(P)
 	* S as length of s
 	* P as length of p
-## Java
 ```
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
@@ -47,6 +46,45 @@ class Solution {
             }
         }
         return list;
+    }
+}
+```
+# Counting Array
+* Time Complexity: O(S)
+* Space Complexity: O(P)
+	* S as length of s
+	* P as length of p
+```
+class Solution {
+    public List<Integer> findAnagrams(String s, String p) {
+        int[] cntS = new int[26],
+              cntP = new int[26];
+        for(char pp: p.toCharArray()){
+            cntP[pp-'a']++;
+        }
+        List<Integer> res = new ArrayList();
+        for(int i = 0; i < s.length(); i++){
+            char ss = s.charAt(i);
+            cntS[ss-'a']++;
+            
+            if(i-p.length() >= 0){
+                char restore = s.charAt(i-p.length());
+                cntS[restore-'a']--;
+            }
+            if(i - p.length() + 1 >= 0){
+                boolean same = true;
+                for(int j = 0; j < 26; j++){
+                    if(cntP[j] != cntS[j]){
+                        same = false;
+                        break;
+                    }
+                }
+                if(same){
+                    res.add(i - p.length() + 1);
+                }
+            }
+        }
+        return res;
     }
 }
 ```

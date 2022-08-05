@@ -41,18 +41,18 @@ class Solution {
             index = nums.length - k;
         while(start < end){
             int pivot = partition(nums, start, end);
-            if(pivot < index){
+            if(pivot == index){
+                return nums[pivot];
+            }else if(pivot < index){
                 start = pivot + 1;
             }else if(pivot > index){
                 end = pivot - 1;
-            }else{
-                return nums[pivot];
             }
         }
         return nums[start];
     }
     public int partition(int[] nums, int start, int end){
-        int pivot = start, temp;
+        int pivot = start;
         while(start <= end){
             while(start <= end && nums[start] <= nums[pivot]){
                 start++;
@@ -68,7 +68,7 @@ class Solution {
         swap(nums, pivot, end);
         return end;
     }
-    
+   
     public void swap(int[] nums, int i, int j){
         int temp = nums[i];
         nums[i] = nums[j];

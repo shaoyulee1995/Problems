@@ -14,7 +14,7 @@ class Solution {
         if(b < c){
             return generate(a, c, b, aa, cc, bb);
         }
-        if(b == 0){
+        if(b == 0){ 
             return aa.repeat(Math.min(2, a));
         }
         int useA = Math.min(2, a),

@@ -48,19 +48,17 @@ class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int max = 0;
         for(int num: nums){
-            max = Math.max(num, max);
+            max = Math.max(max, num);
         }
-        int[] res = new int[max+2];
+        int[] cnt = new int[max+2];
         for(int i = 0; i < nums.length; i++){
-            res[nums[i] + 1]++;
+            cnt[nums[i] + 1]++;
         }
-        
-        for(int i = 0; i + 1 < res.length; i++){
-            res[i+1] += res[i];
+        for(int i = 1; i + 1< cnt.length; i++){
+            cnt[i+1] += cnt[i];
         }
-        
         for(int i = 0; i < nums.length; i++){
-            nums[i] = res[nums[i]];
+            nums[i] = cnt[nums[i]];
         }
         return nums;
     }

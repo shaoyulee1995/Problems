@@ -22,17 +22,27 @@ class Solution {
 ```
 class Solution {
     public double myPow(double x, int n) {
-        if(x == 0 || x == 1){
-            return x;
+        if(n == 0 || x == 1){
+            return 1;
         }
-        return (n < 0)? 1/pow(x, -n): pow(x, n);
+        if(n < 0){
+            return 1/pow(x, n);
+        }
+        return pow(x, n);
     }
+    
     public double pow(double x, int n){
         if(n == 0){
             return 1;
         }
+        if(n == 1){
+            return x;
+        }
         double y = pow(x, n/2);
-        return (n % 2 == 0)? y*y: y*y*x;
+        if(n%2 == 0){
+            return y*y;
+        }
+        return y*y*x;
     }
 }
 ```

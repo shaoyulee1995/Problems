@@ -28,18 +28,19 @@ class Solution {
 class Solution {
     public int countNegatives(int[][] grid) {
         int res = 0;
-        for(int i = 0; i < grid.length; i++){
-            int left = 0,
-                right = grid[0].length;
-            while(left < right){
-                int mid = left + (right - left)/2;
-                if(grid[i][mid] >= 0){
-                    left = mid + 1;
+        for(int[] row: grid){
+            int n = row.length,
+                i = 0,
+                j = n;
+            while(i < j){
+                int mid = i + (j-i)/2;
+                if(row[mid] >= 0){
+                    i = mid + 1;
                 }else{
-                    right = mid;
+                    j = mid;
                 }
             }
-            res += grid[i].length - left;
+            res += (n-i);
         }
         return res;
     }
