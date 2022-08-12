@@ -15,12 +15,14 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         while(!pq.isEmpty()){
             Map.Entry e = pq.poll();
+            char key = (char)e.getKey();
             int cnt = (int)e.getValue();
             while(cnt-- > 0){
-                sb.append(e.getKey());
+                sb.append(key);
             }
         }
         return sb.toString();
     }
+}  }
 }
 ```

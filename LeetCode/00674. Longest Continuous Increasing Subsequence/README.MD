@@ -1,6 +1,7 @@
 # Array
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as length of nums
 ```
 class Solution {
     public int findLengthOfLCIS(int[] nums) {
@@ -13,6 +14,27 @@ class Solution {
             }
             left = right;
             right++;
+        }
+        return res;
+    }
+}
+```
+# 2 Pointers
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+	* N as length of nums
+```
+class Solution {
+    public int findLengthOfLCIS(int[] nums) {
+        int cur_right = 0, 
+            res = 0;
+        for(int i = 0; i < nums.length; i++){
+            if(i == 0 || nums[i-1] >= nums[i]){
+                cur_right = 1;
+            }else{
+                cur_right++;
+            }
+            res = Math.max(cur_right, res);
         }
         return res;
     }
