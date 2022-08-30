@@ -5,12 +5,13 @@
 ```
 class Solution {
     public int countAsterisks(String s) {
-        int res = 0, line = 0;
-        for(int i = 0; i < s.length(); i++){
-            char c = s.charAt(i);
+        int bar = 0,
+            res = 0;
+        for(char c: s.toCharArray()){
             if(c == '|'){
-                line++;
-            }else if(line%2 == 0 && c == '*'){
+                bar++;
+            }
+            if(bar % 2 == 0 && c == '*'){
                 res++;
             }
         }

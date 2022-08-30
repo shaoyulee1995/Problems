@@ -1,7 +1,7 @@
 # Array
 * Time Complexity: O(NlogN)
 * Space Complexity: O(N)
-	* N as length of items1 + items2
+	* N as length of Max(items1, items2)
 ```
 class Solution {
     public List<List<Integer>> mergeSimilarItems(int[][] items1, int[][] items2) {
