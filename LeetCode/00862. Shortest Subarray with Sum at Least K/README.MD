@@ -10,7 +10,7 @@ class Solution {
             sum[i] = sum[i-1] + nums[i-1];
         }
         ArrayDeque<Integer> list = new ArrayDeque();
-        int res = nums.length + 1;
+        int res = Integer.MAX_VALUE;
         for(int i = 0; i < sum.length; i++){
             while(!list.isEmpty() && sum[i] - sum[list.peekFirst()] >= k){
                 res = Math.min(res, i - list.pollFirst());
