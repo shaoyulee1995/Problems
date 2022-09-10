@@ -5,29 +5,31 @@
 ```
 class Solution {
     public int longestSubarray(int[] nums, int limit) {
-        ArrayDeque<Integer> min = new ArrayDeque(),
-                            max = new ArrayDeque();
-        int i = 0, j = 0;
-        for(; j < nums.length; j++){
-            while(!max.isEmpty() && nums[j] > max.peekLast()){
-                max.pollLast();
+        ArrayDeque<Integer> maxD = new ArrayDeque(),
+                            minD = new ArrayDeque();
+        int i = 0,
+            res = 0;
+        for(int j = 0; j < nums.length; j++){
+            while(!maxD.isEmpty() && nums[j] > maxD.peekLast()){
+                maxD.pollLast();
             }
-            while(!min.isEmpty() && nums[j] < min.peekLast()){
-                min.pollLast();
+            while(!minD.isEmpty() && nums[j] < minD.peekLast()){
+                minD.pollLast();
             }
-            max.offerLast(nums[j]);
-            min.offerLast(nums[j]);
-            if(max.peekFirst() - min.peekFirst() > limit){
-                if(max.peekFirst() == nums[i]){
-                    max.pollFirst();
+            maxD.offerLast(nums[j]);
+            minD.offerLast(nums[j]);
+            if(maxD.peekFirst() - minD.peekFirst() > limit){
+                if(minD.peekFirst() == nums[i]){
+                    minD.pollFirst();
                 }
-                if(min.peekFirst() == nums[i]){
-                    min.pollFirst();
+                if(maxD.peekFirst() == nums[i]){
+                    maxD.pollFirst();
                 }
                 i++;
             }
+            res = Math.max(res, j-i+1);
         }
-        return j - i;
+        return res;
     }
 }
 ```

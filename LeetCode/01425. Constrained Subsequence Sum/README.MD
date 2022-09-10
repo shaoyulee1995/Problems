@@ -5,7 +5,7 @@
 ```
 class Solution {
     public int constrainedSubsetSum(int[] nums, int k) {
-        Deque<Integer> deque = new ArrayDeque();
+        ArrayDeque<Integer> deque = new ArrayDeque();
         int[] sum = new int[nums.length];
         int res = nums[0];
         for(int i = 0; i < nums.length; i++){
@@ -14,15 +14,14 @@ class Solution {
                 sum[i] += sum[deque.peekFirst()];
             }
             res = Math.max(res, sum[i]);
-            
-            if(!deque.isEmpty() && deque.peekFirst() < (i-k+1)){
+            if(!deque.isEmpty() && i-deque.peekFirst() >= k){
                 deque.pollFirst();
             }
-            while(!deque.isEmpty() && sum[deque.peekLast()] <= sum[i]){
+            while(!deque.isEmpty() && sum[i] > sum[deque.peekLast()]){
                 deque.pollLast();
             }
             if(sum[i] > 0){
-                deque.offer(i);
+                deque.offerLast(i);
             }
         }
         return res;
