@@ -1,4 +1,5 @@
-# Max
+# SQL
+## Max
 ```
 select max(salary) as SecondHighestSalary
 from Employee
@@ -7,7 +8,8 @@ where salary not in (
     from Employee
 )
 ```
-# Offset, limit
+# SQL
+## Offset, limit
 ```
 select(
     select distinct e.salary

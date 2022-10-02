@@ -1,3 +1,4 @@
+# SQL
 ```
 # Write your MySQL query statement below
 select t1.team_name as home_team, t2.team_name as away_team
