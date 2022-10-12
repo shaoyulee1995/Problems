@@ -29,14 +29,14 @@ class Solution {
 ```
 class Solution {
     public char findTheDifference(String s, String t) {
-        char c = 0;
-        for(char cs: s.toCharArray()){
-            c ^= cs;
+        char res = 0;
+        for(char c: s.toCharArray()){
+            res ^= c;
         }
-        for(char ct: t.toCharArray()){
-            c ^= ct;
+        for(char c: t.toCharArray()){
+            res ^= c;
         }
-        return c;
+        return res;
     }
 }
 ```

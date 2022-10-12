@@ -1,7 +1,6 @@
 # SQL
 ```
-# Write your MySQL query statement below
-select t1.team_name as home_team, t2.team_name as away_team
-from teams t1 cross join teams t2
-where t1.team_name != t2.team_name;
+select e1.name as Employee
+from Employee e1, Employee e2
+where e1.managerId = e2.id and e1.salary > e2.salary
 ```
