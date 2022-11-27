@@ -5,18 +5,22 @@
 ```
 class Solution {
     public boolean isIsomorphic(String s, String t) {
-        Integer[] c1 = new Integer[256],
-              c2 = new Integer[256];
-        for(int i = 0; i < s.length(); i++){
-            char w1 = s.charAt(i),
-                 w2 = t.charAt(i);
-            if(c1[w1] == null){
-                c1[w1]=i;
+        if(s.length() != t.length()){
+            return false;
+        }
+        Integer[] cntS = new Integer[256],
+                  cntT = new Integer[256];
+        int n = s.length();
+        for(int i = 0; i < n; i++){
+            char sChar = s.charAt(i),
+                 tChar = t.charAt(i);
+            if(cntT[tChar] == null){
+                cntT[tChar] = i;
             }
-            if(c2[w2] == null){
-                c2[w2]=i;
+            if(cntS[sChar] == null){
+                cntS[sChar] = i;
             }
-            if(c1[w1] != c2[w2]){
+            if(cntS[sChar] != cntT[tChar]){
                 return false;
             }
         }
