@@ -1,6 +1,6 @@
-	# Dynamic Programming
-	* Time Complexity: O(N)
-	* Space Complexity: O(N)
+# Dynamic Programming
+* Time Complexity: O(N)
+* Space Complexity: O(N)
 ```
 class Solution {
     public int climbStairs(int n) {
@@ -38,6 +38,30 @@ class Solution {
             dp[2] = sum;
         }
         return dp[n];
+    }
+}
+```
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+```
+class Solution {
+    public int climbStairs(int n) {
+        if(n == 1){
+            return 1;
+        }
+        if(n == 2){
+            return 2;
+        }
+        int cur = 0,
+            prev1 = 2,
+            prev2 = 1;
+        for(int i = 3; i <= n; i++){
+            cur = prev1+prev2;
+            prev2 = prev1;
+            prev1 = cur;
+        }
+        return cur;
     }
 }
 ```

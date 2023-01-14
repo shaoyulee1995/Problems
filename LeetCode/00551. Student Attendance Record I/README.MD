@@ -1,6 +1,7 @@
 # String
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as length of s
 ```
 class Solution {
     public boolean checkRecord(String s) {
@@ -13,10 +14,10 @@ class Solution {
             if(absent == 2){
                 return false;
             }
-            if(i != 0 && i != s.length() - 1){
+            if(c == 'L' && i != 0 && i != s.length() - 1){
                 char prev = s.charAt(i-1),
                      next = s.charAt(i+1);
-                if(c =='L' && prev =='L' && next =='L'){
+                if(prev == 'L' && next == 'L'){
                     return false;
                 }
             }

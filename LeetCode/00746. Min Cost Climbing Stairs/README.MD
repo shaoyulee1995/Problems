@@ -25,20 +25,20 @@ class Solution {
     }
 }
 ```
+# Array
 * Time Complexity: O(N)
-* Space Complexity: O(2)
+* Space Complexity: O(1)
 ```
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
-        int[] dp = new int[2];
-        dp[0] = cost[0];
-        dp[1] = cost[1];
+        int prev2 = cost[0],
+            prev1 = cost[1];
         for(int i = 2; i < cost.length; i++){
-            int val = Math.min(dp[0], dp[1]) + cost[i];
-            dp[0] = dp[1];
-            dp[1] = val;
+            int cur = cost[i] + Math.min(prev2, prev1);
+            prev2 = prev1;
+            prev1 = cur;
         }
-        return Math.min(dp[0], dp[1]);
+        return Math.min(prev2, prev1);
     }
 }
 ```

@@ -1,6 +1,6 @@
 # DFS
 * Time Complexity: O(NM)
-* Space Complexity: O(NM)
+* Space Complexity: O(1)
 	* N as length of grid
 	* M as length of grid[0]
 ```
@@ -44,39 +44,42 @@ class Solution {
 	* M as length of grid[0]
 ```
 class Solution {
-    public int numIslands(char[][] grid) {
-        int n = grid.length, 
-            m = grid[0].length,
-            res = 0;
-        Queue<int[]> q = new LinkedList();
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++){
-                if(grid[i][j] == '1'){
-                    res++;
-                    q.offer(new int[]{i, j});
-                    bfs(q, grid);
-                }
-            }
-        }
-        return res;
-    }
-    int[][] dirs = new int[][]{{-1,0}, {1,0},{0,1},{0,-1}};
-    public void bfs(Queue<int[]> q, char[][] grid){
-        while(!q.isEmpty()){
-            int[] cell = q.poll();
-            for(int[] dir: dirs){
-                int x = dir[0] + cell[0],
-                    y = dir[1] + cell[1];
-                if(x < 0 || x == grid.length || y < 0 || y == grid[0].length){
-                    continue;
-                }
-                if(grid[x][y] == '0'){
-                    continue;
-                }
-                q.offer(new int[]{x,y});
-                grid[x][y] = '0';
-            }
-        }
-    }
+    public int numIslands(char[][] grid) {
+        Queue<int[]> q = new LinkedList();
+        int res = 0,
+            n = grid.length,
+            m = grid[0].length;
+        int[][] dirs = new int[][]{{-1,0}, {1,0}, {0,1}, {0,-1}};
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(grid[i][j] == '0'){
+                    continue;
+                }
+                res++;
+                q.offer(new int[]{i, j});
+                while(!q.isEmpty()){
+                    int[] pos = q.poll();
+                    int x = pos[0],
+                        y = pos[1];
+                    for(int[] dir: dirs){
+                        int newX = dir[0] + x;
+                        int newY = dir[1] + y;
+                        if(newX < 0 || newX == n){
+                            continue;
+                        }
+                        if(newY < 0 || newY == m){
+                            continue;
+                        }
+                        if(grid[newX][newY] == '0'){
+                            continue;
+                        }
+                        grid[newX][newY] = '0';
+                        q.offer(new int[]{newX, newY});
+                    }
+                }
+            }
+        }
+        return res;
+    }
 }
 ```

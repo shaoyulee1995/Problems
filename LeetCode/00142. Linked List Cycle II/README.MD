@@ -14,6 +14,7 @@
 # LinkedList
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as number of ListNode
 ```
 public class Solution {
     public ListNode detectCycle(ListNode head) {
@@ -35,6 +36,25 @@ public class Solution {
             slow = slow.next;
         }
         return slow;
+    }
+}
+```
+# Set
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as number of ListNode
+```
+public class Solution {
+    public ListNode detectCycle(ListNode head) {
+        Set<ListNode> set = new HashSet();
+        while(head != null){
+            if(set.contains(head)){
+                return head;
+            }
+            set.add(head);
+            head = head.next;
+        }
+        return null;
     }
 }
 ```

@@ -1,7 +1,7 @@
 # String
-* Time Complexity: O(N)
+* Time Complexity: O(S)
 * Space Complexity: O(1)
-	* N as length of s 
+	* S as length of s 
 ```
 class Solution {
     public boolean isSubsequence(String s, String t) {

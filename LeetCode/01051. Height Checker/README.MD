@@ -1,6 +1,7 @@
 # Arrays
-* Time Complexity: O(NLog(N))
-* Space Complexity: O(N)
+* Time Complexity: O(HLog(H))
+* Space Complexity: O(H)
+	* H as length of heights
 ```
 class Solution {
     public int heightChecker(int[] heights) {
@@ -17,8 +18,9 @@ class Solution {
 }
 ```
 # Counting Sort
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+* Time Complexity: O(H)
+* Space Complexity: O(1)
+	* H as length of heights
 ```
 class Solution {
     public int heightChecker(int[] heights) {

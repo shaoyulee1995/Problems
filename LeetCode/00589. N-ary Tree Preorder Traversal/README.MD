@@ -21,18 +21,22 @@ class Node {
 # Recursion 
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as number of nodes
 ```
 class Solution {
-    List<Integer> list = new ArrayList();
     public List<Integer> preorder(Node root) {
+        List<Integer> res = new ArrayList();   
+        getPreOrderTraversal(res, root);
+        return res;
+    }
+    public void getPreOrderTraversal(List<Integer> res, Node root){
         if(root == null){
-            return new ArrayList();
+            return;
         }
-        list.add(root.val);
+        res.add(root.val);
         for(Node child: root.children){
-            preorder(child);
+            getPreOrderTraversal(res, child);
         }
-        return list;
     }
 }
 ```
@@ -40,6 +44,7 @@ class Solution {
 # Iterate
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as number of nodes
 ```
 class Solution {
     public List<Integer> preorder(Node root) {

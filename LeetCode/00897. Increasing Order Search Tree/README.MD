@@ -18,33 +18,36 @@
 # In Order Traversal
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as number of nodes in tree
 ```
 class Solution {
+    List<TreeNode> res;
     public TreeNode increasingBST(TreeNode root) {
-        List<Integer> values = new ArrayList();
-        TreeNode temp = root, newHead = new TreeNode(0), newRoot = newHead;
-        inorder(temp, values);
-        for(Integer num: values){
-            newHead.right = new TreeNode(num);
-            newHead = newHead.right;
+        res = new ArrayList();
+        TreeNode dummyHead = new TreeNode(),
+                 tempHead = dummyHead;
+        traverse(root);
+        for(TreeNode node: res){
+            tempHead.right = new TreeNode(node.val);
+            tempHead = tempHead.right;
         }
-        return newRoot.right;
+        
+        return dummyHead.right;
     }
-    
-    public void inorder(TreeNode root, List<Integer> list){
-        if(root==null){return;}
-        
-        inorder(root.left, list);
-        list.add(root.val);
-        inorder(root.right, list);
-        
+    public void traverse(TreeNode node){
+        if(node == null){
+            return;
+        }
+        traverse(node.left);
+        res.add(node);
+        traverse(node.right);
     }
 }
 ```
 # Tree
 * Time Complexity: O(N)
-* Space Complexity: O(H)
-
+* Space Complexity: O(1)
+	* N as number of nodes in tree
 ```	
 class Solution {
     public TreeNode increasingBST(TreeNode root) {

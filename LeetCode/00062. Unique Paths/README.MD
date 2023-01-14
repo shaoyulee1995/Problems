@@ -22,24 +22,26 @@ class Solution {
     }
 }
 ```
-# DFS [TLE]
-* Time Complexity: O(2^(M + N -1)-1)
-* Space Complexity: O(1)
+# DFS
+* Time Complexity: O(MN)
+* Space Complexity: O(MN)
 	* M as m
 	* N as n
 ```
 class Solution {
     public int uniquePaths(int m, int n) {
-        return dfs(1, 1, m, n);
+        int[][] mat = new int[m][n];
+        return dfs(m-1, n-1, mat);
     }
-    public int dfs(int i, int j, int m, int n){
-        if(i > m || j > n){
-            return 0;
-        }
-        if(i == m || j == n){
+    public int dfs(int x, int y, int[][] mat){
+        if(x == 0 || y == 0){
             return 1;
         }
-        return dfs(i+1, j, m, n) + dfs(i, j+1, m, n);
+        if(mat[x][y] > 0){
+            return mat[x][y];
+        }
+        mat[x][y] =  dfs(x-1, y, mat) + dfs(x, y-1, mat);
+        return mat[x][y];
     }
 }
 ```
