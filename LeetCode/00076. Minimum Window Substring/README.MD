@@ -8,41 +8,43 @@
 ```
 class Solution {
     public String minWindow(String s, String t) {
-        HashMap<Character, Integer> map = new HashMap();
+        Map<Character, Integer> map = new HashMap();
         for(char c: t.toCharArray()){
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        int left = 0, right = 0;
-        int ansFrom = 0, ansEnd = Integer.MAX_VALUE;
-        int tSize = map.size();
-        while(right < s.length()){
-            while(right < s.length() && tSize > 0){
-                char cur = s.charAt(right);
-                if(map.containsKey(cur)){
-                    map.put(cur, map.get(cur) - 1);
-                    if(map.get(cur) == 0){
+        int i = 0,
+            j = 0,
+            tSize = map.size(),
+            ansStart = 0,
+            ansEnd = Integer.MAX_VALUE;
+        while(j < s.length()){
+            while(j < s.length() && tSize > 0){
+                char c = s.charAt(j++);
+                if(map.containsKey(c)){
+                    map.put(c, map.get(c) - 1);
+                    if(map.get(c) == 0){
                         tSize--;
                     }
                 }
-                right++;
             }
-            
-            while(left < s.length() && tSize == 0){
-                if(ansEnd - ansFrom > right - left){
-                    ansEnd = right;
-                    ansFrom = left;
+            while(tSize == 0 && i < s.length()){
+                if(ansEnd - ansStart > j - i){
+                    ansEnd = j;
+                    ansStart = i;
                 }
-                char cur = s.charAt(left);
-                if(map.containsKey(cur)){
-                    map.put(cur, map.get(cur) + 1);
-                    if(map.get(cur) == 1){
+                char c = s.charAt(i++);
+                if(map.containsKey(c)){
+                    map.put(c, map.get(c) + 1);
+                    if(map.get(c) == 1){
                         tSize++;
                     }
                 }
-                left++;
             }
         }
-        return (ansEnd == Integer.MAX_VALUE)?"":s.substring(ansFrom, ansEnd);
+        if(ansEnd == Integer.MAX_VALUE){
+            return "";
+        }
+        return s.substring(ansStart, ansEnd);
     }
 }
 ```

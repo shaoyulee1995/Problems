@@ -8,19 +8,19 @@ class Solution {
         Stack<Integer> intStack = new Stack();
         Stack<StringBuilder> strStack = new Stack();
         StringBuilder sb = new StringBuilder();
-        int k = 0;
+        int num = 0;
         for(char c: s.toCharArray()){
             if(Character.isDigit(c)){
-                k = k*10 + c - '0';
+                num = num*10 + c - '0';
             }else if(c == '['){
-                intStack.push(k);
+                intStack.push(num);
                 strStack.push(sb);
-                k = 0;
+                num = 0;
                 sb = new StringBuilder();
             }else if(c == ']'){
                 StringBuilder temp = sb;
                 sb = strStack.pop();
-                for(k = intStack.pop(); k > 0; k--){
+                for(int i = intStack.pop(); i > 0; i--){
                     sb.append(temp);
                 }
             }else{
