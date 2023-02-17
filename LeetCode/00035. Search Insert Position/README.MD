@@ -1,5 +1,4 @@
-
-# Solution 1
+# Iteration
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 ```
@@ -17,9 +16,10 @@ class Solution {
 }
 ```
 
-# Solution 2
+# Binary Search
 * Time Complexity: O(log(N))
 * Space Complexity: O(1)
+	* N as length of nums
 ```
 class Solution {
     public int searchInsert(int[] nums, int target) {

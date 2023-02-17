@@ -1,22 +1,25 @@
 # Array
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as length of nums
 ```
 class Solution {
     public int[] sortedSquares(int[] nums) {
-        int left = 0,
-            n = nums.length,
-            right = n - 1,
-            index = n - 1;
-        int[] res = new int[n];
-        while(left <= right){
-            if(Math.abs(nums[right]) > Math.abs(nums[left])){
-                res[index--]=nums[right] * nums[right];
-                right--;
+        int i = 0,
+            j = nums.length -1,
+            k = nums.length - 1;
+        int[] res = new int[nums.length];
+        while(i <= j){
+            int x = Math.abs(nums[i]),
+                y = Math.abs(nums[j]);
+            if(x > y){
+                res[k] = x*x;
+                i++;
             }else{
-                res[index--]=nums[left]*nums[left];
-                left++;
+                res[k] = y*y;
+                j--;
             }
+            k--;
         }
         return res;
     }

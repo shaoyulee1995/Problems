@@ -5,14 +5,16 @@
 ```
 class Solution {
     public boolean isPerfectSquare(int num) {
-        int i = 1, j = num;
+        int i = 1,
+            j = num;
         while(i <= j){
-            int k = i + (j-i)/2;
-            int val = num/k, remain = num%k;
-            if(val == k && remain == 0){
+            int k = i + (j-i)/2,
+                val = num/k,
+                remain = num%k;
+            if(k == val && remain == 0){
                 return true;
             }
-            if(val < k){
+            if(k > val){
                 j = k-1;
             }else{
                 i = k+1;

@@ -20,15 +20,13 @@
 * Space Complexity: O(1)
 ```
 class Solution {
-    int depth = 0;
     public int maxDepth(TreeNode root) {
         if(root == null){
             return 0;
         }
         int left = maxDepth(root.left),
             right = maxDepth(root.right);
-        depth = Math.max(left, right) + 1;
-        return depth;
+        return Math.max(left, right) + 1;
     }
 }
 ```

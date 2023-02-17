@@ -1,13 +1,16 @@
 # Binary Search
 * Time Complexity: O(log(N))
 * Space Complexity: O(1)
+	* N as num
 
 ## Left Bound
 * Time Complexity: O(log(N))
 * Space Complexity: O(1)
+	* N as num
 ## Right Bound
 * Time Complexity: O(log(N))
 * Space Complexity: O(1)
+	* N as num
 
 ### Java
 ```

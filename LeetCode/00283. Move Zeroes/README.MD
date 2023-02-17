@@ -21,20 +21,20 @@ class Solution {
 ## Solution 2
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as nums
 ```
 class Solution {
     public void moveZeroes(int[] nums) {
-        int fast = 0, 
-            slow = 0;
-        while(fast < nums.length){
-            if(nums[fast] != 0){
-                nums[slow] = nums[fast];
-                slow++;
+        int i = 0,
+            j = 0;
+        while(j < nums.length){
+            if(nums[j] != 0){
+                nums[i++] = nums[j];
             }
-            fast++;
+            j++;
         }
-        for(; slow < nums.length; slow++){
-            nums[slow] = 0;
+        while(i < nums.length){
+            nums[i++] = 0;
         }
     }
 }

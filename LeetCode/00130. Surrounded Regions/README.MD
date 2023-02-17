@@ -4,18 +4,17 @@
 ```
 class Solution {
     public void solve(char[][] board) {
-        int m = board.length,
-            n = board[0].length;
-        
-        for(int i = 0; i < m; i++){
-            for(int j = 0; j < n; j++){
-                if(i == 0 || j == 0 || i == m-1 || j == n-1){
-                    solve(board, i, j);
+        int n = board.length,
+            m = board[0].length;
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(i == 0 || j == 0 || i == n-1 || j == m-1){
+                    dfs(board, i, j);
                 }
             }
         }
-        for(int i = 0; i < m; i++){
-            for(int j = 0; j < n; j++){
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
                 if(board[i][j] == '*'){
                     board[i][j] = 'O';
                 }else{
@@ -24,21 +23,22 @@ class Solution {
             }
         }
     }
-    public void solve(char[][] board, int i, int j){
-        if(i < 0 || i >= board.length){
+    
+    public void dfs(char[][] board, int x, int y){
+        if(x < 0 || x == board.length){
             return;
         }
-        if(j < 0 || j >= board[0].length){
+        if(y < 0 || y == board[0].length){
             return;
         }
-        if(board[i][j] == 'X' || board[i][j] == '*'){
+        if(board[x][y] == 'X' || board[x][y] == '*'){
             return;
         }
-        board[i][j] = '*';
-        solve(board, i+1, j);
-        solve(board, i-1, j);
-        solve(board, i, j+1);
-        solve(board, i, j-1);
+        board[x][y] = '*';
+        dfs(board, x+1, y);
+        dfs(board, x-1, y);
+        dfs(board, x, y+1);
+        dfs(board, x, y-1);
     }
 }
 ```

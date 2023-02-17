@@ -2,6 +2,7 @@
 ## Solution 1
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as num
 ```
 class Solution {
     public int removeElement(int[] nums, int val) {
@@ -15,22 +16,21 @@ class Solution {
     }
 }
 ```
-## Solution 2
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as num
 ```
 class Solution {
     public int removeElement(int[] nums, int val) {
-        int fast = 0,
-            slow = 0;
-        while(fast < nums.length){
-            if(nums[fast] != val){
-                nums[slow] = nums[fast];
-                slow++;
+        int i = 0,
+            j = 0;
+        while(j < nums.length){
+            if(nums[j] != val){
+                nums[i++] = nums[j]; 
             }
-            fast++;
+            j++;
         }
-        return slow;
+        return i;
     }
 }
 ```
