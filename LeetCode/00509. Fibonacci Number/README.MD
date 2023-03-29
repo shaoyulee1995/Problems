@@ -1,6 +1,7 @@
 # Dynamic Programming
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as n
 ## Java
 ```
 class Solution {
@@ -23,6 +24,7 @@ class Solution {
 ```
 * Time Complexity: O(N)
 * Space Complexity: O(2)
+	* N as n
 ```
 class Solution {
     public int fib(int n) {

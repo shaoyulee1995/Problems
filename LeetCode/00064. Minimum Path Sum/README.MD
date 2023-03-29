@@ -4,24 +4,22 @@
 ```
 class Solution {
     public int minPathSum(int[][] grid) {
-        for(int i = 0; i < grid.length; i++){
-            for(int j = 0; j < grid[0].length; j++){
+        int n = grid.length,
+            m = grid[0].length;
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
                 if(i == 0 && j == 0){
-                    continue;//(0,0) dont touch
-                }
-                if(i == 0){ 
+                   continue;
+                }else if(i == 0){
                     grid[i][j] += grid[i][j-1];
-                    continue; //check (0,1),(0,2)...(0,n)
-                }
-                if(j == 0){
+                }else if(j == 0){
                     grid[i][j] += grid[i-1][j];
-                    continue; //check (1,0),(2,0)...(n,0)
+                }else{
+                    grid[i][j] += Math.min(grid[i-1][j], grid[i][j-1]);
                 }
-                //rest of the boxes
-                grid[i][j] += Math.min(grid[i-1][j], grid[i][j-1]);
             }
         }
-        return grid[grid.length -1][grid[0].length -1];
+        return grid[n-1][m-1];
     }
 }
 ```
@@ -54,6 +52,8 @@ class Solution {
 # Memorization Recursion
 * Time Complexity: O(NM)
 * Space Complexity: O(NM)
+	* N as length of grid
+	* M as length of grid[0]
 ```
 class Solution {
     int[][] dp;

@@ -1,15 +1,21 @@
+# 3 Pointers
+* Time Complexity: O(N<sup>2</sup>)
+* Space Complexity: O(1)
+	* N as length of nums
+```
 class Solution {
     public int threeSumClosest(int[] nums, int target) {
-        int diff = Integer.MAX_VALUE, res = 0;
         Arrays.sort(nums);
-        for(int i = 0; i + 2 < nums.length && diff != 0; i++){
-            int j = i + 1, k = nums.length - 1;
+        int diff = Integer.MAX_VALUE;
+        for(int i = 0; i + 2 < nums.length; i++){
+            int j = i+1,
+                k = nums.length-1;
             while(j < k){
                 int sum = nums[i] + nums[j] + nums[k];
                 if(sum == target){
-                    return sum;
+                    return target;
                 }
-                if(Math.abs(sum - target) < Math.abs(diff)){
+                if(sum - target < Math.abs(diff)){
                     diff = target - sum;
                 }
                 if(sum < target){
@@ -17,10 +23,9 @@ class Solution {
                 }else{
                     k--;
                 }
-
             }
-
         }
         return target - diff;
     }
 }
+```

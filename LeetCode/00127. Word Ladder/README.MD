@@ -6,32 +6,30 @@
 ```
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        HashSet<String> set = new HashSet(wordList);
+        Set<String> set = new HashSet(wordList);
         if(!set.contains(endWord)){
-            return 0;       
+            return 0;
         }
-        Queue<String> q = new LinkedList();
-        q.offer(beginWord);
-        
-        HashSet<String> seen = new HashSet();
+        LinkedList<String> q = new LinkedList();
+        q.add(beginWord);
+        Set<String> seen = new HashSet();
         seen.add(beginWord);
         int res = 1;
         while(!q.isEmpty()){
             int size = q.size();
-            for(int i = 0; i < size; i++){
-                String word = q.poll();
-                if(word.equals(endWord)){
-                   return res; 
+            while(size-- > 0){
+                String cur = q.poll();
+                if(cur.equals(endWord)){
+                    return res;
                 }
-                for(int w = 0; w < word.length(); w++){
-                    for(int c = 'a'; c <= 'z'; c++){
-                        char[] cnt = word.toCharArray();
-                        cnt[w] = (char)c;
-                        
+                for(int w = 0; w < cur.length(); w++){
+                    for(char c = 'a'; c <= 'z'; c++){
+                        char[] cnt = cur.toCharArray();
+                        cnt[w] = c;
                         String str = new String(cnt);
                         if(!seen.contains(str) && set.contains(str)){
-                            q.offer(str);
                             seen.add(str);
+                            q.add(str);
                         }
                     }
                 }

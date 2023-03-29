@@ -1,4 +1,4 @@
-# Sliding Windows
+# Set1 Sliding Windows
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 	* N as length of s
@@ -25,22 +25,22 @@ class Solution {
     }
 }
 ```
-# Cleaner Sliding Windows
+# Set2 Sliding Windows
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 	* N as length of s
 ```
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        Set<Character> set = new HashSet();
         int i = 0,
+            j = 0,
             res = 0;
-        for(int j = 0; j < s.length(); j++){
-            char c = s.charAt(j);
-            while(!set.add(c)){
+        Set<Character> set = new HashSet();
+        for(; j < s.length(); j++){
+            while(!set.add(s.charAt(j))){
                 set.remove(s.charAt(i++));
             }
-            res = Math.max(res, j-i+1);
+            res = Math.max(res, set.size());
         }
         return res;
     }

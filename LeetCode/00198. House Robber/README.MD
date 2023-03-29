@@ -1,6 +1,7 @@
 # Recursion (TopDown)
 * Time Complexity: O(N^N)
 * Space Complexity: O(1)
+	* N as length of nums
 
 ```
 class Solution {
@@ -21,6 +22,7 @@ class Solution {
 # Recursion with Memorization
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as length of nums
 ## Solution 1
 ```
 class Solution {
@@ -65,6 +67,7 @@ class Solution {
 # BottomUp
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as length of nums
 ```
 class Solution {
     public int rob(int[] nums) {
@@ -76,10 +79,10 @@ class Solution {
     }
 }
 ```
-
 # StateTransition
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as length of nums
 
 ```
 class Solution {

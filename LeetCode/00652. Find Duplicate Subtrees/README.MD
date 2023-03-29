@@ -16,11 +16,12 @@
  */
 ```
 # Post Order Traversal
-* Time Complexity: O(N^2)
+* Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as nodes
 ```	
 class Solution {
-    HashMap<String, Integer> memo = new HashMap();
+    HashMap<String, Integer> map = new HashMap();
     LinkedList<TreeNode> res = new LinkedList();
     public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
         traverse(root);
@@ -32,13 +33,13 @@ class Solution {
         }
         String left = traverse(root.left),
                right = traverse(root.right);
-        String subTree = left + "," + right + "," + root.val;
-        int freq = memo.getOrDefault(subTree, 0);
+        String path = root.val + "," + left + "," + right;
+        int freq = map.getOrDefault(path, 0);
         if(freq == 1){
             res.add(root);
         }
-        memo.put(subTree, freq + 1);
-        return subTree;
+        map.put(path, freq + 1);
+        return path;
     }
 }
 ```

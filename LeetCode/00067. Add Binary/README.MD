@@ -1,8 +1,7 @@
 # String 
-* Time Complexity: O(Max(A, B))
-* Space Complexity: O(Max(A, B))
+* Time Complexity: O(A)
+* Space Complexity: O(A)
 	* A as length of a
-	* B as length of b
 ```
 class Solution {
     public String addBinary(String a, String b) {

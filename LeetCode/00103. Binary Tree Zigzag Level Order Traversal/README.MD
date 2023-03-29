@@ -18,38 +18,38 @@
 # BFS
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as number of nodes 
 ```
 class Solution {
-    List<List<Integer>> list;
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        list = new ArrayList();
+        List<List<Integer>> res = new ArrayList();
         if(root == null){
-            return list;
+            return res;
         }
-        boolean flag = false;
-        Queue<TreeNode> q = new LinkedList();
-        q.offer(root);
-        while(!q.isEmpty()){
-            int size = q.size();
-            LinkedList<Integer> nodes = new LinkedList();
+        LinkedList<TreeNode> queue = new LinkedList();
+        queue.add(root);
+        boolean shift = false;
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            LinkedList<Integer> arr = new LinkedList();
             for(int i = 0; i < size; i++){
-                TreeNode node = q.poll();
-                if(flag){ 
-                    nodes.add(0, node.val);
+                TreeNode node = queue.poll();
+                if(shift){
+                    arr.add(0, node.val);
                 }else{
-                    nodes.add(node.val);
+                    arr.add(node.val);
                 }
                 if(node.left != null){
-                    q.offer(node.left);
+                    queue.add(node.left);
                 }
                 if(node.right != null){
-                    q.offer(node.right);
+                    queue.add(node.right);
                 }
             }
-            list.add(new ArrayList(nodes));
-            flag = !flag;
+            shift = !shift;
+            res.add(arr);
         }
-        return list;
+        return res;
     }
 }
 ```

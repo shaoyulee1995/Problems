@@ -6,19 +6,17 @@
 class Solution {
     public int compress(char[] chars) {
         int i = 0,
-            n = chars.length,
             idx = 0;
-        while(i < n){
-            final char c = chars[i];
-            int cnt = 0;
-            while(i < n && c == chars[i]){
-                cnt++;
+        while(i < chars.length){
+            char c = chars[i];
+            int count = 0;
+            while(i < chars.length && chars[i] == c){
+                count++;
                 i++;
             }
             chars[idx++] = c;
-            if(cnt > 1){
-                char[] nums = String.valueOf(cnt).toCharArray();
-                for(char num: nums){
+            if(count > 1){
+                for(char num: Integer.toString(count).toCharArray()){
                     chars[idx++] = num;
                 }
             }

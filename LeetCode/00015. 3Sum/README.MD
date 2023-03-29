@@ -1,69 +1,34 @@
 # 3 Pointers
-* Time Complexity: O(N^2)
+* Time Complexity: O(N<sup>2</sup>)
 * Space Complexity: O(N)
-	
+	* N as length of nums
 ## Java
 ### Solution 1
 ```
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
+        Set<List<Integer>> set = new HashSet();
         Arrays.sort(nums);
-        Set<List<Integer>> list = new HashSet();
-        for(int i = 0; i < nums.length - 2; i++){
-            int j = i + 1, k = nums.length - 1;
+        for(int i = 0; i + 2 < nums.length; i++){
+            int j = i+1,
+                k = nums.length-1;
             while(j < k){
-                int sum = nums[i] + nums[j] + nums[k];
-                if(sum == 0){
-                    list.add(Arrays.asList(nums[i], nums[j], nums[k]));
+                int num = nums[i] + nums[j] + nums[k];
+                if(num == 0){
+                    set.add(Arrays.asList(nums[i], nums[j], nums[k]));
                     j++;
                     k--;
-                }else if(sum < 0){
+                }else if(num < 0){
                     j++;
                 }else{
                     k--;
                 }
             }
         }
-        return new ArrayList(list);
+        return new ArrayList(set);
     }
 }
 ```
-### Solution 2
-```
-class Solution {
-    public List<List<Integer>> threeSum(int[] nums) {
-        Arrays.sort(nums);
-        Set<List<Integer>> list = new HashSet();
-        for(int i = 0; i < nums.length - 2; i++){
-            if(i > 0 && nums[i] == nums[i-1]){
-                continue;
-            } 
-            int j = i + 1, k = nums.length - 1;
-            while(j < k){
-                int sum = nums[i] + nums[j] + nums[k];
-                if(sum < 0){
-                    j++;
-                }else if(sum > 0){
-                    k--;
-                }else{
-                    list.add(Arrays.asList(nums[i], nums[j], nums[k]));
-                    while(j < k && nums[j] == nums[j+1]){
-                        j++;
-                    }
-                    while(j < k && nums[k] == nums[k-1]){
-                        k--;
-                    }
-                    j++;
-                    k--;
-                    
-                }
-            }
-        }
-        return new ArrayList(list);
-    }
-}
-```
-
 ## Python 3
 ```
 class Solution:
@@ -92,9 +57,7 @@ class Solution:
                     right -= 1
         return res
 ```
-
 # 2Sum helping
-
 ## Python 3
 ```
 class Solution:

@@ -18,16 +18,17 @@ class Solution {
             buckets[freq].add(key);
         }
         int[] res = new int[k];
-        int index = 0;
-        for(int i = buckets.length - 1; i >= 0 && index < k; i--){
+        int idx = 0;
+        for(int i = buckets.length - 1; i >= 0 && idx < k; i--){
             if(buckets[i] == null){
                 continue;
             }
-            for(int j = 0; index < k && j < buckets[i].size(); j++){
-                res[index++] = buckets[i].get(j);
+            for(int j = 0; j < buckets[i].size() && idx < k; idx++, j++){
+                res[idx] = buckets[i].get(j);
             }
         }
         return res;
     }
+}
 }
 ```
