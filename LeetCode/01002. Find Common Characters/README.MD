@@ -1,3 +1,8 @@
+# Counting Array
+* Time Complexity: O(W)
+* Space Complexity: O(26)
+	* W as length of words	
+```
 class Solution {
     public List<String> commonChars(String[] words) {
         int[] common = new int[26];
@@ -11,15 +16,13 @@ class Solution {
                 common[i] = Math.min(common[i], cnt[i]);
             }
         }
-        return getAnswer(common);
-    }
-    public List<String> getAnswer(int[] cnt){
-        List<String> ans = new ArrayList();
+        List<String> res = new ArrayList();
         for(int i = 0; i < 26; i++){
-            for(int j = 0; j < cnt[i]; j++){
-                ans.add(""+(char)('a'+i));
+            while(common[i]-- > 0){
+                res.add(String.valueOf((char)('a'+i)));
             }
         }
-        return ans;
+        return res;
     }
 }
+```

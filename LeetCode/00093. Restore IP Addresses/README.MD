@@ -17,7 +17,8 @@ class Solution {
         if(index == s.length() && segmentIndex == 4){
             list.add(new String(segments[0] + "." + segments[1] + "." + segments[2] + "." + segments[3]));
             return;
-        }else if(index == s.length() || segmentIndex == 4){
+        }
+		if(index == s.length() || segmentIndex == 4){
             return;
         }
         for(int len = 1; len <= 3 && index + len <= s.length(); len++){
@@ -26,7 +27,7 @@ class Solution {
                 break;
             }
             segments[segmentIndex] = val;
-            restoreIpAddresses(s, K , segments, segmentIndex + 1);
+            restoreIpAddresses(s, len+index, segments, segmentIndex + 1);
             segments[segmentIndex] = -1;
         }
     }

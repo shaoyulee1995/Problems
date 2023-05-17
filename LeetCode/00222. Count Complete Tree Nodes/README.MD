@@ -18,6 +18,7 @@
 # Recursion
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as nodes
 ```
 class Solution {
     public int countNodes(TreeNode root) {
@@ -29,9 +30,11 @@ class Solution {
         return 1 + left + right;
     }
 }
+```
 # Recursion 
 * Time Complexity: O(log(N))
 * Space Complexity: O(1)
+	* N as nodes
 ```
 class Solution {
     public int countNodes(TreeNode root) {
@@ -63,10 +66,10 @@ class Solution {
     }
 }
 ```
-```
 # BFS
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as nodes
 ```
 class Solution {
     public int countNodes(TreeNode root) {

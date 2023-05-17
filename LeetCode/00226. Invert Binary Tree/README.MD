@@ -15,7 +15,7 @@
  * }
  */
 ```
-# Recursion
+# DFS
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 	* N as number of nodes in tree
@@ -30,6 +30,42 @@ class Solution {
         root.left = invertTree(right);
         root.right = invertTree(left);
         return root;
+    }
+}
+```
+# BFS
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as number of nodes in tree
+```
+class Solution {
+    public TreeNode invertTree(TreeNode root) {
+        if(root == null){
+            return null;
+        }
+        TreeNode dummy = root;
+        Queue<TreeNode> queue = new LinkedList();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            while(size-- > 0){
+                TreeNode node = queue.poll();
+                if(node.left != null){
+                    queue.offer(node.left);
+                }
+                if(node.right != null){
+                    queue.offer(node.right);
+                }
+                swapChildren(node);
+            }
+        }
+        return dummy;
+    }
+
+    public void swapChildren(TreeNode node){
+        TreeNode temp = node.left;
+        node.left = node.right;
+        node.right = temp;
     }
 }
 ```

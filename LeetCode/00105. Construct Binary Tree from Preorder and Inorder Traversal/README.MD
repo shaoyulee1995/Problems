@@ -20,31 +20,28 @@
 * Space Complexity: O(N)
 ```
 class Solution {
+    Map<Integer, Integer> map;
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        return buildTree(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
+        map = new HashMap();
+        for(int i = 0; i < inorder.length; i++){
+            map.put(inorder[i], i);
+        }
+        return find(preorder, 0, preorder.length-1,
+                    inorder, 0, inorder.length-1);
     }
-    public TreeNode buildTree(int[] preorder, int preStart, int preEnd,
-                              int[] inorder, int inStart, int inEnd){
-        if(preStart > preEnd){
+    public TreeNode find(int[] preorder, int preStart, int preEnd,
+                         int[] inorder, int inStart, int inEnd){
+        if(preStart > preEnd || inStart > inEnd){
             return null;
         }
-        int rootVal = preorder[preStart];
-        int inOrderIndex = 0;
-        for(int i = inStart; i <= inEnd; i++){
-            if(inorder[i] == rootVal){
-                inOrderIndex = i;
-                break;
-            }
-        }
-        int leftSize = inOrderIndex - inStart;
-        
-        TreeNode root = new TreeNode(rootVal);
-        root.left = buildTree(preorder,preStart + 1, preStart + leftSize,
-                              inorder, inStart, inOrderIndex - 1);
-        root.right = buildTree(preorder,preStart+leftSize + 1, preEnd, 
-                               inorder, inOrderIndex + 1, inEnd);
+        int rootIndex = map.get(preorder[preStart]);
+        TreeNode root = new TreeNode(preorder[preStart]);
+        int left = rootIndex - inStart;
+        root.left = find(preorder, preStart+1, preStart+left,
+                         inorder, inStart, inStart + rootIndex-1);
+        root.right = find(preorder, preStart+left+1, preEnd,
+                          inorder, rootIndex+1, inEnd); 
         return root;
-        
     }
 }
 ```

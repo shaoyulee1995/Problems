@@ -1,28 +1,27 @@
 # Hash Table
-* Time Complexity: O(N^2)
-* Space Complexity: O(N^2)
+* Time Complexity: O(N<sup>2</sup>)
+* Space Complexity: O(N<sup>2</sup>)
+	* N as length of nums
 ```
 class Solution {
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
         HashMap<Integer, Integer> map = new HashMap();
-        int n = nums1.length;
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < n; j++){
-                int sum = nums1[i] + nums2[j];
+        for(int a: nums1){
+            for(int b: nums2){
+                int sum = a + b;
                 map.put(sum, map.getOrDefault(sum, 0) + 1);
             }
         }
-        
-        int result = 0;
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < n; j++){
-                int sum = nums3[i] + nums4[j];
+        int res = 0;
+        for(int c: nums3){
+            for(int d: nums4){
+                int sum = c + d;
                 if(map.containsKey(-sum)){
-                    result += map.get(-sum);
+                    res += map.get(-sum);
                 }
             }
         }
-        return result;
+        return res;
     }
 }
 ```

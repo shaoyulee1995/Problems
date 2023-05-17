@@ -1,6 +1,29 @@
 # Two Pointers
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as nodes in linkedlist
+```
+class Solution {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode slow = head,
+                 fast = head,
+                 dummy = new ListNode(0);
+        dummy.next = head;
+        while(n-- > 0){
+            fast = fast.next;
+        }
+        if(fast == null){
+            return head.next;
+        }
+        while(fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next;
+        }
+        slow.next = slow.next.next;
+        return dummy.next;
+    }
+}
+```
 ```
 /**
  * Definition for singly-linked list.
@@ -12,25 +35,4 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-```
-```
-class Solution {
-    public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode slow, fast;
-        fast = slow = head;
-        while(n-->0){
-            fast = fast.next;
-        }
-        
-        if(fast == null){
-            return head.next;
-        }
-        while(fast != null && fast.next != null){
-            fast = fast.next;
-            slow = slow.next;
-        }
-        slow.next = slow.next.next;
-        return head;
-    }
-}
 ```

@@ -8,38 +8,40 @@
 ```
 class MyQueue {
 
-    Stack<Integer> s1, s2;
-    
+    Stack<Integer> stackIn, stackOut;
     public MyQueue() {
-        s1 = new Stack();
-        s2 = new Stack();
+        stackIn = new Stack();
+        stackOut = new Stack();
     }
     
     public void push(int x) {
-        s1.push(x);
+        stackIn.push(x);
     }
     
+    public void dumpStackIn(){
+        if(!stackOut.isEmpty()){
+            return;
+        }
+        while(!stackIn.isEmpty()){
+            stackOut.push(stackIn.pop());
+        }
+    }
+
     public int pop() {
-        peek();
-        return s2.pop();
+        dumpStackIn();
+        return stackOut.pop();
     }
     
     public int peek() {
-        if(s2.isEmpty()){
-            while(!s1.isEmpty()){
-                s2.push(s1.pop());
-            }
-        }
-        return s2.peek();
+        dumpStackIn();
+        return stackOut.peek();
     }
     
     public boolean empty() {
-        return s1.isEmpty() && s2.isEmpty();
+        return stackOut.isEmpty() && stackIn.isEmpty();
     }
 }
-```
 
-```
 /**
  * Your MyQueue object will be instantiated and called as such:
  * MyQueue obj = new MyQueue();

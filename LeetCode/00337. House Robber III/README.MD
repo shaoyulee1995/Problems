@@ -27,34 +27,42 @@ class Solution {
         if(map.containsKey(root)){
             return map.get(root);
         }
-        int rob = root.val + 
-                  (root.left != null? rob(root.left.left) + rob(root.left.right): 0) + 
-                  (root.right != null? rob(root.right.left) + rob(root.right.right): 0);  
-        int not_rob = rob(root.left) + rob(root.right);
-        int val = Math.max(rob, not_rob);
-        map.put(root, val);
-        return val;
+        int robbed = root.val;
+        if(root.left != null){
+            robbed += rob(root.left.left) + rob(root.left.right); 
+        }
+        if(root.right != null){
+            robbed += rob(root.right.left) + rob(root.right.right);
+        }
+        int robNext = rob(root.left) + rob(root.right);
+        int res = Math.max(robbed, robNext);
+        map.put(root, res);
+        return res;
     }
 }
 ```
-# Array
+# DP
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as nodes in tree
 ```
 class Solution {
     public int rob(TreeNode root) {
-        int[] res = robSub(root);
+        int[] res = dfs(root);
         return Math.max(res[0], res[1]);
     }
-    private int[] robSub(TreeNode root){
-        if(root == null){
-            return new int[2];
-        }
-        int[] left = robSub(root.left);
-        int[] right = robSub(root.right);
+    
+    public int[] dfs(TreeNode node){
         int[] res = new int[2];
-        res[0] = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
-        res[1] = root.val + left[0] + right[0];
+        if(node == null){
+            return res;
+        }
+        int[] left = dfs(node.left),
+              right = dfs(node.right);
+        int rob = node.val + left[1] + right[1],
+            notRob = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
+        res[0] = rob;
+        res[1] = notRob;
         return res;
     }
 }

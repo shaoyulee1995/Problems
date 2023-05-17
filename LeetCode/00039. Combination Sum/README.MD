@@ -5,30 +5,30 @@
 	* T as target
 ```
 class Solution {
-    List<List<Integer>> list = new ArrayList();
-    LinkedList<Integer> path = new LinkedList();
+    List<List<Integer>> res;
+    LinkedList<Integer> path;
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        combinationSum(candidates, target, 0);
-        return list;
+        res = new ArrayList();
+        path = new LinkedList();
+        Arrays.sort(candidates);
+        dfs(candidates, target, 0);
+        return res;
     }
-    public void combinationSum(int[] candidates, int target, int index){
-        if(target < 0){
-            return;
-        }
+
+    public void dfs(int[] nums, int target, int idx){
         if(target == 0){
-            list.add(new ArrayList(path));
+            res.add(new ArrayList(path));
             return;
         }
-        for(int i = index; i < candidates.length; i++){
-            if(target - candidates[i] < 0){
-                continue;
+        for(int i = idx; i < nums.length; i++){
+            if(target-nums[i] < 0){
+                break;
             }
-            target -= candidates[i];
-            path.add(candidates[i]);
-            combinationSum(candidates, target, i);
-            target += candidates[i];
+            path.add(nums[i]);
+            dfs(nums, target-nums[i], i);
             path.removeLast();
         }
     }
 }
+
 ```

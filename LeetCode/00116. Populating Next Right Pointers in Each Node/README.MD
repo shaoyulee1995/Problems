@@ -56,14 +56,15 @@ class Solution {
         if(root == null){
             return null;
         }
-        Node dummy = root;
-        Queue<Node> q = new LinkedList();
-        q.offer(dummy);
-        while(!q.isEmpty()){
-            int size = q.size();
+        Node dummy = new Node();
+        dummy.next = root;
+        Queue<Node> queue = new LinkedList();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            int size = queue.size();
             Node prev = null;
             for(int i = 0; i < size; i++){
-                Node node = q.poll();
+                Node node = queue.poll();
                 if(i == 0){
                     prev = node;
                 }else{
@@ -71,15 +72,15 @@ class Solution {
                     prev = node;
                 }
                 if(node.left != null){
-                    q.offer(node.left);
+                    queue.add(node.left);
                 }
                 if(node.right != null){
-                    q.offer(node.right);
+                    queue.add(node.right);
                 }
             }
             prev.next = null;
         }
-        return root;
+        return dummy.next;
     }
 }
 ```

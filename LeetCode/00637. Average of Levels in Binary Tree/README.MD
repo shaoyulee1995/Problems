@@ -19,34 +19,31 @@
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 	* N as number of TreeNode
-	
 ```
 class Solution {
     public List<Double> averageOfLevels(TreeNode root) {
-        List<Double> list = new ArrayList();
         if(root == null){
-            return list;
+            return new ArrayList();
         }
-        Queue<TreeNode> q = new LinkedList();
-        q.offer(root);
-        while(!q.isEmpty()){
-            int size = q.size();
-            double val = 0;
+        List<Double> res = new ArrayList();
+        Queue<TreeNode> queue = new LinkedList();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            Double avg = 0.0;
             for(int i = 0; i < size; i++){
-                TreeNode node = q.poll();
-                val += node.val;
+                TreeNode node = queue.poll();
+                avg += node.val;
                 if(node.left != null){
-                    q.offer(node.left);
+                    queue.offer(node.left);
                 }
                 if(node.right != null){
-                    q.offer(node.right);
+                    queue.offer(node.right);
                 }
             }
-            val /= size;
-            list.add(val);
+            res.add(new Double(avg/size));
         }
-        return list;
+        return res;
     }
 }
-
 ```

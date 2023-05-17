@@ -25,25 +25,25 @@ class Node {
 ```
 class Solution {
     public List<List<Integer>> levelOrder(Node root) {
-        List<List<Integer>> list = new ArrayList();
+        List<List<Integer>> res = new ArrayList();
         if(root == null){
-            return list;
+            return res;
         }
-        Queue<Node> q = new LinkedList();
-        q.offer(root);
-        while(!q.isEmpty()){
-            int size = q.size();
-            List<Integer> val = new ArrayList();
-            for(int i = 0; i < size; i++){
-                Node node = q.poll();
-                val.add(node.val);
+        Queue<Node> queue = new LinkedList();
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            List<Integer> list = new ArrayList();
+            while(size-- > 0){
+                Node node = queue.poll();
+                list.add(node.val);
                 for(Node child: node.children){
-                    q.offer(child);
+                    queue.add(child);
                 }
             }
-            list.add(val);
+            res.add(list);
         }
-        return list;
+        return res;
     }
 }
 ```

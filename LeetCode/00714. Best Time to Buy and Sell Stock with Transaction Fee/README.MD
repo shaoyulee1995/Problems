@@ -21,12 +21,13 @@ class Solution {
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 ```
-class Soluton {
+class Solution {
     public int maxProfit(int[] prices, int fee) {
-        int buy = -prices[0], sell = 0;
-        for(int i = 1; i < prices.length; i++){
-            sell = Math.max(sell, buy + prices[i] - fee);
-            buy = Math.max(buy, sell - prices[i]);
+        int buy = Integer.MIN_VALUE,
+            sell = 0;
+        for(int price: prices){
+            buy = Math.max(buy, sell - price - fee);
+            sell = Math.max(sell, buy + price);
         }
         return sell;
     }

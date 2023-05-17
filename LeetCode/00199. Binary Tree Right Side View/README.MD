@@ -22,29 +22,28 @@
 ```
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
-        List<Integer> list = new ArrayList();
+        List<Integer> res = new ArrayList();
         if(root == null){
-            return list;
+            return res;
         }
         Queue<TreeNode> queue = new LinkedList();
-        
-        queue.add(root);
+        queue.offer(root);
         while(!queue.isEmpty()){
             int size = queue.size();
             while(size-- > 0){
-                TreeNode temp = queue.poll();
+                TreeNode node = queue.poll();
                 if(size == 0){
-                    list.add(temp.val);
+                    res.add(node.val);
                 }
-                if(temp.left != null){
-                    queue.add(temp.left);
+                if(node.left != null){
+                    queue.add(node.left);
                 }
-                if(temp.right != null){
-                    queue.add(temp.right);
+                if(node.right != null){
+                    queue.add(node.right);
                 }
             }
         }
-        return list;
+        return res;
     }
 }
 ```

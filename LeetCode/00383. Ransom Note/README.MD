@@ -1,21 +1,20 @@
 # Array
-* Time Complexity: O(N)
+* Time Complexity: O(Max(R, M))
 * Space Complexity: O(1)
+	* R as length of ransomNote
+	* M as length of magazine
 ```
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
-        int[] arr = new int[26];
-        for(int i = 0; i < magazine.length(); i++){
-            int index = magazine.charAt(i)-'a';
-            arr[index]++;
+        int[] cnt = new int[26];
+        for(char c: magazine.toCharArray()){
+            cnt[c-'a']++;
         }
-        
-        for(int i = 0; i < ransomNote.length(); i++){
-            int index = ransomNote.charAt(i) -'a';
-            if(arr[index] == 0){
+        for(char c: ransomNote.toCharArray()){
+            cnt[c-'a']--;
+            if(cnt[c-'a'] < 0){
                 return false;
             }
-            arr[index]--;
         }
         return true;
     }

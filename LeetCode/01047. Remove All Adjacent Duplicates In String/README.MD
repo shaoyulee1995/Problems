@@ -1,6 +1,7 @@
 # String
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as chars in String
 ```
 class Solution {
     public String removeDuplicates(String s) {
@@ -14,6 +15,29 @@ class Solution {
             }
         }
         return sb.toString();
+    }
+}
+```
+# Stack
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as chars in String
+```
+class Solution {
+    public String removeDuplicates(String s) {
+        Stack<Character> stack = new Stack();
+        for(char c: s.toCharArray()){
+            if(!stack.isEmpty() && c == stack.peek()){
+                stack.pop();
+            }else{
+                stack.push(c);
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        while(!stack.isEmpty()){
+            sb.append(stack.pop());
+        }
+        return sb.reverse().toString();
     }
 }
 ```
