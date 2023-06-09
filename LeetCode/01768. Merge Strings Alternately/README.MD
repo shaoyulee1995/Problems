@@ -1,22 +1,23 @@
+# Array
+* Time Complexity: O(Max(N, M))
+* Space Complexity: O(N+M)
+	* N as length of word1
+	* M as length of word2
+```
 class Solution {
     public String mergeAlternately(String word1, String word2) {
+        int i = 0,
+            j = 0;
         StringBuilder sb = new StringBuilder();
-        
-        int i = 0, j = 0;
-        
         while(i < word1.length() || j < word2.length()){
-            
             if(i < word1.length()){
                 sb.append(word1.charAt(i++));
             }
-            
             if(j < word2.length()){
                 sb.append(word2.charAt(j++));
             }
-            
         }
-        
-        
         return sb.toString();
     }
 }
+```

@@ -6,29 +6,26 @@
 ```
 class Solution {
     public void setZeroes(int[][] matrix) {
-        Queue<int[]> queue = new LinkedList();
-        int n = matrix.length,
-            m = matrix[0].length;
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++){
+        Queue<int[]> q = new LinkedList();
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[0].length; j++){
                 if(matrix[i][j] == 0){
-                    queue.offer(new int[]{i,j});
+                    q.add(new int[]{i, j});
                 }
             }
         }
-        while(!queue.isEmpty()){
-            int[] cell = queue.poll();
-            updateMatrix(matrix, cell[0], cell[1]);
+        while(!q.isEmpty()){
+            int[] p = q.poll();
+            dfs(matrix, p[0], p[1]);
         }
     }
-    public void updateMatrix(int[][] matrix, int row, int col){
-        int n = matrix.length,
-            m = matrix[0].length;
-        for(int i = 0; i < m; i++){
-            matrix[row][i] = 0;
-        }
-        for(int i = 0; i < n; i++){
+
+    public void dfs(int[][] matrix, int row, int col){
+        for(int i = 0; i < matrix.length; i++){
             matrix[i][col] = 0;
+        }
+        for(int i = 0; i < matrix[0].length; i++){
+            matrix[row][i] = 0;
         }
     }
 }
