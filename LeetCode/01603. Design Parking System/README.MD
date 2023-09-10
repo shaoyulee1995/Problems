@@ -28,17 +28,16 @@ class ParkingSystem {
 # Design 
 * Time Complexity:
 	* addCar: O(1)
-* Space Complexity: O(N)
+* Space Complexity: O(1)
 ```
 class ParkingSystem {
-    
-    int[] count;
+    int[] cars;
     public ParkingSystem(int big, int medium, int small) {
-        count = new int[]{big, medium, small};
+        cars = new int[]{big, medium, small};
     }
     
     public boolean addCar(int carType) {
-        return count[carType - 1] -- > 0;
+        return --cars[carType-1] >= 0;
     }
 }
 ```
