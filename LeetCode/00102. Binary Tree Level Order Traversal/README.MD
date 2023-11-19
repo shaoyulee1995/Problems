@@ -18,32 +18,30 @@
 # BFS
 * Time Complexity: O(N)
 * Space Complexity: O(N)
-	* N as number of TreeNode
+	* N as nodes in tree
 ```
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        List<List<Integer>> res = new ArrayList();
         if(root == null){
-            return res;
+            return new ArrayList();
         }
-        Queue<TreeNode> q = new LinkedList();
-        q.offer(root);
-        while(!q.isEmpty()){
-            int size = q.size();
-            List<Integer> lvl = new ArrayList();
+        List<List<Integer>> res = new ArrayList();
+        Queue<TreeNode> queue = new LinkedList();
+        queue.offer(root);
+        for(int size = queue.size(); !queue.isEmpty(); size = queue.size()){
+            List<Integer> row = new ArrayList();
             for(int i = 0; i < size; i++){
-                TreeNode node = q.poll();
-                lvl.add(node.val);
+                TreeNode node = queue.poll();
+                row.add(node.val);
                 if(node.left != null){
-                    q.offer(node.left);
+                    queue.offer(node.left);
                 }
                 if(node.right != null){
-                    q.offer(node.right);
+                    queue.offer(node.right);
                 }
             }
-            res.add(lvl);
+            res.add(row);
         }
-        
         return res;
     }
 }
@@ -51,7 +49,7 @@ class Solution {
 # DFS
 * Time Complexity: O(N)
 * Space Complexity: O(N)
-	* N as number of TreeNode
+	* N as nodes in tree
 ```
 class Solution {
     List<List<Integer>> res;

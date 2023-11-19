@@ -18,7 +18,7 @@
 # Recursion
 * Time Complexity: O(N)
 * Space Complexity: O(1)	
-
+	* N as nodes in tree
 ```
 class Solution {
     int res = 0, rank = 0;
@@ -38,5 +38,26 @@ class Solution {
         }
         traverse(node.right, k);
     } 
+}
+```
+# Iteration
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as nodes in tree
+```
+class Solution {
+    public int kthSmallest(TreeNode root, int k) {
+        List<Integer> inOrder = new ArrayList();
+        traverseInOrder(inOrder, root);
+        return inOrder.get(k-1);
+    }
+    public void traverseInOrder(List<Integer> inOrder, TreeNode root){
+        if(root == null){
+            return;
+        }
+        traverseInOrder(inOrder, root.left);
+        inOrder.add(root.val);
+        traverseInOrder(inOrder, root.right);
+    }
 }
 ```

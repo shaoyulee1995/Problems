@@ -1,22 +1,20 @@
-# Prefix Sum 
+# 1 Prefix Sum 
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 	* N as length of nums
 ```
 class Solution {
     public int[] productExceptSelf(int[] nums) {
-        int[] ans = new int[nums.length];
-        ans[0] = 1;
-        for(int i = 1; i < nums.length; i++){
-            ans[i] = ans[i-1] * nums[i - 1];
+        int[] res = new int[nums.length];
+        for(int i = 0, L = 1; i < nums.length; i++){
+            res[i] = L;
+            L *= nums[i];
         }
-        
-        int R = 1;
-        for(int i = nums.length - 1; i >=0; i--){
-            ans[i] *= R;
+        for(int i = nums.length-1, R = 1; i >= 0; i--){
+            res[i] *= R;
             R *= nums[i];
         }
-        return ans;
+        return res;
     }
 }
 ```

@@ -1,6 +1,7 @@
 # Kadane's Algorithm
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as length of prices
 ```
 class Solution {
     public int maxProfit(int[] prices) {
@@ -17,6 +18,7 @@ class Solution {
 # Array
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as length of prices
 ```
 class Solution {
     public int maxProfit(int[] prices) {
@@ -29,10 +31,26 @@ class Solution {
     }
 }
 ```
+```
+class Solution {
+    public int maxProfit(int[] prices) {
+        int min = Integer.MAX_VALUE,
+            res = 0;
+        for(int price: prices){
+            min = Math.min(min, price);
+            if(min < price){
+                res = Math.max(res, price - min);
+            }
+        }
+        return res;
+    }
+}
+```
 
 # Dynamic Programming
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as length of prices
 ```
 class Solution {
     public int maxProfit(int[] prices) {

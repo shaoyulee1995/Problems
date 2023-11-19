@@ -5,26 +5,50 @@
 ```
 class Solution {
     public int countPoints(String rings) {
-        int[] red = new int[10],
-              blue = new int[10],
-              green = new int[10];
+        int[] R = new int[10],
+              G = new int[10],
+              B = new int[10];
         for(int i = 0; i < rings.length(); i+=2){
-            char color = rings.charAt(i);
-            int pos = rings.charAt(i+1) -'0';
-            if(color == 'B'){
-                blue[pos]++;
-            }else if(color == 'R'){
-                red[pos]++;
-            }else if(color == 'G'){
-                green[pos]++;
+            char c = rings.charAt(i);
+            int num = rings.charAt(i+1)-'0';
+            if(c == 'R'){
+                R[num]++;
+            }else if(c == 'G'){
+                G[num]++;
+            }else if(c == 'B'){
+                B[num]++;
             }
         }
         int res = 0;
         for(int i = 0; i < 10; i++){
-            if(red[i] > 0 && blue[i] > 0 && green[i] > 0){
+            if(R[i] > 0 && G[i] > 0 && B[i] > 0){
                 res++;
             }
         }
+        return res;
+    }
+}
+```
+# HashMap
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as length of rings
+```
+class Solution {
+    public int countPoints(String rings) {
+        HashMap<Integer, HashSet<Character>> map = new HashMap();
+        for(int i = 0; i < rings.length(); i+=2){
+            char color = rings.charAt(i);
+            int idx = rings.charAt(i+1);
+            map.put(idx, map.getOrDefault(idx, new HashSet()));
+            map.get(idx).add(color);
+        }
+        int res = 0;
+        for(Map.Entry<Integer, HashSet<Character>> entry: map.entrySet()){
+            if(entry.getValue().size() == 3){
+                res++;
+            }
+        }   
         return res;
     }
 }

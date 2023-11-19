@@ -60,24 +60,19 @@ class Solution {
         if(image[sr][sc] == color){
             return image;
         }
-        dfs(image, image[sr][sc], sr, sc, color);
+        dfs(image, sr, sc, image[sr][sc], color);
         return image;
     }
-    public void dfs(int[][] image, int oldColor, int x, int y, int color){
-        if(x == image.length || x < 0){
+
+    public void dfs(int[][] image, int r, int c, int  OldColor, int newColor){
+        if(r < 0 || r == image.length || c < 0 || c == image[0].length || image[r][c] != OldColor){
             return;
         }
-        if(y == image[0].length || y < 0){
-            return;
-        }
-        if(image[x][y] != oldColor){
-            return;
-        }
-        image[x][y] = color;
-        dfs(image, oldColor, x+1, y, color);
-        dfs(image, oldColor, x-1, y, color);
-        dfs(image, oldColor, x, y+1, color);
-        dfs(image, oldColor, x, y-1, color);  
+        image[r][c] = newColor;
+        dfs(image, r+1, c, OldColor, newColor);
+        dfs(image, r-1, c, OldColor, newColor);
+        dfs(image, r, c+1, OldColor, newColor);
+        dfs(image, r, c-1, OldColor, newColor);
     }
 }
 ```

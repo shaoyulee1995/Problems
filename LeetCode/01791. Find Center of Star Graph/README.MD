@@ -1,4 +1,4 @@
-# Math
+# Logic
 * Time Complexity: O(1)
 * Space Complexity: O(1)
 ```
@@ -10,8 +10,9 @@ class Solution {
 }
 ```
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+* Time Complexity: O(E)
+* Space Complexity: O(E)
+	* E as length of edges
 ```
 class Solution {
     public int findCenter(int[][] edges) {

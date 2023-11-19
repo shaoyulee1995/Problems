@@ -32,11 +32,9 @@ class Solution {
 ```
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        int i = 0,
-            j = 0,
-            res = 0;
+        int res = 0;
         Set<Character> set = new HashSet();
-        for(; j < s.length(); j++){
+        for(int i = 0, j = 0; j < s.length(); j++){
             while(!set.add(s.charAt(j))){
                 set.remove(s.charAt(i++));
             }

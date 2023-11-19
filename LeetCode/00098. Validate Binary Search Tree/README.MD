@@ -22,20 +22,19 @@
 ```
 class Solution {
     public boolean isValidBST(TreeNode root) {
-        return isValidBST(root, null, null);
+        return dfs(root, null, null);
     }
-    public boolean isValidBST(TreeNode root, TreeNode min, TreeNode max){
-        if(root == null){
-            return true;
+    public boolean dfs(TreeNode node, Integer min, Integer max){
+        if(node == null){
+            return true; 
         }
-        if(min != null && min.val >= root.val){
+        if(min != null && min >= node.val){
             return false;
         }
-        if(max != null && max.val <= root.val){
+        if(max != null && max <= node.val){
             return false;
         }
-        return isValidBST(root.left, min, root) &&
-               isValidBST(root.right, root, max);
+        return dfs(node.left, min, node.val) && dfs(node.right, node.val, max);
     }
 }
 ```

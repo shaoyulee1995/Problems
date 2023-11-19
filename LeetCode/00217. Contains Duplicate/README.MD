@@ -1,3 +1,8 @@
+# Set
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as length of nums 
+```
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         HashSet<Integer> set = new HashSet();
@@ -10,3 +15,4 @@ class Solution {
         return false;
     }
 }
+```

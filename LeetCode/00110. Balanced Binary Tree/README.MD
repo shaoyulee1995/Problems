@@ -18,24 +18,26 @@
 # Recursion
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as nodes in tree
 ```
 class Solution {
     public boolean isBalanced(TreeNode root) {
-        return isBalancedInt(root) != -1;
+        return getHeight(root) != -1;
     }
-    public int isBalancedInt(TreeNode node){
+
+    public int getHeight(TreeNode node){
         if(node == null){
             return 0;
         }
-        int left = isBalancedInt(node.left),
-            right =isBalancedInt(node.right);
+        int left = getHeight(node.left),
+            right = getHeight(node.right);
         if(left == -1 || right == -1){
             return -1;
         }
         if(Math.abs(left - right) > 1){
             return -1;
         }
-        return Math.max(right, left) + 1;
+        return Math.max(left, right) + 1;
     }
 }
 ```

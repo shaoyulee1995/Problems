@@ -18,39 +18,37 @@
 # BFS
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as nodes in tree
 ```
 class Solution {
     public int minDepth(TreeNode root) {
-        Queue<TreeNode> q = new LinkedList();
         if(root == null){
             return 0;
-        }
-        q.offer(root);
-        int height = 1;
-        while(!q.isEmpty()){
-            int size = q.size();
+        }    
+        Queue<TreeNode> queue = new LinkedList();
+        queue.offer(root);
+        for(int height = 1, size = queue.size(); !queue.isEmpty(); size = queue.size(), height++){
             for(int i = 0; i < size; i++){
-                TreeNode node = q.poll();
+                TreeNode node = queue.poll();
                 if(node.left == null && node.right == null){
                     return height;
                 }
-                
                 if(node.left != null){
-                    q.offer(node.left);
+                    queue.offer(node.left);
                 }
                 if(node.right != null){
-                    q.offer(node.right);
+                    queue.offer(node.right);
                 }
             }
-            height++;
         }
-        return 0;
+        return -1;
     }
 }
 ```
-# Recursion 1
+# DFS
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as nodes in tree
 ```
 class Solution {
     public int minDepth(TreeNode root) {
@@ -65,9 +63,10 @@ class Solution {
 }
 ```
 
-# Recursion 2
+# DFS
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as nodes in tree
 ```
 class Solution {
     public int minDepth(TreeNode root) {

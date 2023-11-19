@@ -17,15 +17,15 @@ class Solution {
 ```
 class Solution {
     public int majorityElement(int[] nums) {
-        int element = 0,
-            cnt = 0;
+        int res = 0,
+            count = 0;
         for(int num: nums){
-            if(cnt == 0){
-                element = num;
+            if(count == 0){
+                res = num;
             }
-            cnt += (element == num)? 1: -1;
+            count += (num == res)? 1: -1;
         }
-        return element;
+        return res;
     }
 }
 ```

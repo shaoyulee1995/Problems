@@ -7,15 +7,15 @@ class Solution {
     public int maxArea(int[] height) {
         int i = 0,
             j = height.length - 1,
-            res = 0;
+            res = 0; 
         while(i < j){
-            int h = Math.min(height[j], height[i]), 
-                b = j-i;
-            res = Math.max(res, h*b);
-            if(height[j] > height[i]){
-                i++;
-            }else{
+            int tall = Math.min(height[i], height[j]),
+                width = j-i;
+            res = Math.max(res, tall * width);
+            if(height[i] > height[j]){
                 j--;
+            }else{
+                i++;
             }
         }
         return res;

@@ -22,12 +22,7 @@
 ```
 class Solution {
     public int countNodes(TreeNode root) {
-        if(root == null){
-            return 0;
-        }
-        int left = countNodes(root.left),
-            right =countNodes(root.right);
-        return 1 + left + right;
+        return (root != null)? 1 + countNodes(root.left) + countNodes(root.right): 0;
     }
 }
 ```

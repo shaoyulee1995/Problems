@@ -7,27 +7,25 @@ class Solution {
     public boolean isPalindrome(String s) {
         int i = 0,
             j = s.length() - 1;
+        s = s.toLowerCase();
         while(i < j){
             char a = s.charAt(i),
                  b = s.charAt(j);
-            while(i < j && !validCharacter(a)){
+            while(i < j && !isValid(a)){
                 a = s.charAt(++i);
             }
-            while(i < j && !validCharacter(b)){
+            while(i < j && !isValid(b)){
                 b = s.charAt(--j);
             }
-            a = Character.toLowerCase(a);
-            b = Character.toLowerCase(b);
             if(a != b){
                 return false;
             }
-            i++;
-            j--;
+            i++; j--;
         }
         return true;
     }
-    
-    public boolean validCharacter(char w){
+
+    private boolean isValid(char w){
         return w <= 'z' && w >= 'a' || 
                w <= 'Z' && w >= 'A' || 
                w <= '9' && w >= '0';

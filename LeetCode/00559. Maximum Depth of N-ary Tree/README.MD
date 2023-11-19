@@ -27,20 +27,19 @@ class Solution {
         if(root == null){
             return 0;
         }
-        Queue<Node> q = new LinkedList();
-        q.offer(root);
-        int level = 0;
-        while(!q.isEmpty()){
-            int size = q.size();
+        Queue<Node> queue = new LinkedList();
+        queue.offer(root);
+        int res = 0;
+        for(int size = queue.size(); !queue.isEmpty(); size = queue.size()){
             for(int i = 0; i < size; i++){
-                Node node = q.poll();
+                Node node = queue.poll();
                 for(Node child: node.children){
-                    q.offer(child);
+                    queue.offer(child);
                 }
             }
-            level++;
+            res++;
         }
-        return level;
+        return res;
     }
 }
 ```

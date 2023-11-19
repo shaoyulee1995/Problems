@@ -57,31 +57,21 @@ class Solution {
 ```
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
-        int[] cntS = new int[26],
-              cntP = new int[26];
-        for(char pp: p.toCharArray()){
-            cntP[pp-'a']++;
-        }
         List<Integer> res = new ArrayList();
+        int[] source = new int[26],
+              target = new int[26];
+        for(char c: p.toCharArray()){
+            target[c-'a']++;
+        }
         for(int i = 0; i < s.length(); i++){
-            char ss = s.charAt(i);
-            cntS[ss-'a']++;
-            
-            if(i-p.length() >= 0){
-                char restore = s.charAt(i-p.length());
-                cntS[restore-'a']--;
-            }
-            if(i - p.length() + 1 >= 0){
-                boolean same = true;
-                for(int j = 0; j < 26; j++){
-                    if(cntP[j] != cntS[j]){
-                        same = false;
-                        break;
-                    }
+            char c = s.charAt(i);
+            source[c-'a']++;
+            if(i >= p.length() - 1){
+                int startIndex = i - p.length() + 1;
+                if(Arrays.equals(target, source)){
+                    res.add(startIndex);
                 }
-                if(same){
-                    res.add(i - p.length() + 1);
-                }
+                source[s.charAt(startIndex)-'a']--;
             }
         }
         return res;

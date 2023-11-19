@@ -12,6 +12,7 @@
 # Recursion
 * Time Complexity: O(log(N))
 * Space Complexity: O(1)
+	* N as nodes in tree
 ```
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -28,6 +29,7 @@ class Solution {
 # Iteration
 * Time Complexity: O(log(N))
 * Space Complexity: O(1)
+	* N as nodes in tree
 ```
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

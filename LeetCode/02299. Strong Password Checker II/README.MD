@@ -6,31 +6,34 @@
 class Solution {
     public boolean strongPasswordCheckerII(String password) {
         if(password.length() < 8){
-            return false;
+          return false;
         }
-        boolean lower = false,
-                upper = false,
+        HashSet<Character> specialSet = new HashSet();
+        for(char c: "!@#$%^&*()-+".toCharArray()){
+          specialSet.add(c);
+        }
+        boolean upper = false,
+                lower = false,
                 digit = false,
                 special = false;
-        HashSet<Character> set = new HashSet(Arrays.asList('!','@','#','$','%','^','&','*','(',')','-','+'));
         for(int i = 0; i < password.length(); i++){
-            char cur = password.charAt(i),
-                 prev = (i > 0)? password.charAt(i-1): ' ';
-            if(cur == prev){
-                return false;
-            }
-            if(cur >= '0' && cur <= '9'){
-                digit = true;
-            }else if(cur >= 'a' && cur <= 'z'){
-                lower =  true;
-            }else if(cur >= 'A' && cur <= 'Z'){
-                upper =  true;
-            }
-            if(set.contains(cur)){
-                special = true;
-            }
+          char c = password.charAt(i);
+          if(i > 0 && c == password.charAt(i-1)){
+            return false;
+          }
+          if(Character.isDigit(c)){
+            digit = true;
+          }else if(Character.isUpperCase(c)){
+            upper = true;
+          }else if(Character.isLowerCase(c)){
+            lower = true;
+          }else if(specialSet.contains(c)){
+            special = true;
+          }
         }
-        return lower && upper && digit && special;
+        return upper && lower && digit && special;
     }
 }
+
+  
 ```

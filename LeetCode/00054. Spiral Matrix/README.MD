@@ -6,29 +6,27 @@
 ```
 class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
-        int n = matrix.length,
-            m = matrix[0].length,
+        int total = matrix.length * matrix[0].length,
             startRow = 0,
             startCol = 0,
-            endRow = n-1,
-            endCol = m-1,
-            total = n*m;
+            endRow = matrix.length-1,
+            endCol = matrix[0].length-1;
         List<Integer> res = new ArrayList();
-        while(total > 0){
-            for(int i = startCol; i <= endCol && total > 0; total--, i++){
-                res.add(matrix[startRow][i]);
+        while(res.size() < total){
+            for(int j = startCol; j <= endCol && res.size() < total; j++){
+                res.add(matrix[startRow][j]);
             }
             startRow++;
-            for(int i = startRow; i <= endRow && total > 0; total--, i++){
-                res.add(matrix[i][endCol]);
+            for(int j = startRow; j <= endRow && res.size() < total; j++){
+                res.add(matrix[j][endCol]);
             }
             endCol--;
-            for(int i = endCol; i >= startCol && total > 0; total--, i--){
-                res.add(matrix[endRow][i]);
+            for(int j = endCol; j >= startCol && res.size() < total; j--){
+                res.add(matrix[endRow][j]);
             }
             endRow--;
-            for(int i = endRow; i >= startRow && total > 0; total--, i--){
-                res.add(matrix[i][startCol]);
+            for(int j = endRow; j >= startRow && res.size() < total; j--){
+                res.add(matrix[j][startCol]);
             }
             startCol++;
         }

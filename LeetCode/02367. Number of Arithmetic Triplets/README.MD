@@ -8,7 +8,7 @@ class Solution {
         HashSet<Integer> set = new HashSet();
         int res = 0;
         for(int num: nums){
-            if(set.contains(num - diff) && set.contains(num - diff*2)){
+            if(num >= 2*diff && set.contains(num-diff) && set.contains(num-2*diff)){
                 res++;
             }
             set.add(num);

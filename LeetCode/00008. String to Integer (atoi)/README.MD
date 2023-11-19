@@ -10,20 +10,17 @@ class Solution {
             return 0;
         }
         boolean isPositive = true;
-        int start = 0;
+        int i = 0;
         long res = 0;
-        if(s.charAt(0) == '-'){
-            isPositive = false;
-            start++;
-        }else if(s.charAt(0) == '+'){
-            start++;
+        if(s.charAt(i) == '-' || s.charAt(i) == '+'){
+            isPositive = (s.charAt(i++) == '+');
         }
-        for(int i = start; i < s.length(); i++){
+        for(; i < s.length(); i++){
             char c = s.charAt(i);
             if(!Character.isDigit(c)){
-                return produceOutput(isPositive, res);
+                return getOutput(isPositive, res);
             }
-            res = res*10 + c - '0';
+            res = res*10 + (c-'0');
             if(isPositive && res > Integer.MAX_VALUE){
                 return Integer.MAX_VALUE;
             }
@@ -31,14 +28,11 @@ class Solution {
                 return Integer.MIN_VALUE;
             }
         }
-        return produceOutput(isPositive, res);
+        return getOutput(isPositive, res);
     }
 
-    public int produceOutput(boolean isPositive, long res){
-        if(isPositive){
-            return (int)res;
-        }
-        return (int)(-1*res);
+    public int getOutput(boolean isPositive, long res){
+        return (isPositive)? (int)res: -1*(int)(res);
     }
 }
 ```

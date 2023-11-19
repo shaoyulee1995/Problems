@@ -1,54 +1,49 @@
 # Sliding Windows
-* sliding the windows on the right pointer that contains all of the characters in String t
-* sliding the windows on the left pointer to squeeze the windows' size; howevevr, you still have to contains all of the Character in String t
-
 ## Java
-* Time Complexity: O(N*N)
-* Space Complexity: O(N)
+	* Time Complexity: O(N*N)
+	* Space Complexity: O(N)
 ```
 class Solution {
     public String minWindow(String s, String t) {
-        Map<Character, Integer> map = new HashMap();
-        for(char c: t.toCharArray()){
+        HashMap<Character, Integer> map = new HashMap();
+        for(char c: t.toCharArray()){ 
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        int i = 0,
+        int size = map.size(),
+            i = 0,
             j = 0,
-            tSize = map.size(),
-            ansStart = 0,
-            ansEnd = Integer.MAX_VALUE;
+            minStart = 0,
+            minEnd = Integer.MAX_VALUE;
         while(j < s.length()){
-            while(j < s.length() && tSize > 0){
-                char c = s.charAt(j++);
+            while(j < s.length() && size > 0){
+                char c = s.charAt(j);
                 if(map.containsKey(c)){
-                    map.put(c, map.get(c) - 1);
+                    map.put(c, map.get(c)-1);
                     if(map.get(c) == 0){
-                        tSize--;
+                        size--;
                     }
                 }
+                j++;
             }
-            while(tSize == 0 && i < s.length()){
-                if(ansEnd - ansStart > j - i){
-                    ansEnd = j;
-                    ansStart = i;
+            while(size == 0 && i < s.length()){
+                if(minEnd - minStart > j - i){
+                    minEnd = j;
+                    minStart = i;
                 }
-                char c = s.charAt(i++);
+                char c = s.charAt(i);
                 if(map.containsKey(c)){
-                    map.put(c, map.get(c) + 1);
+                    map.put(c, map.get(c)+1);
                     if(map.get(c) == 1){
-                        tSize++;
+                        size++;
                     }
                 }
+                i++;
             }
         }
-        if(ansEnd == Integer.MAX_VALUE){
-            return "";
-        }
-        return s.substring(ansStart, ansEnd);
+        return minEnd == Integer.MAX_VALUE? "": s.substring(minStart, minEnd);
     }
 }
 ```
-
 ## C++
 ```
 class Solution {
