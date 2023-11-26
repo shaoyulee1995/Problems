@@ -1,8 +1,9 @@
 # Bellman-Ford
-* Time Complexity: O(kN)
+* Time Complexity: O(kF)
 * Space Complexity: O(N)
-	* N as edges
+	* F as length of flight
 	* k as stops
+	* N as n
 ```
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
@@ -15,10 +16,7 @@ class Solution {
                 int from = flight[0],
                     to = flight[1],
                     cost = flight[2];
-                if(dist[from] == Integer.MAX_VALUE){
-                    continue;
-                }
-                if(dist[from] + cost < temp[to]){
+                if(dist[from] != Integer.MAX_VALUE && dist[from] + cost < temp[to]){
                     temp[to] = dist[from] + cost;
                 }
             }

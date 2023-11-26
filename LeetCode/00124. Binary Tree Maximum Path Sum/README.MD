@@ -20,20 +20,22 @@
 * Space Complexity: O(1)
 ```
 class Solution {
-    int max = Integer.MIN_VALUE;
+    int max;
     public int maxPathSum(TreeNode root) {
+        max = Integer.MIN_VALUE;
         dfs(root);
         return max;
     }
-    public int dfs(TreeNode root){
-        if(root == null){
+
+    public int dfs(TreeNode node){
+        if(node == null){
             return 0;
         }
-        int leftVal = Math.max(dfs(root.left), 0),
-			rightVal = Math.max(dfs(root.right), 0);
-        int val = leftVal + rightVal + root.val;
-        max = Math.max(val, max);
-        return root.val + Math.max(leftVal, rightVal);
+        int left = Math.max(0, dfs(node.left)),
+            right = Math.max(0, dfs(node.right)),
+            sum = left + right + node.val;
+        max = Math.max(max, sum);
+        return node.val + Math.max(left, right);
     }
 }
 ```

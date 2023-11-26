@@ -18,6 +18,7 @@
 # Divide and Conquer
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as nodes in tree
 ```
 class Solution {
     Map<Integer, Integer> map;
@@ -41,6 +42,36 @@ class Solution {
                          inorder, inStart, inStart + rootIndex-1);
         root.right = find(preorder, preStart+left+1, preEnd,
                           inorder, rootIndex+1, inEnd); 
+        return root;
+    }
+}
+```
+# Backtrack
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as nodes in tree
+```
+class Solution {
+    int[] preOrder;
+    int preOrderIndex;
+    HashMap<Integer, Integer> map;
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        this.preOrder = preorder;
+        map = new HashMap();
+        for(int i = 0; i < inorder.length; i ++){
+            map.put(inorder[i], i);
+        }
+        preOrderIndex = 0;
+        return buildTree(0, inorder.length-1);
+    }
+    public TreeNode buildTree(int inOrderStart, int inOrderEnd){
+        if(inOrderStart > inOrderEnd){
+            return null;
+        }
+        TreeNode root = new TreeNode(preOrder[preOrderIndex++]);
+        int idx = map.get(root.val);
+        root.left = buildTree(inOrderStart, idx-1);
+        root.right = buildTree(idx+1, inOrderEnd);
         return root;
     }
 }

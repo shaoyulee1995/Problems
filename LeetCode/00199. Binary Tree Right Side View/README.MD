@@ -15,10 +15,10 @@
  * }
  */
 ```
-# Iterate
+# Iteration
 * Time Complexity: O(N)
 * Space Complexity: O(N)
-	* N as number of TreeNode
+	* N as nodes in tree
 ```
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
@@ -28,22 +28,46 @@ class Solution {
         }
         Queue<TreeNode> queue = new LinkedList();
         queue.offer(root);
-        while(!queue.isEmpty()){
-            int size = queue.size();
-            while(size-- > 0){
+        for(int size = queue.size(); !queue.isEmpty(); size = queue.size()){
+            for(int i = 0; i < size; i++){
                 TreeNode node = queue.poll();
-                if(size == 0){
+                if(i == size-1){
                     res.add(node.val);
                 }
                 if(node.left != null){
-                    queue.add(node.left);
+                    queue.offer(node.left);
                 }
                 if(node.right != null){
-                    queue.add(node.right);
+                    queue.offer(node.right);
                 }
             }
         }
         return res;
+    }
+}
+```
+# Recursion
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+	* N as nodes in tree
+```
+class Solution {
+    List<Integer> res;
+    public List<Integer> rightSideView(TreeNode root) {
+        res = new ArrayList();
+        dfs(root, 0);
+        return res;
+    }
+
+    public void dfs(TreeNode node, int level){
+        if(node == null){
+            return;
+        }
+        if(res.size() == level){
+            res.add(node.val);
+        }
+        dfs(node.right, level+1);
+        dfs(node.left, level+1);
     }
 }
 ```

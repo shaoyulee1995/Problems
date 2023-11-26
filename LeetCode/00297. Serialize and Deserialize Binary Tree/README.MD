@@ -12,50 +12,44 @@
 # BFS
 * Time Complexity: O(N)
 * Space Complexity: O(N)
-
+	* N as nodes in tree
 ```
 public class Codec {
-    String SEP = ",";
-    String NULL = "#";
-    StringBuilder sb;
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
         if(root == null){
-            return NULL;
+            return "#";
         }
-        sb = new StringBuilder();
-        serialize(root, sb);
+        StringBuilder sb = new StringBuilder();
+        preOrder(root, sb);
         return sb.toString();
     }
-    public void serialize(TreeNode root, StringBuilder sb){
-        if(root == null){
-            sb.append(NULL).append(SEP);
+    public void preOrder(TreeNode node, StringBuilder sb){
+        if(node == null){
+            sb.append("#").append(",");
             return;
         }
-        sb.append(root.val).append(SEP);
-        serialize(root.left, sb);
-        serialize(root.right, sb);
+        sb.append(node.val).append(",");
+        preOrder(node.left, sb);
+        preOrder(node.right, sb);
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
         LinkedList<String> list = new LinkedList();
-        for(String s: data.split(SEP)){
-            list.addLast(s);
+        for(String node: data.split(",")){
+            list.add(node);
         }
-        return deserialize(list);
+        return decodePreOrder(list);
     }
-    public TreeNode deserialize(LinkedList<String> list){
-        if(list.isEmpty()){
+    public TreeNode decodePreOrder(LinkedList<String> list){
+        String val = list.removeFirst();
+        if(val.equals("#")){
             return null;
         }
-        String first = list.removeFirst();
-        if(first.equals(NULL)){
-            return null;
-        }
-        TreeNode root = new TreeNode(Integer.parseInt(first));
-        root.left = deserialize(list);
-        root.right = deserialize(list);
+        TreeNode root = new TreeNode(Integer.valueOf(val));
+        root.left = decodePreOrder(list);
+        root.right =decodePreOrder(list);
         return root;
     }
 }

@@ -18,6 +18,7 @@
 # Recursion
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+	* N as nodes in tree
 ```
 class Solution {
     public int maxDepth(TreeNode root) {
@@ -33,28 +34,26 @@ class Solution {
 # BFS
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+	* N as nodes in tree
 ```
 class Solution {
     public int maxDepth(TreeNode root) {
         if(root == null){
             return 0;
         }
-        Queue<TreeNode> q = new LinkedList();
-        q.offer(root);
-        int res = 0;        
-        while(!q.isEmpty()){
-            int size = q.size();
-            while(size != 0){
-                TreeNode node = q.poll();
-                size--;
+        int res = 0;
+        Queue<TreeNode> queue = new LinkedList();
+        queue.offer(root);
+        for(int size = queue.size(); !queue.isEmpty(); res++, size = queue.size()){
+            for(int i = 0; i < size; i++){
+                TreeNode node = queue.poll();
                 if(node.left != null){
-                    q.offer(node.left);
+                    queue.offer(node.left);
                 }
                 if(node.right != null){
-                    q.offer(node.right);
+                    queue.offer(node.right);
                 }
             }
-            res++;
         }
         return res;
     }
