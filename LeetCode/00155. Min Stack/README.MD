@@ -1,7 +1,19 @@
+```
+Your MinStack object will be instantiated and called as such:
+MinStack obj = new MinStack();
+obj.push(val);
+obj.pop();
+int param_3 = obj.top();
+int param_4 = obj.getMin();
+```
+# ListNode
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+	* N as length of nodes
+```
 class MinStack {
     
     private Node head;
-    /** initialize your data structure here. */
     public MinStack() {
     }
     
@@ -38,12 +50,4 @@ class MinStack {
         }
     }
 }
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * MinStack obj = new MinStack();
- * obj.push(val);
- * obj.pop();
- * int param_3 = obj.top();
- * int param_4 = obj.getMin();
- */
+```

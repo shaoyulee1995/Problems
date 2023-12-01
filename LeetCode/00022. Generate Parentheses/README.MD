@@ -1,5 +1,5 @@
 # Backtrack
-* Time Complexity: O()
+* Time Complexity: O(frac{4^N}{\sqrt{N}})
 * Space Complexity: O(N)
 	* N as n
 ```

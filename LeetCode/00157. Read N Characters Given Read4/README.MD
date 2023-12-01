@@ -3,11 +3,9 @@
 * Space Complexity: O(1)
 	* N as length of buf
 ```
-/**
- * The read4 API is defined in the parent class Reader4.
- *     int read4(char[] buf4);
- */
-
+The read4 API is defined in the parent class Reader4.
+    int read4(char[] buf4);
+    
 public class Solution extends Reader4 {
     /**
      * @param buf Destination buffer

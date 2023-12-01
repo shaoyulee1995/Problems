@@ -1,45 +1,44 @@
 # Binary Search
 * Time Complexity: O(Nlog(S-Mx))
+* Space Complexity: O(1)
 	* S represents sum of nums array
 	* Mx represets the current max for that group
-* Space Complexity: O(1)
 ```
 class Solution {
-    public int splitArray(int[] nums, int m) {
-        int sum = 0,
-            max = 0;
-        for(int num: nums){
-            sum += num;
-            max = Math.max(num, max);
-        }
-        
-        int i = max, j = sum;
+    public int splitArray(int[] nums, int k) {
+        int sum = Arrays.stream(nums).sum(),
+            max = Arrays.stream(nums).max().getAsInt();
+        return binarySearch(nums, max, sum, k);
+    }
+
+    public int binarySearch(int[] nums, int low, int high, int k){
+        int i = low,
+            j = high;
         while(i < j){
-            int k = i + (j-i)/2;
-            int pieces = split(nums, m, k);
-            if(pieces == -1){
-                i = k + 1;
+            int m = i + (j-i)/2;
+            if(isValid(nums, m, k)){
+                j = m;
             }else{
-                j = k;
+                i = m+1;
             }
         }
         return i;
     }
-    
-    public int split(int[] nums, int m, int k){
-        int curSum = 0, 
-            piece = 1;
+
+    public boolean isValid(int[] nums, int targetSum, int k){
+        int piece = 1,
+            sum = 0;
         for(int num: nums){
-            if(curSum + num > k){
+            if(sum + num > targetSum){
                 piece++;
-                curSum = 0;
+                sum = 0;
             }
-            if(piece > m){
-                return -1;
+            if(piece > k){
+                return false;
             }
-            curSum += num;
+            sum += num;
         }
-        return piece;
+        return true;
     }
 }
 ```

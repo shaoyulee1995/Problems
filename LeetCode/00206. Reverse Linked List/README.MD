@@ -1,4 +1,4 @@
-# Iterate
+# Iteration
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 	* N as nodes of linkedlist

@@ -4,17 +4,17 @@
     * N as n
 ```
 class Solution {
-    public boolean isPowerOfTwo(int n) {
+    public boolean isPowerOfFour(int n) {
         if(n <= 0){
             return false;
         }
         while(n > 1){
-            if(n%2 == 1){
+            if(n%4 != 0){
                 return false;
             }
-            n /= 2;
+            n /= 4;
         }
-        return n%2 == 0;
+        return n == 1;
     }
 }
 ```
