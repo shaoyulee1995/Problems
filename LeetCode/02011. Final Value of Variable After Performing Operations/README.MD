@@ -6,13 +6,8 @@
 class Solution {
     public int finalValueAfterOperations(String[] operations) {
         int res = 0;
-        for(String operation: operations){
-            char c = operation.charAt(1);
-            if(c == '-'){
-                res -= 1;
-            }else if(c == '+'){
-                res += 1;
-            }
+        for(String op: operations){
+            res += (op.charAt(1) == '+')? 1: -1;
         }
         return res;
     }

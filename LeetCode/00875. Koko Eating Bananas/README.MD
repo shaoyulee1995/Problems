@@ -6,23 +6,26 @@
 ```
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
-        int min = 0, max = 0;
-        for(int pile: piles){
-            max = Math.max(max, pile);
-        }
+        int min = 1,
+            max = Arrays.stream(piles).max().getAsInt();
         while(min < max){
-            int mid = min + (max-min)/2;
-            double k = 0;
-            for(int pile: piles){
-                k += Math.ceil((double)pile/mid);
-            }
-            if(k > h){
-                min = mid + 1;
+            int k = min + (max-min)/2;
+            int eatenHours = getHoursByBanana(piles, k);
+            if(eatenHours > h){
+                min = k+1;
             }else{
-                max = mid;
+                max = k;
             }
         }
         return min;
+    }
+
+    public int getHoursByBanana(int[] piles, int banana){
+        int res = 0;
+        for(int pile: piles){
+            res += Math.ceil((double)pile/banana);
+        }
+        return res;
     }
 }
 ```

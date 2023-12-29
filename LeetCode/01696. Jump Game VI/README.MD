@@ -5,21 +5,21 @@
 ```
 class Solution {
     public int maxResult(int[] nums, int k) {
-        int[] score = new int[nums.length];
-        score[0] = nums[0];
+        int[] dp = new int[nums.length];
+        dp[0] = nums[0];
         ArrayDeque<Integer> deque = new ArrayDeque();
-        deque.offer(0);
+        deque.offerLast(0);
         for(int i = 1; i < nums.length; i++){
-            while(deque.peekFirst() != null && deque.peekFirst() + k < i){
+            while(!deque.isEmpty() && i - deque.peekFirst() > k){
                 deque.pollFirst();
             }
-            score[i] = score[deque.peekFirst()] + nums[i];
-            if(deque.peekLast() != null && score[i] >= score[deque.peekLast()]){
+            dp[i] = dp[deque.peekFirst()] + nums[i];
+            while(!deque.isEmpty() && dp[i] >= dp[deque.peekLast()]){
                 deque.pollLast();
             }
             deque.offerLast(i);
-        }        
-        return score[nums.length - 1];
+        }
+        return dp[nums.length-1];
     }
 }
 ```

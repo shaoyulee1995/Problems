@@ -1,6 +1,7 @@
 # Math
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+    * N as n
 ```
 class Solution {
     public int minOperations(int n) {

@@ -42,3 +42,23 @@ class Solution {
     }
 }
 ```
+# Array
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+	* N as length of s
+```
+class Solution {
+    public boolean checkDistances(String s, int[] distance) {
+        int[] arr = new int[26];
+        Arrays.fill(arr, -1);
+        for(int i = 0; i < s.length(); i++){
+            char c = s.charAt(i);
+            if(arr[c-'a'] != -1 && i - arr[c-'a'] != distance[c-'a']){
+                return false;
+            }
+            arr[c-'a'] = i+1;
+        }
+        return true;
+    }
+}
+```

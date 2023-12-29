@@ -5,21 +5,20 @@
 ```
 class Solution {
     public boolean isHappy(int n) {
-        Set<Integer> set = new HashSet();
-        while(n > 1){
+        HashSet<Integer> set = new HashSet();
+        while(n != 1){
+            n = parseSquare(n);
             if(!set.add(n)){
                 return false;
             }
-            n = parse(n);
         }
-        return n == 1;
+        return true;
     }
 
-    public int parse(int n){
+    public int parseSquare(int n){
         int res = 0;
         while(n != 0){
-            int num = n%10;
-            res += Math.pow(num, 2);
+            res += Math.pow(n%10, 2);
             n /= 10;
         }
         return res;
