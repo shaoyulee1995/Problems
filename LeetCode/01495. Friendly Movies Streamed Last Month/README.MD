@@ -1,10 +1,12 @@
 ```
-select distinct c.title
-from Content c join TVProgram p
-    on c.content_id = p.content_id
-where c.Kids_content = 'Y' and
+select
+    distinct title
+from
+    TVProgram tvp join Content c
+    on tvp.content_id = c.content_id
+where
     c.content_type = 'Movies' and
-    Month(p.program_date) = 6 and
-    Year(p.program_date) = 2020;
-
+    c.Kids_content = 'Y' and
+    Year(tvp.program_date) = 2020 and
+    Month(tvp.program_date) = 6
 ```

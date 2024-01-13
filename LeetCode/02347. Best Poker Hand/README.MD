@@ -8,29 +8,23 @@ class Solution {
         if(s[0] == s[1] && s[1] == s[2] && s[2] == s[3] && s[3] == s[4]){
             return "Flush";
         }
+        int max = 0;
         HashMap<Integer, List<Character>> map = new HashMap();
         for(int i = 0; i < ranks.length; i++){
-            map.putIfAbsent(ranks[i], new ArrayList());
-            map.get(ranks[i]).add(s[i]);
+            map.computeIfAbsent(ranks[i], x -> new ArrayList<>()).add(s[i]);
+            max = Math.max(max, map.get(ranks[i]).size());
         }
-        PriorityQueue<Map.Entry<Integer, List<Character>>> pq = new PriorityQueue<>((a,b) -> b.getValue().size() - a.getValue().size());
-        for(Map.Entry<Integer, List<Character>> entry: map.entrySet()){
-            pq.add(entry);
+        if(max >= 3){
+            return "Three of a Kind";
         }
-        while(!pq.isEmpty()){
-            Map.Entry<Integer, List<Character>> entry = pq.poll();
-            if(entry.getValue().size() >= 3){
-                return "Three of a Kind";
-            }
-            if(entry.getValue().size() == 2){
-                return "Pair";
-            }
+        if(max == 2){
+            return "Pair";
         }
         return "High Card";
     }
 }
-# 2 HashMaps	
 ```
+# HashMaps	
 * Time Complexity: O(N)
 * Space Complexity: O(N)
 	* N as length of ranks
@@ -48,10 +42,33 @@ class Solution {
         if(suitMap.containsValue(5)){
             return "Flush";
         }
-        if(rankMap.containsValue(5) || rankMap.containsValue(4) || rankMap.containsValue(3)){
+        if(rankMap.containsValue(4) || rankMap.containsValue(3)){
             return "Three of a Kind";
         }
         if(rankMap.containsValue(2)){
+            return "Pair";
+        }
+        return "High Card";
+    }
+}
+```
+# Counting Array
+* Time Complexity: O(N)
+* Space Complexity: O(1)
+	* N as length of ranks
+```
+class Solution {
+    public String bestHand(int[] ranks, char[] suits) {
+        if(suits[0] == suits[1] && suits[1] == suits[2] && suits[2] == suits[3]&& suits[3] == suits[4]){
+            return "Flush";
+        }    
+        int[] cnt = new int[14];
+        IntStream.of(ranks).forEach(x -> cnt[x]++);
+        int max = IntStream.of(cnt).max().getAsInt();
+        if(max >= 3){
+            return "Three of a Kind";
+        }
+        if(max == 2){
             return "Pair";
         }
         return "High Card";
