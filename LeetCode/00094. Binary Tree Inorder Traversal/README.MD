@@ -1,53 +1,51 @@
 ```
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
-```
-
-# DFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* worst: O(N)
-	* average: O(log(N))
-
-```
-class Solution {
-    public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList();
-        inorderTraversal(root, list);
-        return list;
-    }
-    private void inorderTraversal(TreeNode node, List<Integer> list){
-        if(node == null){
-            return;
-        }
-        inorderTraversal(node.left, list);
-        list.add(node.val);
-        inorderTraversal(node.right, list);
+Definition for a binary tree node.
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 }
 ```
-# Iterate
+# DFS
 * Time Complexity: O(N)
 * Space Complexity: O(N)
+    * N as nodes in tree
+```
+class Solution {
+    List<Integer> res;
+    public List<Integer> inorderTraversal(TreeNode root) {
+        res = new ArrayList();
+        dfs(root);
+        return res;
+    }
+    
+    public void dfs(TreeNode node){
+        if(node == null){
+            return;
+        }
+        dfs(node.left);
+        res.add(node.val);
+        dfs(node.right);
+    }
+}
+```
+# BFS
+* Time Complexity: O(N)
+* Space Complexity: O(N)
+    * N as nodes in tree
 ```
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> list = new ArrayList();
+        List<Integer> res = new ArrayList();
         if(root == null){
-            return list;
+            return res;
         }
         Stack<TreeNode> stack = new Stack();
         while(root != null || !stack.isEmpty()){
@@ -56,18 +54,16 @@ class Solution {
                 root = root.left;
             }
             root = stack.pop();
-            list.add(root.val);
+            res.add(root.val);
             root = root.right;
         }
-        return list;
+        return res;
     }
 }
 ```
-
 # Thread Binary Tree(Morris Traversal)
 * Time Complexity: O(N)
 * Space Complexity: O(N)
-
 ```
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {

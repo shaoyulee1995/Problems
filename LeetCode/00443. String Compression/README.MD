@@ -6,22 +6,22 @@
 class Solution {
     public int compress(char[] chars) {
         int i = 0,
-            idx = 0;
+            grpIdx = 0;
         while(i < chars.length){
             char c = chars[i];
-            int count = 0;
-            while(i < chars.length && chars[i] == c){
-                count++;
+            int freq = 0;
+            while(i < chars.length && c == chars[i]){
+                freq++;
                 i++;
             }
-            chars[idx++] = c;
-            if(count > 1){
-                for(char num: Integer.toString(count).toCharArray()){
-                    chars[idx++] = num;
+            chars[grpIdx++] = c;
+            if(freq > 1){
+                for(char num: Integer.toString(freq).toCharArray()){
+                    chars[grpIdx++] = num;
                 }
             }
-        }
-        return idx;
+        }    
+        return grpIdx;
     }
 }
 ```

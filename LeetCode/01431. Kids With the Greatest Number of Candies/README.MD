@@ -5,15 +5,12 @@
 ```
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-        List<Boolean> list = new ArrayList();
-        int max = Integer.MIN_VALUE;
-        for(int c: candies){
-            max = Math.max(max, c);
+        int max = Arrays.stream(candies).max().getAsInt();
+        List<Boolean> res = new ArrayList();
+        for(int candy: candies){
+            res.add((candy+extraCandies >= max));
         }
-        for(int c: candies){
-            list.add((c+extraCandies >= max));
-        }
-        return list;
+        return res;
     }
 }
 ```

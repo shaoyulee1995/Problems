@@ -8,22 +8,18 @@ class Solution {
         if(n == 0){
             return true;
         }
-        for(int i = 0; i< flowerbed.length; i++){
+        for(int i = 0; i < flowerbed.length && n > 0; i++){
             if(flowerbed[i] == 1){
                 continue;
             }
-
-            boolean left = (i == 0)? true: (flowerbed[i-1] == 0),
-                    right = (i == flowerbed.length-1)? true: (flowerbed[i+1] == 0);
+            boolean left = (i == 0)? true: flowerbed[i-1] == 0,
+                    right = (i == flowerbed.length-1)? true: flowerbed[i+1] == 0;
             if(left && right){
-                n--;
                 flowerbed[i] = 1;
-            }
-            if(n == 0){
-                return true;
+                n--;
             }
         }
-        return false;
+        return n == 0;
     }
 }
 ```

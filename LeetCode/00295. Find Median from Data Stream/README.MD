@@ -27,18 +27,13 @@ class MedianFinder {
     }
     
     public double findMedian() {
-        if(even){
-            return (small.peek() + large.peek())/2.0;
-        }
-        return small.peek();
+        return !even? small.peek(): (small.peek() + large.peek())/2.0;
     }
 }
 ```
 ```
-/**
- * Your MedianFinder object will be instantiated and called as such:
- * MedianFinder obj = new MedianFinder();
- * obj.addNum(num);
- * double param_2 = obj.findMedian();
- */
+Your MedianFinder object will be instantiated and called as such:
+MedianFinder obj = new MedianFinder();
+obj.addNum(num);
+double param_2 = obj.findMedian();
 ```

@@ -33,7 +33,7 @@ class Solution {
                 pq.poll();
             }
         }
-        return pq.toArray(new int[k][2]);
+        return pq.toArray(int[][]:: new);
     }
 }
 ```

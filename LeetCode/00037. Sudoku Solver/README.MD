@@ -1,50 +1,48 @@
 # BF
-* Time Complexity: O(N*N)
+* Time Complexity: O(9<sup>81</sup>)
 * Space Complexity: O(1)
 ```
 class Solution {
     public void solveSudoku(char[][] board) {
-        if(board.length == 0 || board == null){
-            return;
-        }
-        solve(board);
+        solve(board);    
     }
+
     public boolean solve(char[][] board){
-        int n = board.length;
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < n; j++){
+        for(int i = 0; i < board.length; i++){
+            for(int j = 0; j < board[0].length; j++){
                 if(board[i][j] != '.'){
                     continue;
                 }
                 for(char k = '1'; k <= '9'; k++){
-                    if(valid(board, i, j, k)){
+                    if(isValid(board, i, j, k)){
                         board[i][j] = k;
                         if(solve(board)){
                             return true;
                         }
                         board[i][j] = '.';
-                    }             
+                    }
                 }
                 return false;
             }
         }
         return true;
     }
-    public boolean valid(char[][] board, int i, int j, char k){
-        int n = board.length;
-        for(int x = 0; x < n; x++){
-            if(board[x][j] == k){
+
+    public boolean isValid(char[][] board, int x, int y, char k){
+        for(int i = 0; i < board.length; i++){
+            if(board[x][i] == k){
                 return false;
             }
-            if(board[i][x] == k){
+            if(board[i][y] == k){
                 return false;
             }
         }
-        int startRow = (i/3)*3,
-            startCol = (j/3)*3;
-        for(int x = startRow; x < startRow + 3; x++){
-            for(int y = startCol; y < startCol + 3; y++){
-                if(board[x][y] == k){
+
+        int startRow = (x/3)*3,
+            startCol = (y/3)*3;
+        for(int i = startRow; i < startRow+3; i++){
+            for(int j = startCol; j < startCol+3; j++){
+                if(board[i][j] == k){
                     return false;
                 }
             }

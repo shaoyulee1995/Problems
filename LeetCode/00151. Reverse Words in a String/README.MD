@@ -25,23 +25,23 @@ class Solution {
 ```
 class Solution {
     public String reverseWords(String s) {
-        int i = 0, 
-            j = s.length() - 1;
-        while(i < s.length() && s.charAt(i) == ' '){
+        int i = 0,
+            j = s.length()-1;
+        while(i < j && s.charAt(i) == ' '){
             i++;
         }
-        while(j >= 0 && s.charAt(j) == ' '){
+        while(j >= i && s.charAt(j) == ' '){
             j--;
         }
+        ArrayDeque<String> deque = new ArrayDeque();
         StringBuilder sb = new StringBuilder();
-        Deque<String> deque = new ArrayDeque();
         while(i <= j){
             char c = s.charAt(i);
-            if(sb.toString().length() != 0 && c == ' '){
+            if(c != ' '){
+                sb.append(c);
+            }else if(c == ' ' && sb.length() != 0){
                 deque.offerFirst(sb.toString());
                 sb.setLength(0);
-            }else if (c != ' '){
-                sb.append(c);
             }
             i++;
         }

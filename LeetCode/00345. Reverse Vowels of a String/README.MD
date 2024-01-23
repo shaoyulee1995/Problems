@@ -5,31 +5,33 @@
 ```
 class Solution {
     public String reverseVowels(String s) {
-        char[] words = s.toCharArray();
+        return reverse(s.toCharArray());
+    }
+
+    public String reverse(char[] s){
         int i = 0,
-            j = s.length() - 1;
+            j = s.length - 1;
         while(i < j){
-            while(i < j && !isVowel(words[i])){
+            while(i < j && !isVowel(s[i])){
                 i++;
             }
-            while(i < j && !isVowel(words[j])){
+            while(j > i && !isVowel(s[j])){
                 j--;
             }
             if(i >= j){
                 break;
             }
-            if(isVowel(words[i]) && isVowel(words[j])){
-                swap(words, i++, j--);
-            }
-            
+            swap(s, i++, j--);
         }
-        return new String(words);
+        return new String(s);
     }
-    public void swap(char[] words, int i, int j){
-        char temp = words[i];
-        words[i] = words[j];
-        words[j] = temp;
+    
+    public void swap(char[] s, int i, int j){
+        char tmp = s[i];
+        s[i] = s[j];
+        s[j] = tmp;
     }
+
     public boolean isVowel(char c){
         return c =='a' || c =='e' || c =='i' || c =='o' || c =='u' || 
             c =='A' || c =='E' || c =='I' || c =='O' || c =='U';
