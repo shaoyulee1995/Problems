@@ -6,17 +6,10 @@
 ```
 class Solution {
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
-        int sumA = 0,
-            sumB = 0;
-        HashSet<Integer> setB = new HashSet();
-        for(int a: aliceSizes){
-            sumA += a;
-        }
-        for(int b: bobSizes){
-            setB.add(b);
-            sumB += b;
-        }
-        int delta = (sumB - sumA)/2;
+        int sumA = Arrays.stream(aliceSizes).sum(),
+            sumB = Arrays.stream(bobSizes).sum(),
+            delta = (sumB-sumA)/2;
+        Set<Integer> setB = Arrays.stream(bobSizes).boxed().collect(Collectors.toSet());
         for(int a: aliceSizes){
             if(setB.contains(a+delta)){
                 return new int[]{a, a+delta};

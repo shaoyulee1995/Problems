@@ -1,16 +1,14 @@
 # Array
 * Time Complexity: O(N)
 * Space Complexity: O(1)
+    * N as length of nums
 ```
 class Solution {
     public int pivotIndex(int[] nums) {
-        int sum = 0;
-        for(int num: nums){
-            sum += num;
-        }
-        int prevSum = 0;
+        int sum = Arrays.stream(nums).sum(),
+            prevSum = 0;
         for(int i = 0; i < nums.length; i++){
-            if(prevSum == sum - nums[i] - prevSum){
+            if(prevSum == sum - prevSum - nums[i]){
                 return i;
             }
             prevSum += nums[i];

@@ -20,11 +20,9 @@ class Solution {
                 }
             }
         }
-
         int[] res = new int[stack.size()];
-        int i = 0;
-        for(int asteroid: stack){
-            res[i++] = asteroid;
+        for(int i = res.length-1; !stack.isEmpty(); i--){
+            res[i] = stack.pop();
         }
         return res;
     }

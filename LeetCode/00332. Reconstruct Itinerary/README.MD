@@ -1,19 +1,26 @@
+# DFS
+* Time Complexity: O()
+* Space Complexity: O(V+E)
+	* V as vertices
+    * E as edges
 ```
 class Solution {
-    LinkedList<String> res = new LinkedList();
-    HashMap<String, PriorityQueue<String>> map = new HashMap();
+    HashMap<String, PriorityQueue<String>> map;
+    LinkedList<String> res;
     public List<String> findItinerary(List<List<String>> tickets) {
+        map = new HashMap();
+        res = new LinkedList();
         for(List<String> ticket: tickets){
-            map.putIfAbsent(ticket.get(0), new PriorityQueue<>());
-            map.get(ticket.get(0)).add(ticket.get(1));
+            map.computeIfAbsent(ticket.get(0), x -> new PriorityQueue<>()).add(ticket.get(1));
         }
         dfs("JFK");
         return res;
     }
+    
     public void dfs(String city){
-        PriorityQueue<String> paths = map.get(city);
-        while(paths!=null && !paths.isEmpty()){
-            dfs(paths.poll());
+        PriorityQueue<String> pq = map.get(city); 
+        while(pq != null && !pq.isEmpty()){
+            dfs(pq.poll());
         }
         res.addFirst(city);
     }

@@ -6,19 +6,19 @@
 ```
 class Solution {
     public List<String> findAndReplacePattern(String[] words, String pattern) {
-        int[] p = pattern(pattern);
-        List<String> ans = new ArrayList();
+        int[] p = getPattern(pattern);
+        List<String> res = new ArrayList();
         for(String word: words){
-            if(Arrays.equals(p, pattern(word))){
-                ans.add(word);
+            if(Arrays.equals(getPattern(word), p)){
+                res.add(word);
             }
         }
-        return ans;
+        return res;
     }
-    public int[] pattern(String word){
-        int length = word.length();
+
+    public int[] getPattern(String word){
+        int[] res = new int[word.length()];
         HashMap<Character, Integer> map = new HashMap();
-        int[] res = new int[length];
         for(int i = 0; i < word.length(); i++){
             map.putIfAbsent(word.charAt(i), map.size());
             res[i] = map.get(word.charAt(i));

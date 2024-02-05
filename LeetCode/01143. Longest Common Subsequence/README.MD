@@ -1,4 +1,4 @@
-# 2DP
+# DP
 * Time Complexity: O(NM)
 * Space Complexity: O(NM)
 	* N is the length of text1
@@ -20,37 +20,37 @@ class Solution {
     }
 }
 ```
-
 # Memorized Recursion
-* Time Complexity: O(N*M)
-* Space Complexity: O(N*M)
+* Time Complexity: O(NM)
+* Space Complexity: O(NM)
 	* N is the length of text1
 	* M is the length of text2
 ```
 class Solution {
-    int[][] memo;
+    int[][] dp;
     public int longestCommonSubsequence(String text1, String text2) {
-        memo = new int[text1.length()][text2.length()];
-        for(int[] row: memo){
-            Arrays.fill(row, -1);
+        dp = new int[text1.length()][text2.length()];
+        for(int i = 0; i < text1.length(); i++){
+            Arrays.fill(dp[i], -1);
         }
-        return longestCommonSubsequence(text1, 0, text2, 0);
+        return dfs(text1, 0, text2, 0);
     }
-    public int longestCommonSubsequence(String text1, int p1, String text2, int p2){
-        if(p1 == text1.length() || p2 == text2.length()){
+
+    public int dfs(String a, int i, String b, int j){
+        if(i == a.length() || j == b.length()){
             return 0;
         }
-        if(memo[p1][p2] != -1){
-            return memo[p1][p2];
+        if(dp[i][j] != -1){
+            return dp[i][j];
         }
-        if(text1.charAt(p1) == text2.charAt(p2)){
-            memo[p1][p2] = 1 + longestCommonSubsequence(text1, p1 + 1, text2, p2 + 1);
+
+        if(a.charAt(i) == b.charAt(j)){
+            dp[i][j] = 1 + dfs(a, i+1, b, j+1);
         }else{
-            memo[p1][p2] = Math.max(longestCommonSubsequence(text1, p1 + 1, text2, p2 + 1),
-                           Math.max(longestCommonSubsequence(text1, p1, text2, p2 + 1),
-                                    longestCommonSubsequence(text1, p1 + 1, text2, p2)));
+            dp[i][j] = Math.max(dfs(a, i, b, j+1),
+                                dfs(a, i+1, b, j));
         }
-        return memo[p1][p2];
+        return dp[i][j];
     }
 }
 ```

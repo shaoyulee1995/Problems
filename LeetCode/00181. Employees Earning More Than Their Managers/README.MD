@@ -1,6 +1,10 @@
 ```
-/* Write your T-SQL query statement below */
-select e1.name as Employee
-from Employee e1, Employee e2
-where e1.managerId = e2.id and e1.salary > e2.salary;
+select
+    employees.name as 'Employee'
+from
+    Employee employees,
+    Employee manager
+where 
+    employees.salary > manager.salary and
+    employees.managerId = manager.id
 ```

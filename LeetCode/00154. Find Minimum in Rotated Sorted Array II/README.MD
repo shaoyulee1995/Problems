@@ -1,6 +1,7 @@
+# Binary Search
 * Time Complexity: O(log(N))
 * Space Complexity: O(1)
-
+    * N as length of nums
 ```
 class Solution {
     public int findMin(int[] nums) {
