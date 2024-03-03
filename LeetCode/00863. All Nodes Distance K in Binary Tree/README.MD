@@ -1,29 +1,19 @@
 ```
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Definition for a binary tree node.
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
+}
 ```
 # Graph, HashMap, BFS
 * Time Complexity: O(E + V)
 * Space Complexity: O(E)
 	* E as edges
 	* V as vertices
+
 ```
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
 class Solution {
     HashMap<TreeNode, List<TreeNode>> map;
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {

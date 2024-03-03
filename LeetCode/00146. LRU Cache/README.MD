@@ -8,13 +8,13 @@
         * N as capacity
 ```
 class LRUCache {
+    LRU_LinkedList lru;
     HashMap<Integer, Node> map;
-    LinkedListLRU lru;
     int capacity;
     public LRUCache(int capacity) {
-        lru = new LinkedListLRU();
-        map = new HashMap();
         this.capacity = capacity;
+        map = new HashMap();
+        lru = new LRU_LinkedList();
     }
     
     public int get(int key) {
@@ -32,34 +32,43 @@ class LRUCache {
             node.val = value;
             lru.moveToHead(node);
         }else{
-            if(map.size() == this.capacity){
-                Node removeNode = lru.getTail();
-                map.remove(removeNode.key);
+            if(map.size() == capacity){
+                Node tail = lru.getTail();
                 lru.removeTail();
+                map.remove(tail.key);
             }
-            Node insertedNode = new Node(key, value);
-            lru.addToHead(insertedNode);
-            map.put(key, insertedNode);
+            node = new Node(key, value);
+            lru.addToHead(node);
+            map.put(key, node);
         }
     }
 
-    class LinkedListLRU{
+    class LRU_LinkedList{
         Node dummyHead, dummyTail;
-        public LinkedListLRU(){
-            dummyHead = new Node(0, 0);
-            dummyTail = new Node(0, 0);
+
+        public LRU_LinkedList(){
+            dummyHead = new Node();
+            dummyTail = new Node();
             dummyHead.next = dummyTail;
             dummyTail.prev = dummyHead;
         }
 
         public void removeTail(){
-            Node last = getTail();
-            last.prev.next = dummyTail;
-            dummyTail.prev = last.prev;
+            Node tail = getTail();
+            tail.prev.next = dummyTail;
+            dummyTail.prev = tail.prev;
         }
-
+        
         public Node getTail(){
             return dummyTail.prev;
+        }
+
+        public void addToHead(Node node){
+            Node srcHead = dummyHead.next;
+            node.next = srcHead;
+            srcHead.prev = node;
+            dummyHead.next = node;
+            node.prev = dummyHead;
         }
 
         public void moveToHead(Node node){
@@ -67,19 +76,12 @@ class LRUCache {
             node.next.prev = node.prev;
             addToHead(node);
         }
-
-        public void addToHead(Node node){
-            Node tmp = dummyHead.next;
-            dummyHead.next = node;
-            node.next = tmp;
-            tmp.prev = node;
-            node.prev = dummyHead;
-        }
     }
-
+    
     class Node{
-        int key, val;
         Node prev, next;
+        int key, val;
+        public Node(){}
         public Node(int key, int val){
             this.key = key;
             this.val = val;

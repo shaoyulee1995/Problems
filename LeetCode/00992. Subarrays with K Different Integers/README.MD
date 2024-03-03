@@ -5,7 +5,7 @@
 ```
 class Solution {
     public int subarraysWithKDistinct(int[] nums, int k) {
-        return atMost(nums, k) - atMost(nums, k-1);
+        return atMost(nums, k) - `atMost`(nums, k-1);
     }
 
     public int atMost(int[] nums, int k){

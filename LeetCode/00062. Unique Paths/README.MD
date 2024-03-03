@@ -22,7 +22,7 @@ class Solution {
     }
 }
 ```
-# DFS
+# BottomUp
 * Time Complexity: O(MN)
 * Space Complexity: O(MN)
 	* M as m
@@ -42,6 +42,36 @@ class Solution {
         }
         mat[x][y] =  dfs(x-1, y, mat) + dfs(x, y-1, mat);
         return mat[x][y];
+    }
+}
+```
+# TopDown
+* Time Complexity: O(MN)
+* Space Complexity: O(MN)
+	* M as m
+	* N as n
+```
+class Solution {
+    public int uniquePaths(int m, int n) {
+        int[][] dp = new int[m][n];
+        for(int i = 0; i < m; i++){
+            Arrays.fill(dp[i], -1);
+        }
+        return dfs(dp, 0, 0);
+    }
+
+    public int dfs(int[][] dp, int x, int y){
+        if(x == dp.length-1 && y == dp[0].length-1){
+            return 1;
+        }
+        if(x == dp.length || y == dp[0].length){
+            return 0;
+        }
+        if(dp[x][y] != -1){
+            return dp[x][y];
+        }
+        dp[x][y] = dfs(dp, x+1, y) + dfs(dp, x, y+1);
+        return dp[x][y];
     }
 }
 ```

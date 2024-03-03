@@ -1,21 +1,19 @@
 ```
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+Definition for a binary tree node.
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
 ```
-# Recursion
+# DFS
 * Time Complexity: O(N)
 * Space Complexity: O(1)
 	* N as nodes
@@ -23,6 +21,18 @@
 class Solution {
     public int countNodes(TreeNode root) {
         return (root != null)? 1 + countNodes(root.left) + countNodes(root.right): 0;
+    }
+}
+```
+```
+class Solution {
+    public int countNodes(TreeNode root) {
+        if(root == null){
+            return 0;
+        }
+        int left = countNodes(root.left),
+            right = countNodes(root.right);
+        return left+right+1;
     }
 }
 ```
@@ -71,21 +81,20 @@ class Solution {
         if(root == null){
             return 0;
         }
-        Queue<TreeNode> q = new LinkedList();
-        q.offer(root);
+        Queue<TreeNode> queue = new LinkedList();
+        queue.offer(root);
         int res = 0;
-        while(!q.isEmpty()){
-            int size = q.size();
-            while(size != 0){
-                TreeNode node = q.poll();
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            for(int i = 0; i < size; i++){
+                TreeNode node = queue.poll();
                 res++;
                 if(node.left != null){
-                    q.offer(node.left);
+                    queue.offer(node.left);
                 }
                 if(node.right != null){
-                    q.offer(node.right);
+                    queue.offer(node.right);
                 }
-                size--;
             }
         }
         return res;

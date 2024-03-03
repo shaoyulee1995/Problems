@@ -1,5 +1,4 @@
 ```
-/*
 // Definition for a Node.
 class Node {
     public int val;
@@ -7,9 +6,8 @@ class Node {
     public Node right;
     public Node parent;
 };
-*/
 ```
-# LinkedList
+# Tree
 * Time Complexity: O(P+Q)
 * Space Complexity: O(1)
 	* P as length of p
