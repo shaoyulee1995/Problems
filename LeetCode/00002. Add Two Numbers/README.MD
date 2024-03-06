@@ -1,17 +1,15 @@
 ```
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+Definition for singly-linked list.
+public class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
 ```
 # LinkedList
-* Time Complexity: O(MAX(L1, L2))
+* Time Complexity: O(Max(L1, L2))
 * Space Complexity: O(1)
 	* L1 as length of l1
 	* L2 as length of l2

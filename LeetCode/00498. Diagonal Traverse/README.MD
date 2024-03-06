@@ -6,28 +6,28 @@
 ```
 class Solution {
     public int[] findDiagonalOrder(int[][] mat) {
-        int m = mat.length,
-            n = mat[0].length,
-            r = 0,
-            c = 0;
-        int[] res = new int[m*n];
+        int[] res = new int[mat.length*mat[0].length];
+        int row = 0,
+            col = 0;
         for(int i = 0; i < res.length; i++){
-            res[i] = mat[r][c];
-            if((r+c)%2 == 0){
-                if(c == n-1){
-                    r++;
-                }else if(r == 0){
-                    c++;
+            res[i] = mat[row][col];
+            if((row+col)%2 == 0){
+                if(col == mat[0].length-1){
+                    row++;
+                }else if(row == 0){
+                    col++;
                 }else{
-                    c++;r--;
+                    row--;
+                    col++;
                 }
             }else{
-                if(r == m-1){
-                    c++;
-                }else if(c == 0){
-                    r++;
+                if(row == mat.length-1){
+                    col++;
+                }else if(col == 0){
+                    row++;
                 }else{
-                    r++;c--;
+                    row++;
+                    col--;
                 }
             }
         }

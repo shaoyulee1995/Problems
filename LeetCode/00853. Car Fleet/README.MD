@@ -1,24 +1,34 @@
 # Array
 * Time Complexity: O(Nlog(N))
 * Space Complexity: O(N)
+    * N as length of cars
 ```
 class Solution {
     public int carFleet(int target, int[] position, int[] speed) {
-        int n = position.length;
-        double[][] cars = new double[n][2];
-        for(int i = 0; i < n; i++){
-            cars[i] = new double[] {position[i], (double)(target - position[i])/speed[i]};
+        Car[] cars = new Car[position.length];
+        for(int i = 0; i < position.length; i++){
+            cars[i] = new Car(position[i], (double)(target-position[i])/speed[i]);
         }
-        Arrays.sort(cars, (a, b) -> Double.compare(a[0], b[0]));
+        Arrays.sort(cars, (a, b) -> b.position - a.position);
         int res = 0;
-        double cur = 0;
-        for(int i = n - 1; i >= 0; i--){
-            if(cars[i][1] > cur){
-                cur = cars[i][1];
+        double time = 0;
+        for(int i = 0; i < cars.length; i++){
+            if(cars[i].time > time){
                 res++;
+                time = cars[i].time;
             }
         }
-        return res;                   
+        return res;
+    }
+
+    class Car{
+        int position;
+        double time;
+
+        public Car(int position, double time){
+            this.position = position;
+            this.time = time;
+        }
     }
 }
 ```
