@@ -1,7 +1,6 @@
 # Sliding Windows
-## Java
-	* Time Complexity: O(N*N)
-	* Space Complexity: O(N)
+* Time Complexity: O(N<sup>2</sup>)
+* Space Complexity: O(N)
 ```
 class Solution {
     public String minWindow(String s, String t) {
@@ -44,7 +43,6 @@ class Solution {
     }
 }
 ```
-## C++
 ```
 class Solution {
 public:

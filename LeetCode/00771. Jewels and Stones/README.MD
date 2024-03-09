@@ -38,3 +38,20 @@ class Solution {
     }
 }
 ```
+# Stream
+* Time Complexity: O(S)
+* Space Complexity: O(S)
+	* S as nodes in stones
+```
+class Solution {
+    public int numJewelsInStones(String jewels, String stones) {
+        Set<Character> jewels_set = jewels
+                                        .chars()
+                                        .mapToObj(x -> (char) x)
+                                        .collect(Collectors.toSet());
+        return stones
+                .chars()
+                .reduce(0, (x, c) -> x + (jewels_set.contains((char) c)? 1: 0));
+    }
+}
+```
