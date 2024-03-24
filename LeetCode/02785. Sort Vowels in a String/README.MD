@@ -24,7 +24,8 @@ class Solution {
     }
 
     public boolean isVowel(char c){
-        return c == 'a' || c == 'e' || c == 'o'|| c == 'u'|| c == 'i' || c == 'A' || c == 'E' || c == 'O'|| c == 'U'|| c == 'I'; 
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || 
+        c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
     }
 }
 ```
@@ -56,7 +57,8 @@ class Solution {
     }
 
     public boolean isVowel(char c){
-        return c == 'a' || c == 'e' || c == 'o'|| c == 'u'|| c == 'i' || c == 'A' || c == 'E' || c == 'O'|| c == 'U'|| c == 'I'; 
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || 
+        c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
     }
 }
 ```

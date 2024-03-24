@@ -11,7 +11,7 @@ class Node {
 * Time Complexity: O(P+Q)
 * Space Complexity: O(1)
 	* P as length of p
-	* Q as length of Q
+	* Q as length of q
 ```
 class Solution {
     public Node lowestCommonAncestor(Node p, Node q) {
