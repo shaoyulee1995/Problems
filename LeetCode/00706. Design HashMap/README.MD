@@ -15,7 +15,6 @@
 * remove
 	* Time Complexity: O(1)
 	* Space Complexity: O(1)
-
 ```
 class MyHashMap {
     final int size = 19997;

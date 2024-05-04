@@ -1,5 +1,28 @@
+# LinkedList
+* MyLinkedList: 
+	* Time Complexity: O(1)
+	* Space Complexity: O(1)
+* get
+	* Time Complexity: O(N)
+	* Space Complexity: O(1)
+        * N as number of nodes
+* addAtHead
+	* Time Complexity: O(N)
+	* Space Complexity: O(1)
+        * N as number of nodes
+* addAtTail
+	* Time Complexity: O(N)
+	* Space Complexity: O(1)
+        * N as number of nodes
+* addAtIndex
+	* Time Complexity: O(N)
+	* Space Complexity: O(1)
+        * N as number of nodes
+* deleteAtIndex
+	* Time Complexity: O(N)
+	* Space Complexity: O(1)
+        * N as number of nodes
 ```
-
 class MyLinkedList {
     class ListNode{
         int val;
