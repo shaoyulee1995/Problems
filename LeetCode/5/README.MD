@@ -1,9 +1,10 @@
 # Longest Palindromic Substring
-# String
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(1)
-	* N as length of s
-```
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(1)
+  - N as length of s
+
+```java
 class Solution {
     public String longestPalindrome(String s) {
         int idxStart = 0,

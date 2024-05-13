@@ -1,9 +1,10 @@
 # String to Integer (atoi)
-# Math
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
+```java
 class Solution {
     public int myAtoi(String s) {
         s = s.trim();

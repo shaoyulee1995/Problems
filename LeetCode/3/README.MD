@@ -1,9 +1,10 @@
 # Longest Substring Without Repeating Characters
-# Sliding Windows
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
+```java
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         int i = 0,
@@ -24,11 +25,12 @@ class Solution {
     }
 }
 ```
-# Sliding Windows
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
+```java
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         int res = 0;

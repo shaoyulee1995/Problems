@@ -1,4 +1,5 @@
 # Add Two Numbers
+
 ```
 Definition for singly-linked list.
 public class ListNode {
@@ -9,12 +10,13 @@ public class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 ```
-# LinkedList
-* Time Complexity: O(Max(L1, L2))
-* Space Complexity: O(1)
-	* L1 as length of l1
-	* L2 as length of l2
-```
+
+- Time Complexity: O(Max(L1, L2))
+- Space Complexity: O(1)
+  - L1 as length of l1
+  - L2 as length of l2
+
+```java
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummyhead = new ListNode(0),
