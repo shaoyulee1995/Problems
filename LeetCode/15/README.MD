@@ -1,10 +1,10 @@
 # 3Sum
-# 3 Pointers
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-	* N as length of nums
-## Java
-```
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of nums
+
+```java
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList();
@@ -38,13 +38,13 @@ class Solution {
     }
 }
 ```
-## Python 3
-```
+
+```python
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
         res = []
-        
+
         for i in range(len(nums)-2):
             if i > 0 and nums[i] == nums[i-1]:
                 continue
@@ -66,8 +66,11 @@ class Solution:
                     right -= 1
         return res
 ```
+
 # 2Sum
+
 ## Python 3
+
 ```
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
@@ -85,6 +88,7 @@ class Solution:
 ```
 
 ## C++
+
 ```
 class Solution {
 public:
@@ -136,7 +140,9 @@ public:
     }
 };
 ```
+
 ## Java
+
 ```
 class Solution {
     List<List<Integer>> res = new ArrayList();

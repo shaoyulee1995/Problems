@@ -1,9 +1,10 @@
 # Container With Most Water
-# 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of height
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of height
+
+```java
 class Solution {
     public int maxArea(int[] height) {
         int i = 0,

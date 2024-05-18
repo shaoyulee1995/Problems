@@ -1,12 +1,12 @@
 # Longest Common Prefix
-# String
-* Time Complexity: O(N*W*P)
-	* N represents number of words
-	* W represents the length of word
-	* P represents the pattern
-* Space Complexity: O(k)
 
-```
+- Time Complexity: O(N*W*P)
+  - N represents number of words
+  - W represents the length of word
+  - P represents the pattern
+- Space Complexity: O(1)
+
+```java
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         if(strs.length == 0){

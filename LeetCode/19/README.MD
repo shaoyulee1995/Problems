@@ -1,9 +1,10 @@
 # Remove Nth Node From End of List
-# Two Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes in linkedlist
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in linkedlist
+
+```java
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode slow = head,
@@ -25,15 +26,14 @@ class Solution {
     }
 }
 ```
+
 ```
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+Definition for singly-linked list.
+public class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
 ```

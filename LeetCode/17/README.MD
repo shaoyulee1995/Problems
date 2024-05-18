@@ -1,10 +1,11 @@
 # Letter Combinations of a Phone Number
-# Backtrack
-* Time Complexity: O(3^M * 4^N)
-* Space Complexity: O(M+N)
-	* M as digits 2, 3, 4, 5, 6, 8
-	* N as digits 7, 9
-```
+
+- Time Complexity: O(3^M \* 4^N)
+- Space Complexity: O(M+N)
+  - M as digits 2, 3, 4, 5, 6, 8
+  - N as digits 7, 9
+
+```java
 class Solution {
     String[] numbers = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
     List<String> res;
@@ -32,12 +33,13 @@ class Solution {
     }
 }
 ```
-# DFS
-* Time Complexity: O(MAX(3^M,4^N))
-* Space Complexity: O(M+N)
-	* M as digits 2, 3, 4, 5, 6, 8
-	* N as digits 7, 9
-```
+
+- Time Complexity: O(MAX(3^M,4^N))
+- Space Complexity: O(M+N)
+  - M as digits 2, 3, 4, 5, 6, 8
+  - N as digits 7, 9
+
+```java
 class Solution {
     String[] numbers = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
     List<String> res;

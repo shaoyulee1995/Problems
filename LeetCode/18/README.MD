@@ -1,6 +1,6 @@
 # 4Sum
-# 2Sums Advanced
-```
+
+```java
 class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Arrays.sort(nums);
@@ -24,7 +24,7 @@ class Solution {
         }
         return res;
     }
-    
+
     public List<List<Integer>> twoSum(int[] nums, int start, int target){
         List<List<Integer>> res = new ArrayList();
         int lo = start, hi = nums.length - 1;
@@ -44,11 +44,12 @@ class Solution {
     }
 }
 ```
-# 4 Pointers
-* Time Complexity: O(N<sup>4</sup>)
-* Space Complexity: O(N<sup>4</sup>)
-	* N as length of nums
-```
+
+- Time Complexity: O(N<sup>4</sup>)
+- Space Complexity: O(N<sup>4</sup>)
+  - N as length of nums
+
+```java
 class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Set<List<Integer>> res = new HashSet();

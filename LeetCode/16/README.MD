@@ -1,9 +1,10 @@
 # 3Sum Closest
-# 3 Pointers
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(1)
-	* N as length of nums
-```
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
 class Solution {
     public int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
