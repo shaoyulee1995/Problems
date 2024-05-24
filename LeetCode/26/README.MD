@@ -1,12 +1,14 @@
 # Remove Duplicates from Sorted Array
-# Solution 1
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
 class Solution {
     public int removeDuplicates(int[] nums) {
         if(nums.length <= 1) return nums.length;
-        
+
         int curIndex = 0;
         for(int i = 1; i < nums.length; i++){
             if(nums[curIndex] == nums[i]){
@@ -20,10 +22,11 @@ class Solution {
 }
 ```
 
-# Solution 2
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-```
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
 class Solution {
     public int removeDuplicates(int[] nums) {
         if(nums.length == 0){

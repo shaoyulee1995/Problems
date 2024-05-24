@@ -1,4 +1,5 @@
 # Merge Two Sorted Lists
+
 ```
 Definition for singly-linked list.
 public class ListNode {
@@ -9,12 +10,13 @@ public class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 ```
-# Recursion
-* Time Complexity: O(Min(N, M))
-* Space Complexity: O(1)
-    * N as length of l1
-    * M as length of l2
-```
+
+- Time Complexity: O(Min(N, M))
+- Space Complexity: O(1)
+  - N as length of l1
+  - M as length of l2
+
+```java
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if(l1 == null){
@@ -23,7 +25,7 @@ class Solution {
         if(l2 == null){
             return l1;
         }
-        
+       
         if(l1.val < l2.val){
             l1.next = mergeTwoLists(l1.next, l2);
             return l1;
@@ -34,12 +36,13 @@ class Solution {
     }
 }
 ```
-# Iteration
-* Time Complexity: O(Min(N, M))
-* Space Complexity: O(1)
-    * N as length of l1
-    * M as length of l2
-```
+
+- Time Complexity: O(Min(N, M))
+- Space Complexity: O(1)
+  - N as length of l1
+  - M as length of l2
+
+```java
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode(),
@@ -55,7 +58,7 @@ class Solution {
             cur = cur.next;
         }
         cur.next = (list1 == null)? list2: list1;
-        
+
         return dummy.next;
     }
 }

@@ -1,4 +1,5 @@
 # Merge k Sorted Lists
+
 ```
 Definition for singly-linked list.
 public class ListNode {
@@ -9,19 +10,20 @@ public class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 ```
-# PriorityQueue
-* Time Complexity: O(NKlog(K))
-* Space Complexity: O(K)
-	* K as length of lists
-	* N as length of nodes in lists
-```
+
+- Time Complexity: O(NKlog(K))
+- Space Complexity: O(K)
+  - K as length of lists
+  - N as length of nodes in lists
+
+```java
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         if(lists==null || lists.length == 0){
             return null;
         }
         PriorityQueue<ListNode> pq = new PriorityQueue<ListNode>((a,b) -> a.val - b.val);
-        
+
         ListNode dummy = new ListNode(0),
                  head = dummy;
         for(ListNode node: lists){
@@ -40,12 +42,13 @@ class Solution {
     }
 }
 ```
-# Divide and Conquer
-* Time Complexity: O(Nlog(K))
-* Space Complexity: O(K)
-	* K as length of lists
-	* N as length of nodes in lists
-```
+
+- Time Complexity: O(Nlog(K))
+- Space Complexity: O(K)
+  - K as length of lists
+  - N as length of nodes in lists
+
+```java
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         if(lists.length == 0 || lists == null){

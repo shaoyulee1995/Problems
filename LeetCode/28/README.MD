@@ -1,10 +1,11 @@
 # Implement strStr()
-# String
-* Time Complexity: O((H-N)N)
-* Space Complexity: O(N)
-	* H as length of haystack
-	* N as length of needle
-```
+
+- Time Complexity: O((H-N)N)
+- Space Complexity: O(N)
+  - H as length of haystack
+  - N as length of needle
+
+```java
 class Solution {
     public int strStr(String haystack, String needle) {
         if(haystack.length() == 0 || needle.length() == 0){

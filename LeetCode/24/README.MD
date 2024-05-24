@@ -1,9 +1,10 @@
 # Swap Nodes in Pairs
-# Iterate
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes of linkedlist
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes of linkedlist
+
+```java
 class Solution {
     public ListNode swapPairs(ListNode head) {
         if(head == null || head.next == null){

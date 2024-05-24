@@ -1,9 +1,10 @@
 # Generate Parentheses
-# Backtrack
-* Time Complexity: O(frac{4^N}{\sqrt{N}})
-* Space Complexity: O(N)
-	* N as n
-```
+
+- Time Complexity: O($\frac{4^N}{\sqrt{N}}$)
+- Space Complexity: O(N)
+  - N as n
+
+```java
 class Solution {
     List<String> res;
     public List<String> generateParenthesis(int n) {

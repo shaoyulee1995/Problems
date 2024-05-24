@@ -1,9 +1,10 @@
 # Remove Element
-# 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as num
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
 class Solution {
     public int removeElement(int[] nums, int val) {
         int idx = 0;
@@ -16,14 +17,19 @@ class Solution {
     }
 }
 ```
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
 class Solution {
     public int removeElement(int[] nums, int val) {
         int i = 0,
             j = 0;
         while(j < nums.length){
             if(nums[j] != val){
-                nums[i++] = nums[j]; 
+                nums[i++] = nums[j];
             }
             j++;
         }
