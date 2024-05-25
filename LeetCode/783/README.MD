@@ -1,4 +1,5 @@
 # Minimum Distance Between BST Nodes
+
 ```
 Definition for a binary tree node.
 public class TreeNode {
@@ -14,11 +15,12 @@ public class TreeNode {
     }
 }
 ```
-# DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes in tree
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
+```java
 class Solution {
     TreeNode prev;
     Integer res;
@@ -42,12 +44,13 @@ class Solution {
     }
 }
 ```
-# BFS
-* Time Complexity: O(N)
-* Space Complexity: O(H)
-	* N as nodes in tree
-    * H as height of tree 
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(H)
+    - N as nodes in tree
+    - H as height of tree
+
+```java
 class Solution {
     public int minDiffInBST(TreeNode root) {
         int res = Integer.MAX_VALUE;
