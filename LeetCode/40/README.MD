@@ -1,9 +1,10 @@
 # Combination Sum II
-# Backtrack
-* Time Complexity: O(2^N)
-* Space Complexity: O(N)
-	* N as length of candidates
-```
+
+- Time Complexity: O(2<sup>N</sup>)
+- Space Complexity: O(N)
+  - N as length of candidates
+
+```java
 class Solution {
     List<List<Integer>> list = new ArrayList();
     LinkedList<Integer> path = new LinkedList();

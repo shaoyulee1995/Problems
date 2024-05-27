@@ -1,9 +1,10 @@
 # Longest Valid Parentheses
-# Stack 
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
+```java
 class Solution {
     public int longestValidParentheses(String s) {
         Stack<Integer> stack = new Stack();

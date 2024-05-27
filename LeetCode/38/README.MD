@@ -1,10 +1,11 @@
 # Count and Say
-# Greedy
-* Time Complexity: O(NW)
-* Space Complexity: O(W)
-	* N as n
-    * W as length of W
-```
+
+- Time Complexity: O(NW)
+- Space Complexity: O(W)
+  - N as n
+  - W as length of W
+
+```java
 class Solution {
     public String countAndSay(int n) {
         String res = "1";

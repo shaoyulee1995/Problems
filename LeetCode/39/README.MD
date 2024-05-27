@@ -1,10 +1,11 @@
 # Combination Sum
-# Backtrack
-* Time Complexity: O(S)
-* Space Complexity: O(T)
-	* S as the possible sum length
-	* T as target
-```
+
+- Time Complexity: O(S)
+- Space Complexity: O(T)
+  - S as the possible sum length
+  - T as target
+
+```java
 class Solution {
     List<List<Integer>> res;
     LinkedList<Integer> path;

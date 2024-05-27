@@ -1,11 +1,12 @@
 # Sudoku Solver
-# BF
-* Time Complexity: O(9<sup>81</sup>)
-* Space Complexity: O(1)
-```
+
+- Time Complexity: O(9<sup>81</sup>)
+- Space Complexity: O(1)
+
+```java
 class Solution {
     public void solveSudoku(char[][] board) {
-        solve(board);    
+        solve(board);
     }
 
     public boolean solve(char[][] board){

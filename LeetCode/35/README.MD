@@ -1,8 +1,10 @@
 # Search Insert Position
-# Iteration
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
 class Solution {
     public int searchInsert(int[] nums, int target) {
         for(int i = 0; i < nums.length; i++){
@@ -17,11 +19,11 @@ class Solution {
 }
 ```
 
-# Binary Search
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as length of nums
-```
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int i = 0, j = nums.length;

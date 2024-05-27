@@ -1,9 +1,10 @@
 # Search in Rotated Sorted Array
-# Binary Search
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as length of nums
-```
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
 class Solution {
     public int search(int[] nums, int target) {
         int i = 0,

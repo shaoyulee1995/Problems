@@ -1,8 +1,10 @@
 # Next Permutation
-# Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
 class Solution {
     public void nextPermutation(int[] nums) {
         int i = nums.length - 2;
@@ -16,7 +18,7 @@ class Solution {
             }
             swap(nums, i, j);
         }
-        reverse(nums, i+1); 
+        reverse(nums, i+1);
     }
     public void swap(int[] nums, int i, int j){
         int temp = nums[i];

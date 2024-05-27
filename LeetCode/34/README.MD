@@ -1,20 +1,22 @@
 # Find First and Last Position of Element in Sorted Array
-# Binary Search
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as num
 
-## Left Bound
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as num
-## Right Bound
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as num
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as num
 
-### Java
-```
+_Left Bound_
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as length of nums
+
+_Right Bound_
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         int[] res = new int[]{-1,-1};
@@ -58,12 +60,11 @@ class Solution {
             return -1;
         }
         return j;
-    }   
+    }
 }
 ```
 
-### C++
-```
+```c++
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {

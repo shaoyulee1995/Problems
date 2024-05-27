@@ -1,10 +1,11 @@
 # Valid Sudoku
-# Matrix
-* Time Complexity: O(MN)
-* Space Complexity: O(1)
-	* M as board.length
-	* N as board[0].length
-```
+
+- Time Complexity: O(MN)
+- Space Complexity: O(1)
+  - M as length of board.length
+  - N as length of board[0].length
+
+```java
 class Solution {
     public boolean isValidSudoku(char[][] board) {
         for(int i = 0; i< board.length; i++){
@@ -53,7 +54,7 @@ class Solution {
         return true;
     }
 
-    public boolean verifyCol(char[][] board, int row){        
+    public boolean verifyCol(char[][] board, int row){
         HashSet<Character> seen = new HashSet();
         for(int j = 0; j < board[0].length; j++){
             if(board[row][j] != '.'){
