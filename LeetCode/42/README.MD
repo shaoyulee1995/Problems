@@ -1,13 +1,14 @@
 # Trapping Rain Water
-# 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of height
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of height
+
+```java
 class Solution {
     public int trap(int[] height) {
         int i = 0, j = height.length - 1,
-            MaxL = 0, MaxR = 0, 
+            MaxL = 0, MaxR = 0,
             res = 0;
         while(i < j){
             MaxL = Math.max(MaxL, height[i]);
@@ -24,11 +25,12 @@ class Solution {
     }
 }
 ```
-# 2 Arrays
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of height
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of height
+
+```java
 class Solution {
     public int trap(int[] height) {
         int[] l = new int[height.length],
@@ -49,19 +51,20 @@ class Solution {
     }
 }
 ```
-# Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of height
-```
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of height
+
+```java
 class Solution {
     public int trap(int[] height) {
         if(height == null || height.length < 2){
             return 0;
         }
         Stack<Integer> stack = new Stack();
-        int i = 0, 
-            res = 0; 
+        int i = 0,
+            res = 0;
         while(i < height.length){
             if(stack.isEmpty() || height[i] <= height[stack.peek()]){
                 stack.push(i++);

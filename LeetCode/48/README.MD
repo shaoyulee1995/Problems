@@ -1,10 +1,11 @@
 # Rotate Image
-# Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as length of matrix
-    * M as length of matrix[0]
-```
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of matrix
+    - M as length of matrix[0]
+
+```java
 class Solution {
     public void rotate(int[][] matrix) {
         swapRow(matrix);

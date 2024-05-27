@@ -1,9 +1,10 @@
 # Pow(x, n)
-# Math
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as n
-```
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as n
+
+```java
 class Solution {
     public double myPow(double x, int n) {
         if(n == 0){
@@ -16,11 +17,12 @@ class Solution {
     }
 }
 ```
-# Math
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as n
-```
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as n
+
+```java
 class Solution {
     public double myPow(double x, int n) {
         if(n == 0 || x == 1){
@@ -31,7 +33,7 @@ class Solution {
         }
         return pow(x, n);
     }
-    
+
     public double pow(double x, int n){
         if(n == 0){
             return 1;

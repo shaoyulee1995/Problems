@@ -1,10 +1,11 @@
 # Group Anagrams
-# Array
-* Time Complexity: O(N*wlog(w))
-* Space Complexity: O(N)
-	* N as length of strs
-	* w as length of w
-```
+
+- Time Complexity: O(N\*wlog(w))
+- Space Complexity: O(N)
+  - N as length of strs
+  - w as length of w
+
+```java
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         HashMap<String, List<String>> map = new HashMap();

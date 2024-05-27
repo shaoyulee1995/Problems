@@ -1,8 +1,10 @@
 # Permutations
-# Backtrack
-* Time Complexity: O(N*N!)
-* Space Complexity: O(N!)
-```
+
+- Time Complexity: O(N\*N!)
+- Space Complexity: O(N!)
+  - N as length of nums
+
+```java
 class Solution {
     List<List<Integer>> res;
     LinkedList<Integer> path;

@@ -1,10 +1,11 @@
 # Multiply Strings
-# String
-* Time Complexity: O(NM)
-* Space Complexity: O(Max(M,N))
-	* N as length of num1
-    * M as length of num2
-```
+
+- Time Complexity: O(NM)
+- Space Complexity: O(Max(M,N))
+  - N as length of num1
+    - M as length of num2
+
+```java
 class Solution {
     public String multiply(String num1, String num2) {
         int[] res = new int[num1.length()+num2.length()];
