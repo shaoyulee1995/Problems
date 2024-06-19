@@ -1,5 +1,6 @@
 # Project Employees I
-```
+
+```sql
 select
     project_id,
     round(avg(experience_years), 2) as 'average_years'

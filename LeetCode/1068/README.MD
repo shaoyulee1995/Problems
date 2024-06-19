@@ -1,5 +1,6 @@
 # Product Sales Analysis I
-```
+
+```sql
 select
     product_name,
     year,
