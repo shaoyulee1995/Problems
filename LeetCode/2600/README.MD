@@ -1,8 +1,11 @@
 # K Items With the Maximum Sum
+
 # Math
-* Time Complexity: O(k)
-* Space Complexity: O(1)
-	* N as k
+
+- Time Complexity: O(k)
+- Space Complexity: O(1)
+  - N as k
+
 ```
 class Solution {
     public int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k) {

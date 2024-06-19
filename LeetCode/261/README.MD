@@ -1,10 +1,13 @@
 # Graph Valid Tree
+
 # Union Find
-* Time Complexity: O(EH)
-* Space Complexity: O(N)
-	* E as edges
-	* H as height of tree
-	* N as n
+
+- Time Complexity: O(EH)
+- Space Complexity: O(N)
+  - E as edges
+  - H as height of tree
+  - N as n
+
 ```
 class Solution {
     public boolean validTree(int n, int[][] edges) {

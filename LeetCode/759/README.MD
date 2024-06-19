@@ -1,4 +1,5 @@
 # Employee Free Time
+
 ```
 /*
 // Definition for an Interval.
@@ -15,10 +16,13 @@ class Interval {
 };
 */
 ```
+
 # 2 Pointers
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
-	* N as length of schedule
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as length of schedule
+
 ```
 class Solution {
     public List<Interval> employeeFreeTime(List<List<Interval>> schedule) {

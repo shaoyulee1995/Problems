@@ -1,9 +1,12 @@
 # Capitalize the Title
+
 # String
-* Time Complexity: O(WN)
-* Space Complexity: O(N)
-	* K as length of title
-    * W as length of word
+
+- Time Complexity: O(WN)
+- Space Complexity: O(N)
+  - K as length of title
+    - W as length of word
+
 ```
 class Solution {
     public String capitalizeTitle(String title) {

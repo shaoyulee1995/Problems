@@ -1,4 +1,5 @@
 # Lowest Common Ancestor of a Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -10,10 +11,13 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
@@ -33,10 +37,13 @@ class Solution {
 }
 }
 ```
+
 # Iteration
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     HashMap<TreeNode, TreeNode> parentMap = new HashMap();
@@ -44,7 +51,7 @@ class Solution {
         if(root == null){
             return null;
         }
-        dfs(root, null);    
+        dfs(root, null);
         Set<TreeNode> ancestorFromP = new HashSet();
         while(p != null){
             ancestorFromP.add(p);

@@ -1,8 +1,11 @@
 # Cells with Odd Values in a Matrix
+
 # Arrays
-* Time Complexity: O(L)
-* Space Complexity: O(MN)
-	* L is the length of indices array
+
+- Time Complexity: O(L)
+- Space Complexity: O(MN)
+  - L is the length of indices array
+
 ```
 class Solution {
     public int oddCells(int m, int n, int[][] indices) {

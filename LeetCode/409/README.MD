@@ -1,8 +1,11 @@
 # Longest Palindrome
+
 # Set
-* Time Complexity: O(S)
-* Space Complexity: O(S)
-	* S as length of s
+
+- Time Complexity: O(S)
+- Space Complexity: O(S)
+  - S as length of s
+
 ```
 class Solution {
     public int longestPalindrome(String s) {
@@ -20,10 +23,13 @@ class Solution {
     }
 }
 ```
+
 # Set
-* Time Complexity: O(S)
-* Space Complexity: O(S)
-	* S as length of s
+
+- Time Complexity: O(S)
+- Space Complexity: O(S)
+  - S as length of s
+
 ```
 class Solution {
     public int longestPalindrome(String s) {

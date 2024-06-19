@@ -1,8 +1,11 @@
 # Minimum Time to Type Word Using Special Typewriter
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of word
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of word
+
 ```
 class Solution {
     public int minTimeToType(String word) {

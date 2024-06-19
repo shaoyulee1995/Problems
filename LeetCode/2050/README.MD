@@ -1,9 +1,12 @@
 # Parallel Courses III
+
 # Strongly Connected Components
-* Time Complexity: O(V + E)
-* Space Complexity: O(V)
-    * V as vertices
-    * E as edges
+
+- Time Complexity: O(V + E)
+- Space Complexity: O(V)
+  - V as vertices
+  - E as edges
+
 ```
 class Solution {
     public int minimumTime(int n, int[][] relations, int[] time) {

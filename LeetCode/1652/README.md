@@ -1,9 +1,12 @@
 # Defuse the Bomb
+
 # String
-* Time Complexity: O(CK)
-* Space Complexity: O(C)
-	* C as length of code
-	* K as k
+
+- Time Complexity: O(CK)
+- Space Complexity: O(C)
+  - C as length of code
+  - K as k
+
 ```
 class Solution {
     public int[] decrypt(int[] code, int k) {

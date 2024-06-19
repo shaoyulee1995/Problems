@@ -1,4 +1,5 @@
 # Binary Tree Level Order Traversal II
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # Iterate
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
@@ -40,16 +44,19 @@ class Solution {
                 if(node.right != null){
                     queue.offer(node.right);
                 }
-            }       
+            }
             list.add(0, level);
         }
         return list;
     }
 }
 ```
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {

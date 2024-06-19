@@ -1,4 +1,5 @@
 # Game Play Analysis II
+
 ```
 select player_id, device_id
 from Activity

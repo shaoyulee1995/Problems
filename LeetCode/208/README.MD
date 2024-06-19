@@ -1,25 +1,33 @@
 # Implement Trie (Prefix Tree)
+
 # Trie
+
 ## insert
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of word 
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of word
+
 ## search
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of word
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of word
+
 ## startsWith
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of prefix
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of prefix
+
 ```
 class Trie {
     TrieNode root;
 
     public Trie() {
-        root = new TrieNode();    
+        root = new TrieNode();
     }
-    
+
     public void insert(String word) {
         TrieNode node = root;
         for(char c: word.toCharArray()){
@@ -30,7 +38,7 @@ class Trie {
         }
         node.isWord = true;
     }
-    
+
     public boolean search(String word) {
         TrieNode node = root;
         for(char c: word.toCharArray()){
@@ -41,7 +49,7 @@ class Trie {
         }
         return node.isWord;
     }
-    
+
     public boolean startsWith(String prefix) {
         TrieNode node = root;
         for(char c: prefix.toCharArray()){
@@ -63,6 +71,7 @@ class TrieNode{
 }
 
 ```
+
 ```
 Your Trie object will be instantiated and called as such:
 Trie obj = new Trie();

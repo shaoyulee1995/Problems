@@ -1,15 +1,18 @@
 # Encode and Decode Strings
+
 # Data Structor
-* encode
-	* Time Complexity: O(MN)
-	* Space Complexity: O(MN)
-		* N as length of strs
-		* M as length of str
-* decode
-	* Time Complexity: O(MN)
-	* Space Complexity: O(MN)
-		* N as length of strs
-		* M as length of str
+
+- encode
+  - Time Complexity: O(MN)
+  - Space Complexity: O(MN)
+    - N as length of strs
+    - M as length of str
+- decode
+  - Time Complexity: O(MN)
+  - Space Complexity: O(MN)
+    - N as length of strs
+    - M as length of str
+
 ```
 public class Codec {
 

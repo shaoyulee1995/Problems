@@ -1,8 +1,11 @@
 # Shortest Subarray with Sum at Least K
+
 # ArrayDeque
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int shortestSubarray(int[] nums, int k) {

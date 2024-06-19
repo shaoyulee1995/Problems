@@ -1,8 +1,11 @@
 # Lexicographical Numbers My SubmissionsBack to Contest
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     List<Integer> res;
@@ -10,7 +13,7 @@ class Solution {
         res = new ArrayList();
         for(int i = 1; i < 10; i++){
             dfs(i, n);
-        }        
+        }
         return res;
     }
     public void dfs(int num, int n){

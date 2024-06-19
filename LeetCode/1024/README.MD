@@ -1,9 +1,12 @@
 # Video Stitching
+
 # Greedy
-* Time Complexity: O(TC)
-* Space Complexity: O(1)
-	* T as time
-	* C as length of clips
+
+- Time Complexity: O(TC)
+- Space Complexity: O(1)
+  - T as time
+  - C as length of clips
+
 ```
 class Solution {
     public int videoStitching(int[][] clips, int time) {

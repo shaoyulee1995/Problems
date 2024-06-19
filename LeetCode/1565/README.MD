@@ -1,4 +1,5 @@
 # Unique Orders and Customers Per Month
+
 ```
 select
     date_format(order_date, '%Y-%m') as 'month',
@@ -8,6 +9,6 @@ from
     Orders
 where
     invoice > 20
-group by 
+group by
     1
 ```

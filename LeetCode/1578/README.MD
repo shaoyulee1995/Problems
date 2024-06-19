@@ -1,8 +1,11 @@
 # Minimum Time to Make Rope Colorful
+
 # Comparison
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of colors
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of colors
+
 ```
 class Solution {
     public int minCost(String colors, int[] neededTime) {

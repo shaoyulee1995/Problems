@@ -1,4 +1,5 @@
 # All Possible Full Binary Trees
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # DFS
-* Time Complexity: O(2<sup>N</sup>)
-* Space Complexity: O(2<sup>N</sup>)
+
+- Time Complexity: O(2<sup>N</sup>)
+- Space Complexity: O(2<sup>N</sup>)
+
 ```
 class Solution {
     public List<TreeNode> allPossibleFBT(int n) {
@@ -46,9 +50,12 @@ class Solution {
     }
 }
 ```
+
 # Memorization HashMap
-* Time Complexity: O(2<sup>N</sup>)
-* Space Complexity: O(2<sup>N</sup>)
+
+- Time Complexity: O(2<sup>N</sup>)
+- Space Complexity: O(2<sup>N</sup>)
+
 ```
 class Solution {
     HashMap<Integer, List<TreeNode>> map = new HashMap();

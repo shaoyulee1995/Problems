@@ -1,4 +1,5 @@
 # Form a Chemical Bond
+
 ```
 select
     e1.symbol as 'metal',

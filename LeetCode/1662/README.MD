@@ -1,7 +1,10 @@
 # Check If Two String Arrays are Equivalent
+
 # String
-* Time Complexity: O(Max(W1, W2))
-* Space Complexity: O(M1+M2)
+
+- Time Complexity: O(Max(W1, W2))
+- Space Complexity: O(M1+M2)
+
 ```
 class Solution {
     public boolean arrayStringsAreEqual(String[] W1, String[] W2) {

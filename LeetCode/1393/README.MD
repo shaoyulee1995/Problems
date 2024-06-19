@@ -1,4 +1,5 @@
 # Capital GainLoss
+
 ```
 select stock_name, sum(case
                        when operation = 'Buy' then -price

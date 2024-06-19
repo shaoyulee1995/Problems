@@ -1,7 +1,10 @@
 # Maximum Number of Coins You Can Get
+
 # 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int maxCoins(int[] piles) {

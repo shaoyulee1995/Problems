@@ -1,9 +1,12 @@
 # Unique Email Addresses
+
 # Array
-* Time Complexity: O(E * N)
-	* E represents length of emails
-	* N represents length of email
-* Space Complexity: O(E)
+
+- Time Complexity: O(E \* N)
+  - E represents length of emails
+  - N represents length of email
+- Space Complexity: O(E)
+
 ```
 class Solution {
     public int numUniqueEmails(String[] emails) {

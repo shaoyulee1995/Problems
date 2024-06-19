@@ -1,8 +1,11 @@
 # Maximal Network Rank
+
 # Graph
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N<sup>2</sup>)
-	* N as n
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N<sup>2</sup>)
+  - N as n
+
 ```
 class Solution {
     public int maximalNetworkRank(int n, int[][] roads) {
@@ -24,10 +27,13 @@ class Solution {
     }
 }
 ```
+
 # HashSet
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N<sup>2</sup>)
-	* N as n
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N<sup>2</sup>)
+  - N as n
+
 ```
 class Solution {
     public int maximalNetworkRank(int n, int[][] roads) {

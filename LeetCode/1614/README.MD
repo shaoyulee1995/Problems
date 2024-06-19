@@ -1,7 +1,10 @@
 # Maximum Nesting Depth of the Parentheses
+
 # Counting
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int maxDepth(String s) {
@@ -9,7 +12,7 @@ class Solution {
         for(char c: s.toCharArray()){
             if(c == '('){
                 cnt++;
-				
+
             }else if(c == ')'){
                 cnt--;
             }

@@ -1,7 +1,10 @@
 # Find Smallest Letter Greater Than Target
+
 # Binary Search
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
@@ -21,9 +24,12 @@ class Solution {
     }
 }
 ```
+
 # Comparator
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {

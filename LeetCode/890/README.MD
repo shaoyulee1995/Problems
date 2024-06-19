@@ -1,9 +1,12 @@
 # Find and Replace Pattern
+
 # HashMap
-* Time Complexity: O(WN)
-* Space Complexity: O(WN)
-	* W is the length of words string
-	* N is the length of each word
+
+- Time Complexity: O(WN)
+- Space Complexity: O(WN)
+  - W is the length of words string
+  - N is the length of each word
+
 ```
 class Solution {
     public List<String> findAndReplacePattern(String[] words, String pattern) {

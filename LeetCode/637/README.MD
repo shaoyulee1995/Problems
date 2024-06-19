@@ -1,4 +1,5 @@
 # Average of Levels in Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # Iterate
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of TreeNode
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of TreeNode
+
 ```
 class Solution {
     public List<Double> averageOfLevels(TreeNode root) {

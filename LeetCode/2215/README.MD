@@ -1,13 +1,16 @@
 # Find the Difference of Two Arrays
+
 # Bits
-* Time Complexity: O(max(N, M))
-* Space Complexity: O(max(N, M))
-	* N as length of nums1
-	* M as length of nums2
+
+- Time Complexity: O(max(N, M))
+- Space Complexity: O(max(N, M))
+  - N as length of nums1
+  - M as length of nums2
+
 ```
 class Solution {
     public List<List<Integer>> findDifference(int[] nums1, int[] nums2) {
-        HashSet<Integer> set1 = new HashSet(),  
+        HashSet<Integer> set1 = new HashSet(),
                          set2 = new HashSet();
         for(int num: nums1){
             set1.add(num);

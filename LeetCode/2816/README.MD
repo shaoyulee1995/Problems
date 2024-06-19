@@ -1,4 +1,5 @@
 # Double a Number Represented as a Linked List
+
 ```
 Definition for singly-linked list.
 public class ListNode {
@@ -9,10 +10,13 @@ public class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 ```
+
 # LinkedList
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of LinkedList
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of LinkedList
+
 ```
 class Solution {
     public ListNode doubleIt(ListNode head) {

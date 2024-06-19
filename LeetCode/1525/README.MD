@@ -1,7 +1,10 @@
 # Number of Good Ways to Split a String
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(26)
+
+- Time Complexity: O(N)
+- Space Complexity: O(26)
+
 ```
 class Solution {
     public int numSplits(String s) {

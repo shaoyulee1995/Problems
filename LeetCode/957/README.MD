@@ -1,9 +1,12 @@
 # Prison Cells After N Days
+
 # HashSet
-* Time Complexity: O(NC)
-* Space Complexity: O(NC)
-	* N as n
-	* C as length of cells
+
+- Time Complexity: O(NC)
+- Space Complexity: O(NC)
+  - N as n
+  - C as length of cells
+
 ```
 class Solution {
     public int[] prisonAfterNDays(int[] cells, int n) {
@@ -31,7 +34,7 @@ class Solution {
         }
         return cells;
     }
-    
+
     public int[] nextDay(int[] cells){
         int[] temp = new int[cells.length];
         for(int i = 1; i + 1 < cells.length; i++){

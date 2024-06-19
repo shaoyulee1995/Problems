@@ -1,8 +1,11 @@
 # One Edit Distance
-# String 
-* Time Complexity: O(S<sup>2</sup>)
-* Space Complexity: O(1)
-	* S as length of s
+
+# String
+
+- Time Complexity: O(S<sup>2</sup>)
+- Space Complexity: O(1)
+  - S as length of s
+
 ```
 class Solution {
     public boolean isOneEditDistance(String s, String t) {
@@ -39,10 +42,13 @@ class Solution {
     }
 }
 ```
-# String 
-* Time Complexity: O(S<sup>2</sup>)
-* Space Complexity: O(1)
-	* S as length of s
+
+# String
+
+- Time Complexity: O(S<sup>2</sup>)
+- Space Complexity: O(1)
+  - S as length of s
+
 ```
 class Solution {
     public boolean isOneEditDistance(String s, String t) {
@@ -54,7 +60,7 @@ class Solution {
         if(n > m){
             return isOneEditDistance(t, s);
         }
-       
+
         for(int i = 0; i < n; i++){
             if(s.charAt(i) != t.charAt(i)){
                 if(n == m){

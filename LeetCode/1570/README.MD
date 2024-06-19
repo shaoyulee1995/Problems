@@ -1,9 +1,12 @@
 # Dot Product of Two Sparse Vectors
+
 # Array
-* Time Complexity:
-	* dotProduct: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity:
+  - dotProduct: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class SparseVector {
     int[] ans;
@@ -23,6 +26,7 @@ class SparseVector {
     }
 }
 ```
+
 ```
 // Your SparseVector object will be instantiated and called as such:
 // SparseVector v1 = new SparseVector(nums1);

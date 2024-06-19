@@ -1,9 +1,12 @@
 # Word Break
+
 # DP
-* Time Complexity: O(NW)
-* Space Complexity: O(N)
-	* W as wordDict.size()
-	* N as s.length()
+
+- Time Complexity: O(NW)
+- Space Complexity: O(N)
+  - W as wordDict.size()
+  - N as s.length()
+
 ```
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {

@@ -1,4 +1,5 @@
 # Confirmation Rate
+
 ```
 select
     s.user_id,

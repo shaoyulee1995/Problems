@@ -1,8 +1,11 @@
 # Best Poker Hand
+
 # HashMap, PriorityQueue
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of ranks
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of ranks
+
 ```
 class Solution {
     public String bestHand(int[] ranks, char[] s) {
@@ -25,10 +28,13 @@ class Solution {
     }
 }
 ```
-# HashMaps	
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of ranks
+
+# HashMaps
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of ranks
+
 ```
 class Solution {
     public String bestHand(int[] ranks, char[] suits) {
@@ -53,16 +59,19 @@ class Solution {
     }
 }
 ```
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of ranks
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of ranks
+
 ```
 class Solution {
     public String bestHand(int[] ranks, char[] suits) {
         if(suits[0] == suits[1] && suits[1] == suits[2] && suits[2] == suits[3]&& suits[3] == suits[4]){
             return "Flush";
-        }    
+        }
         int[] cnt = new int[14];
         IntStream.of(ranks).forEach(x -> cnt[x]++);
         int max = IntStream.of(cnt).max().getAsInt();

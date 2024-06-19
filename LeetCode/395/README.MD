@@ -1,8 +1,11 @@
 # Longest Substring with At Least K Repeating Characters
+
 # DFS
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public int longestSubstring(String s, int k) {

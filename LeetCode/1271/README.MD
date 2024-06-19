@@ -1,8 +1,11 @@
 # Hexspeak
+
 # HashMap
-* Time Complexity: O(log<sub>16</sub>N)
-* Space Complexity: O(N)
-	* N as length of num
+
+- Time Complexity: O(log<sub>16</sub>N)
+- Space Complexity: O(N)
+  - N as length of num
+
 ```
 class Solution {
     public String toHexspeak(String num) {
@@ -30,10 +33,13 @@ class Solution {
     }
 }
 ```
+
 # Math
-* Time Complexity: O(log<sub>16</sub>N)
-* Space Complexity: O(N)
-	* N as length of num
+
+- Time Complexity: O(log<sub>16</sub>N)
+- Space Complexity: O(N)
+  - N as length of num
+
 ```
 class Solution {
     public String toHexspeak(String num) {
@@ -57,7 +63,7 @@ class Solution {
                 case 12:
                     sb.append("C");
                     break;
-                case 13: 
+                case 13:
                     sb.append("D");
                     break;
                 case 14:

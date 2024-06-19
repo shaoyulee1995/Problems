@@ -1,9 +1,12 @@
 # The Maze
+
 # One direction BFS
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of maze
-	* M as length of maze[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of maze
+  - M as length of maze[0]
+
 ```
 class Solution {
     public boolean hasPath(int[][] maze, int[] start, int[] destination) {
@@ -26,10 +29,10 @@ class Solution {
                     x += dir[0];
                     y += dir[1];
                 }
-                
+
                 x -= dir[0];
                 y -= dir[1];
-                
+
                 if(!visited[x][y]){
                     q.offer(new int[]{x,y});
                     visited[x][y] = true;

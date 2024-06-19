@@ -1,8 +1,11 @@
 # How Many Numbers Are Smaller Than the Current Number
+
 # BF
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
@@ -18,10 +21,13 @@ class Solution {
     }
 }
 ```
+
 # Counting
-* Time Complexity: O(N)
-* Space Complexity: O(102)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(102)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
@@ -39,11 +45,14 @@ class Solution {
     }
 }
 ```
+
 # Count Array
-* Time Complexity: O(Max(N, m))
-* Space Complexity: O(m)
-	* N as length of nums
-	* m as max
+
+- Time Complexity: O(Max(N, m))
+- Space Complexity: O(m)
+  - N as length of nums
+  - m as max
+
 ```
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {

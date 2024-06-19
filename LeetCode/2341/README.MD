@@ -1,8 +1,11 @@
 # Maximum Number of Pairs in Array
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] numberOfPairs(int[] nums) {
@@ -19,10 +22,13 @@ class Solution {
     }
 }
 ```
+
 # Counting
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] numberOfPairs(int[] nums) {

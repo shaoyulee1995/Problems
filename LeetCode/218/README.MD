@@ -1,7 +1,10 @@
 # The Skyline Problem
+
 # Sweep Line
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public List<List<Integer>> getSkyline(int[][] buildings) {
@@ -20,7 +23,7 @@ class Solution {
                 pq.add(-b[1]);
             }else{
                 pq.remove(b[1]);
-            } 
+            }
             int curMax = pq.peek();
             if(curMax != preMax){
                 res.add(List.of(b[0], curMax));

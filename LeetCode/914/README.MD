@@ -1,7 +1,10 @@
 # X of a Kind in a Deck of Cards
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public boolean hasGroupsSizeX(int[] deck) {

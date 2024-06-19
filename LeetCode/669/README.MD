@@ -1,4 +1,5 @@
 # Trim a Binary Search Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public TreeNode trimBST(TreeNode root, int low, int high) {

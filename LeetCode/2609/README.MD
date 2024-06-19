@@ -1,8 +1,11 @@
 # Find the Longest Balanced Substring of a Binary String
+
 # String
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public int findTheLongestBalancedSubstring(String s) {

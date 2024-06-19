@@ -1,12 +1,15 @@
 # Lemonade Change
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of bills
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of bills
+
 ```
 class Solution {
     public boolean lemonadeChange(int[] bills) {
-        int five = 0, 
+        int five = 0,
             ten = 0;
         for(int bill: bills){
             if(bill == 5){

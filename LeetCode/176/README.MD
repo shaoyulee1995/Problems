@@ -1,4 +1,5 @@
 # Second Highest Salary
+
 ```
 select
     max(salary) as 'SecondHighestSalary'
@@ -7,14 +8,15 @@ from
 where
     salary not in (select max(salary) from Employee)
 ```
+
 ```
 select
     ifnull(
         (select
-            distinct salary 
+            distinct salary
         from
             Employee
-        order by 
+        order by
             salary desc
         limit 1
         offset 1),

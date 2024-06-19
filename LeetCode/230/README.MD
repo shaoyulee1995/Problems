@@ -1,4 +1,5 @@
 # Kth Smallest Element in a BST
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)	
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     int res = 0, rank = 0;
@@ -38,13 +42,16 @@ class Solution {
             return;
         }
         traverse(node.right, k);
-    } 
+    }
 }
 ```
+
 # Iteration
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public int kthSmallest(TreeNode root, int k) {

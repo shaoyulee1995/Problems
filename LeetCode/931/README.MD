@@ -1,9 +1,12 @@
 # Minimum Falling Path Sum
+
 # Dynamic Programming
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N is number of rows
-	* M is number of cols
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N is number of rows
+  - M is number of cols
+
 ```
 class Solution {
     public int minFallingPathSum(int[][] matrix) {

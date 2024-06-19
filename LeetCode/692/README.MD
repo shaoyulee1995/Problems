@@ -1,9 +1,12 @@
 # Top K Frequent Words
+
 # PriorityQueue, HashMap
-* Time Complexity: O(NlogK)
-* Space Complexity: O(N)
-	* N as length of words
-	* K as k
+
+- Time Complexity: O(NlogK)
+- Space Complexity: O(N)
+  - N as length of words
+  - K as k
+
 ```
 class Solution {
     public List<String> topKFrequent(String[] words, int k) {
@@ -13,7 +16,7 @@ class Solution {
         }
         PriorityQueue<Map.Entry<String, Integer>> pq = new PriorityQueue<>(
             (a, b) -> (a.getValue() == b.getValue())? b.getKey().compareTo(a.getKey()): a.getValue() - b.getValue());
-       
+
         for(Map.Entry<String, Integer> entry: map.entrySet()){
             pq.add(entry);
             if(pq.size() > k){

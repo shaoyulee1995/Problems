@@ -1,4 +1,5 @@
 # Convert Binary Number in a Linked List to Integer
+
 ```
 /**
  * Definition for singly-linked list.
@@ -11,9 +12,12 @@
  * }
  */
 ```
+
 # Bit Operation
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int getDecimalValue(ListNode head) {

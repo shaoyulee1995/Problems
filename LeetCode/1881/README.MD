@@ -1,8 +1,11 @@
 # Maximum Value after Insertion
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public String maxValue(String n, int x) {

@@ -1,9 +1,12 @@
 # Find if Path Exists in Graph
+
 # BFS Set
-* Time Complexity: O(V+E)
-* Space Complexity: O(V+E)
-	* V as vertices
-	* E as edges
+
+- Time Complexity: O(V+E)
+- Space Complexity: O(V+E)
+  - V as vertices
+  - E as edges
+
 ```
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
@@ -38,11 +41,14 @@ class Solution {
     }
 }
 ```
+
 # BFS boolean
-* Time Complexity: O(V+E)
-* Space Complexity: O(V+E)
-	* V as vertices
-	* E as edges
+
+- Time Complexity: O(V+E)
+- Space Complexity: O(V+E)
+  - V as vertices
+  - E as edges
+
 ```
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {

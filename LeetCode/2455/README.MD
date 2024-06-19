@@ -1,8 +1,11 @@
 # Average Value of Even Numbers That Are Divisible by Three
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-    * N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int averageValue(int[] nums) {

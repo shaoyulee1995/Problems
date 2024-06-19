@@ -1,8 +1,12 @@
 # Move Zeroes
+
 # 2 Pointers
+
 ## Solution 1
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public void moveZeroes(int[] nums) {
@@ -12,17 +16,20 @@ class Solution {
                 nums[lastNonZeroIndex++] = nums[i];
             }
         }
-        
+
         for(int i = lastNonZeroIndex; i < nums.length; i++){
             nums[i] = 0;
         }
     }
 }
 ```
+
 ## Solution 2
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nums
+
 ```
 class Solution {
     public void moveZeroes(int[] nums) {

@@ -1,8 +1,11 @@
 # Hamming Distance
+
 # Bit
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of Max(x, y)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of Max(x, y)
+
 ```
 class Solution {
     public int hammingDistance(int x, int y) {

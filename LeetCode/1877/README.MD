@@ -1,7 +1,10 @@
 # Minimize Maximum Pair Sum in Array
+
 # Arrays
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int minPairSum(int[] nums) {

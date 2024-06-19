@@ -1,8 +1,11 @@
 # Integer Replacement
+
 # BFS
-* Time Complexity: O(log<sub>2</sub>N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(log<sub>2</sub>N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public int integerReplacement(int n) {
@@ -34,7 +37,7 @@ class Solution {
             }
             res++;
         }
-        return res; 
+        return res;
     }
 }
 ```

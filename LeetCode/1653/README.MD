@@ -1,8 +1,11 @@
 # Minimum Deletions to Make String Balanced
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public int minimumDeletions(String s) {
@@ -20,10 +23,13 @@ class Solution {
     }
 }
 ```
+
 # DP
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public int minimumDeletions(String s) {

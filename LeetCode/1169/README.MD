@@ -1,19 +1,22 @@
 # Invalid Transactions
+
 # HashMap
-* Time Complexity: O(N^2)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N^2)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public List<String> invalidTransactions(String[] transactions) {
         List<String> ans = new ArrayList();
         HashMap<String, List<Transaction> > map = new HashMap();
-        
+
         for(String s: transactions){
             Transaction t = new Transaction(s);
             map.putIfAbsent(t.name, new ArrayList());
             map.get(t.name).add(t);
         }
-        
+
         for(String s: transactions){
             Transaction t = new Transaction(s);
             if(!isValid(t, map.get(t.name))){
@@ -22,7 +25,7 @@ class Solution {
         }
         return ans;
     }
-    
+
     public boolean isValid(Transaction t, List<Transaction> list){
         if(t.amount > 1000){
             return false;
@@ -34,11 +37,11 @@ class Solution {
         }
         return true;
     }
-    
+
     class Transaction{
         String name, city;
         int amount, time;
-        
+
         Transaction(String input){
             String[] split = input.split(",");
             this.name = split[0];

@@ -1,8 +1,11 @@
 # Matchsticks to Square
+
 # Backtracking
-* Time Complexity: O(N*2<sup>N</sup>)
-* Space Complexity: O(N)
-	* N as length of matchsticks
+
+- Time Complexity: O(N\*2<sup>N</sup>)
+- Space Complexity: O(N)
+  - N as length of matchsticks
+
 ```
 class Solution {
     public boolean makesquare(int[] matchsticks) {
@@ -14,7 +17,7 @@ class Solution {
         boolean[] visited = new boolean[matchsticks.length];
         return dfs(matchsticks, 0, 0, 4, sum/4, visited);
     }
-    
+
     public boolean dfs(int[] nums, int idx, int sum, int k, int target, boolean[] visited){
         if(k == 1){
             return true;

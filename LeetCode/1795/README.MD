@@ -1,4 +1,5 @@
 # Rearrange Products Table
+
 ```
 select
     product_id,
@@ -6,7 +7,7 @@ select
     store1 as price
 from
     Products
-where 
+where
     store1 is not null
 union all
 select
@@ -15,7 +16,7 @@ select
     store2 as price
 from
     Products
-where 
+where
     store2 is not null
 union all
 select
@@ -24,6 +25,6 @@ select
     store3 as price
 from
     Products
-where 
+where
     store3 is not null
 ```

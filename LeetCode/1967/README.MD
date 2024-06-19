@@ -1,9 +1,12 @@
 # Number of Strings That Appear as Substrings in Word
+
 # String
-* Time Complexity: O(PW)
-* Space Complexity: O(1)
-	* N as length of patterns
-    * W as length of word
+
+- Time Complexity: O(PW)
+- Space Complexity: O(1)
+  - N as length of patterns
+    - W as length of word
+
 ```
 class Solution {
     public int numOfStrings(String[] patterns, String word) {

@@ -1,8 +1,11 @@
 # Maximum Ice Cream Bars
+
 # Sort
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of costs
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of costs
+
 ```
 class Solution {
     public int maxIceCream(int[] costs, int coins) {

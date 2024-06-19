@@ -1,9 +1,12 @@
 # The Maze II
+
 # PriorityQueue
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of maze
-	* M as length of maze[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of maze
+  - M as length of maze[0]
+
 ```
 class Solution {
     int[][] dirs = new int[][]{{-1,0}, {1,0}, {0,1}, {0,-1}};
@@ -18,7 +21,7 @@ class Solution {
         dijkstra(maze, start, destination, dist);
         return dist[destination[0]][destination[1]] == Integer.MAX_VALUE? -1: dist[destination[0]][destination[1]];
     }
-    
+
     public void dijkstra(int[][] maze, int[] start, int[] destination, int[][] dist){
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> (a[2] - b[2]));//index 0: x, index 1: y, index 2: step
         pq.offer(new int[]{start[0], start[1], 0});
@@ -45,7 +48,7 @@ class Solution {
                     dist[x][y] = dist[cur[0]][cur[1]] + cur_step;
                     pq.add(new int[]{x, y, dist[x][y]});
                 }
-                
+
             }
         }
         return;

@@ -1,4 +1,5 @@
 # Binary Tree Zigzag Level Order Traversal
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of nodes 
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of nodes
+
 ```
 class Solution {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {

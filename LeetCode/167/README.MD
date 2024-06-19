@@ -1,8 +1,11 @@
 # Two Sum II - Input array is sorted
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of numbers
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of numbers
+
 ```
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
@@ -12,11 +15,14 @@ class Solution:
             if remaining in seen:
                 return [seen[remaining]+1, i+1]
             seen[value] = i
-``` 
+```
+
 # Two Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of numbers
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of numbers
+
 ```
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
@@ -30,8 +36,9 @@ class Solution:
                     left += 1
                 elif sum > target:
                     right -= 1
-        
+
 ```
+
 ```
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
@@ -51,10 +58,13 @@ class Solution {
     }
 }
 ```
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of numbers
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of numbers
+
 ```
 class Solution {
     public int[] twoSum(int[] numbers, int target) {

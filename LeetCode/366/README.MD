@@ -1,4 +1,5 @@
 # Find Leaves of Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # DFS height
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of TreeNodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of TreeNodes
+
 ```
 class Solution {
     List<List<Integer>> res;
@@ -41,10 +45,13 @@ class Solution {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of TreeNodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of TreeNodes
+
 ```
 class Solution {
     public List<List<Integer>> findLeaves(TreeNode root) {

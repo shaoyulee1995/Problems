@@ -1,4 +1,5 @@
 # Convert BST to Greater Tree
+
 ```
 Definition for a binary tree node.
 public class TreeNode {
@@ -14,10 +15,13 @@ public class TreeNode {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)	
-    * N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     int sum;
@@ -37,10 +41,13 @@ class Solution {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)	
-    * N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     public TreeNode convertBST(TreeNode root) {
@@ -59,10 +66,13 @@ class Solution {
     }
 }
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)	
-    * N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public TreeNode convertBST(TreeNode root) {

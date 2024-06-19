@@ -1,9 +1,11 @@
 # Battleships in a Board
+
 # DFS
-* Time Complexity: O(MN)
-* Space Complexity: O(1)
-    * N as length of board
-    * M as length of board[0]
+
+- Time Complexity: O(MN)
+- Space Complexity: O(1)
+  - N as length of board
+  - M as length of board[0]
 
 ```
 class Solution {

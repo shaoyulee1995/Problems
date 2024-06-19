@@ -1,8 +1,11 @@
 # Integer Break
+
 # Dynamic Programming
-* Time Complexity: O(N^2)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N^2)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public int integerBreak(int n) {
@@ -17,10 +20,13 @@ class Solution {
     }
 }
 ```
+
 # Memorization DFS
-* Time Complexity: O(N^2)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N^2)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     HashMap<Integer, Integer> map;
@@ -32,7 +38,7 @@ class Solution {
         map.put(1,1);
         return dfs(n);
     }
-    public int dfs(int num){        
+    public int dfs(int num){
         if(num == 0){
             return 1;
         }

@@ -1,8 +1,11 @@
 # Valid Palindrome
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public boolean isPalindrome(String s) {
@@ -27,8 +30,8 @@ class Solution {
     }
 
     private boolean isValid(char w){
-        return w <= 'z' && w >= 'a' || 
-               w <= 'Z' && w >= 'A' || 
+        return w <= 'z' && w >= 'a' ||
+               w <= 'Z' && w >= 'A' ||
                w <= '9' && w >= '0';
     }
 }

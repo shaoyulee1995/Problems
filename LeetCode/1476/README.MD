@@ -1,11 +1,14 @@
 # Subrectangle Queries
+
 # Matrix
-* Time Complexity: O(RC)
-* Space Complexity: O(NM)
-	* R as row2-row1
-	* C as col2-col1
-	* N as length of rectangle
-	* M as length of rectangle[0]
+
+- Time Complexity: O(RC)
+- Space Complexity: O(NM)
+  - R as row2-row1
+  - C as col2-col1
+  - N as length of rectangle
+  - M as length of rectangle[0]
+
 ```
 class SubrectangleQueries {
     int[][] dp;
@@ -24,6 +27,7 @@ class SubrectangleQueries {
     }
 }
 ```
+
 ```
 /**
  * Your SubrectangleQueries object will be instantiated and called as such:

@@ -1,7 +1,10 @@
 # Custom Sort String
+
 # String
-* Time Complexity: O(O+S)
-* Space Complexity: O(26)
+
+- Time Complexity: O(O+S)
+- Space Complexity: O(26)
+
 ```
 class Solution {
     public String customSortString(String order, String s) {

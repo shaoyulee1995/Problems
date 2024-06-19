@@ -1,9 +1,12 @@
 # Find the Distance Value Between Two Arrays
+
 # Array
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as length of arr1
-	* M as length of arr2
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of arr1
+  - M as length of arr2
+
 ```
 class Solution {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {

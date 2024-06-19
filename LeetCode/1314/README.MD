@@ -1,9 +1,12 @@
 # Matrix Block Sum
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of mat
-	* M as length of mat[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of mat
+  - M as length of mat[0]
+
 ```
 class Solution {
     public int[][] matrixBlockSum(int[][] mat, int k) {

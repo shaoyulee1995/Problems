@@ -1,5 +1,7 @@
 # Customers Who Never Order
+
 # Not exists
+
 ```
 select c.name as Customers
 from Customers c
@@ -9,13 +11,15 @@ where not exists (
     where o.customerId = c.id
 )
 ```
+
 # Not in
+
 ```
-select 
+select
     name as 'Customers'
-from Customers c 
+from Customers c
 where c.id not in (
-    select 
+    select
         customerId
     from Orders)
 ```

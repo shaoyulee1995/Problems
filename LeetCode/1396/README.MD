@@ -1,17 +1,20 @@
 # Design Underground System
+
 # HashMap, Pair
-* UndergroundSystem
-	* Space Complexity: O(N)
-		* N as number of stations
-* checkIn
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* checkOut
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* getAverageTime
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
+
+- UndergroundSystem
+  - Space Complexity: O(N)
+    - N as number of stations
+- checkIn
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- checkOut
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- getAverageTime
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+
 ```
 class UndergroundSystem {
 
@@ -21,20 +24,20 @@ class UndergroundSystem {
         checkOutMap = new HashMap();
         checkInMap = new HashMap();
     }
-    
+
     public void checkIn(int id, String stationName, int t) {
         checkInMap.put(id, new Pair<>(stationName, t));
     }
-    
+
     public void checkOut(int id, String stationName, int t) {
         Pair<String, Integer> checkIn = checkInMap.get(id);
         String route = checkIn.getKey() + "-" + stationName;
         int totalTime = t - checkIn.getValue();
         Pair<Integer, Integer> checkOut = checkOutMap.getOrDefault(route, new Pair<>(0,0));
         checkOutMap.put(route, new Pair<>(checkOut.getKey() + totalTime, checkOut.getValue() + 1));
-        
+
     }
-    
+
     public double getAverageTime(String startStation, String endStation) {
         String route = startStation + "-" + endStation;
         Pair<Integer, Integer> checkout = checkOutMap.get(route);
@@ -42,7 +45,9 @@ class UndergroundSystem {
     }
 }
 ```
+
 # OOP
+
 ```
 class Passenger{
     String checkInStation, checkOutStation;
@@ -80,7 +85,7 @@ class Route{
 }
 
 class UndergroundSystem {
-    
+
     HashMap<Integer, Passenger> passengerMap;
     HashMap<String, Route> routeMap;
 
@@ -88,14 +93,14 @@ class UndergroundSystem {
         passengerMap = new HashMap();
         routeMap = new HashMap();
     }
-    
+
     public void checkIn(int id, String stationName, int t) {
         if(passengerMap.containsKey(id)){
             return;
         }
         passengerMap.put(id, new Passenger(stationName, t));
     }
-    
+
     public void checkOut(int id, String stationName, int t) {
         if(passengerMap.containsKey(id)){
             Passenger p = passengerMap.get(id);
@@ -108,7 +113,7 @@ class UndergroundSystem {
             passengerMap.remove(id);
         }
     }
-    
+
     public double getAverageTime(String startStation, String endStation) {
         return routeMap.get(startStation+","+endStation).getAverage();
     }

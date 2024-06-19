@@ -1,8 +1,11 @@
 # Add Digits
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as digits of num
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as digits of num
+
 ```
 class Solution {
     public int addDigits(int num) {

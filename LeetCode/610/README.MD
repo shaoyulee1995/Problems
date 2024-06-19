@@ -1,16 +1,17 @@
 # Triangle Judgement
+
 ```
 select
     x,
-    y, 
+    y,
     z,
     CASE
         when x + y > z and
              y + z > x and
-             x + z > y 
+             x + z > y
         then "Yes"
         else "No"
     END as 'triangle'
-from 
+from
     Triangle
 ```

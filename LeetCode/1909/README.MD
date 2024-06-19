@@ -1,8 +1,11 @@
 # Remove One Element to Make the Array Strictly Increasing
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public boolean canBeIncreasing(int[] nums) {

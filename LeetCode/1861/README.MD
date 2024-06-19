@@ -1,9 +1,12 @@
 # Rotating the Box
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of box
-	* M as length of box[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of box
+  - M as length of box[0]
+
 ```
 class Solution {
     public char[][] rotateTheBox(char[][] box) {

@@ -1,4 +1,5 @@
 # Count Good Nodes in Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
-# Recursion 
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes in tree
+
+# Recursion
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     public int goodNodes(TreeNode root) {

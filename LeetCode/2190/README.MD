@@ -1,8 +1,11 @@
 # Most Frequent Number Following Key In an Array
+
 # HashMap
-* Time Complexity: O(NW)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(NW)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int mostFrequent(int[] nums, int key) {

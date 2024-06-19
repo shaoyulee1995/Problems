@@ -1,10 +1,13 @@
 # Most Common Word
+
 # HashMap, HashSet
-* Time Complexity: O(Pw)
-* Space Complexity: O(max(w, B))
-	* P as length of paragraph
-	* B as length of banned
-	* w as length of word
+
+- Time Complexity: O(Pw)
+- Space Complexity: O(max(w, B))
+  - P as length of paragraph
+  - B as length of banned
+  - w as length of word
+
 ```
 class Solution {
     public String mostCommonWord(String paragraph, String[] banned) {
@@ -41,11 +44,14 @@ class Solution {
     }
 }
 ```
+
 # Regular Expression
-* Time Complexity: O(PB)
-* Space Complexity: O(max(P, B))
-	* P as length of paragraph
-	* B as length of banned
+
+- Time Complexity: O(PB)
+- Space Complexity: O(max(P, B))
+  - P as length of paragraph
+  - B as length of banned
+
 ```
 class Solution {
     public String mostCommonWord(String paragraph, String[] banned) {
@@ -57,8 +63,8 @@ class Solution {
         }
         for(String word: words){
             if(!bans.contains(word)){
-                map.put(word, map.getOrDefault(word, 0) + 1);  
-            }    
+                map.put(word, map.getOrDefault(word, 0) + 1);
+            }
         }
         int max = 0;
         String res = "";

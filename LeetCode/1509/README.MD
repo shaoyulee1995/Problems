@@ -1,8 +1,11 @@
 # Minimum Difference Between Largest and Smallest Value in Three Moves
+
 # Comparison
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int minDifference(int[] nums) {

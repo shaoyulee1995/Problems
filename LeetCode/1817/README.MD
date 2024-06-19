@@ -1,8 +1,11 @@
 # Finding the Users Active Minutes
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of logs
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of logs
+
 ```
 class Solution {
     public int[] findingUsersActiveMinutes(int[][] logs, int k) {

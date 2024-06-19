@@ -1,9 +1,12 @@
 # Distinct Subsequences
+
 # DP
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of t
-    * M as length of s
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of t
+    - M as length of s
+
 ```
 class Solution {
     public int numDistinct(String s, String t) {

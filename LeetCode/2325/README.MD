@@ -1,9 +1,12 @@
 # Decode the Message
+
 # HashMap
-* Time Complexity: O(Max(K, M))
-* Space Complexity: O(26)
-	* K as length of key
-	* M as length of message
+
+- Time Complexity: O(Max(K, M))
+- Space Complexity: O(26)
+  - K as length of key
+  - M as length of message
+
 ```
 class Solution {
     public String decodeMessage(String key, String message) {
@@ -26,11 +29,14 @@ class Solution {
     }
 }
 ```
+
 # Counting Array
-* Time Complexity: O(Max(K, M))
-* Space Complexity: O(26)
-	* K as length of key
-	* M as length of message
+
+- Time Complexity: O(Max(K, M))
+- Space Complexity: O(26)
+  - K as length of key
+  - M as length of message
+
 ```
 class Solution {
     public String decodeMessage(String key, String message) {

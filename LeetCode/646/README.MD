@@ -1,8 +1,11 @@
 # Maximum Length of Pair Chain
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-    * N as length of pairs
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of pairs
+
 ```
 class Solution {
     public int findLongestChain(int[][] pairs) {

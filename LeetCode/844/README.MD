@@ -1,9 +1,12 @@
 # Backspace String Compare
+
 # 2 Stacks
-* Time Complexity: O(N+M)
-* Space Complexity: O(N+M)
-	* N as length of s
-	* M as length of t
+
+- Time Complexity: O(N+M)
+- Space Complexity: O(N+M)
+  - N as length of s
+  - M as length of t
+
 ```
 class Solution {
     public boolean backspaceCompare(String s, String t) {
@@ -35,17 +38,20 @@ class Solution {
     }
 }
 ```
+
 # 1 Stack
-* Time Complexity: O(N+M)
-* Space Complexity: O(N+M)
-	* N as length of s
-	* M as length of t
+
+- Time Complexity: O(N+M)
+- Space Complexity: O(N+M)
+  - N as length of s
+  - M as length of t
+
 ```
 class Solution {
     public boolean backspaceCompare(String s, String t) {
         return buildString(s).equals(buildString(t));
     }
-    
+
     public String buildString(String s){
         Stack<Character> stack = new Stack();
         for(char c: s.toCharArray()){

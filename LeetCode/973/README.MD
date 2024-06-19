@@ -1,9 +1,12 @@
 # K Closest Points to Origin
+
 # Java 7 Comparator
-* Time Complexity: O(NKlog(K))
-* Space Complexity: O(K)
-	* N as length of points
-	* K as k
+
+- Time Complexity: O(NKlog(K))
+- Space Complexity: O(K)
+  - N as length of points
+  - K as k
+
 ```
 class Solution {
     public int[][] kClosest(int[][] points, int k) {
@@ -19,11 +22,14 @@ class Solution {
     }
 }
 ```
+
 # Lambda Comparator
-* Time Complexity: O(NKlog(K))
-* Space Complexity: O(K)
-	* N as length of points
-	* K as k
+
+- Time Complexity: O(NKlog(K))
+- Space Complexity: O(K)
+  - N as length of points
+  - K as k
+
 ```
 class Solution {
     public int[][] kClosest(int[][] points, int k) {

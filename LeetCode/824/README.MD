@@ -1,10 +1,13 @@
 # Goat Latin
+
 # Math
-* Time Complexity: O(NWn)
-* Space Complexity: O(N)
-    * N as length of sentence
-    * W as maximum length of word
-    * n as size of words
+
+- Time Complexity: O(NWn)
+- Space Complexity: O(N)
+  - N as length of sentence
+  - W as maximum length of word
+  - n as size of words
+
 ```
 class Solution {
     public String toGoatLatin(String sentence) {

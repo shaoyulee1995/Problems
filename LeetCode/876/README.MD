@@ -1,4 +1,5 @@
 # Middle of the Linked List
+
 ```
 Definition for singly-linked list.
 public class ListNode {
@@ -9,10 +10,13 @@ public class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 ```
+
 # Two Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-    * N as nodes in linkedlist
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in linkedlist
+
 ```
 class Solution {
     public ListNode middleNode(ListNode head) {

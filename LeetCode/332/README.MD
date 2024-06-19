@@ -1,9 +1,12 @@
 # Reconstruct Itinerary
+
 # DFS
-* Time Complexity: O()
-* Space Complexity: O(V+E)
-	* V as vertices
-    * E as edges
+
+- Time Complexity: O()
+- Space Complexity: O(V+E)
+  - V as vertices
+    - E as edges
+
 ```
 class Solution {
     HashMap<String, PriorityQueue<String>> map;
@@ -17,9 +20,9 @@ class Solution {
         dfs("JFK");
         return res;
     }
-    
+
     public void dfs(String city){
-        PriorityQueue<String> pq = map.get(city); 
+        PriorityQueue<String> pq = map.get(city);
         while(pq != null && !pq.isEmpty()){
             dfs(pq.poll());
         }

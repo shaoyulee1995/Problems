@@ -1,10 +1,13 @@
 # Check if Word Equals Summation of Two Words
+
 # String
-* Time Complexity: O(Max(F,S,T))
-* Space Complexity: O(1)
-	* F as length of firstWord
-	* S as length of secondWord
-	* T as length of targetWord
+
+- Time Complexity: O(Max(F,S,T))
+- Space Complexity: O(1)
+  - F as length of firstWord
+  - S as length of secondWord
+  - T as length of targetWord
+
 ```
 class Solution {
     public boolean isSumEqual(String firstWord, String secondWord, String targetWord) {

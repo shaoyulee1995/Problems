@@ -1,7 +1,10 @@
 # Print in Order
+
 # Solution 1
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
+
 ```
 class Foo {
     Semaphore run2, run3;
@@ -29,8 +32,10 @@ class Foo {
 ```
 
 # Solution 2
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
+
 ```
 class Foo {
     int cnt;
@@ -39,19 +44,19 @@ class Foo {
     }
 
     public void first(Runnable print) throws InterruptedException {
-        
+
         // printFirst.run() outputs "first". Do not change or remove this line.
         this.waitCountThenRun(0,print);
     }
 
     public void second(Runnable print) throws InterruptedException {
-        
+
         // printSecond.run() outputs "second". Do not change or remove this line.
         this.waitCountThenRun(1,print);
     }
 
     public void third(Runnable print) throws InterruptedException {
-        
+
         // printThird.run() outputs "third". Do not change or remove this line.
         this.waitCountThenRun(2,print);
     }

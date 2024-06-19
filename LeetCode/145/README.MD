@@ -1,4 +1,5 @@
 # Binary Tree Postorder Traversal
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as number of TreeNode
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as number of TreeNode
+
 ```
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
@@ -40,10 +44,13 @@ class Solution {
     }
 }
 ```
+
 # Iterate
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of TreeNode
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of TreeNode
+
 ```
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {

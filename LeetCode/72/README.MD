@@ -1,9 +1,12 @@
 # Edit Distance
+
 # DP
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N is length of word1
-	* M is length of word2
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N is length of word1
+  - M is length of word2
+
 ```
 class Solution {
     public int minDistance(String word1, String word2) {
@@ -19,7 +22,7 @@ class Solution {
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= m; j++){
                 if(word1.charAt(i-1) == word2.charAt(j-1)){
-                    dp[i][j] = dp[i-1][j-1];    
+                    dp[i][j] = dp[i-1][j-1];
                 }else{
                     dp[i][j] = 1 + min(dp[i-1][j],
                                        dp[i-1][j-1],
@@ -29,17 +32,20 @@ class Solution {
         }
         return dp[n][m];
     }
-    
+
     public int min(int a, int b, int c){
         return Math.min(a, Math.min(b, c));
     }
 }
 ```
+
 # Memorized Recursion
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N is length of word1
-	* M is length of word2
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N is length of word1
+  - M is length of word2
+
 ```
 class Solution {
     Integer[][] dp;

@@ -1,12 +1,13 @@
 # Not Boring Movies
+
 ```
 select
     *
-from    
+from
     Cinema
 where
     id%2 = 1 and
     description not like '%boring%'
-order by 
+order by
     rating desc
 ```

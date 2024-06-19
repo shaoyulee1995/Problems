@@ -1,8 +1,11 @@
 # Online Stock Span
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of price
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of price
+
 ```
 class StockSpanner {
     Stack<Integer> prices, freq;
@@ -10,7 +13,7 @@ class StockSpanner {
         prices = new Stack();
         freq = new Stack();
     }
-    
+
     public int next(int price) {
         int cur_freq = 1;
         while(!prices.isEmpty() && prices.peek() <= price){
@@ -24,6 +27,7 @@ class StockSpanner {
     }
 }
 ```
+
 ```
 /**
  * Your StockSpanner object will be instantiated and called as such:

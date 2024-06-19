@@ -1,8 +1,11 @@
 # Non-overlapping Intervals
+
 # Sorting
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-	* N as length of intervals
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of intervals
+
 ```
 class Solution {
     public int eraseOverlapIntervals(int[][] intervals) {
@@ -20,10 +23,13 @@ class Solution {
     }
 }
 ```
+
 # Sorting
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-	* N as length of intervals
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of intervals
+
 ```
 class Solution {
     public int eraseOverlapIntervals(int[][] intervals) {

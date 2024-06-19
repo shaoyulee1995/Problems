@@ -1,8 +1,11 @@
 # Dota2 Senate
+
 # String
-* Time Complexity: O(S)
-* Space Complexity: O(S)
-    * S as lenght of senate
+
+- Time Complexity: O(S)
+- Space Complexity: O(S)
+  - S as lenght of senate
+
 ```
 class Solution {
     public String predictPartyVictory(String senate) {

@@ -1,8 +1,11 @@
 # Finding 3-Digit Even Numbers
+
 # Counting Array
-* Time Complexity: O(D)
-* Space Complexity: O(D!)
-	* D as length of digits
+
+- Time Complexity: O(D)
+- Space Complexity: O(D!)
+  - D as length of digits
+
 ```
 class Solution {
     public int[] findEvenNumbers(int[] digits) {

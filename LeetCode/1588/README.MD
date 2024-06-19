@@ -1,7 +1,10 @@
 # Sum of All Odd Length Subarrays
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int sumOddLengthSubarrays(int[] arr) {

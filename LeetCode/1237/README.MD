@@ -1,4 +1,5 @@
 # Find Positive Integer Solution for a Given Equation
+
 ```
 /*
  * // This is the custom function interface.
@@ -11,10 +12,13 @@
  * };
  */
 ```
+
 # 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as 1000
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as 1000
+
 ```
 class Solution {
     public List<List<Integer>> findSolution(CustomFunction customfunction, int z) {

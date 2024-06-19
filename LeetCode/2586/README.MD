@@ -1,8 +1,11 @@
 # Count the Number of Vowel Strings in Range
+
 # Set
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length between left and right
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length between left and right
+
 ```
 class Solution {
     public int vowelStrings(String[] words, int left, int right) {

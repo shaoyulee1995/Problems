@@ -1,8 +1,11 @@
 # Keyboard Row
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of words
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of words
+
 ```
 class Solution {
     public String[] findWords(String[] words) {
@@ -24,10 +27,13 @@ class Solution {
     }
 }
 ```
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of words
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of words
+
 ```
 class Solution {
     public String[] findWords(String[] words) {

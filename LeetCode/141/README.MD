@@ -1,4 +1,5 @@
 # Linked List Cycle
+
 ```
 Definition for singly-linked list.
 class ListNode {
@@ -10,10 +11,13 @@ class ListNode {
     }
 }
 ```
+
 # LinkedList
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-    * N as nodes in linkedlist
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in linkedlist
+
 ```
 public class Solution {
     public boolean hasCycle(ListNode head) {

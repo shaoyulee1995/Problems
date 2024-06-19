@@ -1,8 +1,11 @@
 # Power of Two
+
 # Math
-* Time Complexity: O(logN)
-* Space Complexity: O(1)
-    * N as n
+
+- Time Complexity: O(logN)
+- Space Complexity: O(1)
+  - N as n
+
 ```
 class Solution {
     public boolean isPowerOfTwo(int n) {

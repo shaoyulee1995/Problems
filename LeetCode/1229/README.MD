@@ -1,13 +1,16 @@
 # Meeting Scheduler
+
 # 2 Pointers
-* Time Complexity: O(Max(NlogN, MlogM))
-* Space Complexity: O(1)
-	* N as length of slots1
-	* M as length of slots2
+
+- Time Complexity: O(Max(NlogN, MlogM))
+- Space Complexity: O(1)
+  - N as length of slots1
+  - M as length of slots2
+
 ```
 class Solution {
     public List<Integer> minAvailableDuration(int[][] slots1, int[][] slots2, int duration) {
-        int i = 0, 
+        int i = 0,
             j = 0,
             n = slots1.length,
             m = slots2.length,

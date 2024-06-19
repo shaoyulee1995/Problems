@@ -1,8 +1,11 @@
 # Elimination Game
+
 # Math
-* Time Complexity: O(log<sub>2</sub>N)
-* Space Complexity: O(1)
-	* N as n
+
+- Time Complexity: O(log<sub>2</sub>N)
+- Space Complexity: O(1)
+  - N as n
+
 ```
 class Solution {
     public int lastRemaining(int n) {

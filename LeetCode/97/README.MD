@@ -1,9 +1,12 @@
 # Interleaving String
+
 # DFS
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-    * N as length of s1
-    * M as length of s2
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of s1
+  - M as length of s2
+
 ```
 class Solution {
     boolean[][] invalid;
@@ -14,7 +17,7 @@ class Solution {
         invalid = new boolean[s1.length()+1][s2.length()+1];
         return dfs(s1.toCharArray(), 0, s2.toCharArray(), 0, s3.toCharArray(), 0);
     }
-    
+
     public boolean dfs(char[] s1, int i, char[] s2, int j, char[] s3, int k){
         if(invalid[i][j]){
             return false;

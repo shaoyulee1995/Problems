@@ -1,9 +1,12 @@
 # Check If String Is a Prefix of Array
+
 # String
-* Time Complexity: O(WS)
-* Space Complexity: O(W)
-	* W as length of words
-    * S as length of s
+
+- Time Complexity: O(WS)
+- Space Complexity: O(W)
+  - W as length of words
+    - S as length of s
+
 ```
 class Solution {
     public boolean isPrefixString(String s, String[] words) {

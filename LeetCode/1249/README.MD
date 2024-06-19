@@ -1,8 +1,11 @@
 # Minimum Remove to Make Valid Parentheses
+
 # String
-* Time Complexity: O(S))
-* Space Complexity: O(S)
-	* S as length of s
+
+- Time Complexity: O(S))
+- Space Complexity: O(S)
+  - S as length of s
+
 ```
 class Solution {
     public String minRemoveToMakeValid(String s) {
@@ -21,7 +24,7 @@ class Solution {
             }
             sb.append(c);
         }
-        
+
         StringBuilder result = new StringBuilder();
         int openToKeep = openP - balance;
         for(char c: sb.toString().toCharArray()){

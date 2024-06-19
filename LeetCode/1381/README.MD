@@ -1,17 +1,20 @@
 # Design a Stack With Increment Operation
+
 # Array
-* CustomStack
-	* Space Complexity: O(N)
-		* N as maxSize
-* push
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* pop
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* increment
-	* Time Complexity: O(k)
-	* Space Complexity: O(1)
+
+- CustomStack
+  - Space Complexity: O(N)
+    - N as maxSize
+- push
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- pop
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- increment
+  - Time Complexity: O(k)
+  - Space Complexity: O(1)
+
 ```
 class CustomStack {
     int[] stack;
@@ -38,6 +41,7 @@ class CustomStack {
     }
 }
 ```
+
 ```
 /**
  * Your CustomStack object will be instantiated and called as such:

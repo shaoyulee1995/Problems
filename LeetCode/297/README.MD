@@ -1,4 +1,5 @@
 # Serialize and Deserialize Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -10,10 +11,13 @@
  * }
  */
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 public class Codec {
     // Encodes a tree to a single string.
@@ -55,6 +59,7 @@ public class Codec {
     }
 }
 ```
+
 ```
 // Your Codec object will be instantiated and called as such:
 // Codec ser = new Codec();

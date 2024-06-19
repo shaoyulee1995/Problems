@@ -1,7 +1,10 @@
 # Surrounded Regions
+
 # DFS
-* Time Complexity: O(MN)
-* Space Complexity: O(MN)
+
+- Time Complexity: O(MN)
+- Space Complexity: O(MN)
+
 ```
 class Solution {
     public void solve(char[][] board) {
@@ -24,7 +27,7 @@ class Solution {
             }
         }
     }
-    
+
     public void dfs(char[][] board, int x, int y){
         if(x < 0 || x == board.length){
             return;
@@ -43,11 +46,14 @@ class Solution {
     }
 }
 ```
+
 # Union Find
-* Time Complexity: O(MN)
-* Space Complexity: O(MN)
-	* N as rows
-	* M as cols
+
+- Time Complexity: O(MN)
+- Space Complexity: O(MN)
+  - N as rows
+  - M as cols
+
 ```
 class Solution {
     class UnionFind{
@@ -58,7 +64,7 @@ class Solution {
                 parents[i] = i;
             }
         }
-        
+
         void union(int node1, int node2){
             int root1 = find(node1);
             int root2 = find(node2);

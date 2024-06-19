@@ -1,8 +1,11 @@
 # Happy Number
+
 # HashSet
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as n
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as n
+
 ```
 class Solution {
     public boolean isHappy(int n) {

@@ -1,4 +1,5 @@
 # Customer Who Visited but Did Not Make Any Transactions
+
 ```
 select
     v.customer_id,

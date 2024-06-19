@@ -1,7 +1,10 @@
 # Random Pick with Blacklist
+
 # HashMap
-* Time Complexity: O(B)
-* Space Complexity: O(N)
+
+- Time Complexity: O(B)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     HashMap<Integer, Integer> map;
@@ -26,13 +29,14 @@ class Solution {
     }
     public int pick() {
         int p = r.nextInt(M);
-        if(map.containsKey(p)){            
+        if(map.containsKey(p)){
             return map.get(p);
         }
         return p;
     }
 }
 ```
+
 ```
 /**
  * Your Solution object will be instantiated and called as such:

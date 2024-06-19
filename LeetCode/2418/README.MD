@@ -1,9 +1,12 @@
 # Sort the People
+
 # Array
-* Time Complexity: O(HlogH)
-* Space Complexity: O(N)
-	* N as length of names
-    * H as length of heights
+
+- Time Complexity: O(HlogH)
+- Space Complexity: O(N)
+  - N as length of names
+    - H as length of heights
+
 ```
 class Solution {
     public String[] sortPeople(String[] names, int[] heights) {

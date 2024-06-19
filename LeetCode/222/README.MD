@@ -1,4 +1,5 @@
 # Count Complete Tree Nodes
+
 ```
 Definition for a binary tree node.
 public class TreeNode {
@@ -14,10 +15,13 @@ public class TreeNode {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes
+
 ```
 class Solution {
     public int countNodes(TreeNode root) {
@@ -25,6 +29,7 @@ class Solution {
     }
 }
 ```
+
 ```
 class Solution {
     public int countNodes(TreeNode root) {
@@ -37,10 +42,13 @@ class Solution {
     }
 }
 ```
-# Recursion 
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as nodes
+
+# Recursion
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as nodes
+
 ```
 class Solution {
     public int countNodes(TreeNode root) {
@@ -72,10 +80,13 @@ class Solution {
     }
 }
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes
+
 ```
 class Solution {
     public int countNodes(TreeNode root) {

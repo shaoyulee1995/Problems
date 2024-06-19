@@ -1,4 +1,5 @@
 # Binary Tree Tilt
+
 ```
 Definition for a binary tree node.
 public class TreeNode {
@@ -14,10 +15,13 @@ public class TreeNode {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-    * N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     int total;
@@ -31,7 +35,7 @@ class Solution {
         if(node == null){
             return 0;
         }
-        int left = dfs(node.left), 
+        int left = dfs(node.left),
             right = dfs(node.right),
             tilt = Math.abs(left - right);
         total += tilt;

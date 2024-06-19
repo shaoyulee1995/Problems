@@ -1,7 +1,10 @@
 # Make Two Arrays Equal by Reversing Sub-arrays
+
 # Sorting
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public boolean canBeEqual(int[] target, int[] arr) {

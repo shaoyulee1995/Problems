@@ -1,7 +1,10 @@
 # Matrix Diagonal Sum
+
 # Matrix
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int diagonalSum(int[][] mat) {

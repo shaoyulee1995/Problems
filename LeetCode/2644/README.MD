@@ -1,9 +1,12 @@
 # Find the Maximum Divisibility Score
+
 # Array
-* Time Complexity: O(DN)
-* Space Complexity: O(N)
-    * N as length of nums
-    * D as length of divisors
+
+- Time Complexity: O(DN)
+- Space Complexity: O(N)
+  - N as length of nums
+  - D as length of divisors
+
 ```
 class Solution {
     public int maxDivScore(int[] nums, int[] divisors) {

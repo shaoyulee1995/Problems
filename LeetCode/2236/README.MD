@@ -1,4 +1,5 @@
 # Root Equals Sum of Children
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as number of nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as number of nodes
+
 ```
 class Solution {
     public boolean checkTree(TreeNode root) {

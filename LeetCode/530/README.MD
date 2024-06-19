@@ -1,4 +1,5 @@
 # Minimum Absolute Difference in BST
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # Tree InOrder Traversal
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes in the tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in the tree
+
 ```
 class Solution {
     Integer prev = null;

@@ -1,9 +1,12 @@
 # Longest Palindromic Subsequence
+
 # Dynamic Programming
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N is number of rows
-	* M is number of cols
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N is number of rows
+  - M is number of cols
+
 ```
 class Solution {
     public int longestPalindromeSubseq(String s) {
@@ -23,11 +26,13 @@ class Solution {
     }
 }
 ```
+
 # Dynamic Programming
-* Time Complexity: O(NM)
-* Space Complexity: O(N)
-	* N is number of rows
-	* M is number of cols
+
+- Time Complexity: O(NM)
+- Space Complexity: O(N)
+  - N is number of rows
+  - M is number of cols
 
 ```
 class Solution {
@@ -40,7 +45,7 @@ class Solution {
             for(int j = i+1; j < n; j++){
                 int temp = dp[j];
                 if(s.charAt(i) == s.charAt(j)){
-                    dp[j] = prev + 2; 
+                    dp[j] = prev + 2;
                 }else{
                     dp[j] = Math.max(dp[j], dp[j-1]);
                 }

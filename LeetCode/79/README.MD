@@ -1,9 +1,12 @@
 # Word Search
+
 # DFS
-* Time Complexity: O(N*3<sup>L</sup>)
-* Space Complexity: O(L)
-	* N as length of cells in the board
-	* L as length of word
+
+- Time Complexity: O(N\*3<sup>L</sup>)
+- Space Complexity: O(L)
+  - N as length of cells in the board
+  - L as length of word
+
 ```
 class Solution {
     public boolean exist(char[][] board, String word) {
@@ -28,9 +31,9 @@ class Solution {
         visited[x][y] = true;
         char restore = board[x][y];
         board[x][y] = '.';
-        boolean traverse = dfs(board, x+1, y, word, idx+1, visited) || 
-                           dfs(board, x-1, y, word, idx+1, visited) || 
-                           dfs(board, x, y+1, word, idx+1, visited) || 
+        boolean traverse = dfs(board, x+1, y, word, idx+1, visited) ||
+                           dfs(board, x-1, y, word, idx+1, visited) ||
+                           dfs(board, x, y+1, word, idx+1, visited) ||
                            dfs(board, x, y-1, word, idx+1, visited);
         if(traverse){
             return true;
@@ -41,11 +44,14 @@ class Solution {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N*3<sup>L</sup>)
-* Space Complexity: O(L)
-	* N as length of cells in the board
-	* L as length of word
+
+- Time Complexity: O(N\*3<sup>L</sup>)
+- Space Complexity: O(L)
+  - N as length of cells in the board
+  - L as length of word
+
 ```
 class Solution {
     int[][] dirs = new int[][]{{-1, 0}, {1, 0}, {0, 1}, {0, -1}};

@@ -1,4 +1,5 @@
 # Binary Tree Vertical Order Traversal
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,11 +17,14 @@
  * }
  */
 ```
+
 # DFS
-* Time Complexity: O(NClog(C))
-* Space Complexity: O(N)
-	* C as column nodes in tree
-	* N as number of nodes in tree
+
+- Time Complexity: O(NClog(C))
+- Space Complexity: O(N)
+  - C as column nodes in tree
+  - N as number of nodes in tree
+
 ```
 class Solution {
     TreeMap<Integer, List<int[]>> map;
@@ -52,10 +56,13 @@ class Solution {
     }
 }
 ```
+
 # BFS without Pair
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of nodes in tree
+
 ```
 class Solution {
     public List<List<Integer>> verticalOrder(TreeNode root) {
@@ -72,12 +79,12 @@ class Solution {
         while(!queue.isEmpty()){
             TreeNode node = queue.poll();
             int col = cols.poll();
-            
+
             if(!map.containsKey(col)){
                 map.put(col, new ArrayList());
             }
             map.get(col).add(node.val);
-            
+
             if(node.left != null){
                 cols.add(col-1);
                 queue.add(node.left);
@@ -96,10 +103,13 @@ class Solution {
     }
 }
 ```
+
 # BFS with Pair
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of nodes in tree
+
 ```
 class Solution {
 	class Pair{

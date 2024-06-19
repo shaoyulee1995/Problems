@@ -1,7 +1,10 @@
 # Min Cost Climbing Stairs
+
 # Dynamic Programming
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
@@ -13,22 +16,27 @@ class Solution {
     }
 }
 ```
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
         for(int i = 2; i < cost.length; i++){
             cost[i] += Math.min(cost[i-1], cost[i-2]);
         }
-        
+
         return Math.min(cost[cost.length-1], cost[cost.length-2]);
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int minCostClimbingStairs(int[] cost) {

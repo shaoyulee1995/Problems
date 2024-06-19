@@ -1,7 +1,10 @@
 # Perfect Number
+
 # 2 Pointers
-* Time Complexity: O((sqrt(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O((sqrt(N))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public boolean checkPerfectNumber(int num) {

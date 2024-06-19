@@ -1,8 +1,11 @@
 # Rank Transform of an Array
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
-	* N as length of arr
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as length of arr
+
 ```
 class Solution {
     public int[] arrayRankTransform(int[] arr) {

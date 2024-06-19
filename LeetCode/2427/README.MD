@@ -1,8 +1,11 @@
 # Number of Common Factors
+
 # Loop
-* Time Complexity: O(A)
-* Space Complexity: O(1)
-	* A as a
+
+- Time Complexity: O(A)
+- Space Complexity: O(1)
+  - A as a
+
 ```
 class Solution {
     int res = 1;

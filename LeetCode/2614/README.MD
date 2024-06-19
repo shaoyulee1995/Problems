@@ -1,9 +1,12 @@
 # Prime In Diagonal
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-    * N as length of nums
-    * M as length of nums[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of nums
+  - M as length of nums[0]
+
 ```
 class Solution {
     public int diagonalPrime(int[][] nums) {

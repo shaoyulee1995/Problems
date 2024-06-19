@@ -1,8 +1,11 @@
 # Kth Largest Element in an Array
+
 # Sort
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int findKthLargest(int[] nums, int k) {
@@ -11,11 +14,14 @@ class Solution {
     }
 }
 ```
+
 # PriorityQueue
-* Time Complexity: O(Nlog(K))
-* Space Complexity: O(K)
-	* N as length of nums
-	* K as k
+
+- Time Complexity: O(Nlog(K))
+- Space Complexity: O(K)
+  - N as length of nums
+  - K as k
+
 ```
 class Solution {
     public int findKthLargest(int[] nums, int k) {
@@ -30,10 +36,13 @@ class Solution {
     }
 }
 ```
+
 # Quick Sort
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int findKthLargest(int[] nums, int k) {
@@ -52,7 +61,7 @@ class Solution {
         }
         return nums[start];
     }
-    
+
     public int partition(int[] nums, int start, int end){
         int pivot = start;
         while(start <= end){
@@ -70,7 +79,7 @@ class Solution {
         swap(nums, pivot, end);
         return end;
     }
-   
+
     public void swap(int[] nums, int i, int j){
         int temp = nums[i];
         nums[i] = nums[j];

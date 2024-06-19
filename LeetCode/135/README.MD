@@ -1,8 +1,11 @@
 # Candy
+
 # DP
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of ratings
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of ratings
+
 ```
 class Solution {
     public int candy(int[] ratings) {

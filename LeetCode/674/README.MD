@@ -1,8 +1,11 @@
 # Longest Continuous Increasing Subsequence
+
 # 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int findLengthOfLCIS(int[] nums) {
@@ -20,14 +23,17 @@ class Solution {
     }
 }
 ```
+
 # 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int findLengthOfLCIS(int[] nums) {
-        int cur_right = 0, 
+        int cur_right = 0,
             res = 0;
         for(int i = 0; i < nums.length; i++){
             if(i == 0 || nums[i-1] >= nums[i]){
@@ -41,10 +47,13 @@ class Solution {
     }
 }
 ```
+
 # DP
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int findLengthOfLCIS(int[] nums) {
@@ -59,7 +68,7 @@ class Solution {
                 dp[i] = dp[i-1] + 1;
             }
             res = Math.max(res, dp[i]);
-            
+
         }
         return res;
     }

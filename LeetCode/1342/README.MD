@@ -1,15 +1,18 @@
 # Number of Steps to Reduce a Number to Zero
+
 # Math
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as num
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as num
+
 ```
 class Solution {
     public int numberOfSteps(int num) {
         int step = 0;
         while(num != 0){
             if(num % 2 == 0){
-                num /= 2;   
+                num /= 2;
             }else{
                 num--;
             }
@@ -19,10 +22,13 @@ class Solution {
     }
 }
 ```
+
 # Bit Operation
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as num
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as num
+
 ```
 class Solution {
     public int numberOfSteps(int num) {

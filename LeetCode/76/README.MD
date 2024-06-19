@@ -1,12 +1,15 @@
 # Minimum Window Substring
+
 # Sliding Windows
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public String minWindow(String s, String t) {
         HashMap<Character, Integer> map = new HashMap();
-        for(char c: t.toCharArray()){ 
+        for(char c: t.toCharArray()){
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
         int size = map.size(),
@@ -44,6 +47,7 @@ class Solution {
     }
 }
 ```
+
 ```
 class Solution {
 public:
@@ -54,7 +58,7 @@ public:
         }
         size_t start = 0, end = 0, counter = t.size(), minStart = 0, minLen = INT_MAX;
         size_t size = s.size();
-        
+
         while(end < size){
             if(m[s[end]] > 0){
                 counter--;

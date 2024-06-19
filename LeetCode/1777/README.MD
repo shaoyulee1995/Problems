@@ -1,4 +1,5 @@
 # Product's Price for Each Store
+
 ```
 select
     product_id,

@@ -1,8 +1,11 @@
 # Find the Peaks
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of mountain
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of mountain
+
 ```
 class Solution {
     public List<Integer> findPeaks(int[] mountain) {

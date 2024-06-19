@@ -1,7 +1,10 @@
 # Longest Increasing Subsequence
+
 # Dynamic Programming
-* Time Complexity: O(N^2)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N^2)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int lengthOfLIS(int[] nums) {
@@ -22,9 +25,12 @@ class Solution {
     }
 }
 ```
+
 # Binary Search
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int lengthOfLIS(int[] nums) {

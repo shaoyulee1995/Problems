@@ -1,8 +1,11 @@
 # Maximum Population Year
+
 # Array
-* Time Complexity: O(L)
-* Space Complexity: O(1)
-	* L as L of logs
+
+- Time Complexity: O(L)
+- Space Complexity: O(1)
+  - L as L of logs
+
 ```
 class Solution {
     public int maximumPopulation(int[][] logs) {

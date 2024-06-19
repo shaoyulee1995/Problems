@@ -1,8 +1,11 @@
 # Sort Vowels in a String
+
 # Array
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String sortVowels(String s) {
@@ -25,15 +28,18 @@ class Solution {
     }
 
     public boolean isVowel(char c){
-        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || 
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
         c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String sortVowels(String s) {
@@ -58,7 +64,7 @@ class Solution {
     }
 
     public boolean isVowel(char c){
-        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || 
+        return c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
         c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
     }
 }

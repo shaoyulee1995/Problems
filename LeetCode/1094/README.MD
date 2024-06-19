@@ -1,8 +1,11 @@
 # Car Pooling
+
 # Prefix Sum
-* Time Complexity: O(N)
-	* increment: O(1)
-* Space Complexity: O(1001)
+
+- Time Complexity: O(N)
+  - increment: O(1)
+- Space Complexity: O(1001)
+
 ```
 class Solution {
     public boolean carPooling(int[][] trips, int capacity) {
@@ -33,7 +36,7 @@ class Solution {
         }
         public void increment(int from, int to, int val){
             diff[from] += val;
-            
+
             if(to + 1 < diff.length){
                 diff[to + 1] -= val;
             }
@@ -51,9 +54,11 @@ class Solution {
 ```
 
 # TreeMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of trips
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of trips
+
 ```
 class Solution {
     public boolean carPooling(int[][] trips, int capacity) {
@@ -62,7 +67,7 @@ class Solution {
             map.put(trip[1], map.getOrDefault(trip[1],0) +  trip[0]);
             map.put(trip[2], map.getOrDefault(trip[2],0) - trip[0]);
         }
-        
+
         for(int v: map.values()){
             capacity -= v;
             if(capacity < 0){

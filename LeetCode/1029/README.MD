@@ -1,8 +1,11 @@
 # Two City Scheduling
+
 # Sorted
-* Time Complexity: O(Clog(C))
-* Space Complexity: O(1)
-	* C as length of costs
+
+- Time Complexity: O(Clog(C))
+- Space Complexity: O(1)
+  - C as length of costs
+
 ```
 class Solution {
     public int twoCitySchedCost(int[][] costs) {

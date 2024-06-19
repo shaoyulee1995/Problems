@@ -1,4 +1,5 @@
 # Delete Leaves With a Given Value
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public TreeNode removeLeafNodes(TreeNode root, int target) {

@@ -1,8 +1,11 @@
 # Find Mode in Binary Search Tree
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes
+
 ```
 /**
  * Definition for a binary tree node.
@@ -46,10 +49,13 @@ class Solution {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes
+
 ```
 class Solution {
     TreeNode prev;

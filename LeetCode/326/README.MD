@@ -1,7 +1,10 @@
 # Power of Three
+
 # Math
-* Time Complexity: O(log3(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O(log3(N))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public boolean isPowerOfThree(int n) {

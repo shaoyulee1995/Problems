@@ -1,8 +1,11 @@
 # Minimum Difference Between Highest and Lowest of K Scores
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int minimumDifference(int[] nums, int k) {

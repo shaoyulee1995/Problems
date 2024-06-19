@@ -1,12 +1,16 @@
 # Coin Change
+
 # Brutal Force
-* Time Complexity: O(k* n^k)
-* Space Complexity: O(n)
+
+- Time Complexity: O(k\* n^k)
+- Space Complexity: O(n)
+
 ## Python 3
+
 ```
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
-        
+
         def dp(n):
             if n == 0:
                 return 0
@@ -23,9 +27,12 @@ class Solution:
 ```
 
 # Recursion with Memorization
-* Time Complexity: O(nk)
-* Space Complexity: O(n)
+
+- Time Complexity: O(nk)
+- Space Complexity: O(n)
+
 ## Python 3
+
 ```
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
@@ -49,16 +56,19 @@ class Solution:
 ```
 
 # Dynamic Programming
-* Time Complexity: O(NK)
-* Space Complexity: O(N)
+
+- Time Complexity: O(NK)
+- Space Complexity: O(N)
+
 ## C++
+
 ```
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
         vector<int> dp(amount+1, amount+1);
         dp[0] = 0;
-        for(int coin: coins){          
+        for(int coin: coins){
             for(int i = 0; i < dp.size(); i++){
                 if(i - coin < 0){
                     continue;
@@ -72,7 +82,9 @@ public:
 ```
 
 ## Java
+
 ### Solution 1
+
 ```
 class Solution {
     public int coinChange(int[] coins, int amount) {
@@ -89,14 +101,16 @@ class Solution {
     }
 }
 ```
+
 ### Solution 2
+
 ```
 class Solution {
     int[] memo;
     public int coinChange(int[] coins, int amount) {
         memo = new int[amount + 1];
         Arrays.fill(memo, -2);
-        return dp(coins, amount);   
+        return dp(coins, amount);
     }
     public int dp(int[] coins, int amount){
         if(amount == 0){

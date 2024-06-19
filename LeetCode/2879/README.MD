@@ -1,4 +1,5 @@
 # Display the First Three Rows
+
 ```
 import pandas as pd
 

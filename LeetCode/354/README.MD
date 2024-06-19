@@ -1,7 +1,10 @@
 # Russian Doll Envelopes
+
 # BinarySearch
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int maxEnvelopes(int[][] envelopes) {
@@ -11,7 +14,7 @@ class Solution {
                    return b[1] - a[1];
                }
                return a[0] - b[0];
-           } 
+           }
         });
 
         int[] dp = new int[envelopes.length];
@@ -32,13 +35,14 @@ class Solution {
 ```
 
 # BinarySearch
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
 
 ```
 class Solution {
     public int maxEnvelopes(int[][] envelopes) {
-        Arrays.sort(envelopes, (a, b)-> (a[0] == b[0])?b[1]-a[1]:a[0]-b[0]);  
+        Arrays.sort(envelopes, (a, b)-> (a[0] == b[0])?b[1]-a[1]:a[0]-b[0]);
         int[] height = new int[envelopes.length];
         for(int i = 0; i < envelopes.length; i++){
             height[i] = envelopes[i][1];

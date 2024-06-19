@@ -1,7 +1,7 @@
 ```sql
 with earlier_order as (
-    select 
-        customer_id, 
+    select
+        customer_id,
         min(order_date)
     from
         Delivery

@@ -1,8 +1,11 @@
 # Redundant Connection
+
 # Union Find
-* Time Complexity: O(E)
-* Space Complexity: O(E)
-	* E as length of edges
+
+- Time Complexity: O(E)
+- Space Complexity: O(E)
+  - E as length of edges
+
 ```
 class Solution {
     public int[] findRedundantConnection(int[][] edges) {
@@ -23,7 +26,7 @@ class UnionFind{
             parent[i] = i;
         }
     }
-    
+
     public int find(int x){
         while(parent[x] != x){
             parent[x] = parent[parent[x]];
@@ -31,7 +34,7 @@ class UnionFind{
         }
         return x;
     }
-    
+
     public boolean union(int x, int y){
         int rootX = find(x),
             rootY = find(y);

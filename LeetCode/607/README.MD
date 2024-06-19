@@ -1,11 +1,12 @@
 # Sales Person
+
 ```
 select
     name
 from
     SalesPerson
 where
-    name not in 
+    name not in
                 (select
                     s.name
                 from
@@ -15,5 +16,5 @@ where
                 where
                     c.name = 'Red')
 order by
-    1 
+    1
 ```

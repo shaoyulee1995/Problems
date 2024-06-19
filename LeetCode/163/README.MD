@@ -1,8 +1,11 @@
 # Missing Ranges
- # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as len of nums
+
+# Array
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as len of nums
+
 ```
 class Solution {
     public List<List<Integer>> findMissingRanges(int[] nums, int lower, int upper) {

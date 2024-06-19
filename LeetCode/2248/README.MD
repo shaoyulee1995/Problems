@@ -1,9 +1,12 @@
 # Intersection of Multiple Arrays
+
 # Counting Array
-* Time Complexity: O(Max(NM, 1001))
-* Space Complexity: O(1001)
-	* N as length of num
-	* M as length of num[0]
+
+- Time Complexity: O(Max(NM, 1001))
+- Space Complexity: O(1001)
+  - N as length of num
+  - M as length of num[0]
+
 ```
 class Solution {
     public List<Integer> intersection(int[][] nums) {

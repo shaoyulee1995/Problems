@@ -1,4 +1,5 @@
 # Find Elements in a Contaminated Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,16 +17,18 @@
  * }
  */
 ```
+
 # PreOrder
-* FindElements
-	* Time Complexity: O(1)
-	* Space Complexity: O(N)
-* find 
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* preOrder
-	* Time Complexity: O(N)
-	* Space Complexity: O(1)
+
+- FindElements
+  - Time Complexity: O(1)
+  - Space Complexity: O(N)
+- find
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- preOrder
+  - Time Complexity: O(N)
+  - Space Complexity: O(1)
 
 ```
 class FindElements {
@@ -34,11 +37,11 @@ class FindElements {
         set = new HashSet();
         preOrder(root, 0);
     }
-    
+
     public boolean find(int target) {
         return set.contains(target);
     }
-    
+
     public void preOrder(TreeNode node, int p_value){
         if(node == null){
             return;
@@ -50,6 +53,7 @@ class FindElements {
     }
 }
 ```
+
 ```
 /**
  * Your FindElements object will be instantiated and called as such:

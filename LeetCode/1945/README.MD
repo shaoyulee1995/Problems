@@ -1,9 +1,12 @@
 # Sum of Digits of String After Convert
+
 # String
-* Time Complexity: O(SK)
-* Space Complexity: O(S)
-	* K as k
-    * S as length of s
+
+- Time Complexity: O(SK)
+- Space Complexity: O(S)
+  - K as k
+    - S as length of s
+
 ```
 class Solution {
     public int getLucky(String s, int k) {

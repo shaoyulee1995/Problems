@@ -1,9 +1,12 @@
 # Bus Routes
+
 # BFS
-* Time Complexity: O(NS)
-* Space Complexity: O(NS)
-	* N as length of routes
-	* S as number of stop in route[0]
+
+- Time Complexity: O(NS)
+- Space Complexity: O(NS)
+  - N as length of routes
+  - S as number of stop in route[0]
+
 ```
 class Solution {
     public int numBusesToDestination(int[][] routes, int source, int target) {
@@ -43,7 +46,7 @@ class Solution {
                         }
                         q.offer(nextStop);
                     }
-                }    
+                }
             }
         }
         return -1;

@@ -1,16 +1,19 @@
 # Sort Integers by The Power Value
+
 # PriorityQueue
-* Time Complexity: O(IDK)
-* Space Complexity: O(N)
-	* N as length of [lo, hi]
-	* IDK as I don't know
+
+- Time Complexity: O(IDK)
+- Space Complexity: O(N)
+  - N as length of [lo, hi]
+  - IDK as I don't know
+
 ```
 class Solution {
     HashMap<Integer, Integer> map;
     public int getKth(int lo, int hi, int k) {
         map = new HashMap();
         map.put(1,0);
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)-> power(a) != power(b)? 
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)-> power(a) != power(b)?
                                                         power(b) - power(a):
                                                         b - a);
         for(int i = lo; i <= hi; i++){

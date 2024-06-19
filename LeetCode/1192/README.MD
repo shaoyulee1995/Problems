@@ -1,9 +1,12 @@
 # Critical Connections in a Network
+
 # Strong Connected Component
-* Time Complexity: O(V + E)
-* Space Complexity: O(V)
-    * V as vertices
-    * E as edges
+
+- Time Complexity: O(V + E)
+- Space Complexity: O(V)
+  - V as vertices
+  - E as edges
+
 ```
 class Solution {
     HashMap<Integer, List<Integer>> map;

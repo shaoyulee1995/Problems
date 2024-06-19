@@ -1,8 +1,11 @@
 # Is Subsequence
+
 # String
-* Time Complexity: O(S)
-* Space Complexity: O(1)
-	* S as length of s 
+
+- Time Complexity: O(S)
+- Space Complexity: O(1)
+  - S as length of s
+
 ```
 class Solution {
     public boolean isSubsequence(String s, String t) {
@@ -12,7 +15,7 @@ class Solution {
             char a = s.charAt(i),
                  b = t.charAt(j);
             if(a == b){
-                i++; 
+                i++;
             }
             j++;
         }
@@ -20,11 +23,14 @@ class Solution {
     }
 }
 ```
+
 # DP
-* Time Complexity: O(ST)
-* Space Complexity: O(ST)
-	* S as length of s 
-	* T as length of t
+
+- Time Complexity: O(ST)
+- Space Complexity: O(ST)
+  - S as length of s
+  - T as length of t
+
 ```
 class Solution {
     public boolean isSubsequence(String s, String t) {

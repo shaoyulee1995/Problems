@@ -1,10 +1,13 @@
 # Arithmetic Subarrays
+
 # Array
-* Time Complexity: O(LClog(C))
-* Space Complexity: O(L(R-L))
-	* R as right index
-	* L as left index
-	* C as length of copy
+
+- Time Complexity: O(LClog(C))
+- Space Complexity: O(L(R-L))
+  - R as right index
+  - L as left index
+  - C as length of copy
+
 ```
 class Solution {
     public List<Boolean> checkArithmeticSubarrays(int[] nums, int[] l, int[] r) {

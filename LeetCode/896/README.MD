@@ -1,8 +1,11 @@
 # Monotonic Array
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public boolean isMonotonic(int[] nums) {
@@ -28,10 +31,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public boolean isMonotonic(int[] nums) {

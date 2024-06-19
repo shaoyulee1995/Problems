@@ -1,7 +1,10 @@
 # Distribute Candies
+
 # Counting
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int distributeCandies(int[] candyType) {

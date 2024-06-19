@@ -1,10 +1,13 @@
 # Two Out of Three
+
 # Array
-* Time Complexity: O(Max(N1,N2,N3))
-* Space Complexity: O(101)
-	* N1 as length of nums1
-	* N2 as length of nums2
-	* N3 as length of nums3
+
+- Time Complexity: O(Max(N1,N2,N3))
+- Space Complexity: O(101)
+  - N1 as length of nums1
+  - N2 as length of nums2
+  - N3 as length of nums3
+
 ```
 class Solution {
     public List<Integer> twoOutOfThree(int[] nums1, int[] nums2, int[] nums3) {

@@ -1,8 +1,11 @@
 # Add to Array-Form of Integer
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as num
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as num
+
 ```
 class Solution {
     public List<Integer> addToArrayForm(int[] num, int k) {

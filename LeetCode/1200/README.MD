@@ -1,8 +1,11 @@
 # Minimum Absolute Difference
+
 # Array
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
-	* N as length of arr
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+  - N as length of arr
+
 ```
 class Solution {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {

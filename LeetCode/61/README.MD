@@ -1,4 +1,5 @@
 # Rotate List
+
 ```
 Definition for singly-linked list.
 public class ListNode {
@@ -10,10 +11,13 @@ public class ListNode {
 }
 
 ```
+
 # ListNode
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of singly-linked list
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of singly-linked list
+
 ```
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {

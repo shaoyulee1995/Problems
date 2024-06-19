@@ -1,7 +1,10 @@
 # Array Partition I
+
 # Sorting
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int arrayPairSum(int[] nums) {

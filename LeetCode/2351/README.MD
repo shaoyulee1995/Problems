@@ -1,8 +1,11 @@
 # First Letter to Appear Twice
+
 # HashSet
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public char repeatedCharacter(String s) {
@@ -16,10 +19,13 @@ class Solution {
     }
 }
 ```
+
 # Couting Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public char repeatedCharacter(String s) {

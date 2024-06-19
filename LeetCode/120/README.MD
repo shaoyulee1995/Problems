@@ -1,9 +1,12 @@
 # Triangle
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of triangle
-    * M as length of triangle[0]
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of triangle
+    - M as length of triangle[0]
+
 ```
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {

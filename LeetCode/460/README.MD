@@ -1,7 +1,9 @@
 # LFU Cache
+
 # LFU
-* Time Complexity: O(1)
-* Space Complexity: O(N)
+
+- Time Complexity: O(1)
+- Space Complexity: O(N)
 
 ```
 class LFUCache {
@@ -16,7 +18,7 @@ class LFUCache {
         cache = new HashMap();
         freqMap = new HashMap();
     }
-    
+
     public int get(int key) {
         Node node = cache.get(key);
         if(node == null){
@@ -25,7 +27,7 @@ class LFUCache {
         updateNode(node);
         return node.val;
     }
-    
+
     public void updateNode(Node node){
         int freq = node.freq;
         doubleLinkedList list = freqMap.get(freq);
@@ -38,7 +40,7 @@ class LFUCache {
         newlist.addNodeToHead(node);
         freqMap.put(node.freq, newlist);
     }
-    
+
     public void put(int key, int value) {
         if(capacity == 0){
             return;
@@ -65,6 +67,7 @@ class LFUCache {
     }
 }
 ```
+
 ```
 class Node{
     int key, val, freq;
@@ -78,6 +81,7 @@ class Node{
     }
 }
 ```
+
 ```
 class doubleLinkedList{
     Node head, tail;
@@ -94,7 +98,7 @@ class doubleLinkedList{
         node.next = oldHead;
         node.prev = head;
         head.next = node;
-        oldHead.prev = node;        
+        oldHead.prev = node;
         size++;
     }
     public void removeNode(Node node){
@@ -114,6 +118,7 @@ class doubleLinkedList{
     }
 }
 ```
+
 ```
 /**
  * Your LFUCache object will be instantiated and called as such:

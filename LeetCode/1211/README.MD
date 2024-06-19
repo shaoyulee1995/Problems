@@ -1,4 +1,5 @@
 # Queries Quality and Percentage
+
 ```
 select
     query_name,
@@ -6,9 +7,9 @@ select
     round(100*avg(rating < 3), 2) as 'poor_query_percentage'
 from
     Queries
-where 
+where
     query_name is not null
-group by 
+group by
     1
-    
+
 ```

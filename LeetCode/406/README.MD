@@ -1,8 +1,11 @@
 # Queue Reconstruction by Height
+
 # LinkedList
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of word
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of word
+
 ```
 class Solution {
     public int[][] reconstructQueue(int[][] people) {

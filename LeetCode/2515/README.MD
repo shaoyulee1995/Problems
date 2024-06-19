@@ -1,9 +1,12 @@
 # Shortest Distance to Target String in a Circular Array
+
 # Array
-* Time Complexity: O(NT)
-* Space Complexity: O(1)
-    * N as length of words
-    * T as target
+
+- Time Complexity: O(NT)
+- Space Complexity: O(1)
+  - N as length of words
+  - T as target
+
 ```
 class Solution {
     public int closetTarget(String[] words, String target, int startIndex) {

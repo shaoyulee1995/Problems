@@ -1,8 +1,11 @@
 # Largest Unique Number
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int largestUniqueNumber(int[] nums) {
@@ -19,10 +22,13 @@ class Solution {
     }
 }
 ```
+
 # Sorting
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int largestUniqueNumber(int[] nums) {
@@ -39,10 +45,13 @@ class Solution {
     }
 }
 ```
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int largestUniqueNumber(int[] nums) {

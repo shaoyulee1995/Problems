@@ -1,7 +1,10 @@
 # Reveal Cards In Increasing Order
+
 Queue
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int[] deckRevealedIncreasing(int[] deck) {

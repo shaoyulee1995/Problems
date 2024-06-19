@@ -1,20 +1,21 @@
 # Primary Department for Each Employee
+
 ```
-select 
-    employee_id, 
+select
+    employee_id,
     department_id
-from 
+from
     Employee
-where 
+where
     primary_flag = 'Y'
 union
-select 
-    employee_id, 
+select
+    employee_id,
     department_id
-from 
+from
     Employee
-group by 
+group by
     employee_id
-having 
+having
     count(employee_id) = 1
 ```

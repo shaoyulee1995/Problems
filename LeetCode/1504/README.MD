@@ -1,7 +1,8 @@
 # Count Submatrices With All Ones
+
 class Solution {
-    public int numSubmat(int[][] mat) {
-        
+public int numSubmat(int[][] mat) {
+
         for(int i = 0; i < mat[0].length; i++){
             int colNum = 0;
             for(int j = 0; j < mat.length; j++){
@@ -14,7 +15,7 @@ class Solution {
             }
         }
         int total = 0;
-        
+
         for(int i = 0; i < mat.length; i++){
             for(int j = 0; j < mat[0].length; j++){
                 int min = Integer.MAX_VALUE, k = j;
@@ -27,4 +28,5 @@ class Solution {
         }
         return total;
     }
+
 }

@@ -1,8 +1,11 @@
 # 4Sum II
+
 # Hash Table
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N<sup>2</sup>)
-	* N as length of nums
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N<sup>2</sup>)
+  - N as length of nums
+
 ```
 class Solution {
     public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {

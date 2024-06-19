@@ -1,4 +1,5 @@
 # Binary Search Tree Iterator
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,18 +17,23 @@
  * }
  */
 ```
+
 # DFS
+
 ## next
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
 
 ##hasNext
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
 
 ## inOrder
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
 
 ```
 class BSTIterator {
@@ -38,15 +44,15 @@ class BSTIterator {
         index = 0;
         inOrder(root);
     }
-    
+
     public int next() {
         return list.get(index++);
     }
-    
+
     public boolean hasNext() {
         return index < list.size();
     }
-    
+
     public void inOrder(TreeNode root){
         if(root == null){
             return;
@@ -57,6 +63,7 @@ class BSTIterator {
     }
 }
 ```
+
 ```
 /**
  * Your BSTIterator object will be instantiated and called as such:

@@ -1,11 +1,12 @@
 # Walking Robot Simulation
+
 class Solution {
-    public int robotSim(int[] commands, int[][] obstacles) {
-        HashSet<String> set = new HashSet();
-        for(int[] obstacle: obstacles){
-            set.add(obstacle[0] + " " + obstacle[1]);
-        }
-        
+public int robotSim(int[] commands, int[][] obstacles) {
+HashSet<String> set = new HashSet();
+for(int[] obstacle: obstacles){
+set.add(obstacle[0] + " " + obstacle[1]);
+}
+
         int[][] dirs = new int[][]{{0,1},{1,0},{0,-1},{-1,0}};
         int d = 0, x = 0, y = 0, result = 0;
         for(int c: commands){
@@ -30,4 +31,5 @@ class Solution {
         System.gc();
         return result;
     }
+
 }

@@ -1,8 +1,11 @@
 # Find All Duplicates in an Array
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public List<Integer> findDuplicates(int[] nums) {

@@ -1,9 +1,12 @@
 # Convert 1D Array Into 2D Array
+
 # Array
-* Time Complexity: O(MN)
-* Space Complexity: O(MN)
-	* M as m
-	* N as n
+
+- Time Complexity: O(MN)
+- Space Complexity: O(MN)
+  - M as m
+  - N as n
+
 ```
 class Solution {
     public int[][] construct2DArray(int[] original, int m, int n) {

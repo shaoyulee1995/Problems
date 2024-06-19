@@ -1,8 +1,11 @@
 # Three Divisors
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public boolean isThree(int n) {

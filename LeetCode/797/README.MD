@@ -1,8 +1,12 @@
 # All Paths From Source to Target
+
 # DFS
-* Time Complexity: O((2^N)*(N^2))
-* Space Complexity: O((2^N)*N)
+
+- Time Complexity: O((2^N)\*(N^2))
+- Space Complexity: O((2^N)\*N)
+
 ## Solution 1
+
 ```
 class Solution {
     List<List<Integer>> res = new LinkedList();
@@ -25,7 +29,9 @@ class Solution {
     }
 }
 ```
+
 ## Solution 2
+
 ```
 class Solution {
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {

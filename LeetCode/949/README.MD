@@ -1,8 +1,11 @@
 # Largest Time for Given Digits
+
 # Brutal Force
-* Time Complexity: O(N<sup>3</sup>)
-* Space Complexity: O(1)
-	* N as length of arr
+
+- Time Complexity: O(N<sup>3</sup>)
+- Space Complexity: O(1)
+  - N as length of arr
+
 ```
 class Solution {
     public String largestTimeFromDigits(int[] arr) {
@@ -26,5 +29,5 @@ class Solution {
         }
         return res;
     }
-} 
+}
 ```

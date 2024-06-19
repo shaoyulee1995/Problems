@@ -1,8 +1,11 @@
 # Widest Vertical Area Between Two Points Containing No Points
+
 # Arrays
-* Time Complexity: O(Plog(P))
-* Space Complexity: O(1)
-	* P as length of points
+
+- Time Complexity: O(Plog(P))
+- Space Complexity: O(1)
+  - P as length of points
+
 ```
 class Solution {
     public int maxWidthOfVerticalArea(int[][] points) {

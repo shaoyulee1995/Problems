@@ -1,9 +1,12 @@
 # Combination Sum IV
+
 # KnapSack
-* Time Complexity: O(NT)
-* Space Complexity: O(T)
-	* N as length of nums
-	* T as target
+
+- Time Complexity: O(NT)
+- Space Complexity: O(T)
+  - N as length of nums
+  - T as target
+
 ```
 class Solution {
     public int combinationSum4(int[] nums, int target) {
@@ -18,11 +21,14 @@ class Solution {
     }
 }
 ```
+
 # Recursion Memorization
-* Time Complexity: O(NT)
-* Space Complexity: O(T)
-	* N as length of nums
-	* T as target
+
+- Time Complexity: O(NT)
+- Space Complexity: O(T)
+  - N as length of nums
+  - T as target
+
 ```
 class Solution {
     Integer[] dp;

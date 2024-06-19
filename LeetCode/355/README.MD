@@ -1,22 +1,33 @@
 # Design Twitter
+
 # HashMap
-* Space Complexity: O(N)
+
+- Space Complexity: O(N)
+
 ```
 public void postTweet(int userId, int tweetId)
 ```
-* Time Complexity: O(1)
+
+- Time Complexity: O(1)
+
 ```
 public List<Integer> getNewsFeed(int userId)
 ```
-* Time Complexity: O(NlogN)
+
+- Time Complexity: O(NlogN)
+
 ```
 public void follow(int followerId, int followeeId)
 ```
-* Time Complexity: O(1)
+
+- Time Complexity: O(1)
+
 ```
 public void unfollow(int followerId, int followeeId)
 ```
-* Time Complexity: O(1)
+
+- Time Complexity: O(1)
+
 ```
 class Twitter {
     public static int timeStamp;
@@ -62,13 +73,13 @@ class Twitter {
             newTweet.next = tweetHead;
             tweetHead = newTweet;
         }
-    } 
+    }
     /** Initialize your data structure here. */
     public Twitter() {
         userMap = new HashMap();
         timeStamp = 0;
     }
-    
+
     /** Compose a new tweet. */
     public void postTweet(int userId, int tweetId) {
         if(!userMap.containsKey(userId)){
@@ -77,7 +88,7 @@ class Twitter {
         }
         userMap.get(userId).post(tweetId);
     }
-    
+
     /** Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
     public List<Integer> getNewsFeed(int userId) {
         List<Integer> list = new LinkedList();
@@ -105,7 +116,7 @@ class Twitter {
         }
         return list;
     }
-    
+
     /** Follower follows a followee. If the operation is invalid, it should be a no-op. */
     public void follow(int followerId, int followeeId) {
         if(!userMap.containsKey(followerId)){
@@ -118,7 +129,7 @@ class Twitter {
         }
         userMap.get(followerId).follow(followeeId);
     }
-    
+
     /** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
     public void unfollow(int followerId, int followeeId) {
         if(userMap.containsKey(followerId)){
@@ -127,6 +138,7 @@ class Twitter {
     }
 }
 ```
+
 ```
 /**
  * Your Twitter object will be instantiated and called as such:

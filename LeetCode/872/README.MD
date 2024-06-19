@@ -1,4 +1,5 @@
 # Leaf-Similar Trees
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
-# Recursion 
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+# Recursion
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {

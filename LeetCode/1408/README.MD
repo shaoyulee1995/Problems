@@ -1,8 +1,11 @@
 # String Matching in an Array
+
 # String
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public List<String> stringMatching(String[] words) {

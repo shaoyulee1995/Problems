@@ -1,9 +1,12 @@
 # Shortest Way to Form String
+
 # String
-* Time Complexity: O(ST)
-* Space Complexity: O(1)
-	* S as length of source
-    * T as length of target
+
+- Time Complexity: O(ST)
+- Space Complexity: O(1)
+  - S as length of source
+    - T as length of target
+
 ```
 class Solution {
     public int shortestWay(String source, String target) {

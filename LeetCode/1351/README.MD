@@ -1,9 +1,12 @@
 # Count Negative Numbers in a Sorted Matrix
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public int countNegatives(int[][] grid) {
@@ -20,11 +23,14 @@ class Solution {
     }
 }
 ```
+
 # Matrix
-* Time Complexity: O(log(N+M))
-* Space Complexity: O(1)
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(log(N+M))
+- Space Complexity: O(1)
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public int countNegatives(int[][] grid) {

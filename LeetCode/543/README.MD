@@ -1,4 +1,5 @@
 # Diameter of Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* H as height of tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - H as height of tree
+
 ```
 class Solution {
     int max = 0;

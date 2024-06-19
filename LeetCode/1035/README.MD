@@ -1,9 +1,12 @@
 # Uncrossed Lines
+
 # DP
-* Time Complexity: O(NM)
-* Space Complexity: O(MN)
-	* N as length of nums1
-	* M as length of nums2
+
+- Time Complexity: O(NM)
+- Space Complexity: O(MN)
+  - N as length of nums1
+  - M as length of nums2
+
 ```
 class Solution {
     public int maxUncrossedLines(int[] nums1, int[] nums2) {

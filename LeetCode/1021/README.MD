@@ -1,13 +1,16 @@
 # Remove Outermost Parentheses
+
 # Counting
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public String removeOuterParentheses(String S) {
         int opened = 0;
         StringBuilder sb = new StringBuilder();
-        
+
         for(char c: S.toCharArray()){
             if(c =='(' && opened++ > 0){
                 sb.append(c);
@@ -20,9 +23,12 @@ class Solution {
     }
 }
 ```
+
 # Counting
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public String removeOuterParentheses(String s) {

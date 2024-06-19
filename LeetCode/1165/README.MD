@@ -1,9 +1,12 @@
 # Single-Row Keyboard
+
 # Counting Array
-* Time Complexity: O(Max(K, W))
-* Space Complexity: O(26)
-	* K as length of keyboard
-	* W as length of word
+
+- Time Complexity: O(Max(K, W))
+- Space Complexity: O(26)
+  - K as length of keyboard
+  - W as length of word
+
 ```
 class Solution {
     public int calculateTime(String keyboard, String word) {

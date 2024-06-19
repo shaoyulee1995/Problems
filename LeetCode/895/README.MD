@@ -1,7 +1,9 @@
 # Maximum Frequency Stack
+
 # Stack
-* Time Complexity: O(1)
-* Space Complexity: O(N)
+
+- Time Complexity: O(1)
+- Space Complexity: O(N)
 
 ```
 class FreqStack {
@@ -13,7 +15,7 @@ class FreqStack {
         freqs = new HashMap();
         maxFreq = 0;
     }
-    
+
     public void push(int val) {
         int freq = nums.getOrDefault(val, 0) + 1;
         nums.put(val, freq);
@@ -21,7 +23,7 @@ class FreqStack {
         freqs.get(freq).push(val);
         maxFreq = Math.max(freq, maxFreq);
     }
-    
+
     public int pop() {
         Stack<Integer> stack = freqs.get(maxFreq);
         int val = stack.pop();
@@ -34,6 +36,7 @@ class FreqStack {
     }
 }
 ```
+
 ```
 /**
  * Your FreqStack object will be instantiated and called as such:

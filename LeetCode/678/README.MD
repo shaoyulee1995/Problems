@@ -1,8 +1,11 @@
 # Valid Parenthesis String
+
 # Counting Opening
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public boolean checkValidString(String s) {
@@ -27,10 +30,13 @@ class Solution {
     }
 }
 ```
+
 # Counting Left and Right individually
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public boolean checkValidString(String s) {

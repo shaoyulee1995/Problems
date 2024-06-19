@@ -1,8 +1,11 @@
 # Check Distances Between Same Letters
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public boolean checkDistances(String s, int[] distance) {
@@ -21,10 +24,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public boolean checkDistances(String s, int[] distance) {
@@ -43,10 +49,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public boolean checkDistances(String s, int[] distance) {

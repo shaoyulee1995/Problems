@@ -1,7 +1,10 @@
 # Categorize Box According to Criteria
+
 # Math
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public String categorizeBox(int length, int width, int height, int mass) {

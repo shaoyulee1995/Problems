@@ -1,8 +1,11 @@
 # Number of Valid Clock Times
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of time
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of time
+
 ```
 class Solution {
     public int countTime(String time) {

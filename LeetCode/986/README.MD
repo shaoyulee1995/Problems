@@ -1,10 +1,14 @@
 # Interval List Intersections
+
 # Arrays
-* Time Complexity: O(Min(M, N))
-* Space Complexity: O(Min(M, N))
-	* M as length of firstList
-	* N as length of secondList
+
+- Time Complexity: O(Min(M, N))
+- Space Complexity: O(Min(M, N))
+  - M as length of firstList
+  - N as length of secondList
+
 ## Java
+
 ```
 class Solution {
     public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
@@ -32,6 +36,7 @@ class Solution {
 ```
 
 ## Python
+
 ```
 class Solution(object):
     def intervalIntersection(self, A, B):
@@ -47,7 +52,7 @@ class Solution(object):
             b0, b1 = B[j][0], B[j][1]
             if b1 >= a0 and a1 >= b0:
                 res.append([max(b0,a0), min(b1,a1)])
-            
+
             if b1 < a1:
                 j += 1
             else:

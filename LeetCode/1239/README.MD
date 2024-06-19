@@ -1,8 +1,11 @@
 # Maximum Length of a Concatenated String with Unique Characters
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as size of arr
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as size of arr
+
 ```
 class Solution {
     int res = 0;

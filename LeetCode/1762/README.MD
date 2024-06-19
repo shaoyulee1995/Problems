@@ -1,8 +1,11 @@
 # Buildings With an Ocean View
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of nodes in tree
+
 ```
 class Solution {
     public int[] findBuildings(int[] heights) {

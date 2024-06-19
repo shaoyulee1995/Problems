@@ -1,10 +1,13 @@
 # Intersection of Three Sorted Arrays
+
 # 3 Pointers
-* Time Complexity: O(A+B+C)
-* Space Complexity: O(A+B+C)
-	* A as length of arr1
-	* B as length of arr2
-	* C as length of arr3
+
+- Time Complexity: O(A+B+C)
+- Space Complexity: O(A+B+C)
+  - A as length of arr1
+  - B as length of arr2
+  - C as length of arr3
+
 ```
 class Solution {
     public List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {
@@ -28,12 +31,15 @@ class Solution {
     }
 }
 ```
+
 # 3 Pointers
-* Time Complexity: O(Max(A, B, C))
-* Space Complexity: O(1)
-	* A as length of arr1
-	* B as length of arr2
-	* C as length of arr3
+
+- Time Complexity: O(Max(A, B, C))
+- Space Complexity: O(1)
+  - A as length of arr1
+  - B as length of arr2
+  - C as length of arr3
+
 ```
 class Solution {
     public List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {

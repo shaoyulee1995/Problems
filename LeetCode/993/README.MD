@@ -1,4 +1,5 @@
 # Cousins in Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     TreeNode xParent, yParent;
@@ -51,10 +55,13 @@ class Solution {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public boolean isCousins(TreeNode root, int x, int y) {

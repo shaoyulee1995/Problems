@@ -1,9 +1,12 @@
 # Number of Closed Islands
+
 # DFS
-* Time Complexity: O(MN)
-* Space Complexity: O(1)
-	* M as length of grid
-	* N as length of grid[0]
+
+- Time Complexity: O(MN)
+- Space Complexity: O(1)
+  - M as length of grid
+  - N as length of grid[0]
+
 ```
 class Solution {
     public int closedIsland(int[][] grid) {

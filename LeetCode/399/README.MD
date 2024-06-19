@@ -1,10 +1,13 @@
 # Evaluate Division
+
 # DFS
-* Time Complexity: O(E+QE)
-* Space Complexity: O(E+N)
-	* N as total numbers of node
-    * Q as size of queries
-    * E as edges
+
+- Time Complexity: O(E+QE)
+- Space Complexity: O(E+N)
+  - N as total numbers of node
+    - Q as size of queries
+    - E as edges
+
 ```
 class Solution {
     HashMap<String, HashMap<String, Double>> map;

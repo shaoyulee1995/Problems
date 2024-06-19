@@ -1,9 +1,12 @@
 # Shift 2D Grid
+
 # HashSet
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of grid
-	* M as length of grid[0] 
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public List<List<Integer>> shiftGrid(int[][] grid, int k) {

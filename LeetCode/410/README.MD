@@ -1,9 +1,12 @@
 # Split Array Largest Sum
+
 # Binary Search
-* Time Complexity: O(Nlog(S-Mx))
-* Space Complexity: O(1)
-	* S represents sum of nums array
-	* Mx represets the current max for that group
+
+- Time Complexity: O(Nlog(S-Mx))
+- Space Complexity: O(1)
+  - S represents sum of nums array
+  - Mx represets the current max for that group
+
 ```
 class Solution {
     public int splitArray(int[] nums, int k) {

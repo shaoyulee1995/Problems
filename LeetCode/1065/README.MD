@@ -1,8 +1,11 @@
 # Index Pairs of a String
+
 # String
-* Time Complexity: O(N<sup>3</sup>)
-* Space Complexity: O(N)
-	* N as length of text
+
+- Time Complexity: O(N<sup>3</sup>)
+- Space Complexity: O(N)
+  - N as length of text
+
 ```
 class Solution {
     public int[][] indexPairs(String text, String[] words) {

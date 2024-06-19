@@ -1,8 +1,11 @@
 # Prime Number of Set Bits in Binary Representation
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as range between left and right
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as range between left and right
+
 ```
 class Solution {
     HashSet<Integer> primes = new HashSet<>(Arrays.asList(2, 3, 5, 7, 11, 13, 17, 19));

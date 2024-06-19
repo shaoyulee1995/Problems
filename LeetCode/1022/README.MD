@@ -1,4 +1,5 @@
 # Sum of Root To Leaf Binary Numbers
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int sumRootToLeaf(TreeNode root) {

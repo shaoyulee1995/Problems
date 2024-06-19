@@ -1,4 +1,5 @@
 # Friendly Movies Streamed Last Month
+
 ```
 select
     distinct title

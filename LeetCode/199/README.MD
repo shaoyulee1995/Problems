@@ -1,4 +1,5 @@
 # Binary Tree Right Side View
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # Iteration
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
@@ -47,10 +51,13 @@ class Solution {
     }
 }
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     List<Integer> res;

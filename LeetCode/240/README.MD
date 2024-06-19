@@ -1,9 +1,12 @@
 # Search a 2D Matrix II
+
 # Search Space Reduction
-* Time Complexity: O(N+M)
-* Space Complexity: O(1)
-	* N as length of matrix
-	* M as length of matrix[0]
+
+- Time Complexity: O(N+M)
+- Space Complexity: O(1)
+  - N as length of matrix
+  - M as length of matrix[0]
+
 ```
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {

@@ -1,4 +1,5 @@
 # Convert Sorted List to Binary Search Tree
+
 ```
 Definition for singly-linked list.
 public class ListNode {
@@ -23,10 +24,13 @@ public class TreeNode {
     }
 }
 ```
+
 # LinkedList
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of linked list
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of linked list
+
 ```
 class Solution {
     public TreeNode sortedListToBST(ListNode head) {

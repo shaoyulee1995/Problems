@@ -1,8 +1,11 @@
 # Maximum Product Difference Between Two Pairs
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int maxProductDifference(int[] nums) {
@@ -12,10 +15,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int maxProductDifference(int[] nums) {

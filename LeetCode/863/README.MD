@@ -1,4 +1,5 @@
 # All Nodes Distance K in Binary Tree
+
 ```
 Definition for a binary tree node.
 public class TreeNode {
@@ -8,11 +9,13 @@ public class TreeNode {
     TreeNode(int x) { val = x; }
 }
 ```
+
 # Graph, HashMap, BFS
-* Time Complexity: O(E + V)
-* Space Complexity: O(E)
-	* E as edges
-	* V as vertices
+
+- Time Complexity: O(E + V)
+- Space Complexity: O(E)
+  - E as edges
+  - V as vertices
 
 ```
 class Solution {
@@ -31,8 +34,8 @@ class Solution {
                while(size-- > 0){
                    res.add(q.poll().val);
                }
-               return res; 
-            } 
+               return res;
+            }
             while(size-- > 0){
                 TreeNode cur = q.poll();
                 for(TreeNode next: map.get(cur)){
@@ -47,7 +50,7 @@ class Solution {
         }
         return res;
     }
-    
+
     public void build(TreeNode node, TreeNode parent){
         if(node == null){
             return;

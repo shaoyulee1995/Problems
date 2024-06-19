@@ -1,9 +1,12 @@
 # Find the Width of Columns of a Grid
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-    * N as length of grid
-    * M as length of grid[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public int[] findColumnWidth(int[][] grid) {
@@ -12,8 +15,8 @@ class Solution {
             for(int i = 0; i < grid.length; i++){
                 res[j] = Math.max(res[j], String.valueOf(grid[i][j]).length());
             }
-        }  
-        return res;  
+        }
+        return res;
     }
 }
 ```

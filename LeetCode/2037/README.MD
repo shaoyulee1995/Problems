@@ -1,8 +1,11 @@
 # Minimum Number of Moves to Seat Everyone
+
 # Sorting
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-	* N as length of seats
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of seats
+
 ```
 class Solution {
     public int minMovesToSeat(int[] seats, int[] students) {

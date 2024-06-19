@@ -1,8 +1,11 @@
 # Reformat Date
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of date
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of date
+
 ```
 class Solution {
     String[] months = {"0", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};

@@ -1,9 +1,12 @@
 # Path With Minimum Effort
+
 # Matrix
-* Time Complexity: O(NMlog(NM))
-* Space Complexity: O(NM)
-	* N as length of heights
-	* M as length of heights[0]
+
+- Time Complexity: O(NMlog(NM))
+- Space Complexity: O(NM)
+  - N as length of heights
+  - M as length of heights[0]
+
 ```
 class Solution {
     public int minimumEffortPath(int[][] heights) {

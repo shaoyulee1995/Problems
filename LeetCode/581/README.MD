@@ -1,8 +1,11 @@
 # Shortest Unsorted Continuous Subarray
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int findUnsortedSubarray(int[] nums) {
@@ -30,7 +33,7 @@ class Solution {
                 break;
             }
         }
-        return (i>j)?0:(j-i+1);    
+        return (i>j)?0:(j-i+1);
     }
 }
 ```

@@ -1,9 +1,12 @@
 # Course Schedule
+
 # BFS using List
-* Time Complexity: O(V+E)
-* Space Complexity: O(V+E)
-	* V as numCourses
-	* E as course relates to 
+
+- Time Complexity: O(V+E)
+- Space Complexity: O(V+E)
+  - V as numCourses
+  - E as course relates to
+
 ```
 class Solution {
     public boolean canFinish(int numCourses, int[][] pairs) {
@@ -19,7 +22,7 @@ class Solution {
         Queue<Integer> q = new LinkedList();
         for(int i = 0; i < numCourses; i++){
             if(inComingEdge[i] == 0){
-                q.add(i);    
+                q.add(i);
             }
         }
         int count = 0;
@@ -29,18 +32,21 @@ class Solution {
             for(int adj: outGoingEdge[cur]){
                if(--inComingEdge[adj] == 0){
                    q.add(adj);
-               } 
+               }
             }
         }
         return count == numCourses;
     }
 }
 ```
+
 # BFS using HashMap
-* Time Complexity: O(V+E)
-* Space Complexity: O(V+E)
-	* V as numCourses
-	* E as course relates to 
+
+- Time Complexity: O(V+E)
+- Space Complexity: O(V+E)
+  - V as numCourses
+  - E as course relates to
+
 ```
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {

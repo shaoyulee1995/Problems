@@ -1,4 +1,5 @@
 # Recover Binary Search Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # Tree
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public void recoverTree(TreeNode root) {
@@ -38,7 +42,7 @@ class Solution {
         }
         if(x != null && y != null){
             int temp = x.val;
-            x.val = y.val; 
+            x.val = y.val;
             y.val = temp;
         }
         return;

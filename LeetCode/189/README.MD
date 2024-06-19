@@ -1,8 +1,11 @@
 # Rotate Array
+
 # Array
-* Time Complexity: O(logN)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(logN)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public void rotate(int[] nums, int k) {

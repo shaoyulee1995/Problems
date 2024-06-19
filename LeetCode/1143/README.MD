@@ -1,9 +1,12 @@
 # Longest Common Subsequence
+
 # DP
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N is the length of text1
-	* M is the length of text2
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N is the length of text1
+  - M is the length of text2
+
 ```
 class Solution {
     public int longestCommonSubsequence(String text1, String text2) {
@@ -21,11 +24,14 @@ class Solution {
     }
 }
 ```
+
 # Memorized Recursion
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N is the length of text1
-	* M is the length of text2
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N is the length of text1
+  - M is the length of text2
+
 ```
 class Solution {
     int[][] dp;

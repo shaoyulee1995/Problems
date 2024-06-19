@@ -1,9 +1,12 @@
 # Find Maximum Number of String Pairs
+
 # Array
-* Time Complexity: O(NWlog(W))
-* Space Complexity: O(N)
-	* N as length of words
-    * W as length of word
+
+- Time Complexity: O(NWlog(W))
+- Space Complexity: O(N)
+  - N as length of words
+    - W as length of word
+
 ```
 class Solution {
     public int maximumNumberOfStringPairs(String[] words) {
@@ -23,16 +26,19 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of words
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of words
+
 ```
 class Solution {
     public int maximumNumberOfStringPairs(String[] words) {
         HashMap<String, Integer> map = new HashMap();
         for(String word: words){
-            String a = getCharacterArray(word);  
+            String a = getCharacterArray(word);
             map.put(a, map.getOrDefault(a, 0) + 1);
         }
         int res = 0;

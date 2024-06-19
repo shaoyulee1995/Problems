@@ -1,9 +1,12 @@
 # Rotting Oranges
+
 # BFS HashSet
-* Time Complexity: O(MN)
-* Space Complexity: O(Min(M, N))
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(MN)
+- Space Complexity: O(Min(M, N))
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public int orangesRotting(int[][] grid) {
@@ -54,11 +57,14 @@ class Solution {
     }
 }
 ```
+
 # BFS Queue
-* Time Complexity: O(MN)
-* Space Complexity: O(Min(M, N))
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(MN)
+- Space Complexity: O(Min(M, N))
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public int orangesRotting(int[][] grid) {

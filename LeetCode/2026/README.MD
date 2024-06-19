@@ -1,29 +1,30 @@
 # Low-Quality Problems
+
 ```
 with t as (
-    select 
-        problem_id, 
+    select
+        problem_id,
         likes*100/(likes+dislikes) as rate
     from
         Problems)
 
-select 
+select
     problem_id
-from 
+from
     t
 where
     rate < 60
-order by 
+order by
     1
 ```
 
 ```
-select 
+select
     problem_id
-from 
+from
     Problems
 where
     likes/(dislikes+likes) < 0.6
-order by 
+order by
     problem_id
 ```

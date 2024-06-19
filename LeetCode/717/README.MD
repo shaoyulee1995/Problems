@@ -1,7 +1,10 @@
 # 1-bit and 2-bit Characters
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public boolean isOneBitCharacter(int[] bits) {

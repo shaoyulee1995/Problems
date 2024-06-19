@@ -1,7 +1,10 @@
 # Capacity To Ship Packages Within D Days
+
 # Binary Search
-* Time Complexity: O(Nlog(Sum(W))
-* Space Complexity: O(1)
+
+- Time Complexity: O(Nlog(Sum(W))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
@@ -10,7 +13,7 @@ class Solution {
             min = Math.max(min, weight);
             max += weight;
         }
-        
+
         while(min < max){
             int mid = min + (max-min)/2;
             int needs = 1, cur = 0;

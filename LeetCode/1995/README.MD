@@ -1,8 +1,11 @@
 # Count Special Quadruplets
+
 # Array
-* Time Complexity: O(N<sup>4</sup>)
-* Space Complexity: O(1)
-    * N as length of nums
+
+- Time Complexity: O(N<sup>4</sup>)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int countQuadruplets(int[] nums) {
@@ -22,10 +25,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-    * N as length of nums
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int countQuadruplets(int[] nums) {

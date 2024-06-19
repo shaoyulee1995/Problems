@@ -1,9 +1,12 @@
 # Range Addition II
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as n
-	* M as m
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as n
+  - M as m
+
 ```
 class Solution {
     public int maxCount(int m, int n, int[][] ops) {

@@ -1,8 +1,11 @@
 # Mean of Array After Removing Some Elements
+
 # Math
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-	* N as length of arr
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of arr
+
 ```
 class Solution {
     public double trimMean(int[] arr) {

@@ -1,7 +1,10 @@
 # Count Subarrays With Score Less Than K
+
 # Sliding windows
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public long countSubarrays(int[] nums, long k) {

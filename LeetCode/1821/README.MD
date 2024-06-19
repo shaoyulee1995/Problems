@@ -1,4 +1,5 @@
 # Find Customers With Positive Revenue this Year
+
 ```
 select
     customer_id

@@ -1,12 +1,14 @@
 # LRU Cache
+
 # LRU
-* get: 
-	* Time Complexity: O(1)
-* put: 
-	* Time Complexity: O(1)
-* LRU:
-	* Space Complexity: O(N)
-        * N as capacity
+
+- get:
+  - Time Complexity: O(1)
+- put:
+  - Time Complexity: O(1)
+- LRU:
+  - Space Complexity: O(N) \* N as capacity
+
 ```
 class LRUCache {
     LRU_LinkedList lru;
@@ -17,7 +19,7 @@ class LRUCache {
         map = new HashMap();
         lru = new LRU_LinkedList();
     }
-    
+
     public int get(int key) {
         Node node = map.get(key);
         if(node == null){
@@ -26,7 +28,7 @@ class LRUCache {
         lru.moveToHead(node);
         return node.val;
     }
-    
+
     public void put(int key, int value) {
         Node node = map.get(key);
         if(node != null){
@@ -59,7 +61,7 @@ class LRUCache {
             tail.prev.next = dummyTail;
             dummyTail.prev = tail.prev;
         }
-        
+
         public Node getTail(){
             return dummyTail.prev;
         }
@@ -78,7 +80,7 @@ class LRUCache {
             addToHead(node);
         }
     }
-    
+
     class Node{
         Node prev, next;
         int key, val;
@@ -90,6 +92,7 @@ class LRUCache {
     }
 }
 ```
+
 ```
 Your LRUCache object will be instantiated d called as such:
 LRUCache obj = new LRUCache(capacity);

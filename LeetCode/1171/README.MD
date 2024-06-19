@@ -1,4 +1,5 @@
 # Remove Zero Sum Consecutive Nodes from Linked List
+
 ```
 /**
  * Definition for singly-linked list.
@@ -11,10 +12,13 @@
  * }
  */
 ```
+
 # PreSum, HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in list
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in list
+
 ```
 class Solution {
     public ListNode removeZeroSumSublists(ListNode head) {

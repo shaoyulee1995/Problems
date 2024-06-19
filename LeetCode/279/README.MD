@@ -1,9 +1,12 @@
 # Perfect Squares
-# DP 
-* Time Complexity: O(Ns)
-* Space Complexity: O(N)
-	* N as n
-	* s as square root of n
+
+# DP
+
+- Time Complexity: O(Ns)
+- Space Complexity: O(N)
+  - N as n
+  - s as square root of n
+
 ```
 class Solution {
     public int numSquares(int n) {
@@ -21,10 +24,12 @@ class Solution {
     }
 }
 ```
-* Time Complexity: O(Ns)
-* Space Complexity: O(N)
-	* N as n
-	* s as square root of n
+
+- Time Complexity: O(Ns)
+- Space Complexity: O(N)
+  - N as n
+  - s as square root of n
+
 ```
 class Solution {
     public int numSquares(int n) {

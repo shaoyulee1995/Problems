@@ -1,9 +1,12 @@
 # Delete Operation for Two Strings
+
 # Dynamic Programming
-* Time Complexity: O(N*M)
-* Space Complexity: O(N*M)
-	* N is the length of word1
-	* M is the length of word2
+
+- Time Complexity: O(N\*M)
+- Space Complexity: O(N\*M)
+  - N is the length of word1
+  - M is the length of word2
+
 ```
 class Solution {
     public int minDistance(String word1, String word2) {
@@ -12,7 +15,7 @@ class Solution {
             lcs = longestCommonSubsequence(word1, word2);
         return n - lcs + m - lcs;
     }
-    
+
     public int longestCommonSubsequence(String s1, String s2) {
         int m = s1.length(), n = s2.length();
         int[][] dp = new int[m + 1][n + 1];

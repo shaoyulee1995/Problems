@@ -1,7 +1,10 @@
 # Best Time to Buy and Sell Stock with Cooldown
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int maxProfit(int[] prices) {
@@ -18,15 +21,17 @@ class Solution {
     }
 }
 ```
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int maxProfit(int[] prices) {
         int sell = 0,
             cooldown = 0,
             buy = Integer.MIN_VALUE;
-        
+
         for(int price: prices){
             buy = Math.max(buy, cooldown - price);
             cooldown = Math.max(cooldown, sell);
@@ -36,8 +41,10 @@ class Solution {
     }
 }
 ```
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int maxProfit(int[] prices) {

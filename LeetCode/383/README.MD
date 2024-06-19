@@ -1,9 +1,12 @@
 # Ransom Note
+
 # Array
-* Time Complexity: O(Max(R, M))
-* Space Complexity: O(1)
-	* R as length of ransomNote
-	* M as length of magazine
+
+- Time Complexity: O(Max(R, M))
+- Space Complexity: O(1)
+  - R as length of ransomNote
+  - M as length of magazine
+
 ```
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {

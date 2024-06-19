@@ -1,9 +1,12 @@
 # Valid Word Square
+
 # StringBuilder
-* Time Complexity: O(NM)
-* Space Complexity: O(N)
-	* N as row of words
-	* M as col of word
+
+- Time Complexity: O(NM)
+- Space Complexity: O(N)
+  - N as row of words
+  - M as col of word
+
 ```
 class Solution {
     public boolean validWordSquare(List<String> words) {
@@ -28,11 +31,14 @@ class Solution {
     }
 }
 ```
+
 # StringBuilder
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as row of words
-	* M as col of word
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as row of words
+  - M as col of word
+
 ```
 class Solution {
     public boolean validWordSquare(List<String> words) {

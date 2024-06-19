@@ -1,8 +1,11 @@
 # Insert Interval
+
 # Arrays
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of ways
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of ways
+
 ```
 class Solution {
     public int[][] insert(int[][] ways, int[] inserted) {
@@ -27,10 +30,13 @@ class Solution {
     }
 }
 ```
+
 # Arrays
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of ways
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of ways
+
 ```
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {

@@ -1,9 +1,12 @@
 # N-Queens
+
 # Backtrack
 
 ## C++
-* Time Complexity: IDK
-* Space Complexity: IDK 
+
+- Time Complexity: IDK
+- Space Complexity: IDK
+
 ```
 class Solution {
 public:
@@ -51,6 +54,7 @@ public:
 ```
 
 ## Java
+
 ```
 class Solution {
     List<List<String>> res;
@@ -75,7 +79,7 @@ class Solution {
                 grid[row][c] = '.';
             }
         }
-        
+
     }
     public boolean valid(char[][] grid, int row, int col){
         for(int i = 0; i < grid.length; i++){
@@ -83,23 +87,23 @@ class Solution {
                 return false;
             }
         }
-        
+
         for(int i = row - 1, j = col - 1; i >=0 && j >= 0; i--, j--){
             if(grid[i][j] == 'Q'){
                 return false;
             }
         }
-        
+
         for(int i = row - 1, j = col + 1; i >= 0 && j < grid[0].length; i--, j++){
             if(grid[i][j] == 'Q'){
                 return false;
             }
         }
         return true;
-        
-        
+
+
     }
-    
+
     public List<String> toAnswer(char[][] grid){
         List<String> res = new ArrayList();
         for(int i = 0; i < grid.length; i++){

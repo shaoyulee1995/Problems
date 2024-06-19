@@ -1,4 +1,5 @@
 # Remove Duplicates from Sorted List II
+
 ```
 /**
  * Definition for singly-linked list.
@@ -11,10 +12,13 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of linkedlist
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of linkedlist
+
 ```
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
@@ -33,10 +37,13 @@ class Solution {
     }
 }
 ```
+
 # Iterate
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of linkedlist
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of linkedlist
+
 ```
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
@@ -47,7 +54,7 @@ class Solution {
                 head = head.next;
             }
             if(prev.next == head){
-                prev = prev.next;    
+                prev = prev.next;
             }else{
                 prev.next = head.next;
             }

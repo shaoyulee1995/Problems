@@ -1,9 +1,12 @@
 # Diagonal Traverse
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* M as length of mat
-	* N as length of mat[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - M as length of mat
+  - N as length of mat[0]
+
 ```
 class Solution {
     public int[] findDiagonalOrder(int[][] mat) {

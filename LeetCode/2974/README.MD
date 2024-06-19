@@ -1,8 +1,11 @@
 # Minimum Number Game
+
 # PriorityQueue
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] numberGame(int[] nums) {
@@ -22,10 +25,13 @@ class Solution {
     }
 }
 ```
+
 # Sort
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] numberGame(int[] nums) {

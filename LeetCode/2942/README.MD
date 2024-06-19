@@ -1,9 +1,12 @@
 # Find Words Containing Character
+
 # Array
-* Time Complexity: O(NW)
-* Space Complexity: O(N)
-	* N as length of words
-    * W as length of word
+
+- Time Complexity: O(NW)
+- Space Complexity: O(N)
+  - N as length of words
+    - W as length of word
+
 ```
 class Solution {
     public List<Integer> findWordsContaining(String[] words, char x) {

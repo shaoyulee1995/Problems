@@ -1,13 +1,16 @@
 # Odd String Difference
+
 # Table
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of words
-	* M as length of word
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of words
+  - M as length of word
+
 ```
 class Solution {
     public String oddString(String[] words) {
-        int[][] matrix = new int[words.length][words[0].length()-1]; 
+        int[][] matrix = new int[words.length][words[0].length()-1];
         for(int i = 0; i < words.length; i++){
             String word = words[i];
             for(int j = 0; j < word.length() - 1; j++){

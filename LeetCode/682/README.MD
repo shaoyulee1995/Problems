@@ -1,8 +1,11 @@
 # Baseball Game
+
 # List
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of ops
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of ops
+
 ```
 class Solution {
     public int calPoints(String[] ops) {
@@ -14,7 +17,7 @@ class Solution {
                 list.removeLast();
             }else if(op.equals("D")){
                 list.add(2*list.get(list.size()-1));
-            }else{ 
+            }else{
                 list.add(Integer.valueOf(op));
             }
         }

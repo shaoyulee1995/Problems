@@ -1,9 +1,12 @@
 # Delete Greatest Value in Each Row
+
 # Matrix
-* Time Complexity: O(NMlogM)
-* Space Complexity: O(1)
-    * N as length of grid
-    * M as length of grid[0]
+
+- Time Complexity: O(NMlogM)
+- Space Complexity: O(1)
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public int deleteGreatestValue(int[][] grid) {

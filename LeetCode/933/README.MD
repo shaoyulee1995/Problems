@@ -1,7 +1,10 @@
 # Number of Recent Calls
+
 # Queue
-* Time Complexity: O(P)
-* Space Complexity: O(3000)
+
+- Time Complexity: O(P)
+- Space Complexity: O(3000)
+
 ```
 class RecentCounter {
     Queue<Integer> queue;
@@ -17,6 +20,7 @@ class RecentCounter {
     }
 }
 ```
+
 ```
 /**
  * Your RecentCounter object will be instantiated and called as such:

@@ -1,7 +1,10 @@
 # Self Dividing Numbers
+
 # PriorityQueue
-* Time Complexity: O(Size(R-L))
-* Space Complexity: O(Size(R-L))
+
+- Time Complexity: O(Size(R-L))
+- Space Complexity: O(Size(R-L))
+
 ```
 class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
@@ -13,7 +16,7 @@ class Solution {
         }
         return ans;
     }
-    
+
     public boolean valid(int num){
         int temp = num;
         while(num != 0){

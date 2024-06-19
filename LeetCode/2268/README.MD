@@ -1,9 +1,12 @@
 # Minimum Number of Keypresses
+
 # Counting Array
-* Time Complexity: O(Max(NlogN, S))
-* Space Complexity: O(N)
-	* S as length of s
-	* N as 26
+
+- Time Complexity: O(Max(NlogN, S))
+- Space Complexity: O(N)
+  - S as length of s
+  - N as 26
+
 ```
 class Solution {
     public int minimumKeypresses(String s) {
@@ -12,7 +15,7 @@ class Solution {
             cnt[c-'a']++;
         }
         Arrays.sort(cnt);
-        int num = 0, 
+        int num = 0,
             res = 0;
         for(int i = 25; i >= 0; i--){
             if(num < 9){
@@ -28,11 +31,14 @@ class Solution {
     }
 }
 ```
+
 # Counting Array Sort by lambda
-* Time Complexity: O(Max(NlogN, S))
-* Space Complexity: O(N)
-	* S as length of s
-	* N as 26
+
+- Time Complexity: O(Max(NlogN, S))
+- Space Complexity: O(N)
+  - S as length of s
+  - N as 26
+
 ```
 class Solution {
     public int minimumKeypresses(String s) {

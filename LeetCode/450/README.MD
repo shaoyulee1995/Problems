@@ -1,4 +1,5 @@
 # Delete Node in a BST
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # DFS
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public TreeNode deleteNode(TreeNode root, int key) {

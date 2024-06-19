@@ -1,8 +1,11 @@
 # Largest Odd Number in String
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public String largestOddNumber(String num) {

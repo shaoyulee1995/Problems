@@ -1,8 +1,11 @@
 # Find All Numbers Disappeared in an Array
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {

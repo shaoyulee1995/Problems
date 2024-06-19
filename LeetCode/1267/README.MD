@@ -1,7 +1,10 @@
 # Count Servers that Communicate
+
 # Matrix
-* Time Complexity: O(MN)
-* Space Complexity: O(MN)
+
+- Time Complexity: O(MN)
+- Space Complexity: O(MN)
+
 ```
 class Solution {
     public int countServers(int[][] grid) {
@@ -16,7 +19,7 @@ class Solution {
                 }
                 rowCount[i]++;
                 colCount[j]++;
-            }   
+            }
         }
         int res = 0;
         for(int i = 0; i < m; i++){

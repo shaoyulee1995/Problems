@@ -1,4 +1,5 @@
 # Univalued Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,13 +17,16 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public boolean isUnivalTree(TreeNode root) {
-        return dfs(root, root.val);  
+        return dfs(root, root.val);
     }
     public boolean dfs(TreeNode node, int val){
         if(node == null){

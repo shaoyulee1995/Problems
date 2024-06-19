@@ -1,9 +1,12 @@
 # Count Common Words With One Occurrence
+
 # HashMap
-* Time Complexity: O(Max(N,M))
-* Space Complexity: O(N+M)
-    * N as length of words1
-    * M as length of words2
+
+- Time Complexity: O(Max(N,M))
+- Space Complexity: O(N+M)
+  - N as length of words1
+  - M as length of words2
+
 ```
 class Solution {
     public int countWords(String[] words1, String[] words2) {

@@ -1,9 +1,12 @@
 # Number of Dice Rolls With Target Sum
+
 # Recursion
-* Time Complexity: O(DT)
-* Space Complexity: O(DT)
-	* D as d
-	* T as target
+
+- Time Complexity: O(DT)
+- Space Complexity: O(DT)
+  - D as d
+  - T as target
+
 ```
 class Solution {
     final int mod = (int)1e9+7;
@@ -24,16 +27,19 @@ class Solution {
             }
             map.put(key, curSum);
         }
-        return map.get(key); 
+        return map.get(key);
     }
 }
 ```
+
 # KnapSack
-* Time Complexity: O(NTK)
-* Space Complexity: O(NT)
-	* N as n
-	* T as target
-	* K as k
+
+- Time Complexity: O(NTK)
+- Space Complexity: O(NT)
+  - N as n
+  - T as target
+  - K as k
+
 ```
 class Solution {
     public int numRollsToTarget(int n, int k, int target) {
@@ -43,7 +49,7 @@ class Solution {
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= target; j++){
                 for(int f = 1; f <= k && j-f>=0; f++){
-                    dp[i][j] = (dp[i][j] + dp[i-1][j-f])%mod; 
+                    dp[i][j] = (dp[i][j] + dp[i-1][j-f])%mod;
                 }
             }
         }

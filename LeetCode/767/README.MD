@@ -1,7 +1,10 @@
 # Reorganize String
+
 # HashMap
-* Time Complexity: O(N^2log(N))
-* Space Complexity: O(N)
+
+- Time Complexity: O(N^2log(N))
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public String reorganizeString(String S) {
@@ -9,12 +12,12 @@ class Solution {
         for(char c: S.toCharArray()){
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
-        
+
         PriorityQueue<Character> pq = new PriorityQueue<>((a,b) -> map.get(b) - map.get(a));
         pq.addAll(map.keySet());
-        
+
         StringBuilder sb = new StringBuilder();
-        
+
         while(pq.size() > 1){
             char current = pq.poll(),
                  next =pq.poll();
@@ -22,7 +25,7 @@ class Solution {
             map.put(next, map.get(next) - 1);
             sb.append(current);
             sb.append(next);
-            
+
             if(map.get(current) > 0){
                 pq.add(current);
             }
@@ -30,7 +33,7 @@ class Solution {
                 pq.add(next);
             }
         }
-        
+
         if(!pq.isEmpty()){
             char last = pq.poll();
             if(map.get(last) > 1){

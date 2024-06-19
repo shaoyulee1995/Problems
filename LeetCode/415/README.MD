@@ -1,9 +1,12 @@
 # Add Strings
+
 # String
-* Time Complexity: O(Max(N,M))
-* Space Complexity: O(Max(N,M))
-    * N as length of num1
-    * M as length of num2
+
+- Time Complexity: O(Max(N,M))
+- Space Complexity: O(Max(N,M))
+  - N as length of num1
+  - M as length of num2
+
 ```
 class Solution {
     public String addStrings(String num1, String num2) {

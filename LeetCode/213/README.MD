@@ -1,8 +1,11 @@
 # House Robber II
-# Dynamic Programming 
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+# Dynamic Programming
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int rob(int[] nums) {
@@ -24,10 +27,13 @@ class Solution {
     }
 }
 ```
-# Dynamic Programming 
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+# Dynamic Programming
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int rob(int[] nums) {

@@ -1,8 +1,11 @@
 # Fixed Point
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of arr
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of arr
+
 ```
 class Solution {
     public int fixedPoint(int[] arr) {

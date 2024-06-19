@@ -1,8 +1,11 @@
 # Create Target Array in the Given Order
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] createTargetArray(int[] nums, int[] index) {

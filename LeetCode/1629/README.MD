@@ -1,8 +1,11 @@
 # Slowest Key
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-    * N as lenght of releaseTimes
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as lenght of releaseTimes
+
 ```
 class Solution {
     public char slowestKey(int[] releaseTimes, String keysPressed) {

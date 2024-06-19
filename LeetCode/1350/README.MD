@@ -1,6 +1,7 @@
 # Students With Invalid Departments
+
 ```
-select 
+select
     id,
     name
 from

@@ -1,8 +1,11 @@
 # Strobogrammatic Number
+
 # Map
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of salary
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of salary
+
 ```
 class Solution {
     public boolean isStrobogrammatic(String num) {
@@ -28,10 +31,13 @@ class Solution {
     }
 }
 ```
+
 # Map
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of salary
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of salary
+
 ```
 class Solution {
     public boolean isStrobogrammatic(String num) {

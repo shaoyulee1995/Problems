@@ -1,8 +1,11 @@
 # Find the City With the Smallest Number of Neighbors at a Threshold Distance
+
 # Dijkstra
-* Time Complexity: O((N<sup>2</sup>)
-* Space Complexity: O(N<sup>2</sup>)
-	* N as n
+
+- Time Complexity: O((N<sup>2</sup>)
+- Space Complexity: O(N<sup>2</sup>)
+  - N as n
+
 ```
 class Solution {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
@@ -67,11 +70,14 @@ class Solution {
     }
 }
 ```
+
 # Bellman
-* Time Complexity: O((N<sup>2</sup>E)
-* Space Complexity: O(N<sup>2</sup>)
-	* N as n
-	* E as length of edges
+
+- Time Complexity: O((N<sup>2</sup>E)
+- Space Complexity: O(N<sup>2</sup>)
+  - N as n
+  - E as length of edges
+
 ```
 class Solution {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
@@ -131,9 +137,12 @@ class Solution {
     }
 }
 ```
+
 # Floyd Warshall
-* Time Complexity: O((N<sup>3</sup>)
-* Space Complexity: O(N<sup>2</sup>)
+
+- Time Complexity: O((N<sup>3</sup>)
+- Space Complexity: O(N<sup>2</sup>)
+
 ```
 class Solution {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {

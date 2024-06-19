@@ -1,4 +1,5 @@
 # Validate Binary Search Tree
+
 ```
 Definition for a binary tree node.
 public class TreeNode {
@@ -14,10 +15,13 @@ public class TreeNode {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes
+
 ```
 class Solution {
     public boolean isValidBST(TreeNode root) {
@@ -25,7 +29,7 @@ class Solution {
     }
     public boolean dfs(TreeNode node, Integer min, Integer max){
         if(node == null){
-            return true; 
+            return true;
         }
         if(min != null && min >= node.val){
             return false;
@@ -37,10 +41,13 @@ class Solution {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes
+
 ```
 class Solution {
     long prev = Long.MIN_VALUE;
@@ -59,10 +66,13 @@ class Solution {
     }
 }
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes
+
 ```
 class Solution {
     public boolean isValidBST(TreeNode root) {

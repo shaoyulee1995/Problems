@@ -1,11 +1,14 @@
 # Minimum Changes To Make Alternating Binary String
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int minOperations(String s) {
-        int c1 = 0, 
+        int c1 = 0,
             c2 = 0;
         for(int i = 0; i < s.length(); i++){
             char c = s.charAt(i);

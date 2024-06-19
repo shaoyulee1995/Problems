@@ -1,9 +1,12 @@
 # Shortest Common Supersequence
+
 # LCS
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of str1
-    * M as length of str2
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of str1
+    - M as length of str2
+
 ```
 class Solution {
     public String shortestCommonSupersequence(String str1, String str2) {

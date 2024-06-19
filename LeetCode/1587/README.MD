@@ -1,4 +1,5 @@
 # Bank Account Summary II
+
 ```
 select u.name, sum(t.amount) as 'balance'
 from Users u

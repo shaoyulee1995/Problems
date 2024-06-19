@@ -1,4 +1,5 @@
 # Search in a Binary Search Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public TreeNode searchBST(TreeNode root, int val) {
@@ -32,9 +36,11 @@ class Solution {
     }
 }
 ```
+
 # Iteration
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
 
 ```
 class Solution {

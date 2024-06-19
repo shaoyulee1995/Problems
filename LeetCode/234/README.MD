@@ -1,4 +1,5 @@
 # Palindrome Linked List
+
 ```
 /**
  * Definition for singly-linked list.
@@ -11,9 +12,12 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     ListNode left;
@@ -32,9 +36,12 @@ class Solution {
     }
 }
 ```
+
 # 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public boolean isPalindrome(ListNode head) {
@@ -72,9 +79,12 @@ class Solution {
     }
 }
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public boolean isPalindrome(ListNode head) {

@@ -1,9 +1,12 @@
 # Best Time to Buy and Sell Stock with Transaction Fee
+
 .# Array
 
 ## Solution 1
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int maxProfit(int[] prices, int fee) {
@@ -18,9 +21,12 @@ class Solution {
     }
 }
 ```
+
 ## Solution 2
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int maxProfit(int[] prices, int fee) {

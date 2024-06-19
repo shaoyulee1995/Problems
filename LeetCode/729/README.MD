@@ -1,15 +1,18 @@
 # My Calendar I
+
 # TreeMap
-* Time Complexity: O(logN)
-* Space Complexity: O(N)
-	* N as values in the books
+
+- Time Complexity: O(logN)
+- Space Complexity: O(N)
+  - N as values in the books
+
 ```
 class MyCalendar {
     TreeMap<Integer, Integer> map;
     public MyCalendar() {
         map = new TreeMap();
     }
-    
+
     public boolean book(int start, int end) {
         Integer low = map.lowerKey(end);
         if(low == null || map.get(low) <= start){
@@ -20,17 +23,20 @@ class MyCalendar {
     }
 }
 ```
+
 # List
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as values in the books
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as values in the books
+
 ```
 class MyCalendar {
     List<int[]> books;
     public MyCalendar() {
         books = new ArrayList();
     }
-    
+
     public boolean book(int start, int end) {
         for(int[] book: books){
             if(Math.max(start, book[0]) < Math.min(end, book[1])){
@@ -42,6 +48,7 @@ class MyCalendar {
     }
 }
 ```
+
 ```
 Your MyCalendar object will be instantiated and called as such:
 MyCalendar obj = new MyCalendar();

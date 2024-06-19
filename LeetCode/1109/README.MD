@@ -1,8 +1,11 @@
 # Corporate Flight Bookings
+
 # Prefix Sum
-* Time Complexity: O(N)
-	* increment: O(1)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+  - increment: O(1)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int[] corpFlightBookings(int[][] bookings, int n) {
@@ -43,10 +46,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public int[] corpFlightBookings(int[][] bookings, int n) {

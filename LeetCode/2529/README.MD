@@ -1,8 +1,11 @@
 # Maximum Count of Positive Integer and Negative Integer
+
 # Arrays
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int maximumCount(int[] nums) {

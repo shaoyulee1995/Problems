@@ -1,8 +1,11 @@
 # Meeting Rooms II
+
 # TreeMap
-* Time Complexity: O(TlogT)
-* Space Complexity: O(T)
-	* T as length of intervals
+
+- Time Complexity: O(TlogT)
+- Space Complexity: O(T)
+  - T as length of intervals
+
 ```
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
@@ -19,10 +22,13 @@ class Solution {
     }
 }
 ```
+
 # Sweep Line
-* Time Complexity: O(TlogT)
-* Space Complexity: O(T)
-	* T as length of intervals
+
+- Time Complexity: O(TlogT)
+- Space Complexity: O(T)
+  - T as length of intervals
+
 ```
 class Solution {
     public int minMeetingRooms(int[][] intervals) {

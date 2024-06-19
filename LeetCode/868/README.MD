@@ -1,8 +1,11 @@
 # Binary Gap
-# Bit Operation 
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as bit length of n 
+
+# Bit Operation
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as bit length of n
+
 ```
 class Solution {
     public int binaryGap(int n) {

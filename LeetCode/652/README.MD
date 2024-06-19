@@ -1,4 +1,5 @@
 # Find Duplicate Subtrees
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,11 +17,14 @@
  * }
  */
 ```
+
 # Post Order Traversal
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes
-```	
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes
+
+```
 class Solution {
     HashMap<String, Integer> map = new HashMap();
     LinkedList<TreeNode> res = new LinkedList();

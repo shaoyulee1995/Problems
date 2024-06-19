@@ -1,8 +1,11 @@
 # Subsets
+
 # Backtrack
-* Time Complexity: O(N*2<sup>N</sup>)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N\*2<sup>N</sup>)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     List<List<Integer>> list = new ArrayList();

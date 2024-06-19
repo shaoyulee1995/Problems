@@ -1,8 +1,11 @@
 # Contains Duplicate II
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums 
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
@@ -17,10 +20,13 @@ class Solution {
     }
 }
 ```
+
 # Set
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums 
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {

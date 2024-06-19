@@ -1,8 +1,11 @@
 # Last Stone Weight
+
 # PriorityQueue
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
-	* N as length of stones
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+  - N as length of stones
+
 ```
 class Solution {
     public int lastStoneWeight(int[] stones) {

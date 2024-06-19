@@ -1,8 +1,11 @@
 # Count Sorted Vowel Strings
+
 # 1D DP
-* Time Complexity: O(N*6)
-* Space Complexity: O(N*6)
-	* N as n
+
+- Time Complexity: O(N\*6)
+- Space Complexity: O(N\*6)
+  - N as n
+
 ```
 class Solution {
     public int countVowelStrings(int n) {
@@ -19,7 +22,9 @@ class Solution {
     }
 }
 ```
+
 # 1D DP Optimize
+
 ```
 class Solution {
     public int countVowelStrings(int n) {
@@ -33,10 +38,13 @@ class Solution {
     }
 }
 ```
+
 # 2 Memorized DP
-* Time Complexity: O(N*5)
-* Space Complexity: O(N*5)
-	* N as n
+
+- Time Complexity: O(N\*5)
+- Space Complexity: O(N\*5)
+  - N as n
+
 ```
 class Solution {
     public int countVowelStrings(int n) {
@@ -61,9 +69,11 @@ class Solution {
 ```
 
 # Recursion
-* Time Complexity: O(5^N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(5^N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     char[] vowels = new char[]{'a','e','i','o','u'};

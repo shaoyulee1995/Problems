@@ -1,9 +1,12 @@
 # Find Words That Can Be Formed by Characters
+
 # Counting Array
-* Time Complexity: O(WL)
-* Space Complexity: O(26)
-	* W as length of words
-	* L as length of word
+
+- Time Complexity: O(WL)
+- Space Complexity: O(26)
+  - W as length of words
+  - L as length of word
+
 ```
 class Solution {
     public int countCharacters(String[] words, String chars) {

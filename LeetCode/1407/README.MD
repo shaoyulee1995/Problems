@@ -1,4 +1,5 @@
 # Top Travellers
+
 ```
 select u.name, sum(ifnull(r.distance, 0)) as 'travelled_distance'
 from Users u

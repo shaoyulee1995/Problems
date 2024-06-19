@@ -1,9 +1,12 @@
 # Encode and Decode TinyURL
+
 # HashMap
-* Time Complexity: O(U)
-* Space Complexity: O(N)
-	* U as length of url
-	* N as number of urls
+
+- Time Complexity: O(U)
+- Space Complexity: O(N)
+  - U as length of url
+  - N as number of urls
+
 ```
 public class Codec {
 
@@ -27,7 +30,7 @@ public class Codec {
         }
         return sb.toString();
     }
-    
+
     // Decodes a shortened URL to its original URL.
     public String decode(String shortUrl) {
         shortUrl = shortUrl.replace("http://tinyurl.com/", "");
@@ -35,6 +38,7 @@ public class Codec {
     }
 }
 ```
+
 ```
 // Your Codec object will be instantiated and called as such:
 // Codec codec = new Codec();

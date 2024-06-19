@@ -1,7 +1,10 @@
 # Word Pattern
+
 # HashMap
-* Time Complexity: O(N^2)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N^2)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public boolean wordPattern(String pattern, String s) {

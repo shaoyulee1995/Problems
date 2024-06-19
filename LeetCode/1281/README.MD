@@ -1,7 +1,10 @@
 # Subtract the Product and Sum of Digits of an Integer
+
 # Math
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int subtractProductAndSum(int n) {

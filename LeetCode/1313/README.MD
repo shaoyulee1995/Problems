@@ -1,8 +1,11 @@
 # Decompress Run-Length Encoded List
+
 `# Java 8 ArrayList
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] decompressRLElist(int[] nums) {
@@ -18,10 +21,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] decompressRLElist(int[] nums) {

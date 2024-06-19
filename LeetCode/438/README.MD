@@ -1,9 +1,12 @@
 # Find All Anagrams in a String
+
 # Sliding Windows
-* Time Complexity: O(S)
-* Space Complexity: O(P)
-	* S as length of s
-	* P as length of p
+
+- Time Complexity: O(S)
+- Space Complexity: O(P)
+  - S as length of s
+  - P as length of p
+
 ```
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
@@ -12,7 +15,7 @@ class Solution {
             map.put(c, map.getOrDefault(c, 0) + 1);
         }
         int size = map.size(),
-            left = 0, 
+            left = 0,
             right = 0,
             n = s.length(),
             m = p.length();
@@ -20,7 +23,7 @@ class Solution {
             return new ArrayList();
         }
         List<Integer> list = new ArrayList();
-        
+
         while(left < n && right < n){
             while(right < n && size > 0){
                 char r = s.charAt(right);
@@ -50,11 +53,14 @@ class Solution {
     }
 }
 ```
+
 # Counting Array
-* Time Complexity: O(S)
-* Space Complexity: O(P)
-	* S as length of s
-	* P as length of p
+
+- Time Complexity: O(S)
+- Space Complexity: O(P)
+  - S as length of s
+  - P as length of p
+
 ```
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {

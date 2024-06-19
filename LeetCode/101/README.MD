@@ -1,4 +1,5 @@
 # Symmetric Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,11 +17,14 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
 
 ## Java
+
 ```
 class Solution {
     public boolean isSymmetric(TreeNode root) {
@@ -43,7 +47,9 @@ class Solution {
     }
 }
 ```
+
 ## C++
+
 ```
 class Solution {
 public:
@@ -66,8 +72,10 @@ public:
 ```
 
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public boolean isSymmetric(TreeNode root) {

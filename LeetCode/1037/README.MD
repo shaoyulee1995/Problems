@@ -1,7 +1,10 @@
 # Valid Boomerang
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public boolean isBoomerang(int[][] points) {
@@ -16,7 +19,7 @@ class Solution {
             int[] point = points[i];
             int x3 = point[0],
                 y3 = point[1];
-            
+
             if((y1-y2)*(x3-x2) == (y3-y2)*(x1-x2)){
                 return false;
             }

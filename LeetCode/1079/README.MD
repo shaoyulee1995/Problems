@@ -1,8 +1,11 @@
 # Letter Tile Possibilities
+
 # Backtrack Cunting Array
-* Time Complexity: O(N)
-* Space Complexity: O(26)
-	* N as length of tiles
+
+- Time Complexity: O(N)
+- Space Complexity: O(26)
+  - N as length of tiles
+
 ```
 class Solution {
 
@@ -27,10 +30,13 @@ class Solution {
     }
 }
 ```
+
 # Backtrack HashSet
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of tiles
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of tiles
+
 ```
 class Solution {
     public int numTilePossibilities(String tiles) {
@@ -39,7 +45,7 @@ class Solution {
         dfs(set, visited, tiles, new StringBuilder());
         return set.size() - 1;
     }
-    
+
     public void dfs(HashSet<String> set, boolean[] visited, String tiles, StringBuilder sb){
         set.add(sb.toString());
         for(int i = 0; i < tiles.length(); i++){

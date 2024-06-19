@@ -1,8 +1,11 @@
 # Find Greatest Common Divisor of Array
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int findGCD(int[] nums) {
@@ -14,5 +17,5 @@ class Solution {
     public int gcd(int a, int b){
         return (b==0)? a: gcd(b, a%b);
     }
-}   
+}
 ```

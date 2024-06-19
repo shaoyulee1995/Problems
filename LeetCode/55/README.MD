@@ -1,7 +1,10 @@
 # Jump Game
+
 # Greedy
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public boolean canJump(int[] nums) {

@@ -1,8 +1,11 @@
 # Remove Letter To Equalize Frequency
+
 # Counting Array
-* Time Complexity: O(W)
-* Space Complexity: O(26)
-	* W as length of word
+
+- Time Complexity: O(W)
+- Space Complexity: O(26)
+  - W as length of word
+
 ```
 class Solution {
     public boolean equalFrequency(String word) {
@@ -19,7 +22,7 @@ class Solution {
         }
         return false;
     }
-    
+
     public boolean equalFreq(int[] arr){
         int cnt = 0;
         for(int a: arr){

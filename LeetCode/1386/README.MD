@@ -1,9 +1,12 @@
 # Cinema Seat Allocation
+
 # HashMap
-* Time Complexity: O(SN)
-* Space Complexity: O(S)
-	* N as n
-	* S as length of seats
+
+- Time Complexity: O(SN)
+- Space Complexity: O(S)
+  - N as n
+  - S as length of seats
+
 ```
 class Solution {
     public int maxNumberOfFamilies(int n, int[][] seats) {

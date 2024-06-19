@@ -1,8 +1,11 @@
 # Strong Password Checker II
+
 # HashSet
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of password
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of password
+
 ```
 class Solution {
     public boolean strongPasswordCheckerII(String password) {
@@ -36,5 +39,5 @@ class Solution {
     }
 }
 
-  
+
 ```

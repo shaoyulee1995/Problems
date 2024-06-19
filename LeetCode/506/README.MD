@@ -1,8 +1,11 @@
 # Relative Ranks
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
-    * N as length of scores
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as length of scores
+
 ```
 class Solution {
     public String[] findRelativeRanks(int[] score) {
@@ -27,10 +30,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
-    * N as length of scores
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as length of scores
+
 ```
 class Solution {
     public String[] findRelativeRanks(int[] score) {

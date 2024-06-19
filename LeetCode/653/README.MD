@@ -1,4 +1,5 @@
 # Two Sum IV - Input is a BST
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes of tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes of tree
+
 ```
 class Solution {
     public boolean findTarget(TreeNode root, int k) {

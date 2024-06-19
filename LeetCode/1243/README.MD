@@ -1,9 +1,12 @@
 # Array Transformation
+
 # Array
-* Time Complexity: O(cN)
-* Space Complexity: O(N)
-	* N as length of arr
-	* c as cycles
+
+- Time Complexity: O(cN)
+- Space Complexity: O(N)
+  - N as length of arr
+  - c as cycles
+
 ```
 class Solution {
     public List<Integer> transformArray(int[] arr) {

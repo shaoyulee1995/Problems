@@ -1,21 +1,31 @@
 # Replace Words
+
 # Trie
+
 ## replaceWords(List<String> dictionary, String sentence)
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N<sup>2</sup>)
-    * N as length of dictionary
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N<sup>2</sup>)
+  - N as length of dictionary
+
 ## replaceWords(String sentence)
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N<sup>2</sup>)
-    * N as length of sentence
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N<sup>2</sup>)
+  - N as length of sentence
+
 ## getShortestWord(String word)
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of word
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of word
+
 ## insert(String word)
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-    * N as length of word
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of word
+
 ```
 class Solution {
     TrieNode root;
@@ -50,7 +60,7 @@ class Solution {
         }
         return word;
     }
-    
+
 
     public void insert(String word){
         TrieNode node = root;

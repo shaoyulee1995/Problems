@@ -1,8 +1,12 @@
 # Count of Matches in Tournament
+
 # Math
+
 ## Solution 1
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int numberOfMatches(int n) {
@@ -17,8 +21,10 @@ class Solution {
 ```
 
 ## Solution 2
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int numberOfMatches(int n) {

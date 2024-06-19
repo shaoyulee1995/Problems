@@ -1,9 +1,12 @@
 # Distribute Candies to People
+
 # Array
-* Time Complexity: O(Min(C, N))
-* Space Complexity: O(N)
-	* N as num_people
-	* C as candy
+
+- Time Complexity: O(Min(C, N))
+- Space Complexity: O(N)
+  - N as num_people
+  - C as candy
+
 ```
 class Solution {
     public int[] distributeCandies(int candies, int num_people) {

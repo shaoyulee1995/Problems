@@ -1,8 +1,11 @@
 # Remove Interval
+
 # Arrays
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of intervals
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of intervals
+
 ```
 class Solution {
     public List<List<Integer>> removeInterval(int[][] intervals, int[] toBeRemoved) {

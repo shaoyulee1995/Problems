@@ -1,8 +1,11 @@
 # Thousand Separator
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public String thousandSeparator(int n) {
@@ -23,10 +26,13 @@ class Solution {
     }
 }
 ```
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public String thousandSeparator(int n) {

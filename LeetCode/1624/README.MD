@@ -1,8 +1,11 @@
 # Largest Substring Between Two Equal Characters
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public int maxLengthBetweenEqualCharacters(String s) {
@@ -21,10 +24,13 @@ class Solution {
     }
 }
 ```
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public int maxLengthBetweenEqualCharacters(String s) {

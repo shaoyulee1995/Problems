@@ -1,7 +1,10 @@
 # Binary Search
+
 # Binary Search
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int search(int[] nums, int target) {

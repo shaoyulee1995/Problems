@@ -1,8 +1,11 @@
 # Distribute Elements Into Two Arrays I
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] resultArray(int[] nums) {
@@ -25,7 +28,7 @@ class Solution {
         for(int num: arr2){
             res[i++] = num;
         }
-        
+
         return res;
     }
 }

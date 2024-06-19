@@ -1,9 +1,12 @@
 # Matrix Similarity After Cyclic Shifts
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as length of mat
-    * M as length[0] of mat
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of mat
+    - M as length[0] of mat
+
 ```
 class Solution {
     public boolean areSimilar(int[][] mat, int k) {

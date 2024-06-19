@@ -1,8 +1,11 @@
 # Largest Values From Labels
+
 # PriorityQueue
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
-	* N as length of values
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+  - N as length of values
+
 ```
 class Solution {
     public int largestValsFromLabels(int[] values, int[] labels, int numWanted, int useLimit) {

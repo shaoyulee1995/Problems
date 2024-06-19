@@ -1,7 +1,10 @@
 # Defanging an IP Address
+
 # StringBuilder
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public String defangIPaddr(String address) {
@@ -15,8 +18,10 @@ class Solution {
 ```
 
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public String defangIPaddr(String address) {

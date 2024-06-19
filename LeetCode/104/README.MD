@@ -1,4 +1,5 @@
 # Maximum Depth of Binary Tree
+
 ```
 Definition for a binary tree node.
 public class TreeNode {
@@ -14,10 +15,13 @@ public class TreeNode {
     }
 }
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     public int maxDepth(TreeNode root) {
@@ -30,10 +34,13 @@ class Solution {
     }
 }
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public int maxDepth(TreeNode root) {

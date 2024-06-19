@@ -1,14 +1,17 @@
 # Find the Array Concatenation Value
+
 # Array
-* Time Complexity: O(Nn)
-* Space Complexity: O(1)
-	* N as length of nums
-    * n as max length of num
+
+- Time Complexity: O(Nn)
+- Space Complexity: O(1)
+  - N as length of nums
+    - n as max length of num
+
 ```
 class Solution {
     public long findTheArrayConcVal(int[] nums) {
         long res = 0;
-        int i = 0, 
+        int i = 0,
             j = nums.length-1;
         for(; i < j; i++, j--){
             int len = getLength(nums[j]);

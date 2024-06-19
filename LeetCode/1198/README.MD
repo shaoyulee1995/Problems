@@ -1,9 +1,12 @@
 # Find Smallest Common Element in All Rows
+
 # Counting Array
-* Time Complexity: O(MN)
-* Space Complexity: O(10001)
-	* M as length of mat
-	* N as length of mat[0]
+
+- Time Complexity: O(MN)
+- Space Complexity: O(10001)
+  - M as length of mat
+  - N as length of mat[0]
+
 ```
 class Solution {
     public int smallestCommonElement(int[][] mat) {

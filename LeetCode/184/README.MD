@@ -1,5 +1,7 @@
 # Department Highest Salary
+
 # Group by
+
 ```
 select d.name as 'Department',
         e.name as 'Employee',
@@ -12,7 +14,9 @@ where (e.departmentId, e.salary) in (
     group by e.departmentId
 )
 ```
+
 # join
+
 ```
 select d.name as 'Department',
         e.name as 'Employee',
@@ -21,6 +25,6 @@ from Department d join Employee e
     on d.id = e.departmentId join (
         select max(salary) as Salary, DepartmentId
         from Employee
-        group by departmentId 
+        group by departmentId
     ) as mx on mx.departmentId = e.departmentId and mx.salary = e.salary
 ```

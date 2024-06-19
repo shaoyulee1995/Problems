@@ -1,10 +1,13 @@
 # Ones and Zeroes
-# Recursion Memorized 
-* Time Complexity: O(SMN)
-* Space Complexity: O(SMN)
-	* S is length of strs
-	* M is m
-	* N is n
+
+# Recursion Memorized
+
+- Time Complexity: O(SMN)
+- Space Complexity: O(SMN)
+  - S is length of strs
+  - M is m
+  - N is n
+
 ```
 class Solution {
     int[][][] dp;
@@ -19,7 +22,7 @@ class Solution {
         if(dp[index][m][n] != 0){
             return dp[index][m][n];
         }
-        int zeros = 0, 
+        int zeros = 0,
             ones = 0;
         for(char c: strs[index].toCharArray()){
             if(c == '0'){
@@ -38,12 +41,15 @@ class Solution {
     }
 }
 ```
+
 # DP (Knapsack)
-* Time Complexity: O(SMN)
-* Space Complexity: O(MN)
-	* S is length of strs
-	* M is m
-	* N is n
+
+- Time Complexity: O(SMN)
+- Space Complexity: O(MN)
+  - S is length of strs
+  - M is m
+  - N is n
+
 ```
 class Solution {
     public int findMaxForm(String[] strs, int m, int n) {

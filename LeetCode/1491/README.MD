@@ -1,8 +1,11 @@
 # Average Salary Excluding the Minimum and Maximum Salary
+
 # Lambda
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of salary
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of salary
+
 ```
 class Solution {
     public double average(int[] salary) {
@@ -12,10 +15,13 @@ class Solution {
     }
 }
 ```
+
 # Arrays
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of salary
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of salary
+
 ```
 class Solution {
     public double average(int[] salary) {

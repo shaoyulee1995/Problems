@@ -1,8 +1,11 @@
 # Check if an Array Is Consecutive
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-    * N as length of nums
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public boolean isConsecutive(int[] nums) {
@@ -16,10 +19,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-    * N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public boolean isConsecutive(int[] nums) {

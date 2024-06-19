@@ -1,4 +1,5 @@
 # All the Matches of the League
+
 ```
 select
     home.team_name as 'home_team',
@@ -6,5 +7,5 @@ select
 from
     Teams home cross join Teams opponent
 where
-    home.team_name != opponent.team_name 
+    home.team_name != opponent.team_name
 ```

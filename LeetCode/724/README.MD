@@ -1,8 +1,11 @@
 # Find Pivot Index
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-    * N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int pivotIndex(int[] nums) {

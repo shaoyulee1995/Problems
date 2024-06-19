@@ -1,4 +1,5 @@
 # N-ary Tree Postorder Traversal
+
 ```
 /*
 // Definition for a Node.
@@ -19,9 +20,12 @@ class Node {
 };
 */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     List<Integer> list = new ArrayList();

@@ -1,7 +1,10 @@
 # Determine if String Halves Are Alike
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public boolean halvesAreAlike(String s) {

@@ -1,8 +1,11 @@
 # Restore IP Addresses
+
 # Backtrack
-* Time Complexity: O(IDK)
-* Space Complexity: O(IDK)
-	* IDK as I don't know
+
+- Time Complexity: O(IDK)
+- Space Complexity: O(IDK)
+  - IDK as I don't know
+
 ```
 class Solution {
     List<String> list = new ArrayList();

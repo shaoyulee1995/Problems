@@ -1,7 +1,10 @@
 # Add Two Integers
+
 # Math
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int sum(int num1, int num2) {

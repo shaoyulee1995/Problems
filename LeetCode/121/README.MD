@@ -1,8 +1,11 @@
 # Best Time to Buy and Sell Stock
+
 # Kadane's Algorithm
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of prices
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of prices
+
 ```
 class Solution {
     public int maxProfit(int[] prices) {
@@ -17,9 +20,11 @@ class Solution {
 ```
 
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of prices
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of prices
+
 ```
 class Solution {
     public int maxProfit(int[] prices) {
@@ -32,6 +37,7 @@ class Solution {
     }
 }
 ```
+
 ```
 class Solution {
     public int maxProfit(int[] prices) {
@@ -49,9 +55,11 @@ class Solution {
 ```
 
 # Dynamic Programming
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of prices
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of prices
+
 ```
 class Solution {
     public int maxProfit(int[] prices) {

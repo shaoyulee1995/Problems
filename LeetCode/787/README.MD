@@ -1,10 +1,13 @@
 # Cheapest Flights Within K Stops
+
 # Bellman-Ford
-* Time Complexity: O(kF)
-* Space Complexity: O(N)
-	* F as length of flight
-	* k as stops
-	* N as n
+
+- Time Complexity: O(kF)
+- Space Complexity: O(N)
+  - F as length of flight
+  - k as stops
+  - N as n
+
 ```
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
@@ -27,11 +30,14 @@ class Solution {
     }
 }
 ```
-# Dijkstra's Algorithm 
-* Time Complexity: O(VE)
-* Space Complexity: O(VE)
-	* V as edges
-	* E as stops
+
+# Dijkstra's Algorithm
+
+- Time Complexity: O(VE)
+- Space Complexity: O(VE)
+  - V as edges
+  - E as stops
+
 ```
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
@@ -51,13 +57,13 @@ class Solution {
         //src, cost, stop
         Queue<int[]> pq = new PriorityQueue<int[]>((a,b)-> a[1]-b[1]);
         pq.offer(new int[]{src, 0, 0});
-        
+
         while(!pq.isEmpty()){
             int[] node = pq.poll();
             int curPos = node[0],
                 curCost = node[1],
                 curStop = node[2];
-            
+
             if(curPos == dst){
                 return curCost;
             }

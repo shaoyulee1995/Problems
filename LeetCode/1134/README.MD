@@ -1,8 +1,11 @@
 # Armstrong Number
+
 # Array
-* Time Complexity: O(D)
-* Space Complexity: O(D)
-	* N as length of digits
+
+- Time Complexity: O(D)
+- Space Complexity: O(D)
+  - N as length of digits
+
 ```
 class Solution {
     public boolean isArmstrong(int n) {

@@ -1,9 +1,12 @@
 # Modify the Matrix
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of matrix
-    * M as length of matrix[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of matrix
+    - M as length of matrix[0]
+
 ```
 class Solution {
     public int[][] modifiedMatrix(int[][] matrix) {

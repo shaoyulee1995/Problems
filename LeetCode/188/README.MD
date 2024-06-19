@@ -1,7 +1,10 @@
 # Best Time to Buy and Sell Stock IV
+
 # Dynamic Programming
-* Time Complexity: O(Nk)
-* Space Complexity: O(k)
+
+- Time Complexity: O(Nk)
+- Space Complexity: O(k)
+
 ```
 class Solution {
     public int maxProfit(int k, int[] prices) {

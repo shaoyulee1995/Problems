@@ -1,9 +1,12 @@
 # Pascal's Triangle II
+
 # Array
-* Time Complexity: O(NR)
-* Space Complexity: O(N)
-    * N as length of res
-    * R as rowIndex
+
+- Time Complexity: O(NR)
+- Space Complexity: O(N)
+  - N as length of res
+  - R as rowIndex
+
 ```
 class Solution {
     public List<Integer> getRow(int rowIndex) {

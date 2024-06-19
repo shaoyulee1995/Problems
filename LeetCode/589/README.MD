@@ -1,4 +1,5 @@
 # N-ary Tree Preorder Traversal
+
 ```
 /*
 // Definition for a Node.
@@ -19,14 +20,17 @@ class Node {
 };
 */
 ```
-# Recursion 
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of nodes
+
+# Recursion
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of nodes
+
 ```
 class Solution {
     public List<Integer> preorder(Node root) {
-        List<Integer> res = new ArrayList();   
+        List<Integer> res = new ArrayList();
         getPreOrderTraversal(res, root);
         return res;
     }
@@ -43,9 +47,11 @@ class Solution {
 ```
 
 # Iterate
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of nodes
+
 ```
 class Solution {
     public List<Integer> preorder(Node root) {

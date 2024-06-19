@@ -1,4 +1,5 @@
 # Binary Tree Inorder Traversal
+
 ```
 Definition for a binary tree node.
 public class TreeNode {
@@ -14,10 +15,13 @@ public class TreeNode {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     List<Integer> res;
@@ -26,7 +30,7 @@ class Solution {
         dfs(root);
         return res;
     }
-    
+
     public void dfs(TreeNode node){
         if(node == null){
             return;
@@ -37,10 +41,13 @@ class Solution {
     }
 }
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
@@ -62,9 +69,12 @@ class Solution {
     }
 }
 ```
+
 # Thread Binary Tree(Morris Traversal)
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
@@ -86,11 +96,11 @@ class Solution {
                     pre.right = null;
                     list.add(cur.val);
                     cur = cur.right;
-                }  
+                }
             }else{
                 list.add(cur.val);
                 cur = cur.right;
-            }          
+            }
         }
         return list;
     }

@@ -1,8 +1,11 @@
 # Random Pick with Weight
+
 # Linear Search
-* Time Complexity: O(W)
-* Space Complexity: O(W)
-	* W as length of w
+
+- Time Complexity: O(W)
+- Space Complexity: O(W)
+  - W as length of w
+
 ```
 class Solution {
 
@@ -14,7 +17,7 @@ class Solution {
         }
         w_sum = w;
     }
-    
+
     public int pickIndex() {
         Random r = new Random();
         int randNum = (int)(r.nextInt(w_sum[w_sum.length - 1]));
@@ -27,6 +30,7 @@ class Solution {
     }
 }
 ```
+
 ```
 /**
  * Your Solution object will be instantiated and called as such:

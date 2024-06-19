@@ -1,8 +1,11 @@
 # Water Bottles
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as numBottles
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as numBottles
+
 ```
 class Solution {
     public int numWaterBottles(int numBottles, int numExchange) {

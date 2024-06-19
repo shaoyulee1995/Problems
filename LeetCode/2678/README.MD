@@ -1,8 +1,11 @@
 # Number of Senior Citizens
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of details
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of details
+
 ```
 class Solution {
     public int countSeniors(String[] details) {

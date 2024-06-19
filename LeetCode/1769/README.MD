@@ -1,8 +1,11 @@
 # Minimum Number of Operations to Move All Balls to Each Box
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of boxes
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of boxes
+
 ```
 class Solution {
     public int[] minOperations(String boxes) {
@@ -29,10 +32,13 @@ class Solution {
     }
 }
 ```
+
 # BF
-* Time Complexity: O(N^2)
-* Space Complexity: O(N)
-	* N as length of boxes
+
+- Time Complexity: O(N^2)
+- Space Complexity: O(N)
+  - N as length of boxes
+
 ```
 class Solution {
     public int[] minOperations(String boxes) {

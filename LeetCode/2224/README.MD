@@ -1,8 +1,11 @@
 # Minimum Number of Operations to Convert Time
+
 # String
-* Time Complexity: O(C)
-* Space Complexity: O(1)
-	* S as length of current
+
+- Time Complexity: O(C)
+- Space Complexity: O(1)
+  - S as length of current
+
 ```
 class Solution {
     public int convertTime(String current, String correct) {

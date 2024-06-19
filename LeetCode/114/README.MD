@@ -1,4 +1,5 @@
 # Flatten Binary Tree to Linked List
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,24 +17,27 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N^2)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N^2)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public void flatten(TreeNode root) {
         if(root == null){
             return;
-        }    
+        }
         flatten(root.left);
         flatten(root.right);
-        
+
         TreeNode left = root.left,
                  right = root.right;
-        
+
         root.left = null;
         root.right = left;
-        
+
         TreeNode p = root;
         while(p.right != null){
             p = p.right;

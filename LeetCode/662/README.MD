@@ -1,4 +1,5 @@
 # Maximum Width of Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public int widthOfBinaryTree(TreeNode root) {
@@ -30,7 +34,7 @@ class Solution {
         LinkedList<Pair> q = new LinkedList();
         q.offer(p);
         int res = Integer.MIN_VALUE;
-        while(!q.isEmpty()){    
+        while(!q.isEmpty()){
             int size = q.size();
             int cmp = (Integer)q.peekLast().getValue() - (Integer)q.peekFirst().getValue() + 1;
             res = Math.max(res, cmp);

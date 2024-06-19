@@ -1,9 +1,12 @@
 # Course Schedule II
+
 # BFS using HashMap
-* Time Complexity: O(V+E)
-* Space Complexity: O(V+E)
-	* V as numCourses
-	* E as course relates to 
+
+- Time Complexity: O(V+E)
+- Space Complexity: O(V+E)
+  - V as numCourses
+  - E as course relates to
+
 ```
 class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {

@@ -1,13 +1,16 @@
 # Available Captures for Rook
+
 # Array
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as length of board
-	* M as length of board[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of board
+  - M as length of board[0]
+
 ```
 class Solution {
     public int numRookCaptures(char[][] board) {
-        int x = 0, 
+        int x = 0,
             y = 0,
             res = 0;
         for(int i = 0; i < board.length; i++){

@@ -1,9 +1,13 @@
 # Make Array Zero by Subtracting Equal Amounts
+
 # HashSet
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ## Java
+
 ```
 class Solution {
     public int minimumOperations(int[] nums) {
@@ -18,7 +22,9 @@ class Solution {
     }
 }
 ```
+
 ## C++
+
 ```
 class Solution {
 public:

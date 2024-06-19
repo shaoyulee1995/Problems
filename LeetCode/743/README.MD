@@ -1,9 +1,12 @@
 # Network Delay Time
+
 # Dijkstra
-* Time Complexity: O(Tlog(T))
-* Space Complexity: O(T+N)
-	* N as n
-	* T as length of times
+
+- Time Complexity: O(Tlog(T))
+- Space Complexity: O(T+N)
+  - N as n
+  - T as length of times
+
 ```
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
@@ -26,7 +29,7 @@ class Solution {
             if(n == 0){
                 return res;
             }
-            
+
             if(map.containsKey(curNode)){
                 for(int next: map.get(curNode).keySet()){
                     pq.add(new int[]{totalTravel + map.get(curNode).get(next), next});
@@ -34,14 +37,17 @@ class Solution {
             }
         }
         return n == 0? res: -1;
-        
+
     }
 }
 ```
+
 # Floyd-Warshall
-* Time Complexity: O(N<sup>3</sup>)
-* Space Complexity: O(N<sup>2</sup>)
-	* N as n
+
+- Time Complexity: O(N<sup>3</sup>)
+- Space Complexity: O(N<sup>2</sup>)
+  - N as n
+
 ```
 class Solution {
     public int networkDelayTime(int[][] times, int n, int K) {
@@ -76,12 +82,15 @@ class Solution {
     }
 }
 ```
+
 # Bellman-Ford
-* Time Complexity: O(kT)
-* Space Complexity: O(N)
-	* T as length of times
-	* k as stops
-	* N as n
+
+- Time Complexity: O(kT)
+- Space Complexity: O(N)
+  - T as length of times
+  - k as stops
+  - N as n
+
 ```
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {

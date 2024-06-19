@@ -1,8 +1,11 @@
 # Crawler Log Folder
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of logs
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of logs
+
 ```
 class Solution {
     public int minOperations(String[] logs) {

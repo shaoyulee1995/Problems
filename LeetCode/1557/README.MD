@@ -1,8 +1,11 @@
 # Minimum Number of Vertices to Reach All Nodes
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of edge
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of edge
+
 ```
 class Solution {
     public List<Integer> findSmallestSetOfVertices(int n, List<List<Integer>> edges) {

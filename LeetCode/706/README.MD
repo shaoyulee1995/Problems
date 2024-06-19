@@ -1,21 +1,24 @@
 # Design HashMap
+
 # LinkedList
-* MyHashMap: 
-	* Time Complexity: O(1)
-	* Space Complexity: O(N)
-		* N as size
-* hash
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* put
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* get
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* remove
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
+
+- MyHashMap:
+  - Time Complexity: O(1)
+  - Space Complexity: O(N)
+    - N as size
+- hash
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- put
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- get
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- remove
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+
 ```
 class MyHashMap {
     final int size = 19997;
@@ -28,14 +31,14 @@ class MyHashMap {
     public int getHash(int key){
         return (int)((long)key*mult%size);
     }
-    
+
     public void put(int key, int value) {
         remove(key);
         int hashIndex = getHash(key);
         Node node = new Node(key, value, list[hashIndex]);
         list[hashIndex] = node;
     }
-    
+
     public int get(int key) {
         int hashIndex = getHash(key);
         Node node = list[hashIndex];
@@ -46,7 +49,7 @@ class MyHashMap {
         }
         return -1;
     }
-    
+
     public void remove(int key) {
         int hashIndex = getHash(key);
         Node node = list[hashIndex];
@@ -75,6 +78,7 @@ class MyHashMap {
     }
 }
 ```
+
 ```
 Your MyHashMap object will be instantiated and called as such:
 MyHashMap obj = new MyHashMap();

@@ -1,8 +1,11 @@
 # Rings and Rods
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(10)
-	* N as length of rings
+
+- Time Complexity: O(N)
+- Space Complexity: O(10)
+  - N as length of rings
+
 ```
 class Solution {
     public int countPoints(String rings) {
@@ -30,10 +33,13 @@ class Solution {
     }
 }
 ```
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of rings
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of rings
+
 ```
 class Solution {
     public int countPoints(String rings) {
@@ -49,7 +55,7 @@ class Solution {
             if(entry.getValue().size() == 3){
                 res++;
             }
-        }   
+        }
         return res;
     }
 }

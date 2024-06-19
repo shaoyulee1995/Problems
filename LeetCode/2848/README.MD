@@ -1,9 +1,12 @@
 # Points That Intersect With Cars
+
 # Set
-* Time Complexity: O(ND)
-* Space Complexity: O(ND)
-	* N as length of nums
-    * D as range between each distance
+
+- Time Complexity: O(ND)
+- Space Complexity: O(ND)
+  - N as length of nums
+    - D as range between each distance
+
 ```
 class Solution {
     public int numberOfPoints(List<List<Integer>> nums) {

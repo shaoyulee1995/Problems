@@ -1,7 +1,10 @@
 # Find the Duplicate Number
+
 # Negation
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int findDuplicate(int[] nums) {
@@ -16,10 +19,13 @@ class Solution {
     }
 }
 ```
+
 # Fast Slow Pointer
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int findDuplicate(int[] nums) {
@@ -29,7 +35,7 @@ class Solution {
             slow = nums[slow];
             fast = nums[nums[fast]];
         }while(fast != slow);
-        
+
         slow = 0;
         while(slow != fast){
             slow = nums[slow];

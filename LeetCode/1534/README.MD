@@ -1,7 +1,10 @@
 # Count Good Triplets
+
 # Sliding Windows
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int countGoodTriplets(int[] arr, int a, int b, int c) {

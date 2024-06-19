@@ -1,12 +1,14 @@
 # Permutation in String
-# Sliding Windows
-* Time Complexity: O(max(N, M))
-	* N: length of t
-	* M: length of p
-* Space Complexity: O(26)
 
-	
+# Sliding Windows
+
+- Time Complexity: O(max(N, M))
+  - N: length of t
+  - M: length of p
+- Space Complexity: O(26)
+
 ## Java
+
 ```
 class Solution {
     public boolean checkInclusion(String t, String p) {
@@ -18,7 +20,7 @@ class Solution {
         for(int i = 0; i < len1; i++){
             cnt[t.charAt(i)-'a']++;
         }
-        
+
         for(int i = 0; i < len2; i++){
             if(i - len1 >= 0){
                 cnt[p.charAt(i-len1)-'a']++;

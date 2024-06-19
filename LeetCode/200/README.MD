@@ -1,9 +1,12 @@
 # Number of Islands
+
 # DFS
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public int numIslands(char[][] grid) {
@@ -30,11 +33,14 @@ class Solution {
     }
 }
 ```
+
 # BFS
-* Time Complexity: O(MN)
-* Space Complexity: O(Min(M, N))
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(MN)
+- Space Complexity: O(Min(M, N))
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public int numIslands(char[][] grid) {

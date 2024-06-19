@@ -1,9 +1,12 @@
 # Concatenated Words
+
 # DFS
-* Time Complexity: O(NW<sup>2</sup>)
-* Space Complexity: O(N)
-	* N as length of words
-    * W as length of word
+
+- Time Complexity: O(NW<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of words
+    - W as length of word
+
 ```
 class Solution {
     List<String> res;

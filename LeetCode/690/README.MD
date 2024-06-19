@@ -1,4 +1,5 @@
 # Employee Importance
+
 ```
 /*
 // Definition for Employee.
@@ -9,9 +10,12 @@ class Employee {
 };
 */
 ```
+
 # HashMap, LinkedList
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int getImportance(List<Employee> employees, int id) {

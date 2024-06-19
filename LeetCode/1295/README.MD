@@ -1,9 +1,12 @@
 # Find Numbers with Even Number of Digits
+
 # Array
-* Time Complexity: O(NlogM)
-* Space Complexity: O(1)
-    * N as length of nums
-    * M as largest value in nums
+
+- Time Complexity: O(NlogM)
+- Space Complexity: O(1)
+  - N as length of nums
+  - M as largest value in nums
+
 ```
 class Solution {
     public int findNumbers(int[] nums) {

@@ -1,7 +1,10 @@
 # Unique Binary Search Trees
+
 # Dynamic Programming
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int numTrees(int n) {
@@ -16,10 +19,13 @@ class Solution {
     }
 }
 ```
+
 # Recursion for N space
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public int numTrees(int n) {
@@ -42,9 +48,12 @@ class Solution {
     }
 }
 ```
+
 # Recursion for N^2 space
-* Time Complexity: O(N^2)
-* Space Complexity: O(N^2)
+
+- Time Complexity: O(N^2)
+- Space Complexity: O(N^2)
+
 ```
 class Solution {
     int[][] memo;

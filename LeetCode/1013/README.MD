@@ -1,8 +1,11 @@
 # Partition Array Into Three Parts With Equal Sum
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of arr 
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of arr
+
 ```
 class Solution {
     public boolean canThreePartsEqualSum(int[] arr) {

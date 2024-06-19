@@ -1,4 +1,5 @@
 # Construct String from Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes 
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes
+
 ```
 class Solution {
     StringBuilder sb;
@@ -32,7 +36,7 @@ class Solution {
         if(node == null){
             return;
         }
-        sb.append(String.valueOf(node.val));    
+        sb.append(String.valueOf(node.val));
         if(node.left == null && node.right == null){
             return;
         }
@@ -42,7 +46,7 @@ class Solution {
         if(node.right != null){
             sb.append("(");
             dfs(node.right);
-            sb.append(")");    
+            sb.append(")");
         }
     }
 }

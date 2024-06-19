@@ -1,8 +1,11 @@
 # Reordered Power of 2
+
 # Bit
-* Time Complexity: O(32)
-* Space Complexity: O(1)
-	* N as length of abbr
+
+- Time Complexity: O(32)
+- Space Complexity: O(1)
+  - N as length of abbr
+
 ```
 class Solution {
     public boolean reorderedPowerOf2(int n) {
@@ -14,7 +17,7 @@ class Solution {
         }
         return false;
     }
-    
+
     public long counter(int n){
         int res = 0;
         for(; n > 0; n/=10){
@@ -24,10 +27,13 @@ class Solution {
     }
 }
 ```
+
 # Array Counter
-* Time Complexity: O(log<sup>2</sup>N)
-* Space Complexity: O(logN)
-	* N as length of abbr
+
+- Time Complexity: O(log<sup>2</sup>N)
+- Space Complexity: O(logN)
+  - N as length of abbr
+
 ```
 class Solution {
     public boolean reorderedPowerOf2(int n) {

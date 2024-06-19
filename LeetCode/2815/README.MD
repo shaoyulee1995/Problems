@@ -1,9 +1,12 @@
 # Max Pair Sum in an Array
+
 # HashMap
-* Time Complexity: O(KlogK)
-* Space Complexity: O(N)
-	* N as length of nums
-    * W as length of key in map
+
+- Time Complexity: O(KlogK)
+- Space Complexity: O(N)
+  - N as length of nums
+    - W as length of key in map
+
 ```
 class Solution {
     public int maxSum(int[] nums) {

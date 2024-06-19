@@ -1,9 +1,12 @@
 # Freedom Trail
+
 # Memorization Recursion | DP
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* n = ring.length()
-	* m = key.length()
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - n = ring.length()
+  - m = key.length()
+
 ```
 class Solution {
     Map<Character, Set<Integer>> map;

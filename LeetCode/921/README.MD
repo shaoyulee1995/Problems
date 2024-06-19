@@ -1,8 +1,11 @@
 # Minimum Add to Make Parentheses Valid
+
 # Stack
-* Time Complexity: O(S)
-* Space Complexity: O(S)
-    * S as length of s
+
+- Time Complexity: O(S)
+- Space Complexity: O(S)
+  - S as length of s
+
 ```
 class Solution {
     public int minAddToMakeValid(String s) {

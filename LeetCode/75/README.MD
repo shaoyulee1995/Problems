@@ -1,8 +1,11 @@
 # Sort Colors
+
 # 3 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public void sortColors(int[] nums) {
@@ -29,16 +32,19 @@ class Solution {
     }
 }
 ```
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public void sortColors(int[] nums) {
         int sizeZeros = 0,
             sizeOnes = 0,
-            sizeTwos = 0;  
+            sizeTwos = 0;
         for(int num: nums){
             if(num == 0){
                 sizeZeros++;

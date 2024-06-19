@@ -1,4 +1,5 @@
 # House Robber III
+
 ```/**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -15,9 +16,12 @@
  * }
  */
 ```
+
 # Memorization Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     HashMap<TreeNode, Integer> map = new HashMap();
@@ -30,7 +34,7 @@ class Solution {
         }
         int robbed = root.val;
         if(root.left != null){
-            robbed += rob(root.left.left) + rob(root.left.right); 
+            robbed += rob(root.left.left) + rob(root.left.right);
         }
         if(root.right != null){
             robbed += rob(root.right.left) + rob(root.right.right);
@@ -42,17 +46,20 @@ class Solution {
     }
 }
 ```
+
 # DP
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public int rob(TreeNode root) {
         int[] res = dfs(root);
         return Math.max(res[0], res[1]);
     }
-    
+
     public int[] dfs(TreeNode node){
         int[] res = new int[2];
         if(node == null){

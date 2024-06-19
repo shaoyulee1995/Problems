@@ -1,7 +1,10 @@
 # Remove Duplicate Letters
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public String removeDuplicateLetters(String s) {
@@ -10,7 +13,7 @@ class Solution {
         int[] words = new int[26];
         StringBuilder sb = new StringBuilder();
         for(char c: s.toCharArray()){
-            words[c-'a']++;  
+            words[c-'a']++;
         }
         for(char c: s.toCharArray()){
             words[c-'a']--;

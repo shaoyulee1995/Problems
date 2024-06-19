@@ -1,8 +1,11 @@
 # Merge Sorted Array
+
 # 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums1
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums1
+
 ```
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {

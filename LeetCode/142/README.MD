@@ -1,4 +1,5 @@
 # Linked List Cycle II
+
 ```
 /**
  * Definition for singly-linked list.
@@ -12,10 +13,13 @@
  * }
  */
 ```
+
 # LinkedList
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as number of ListNode
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as number of ListNode
+
 ```
 public class Solution {
     public ListNode detectCycle(ListNode head) {
@@ -30,7 +34,7 @@ public class Solution {
         }
         if(fast == null || fast.next == null){
             return null;
-        }        
+        }
         slow = head;
         while(slow != fast){
             fast = fast.next;
@@ -40,10 +44,13 @@ public class Solution {
     }
 }
 ```
+
 # Set
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of ListNode
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of ListNode
+
 ```
 public class Solution {
     public ListNode detectCycle(ListNode head) {

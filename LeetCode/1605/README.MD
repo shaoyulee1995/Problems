@@ -1,9 +1,12 @@
 # Find Valid Matrix Given Row and Column Sums
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of rowSum
-	* M as length of colSum
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of rowSum
+  - M as length of colSum
+
 ```
 class Solution {
     public int[][] restoreMatrix(int[] rowSum, int[] colSum) {

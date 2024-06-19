@@ -1,5 +1,7 @@
 # Partition Equal Subset Sum
+
 # TLE
+
 ```
 class Solution {
     public boolean canPartition(int[] nums) {
@@ -28,14 +30,17 @@ class Solution {
             j++;
         }
         return canPartition(nums, target, j);
-    } 
+    }
 }
 ```
+
 # Memorized DP
-* Time Complexity: O(NS)
-* Space Complexity: O(NS)
-	* N is the length of nums
-	* S is the sum of nums
+
+- Time Complexity: O(NS)
+- Space Complexity: O(NS)
+  - N is the length of nums
+  - S is the sum of nums
+
 ```
 class Solution {
     Boolean[][] dp;
@@ -62,16 +67,19 @@ class Solution {
         if(dp[index][sum] != null){
             return dp[index][sum];
         }
-        return dp[index][sum] = (canPartition(nums, index + 1, sum - nums[index]) || 
+        return dp[index][sum] = (canPartition(nums, index + 1, sum - nums[index]) ||
                                 canPartition(nums, index + 1, sum));
     }
 }
 ```
+
 # DP (0/1 knapsack)
-* Time Complexity: O(N*S)
-* Space Complexity: O(S)
-	* N is the length of nums
-	* S is the sum of nums
+
+- Time Complexity: O(N\*S)
+- Space Complexity: O(S)
+  - N is the length of nums
+  - S is the sum of nums
+
 ```
 class Solution {
     public boolean canPartition(int[] nums) {
@@ -94,11 +102,14 @@ class Solution {
     }
 }
 ```
+
 # DP (0/1 knapsack)
-* Time Complexity: O(NS)
-* Space Complexity: O(NS)
-	* N is the length of nums
-	* S is the sum of nums
+
+- Time Complexity: O(NS)
+- Space Complexity: O(NS)
+  - N is the length of nums
+  - S is the sum of nums
+
 ```
 class Solution {
     public boolean canPartition(int[] nums) {
@@ -112,7 +123,7 @@ class Solution {
         sum /= 2;
         int n = nums.length;
         boolean[][] dp = new boolean[n+1][sum+1];
-        
+
         for(int i = 1; i < n+1; i++){
             dp[i][0] = true;
         }

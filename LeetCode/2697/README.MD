@@ -1,8 +1,11 @@
 # Lexicographically Smallest Palindrome
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String makeSmallestPalindrome(String s) {
@@ -14,10 +17,13 @@ class Solution {
     }
 }
 ```
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String makeSmallestPalindrome(String s) {
@@ -35,10 +41,13 @@ class Solution {
     }
 }
 ```
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String makeSmallestPalindrome(String s) {

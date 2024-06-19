@@ -1,9 +1,12 @@
 # Merge Strings Alternately
+
 # String
-* Time Complexity: O(Max(N, M))
-* Space Complexity: O(N+M)
-	* N as length of word1
-	* M as length of word2
+
+- Time Complexity: O(Max(N, M))
+- Space Complexity: O(N+M)
+  - N as length of word1
+  - M as length of word2
+
 ```
 class Solution {
     public String mergeAlternately(String word1, String word2) {

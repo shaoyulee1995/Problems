@@ -1,12 +1,15 @@
 # Valid Word Abbreviation
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of abbr
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of abbr
+
 ```
 class Solution {
     public boolean validWordAbbreviation(String word, String abbr) {
-        int i = 0, 
+        int i = 0,
             j = 0;
         while(i < word.length() && j < abbr.length()){
             char w = word.charAt(i),
@@ -29,10 +32,13 @@ class Solution {
     }
 }
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of abbr
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of abbr
+
 ```
 class Solution {
     public boolean validWordAbbreviation(String word, String abbr) {

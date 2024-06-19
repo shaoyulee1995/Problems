@@ -1,8 +1,11 @@
 # Largest Perimeter Triangle
+
 # Math
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int largestPerimeter(int[] nums) {

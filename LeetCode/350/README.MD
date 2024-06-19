@@ -1,9 +1,12 @@
 # Intersection of Two Arrays II
+
 # HashMap
-* Time Complexity: O(N+M)
-* Space Complexity: O(N+M)
-	* N as length of nums1
-	* M as length of nums2
+
+- Time Complexity: O(N+M)
+- Space Complexity: O(N+M)
+  - N as length of nums1
+  - M as length of nums2
+
 ```
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
@@ -22,11 +25,14 @@ class Solution {
     }
 }
 ```
+
 # Two HashMaps
-* Time Complexity: O(N+M)
-* Space Complexity: O(N+M)
-	* N as length of nums1
-	* M as length of nums2
+
+- Time Complexity: O(N+M)
+- Space Complexity: O(N+M)
+  - N as length of nums1
+  - M as length of nums2
+
 ```
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {

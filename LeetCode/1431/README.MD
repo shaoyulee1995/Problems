@@ -1,8 +1,11 @@
 # Kids With the Greatest Number of Candies
-# Array 
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N sa length of candies
+
+# Array
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N sa length of candies
+
 ```
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {

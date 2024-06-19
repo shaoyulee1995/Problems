@@ -1,8 +1,11 @@
 # Count Pairs Whose Sum is Less than Target
+
 # Array
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(1)
-	* N as length nums
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(1)
+  - N as length nums
+
 ```
 class Solution {
     public int countPairs(List<Integer> nums, int target) {

@@ -1,8 +1,11 @@
 # Largest 3-Same-Digit Number in String
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of num
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of num
+
 ```
 class Solution {
     public String largestGoodInteger(String num) {

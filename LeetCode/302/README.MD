@@ -1,9 +1,12 @@
 # Smallest Rectangle Enclosing Black Pixels
+
 # BFS
-* Time Complexity: O(MN)
-* Space Complexity: O(MN)
-	* M as length of image
-	* N as length of image[0]
+
+- Time Complexity: O(MN)
+- Space Complexity: O(MN)
+  - M as length of image
+  - N as length of image[0]
+
 ```
 class Solution {
     public int minArea(char[][] image, int x, int y) {
@@ -18,7 +21,7 @@ class Solution {
 			int i = pos[0],
 					j = pos[1];
 			for(int k = 0; k < 4; k++){
-				int r = i + dirs[k], 
+				int r = i + dirs[k],
 					  c = j + dirs[k+1];
 				if(r < 0 || r == image.length || c < 0 || c == image[0].length){
 					continue;
@@ -34,17 +37,20 @@ class Solution {
 				image[r][c] = '2';
 			}
 		}
-		int width = bottomRight[0] - topLeft[0] + 1, 
+		int width = bottomRight[0] - topLeft[0] + 1,
 			height = bottomRight[1] - topLeft[1] + 1;
 		return width * height;
     }
 }
 ```
+
 # FP
-* Time Complexity: O(Max(MlogN, NlogM))
-* Space Complexity: O(MN)
-	* M as length of image
-	* N as length of image[0]
+
+- Time Complexity: O(Max(MlogN, NlogM))
+- Space Complexity: O(MN)
+  - M as length of image
+  - N as length of image[0]
+
 ```
 class Solution {
 	char[][] image;
@@ -64,7 +70,7 @@ class Solution {
 				i = k + 1;
 			}else{
 				j = k;
-			}   
+			}
 		}
 		return i;
 	}

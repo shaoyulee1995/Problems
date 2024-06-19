@@ -1,8 +1,11 @@
 # Decode String
-# Stack 
-* Time Complexity: O(S)
-* Space Complexity: O(S)
-	* S as length of s
+
+# Stack
+
+- Time Complexity: O(S)
+- Space Complexity: O(S)
+  - S as length of s
+
 ```
 class Solution {
     public String decodeString(String s) {
@@ -32,10 +35,13 @@ class Solution {
     }
 }
 ```
-# Recursion 
-* Time Complexity: O(S)
-* Space Complexity: O(S)
-	* S as length of s
+
+# Recursion
+
+- Time Complexity: O(S)
+- Space Complexity: O(S)
+  - S as length of s
+
 ```
 class Solution {
     public String decodeString(String s) {
@@ -45,7 +51,7 @@ class Solution {
         }
         return decodeStringByRecursion(deque);
     }
-    
+
     public String decodeStringByRecursion(Deque<Character> deque){
         StringBuilder sb = new StringBuilder();
         int k = 0;

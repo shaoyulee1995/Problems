@@ -1,7 +1,10 @@
 # Find the Town Judge
+
 # Counting Sort
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int findJudge(int N, int[][] trust) {
@@ -10,7 +13,7 @@ class Solution {
             cnt[t[0]]--;
             cnt[t[1]]++;
         }
-        
+
         for(int i = 1; i < cnt.length; i++){
             if(cnt[i] == N-1){
                 return i;

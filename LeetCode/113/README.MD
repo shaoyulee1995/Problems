@@ -1,4 +1,5 @@
 # Path Sum II
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # Tree
-* Time Complexity: O(N)
-* Space Complexity: O(log(N))
+
+- Time Complexity: O(N)
+- Space Complexity: O(log(N))
+
 ```
 class Solution {
     List<List<Integer>> list = new ArrayList();

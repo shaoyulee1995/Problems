@@ -1,8 +1,11 @@
 # Reverse Vowels of a String
+
 # 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String reverseVowels(String s) {
@@ -26,7 +29,7 @@ class Solution {
         }
         return new String(s);
     }
-    
+
     public void swap(char[] s, int i, int j){
         char tmp = s[i];
         s[i] = s[j];
@@ -34,15 +37,18 @@ class Solution {
     }
 
     public boolean isVowel(char c){
-        return c =='a' || c =='e' || c =='i' || c =='o' || c =='u' || 
+        return c =='a' || c =='e' || c =='i' || c =='o' || c =='u' ||
             c =='A' || c =='E' || c =='I' || c =='O' || c =='U';
     }
 }
 ```
+
 # 2 Pointers HashSet
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String reverseVowels(String s) {
@@ -72,9 +78,9 @@ class Solution {
                 sb.setCharAt(i, b);
                 sb.setCharAt(j, a);
                 i++;
-                j--; 
+                j--;
             }
-            
+
         }
         return sb.toString();
     }

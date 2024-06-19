@@ -1,28 +1,26 @@
 # Design Linked List
+
 # LinkedList
-* MyLinkedList: 
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* get
-	* Time Complexity: O(N)
-	* Space Complexity: O(1)
-        * N as number of nodes
-* addAtHead
-	* Time Complexity: O(N)
-	* Space Complexity: O(1)
-        * N as number of nodes
-* addAtTail
-	* Time Complexity: O(N)
-	* Space Complexity: O(1)
-        * N as number of nodes
-* addAtIndex
-	* Time Complexity: O(N)
-	* Space Complexity: O(1)
-        * N as number of nodes
-* deleteAtIndex
-	* Time Complexity: O(N)
-	* Space Complexity: O(1)
-        * N as number of nodes
+
+- MyLinkedList:
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- get
+  - Time Complexity: O(N)
+  - Space Complexity: O(1) \* N as number of nodes
+- addAtHead
+  - Time Complexity: O(N)
+  - Space Complexity: O(1) \* N as number of nodes
+- addAtTail
+  - Time Complexity: O(N)
+  - Space Complexity: O(1) \* N as number of nodes
+- addAtIndex
+  - Time Complexity: O(N)
+  - Space Complexity: O(1) \* N as number of nodes
+- deleteAtIndex
+  - Time Complexity: O(N)
+  - Space Complexity: O(1) \* N as number of nodes
+
 ```
 class MyLinkedList {
     class ListNode{
@@ -40,7 +38,7 @@ class MyLinkedList {
         head = new ListNode(0);
         size = 0;
     }
-    
+
     public int get(int index) {
         if(index < 0 || index >= size){
             return -1;
@@ -51,11 +49,11 @@ class MyLinkedList {
         }
         return node.val;
     }
-    
+
     public void addAtHead(int val) {
-        addAtIndex(0, val);    
+        addAtIndex(0, val);
     }
-    
+
     public void addAtTail(int val) {
         addAtIndex(size, val);
     }
@@ -73,7 +71,7 @@ class MyLinkedList {
         newNode.next = node.next;
         node.next = newNode;
     }
-    
+
     public void deleteAtIndex(int index) {
         if(index >= size || index < 0){
             return;

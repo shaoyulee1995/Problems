@@ -1,8 +1,11 @@
 # Flipping an Image
+
 # Matrix
-* Time Complexity: O(N^2)
-* Space Complexity: O(1)
-	* N as length of image
+
+- Time Complexity: O(N^2)
+- Space Complexity: O(1)
+  - N as length of image
+
 ```
 class Solution {
     public int[][] flipAndInvertImage(int[][] image) {

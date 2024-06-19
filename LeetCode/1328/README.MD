@@ -1,8 +1,11 @@
 # Break a Palindrome
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of palindrome
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of palindrome
+
 ```
 class Solution {
     public String breakPalindrome(String palindrome) {

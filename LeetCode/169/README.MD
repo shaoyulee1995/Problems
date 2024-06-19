@@ -1,8 +1,11 @@
 # Majority Element
+
 # Sort
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int majorityElement(int[] nums) {
@@ -11,10 +14,13 @@ class Solution {
     }
 }
 ```
+
 # Count
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int majorityElement(int[] nums) {
@@ -30,16 +36,19 @@ class Solution {
     }
 }
 ```
+
 # Divide and Conquer
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int majorityElement(int[] nums) {
         return divide(nums, 0, nums.length - 1);
     }
-    
+
     public int divide(int[] nums, int start, int end){
         if(start == end){
             return nums[start];
@@ -54,7 +63,7 @@ class Solution {
             rightCount = conquer(nums, rightResult, start, end);
         return leftCount > rightCount? leftResult: rightResult;
     }
-    
+
     public int conquer(int[] nums, int target, int start, int end){
         int cnt = 0;
         for(int i = start; i <= end; i++){

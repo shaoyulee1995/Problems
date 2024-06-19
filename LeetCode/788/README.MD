@@ -1,7 +1,10 @@
 # Rotated Digits
+
 # DP
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int rotatedDigits(int N) {

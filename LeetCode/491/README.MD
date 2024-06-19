@@ -1,8 +1,11 @@
 # Increasing Subsequences
+
 # Backtrack
-* Time Complexity: O(2<sup>N</sup>N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(2<sup>N</sup>N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     Set<List<Integer>> list = new HashSet();

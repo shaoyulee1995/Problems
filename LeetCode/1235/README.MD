@@ -1,8 +1,11 @@
 # Maximum Profit in Job Scheduling
+
 # Sort, TreeMap
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
-	* N as length of startTime
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+  - N as length of startTime
+
 ```
 class Solution {
     public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {

@@ -1,9 +1,12 @@
 # Shuffle the Array
+
 # Array
-* Time Complexity: O(n)
-* Space Complexity: O(N)
-	* N as length of nums
-	* n as the num gap
+
+- Time Complexity: O(n)
+- Space Complexity: O(N)
+  - N as length of nums
+  - n as the num gap
+
 ```
 class Solution {
     public int[] shuffle(int[] nums, int n) {

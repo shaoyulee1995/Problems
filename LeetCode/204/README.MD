@@ -1,8 +1,11 @@
 # Count Primes
+
 # Array
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-    * N as n
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public int countPrimes(int n) {

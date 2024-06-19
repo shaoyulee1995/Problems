@@ -1,7 +1,10 @@
 # Partitioning Into Minimum Number Of Deci-Binary Numbers
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int minPartitions(String n) {

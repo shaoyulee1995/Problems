@@ -1,8 +1,11 @@
 # Minimum String Length After Removing Substrings
+
 # String
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public int minLength(String s) {
@@ -17,10 +20,13 @@ class Solution {
     }
 }
 ```
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public int minLength(String s) {

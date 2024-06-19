@@ -1,8 +1,11 @@
 # Reverse Only Letters
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String reverseOnlyLetters(String s) {
@@ -19,7 +22,7 @@ class Solution {
                 sb.setCharAt(j, s.charAt(i));
                 i++;
                 j--;
-            }  
+            }
         }
         return sb.toString();
     }

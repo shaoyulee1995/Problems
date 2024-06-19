@@ -1,8 +1,11 @@
 # Jewels and Stones
+
 # Counting Array
-* Time Complexity: O(S)
-* Space Complexity: O(1)
-	* S as nodes in stones
+
+- Time Complexity: O(S)
+- Space Complexity: O(1)
+  - S as nodes in stones
+
 ```
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
@@ -18,10 +21,13 @@ class Solution {
     }
 }
 ```
+
 # Set
-* Time Complexity: O(S)
-* Space Complexity: O(S)
-	* S as nodes in stones
+
+- Time Complexity: O(S)
+- Space Complexity: O(S)
+  - S as nodes in stones
+
 ```
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
@@ -39,10 +45,13 @@ class Solution {
     }
 }
 ```
+
 # Stream
-* Time Complexity: O(S)
-* Space Complexity: O(S)
-	* S as nodes in stones
+
+- Time Complexity: O(S)
+- Space Complexity: O(S)
+  - S as nodes in stones
+
 ```
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {

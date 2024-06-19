@@ -1,8 +1,11 @@
 # Validate IP Address
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of queryIP
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of queryIP
+
 ```
 class Solution {
     public String validIPAddress(String queryIP) {
@@ -23,7 +26,7 @@ class Solution {
             if(str.length() > 1 && str.charAt(0) == '0'){
                 return false;
             }
-            try{   
+            try{
                 Integer num = Integer.parseInt(str);
                 if(num == null || num < 0 || num > 255){
                     return false;

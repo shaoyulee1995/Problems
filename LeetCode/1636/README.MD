@@ -1,9 +1,12 @@
 # Sort Array by Increasing Frequency
+
 # PriorityQueue
-* Time Complexity: O(KlogK)
-* Space Complexity: O(N)
-	* N as length of nums
-	* K as key of map
+
+- Time Complexity: O(KlogK)
+- Space Complexity: O(N)
+  - N as length of nums
+  - K as key of map
+
 ```
 class Solution {
     public int[] frequencySort(int[] nums) {

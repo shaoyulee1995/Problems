@@ -1,8 +1,11 @@
 # Contains Duplicate
+
 # Set
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums 
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public boolean containsDuplicate(int[] nums) {
@@ -17,10 +20,13 @@ class Solution {
     }
 }
 ```
+
 # Map
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums 
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public boolean containsDuplicate(int[] nums) {

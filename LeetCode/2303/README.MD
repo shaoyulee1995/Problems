@@ -1,8 +1,11 @@
 # Calculate Amount Paid in Taxes
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of brackets
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of brackets
+
 ```
 class Solution {
     public double calculateTax(int[][] brackets, int income) {
@@ -21,6 +24,6 @@ class Solution {
         }
         return tax;
     }
-    
+
 }
 ```

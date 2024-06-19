@@ -1,24 +1,26 @@
 # Classes More Than 5 Students
+
 ```
 select
     class
-from 
+from
     Courses
 group by
     1
-having 
+having
     count(*) >= 5
 ```
+
 ```
-select 
+select
     class
 from (
-    select 
-        class, 
+    select
+        class,
         count(distinct(student)) as num
-    from 
+    from
         Courses
-    group by 
+    group by
         class) as t
 where num >= 5;
 ```

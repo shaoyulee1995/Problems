@@ -1,8 +1,11 @@
 # Evaluate Reverse Polish Notation
+
 # BiFunction
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of token
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of token
+
 ```
 class Solution {
     private static Map<String, BiFunction<Integer, Integer, Integer>> OPERATIONS = new HashMap();
@@ -30,10 +33,13 @@ class Solution {
     }
 }
 ```
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of token
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of token
+
 ```
 class Solution {
     public int evalRPN(String[] tokens) {
@@ -66,18 +72,21 @@ class Solution {
     }
 }
 ```
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of token
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of token
+
 ```
 class Solution {
     public int evalRPN(String[] tokens) {
         ArrayDeque<Integer> deque = new ArrayDeque();
         for(String token: tokens){
-            if(token.equals("+") || 
-               token.equals("-") || 
-               token.equals("*") || 
+            if(token.equals("+") ||
+               token.equals("-") ||
+               token.equals("*") ||
                token.equals("/")){
                 int second = deque.removeFirst(),
                     first = deque.removeFirst();
@@ -92,7 +101,7 @@ class Solution {
                 }
             }else{
                 deque.addFirst(Integer.valueOf(token));
-            }    
+            }
         }
         return deque.peekFirst();
     }

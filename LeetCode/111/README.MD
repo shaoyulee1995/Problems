@@ -1,4 +1,5 @@
 # Minimum Depth of Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,16 +17,19 @@
  * }
  */
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public int minDepth(TreeNode root) {
         if(root == null){
             return 0;
-        }    
+        }
         Queue<TreeNode> queue = new LinkedList();
         queue.offer(root);
         for(int height = 1, size = queue.size(); !queue.isEmpty(); size = queue.size(), height++){
@@ -46,10 +50,13 @@ class Solution {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     public int minDepth(TreeNode root) {
@@ -65,9 +72,11 @@ class Solution {
 ```
 
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+
 ```
 class Solution {
     public int minDepth(TreeNode root) {

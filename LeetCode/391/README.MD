@@ -1,8 +1,11 @@
 # Perfect Rectangle
+
 # Set
-* Time Complexity: O(R)
-* Space Complexity: O(R)
-	* R as length of rectangles
+
+- Time Complexity: O(R)
+- Space Complexity: O(R)
+  - R as length of rectangles
+
 ```
 class Solution {
     public boolean isRectangleCover(int[][] rectangles) {

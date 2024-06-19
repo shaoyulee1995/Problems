@@ -1,8 +1,11 @@
 # Buddy Strings
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public boolean buddyStrings(String s, String goal) {
@@ -23,7 +26,7 @@ class Solution {
             }
         }
         return list.size() == 2 &&
-               s.charAt(list.get(1)) == goal.charAt(list.get(0)) && 
+               s.charAt(list.get(1)) == goal.charAt(list.get(0)) &&
                s.charAt(list.get(0)) == goal.charAt(list.get(1));
     }
 }

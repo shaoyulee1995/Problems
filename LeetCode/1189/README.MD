@@ -1,7 +1,10 @@
 # Maximum Number of Balloons
+
 # Counting
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int maxNumberOfBalloons(String text) {
@@ -28,7 +31,7 @@ class Solution {
             }
         }
         return Math.min(Math.min(o/2, l/2),
-                       Math.min(b,Math.min(a, n)));       
+                       Math.min(b,Math.min(a, n)));
     }
 }
 ```

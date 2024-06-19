@@ -1,9 +1,12 @@
 # Super Egg Drop
+
 # Binary Search
-* Time Complexity: O(KNlog(N))
-* Space Complexity: O(KN)
-	* K as number of eggs
-	* N as number of floors
+
+- Time Complexity: O(KNlog(N))
+- Space Complexity: O(KN)
+  - K as number of eggs
+  - N as number of floors
+
 ```
 class Solution {
     public int superEggDrop(int k, int n) {
@@ -17,7 +20,7 @@ class Solution {
         if(n <= 1){
             return n;
         }
-        
+
         if(dp[k][n] > 0){
             return dp[k][n];
         }

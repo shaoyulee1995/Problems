@@ -1,4 +1,5 @@
 # Reported Posts
+
 ```
 select
     extra as 'report_reason',

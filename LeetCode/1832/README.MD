@@ -1,8 +1,11 @@
 # Check if the Sentence Is Pangram
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of sentence
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of sentence
+
 ```
 class Solution {
     public boolean checkIfPangram(String sentence) {
@@ -19,10 +22,13 @@ class Solution {
     }
 }
 ```
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of sentence
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of sentence
+
 ```
 class Solution {
     public boolean checkIfPangram(String sentence) {

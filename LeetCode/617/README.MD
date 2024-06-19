@@ -1,4 +1,5 @@
 # Merge Two Binary Trees
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,16 +17,18 @@
  * }
  */
 ```
+
 # DFS
-* Time Complexity: O(Max(M, N))
-* Space Complexity: O(Max(M, N))
+
+- Time Complexity: O(Max(M, N))
+- Space Complexity: O(Max(M, N))
 
 ```
 class Solution {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if(root1 == null){
             return root2;
-        }       
+        }
         if(root2 == null){
             return root1;
         }
@@ -38,14 +41,16 @@ class Solution {
 ```
 
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if(root1 == null || root2 == null){
             return root1==null?root2:root1;
-        }        
+        }
         LinkedList<TreeNode> queue = new LinkedList();
         queue.add(root1);
         queue.add(root2);
@@ -59,7 +64,7 @@ class Solution {
             }else if(L.left == null){
                 L.left = R.left;
             }
-            
+
             if(L.right != null && R.right != null){
                 queue.add(L.right);
                 queue.add(R.right);

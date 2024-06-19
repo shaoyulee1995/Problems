@@ -1,4 +1,5 @@
 # Maximum Sum BST in Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     int maxSum = 0;
@@ -37,10 +41,10 @@ class Solution {
     public Result isBST(TreeNode root){
         if(root == null){
             return new Result(Integer.MAX_VALUE, Integer.MIN_VALUE, 0);
-        }  
+        }
         Result left = isBST(root.left);
         Result right = isBST(root.right);
-        
+
         if(left == null || right == null){
             return null;
         }

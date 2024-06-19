@@ -1,9 +1,12 @@
 # Relative Sort Array
+
 # TreeMap
-* Time Complexity: O(Max(N,M))
-* Space Complexity: O(N)
-	* N as length of arr1
-	* M as length of arr2
+
+- Time Complexity: O(Max(N,M))
+- Space Complexity: O(N)
+  - N as length of arr1
+  - M as length of arr2
+
 ```
 class Solution {
     public int[] relativeSortArray(int[] arr1, int[] arr2) {

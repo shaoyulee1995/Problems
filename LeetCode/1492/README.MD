@@ -1,8 +1,11 @@
 # The kth Factor of n
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as n
+
 ```
 class Solution {
     public int kthFactor(int n, int k) {
@@ -18,10 +21,13 @@ class Solution {
     }
 }
 ```
+
 # Math
-* Time Complexity: O($\sqrt{N}$)
-* Space Complexity: O($\sqrt{N}$)
-	* N as n
+
+- Time Complexity: O($\sqrt{N}$)
+- Space Complexity: O($\sqrt{N}$)
+  - N as n
+
 ```
 class Solution {
     public int kthFactor(int n, int k) {
@@ -45,10 +51,13 @@ class Solution {
     }
 }
 ```
+
 # Math
-* Time Complexity: O($\sqrt{N}$)
-* Space Complexity: O(1)
-	* N as n
+
+- Time Complexity: O($\sqrt{N}$)
+- Space Complexity: O(1)
+  - N as n
+
 ```
 class Solution {
     public int kthFactor(int n, int k) {

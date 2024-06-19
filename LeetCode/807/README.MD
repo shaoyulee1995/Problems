@@ -1,9 +1,12 @@
 # Max Increase to Keep City Skyline
+
 # 2D Array
-* Time Complexity: O(NM)
-* Space Complexity: O(Max(N,M))
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(Max(N,M))
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public int maxIncreaseKeepingSkyline(int[][] grid) {

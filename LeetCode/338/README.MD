@@ -1,7 +1,10 @@
 # Counting Bits
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int[] countBits(int n) {
@@ -16,9 +19,12 @@ class Solution {
     }
 }
 ```
+
 # Bit Operation
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int[] countBits(int n) {

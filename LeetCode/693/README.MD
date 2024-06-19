@@ -1,8 +1,11 @@
 # Binary Number with Alternating Bits
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of bits n
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of bits n
+
 ```
 class Solution {
     public boolean hasAlternatingBits(int n) {
@@ -16,10 +19,13 @@ class Solution {
     }
 }
 ```
+
 # Math
-* Time Complexity: O(log<sub>2</sub>N)
-* Space Complexity: O(1)
-	* N as n
+
+- Time Complexity: O(log<sub>2</sub>N)
+- Space Complexity: O(1)
+  - N as n
+
 ```
 class Solution {
     public boolean hasAlternatingBits(int n) {

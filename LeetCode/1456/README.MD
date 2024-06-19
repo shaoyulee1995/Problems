@@ -1,8 +1,11 @@
 # Maximum Number of Vowels in a Substring of Given Length
+
 # Sliding Windows
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public int maxVowels(String s, int k) {

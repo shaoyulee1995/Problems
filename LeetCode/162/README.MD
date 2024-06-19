@@ -1,8 +1,11 @@
 # Find Peak Element
+
 # Binary Search
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int findPeakElement(int[] nums) {

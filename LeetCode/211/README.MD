@@ -1,13 +1,19 @@
 # Design Add and Search Words Data Structure
+
 # Trie
+
 ## addWord
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of word 
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of word
+
 ## search
-* Time Complexity: O(26<sup>N</sup>)
-* Space Complexity: O(1)
-	* N as length of word
+
+- Time Complexity: O(26<sup>N</sup>)
+- Space Complexity: O(1)
+  - N as length of word
+
 ```
 class WordDictionary {
 
@@ -15,7 +21,7 @@ class WordDictionary {
     public WordDictionary() {
         root = new TrieNode();
     }
-    
+
     public void addWord(String word) {
         TrieNode node = root;
         for(char c: word.toCharArray()){
@@ -23,10 +29,10 @@ class WordDictionary {
                 node.children[c-'a'] = new TrieNode();
             }
             node = node.children[c-'a'];
-        }       
+        }
         node.isWord = true;
     }
-    
+
     public boolean search(String word) {
         TrieNode node = root;
         return dfs(word, 0, node);
@@ -47,7 +53,7 @@ class WordDictionary {
         }else{
             return node.children[c-'a'] != null && dfs(word, index+1, node.children[c-'a']);
         }
-    } 
+    }
 }
 
 class TrieNode{
@@ -58,6 +64,7 @@ class TrieNode{
     }
 }
 ```
+
 ```
 Your WordDictionary object will be instantiated and called as such:
 WordDictionary obj = new WordDictionary();

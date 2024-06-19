@@ -1,7 +1,10 @@
 # Combinations
+
 # Backtrack
-* Time Complexity: O(c(n, k)*k)
-* Space Complexity: O(k)
+
+- Time Complexity: O(c(n, k)\*k)
+- Space Complexity: O(k)
+
 ```
 class Solution {
     List<List<Integer>> res;

@@ -1,4 +1,5 @@
 # Invert Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of nodes in tree
+
 ```
 class Solution {
     public TreeNode invertTree(TreeNode root) {
@@ -34,10 +38,13 @@ class Solution {
     }
 }
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of nodes in tree
+
 ```
 class Solution {
     public TreeNode invertTree(TreeNode root) {

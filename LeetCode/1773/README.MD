@@ -1,8 +1,11 @@
 # Count Items Matching a Rule
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of items
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of items
+
 ```
 class Solution {
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
@@ -22,10 +25,13 @@ class Solution {
     }
 }
 ```
+
 # Map
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of items
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of items
+
 ```
 class Solution {
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {

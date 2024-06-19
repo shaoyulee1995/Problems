@@ -1,4 +1,5 @@
 # Patients With a Condition
+
 ```
 select *
 from Patients

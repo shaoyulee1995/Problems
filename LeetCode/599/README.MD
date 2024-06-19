@@ -1,9 +1,12 @@
 # Minimum Index Sum of Two Lists
+
 # Matrix
-* Time Complexity: O(N+M)
-* Space Complexity: O(N+M)
-	* N as length of list1
-	* M as length of list2
+
+- Time Complexity: O(N+M)
+- Space Complexity: O(N+M)
+  - N as length of list1
+  - M as length of list2
+
 ```
 class Solution {
     public String[] findRestaurant(String[] list1, String[] list2) {

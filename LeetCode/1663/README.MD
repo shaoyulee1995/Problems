@@ -1,8 +1,11 @@
 # Smallest String With A Given Numeric Value
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public String getSmallestString(int n, int k) {

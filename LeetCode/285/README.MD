@@ -1,4 +1,5 @@
 # Inorder Successor in BST
+
 ```
 Definition for a binary tree node.
 public class TreeNode {
@@ -8,10 +9,13 @@ public class TreeNode {
     TreeNode(int x) { val = x; }
 }
 ```
+
 # BFS
-* Time Complexity: O(H)
-* Space Complexity: O(1)
-	* H as height of tree
+
+- Time Complexity: O(H)
+- Space Complexity: O(1)
+  - H as height of tree
+
 ```
 class Solution {
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {

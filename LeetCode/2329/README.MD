@@ -1,4 +1,5 @@
 # Product Sales Analysis V
+
 ```
 select s.user_id, (sum(s.quantity * t.price)) as spending
 from Sales s join Product t

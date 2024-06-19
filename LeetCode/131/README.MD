@@ -1,8 +1,11 @@
 # Palindrome Partitioning
+
 # Backtrack
-* Time Complexity: O(N*2^N)
-* Space Complexity: O(N^2)
-	* N as length of s
+
+- Time Complexity: O(N\*2^N)
+- Space Complexity: O(N^2)
+  - N as length of s
+
 ```
 class Solution {
     List<List<String>> list = new ArrayList();
@@ -24,7 +27,7 @@ class Solution {
                 continue;
             }
             path.add(s.substring(index, i + 1));
-            partitions(s, i + 1);           
+            partitions(s, i + 1);
             path.removeLast();
         }
     }

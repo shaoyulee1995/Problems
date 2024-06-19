@@ -1,8 +1,11 @@
 # Car Fleet
+
 # Array
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
-    * N as length of cars
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+  - N as length of cars
+
 ```
 class Solution {
     public int carFleet(int target, int[] position, int[] speed) {

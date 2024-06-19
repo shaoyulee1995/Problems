@@ -1,7 +1,10 @@
 # Minimum Path Sum
+
 # Top-Down
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int minPathSum(int[][] grid) {
@@ -24,9 +27,12 @@ class Solution {
     }
 }
 ```
+
 # Botton-Up
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int minPathSum(int[][] grid) {
@@ -50,11 +56,14 @@ class Solution {
     }
 }
 ```
+
 # Memorization Recursion
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     int[][] dp;

@@ -1,8 +1,11 @@
 # Minimum Distance to the Target Element
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-    * N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int getMinDistance(int[] nums, int target, int start) {

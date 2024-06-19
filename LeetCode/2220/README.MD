@@ -1,9 +1,12 @@
 # Minimum Bit Flips to Convert Number
+
 # Bit
-* Time Complexity: O(Max(S, G))
-* Space Complexity: O(1)
-	* S as start
-    * G as goal
+
+- Time Complexity: O(Max(S, G))
+- Space Complexity: O(1)
+  - S as start
+    - G as goal
+
 ```
 class Solution {
     public int minBitFlips(int start, int goal) {

@@ -1,7 +1,10 @@
 # Kth Largest Element in a Stream
+
 # PriorityQueue
-* Time Complexity: O(Nlog(k))
-* Space Complexity: O(k)
+
+- Time Complexity: O(Nlog(k))
+- Space Complexity: O(k)
+
 ```
 class KthLargest {
     PriorityQueue<Integer> pq;
@@ -22,6 +25,7 @@ class KthLargest {
     }
 }
 ```
+
 ```
 /**
  * Your KthLargest object will be instantiated and called as such:

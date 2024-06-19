@@ -1,8 +1,11 @@
 # Shortest Word Distance
+
 # Array
-* Time Complexity: O(W)
-* Space Complexity: O(1)
-	* N as length of wordsDict
+
+- Time Complexity: O(W)
+- Space Complexity: O(1)
+  - N as length of wordsDict
+
 ```
 class Solution {
     public int shortestDistance(String[] wordsDict, String word1, String word2) {

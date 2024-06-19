@@ -1,8 +1,11 @@
 # Binary Prefix Divisible By 5
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public List<Boolean> prefixesDivBy5(int[] nums) {

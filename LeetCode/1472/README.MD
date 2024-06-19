@@ -1,18 +1,21 @@
 # Design Browser History
+
 # Stack
-* Space Complexity: O(N)
-	* N as length of urls
-* visit
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* back
-	* Time Complexity: O(S)
-	* Space Complexity: O(1)
-		* S as steps
-* forward
-	* Time Complexity: O(S)
-	* Space Complexity: O(1)
-		* S as steps
+
+- Space Complexity: O(N)
+  - N as length of urls
+- visit
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- back
+  - Time Complexity: O(S)
+  - Space Complexity: O(1)
+    - S as steps
+- forward
+  - Time Complexity: O(S)
+  - Space Complexity: O(1)
+    - S as steps
+
 ```
 class BrowserHistory {
     Stack<String> future,
@@ -23,12 +26,12 @@ class BrowserHistory {
         history.add(homepage);
         future.clear();
     }
-    
+
     public void visit(String url) {
         history.add(url);
         future.clear();
     }
-    
+
     public String back(int steps) {
         while(steps > 0 && history.size() > 1){
             future.add(history.pop());
@@ -36,7 +39,7 @@ class BrowserHistory {
         }
         return history.peek();
     }
-    
+
     public String forward(int steps) {
         while(steps > 0 && future.size() > 0){
             history.add(future.pop());
@@ -46,20 +49,23 @@ class BrowserHistory {
     }
 }
 ```
+
 # Array
-* Space Complexity: O(N)
-	* N as length of arr
-* visit
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-* back
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-		* S as steps
-* forward
-	* Time Complexity: O(1)
-	* Space Complexity: O(1)
-		* S as steps
+
+- Space Complexity: O(N)
+  - N as length of arr
+- visit
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+- back
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+    - S as steps
+- forward
+  - Time Complexity: O(1)
+  - Space Complexity: O(1)
+    - S as steps
+
 ```
 class BrowserHistory {
 
@@ -71,7 +77,7 @@ class BrowserHistory {
         curUrl = 0;
         lastUrl = 0;
     }
-    
+
     public void visit(String url) {
         curUrl++;
         if(arr.size() > curUrl){
@@ -81,18 +87,19 @@ class BrowserHistory {
         }
         lastUrl = curUrl;
     }
-    
+
     public String back(int steps) {
         curUrl = Math.max(0, curUrl - steps);
         return arr.get(curUrl);
     }
-    
+
     public String forward(int steps) {
         curUrl = Math.min(lastUrl, curUrl+steps);
         return arr.get(curUrl);
     }
 }
 ```
+
 ```
 /**
  * Your BrowserHistory object will be instantiated and called as such:

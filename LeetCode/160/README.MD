@@ -1,4 +1,5 @@
 # Intersection of Two Linked Lists
+
 ```
 /**
  * Definition for singly-linked list.
@@ -12,11 +13,14 @@
  * }
  */
 ```
+
 # LinkedList
-* Time Complexity: O(A+B)
-* Space Complexity: O(1)
-	* A as length of headA
-	* B as length of headB
+
+- Time Complexity: O(A+B)
+- Space Complexity: O(1)
+  - A as length of headA
+  - B as length of headB
+
 ```
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

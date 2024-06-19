@@ -1,11 +1,15 @@
 # Remove Covered Intervals
+
 # Arrays
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(1)
-	* N as length of intervals
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(1)
+  - N as length of intervals
 
 ## Java
+
 ### 2 Pointers
+
 ```
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
@@ -29,7 +33,9 @@ class Solution {
     }
 }
 ```
+
 ### 1 Pointer
+
 ```
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
@@ -39,7 +45,7 @@ class Solution {
             }
             return a[0] - b[0];
         });
-        
+
         int res = 0, right = 0;
         for(int[] interval: intervals){
             if(right < interval[1]){
@@ -53,6 +59,7 @@ class Solution {
 ```
 
 ## C++
+
 ```
 class Solution {
 public:

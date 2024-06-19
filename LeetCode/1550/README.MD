@@ -1,8 +1,11 @@
 # Three Consecutive Odds
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of arr
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of arr
+
 ```
 class Solution {
     public boolean threeConsecutiveOdds(int[] arr) {
@@ -18,10 +21,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of arr
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of arr
+
 ```
 class Solution {
     public boolean threeConsecutiveOdds(int[] arr) {

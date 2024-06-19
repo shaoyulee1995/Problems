@@ -1,8 +1,11 @@
 # Minimum Suffix Flips
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of target
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of target
+
 ```
 class Solution {
     public int minFlips(String target) {
@@ -13,7 +16,7 @@ class Solution {
                 state = c - '0';
                 res++;
             }
-        }    
+        }
         return res;
     }
 }

@@ -1,7 +1,10 @@
 # Minimum Cost to Move Chips to The Same Position
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int minCostToMoveChips(int[] position) {

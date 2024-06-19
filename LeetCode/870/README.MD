@@ -1,7 +1,10 @@
 # Advantage Shuffle
+
 # TreeMap
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int[] advantageCount(int[] nums1, int[] nums2) {
@@ -21,7 +24,7 @@ class Solution {
                 map.remove(val);
             }
         }
-        
+
         return res;
     }
 }

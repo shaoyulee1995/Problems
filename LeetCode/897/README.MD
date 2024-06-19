@@ -1,4 +1,5 @@
 # Increasing Order Search Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # In Order Traversal
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of nodes in tree
+
 ```
 class Solution {
     List<TreeNode> res;
@@ -32,7 +36,7 @@ class Solution {
             tempHead.right = new TreeNode(node.val);
             tempHead = tempHead.right;
         }
-        
+
         return dummyHead.right;
     }
     public void traverse(TreeNode node){
@@ -45,11 +49,14 @@ class Solution {
     }
 }
 ```
+
 # Tree
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as number of nodes in tree
-```	
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as number of nodes in tree
+
+```
 class Solution {
     public TreeNode increasingBST(TreeNode root) {
         return increasingBST(root, null);

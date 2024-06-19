@@ -1,8 +1,11 @@
 # Generate a String With Characters That Have Odd Counts
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public String generateTheString(int n) {

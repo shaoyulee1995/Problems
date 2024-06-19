@@ -1,7 +1,10 @@
 # N-Repeated Element in Size 2 N Array
+
 # Set
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int repeatedNTimes(int[] nums) {
@@ -19,13 +22,15 @@ class Solution {
 ```
 
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(10000)
+
+- Time Complexity: O(N)
+- Space Complexity: O(10000)
+
 ```
 class Solution {
     public int repeatedNTimes(int[] A) {
         int[] cnt = new int[10000];
-        
+
         for(int a: A){
             cnt[a]++;
             if(cnt[a] == 2){

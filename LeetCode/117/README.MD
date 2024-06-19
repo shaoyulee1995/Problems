@@ -1,4 +1,5 @@
 # Populating Next Right Pointers in Each Node II
+
 ```
 /*
 // Definition for a Node.
@@ -9,7 +10,7 @@ class Node {
     public Node next;
 
     public Node() {}
-    
+
     public Node(int _val) {
         val = _val;
     }
@@ -23,9 +24,12 @@ class Node {
 };
 */
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public Node connect(Node root) {

@@ -1,9 +1,12 @@
 # Count Prefixes of a Given String
+
 # String
-* Time Complexity: O(Ww)
-* Space Complexity: O(1)
-	* W as length of words
-	* w as the maximum length word
+
+- Time Complexity: O(Ww)
+- Space Complexity: O(1)
+  - W as length of words
+  - w as the maximum length word
+
 ```
 class Solution {
     public int countPrefixes(String[] words, String s) {

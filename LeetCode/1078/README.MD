@@ -1,8 +1,11 @@
 # Occurrences After Bigram
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of text
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of text
+
 ```
 class Solution {
     public String[] findOcurrences(String text, String first, String second) {

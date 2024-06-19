@@ -1,8 +1,11 @@
 # Apple Redistribution into Boxes
+
 # Array
-* Time Complexity: O(ClogC)
-* Space Complexity: O(1)
-    * C as lenght of capacity
+
+- Time Complexity: O(ClogC)
+- Space Complexity: O(1)
+  - C as lenght of capacity
+
 ```
 class Solution {
     public int minimumBoxes(int[] apple, int[] capacity) {

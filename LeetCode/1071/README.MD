@@ -1,8 +1,11 @@
 # Greatest Common Divisor of Strings
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of str1 and str2
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of str1 and str2
+
 ```
 class Solution {
     public String gcdOfStrings(String str1, String str2) {
@@ -17,10 +20,13 @@ class Solution {
     }
 }
 ```
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of str1 and str2
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of str1 and str2
+
 ```
 class Solution {
     public String gcdOfStrings(String str1, String str2) {

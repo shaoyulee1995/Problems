@@ -1,9 +1,13 @@
 # Fibonacci Number
+
 # Dynamic Programming
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ## Java
+
 ```
 class Solution {
     public int fib(int n) {
@@ -23,9 +27,11 @@ class Solution {
     }
 }
 ```
-* Time Complexity: O(N)
-* Space Complexity: O(2)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(2)
+  - N as n
+
 ```
 class Solution {
     public int fib(int n) {
@@ -44,7 +50,9 @@ class Solution {
     }
 }
 ```
+
 ## C++
+
 ```
 class Solution {
 public:
@@ -67,9 +75,12 @@ public:
 ```
 
 # Recursion with Memorization
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ## Java
+
 ```
 class Solution {
     public int fib(int n) {
@@ -91,7 +102,9 @@ class Solution {
     }
 }
 ```
+
 ## C++
+
 ```
 class Solution {
 public:
@@ -119,8 +132,10 @@ public:
 ```
 
 # Traveral without Memorization
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
 public:

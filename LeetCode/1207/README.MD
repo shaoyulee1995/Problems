@@ -1,8 +1,11 @@
 # Unique Number of Occurrences1
+
 # HashMap
-* Time Complexity: O(A)
-* Space Complexity: O(A)
-    * A as length of arr
+
+- Time Complexity: O(A)
+- Space Complexity: O(A)
+  - A as length of arr
+
 ```
 class Solution {
     public boolean uniqueOccurrences(int[] arr) {
@@ -20,10 +23,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(A)
-* Space Complexity: O(1)
-    * A as length of arr
+
+- Time Complexity: O(A)
+- Space Complexity: O(1)
+  - A as length of arr
+
 ```
 class Solution {
     public boolean uniqueOccurrences(int[] arr) {

@@ -1,9 +1,12 @@
 # Delete Columns to Make Sorted
+
 # String
-* Time Complexity: O(CR)
-* Space Complexity: O(1)
-	* C as length of cols
-	* R as length of rows
+
+- Time Complexity: O(CR)
+- Space Complexity: O(1)
+  - C as length of cols
+  - R as length of rows
+
 ```
 class Solution {
     public int minDeletionSize(String[] strs) {

@@ -1,4 +1,5 @@
 # Binary Tree Preorder Traversa
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,13 +17,16 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as number of TreeNode
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as number of TreeNode
+
 ```
 class Solution {
-    
+
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList();
         if(root == null){
@@ -43,9 +47,11 @@ class Solution {
 ```
 
 # Iterate
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of TreeNode
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of TreeNode
+
 ```
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {

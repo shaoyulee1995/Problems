@@ -1,7 +1,10 @@
 # Target Sum
+
 # BackTracking
-* Time Complexity: O(2^N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(2^N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     int res;
@@ -20,21 +23,24 @@ class Solution {
         target -= nums[index];
         findTargetSumWays(nums, target, index + 1);
         target += nums[index];
-        
+
         target += nums[index];
         findTargetSumWays(nums, target, index + 1);
         target -= nums[index];
     }
 }
 ```
-# Recursion Memorized 
-* Time Complexity: O(NS)
-* Space Complexity: O(NS)
-	* N is length of nums
-	* S is the sum of nums
+
+# Recursion Memorized
+
+- Time Complexity: O(NS)
+- Space Complexity: O(NS)
+  - N is length of nums
+  - S is the sum of nums
+
 ```
 class Solution {
-    
+
     HashMap<String, Integer> map;
     public int findTargetSumWays(int[] nums, int target) {
         if(nums.length == 0){
@@ -61,12 +67,14 @@ class Solution {
     }
 }
 ```
-# DP 
-* Time Complexity: O(NS)
-* Space Complexity: O(2*S + 1)
-	* N is length of nums
-	* S is the sum of nums
-	
+
+# DP
+
+- Time Complexity: O(NS)
+- Space Complexity: O(2\*S + 1)
+  - N is length of nums
+  - S is the sum of nums
+
 ```
 class Solution {
     public int findTargetSumWays(int[] nums, int target) {
@@ -93,11 +101,14 @@ class Solution {
     }
 }
 ```
-# DP 
-* Time Complexity: O(NS)
-* Space Complexity: O(S)
-	* N as length of nums
-	* S as size
+
+# DP
+
+- Time Complexity: O(NS)
+- Space Complexity: O(S)
+  - N as length of nums
+  - S as size
+
 ```
 class Solution {
     public int findTargetSumWays(int[] nums, int target) {
@@ -108,7 +119,7 @@ class Solution {
         int size = (target + sum)/ 2;
         if(Math.abs(target) > sum){
             return 0;
-        } 
+        }
         int[] dp = new int[size+1];
         dp[0] = 1;
         for(int i = 0; i < nums.length; i++){

@@ -1,4 +1,5 @@
 # Maximum Binary Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
+
 # Recursion (Cartesian tree)
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public TreeNode constructMaximumBinaryTree(int[] nums) {

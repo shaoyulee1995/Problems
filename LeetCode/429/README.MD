@@ -1,4 +1,5 @@
 # N-ary Tree Level Order Traversal
+
 ```
 /*
 // Definition for a Node.
@@ -19,10 +20,13 @@ class Node {
 };
 */
 ```
+
 # Iterate
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of Node
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of Node
+
 ```
 class Solution {
     public List<List<Integer>> levelOrder(Node root) {

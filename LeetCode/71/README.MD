@@ -1,8 +1,11 @@
 # Simplify Path
+
 # Stack
-* Time Complexity: O(P)
-* Space Complexity: O(P)
-	* P as length of path
+
+- Time Complexity: O(P)
+- Space Complexity: O(P)
+  - P as length of path
+
 ```
 class Solution {
     public String simplifyPath(String path) {

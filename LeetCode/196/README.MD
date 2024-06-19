@@ -1,4 +1,5 @@
 # Delete Duplicate Emails
+
 ```
 delete p1
 from Person p1, Person p2

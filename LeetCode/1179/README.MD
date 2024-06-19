@@ -1,6 +1,7 @@
 # Reformat Department Table
+
 ```
-select 
+select
     id,
     sum(if(month = 'Jan', revenue, NULL)) as Jan_Revenue,
     sum(if(month = 'Feb', revenue, NULL)) as Feb_Revenue,
@@ -14,7 +15,7 @@ select
     sum(if(month = 'Oct', revenue, NULL)) as Oct_Revenue,
     sum(if(month = 'Nov', revenue, NULL)) as Nov_Revenue,
     sum(if(month = 'Dec', revenue, NULL)) as Dec_Revenue
-from 
+from
     Department d
 group by 1;
 

@@ -1,9 +1,12 @@
 # Find Common Characters
+
 # Counting Array
-* Time Complexity: O(WC)
-* Space Complexity: O(W)
-	* W as length of words	
-    * C as length of word
+
+- Time Complexity: O(WC)
+- Space Complexity: O(W)
+  - W as length of words
+    - C as length of word
+
 ```
 class Solution {
     public List<String> commonChars(String[] words) {

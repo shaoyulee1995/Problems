@@ -1,12 +1,15 @@
 # Open the Lock
+
 # Regular BFS
 
 ## Java
-* Time Complexity: O(N<sup>2</sup>A<sup>N</sup>+D) 
-* Space Complexity: O(A<sup>N</sup>+D)
-	* N as length of the lock
-	* A as possible digit
-	* D as deadlock
+
+- Time Complexity: O(N<sup>2</sup>A<sup>N</sup>+D)
+- Space Complexity: O(A<sup>N</sup>+D)
+  - N as length of the lock
+  - A as possible digit
+  - D as deadlock
+
 ```
 class Solution {
     public int openLock(String[] deadends, String target) {
@@ -49,17 +52,17 @@ class Solution {
     public String plus(String s, int i){
         char[] ch = s.toCharArray();
         if(ch[i] == '9'){
-            ch[i] = '0'; 
+            ch[i] = '0';
         }else{
-            ch[i] += 1;        
+            ch[i] += 1;
         }
         return new String(ch);
     }
     public String minus(String s, int i){
         char[] ch = s.toCharArray();
         if(ch[i] == '0'){
-            ch[i] = '9';    
-        }else{        
+            ch[i] = '9';
+        }else{
             ch[i] -= 1;
         }
         return new String(ch);

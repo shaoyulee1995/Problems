@@ -1,9 +1,12 @@
 # Fair Candy Swap
+
 # Math
-* Time Complexity: O(A+B)
-* Space Complexity: O(A+B)
-	* A as length of aliceSizes
-	* B as length of bobSizes
+
+- Time Complexity: O(A+B)
+- Space Complexity: O(A+B)
+  - A as length of aliceSizes
+  - B as length of bobSizes
+
 ```
 class Solution {
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {

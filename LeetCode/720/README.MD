@@ -1,8 +1,11 @@
 # Longest Word in Dictionary
+
 # Set
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
-	* N as length of words
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as length of words
+
 ```
 class Solution {
     public String longestWord(String[] words) {

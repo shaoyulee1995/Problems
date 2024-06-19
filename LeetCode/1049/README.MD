@@ -1,9 +1,12 @@
 # Last Stone Weight II
+
 # Knapsack
-* Time Complexity: O(ST)
-* Space Complexity: O(T)
-	* S as length of stones
-	* T as sum of stones/2
+
+- Time Complexity: O(ST)
+- Space Complexity: O(T)
+  - S as length of stones
+  - T as sum of stones/2
+
 ```
 class Solution {
     public int lastStoneWeightII(int[] stones) {

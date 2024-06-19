@@ -1,4 +1,5 @@
 # Construct Binary Search Tree from Preorder Traversal
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,15 +17,18 @@
  * }
  */
 ```
+
 # preOrder
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
-	* N as length of preorder
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+  - N as length of preorder
+
 ```
 class Solution {
     public TreeNode bstFromPreorder(int[] preorder) {
         TreeNode root = new TreeNode(preorder[0]);
-        
+
         for(int i = 1; i < preorder.length; i++){
             setNode(root, preorder[i]);
         }

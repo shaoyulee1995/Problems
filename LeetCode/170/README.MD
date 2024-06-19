@@ -1,27 +1,32 @@
 # Two Sum III - Data structure design
+
 # HashMap
-* Space Complexity: O(N)
-    * N as added elements
+
+- Space Complexity: O(N)
+  - N as added elements
 
 ## add
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
 
 ## find
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as added elements
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as added elements
+
 ```
 class TwoSum {
     HashMap<Integer, Integer> map;
     public TwoSum() {
         map = new HashMap();
     }
-    
+
     public void add(int number) {
         map.put(number, map.getOrDefault(number, 0) + 1);
     }
-    
+
     public boolean find(int value) {
         Iterator<Integer> it = map.keySet().iterator();
         while(it.hasNext()){
@@ -36,7 +41,7 @@ class TwoSum {
                     return true;
                 }
             }
-        }    
+        }
         return false;
     }
 }

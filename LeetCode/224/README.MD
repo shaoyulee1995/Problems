@@ -1,8 +1,11 @@
 # Basic Calculator
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     int i = 0;

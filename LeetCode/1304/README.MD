@@ -1,8 +1,11 @@
 # Find N Unique Integers Sum up to Zero
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public int[] sumZero(int n) {

@@ -47,8 +47,8 @@ class Solution {
 
 - Time Complexity: O(N)
 - Space Complexity: O(H)
-    - N as nodes in tree
-    - H as height of tree
+  - N as nodes in tree
+  - H as height of tree
 
 ```java
 class Solution {

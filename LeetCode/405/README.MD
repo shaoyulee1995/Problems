@@ -1,8 +1,11 @@
 # Convert a Number to Hexadecimal
+
 # Bits
-* Time Complexity: O(log4(N))
-* Space Complexity: O(log4(N))
-	* N as length of num
+
+- Time Complexity: O(log4(N))
+- Space Complexity: O(log4(N))
+  - N as length of num
+
 ```
 class Solution {
     char[] map = {'0','1', '2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
@@ -17,6 +20,6 @@ class Solution {
         }
         return res;
     }
-   
+
 }
 ```

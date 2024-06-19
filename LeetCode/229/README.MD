@@ -1,13 +1,16 @@
 # Majority Element II
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
         List<Integer> ans = new ArrayList();
-        Integer x = null, 
+        Integer x = null,
                 y = null,
                 xCount = 0,
                 yCount = 0;

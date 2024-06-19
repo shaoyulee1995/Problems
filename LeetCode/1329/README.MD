@@ -1,9 +1,12 @@
 # Sort the Matrix Diagonally
+
 # HashMap with PriorityQueue
-* Time Complexity: O(MNlog(Min(M,N)))
-* Space Complexity: O(MN)
-	* M as mat.length
-	* N as mat[0].length	
+
+- Time Complexity: O(MNlog(Min(M,N)))
+- Space Complexity: O(MN)
+  - M as mat.length
+  - N as mat[0].length
+
 ```
 class Solution {
     public int[][] diagonalSort(int[][] mat) {
@@ -22,12 +25,15 @@ class Solution {
     }
 }
 ```
+
 # Matrix
-* Time Complexity: O(Max(MD, ND))
-* Space Complexity: O(1)
-	* M as mat.length
-	* N as mat[0].length
-	* D as diagonal of matrix
+
+- Time Complexity: O(Max(MD, ND))
+- Space Complexity: O(1)
+  - M as mat.length
+  - N as mat[0].length
+  - D as diagonal of matrix
+
 ```
 class Solution {
     public int[][] diagonalSort(int[][] mat) {

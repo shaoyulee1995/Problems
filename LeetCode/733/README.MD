@@ -1,9 +1,12 @@
 # Flood Fill
+
 # BFS
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of image
-	* M as length of image[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of image
+  - M as length of image[0]
+
 ```
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
@@ -50,11 +53,14 @@ class Solution {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as length of image
-	* M as length of image[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of image
+  - M as length of image[0]
+
 ```
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {

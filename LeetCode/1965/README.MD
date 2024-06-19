@@ -1,14 +1,15 @@
 # Employees With Missing Information
+
 ```
-select 
+select
     employee_id
 from Employees
 where employee_id not in (
-    select 
+    select
         employee_id
     from Salaries)
 union
-select 
+select
     employee_id
 from Salaries
 where employee_id not in (

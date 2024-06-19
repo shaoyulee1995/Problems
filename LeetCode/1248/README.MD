@@ -1,8 +1,11 @@
 # Count Number of Nice Subarrays
+
 # Sliding Windows
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int numberOfSubarrays(int[] nums, int k) {

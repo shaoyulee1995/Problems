@@ -1,4 +1,5 @@
 # Populating Next Right Pointers in Each Node
+
 ```
 /*
 // Definition for a Node.
@@ -9,7 +10,7 @@ class Node {
     public Node next;
 
     public Node() {}
-    
+
     public Node(int _val) {
         val = _val;
     }
@@ -23,9 +24,12 @@ class Node {
 };
 */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public Node connect(Node root) {
@@ -40,17 +44,20 @@ class Solution {
             return;
         }
         node1.next = node2;
-        
+
         connect(node1.left, node1.right);
         connect(node2.left, node2.right);
         connect(node1.right, node2.left);
     }
 }
 ```
+
 # Iterate
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as number of TreeNode
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as number of TreeNode
+
 ```
 class Solution {
     public Node connect(Node root) {

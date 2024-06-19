@@ -1,9 +1,12 @@
 # Unique Paths III
+
 # DFS
-* Time Complexity: O(4<sup>MN</sup>)
-* Space Complexity: O(1)
-	* M as length of grid
-    * N as length of grid[0]
+
+- Time Complexity: O(4<sup>MN</sup>)
+- Space Complexity: O(1)
+  - M as length of grid
+    - N as length of grid[0]
+
 ```
 class Solution {
     int empty, res;
@@ -49,6 +52,6 @@ class Solution {
         }
         grid[x][y] = temp;
         empty++;
-    } 
+    }
 }
 ```

@@ -1,8 +1,11 @@
 # Construct the Rectangle
+
 # Math
-* Time Complexity: O(A)
-* Space Complexity: O(1)
-    * A as length of area
+
+- Time Complexity: O(A)
+- Space Complexity: O(1)
+  - A as length of area
+
 ```
 class Solution {
     public int[] constructRectangle(int area) {
@@ -20,10 +23,13 @@ class Solution {
     }
 }
 ```
+
 # Math
-* Time Complexity: O(A)
-* Space Complexity: O(1)
-    * A as length of area
+
+- Time Complexity: O(A)
+- Space Complexity: O(1)
+  - A as length of area
+
 ```
 class Solution {
     public int[] constructRectangle(int area) {

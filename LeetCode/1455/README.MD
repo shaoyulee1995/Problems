@@ -1,8 +1,11 @@
 # Check If a Word Occurs As a Prefix of Any Word in a Sentence
+
 # String
-* Time Complexity: O(NW)
-* Space Complexity: O(N)
-	* N as length of sentence
+
+- Time Complexity: O(NW)
+- Space Complexity: O(N)
+  - N as length of sentence
+
 ```
 class Solution {
     public int isPrefixOfWord(String sentence, String searchWord) {

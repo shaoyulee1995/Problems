@@ -1,9 +1,12 @@
 # Largest Local Values in a Matrix
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     public int[][] largestLocal(int[][] grid) {

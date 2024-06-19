@@ -1,8 +1,11 @@
 # Array of Doubled Pairs
+
 # PriorityQueue
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
-	* N as length of arr
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+  - N as length of arr
+
 ```
 class Solution {
     public boolean canReorderDoubled(int[] arr) {
@@ -12,7 +15,7 @@ class Solution {
         for(int num: arr){
             pq.add(num);
         }
-        
+
         while(!pq.isEmpty()){
             int num = pq.poll();
             if(!pq.remove(2*num)){
@@ -23,11 +26,14 @@ class Solution {
     }
 }
 ```
+
 # HashMap
-* Time Complexity: O(Nlog(K))
-* Space Complexity: O(N)
-	* K as different number of arr
-	* N as length of arr
+
+- Time Complexity: O(Nlog(K))
+- Space Complexity: O(N)
+  - K as different number of arr
+  - N as length of arr
+
 ```
 class Solution {
     public boolean canReorderDoubled(int[] arr) {

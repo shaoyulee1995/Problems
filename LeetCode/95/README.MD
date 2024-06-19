@@ -1,4 +1,5 @@
 # Unique Binary Search Trees II
+
 ```
 /**
  * Definition for a binary tree node.
@@ -18,13 +19,15 @@
 ```
 
 # Recursion
-* Time Complexity: O((4^n)/(n^(1/2))
-* Space Complexity: O((4^n)/(n^(1/2))
+
+- Time Complexity: O((4^n)/(n^(1/2))
+- Space Complexity: O((4^n)/(n^(1/2))
+
 ```
 class Solution {
     public List<TreeNode> generateTrees(int n) {
         if(n == 0){
-            return new ArrayList(); 
+            return new ArrayList();
         }
         return generateTrees(1, n);
     }

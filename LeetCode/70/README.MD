@@ -1,8 +1,11 @@
 # Climbing Stairs
+
 # Dynamic Programming
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public int climbStairs(int n) {
@@ -20,10 +23,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-    * N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as n
+
 ```
 class Solution {
     public int climbStairs(int n) {

@@ -1,8 +1,11 @@
 # Daily Temperatures
+
 # Monotonic Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of list
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of list
+
 ```
 class Solution {
     public int[] dailyTemperatures(int[] list) {

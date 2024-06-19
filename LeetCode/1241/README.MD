@@ -1,4 +1,5 @@
 # Number of Comments per Post
+
 ```
 select
     s1.sub_id as 'post_id',
@@ -10,6 +11,6 @@ where
     s1.parent_id is NULL
 group by
     1
-order by 
+order by
     1
 ```

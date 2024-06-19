@@ -1,8 +1,11 @@
 # Sort the Students by Their Kth Score
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-	* N as length of score
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of score
+
 ```
 class Solution {
     public int[][] sortTheStudents(int[][] score, int k) {
@@ -11,11 +14,14 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(NM)
-	* N as length of score
-    * M as length of score[0]
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(NM)
+  - N as length of score
+    - M as length of score[0]
+
 ```
 class Solution {
     public int[][] sortTheStudents(int[][] score, int k) {

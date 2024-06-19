@@ -1,8 +1,11 @@
 # N-th Tribonacci Number
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of n
+
 ```
 class Solution {
     public int tribonacci(int n) {
@@ -17,7 +20,7 @@ class Solution {
             res = a + b + c;
             a = b;
             b = c;
-            c = res;            
+            c = res;
         }
         return res;
     }

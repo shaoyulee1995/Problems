@@ -1,8 +1,11 @@
 # Gas Station
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of gas
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of gas
+
 ```
 class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {

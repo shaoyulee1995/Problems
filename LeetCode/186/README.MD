@@ -1,13 +1,16 @@
 # Reverse Words in a String II
+
 # 2 Pointers
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public void reverseWords(char[] s) {
         reverse(s, 0, s.length-1);
-        int i = 0, 
+        int i = 0,
             j = 0;
         while(i < s.length && j < s.length){
             while(i < s.length && s[i] == ' '){

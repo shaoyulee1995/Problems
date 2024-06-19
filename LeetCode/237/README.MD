@@ -1,4 +1,5 @@
 # Delete Node in a Linked List
+
 ```
 /**
  * Definition for singly-linked list.
@@ -9,10 +10,13 @@
  * }
  */
 ```
+
 # LinkedList
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N length of linkedlist
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N length of linkedlist
+
 ```
 class Solution {
     public void deleteNode(ListNode node) {

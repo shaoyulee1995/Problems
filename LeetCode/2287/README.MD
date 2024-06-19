@@ -1,9 +1,12 @@
 # Rearrange Characters to Make Target String
+
 # Counting Array
-* Time Complexity: O(Min(S, T))
-* Space Complexity: O(26)
-	* S as length of s
-	* T as length of target
+
+- Time Complexity: O(Min(S, T))
+- Space Complexity: O(26)
+  - S as length of s
+  - T as length of target
+
 ```
 class Solution {
     public int rearrangeCharacters(String s, String target) {

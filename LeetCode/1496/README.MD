@@ -1,8 +1,11 @@
 # Path Crossing
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of path
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of path
+
 ```
 class Solution {
     public boolean isPathCrossing(String path) {

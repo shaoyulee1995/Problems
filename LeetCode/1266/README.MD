@@ -1,8 +1,11 @@
 # Minimum Time Visiting All Points
+
 # Math
-* Time Complexity: O(P)
-* Space Complexity: O(1)
-    * N as length of points
+
+- Time Complexity: O(P)
+- Space Complexity: O(1)
+  - N as length of points
+
 ```
 class Solution {
     public int minTimeToVisitAllPoints(int[][] points) {

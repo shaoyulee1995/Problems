@@ -1,8 +1,11 @@
 # Number of Employees Who Met the Target
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of hours
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of hours
+
 ```
 class Solution {
     public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {
@@ -14,6 +17,7 @@ class Solution {
     }
 }
 ```
+
 ```
 class Solution {
     public int numberOfEmployeesWhoMetTarget(int[] hours, int target) {

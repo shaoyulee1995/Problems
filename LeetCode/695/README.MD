@@ -1,9 +1,12 @@
 # Max Area of Island
+
 # DFS
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     int maxArea = 0;
@@ -37,11 +40,14 @@ class Solution {
     }
 }
 ```
+
 # DFS for loop check
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as length of grid
-	* M as length of grid[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of grid
+  - M as length of grid[0]
+
 ```
 class Solution {
     int maxArea = 0;

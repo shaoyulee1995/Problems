@@ -1,9 +1,12 @@
 # Image Smoother
+
 # Matrix
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of img
-    * M as length of img[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of img
+    - M as length of img[0]
+
 ```
 class Solution {
     public int[][] imageSmoother(int[][] img) {

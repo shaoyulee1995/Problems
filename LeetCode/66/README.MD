@@ -1,8 +1,11 @@
 # Plus One
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of digits
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of digits
+
 ```
 class Solution {
     public int[] plusOne(int[] digits) {

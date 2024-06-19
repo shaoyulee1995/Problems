@@ -1,13 +1,16 @@
 # Cut Off Trees for Golf Event
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
     public int cutOffTree(List<List<Integer>> forest) {
-        PriorityQueue<int[]> paths = traverse(forest);    
+        PriorityQueue<int[]> paths = traverse(forest);
         return getMinimumStep(paths, forest);
     }
 
@@ -25,7 +28,7 @@ class Solution {
             lastPosition = node;
         }
         return totalSteps;
-        
+
     }
 
     public int bfs(PriorityQueue<int[]> paths, List<List<Integer>> forest, int[] srcNode, int[] destNode){

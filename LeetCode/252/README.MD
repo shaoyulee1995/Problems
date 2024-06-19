@@ -1,8 +1,11 @@
 # Meeting Rooms
+
 # Array
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(1)
-	* N as length of intervals
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(1)
+  - N as length of intervals
+
 ```
 class Solution {
     public boolean canAttendMeetings(int[][] intervals) {

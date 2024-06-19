@@ -1,4 +1,5 @@
 # Maximum Depth of N-ary Tree
+
 ```
 /*
 // Definition for a Node.
@@ -19,9 +20,12 @@ class Node {
 };
 */
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int maxDepth(Node root) {
@@ -44,9 +48,12 @@ class Solution {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int maxDepth(Node root) {

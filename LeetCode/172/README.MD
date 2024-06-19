@@ -1,8 +1,11 @@
 # Factorial Trailing Zeroes
+
 # Log
-* Time Complexity: O(logN)
-* Space Complexity: O(1)
-	* N as n
+
+- Time Complexity: O(logN)
+- Space Complexity: O(1)
+  - N as n
+
 ```
 class Solution {
     public int trailingZeroes(int n) {

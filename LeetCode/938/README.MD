@@ -1,4 +1,5 @@
 # Range Sum of BST
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,29 +17,35 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int rangeSumBST(TreeNode root, int low, int high) {
         if(root == null){
             return 0;
-        }    
+        }
         if(root.val < low){
             return rangeSumBST(root.right, low, high);
         }
         if(root.val > high){
             return rangeSumBST(root.left, low, high);
         }
-        return root.val + rangeSumBST(root.left, low, high) + 
+        return root.val + rangeSumBST(root.left, low, high) +
                           rangeSumBST(root.right, low, high);
     }
 }
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int rangeSumBST(TreeNode root, int low, int high) {

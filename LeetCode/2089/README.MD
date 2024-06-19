@@ -1,8 +1,11 @@
 # Find Target Indices After Sorting Array
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
-    * N as length of nums
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public List<Integer> targetIndices(int[] nums, int target) {

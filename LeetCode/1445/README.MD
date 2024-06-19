@@ -1,4 +1,5 @@
 # Apples & Oranges
+
 ```
 select
     a.sale_date,
@@ -10,8 +11,8 @@ where
     a.fruit in ('apples') and
     b.fruit in ('oranges') and
     a.sale_date = b.sale_date
-group by 
+group by
     1
-order by 
+order by
     1
 ```

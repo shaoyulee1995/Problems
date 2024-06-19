@@ -1,7 +1,10 @@
 # Burst Balloons
+
 # 2DP
-* Time Complexity: O(NN)
-* Space Complexity: O(NN)
+
+- Time Complexity: O(NN)
+- Space Complexity: O(NN)
+
 ```
 class Solution {
     public int maxCoins(int[] nums) {
@@ -18,14 +21,14 @@ class Solution {
         }
         int max = nums[start];
         for(int i = start; i <= end; i++){
-            int val = maxCoins(nums, dp,  start, i-1) + 
-                      get(nums, start-1) * get(nums, i) * get(nums, end+1) + 
+            int val = maxCoins(nums, dp,  start, i-1) +
+                      get(nums, start-1) * get(nums, i) * get(nums, end+1) +
                       maxCoins(nums, dp, i+1, end);
             max = Math.max(max, val);
         }
         dp[start][end] = max;
         return max;
-        
+
     }
     public int get(int[] nums, int i){
         if(i < 0 || i == nums.length){

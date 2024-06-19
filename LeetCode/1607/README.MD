@@ -1,6 +1,7 @@
 # Sellers With No Sales
+
 ```
-select 
+select
     s.seller_name
 from
     Seller s left join Orders o

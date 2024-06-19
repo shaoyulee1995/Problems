@@ -1,8 +1,11 @@
 # Kth Missing Positive Number
+
 # Math
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of arr
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of arr
+
 ```
 class Solution {
     public int findKthPositive(int[] arr, int k) {

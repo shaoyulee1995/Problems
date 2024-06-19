@@ -1,8 +1,11 @@
 # Find the Winner of the Circular Game
+
 # Queue
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nums from 1 to n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nums from 1 to n
+
 ```
 class Solution {
     public int findTheWinner(int n, int k) {

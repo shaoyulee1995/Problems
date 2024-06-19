@@ -1,8 +1,11 @@
 # Most Stones Removed with Same Row or Column
+
 # Union Find
-* Time Complexity: O(N<sup>2</sup>log(N))
-* Space Complexity: O(N)
-	* N as length of stones
+
+- Time Complexity: O(N<sup>2</sup>log(N))
+- Space Complexity: O(N)
+  - N as length of stones
+
 ```
 class Solution {
     public int removeStones(int[][] stones) {
@@ -41,7 +44,7 @@ class UF{
     public int find(int root){
         while(nodes[root] != root){
             nodes[root] = nodes[nodes[root]];
-            root = nodes[root];    
+            root = nodes[root];
         }
         return root;
     }

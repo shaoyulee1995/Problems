@@ -1,4 +1,5 @@
 # Construct Binary Tree from Inorder and Postorder Traversal
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
@@ -41,18 +45,21 @@ class Solution {
         }
         int leftSize = index - inStart;
         TreeNode root = new TreeNode(rootVal);
-        root.left = buildTree(inorder, inStart, index - 1, 
+        root.left = buildTree(inorder, inStart, index - 1,
                               postorder, postStart, postStart + leftSize - 1);
-        root.right = buildTree(inorder, index + 1, inEnd, 
+        root.right = buildTree(inorder, index + 1, inEnd,
                                postorder, postStart + leftSize, postEnd - 1);
         return root;
     }
 }
 ```
+
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     Map<Integer, Integer> map;
@@ -80,4 +87,4 @@ class Solution {
         return root;
     }
 }
-````
+```

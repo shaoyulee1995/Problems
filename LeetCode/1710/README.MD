@@ -1,8 +1,11 @@
 # Maximum Units on a Truck
+
 # Array
-* Time Complexity: O(NlogN)
-* Space Complexity: O(1)
-	* N as length of boxTypes
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(1)
+  - N as length of boxTypes
+
 ```
 class Solution {
     public int maximumUnits(int[][] boxTypes, int truckSize) {

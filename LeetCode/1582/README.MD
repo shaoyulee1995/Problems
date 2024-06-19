@@ -1,9 +1,12 @@
 # Special Positions in a Binary Matrix
+
 # BF
-* Time Complexity: O(NM*max(N,M))
-* Space Complexity: O(1)
-	* N as length of mat
-	* M as length of mat[0]
+
+- Time Complexity: O(NM\*max(N,M))
+- Space Complexity: O(1)
+  - N as length of mat
+  - M as length of mat[0]
+
 ```
 class Solution {
     public int numSpecial(int[][] mat) {
@@ -41,11 +44,14 @@ class Solution {
     }
 }
 ```
+
 # Counting Array
-* Time Complexity: O(NM)
-* Space Complexity: O(1)
-	* N as length of mat
-	* M as length of mat[0]
+
+- Time Complexity: O(NM)
+- Space Complexity: O(1)
+  - N as length of mat
+  - M as length of mat[0]
+
 ```
 class Solution {
     public int numSpecial(int[][] mat) {

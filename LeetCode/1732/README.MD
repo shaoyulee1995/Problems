@@ -1,8 +1,11 @@
 # Find the Highest Altitude
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of gain
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of gain
+
 ```
 class Solution {
     public int largestAltitude(int[] gain) {

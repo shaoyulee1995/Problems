@@ -1,6 +1,7 @@
 # Guess Number Higher or Lower
+
 ```
-/** 
+/**
  * Forward declaration of guess API.
  * @param  num   your guess
  * @return 	     -1 if num is lower than the guess number
@@ -9,10 +10,13 @@
  * int guess(int num);
  */
 ```
+
 # Binary Search
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as n
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as n
+
 ```
 public class Solution extends GuessGame {
     public int guessNumber(int n) {

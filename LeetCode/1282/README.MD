@@ -1,8 +1,11 @@
 # Group the People Given the Group Size They Belong To
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of groupSizes
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of groupSizes
+
 ```
 class Solution {
     public List<List<Integer>> groupThePeople(int[] groupSizes) {
@@ -16,12 +19,12 @@ class Solution {
             }
             temp.add(i);
             map.put(val, temp);
-            
+
             if(val == temp.size()){
                 ans.add(temp);
                 map.remove(val);
             }
-            
+
         }
         return ans;
     }

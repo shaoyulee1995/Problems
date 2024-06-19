@@ -1,8 +1,11 @@
 # Number Complement
+
 # Bit Manipulation
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of num in bits
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of num in bits
+
 ```
 class Solution {
 public:

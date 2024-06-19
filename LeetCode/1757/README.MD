@@ -1,4 +1,5 @@
 # Recyclable and Low Fat Products
+
 ```
 select
     product_id

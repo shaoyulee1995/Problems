@@ -1,8 +1,11 @@
 # Largest Number After Digit Swaps by Parity
+
 # String
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-	* N as length of num
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of num
+
 ```
 class Solution {
     public int largestInteger(int num) {

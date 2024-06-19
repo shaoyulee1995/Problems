@@ -1,8 +1,11 @@
 # Number of Equivalent Domino Pairs
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of dominoes
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of dominoes
+
 ```
 class Solution {
     public int numEquivDominoPairs(int[][] dominoes) {
@@ -13,7 +16,7 @@ class Solution {
             map.put(k, map.getOrDefault(k, 0) + 1);
         }
         for(int v: map.values()){
-            res += v*(v-1)/2; 
+            res += v*(v-1)/2;
         }
         return res;
     }

@@ -1,9 +1,12 @@
 # Verifying an Alien Dictionary
+
 # Counting Array
-* Time Complexity: O(W*MAX(w)
-* Space Complexity: O(W)
-	* W as length of words
-	* w as longest word in words
+
+- Time Complexity: O(W\*MAX(w)
+- Space Complexity: O(W)
+  - W as length of words
+  - w as longest word in words
+
 ```
 class Solution {
     int[] pattern;
@@ -11,7 +14,7 @@ class Solution {
         pattern = new int[order.length()];
         for(int i = 0; i < order.length(); i++){
             pattern[order.charAt(i)-'a'] = i;
-        }   
+        }
         for(int i = 1; i < words.length; i++){
             if(notValid(words[i-1], words[i])){
                 return false;

@@ -1,19 +1,22 @@
 # Data Stream as Disjoint Intervals
+
 # TreeSet
-* Time Complexity:
-	* addNum: O(logN)
-	* getIntervals: O(N)
-* Space Complexity:
-	* addNum: O(1)
-	* getIntervals: O(N)
-		* N as length of intervals
+
+- Time Complexity:
+  - addNum: O(logN)
+  - getIntervals: O(N)
+- Space Complexity:
+  - addNum: O(1)
+  - getIntervals: O(N)
+    - N as length of intervals
+
 ```
 class SummaryRanges {
     TreeSet<int[]> set;
     public SummaryRanges() {
         set = new TreeSet<int[]>((a,b) -> (a[0] == b[0])? a[1] - b[1]: a[0] - b[0]);
     }
-    
+
     public void addNum(int val) {
         int[] interval = new int[]{val, val};
         if(set.contains(interval)){
@@ -34,7 +37,7 @@ class SummaryRanges {
             set.add(interval);
         }
     }
-    
+
     public int[][] getIntervals() {
         List<int[]> res = new ArrayList();
         for(int[] m: set){
@@ -44,6 +47,7 @@ class SummaryRanges {
     }
 }
 ```
+
 ```
 /**
  * Your SummaryRanges object will be instantiated and called as such:

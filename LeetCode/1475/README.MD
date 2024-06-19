@@ -1,8 +1,11 @@
 # Final Prices With a Special Discount in a Shop
+
 # Two Pointers
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(1)
-	* N as length of prices
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(1)
+  - N as length of prices
+
 ```
 class Solution {
     public int[] finalPrices(int[] prices) {
@@ -18,10 +21,13 @@ class Solution {
     }
 }
 ```
+
 # Stack
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-	* N as length of prices
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of prices
+
 ```
 class Solution {
     public int[] finalPrices(int[] prices) {

@@ -1,4 +1,5 @@
 # Reverse Linked List II
+
 ```
 /**
  * Definition for singly-linked list.
@@ -11,10 +12,13 @@
  * }
  */
 ```
-# Recursion 
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of linkedlist
+
+# Recursion
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of linkedlist
+
 ```
 class Solution {
     ListNode successor = null;

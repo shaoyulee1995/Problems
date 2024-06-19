@@ -1,9 +1,12 @@
 # Flower Planting With No Adjacent
+
 # HashMap
-* Time Complexity: O(NP)
-* Space Complexity: O(P)
-	* P as length of paths
-	* N as n
+
+- Time Complexity: O(NP)
+- Space Complexity: O(P)
+  - P as length of paths
+  - N as n
+
 ```
 class Solution {
     public int[] gardenNoAdj(int n, int[][] paths) {

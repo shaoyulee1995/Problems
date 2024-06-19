@@ -1,12 +1,15 @@
 # Day of the Week
+
 # Math
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public String dayOfTheWeek(int day, int month, int year) {
         String[] names = {"Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"};
-        int givenDay = getDay(day, month, year); 
+        int givenDay = getDay(day, month, year);
         int currentDay = getDay(18,2,2022);
         int diff = Math.abs(givenDay-currentDay) % 7;
         if(diff == 0){

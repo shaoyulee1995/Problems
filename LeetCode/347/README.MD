@@ -1,8 +1,11 @@
 # Top K Frequent Elements
+
 # Bucket Sort
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {

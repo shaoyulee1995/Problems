@@ -1,4 +1,5 @@
 # Linked List Random Node
+
 ```
 Definition for singly-linked list.
 public class ListNode {
@@ -9,10 +10,13 @@ public class ListNode {
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
 ```
+
 # ArrayList
-* Time Complexity: O(1)
-* Space Complexity: O(N)
-	* N as nodes
+
+- Time Complexity: O(1)
+- Space Complexity: O(N)
+  - N as nodes
+
 ```
 class Solution {
     ListNode head;
@@ -22,7 +26,7 @@ class Solution {
         this.head = head;
         rand = new Random();
     }
-    
+
     public int getRandom() {
         int count = 0;
         ListNode candidate = head;
@@ -36,6 +40,7 @@ class Solution {
     }
 }
 ```
+
 ```
 Your Solution object will be instantiated and called as such:
 Solution obj = new Solution(head);

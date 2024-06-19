@@ -1,7 +1,10 @@
 # Decode XORed Array
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int[] decode(int[] encoded, int first) {

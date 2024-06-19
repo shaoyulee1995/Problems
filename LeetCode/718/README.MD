@@ -1,9 +1,12 @@
 # Maximum Length of Repeated Subarray
+
 # 2DP
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
-	* N as length of nums1
-	* N as length of nums2
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+  - N as length of nums1
+  - N as length of nums2
+
 ```
 class Solution {
     public int findLength(int[] nums1, int[] nums2) {
@@ -21,11 +24,14 @@ class Solution {
     }
 }
 ```
+
 # 1DP
-* Time Complexity: O(NM)
-* Space Complexity: O(N)
-	* N as length of nums1
-	* N as length of nums2
+
+- Time Complexity: O(NM)
+- Space Complexity: O(N)
+  - N as length of nums1
+  - N as length of nums2
+
 ```
 class Solution {
     public int findLength(int[] nums1, int[] nums2) {

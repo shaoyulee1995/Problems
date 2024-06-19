@@ -1,4 +1,5 @@
 # All Elements in Two Binary Search Trees
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,12 +17,15 @@
  * }
  */
 ```
+
 # DFS
-* Time Complexity: O(ClogC)
-* Space Complexity: O(C)
-	* N as number of nodes in root1 tree
-	* M as number of nodes in root2 tree
-	* C as N + M
+
+- Time Complexity: O(ClogC)
+- Space Complexity: O(C)
+  - N as number of nodes in root1 tree
+  - M as number of nodes in root2 tree
+  - C as N + M
+
 ```
 class Solution {
     List<Integer> list = new ArrayList();
@@ -41,11 +45,14 @@ class Solution {
     }
 }
 ```
+
 # Iterative
-* Time Complexity: O(MAX(N, M))
-* Space Complexity: O(MAX(N, M))
-	* N as number of nodes in root1 tree
-	* M as number of nodes in root2 tree
+
+- Time Complexity: O(MAX(N, M))
+- Space Complexity: O(MAX(N, M))
+  - N as number of nodes in root1 tree
+  - M as number of nodes in root2 tree
+
 ```
 class Solution {
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {

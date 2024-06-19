@@ -1,8 +1,11 @@
 # Fizz Buzz
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of n
+
 ```
 class Solution {
     private static final String FIZZ = "Fizz";

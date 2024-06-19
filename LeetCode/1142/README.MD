@@ -1,4 +1,5 @@
 # User Activity for the Past 30 Days II
+
 ```
 select ifnull(round(count(distinct session_id)/
                     count(distinct user_id)

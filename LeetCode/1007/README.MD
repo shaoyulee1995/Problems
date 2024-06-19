@@ -1,8 +1,11 @@
 # Minimum Domino Rotations For Equal Row
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of tops
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of tops
+
 ```
 class Solution {
     public int minDominoRotations(int[] tops, int[] bottoms) {
@@ -17,13 +20,13 @@ class Solution {
                 same[tops[i]]++;
             }
         }
-        
+
         for(int i = 1; i < 7; i++){
             if(cntT[i] + cntB[i] - same[i] == n){
                 return n - Math.max(cntT[i], cntB[i]);
             }
         }
-        
+
         return -1;
     }
 }

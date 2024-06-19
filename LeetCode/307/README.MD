@@ -1,20 +1,23 @@
 # Range Sum Query - Mutable
+
 # Segment Tree
-* Space Complexity: O(N)
-	* N as length of nums
-* buildTree
-	* Time Complexity: O(N)
-* update
-	* Time Complexity: O(log(N))
-* sumRange
-	* Time Complexity: O(log(N))
+
+- Space Complexity: O(N)
+  - N as length of nums
+- buildTree
+  - Time Complexity: O(N)
+- update
+  - Time Complexity: O(log(N))
+- sumRange
+  - Time Complexity: O(log(N))
+
 ```
 class NumArray {
     TreeNode root;
     public NumArray(int[] nums) {
         root = buildTree(nums, 0, nums.length-1);
     }
-    
+
     public TreeNode buildTree(int[] nums, int start, int end){
         if(start > end){
             return null;
@@ -30,16 +33,16 @@ class NumArray {
         }
         return node;
     }
-    
+
     public void update(int index, int val) {
         update(root, index, val);
     }
-    
+
     public void update(TreeNode root, int index, int val) {
         if(root.start == root.end){
             root.sum = val;
             return;
-        }    
+        }
         int mid = root.start + (root.end - root.start)/2;
         if(index <= mid){
             update(root.left, index, val);
@@ -48,11 +51,11 @@ class NumArray {
         }
         root.sum = root.left.sum + root.right.sum;
     }
-    
+
     public int sumRange(int left, int right) {
         return sumRange(root, left, right);
     }
-    
+
     public int sumRange(TreeNode root, int left, int right){
         if(root.start == left && root.end == right){
             return root.sum;
@@ -77,6 +80,7 @@ class TreeNode{
     }
 }
 ```
+
 ```
 /**
  * Your NumArray object will be instantiated and called as such:

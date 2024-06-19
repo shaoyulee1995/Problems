@@ -1,9 +1,12 @@
 # Repeated DNA Sequences
+
 # HashSet
-* Time Complexity: O(NL)
-* Space Complexity: O(NL)
-	* N as length of s
-	* L as length of DNA
+
+- Time Complexity: O(NL)
+- Space Complexity: O(NL)
+  - N as length of s
+  - L as length of DNA
+
 ```
 class Solution {
     public List<String> findRepeatedDnaSequences(String s) {

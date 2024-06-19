@@ -1,8 +1,11 @@
 # Convert an Array Into a 2D Array With Conditions
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public List<List<Integer>> findMatrix(int[] nums) {

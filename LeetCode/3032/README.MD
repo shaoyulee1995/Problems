@@ -1,9 +1,12 @@
 # Count Numbers With Unique Digits II
+
 # Math
-* Time Complexity: O(ND)
-* Space Complexity: O(D)
-	* N as length between A and B
-    * D as length of digits
+
+- Time Complexity: O(ND)
+- Space Complexity: O(D)
+  - N as length between A and B
+    - D as length of digits
+
 ```
 class Solution {
     public int numberCount(int a, int b) {

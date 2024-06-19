@@ -1,8 +1,11 @@
 # Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
+
 # ArrayDeque
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int longestSubarray(int[] nums, int limit) {

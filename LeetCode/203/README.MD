@@ -1,4 +1,5 @@
 # Remove Linked List Elements
+
 ```
 /**
  * Definition for singly-linked list.
@@ -10,19 +11,21 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
- ```
- 
+```
+
 # Iteration
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as number of nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as number of nodes
+
 ```
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode cur = dummy;
-        
+
         while(cur.next != null){
             if(cur.next.val == val){
                 cur.next = cur.next.next;
@@ -30,16 +33,18 @@ class Solution {
                 cur = cur.next;
             }
         }
-        
+
         return dummy.next;
     }
 }
 ```
 
 # Recursion
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as number of nodes
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as number of nodes
+
 ```
 class Solution {
     public ListNode removeElements(ListNode head, int val) {

@@ -1,4 +1,5 @@
 # Next Greater Node In Linked List
+
 ```
 /**
  * Definition for singly-linked list.
@@ -11,10 +12,13 @@
  * }
  */
 ```
+
 # Monotonic Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int[] nextLargerNodes(ListNode head) {

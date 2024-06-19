@@ -1,8 +1,11 @@
 # Reverse Words in a String
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String reverseWords(String s) {
@@ -19,10 +22,13 @@ class Solution {
     }
 }
 ```
+
 # Deque
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String reverseWords(String s) {

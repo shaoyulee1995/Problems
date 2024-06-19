@@ -1,8 +1,11 @@
 # N-Queens II
+
 # String
-* Time Complexity: O(N!)
-* Space Complexity: O(N<sup>2</sup>)
-	* N as n
+
+- Time Complexity: O(N!)
+- Space Complexity: O(N<sup>2</sup>)
+  - N as n
+
 ```
 class Solution {
     public int totalNQueens(int n) {

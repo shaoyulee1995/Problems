@@ -1,8 +1,11 @@
 # Asteroid Collision
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as length of asteroids
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of asteroids
+
 ```
 class Solution {
     public int[] asteroidCollision(int[] asteroids) {

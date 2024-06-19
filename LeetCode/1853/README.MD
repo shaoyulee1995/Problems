@@ -1,7 +1,8 @@
 # Convert Date Format
+
 ```
-select 
+select
     date_format(day, "%W, %M %e, %Y") as 'day'
-from 
+from
     Days
 ```

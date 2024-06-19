@@ -1,4 +1,5 @@
 # User Activity for the Past 30 Days I
+
 ```
 select
     activity_date as 'day',

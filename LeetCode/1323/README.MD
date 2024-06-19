@@ -1,8 +1,11 @@
-# Maximum 69  Number
+# Maximum 69 Number
+
 # StringBuilder
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of num
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of num
+
 ```
 class Solution {
     public int maximum69Number (int num) {
@@ -18,10 +21,13 @@ class Solution {
     }
 }
 ```
+
 # Char Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of num
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of num
+
 ```
 class Solution {
     public int maximum69Number (int num) {

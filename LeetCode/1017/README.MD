@@ -1,8 +1,11 @@
 # Convert to Base -2
+
 # StringBuilder
-* Time Complexity: O(log(N))
-* Space Complexity: O(log(N))
-	* N as n
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(log(N))
+  - N as n
+
 ```
 class Solution {
     public String baseNeg2(int n) {

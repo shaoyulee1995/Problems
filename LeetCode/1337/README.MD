@@ -1,20 +1,23 @@
 # The K Weakest Rows in a Matrix
+
 # TreeMap
-* Time Complexity: O(M*Max(N, logM))
-* Space Complexity: O(M)
-	* M as mat.length
-	* N as mat[0].length
+
+- Time Complexity: O(M\*Max(N, logM))
+- Space Complexity: O(M)
+  - M as mat.length
+  - N as mat[0].length
+
 ```
 class Solution {
     public int[] kWeakestRows(int[][] mat, int k) {
         int[] res = new int[k];
-        
+
         TreeMap<Integer, List<Integer> > map = new TreeMap();
         for(int i = 0; i < mat.length; i++){
             int ones = Arrays.stream(m).filter(x -> x==1).sum();
             map.computeIfAbsent(ones, x -> new ArrayList<>()).add(i);
         }
-        
+
         int index = 0;
         for(int num: map.keySet()){
             for(int val: map.get(num)){
@@ -28,12 +31,15 @@ class Solution {
     }
 }
 ```
+
 # Binary Search
-* Time Complexity: O(Mlog(N))
-* Space Complexity: O(K)
-	* M as mat.length
-	* N as mat[0].length
-	* K as k
+
+- Time Complexity: O(Mlog(N))
+- Space Complexity: O(K)
+  - M as mat.length
+  - N as mat[0].length
+  - K as k
+
 ```
 class Solution {
     public int[] kWeakestRows(int[][] mat, int k) {
@@ -61,7 +67,7 @@ class Solution {
                 r = m;
             }
         }
-        return mat[i][l] == 1? l+1:l; 
+        return mat[i][l] == 1? l+1:l;
     }
 }
 ```

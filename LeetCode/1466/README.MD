@@ -1,13 +1,16 @@
 # Reorder Routes to Make All Paths Lead to the City Zero
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of connections
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of connections
+
 ```
 class Solution {
     public int minReorder(int n, int[][] connections) {
         HashMap<Integer, ArrayList<dest>> map = new HashMap();
-        for(int i = 0; i < n; i++){ 
+        for(int i = 0; i < n; i++){
             map.put(i, new ArrayList());
         }
         for(int[] c: connections){
@@ -38,6 +41,7 @@ class Solution {
     }
 }
 ```
+
 ```
 class dest{
     int to;

@@ -1,8 +1,11 @@
 # Kth Distinct String in an Array
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of arr
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of arr
+
 ```
 class Solution {
     public String kthDistinct(String[] arr, int k) {
@@ -29,10 +32,13 @@ class Solution {
     }
 }
 ```
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of arr
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of arr
+
 ```
 class Solution {
     public String kthDistinct(String[] arr, int k) {

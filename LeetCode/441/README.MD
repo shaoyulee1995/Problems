@@ -1,8 +1,11 @@
 # Arranging Coins
+
 # Binary Search
-* Time Complexity: O(logN)
-* Space Complexity: O(1)
-	* N as length of colors
+
+- Time Complexity: O(logN)
+- Space Complexity: O(1)
+  - N as length of colors
+
 ```
 class Solution {
     public int arrangeCoins(int n) {
@@ -20,7 +23,7 @@ class Solution {
             }else{
                 i = k+1;
             }
-        } 
+        }
         return (int)j;
     }
 }

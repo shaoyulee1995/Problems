@@ -1,16 +1,17 @@
 # Nth Highest Salary
+
 ```
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
 set N = N-1;
 RETURN (
-    SELECT 
-        DISTINCT Salary 
-    FROM 
+    SELECT
+        DISTINCT Salary
+    FROM
         Employee
-    ORDER BY 
+    ORDER BY
         Salary DESC
-    limit 1 
+    limit 1
     offset N
 );
 END

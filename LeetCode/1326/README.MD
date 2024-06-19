@@ -1,8 +1,11 @@
 # Minimum Number of Taps to Open to Water a Garden
+
 # Greedy
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public int minTaps(int n, int[] ranges) {

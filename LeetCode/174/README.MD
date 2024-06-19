@@ -1,7 +1,10 @@
 # Dungeon Game
+
 # Memorization Recursion
-* Time Complexity: O(NM)
-* Space Complexity: O(NM)
+
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
+
 ```
 class Solution {
     public int calculateMinimumHP(int[][] dungeon) {

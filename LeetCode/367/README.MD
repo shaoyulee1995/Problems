@@ -1,8 +1,11 @@
 # Valid Perfect Square
+
 # Binary Search
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as num
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as num
+
 ```
 class Solution {
     public boolean isPerfectSquare(int num) {

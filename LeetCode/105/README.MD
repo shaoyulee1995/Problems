@@ -1,4 +1,5 @@
 # Construct Binary Tree from Preorder and Inorder Traversal
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # Divide and Conquer
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     Map<Integer, Integer> map;
@@ -42,15 +46,18 @@ class Solution {
         root.left = find(preorder, preStart+1, preStart+left,
                          inorder, inStart, inStart + rootIndex-1);
         root.right = find(preorder, preStart+left+1, preEnd,
-                          inorder, rootIndex+1, inEnd); 
+                          inorder, rootIndex+1, inEnd);
         return root;
     }
 }
 ```
+
 # Backtrack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     int[] preOrder;

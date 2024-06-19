@@ -1,9 +1,12 @@
 # Maximum Compatibility Score Sum
+
 # DFS
-* Time Complexity: O(N!*M)
-* Space Complexity: O(N)
-	* N as length of students
-    * M as length of mentors
+
+- Time Complexity: O(N!\*M)
+- Space Complexity: O(N)
+  - N as length of students
+    - M as length of mentors
+
 ```
 class Solution {
     int res;

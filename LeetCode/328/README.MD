@@ -1,4 +1,5 @@
 # Odd Even Linked List
+
 ```
 /**
  * Definition for singly-linked list.
@@ -11,9 +12,12 @@
  * }
  */
 ```
+
 # LinkedList
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public ListNode oddEvenList(ListNode head) {

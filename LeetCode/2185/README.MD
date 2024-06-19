@@ -1,9 +1,12 @@
 # Counting Words With a Given Prefix
+
 # String
-* Time Complexity: O(WP)
-* Space Complexity: O(1)
-	* W as length of words
-	* P as pref
+
+- Time Complexity: O(WP)
+- Space Complexity: O(1)
+  - W as length of words
+  - P as pref
+
 ```
 class Solution {
     public int prefixCount(String[] words, String pref) {
@@ -17,11 +20,14 @@ class Solution {
     }
 }
 ```
+
 # String
-* Time Complexity: O(WP)
-* Space Complexity: O(1)
-	* W as length of words
-	* P as pref
+
+- Time Complexity: O(WP)
+- Space Complexity: O(1)
+  - W as length of words
+  - P as pref
+
 ```
 class Solution {
     public int prefixCount(String[] words, String pref) {

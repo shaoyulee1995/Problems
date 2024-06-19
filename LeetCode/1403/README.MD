@@ -1,8 +1,11 @@
 # Minimum Subsequence in Non-Increasing Order
+
 # PriorityQueue
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public List<Integer> minSubsequence(int[] nums) {

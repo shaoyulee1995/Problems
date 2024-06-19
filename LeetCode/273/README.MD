@@ -1,13 +1,16 @@
 # Integer to English Words
+
 # StringBuilder
-* Time Complexity: O(Wlog<sub>1000</sub>(N))
-* Space Complexity: O(1)
-	* W aS length of word
-	* N as num
+
+- Time Complexity: O(Wlog<sub>1000</sub>(N))
+- Space Complexity: O(1)
+  - W aS length of word
+  - N as num
+
 ```
 class Solution {
-    String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", 
-                             "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", 
+    String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
+                             "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen",
                              "Eighteen", "Nineteen"};
     String[] TENS = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
     String[] THOUSANDS = {"", "Thousand", "Million", "Billion"};
@@ -26,7 +29,7 @@ class Solution {
         }
         return word.trim();
     }
-    
+
     public String calculation(int num){
         if(num == 0){
             return "";
@@ -41,14 +44,17 @@ class Solution {
     }
 }
 ```
+
 # String
-* Time Complexity: O(Wlog<sub>1000</sub>(N))
-* Space Complexity: O(1)
-	* W aS length of word
-	* N as num
+
+- Time Complexity: O(Wlog<sub>1000</sub>(N))
+- Space Complexity: O(1)
+  - W aS length of word
+  - N as num
+
 ```
 class Solution {
-    
+
     private final String[] Thousand = {"", "Thousand", "Million", "Billion"};
     private final String[] lessTwenty = {"","One", "Two", "Three","Four","Five","Six",
                                         "Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen",

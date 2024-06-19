@@ -1,8 +1,11 @@
 # Reverse Bits
+
 # Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as n
+
 ```
 public class Solution {
     // you need treat n as an unsigned value

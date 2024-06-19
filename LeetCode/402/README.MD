@@ -1,8 +1,11 @@
 # Remove K Digits
+
 # Stack
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of num
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of num
+
 ```
 class Solution {
     public String removeKdigits(String num, int k) {

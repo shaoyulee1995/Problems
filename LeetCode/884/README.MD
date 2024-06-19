@@ -1,9 +1,12 @@
 # Uncommon Words from Two Sentences
+
 # HashMap
-* Time Complexity: O(N+M)
-* Space Complexity: O(N+M)
-    * N as length of s1
-    * M as length of s2
+
+- Time Complexity: O(N+M)
+- Space Complexity: O(N+M)
+  - N as length of s1
+  - M as length of s2
+
 ```
 class Solution {
     public String[] uncommonFromSentences(String s1, String s2) {

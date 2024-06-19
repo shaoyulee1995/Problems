@@ -1,8 +1,11 @@
 # Split With Minimum Sum
+
 # String
-* Time Complexity: O(NlogN)
-* Space Complexity: O(N)
-	* N as length of num
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as length of num
+
 ```
 class Solution {
     public int splitNum(int num) {

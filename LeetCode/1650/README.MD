@@ -1,4 +1,5 @@
 # Lowest Common Ancestor of a Binary Tree III
+
 ```
 // Definition for a Node.
 class Node {
@@ -8,15 +9,18 @@ class Node {
     public Node parent;
 };
 ```
+
 # Tree
-* Time Complexity: O(P+Q)
-* Space Complexity: O(1)
-	* P as length of p
-	* Q as length of q
+
+- Time Complexity: O(P+Q)
+- Space Complexity: O(1)
+  - P as length of p
+  - Q as length of q
+
 ```
 class Solution {
     public Node lowestCommonAncestor(Node p, Node q) {
-        Node a = p, 
+        Node a = p,
              b = q;
         while(a != b){
             a = (a == null)?q: a.parent;

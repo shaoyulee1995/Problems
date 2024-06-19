@@ -1,8 +1,11 @@
 # String Compression
+
 # String
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of chars
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of chars
+
 ```
 class Solution {
     public int compress(char[] chars) {
@@ -21,7 +24,7 @@ class Solution {
                     chars[grpIdx++] = num;
                 }
             }
-        }    
+        }
         return grpIdx;
     }
 }

@@ -1,8 +1,11 @@
 # Find Anagram Mappings
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums1
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums1
+
 ```
 class Solution {
     public int[] anagramMappings(int[] nums1, int[] nums2) {

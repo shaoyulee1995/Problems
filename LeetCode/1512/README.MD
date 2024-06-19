@@ -1,7 +1,10 @@
 # Number of Good Pairs
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int numIdenticalPairs(int[] nums) {
@@ -14,9 +17,12 @@ class Solution {
     }
 }
 ```
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public int numIdenticalPairs(int[] nums) {

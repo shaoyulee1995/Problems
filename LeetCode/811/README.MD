@@ -1,9 +1,12 @@
 # Subdomain Visit Count
+
 # HashMap
-* Time Complexity: O(NC)
-* Space Complexity: O(N)
-	* N as length of cpdomains
-	* C as length of each domain
+
+- Time Complexity: O(NC)
+- Space Complexity: O(N)
+  - N as length of cpdomains
+  - C as length of each domain
+
 ```
 class Solution {
     public List<String> subdomainVisits(String[] cpdomains) {

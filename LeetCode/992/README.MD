@@ -1,8 +1,11 @@
 # Subarrays with K Different Integers
+
 # Sliding Windows
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int subarraysWithKDistinct(int[] nums, int k) {

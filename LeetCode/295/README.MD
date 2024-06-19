@@ -1,7 +1,9 @@
 # Find Median from Data Stream
+
 # Heap
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
 
 ```
 class MedianFinder {
@@ -15,7 +17,7 @@ class MedianFinder {
         large = new PriorityQueue<>();
         even = true;
     }
-    
+
     public void addNum(int num) {
         if(even){
             large.add(num);
@@ -26,12 +28,13 @@ class MedianFinder {
         }
         even = !even;
     }
-    
+
     public double findMedian() {
         return !even? small.peek(): (small.peek() + large.peek())/2.0;
     }
 }
 ```
+
 ```
 Your MedianFinder object will be instantiated and called as such:
 MedianFinder obj = new MedianFinder();

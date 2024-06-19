@@ -1,9 +1,15 @@
 # Range Sum Query - Immutable
+
 # Array
+
 ## Solution 1
-* Space Complexity: O(N)
+
+- Space Complexity: O(N)
+
 ##### sumRange
-	* Time Complexity: O(1)
+
+    * Time Complexity: O(1)
+
 ```
 class NumArray {
     int[] preSum;
@@ -18,16 +24,21 @@ class NumArray {
     }
 }
 ```
+
 ## Solution 2
-* Space Complexity: O(N)
+
+- Space Complexity: O(N)
+
 ##### sumRange
-	* Time Complexity: O(N)
+
+    * Time Complexity: O(N)
+
 ```
 class NumArray {
     int[] nums;
     public NumArray(int[] nums) {
         this.nums = nums;
-    }   
+    }
     public int sumRange(int left, int right) {
         int sum = 0;
         for(int i = left; i <= right; i++){
@@ -38,9 +49,13 @@ class NumArray {
 }
 ```
 
-/**
- * Your NumArray object will be instantiated and called as such:
- * NumArray obj = new NumArray(nums);
- * int param_1 = obj.sumRange(left,right);
- */
+/\*\*
+
+- Your NumArray object will be instantiated and called as such:
+- NumArray obj = new NumArray(nums);
+- int param_1 = obj.sumRange(left,right);
+  \*/
+
+```
+
 ```

@@ -1,8 +1,11 @@
 # Subarray Sum Equals K
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int subarraySum(int[] nums, int k) {
@@ -20,10 +23,13 @@ class Solution {
     }
 }
 ```
+
 # Cumulative Sum
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int subarraySum(int[] nums, int k) {
@@ -44,10 +50,13 @@ class Solution {
     }
 }
 ```
+
 # Cumulative Sum without Space
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int subarraySum(int[] nums, int k) {

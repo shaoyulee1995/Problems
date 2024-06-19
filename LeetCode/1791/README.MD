@@ -1,7 +1,10 @@
 # Find Center of Star Graph
+
 # Logic
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int findCenter(int[][] edges) {
@@ -10,10 +13,13 @@ class Solution {
     }
 }
 ```
+
 # HashMap
-* Time Complexity: O(E)
-* Space Complexity: O(E)
-	* E as length of edges
+
+- Time Complexity: O(E)
+- Space Complexity: O(E)
+  - E as length of edges
+
 ```
 class Solution {
     public int findCenter(int[][] edges) {

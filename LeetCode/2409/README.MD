@@ -1,8 +1,11 @@
 # Count Days Spent Together
+
 # String
-* Time Complexity: O(M)
-* Space Complexity: O(1)
-	* M as length of months
+
+- Time Complexity: O(M)
+- Space Complexity: O(1)
+  - M as length of months
+
 ```
 class Solution {
     int[] months = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};

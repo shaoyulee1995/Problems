@@ -1,7 +1,10 @@
 # Design an Ordered Stream
+
 # Pointer
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class OrderedStream {
     int ptr = 0;
@@ -9,7 +12,7 @@ class OrderedStream {
     public OrderedStream(int n) {
         strs = new String[n];
     }
-    
+
     public List<String> insert(int idKey, String value) {
         List<String> list = new ArrayList();
         strs[idKey-1] = value;

@@ -1,7 +1,10 @@
 # Number of Days in a Month
+
 # Math
-* Time Complexity: O(1)
-* Space Complexity: O(1)
+
+- Time Complexity: O(1)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     private static final int[] months = {0, 31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};

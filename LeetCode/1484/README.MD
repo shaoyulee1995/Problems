@@ -1,4 +1,5 @@
 # Group Sold Products By The Date
+
 ```
 select a.sell_date,
         count(a.product) as num_sold,
@@ -8,10 +9,11 @@ from (select distinct sell_date,
 group by a.sell_date
 order by a.sell_date asc
 ```
+
 ```
-select 
-    sell_date, 
-    count(distinct product) as 'num_sold', 
+select
+    sell_date,
+    count(distinct product) as 'num_sold',
     group_concat(distinct product order by product asc separator ',') as 'products'
 from Activities
 group by sell_date

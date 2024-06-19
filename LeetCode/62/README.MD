@@ -1,9 +1,12 @@
 # Unique Paths
+
 # Dynamic Programming
-* Time Complexity: O(MN)
-* Space Complexity: O(MN)
-	* M as m
-	* N as n
+
+- Time Complexity: O(MN)
+- Space Complexity: O(MN)
+  - M as m
+  - N as n
+
 ```
 class Solution {
     public int uniquePaths(int m, int n) {
@@ -23,11 +26,14 @@ class Solution {
     }
 }
 ```
+
 # BottomUp
-* Time Complexity: O(MN)
-* Space Complexity: O(MN)
-	* M as m
-	* N as n
+
+- Time Complexity: O(MN)
+- Space Complexity: O(MN)
+  - M as m
+  - N as n
+
 ```
 class Solution {
     public int uniquePaths(int m, int n) {
@@ -46,11 +52,14 @@ class Solution {
     }
 }
 ```
+
 # TopDown
-* Time Complexity: O(MN)
-* Space Complexity: O(MN)
-	* M as m
-	* N as n
+
+- Time Complexity: O(MN)
+- Space Complexity: O(MN)
+  - M as m
+  - N as n
+
 ```
 class Solution {
     public int uniquePaths(int m, int n) {

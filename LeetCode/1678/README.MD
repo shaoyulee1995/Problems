@@ -1,8 +1,11 @@
 # Goal Parser Interpretation
+
 # HashSet
-* Time Complexity: O(C)
-* Space Complexity: O(C)
-	* C as length of command
+
+- Time Complexity: O(C)
+- Space Complexity: O(C)
+  - C as length of command
+
 ```
 class Solution {
     public String interpret(String command) {

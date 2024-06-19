@@ -1,8 +1,11 @@
 # Maximize Sum Of Array After K Negations
+
 # Greedy
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(N)
-	* N as length of nums
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```
 class Solution {
     public int largestSumAfterKNegations(int[] nums, int k) {
@@ -22,10 +25,13 @@ class Solution {
     }
 }
 ```
+
 # Greedy
-* Time Complexity: O(Nlog(N))
-* Space Complexity: O(1)
-	* N as length of nums
+
+- Time Complexity: O(Nlog(N))
+- Space Complexity: O(1)
+  - N as length of nums
+
 ```
 class Solution {
     public int largestSumAfterKNegations(int[] nums, int k) {

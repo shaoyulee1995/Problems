@@ -1,4 +1,5 @@
 # Deepest Leaves Sum
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,10 +17,13 @@
  * }
  */
 ```
+
 # BFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     public int deepestLeavesSum(TreeNode root) {
@@ -43,10 +47,13 @@ class Solution {
     }
 }
 ```
+
 # DFS
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-    * N as nodes in tree
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as nodes in tree
+
 ```
 class Solution {
     int maxDepth = 0,
@@ -67,7 +74,7 @@ class Solution {
         }
         deepestLeavesSum(root.right, depth+1);
         deepestLeavesSum(root.left, depth+1);
-        
+
     }
 }
 ```

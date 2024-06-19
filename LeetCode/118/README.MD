@@ -1,8 +1,11 @@
 # Pascal's Triangle
+
 # BFS
-* Time Complexity: O(N<sup>2</sup>)
-* Space Complexity: O(N)
-	* N as numRows
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as numRows
+
 ```
 class Solution {
     public List<List<Integer>> generate(int numRows) {

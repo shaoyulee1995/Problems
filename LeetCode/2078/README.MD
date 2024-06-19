@@ -1,8 +1,11 @@
 # Two Furthest Houses With Different Colors
+
 # HashMap
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of colors
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of colors
+
 ```
 class Solution {
     public int maxDistance(int[] colors) {
@@ -25,10 +28,13 @@ class Solution {
     }
 }
 ```
+
 # Arrah
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of colors
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of colors
+
 ```
 class Solution {
     public int maxDistance(int[] colors) {

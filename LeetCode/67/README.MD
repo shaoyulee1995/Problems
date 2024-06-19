@@ -1,8 +1,11 @@
 # Add Binary
-# String 
-* Time Complexity: O(A)
-* Space Complexity: O(A)
-	* A as length of a
+
+# String
+
+- Time Complexity: O(A)
+- Space Complexity: O(A)
+  - A as length of a
+
 ```
 class Solution {
     public String addBinary(String a, String b) {

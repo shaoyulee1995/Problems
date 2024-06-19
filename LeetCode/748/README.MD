@@ -1,9 +1,12 @@
 # Shortest Completing Word
+
 # Counting Array
-* Time Complexity: O(WL)
-* Space Complexity: O(26)
-	* W as length of words
-	* L as length of word
+
+- Time Complexity: O(WL)
+- Space Complexity: O(26)
+  - W as length of words
+  - L as length of word
+
 ```
 class Solution {
     public String shortestCompletingWord(String licensePlate, String[] words) {

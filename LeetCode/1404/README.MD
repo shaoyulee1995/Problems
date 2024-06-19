@@ -1,8 +1,11 @@
 # Number of Steps to Reduce a Number in Binary Representation to One
+
 # Bit Manipulation
-* Time Complexity: O(N)
-* Space Complexity: O(1)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+
 ```
 class Solution {
     public int numSteps(String s) {

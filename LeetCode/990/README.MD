@@ -1,9 +1,12 @@
 # Satisfiability of Equality Equations
+
 # UnionFind
-* Time Complexity: O(NClog(C))
-* Space Complexity: O(C)
-	* N as length of equations
-	* C as length of lowercase alphabet
+
+- Time Complexity: O(NClog(C))
+- Space Complexity: O(C)
+  - N as length of equations
+  - C as length of lowercase alphabet
+
 ```
 class Solution {
     public boolean equationsPossible(String[] equations) {
@@ -28,6 +31,7 @@ class Solution {
     }
 }
 ```
+
 ```
 class UnionFind{
     int[] parents;

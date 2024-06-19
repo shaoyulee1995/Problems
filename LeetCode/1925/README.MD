@@ -1,8 +1,11 @@
 # Count Square Sum Triples
+
 # HashSet
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as n
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as n
+
 ```
 class Solution {
     public int countTriples(int n) {

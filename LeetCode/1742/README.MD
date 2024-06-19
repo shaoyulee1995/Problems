@@ -1,7 +1,10 @@
 # Maximum Number of Balls in a Box
+
 # Counting Array
-* Time Complexity: O(N)
-* Space Complexity: O(1)
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
 ```
 class Solution {
     public int countBalls(int lowLimit, int highLimit) {
@@ -14,7 +17,7 @@ class Solution {
             max = Math.max(max, cnt[i]);
         }
         return max;
-    } 
+    }
     public int sumDigits(int num){
         int sum = 0;
         while(num>0){

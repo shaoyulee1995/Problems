@@ -1,8 +1,11 @@
 # Peak Index in a Mountain Array
+
 # Binary Search
-* Time Complexity: O(log(N))
-* Space Complexity: O(1)
-	* N as length of arr
+
+- Time Complexity: O(log(N))
+- Space Complexity: O(1)
+  - N as length of arr
+
 ```
 class Solution {
     public int peakIndexInMountainArray(int[] arr) {

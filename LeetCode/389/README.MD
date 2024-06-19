@@ -1,8 +1,11 @@
 # Find the Difference
+
 # String
-* Time Complexity: O(T)
-* Space Complexity: O(26)
-	* T as length of t
+
+- Time Complexity: O(T)
+- Space Complexity: O(26)
+  - T as length of t
+
 ```
 class Solution {
     public char findTheDifference(String s, String t) {
@@ -23,10 +26,13 @@ class Solution {
     }
 }
 ```
+
 # Bit
-* Time Complexity: O(T)
-* Space Complexity: O(1)
-	* T as length of t
+
+- Time Complexity: O(T)
+- Space Complexity: O(1)
+  - T as length of t
+
 ```
 class Solution {
     public char findTheDifference(String s, String t) {

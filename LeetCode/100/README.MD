@@ -1,4 +1,5 @@
 # Same Tree
+
 ```
 /**
  * Definition for a binary tree node.
@@ -16,9 +17,12 @@
  * }
  */
 ```
-# Recursion 
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+# Recursion
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
@@ -35,9 +39,12 @@ class Solution {
     }
 }
 ```
+
 # Iterator
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 class Solution {
     public boolean isSameTree(TreeNode a, TreeNode b) {

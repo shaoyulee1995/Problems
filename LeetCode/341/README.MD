@@ -1,4 +1,5 @@
 # Flatten Nested List Iterator
+
 ```
 /**
  * // This is the interface that allows for creating nested lists.
@@ -18,9 +19,12 @@
  * }
  */
 ```
+
 # Iterator
-* Time Complexity: O(N)
-* Space Complexity: O(N)
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+
 ```
 public class NestedIterator implements Iterator<Integer> {
     Iterator<Integer> it;
@@ -50,6 +54,7 @@ public class NestedIterator implements Iterator<Integer> {
     }
 }
 ```
+
 ```
 /**
  * Your NestedIterator object will be instantiated and called as such:

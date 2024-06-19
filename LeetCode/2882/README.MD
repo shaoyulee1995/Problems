@@ -1,4 +1,5 @@
 # Drop Duplicate Rows
+
 ```
 import pandas as pd
 

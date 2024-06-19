@@ -1,8 +1,11 @@
 # Bulls and Cows
+
 # Counting Array
-* Time Complexity: O(S)
-* Space Complexity: O(10)
-	* S as length of secret
+
+- Time Complexity: O(S)
+- Space Complexity: O(10)
+  - S as length of secret
+
 ```
 class Solution {
     public String getHint(String secret, String guess) {

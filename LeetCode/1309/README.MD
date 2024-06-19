@@ -1,8 +1,11 @@
 # Decrypt String from Alphabet to Integer Mapping
+
 # Forward
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String freqAlphabets(String s) {
@@ -14,7 +17,7 @@ class Solution {
             }else{
                 index = s.charAt(i)-'0'-1;
 				i++;
-            }  
+            }
             char c = (char)(index+'a');
             sb.append(c);
         }
@@ -22,10 +25,13 @@ class Solution {
     }
 }
 ```
+
 # Backward
-* Time Complexity: O(N)
-* Space Complexity: O(N)
-	* N as length of s
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of s
+
 ```
 class Solution {
     public String freqAlphabets(String s) {

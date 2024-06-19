@@ -1,10 +1,13 @@
 # Count the Number of Consistent Strings
+
 # HashSet
-* Time Complexity: O(SW)
-* Space Complexity: O(A)
-	* S as length of strs
-	* A as length of A
-	* W as length of word
+
+- Time Complexity: O(SW)
+- Space Complexity: O(A)
+  - S as length of strs
+  - A as length of A
+  - W as length of word
+
 ```
 class Solution {
     public int countConsistentStrings(String A, String[] strs) {
