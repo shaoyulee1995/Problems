@@ -1,13 +1,9 @@
 # Best Time to Buy and Sell Stock with Transaction Fee
 
-.# Array
-
-## Solution 1
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxProfit(int[] prices, int fee) {
         int n = prices.length;
@@ -22,12 +18,10 @@ class Solution {
 }
 ```
 
-## Solution 2
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxProfit(int[] prices, int fee) {
         int buy = Integer.MIN_VALUE,

@@ -1,14 +1,9 @@
 # Range Sum Query 2D - Immutable
 
-# Matrix
-
 - Space Complexity: O(MN)
+- Time Complexity: O(1)
 
-##### sumRange
-
-    * Time Complexity: O(1)
-
-```
+```java
 class NumMatrix {
     int[][] preSum;
     public NumMatrix(int[][] matrix) {
@@ -29,13 +24,8 @@ class NumMatrix {
 
 ```
 
-/\*\*
-
+```
 - Your NumMatrix object will be instantiated and called as such:
 - NumMatrix obj = new NumMatrix(matrix);
 - int param_1 = obj.sumRegion(row1,col1,row2,col2);
-  \*/
-
-```
-
 ```

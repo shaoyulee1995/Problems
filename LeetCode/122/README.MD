@@ -1,11 +1,9 @@
 # Best Time to Buy and Sell Stock II
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxProfit(int[] prices) {
         int n = prices.length;
@@ -20,12 +18,10 @@ class Solution {
 }
 ```
 
-# Greedy
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxProfit(int[] prices) {
         int res = 0;
@@ -37,12 +33,10 @@ class Solution {
 }
 ```
 
-## Python
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```python
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         profit = 0

@@ -7,9 +7,7 @@
   - M as length of firstList
   - N as length of secondList
 
-## Java
-
-```
+```java
 class Solution {
     public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
         LinkedList<int[]> res = new LinkedList();
@@ -34,10 +32,7 @@ class Solution {
 }
 `
 ```
-
-## Python
-
-```
+```python
 class Solution(object):
     def intervalIntersection(self, A, B):
         """

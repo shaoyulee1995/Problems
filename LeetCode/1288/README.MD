@@ -1,16 +1,10 @@
 # Remove Covered Intervals
 
-# Arrays
-
 - Time Complexity: O(Nlog(N))
 - Space Complexity: O(1)
   - N as length of intervals
 
-## Java
-
-### 2 Pointers
-
-```
+```java
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> ((a[0] == b[0])? b[1] - a[1]:  a[0] - b[0]));
@@ -34,9 +28,7 @@ class Solution {
 }
 ```
 
-### 1 Pointer
-
-```
+```java
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
         Arrays.sort(intervals,(a,b)->{
@@ -58,9 +50,7 @@ class Solution {
 }
 ```
 
-## C++
-
-```
+```cpp
 class Solution {
 public:
     int removeCoveredIntervals(vector<vector<int>>& intervals) {

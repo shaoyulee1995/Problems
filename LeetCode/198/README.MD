@@ -1,12 +1,10 @@
 # House Robber
 
-# Recursion (TopDown)
-
 - Time Complexity: O(N^N)
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int rob(int[] nums) {
         return rob(nums, 0);
@@ -22,15 +20,12 @@ class Solution {
 }
 ```
 
-# Recursion with Memorization
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums
 
-## Solution 1
 
-```
+```java
 class Solution {
     int[] memo;
     public int rob(int[] nums) {
@@ -53,9 +48,7 @@ class Solution {
 }
 ```
 
-## Solution 2
-
-```
+```java
 class Solution {
     public int rob(int[] nums) {
         if(nums.length == 0){

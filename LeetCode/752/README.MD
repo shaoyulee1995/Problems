@@ -1,16 +1,12 @@
 # Open the Lock
 
-# Regular BFS
-
-## Java
-
 - Time Complexity: O(N<sup>2</sup>A<sup>N</sup>+D)
 - Space Complexity: O(A<sup>N</sup>+D)
   - N as length of the lock
   - A as possible digit
   - D as deadlock
 
-```
+```java
 class Solution {
     public int openLock(String[] deadends, String target) {
         Set<String> dead = new HashSet();
@@ -70,9 +66,7 @@ class Solution {
 }
 ```
 
-# Two-End BFS
-
-```
+```java
 class Solution {
     public int openLock(String[] deadends, String target) {
         HashSet<String> dead = new HashSet();

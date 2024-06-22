@@ -1,26 +1,20 @@
 # Remove Duplicates from Sorted List
 
 ```
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+Definition for singly-linked list.
+public class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
 ```
-
-# 2 Pointers
-
-## Solution 1
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         ListNode cur = head;
@@ -36,12 +30,10 @@ class Solution {
 }
 ```
 
-## Solution 2
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         if(head == null){

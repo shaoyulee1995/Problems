@@ -1,16 +1,10 @@
 # Range Sum Query - Immutable
 
-# Array
-
-## Solution 1
 
 - Space Complexity: O(N)
+- Time Complexity: O(1)
 
-##### sumRange
-
-    * Time Complexity: O(1)
-
-```
+```java
 class NumArray {
     int[] preSum;
     public NumArray(int[] nums) {
@@ -25,15 +19,10 @@ class NumArray {
 }
 ```
 
-## Solution 2
-
 - Space Complexity: O(N)
+- Time Complexity: O(N)
 
-##### sumRange
-
-    * Time Complexity: O(N)
-
-```
+```java
 class NumArray {
     int[] nums;
     public NumArray(int[] nums) {
@@ -49,13 +38,10 @@ class NumArray {
 }
 ```
 
-/\*\*
 
+
+```
 - Your NumArray object will be instantiated and called as such:
 - NumArray obj = new NumArray(nums);
 - int param_1 = obj.sumRange(left,right);
-  \*/
-
-```
-
 ```

@@ -1,13 +1,9 @@
 # N-Queens
 
-# Backtrack
-
-## C++
-
 - Time Complexity: IDK
 - Space Complexity: IDK
 
-```
+```cpp
 class Solution {
 public:
     vector<vector<string>> res;
@@ -53,9 +49,7 @@ public:
 };
 ```
 
-## Java
-
-```
+```java
 class Solution {
     List<List<String>> res;
     public List<List<String>> solveNQueens(int n) {

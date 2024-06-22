@@ -1,14 +1,10 @@
 # Make Array Zero by Subtracting Equal Amounts
 
-# HashSet
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums
 
-## Java
-
-```
+```java
 class Solution {
     public int minimumOperations(int[] nums) {
         HashSet<Integer> set = new HashSet();
@@ -23,9 +19,7 @@ class Solution {
 }
 ```
 
-## C++
-
-```
+```cpp
 class Solution {
 public:
     int minimumOperations(vector<int>& nums) {

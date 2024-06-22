@@ -1,13 +1,9 @@
 # Coin Change
 
-# Brutal Force
-
 - Time Complexity: O(k\* n^k)
 - Space Complexity: O(n)
 
-## Python 3
-
-```
+```python
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
 
@@ -26,14 +22,10 @@ class Solution:
         return dp(amount)
 ```
 
-# Recursion with Memorization
-
 - Time Complexity: O(nk)
 - Space Complexity: O(n)
 
-## Python 3
-
-```
+```python
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
         memo = dict()
@@ -55,14 +47,10 @@ class Solution:
         return dp(amount)
 ```
 
-# Dynamic Programming
-
 - Time Complexity: O(NK)
 - Space Complexity: O(N)
 
-## C++
-
-```
+```cpp
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
@@ -81,11 +69,7 @@ public:
 };
 ```
 
-## Java
-
-### Solution 1
-
-```
+```java
 class Solution {
     public int coinChange(int[] coins, int amount) {
         int n = amount + 1;
@@ -102,9 +86,7 @@ class Solution {
 }
 ```
 
-### Solution 2
-
-```
+```java
 class Solution {
     int[] memo;
     public int coinChange(int[] coins, int amount) {
