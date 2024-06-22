@@ -66,12 +66,7 @@ class Solution:
                     right -= 1
         return res
 ```
-
-# 2Sum
-
-## Python 3
-
-```
+```python
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()
@@ -86,10 +81,7 @@ class Solution:
                 ans.add((value, target-value, -target))
             d[value] = i
 ```
-
-## C++
-
-```
+```cpp
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -140,10 +132,7 @@ public:
     }
 };
 ```
-
-## Java
-
-```
+```java
 class Solution {
     List<List<Integer>> res = new ArrayList();
     public List<List<Integer>> threeSum(int[] nums) {

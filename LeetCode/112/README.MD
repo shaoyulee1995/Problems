@@ -18,6 +18,7 @@ public class TreeNode {
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
+    * N as nodes
 
 ```
 class Solution {

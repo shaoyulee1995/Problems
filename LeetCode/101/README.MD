@@ -18,14 +18,9 @@
  */
 ```
 
-# Recursion
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
-
-## Java
-
-```
+```java
 class Solution {
     public boolean isSymmetric(TreeNode root) {
         if(root == null){
@@ -47,10 +42,7 @@ class Solution {
     }
 }
 ```
-
-## C++
-
-```
+```cpp
 class Solution {
 public:
     bool isSymmetric(TreeNode* root) {
@@ -70,13 +62,9 @@ public:
     }
 };
 ```
-
-# BFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
-
-```
+```java
 class Solution {
     public boolean isSymmetric(TreeNode root) {
         if(root == null){

@@ -1,7 +1,5 @@
 # Replace Words
 
-# Trie
-
 ## replaceWords(List<String> dictionary, String sentence)
 
 - Time Complexity: O(N<sup>2</sup>)
