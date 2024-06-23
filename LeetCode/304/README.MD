@@ -1,7 +1,7 @@
 # Range Sum Query 2D - Immutable
 
-- Space Complexity: O(MN)
 - Time Complexity: O(1)
+- Space Complexity: O(MN)
 
 ```java
 class NumMatrix {
