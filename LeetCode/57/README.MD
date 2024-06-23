@@ -1,12 +1,10 @@
 # Insert Interval
 
-# Arrays
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of ways
 
-```
+```java
 class Solution {
     public int[][] insert(int[][] ways, int[] inserted) {
         LinkedList<int[]> path = new LinkedList();
@@ -31,13 +29,11 @@ class Solution {
 }
 ```
 
-# Arrays
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of ways
 
-```
+```java
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         LinkedList<int[]> res = new LinkedList();

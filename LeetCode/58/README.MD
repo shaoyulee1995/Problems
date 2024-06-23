@@ -1,12 +1,10 @@
 # Length of Last Word
 
-# Array
-
 - Time Complexity: O(S)
 - Space Complexity: O(1)
   - S as length of s
 
-```
+```java
 class Solution {
     public int lengthOfLastWord(String s) {
         int res = 0;

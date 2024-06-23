@@ -2,7 +2,7 @@
 
 # Math
 
-- Time Complexity: O(log(N))
+- Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as num
 
@@ -25,7 +25,7 @@ class Solution {
 
 # Bit Operation
 
-- Time Complexity: O(log(N))
+- Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as num
 

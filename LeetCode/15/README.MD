@@ -66,6 +66,7 @@ class Solution:
                     right -= 1
         return res
 ```
+
 ```python
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
@@ -81,6 +82,7 @@ class Solution:
                 ans.add((value, target-value, -target))
             d[value] = i
 ```
+
 ```cpp
 class Solution {
 public:
@@ -132,6 +134,7 @@ public:
     }
 };
 ```
+
 ```java
 class Solution {
     List<List<Integer>> res = new ArrayList();

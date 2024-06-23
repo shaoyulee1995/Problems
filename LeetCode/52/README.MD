@@ -6,7 +6,7 @@
 - Space Complexity: O(N<sup>2</sup>)
   - N as n
 
-```
+```java
 class Solution {
     public int totalNQueens(int n) {
         char[][] grid = new char[n][n];

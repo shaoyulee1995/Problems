@@ -2,8 +2,8 @@
 
 # StringBuilder
 
-- Time Complexity: O(log(N))
-- Space Complexity: O(log(N))
+- Time Complexity: O(logN)
+- Space Complexity: O(logN)
   - N as n
 
 ```

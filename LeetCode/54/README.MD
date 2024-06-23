@@ -1,13 +1,11 @@
 # Spiral Matrix
 
-# Matrix
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of matrix
   - M as length of matrix[0]
 
-```
+```java
 class Solution {
     public List<Integer> spiralOrder(int[][] matrix) {
         int total = matrix.length * matrix[0].length,

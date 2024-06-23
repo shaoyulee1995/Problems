@@ -1,12 +1,10 @@
 # Maximum Subarray
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int maxSubArray(int[] nums) {
         int res = Integer.MIN_VALUE,
@@ -23,13 +21,11 @@ class Solution {
 }
 ```
 
-# DP
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int maxSubArray(int[] nums) {
         int[] dp = new int[nums.length+1];

@@ -1,12 +1,10 @@
 # Spiral Matrix II
 
-# Matrix
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N<sup>2</sup>)
   - N as n
 
-```
+```java
 class Solution {
     public int[][] generateMatrix(int n) {
         int startRow = 0,

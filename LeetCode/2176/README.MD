@@ -14,12 +14,12 @@ class Solution {
             map.computeIfAbsent(nums[i], x -> new ArrayList()).add(i);
         }
         int res = 0;
-        for(List<Integer> value: map.values()){ 
+        for(List<Integer> value: map.values()){
             if(value.size() < 2){
                 continue;
             }
-            for(int i = 0; i < value.size(); i++){ 
-                for(int j = 0; j < i; j++){ 
+            for(int i = 0; i < value.size(); i++){
+                for(int j = 0; j < i; j++){
                     if((value.get(i) * value.get(j)) % k == 0){
                         res++;
                     }

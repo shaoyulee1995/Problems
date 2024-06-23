@@ -2,7 +2,7 @@
 
 # Union Find
 
-- Time Complexity: O(N<sup>2</sup>log(N))
+- Time Complexity: O(N<sup>2</sup>logN)
 - Space Complexity: O(N)
   - N as length of stones
 

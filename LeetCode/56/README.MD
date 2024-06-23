@@ -1,12 +1,10 @@
 # Merge Intervals
 
-# Arrays
-
-- Time Complexity: O(Nlog(N))
+- Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of intervals
 
-```
+```java
 class Solution {
     public int[][] merge(int[][] ways) {
         Arrays.sort(ways, (a, b) -> a[0] - b[0]);
@@ -23,13 +21,11 @@ class Solution {
 }
 ```
 
-# Arrays
-
-- Time Complexity: O(Nlog(N))
+- Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of intervals
 
-```
+```java
 class Solution {
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> a[0] - b[0]);

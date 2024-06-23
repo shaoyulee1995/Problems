@@ -2,7 +2,7 @@
 
 # Comparator
 
-- Time Complexity: O(Nlog(N))
+- Time Complexity: O(NlogN)
 - Space Complexity: O(1)
 
 ```
@@ -35,7 +35,7 @@ class Solution {
 
 # Lambda
 
-- Time Complexity: O(Nlog(N))
+- Time Complexity: O(NlogN)
 - Space Complexity: O(1)
 
 ```

@@ -2,7 +2,7 @@
 
 # Binary Search
 
-- Time Complexity: O(KNlog(N))
+- Time Complexity: O(KNlogN)
 - Space Complexity: O(KN)
   - K as number of eggs
   - N as number of floors

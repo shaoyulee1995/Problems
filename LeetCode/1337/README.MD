@@ -34,7 +34,7 @@ class Solution {
 
 # Binary Search
 
-- Time Complexity: O(Mlog(N))
+- Time Complexity: O(MlogN)
 - Space Complexity: O(K)
   - M as mat.length
   - N as mat[0].length

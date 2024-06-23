@@ -1,6 +1,6 @@
 # Search in Rotated Sorted Array
 
-- Time Complexity: O(log(N))
+- Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as length of nums
 

@@ -2,7 +2,7 @@
 
 # Greedy
 
-- Time Complexity: O(Nlog(N))
+- Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of nums
 
@@ -28,7 +28,7 @@ class Solution {
 
 # Greedy
 
-- Time Complexity: O(Nlog(N))
+- Time Complexity: O(NlogN)
 - Space Complexity: O(1)
   - N as length of nums
 

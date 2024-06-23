@@ -2,7 +2,7 @@
 
 # Binary Search
 
-- Time Complexity: O(Plog(M))
+- Time Complexity: O(PlogM)
 - Space Complexity: O(1)
   - P represents length of piles
   - M represents max

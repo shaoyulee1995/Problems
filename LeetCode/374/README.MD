@@ -13,7 +13,7 @@
 
 # Binary Search
 
-- Time Complexity: O(log(N))
+- Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as n
 

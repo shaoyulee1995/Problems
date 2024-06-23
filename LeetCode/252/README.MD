@@ -2,7 +2,7 @@
 
 # Array
 
-- Time Complexity: O(Nlog(N))
+- Time Complexity: O(NlogN)
 - Space Complexity: O(1)
   - N as length of intervals
 

@@ -8,6 +8,6 @@ from
     Followers
 group by
     1
-order by 
+order by
     1
 ```

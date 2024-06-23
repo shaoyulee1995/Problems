@@ -2,7 +2,7 @@
 
 # 2 Pointers
 
-- Time Complexity: O(Max(Nlog(N), Mlog(M))
+- Time Complexity: O(Max(NlogN, MlogM)
 - Space Complexity: O(1)
   - N as length of g
   - M as length of s

@@ -4,10 +4,10 @@
 
 - Space Complexity: O(1)
 - set
-  - Time Complexity: O(log(N))
+  - Time Complexity: O(logN)
     - N as number of timestamps
 - get
-  - Time Complexity: O(log(N))
+  - Time Complexity: O(logN)
     - N as number of timestamps
 
 ```

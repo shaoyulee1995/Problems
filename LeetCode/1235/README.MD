@@ -2,7 +2,7 @@
 
 # Sort, TreeMap
 
-- Time Complexity: O(Nlog(N))
+- Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of startTime
 

@@ -7,9 +7,9 @@
 - buildTree
   - Time Complexity: O(N)
 - update
-  - Time Complexity: O(log(N))
+  - Time Complexity: O(logN)
 - sumRange
-  - Time Complexity: O(log(N))
+  - Time Complexity: O(logN)
 
 ```
 class NumArray {

@@ -2,7 +2,7 @@
 
 # Recursion
 
-- Time Complexity: O(log(N))
+- Time Complexity: O(logN)
 - Space Complexity: O(1)
 
 ```

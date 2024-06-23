@@ -1,18 +1,18 @@
 # Find First and Last Position of Element in Sorted Array
 
-- Time Complexity: O(log(N))
+- Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as num
 
 _Left Bound_
 
-- Time Complexity: O(log(N))
+- Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as length of nums
 
 _Right Bound_
 
-- Time Complexity: O(log(N))
+- Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as length of nums
 

@@ -2,7 +2,7 @@
 
 # BinarySearch
 
-- Time Complexity: O(Nlog(N))
+- Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
 ```
@@ -36,7 +36,7 @@ class Solution {
 
 # BinarySearch
 
-- Time Complexity: O(Nlog(N))
+- Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
 ```

@@ -1,11 +1,9 @@
 # Jump Game
 
-# Greedy
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public boolean canJump(int[] nums) {
         int jump = 0;

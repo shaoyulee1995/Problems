@@ -1,6 +1,5 @@
 # Range Sum Query - Immutable
 
-
 - Time Complexity: O(1)
 - Space Complexity: O(N)
 
@@ -37,8 +36,6 @@ class NumArray {
     }
 }
 ```
-
-
 
 ```
 - Your NumArray object will be instantiated and called as such:

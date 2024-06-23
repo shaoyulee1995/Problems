@@ -61,6 +61,7 @@ class Solution {
         dfs(grid, 0);
         return res;
     }
+
     public void dfs(char[][] grid, int row){
         if(row == grid.length){
             res.add(toAnswer(grid));
@@ -75,6 +76,7 @@ class Solution {
         }
 
     }
+
     public boolean valid(char[][] grid, int row, int col){
         for(int i = 0; i < grid.length; i++){
             if(grid[i][col] == 'Q'){
@@ -94,8 +96,6 @@ class Solution {
             }
         }
         return true;
-
-
     }
 
     public List<String> toAnswer(char[][] grid){

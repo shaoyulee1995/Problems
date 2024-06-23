@@ -21,7 +21,7 @@
 # Tree
 
 - Time Complexity: O(N)
-- Space Complexity: O(log(N))
+- Space Complexity: O(logN)
 
 ```
 class Solution {
