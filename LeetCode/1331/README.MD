@@ -1,7 +1,5 @@
 # Rank Transform of an Array
 
-# Array
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of arr

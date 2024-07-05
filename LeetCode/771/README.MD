@@ -1,7 +1,5 @@
 # Jewels and Stones
 
-# Counting Array
-
 - Time Complexity: O(S)
 - Space Complexity: O(1)
   - S as nodes in stones
@@ -21,8 +19,6 @@ class Solution {
     }
 }
 ```
-
-# Set
 
 - Time Complexity: O(S)
 - Space Complexity: O(S)

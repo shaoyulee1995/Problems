@@ -22,8 +22,6 @@ class Solution {
 }
 ```
 
-# Counting
-
 - Time Complexity: O(N)
 - Space Complexity: O(102)
   - N as length of nums

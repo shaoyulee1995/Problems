@@ -1,7 +1,5 @@
 # Image Smoother
 
-# Matrix
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of img

@@ -1,7 +1,5 @@
 # Super Egg Drop
 
-# Binary Search
-
 - Time Complexity: O(KNlogN)
 - Space Complexity: O(KN)
   - K as number of eggs

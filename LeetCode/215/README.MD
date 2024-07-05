@@ -1,7 +1,5 @@
 # Kth Largest Element in an Array
 
-# Sort
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
   - N as length of nums

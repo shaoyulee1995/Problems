@@ -1,7 +1,5 @@
 # Count Odd Numbers in an Interval Range
 
-# Math
-
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 

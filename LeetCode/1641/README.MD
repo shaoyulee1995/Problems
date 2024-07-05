@@ -68,8 +68,6 @@ class Solution {
 }
 ```
 
-# Recursion
-
 - Time Complexity: O(5^N)
 - Space Complexity: O(N)
   - N as n

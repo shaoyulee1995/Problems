@@ -1,7 +1,5 @@
 # Path With Minimum Effort
 
-# Matrix
-
 - Time Complexity: O(NMlog(NM))
 - Space Complexity: O(NM)
   - N as length of heights

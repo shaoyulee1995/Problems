@@ -18,8 +18,6 @@
  */
 ```
 
-# DFS
-
 - Time Complexity: O(NClog(C))
 - Space Complexity: O(N)
   - C as column nodes in tree

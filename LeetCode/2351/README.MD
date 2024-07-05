@@ -1,7 +1,5 @@
 # First Letter to Appear Twice
 
-# HashSet
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s

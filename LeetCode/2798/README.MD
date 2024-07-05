@@ -1,7 +1,5 @@
 # Number of Employees Who Met the Target
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of hours

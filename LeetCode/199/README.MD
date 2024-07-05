@@ -52,8 +52,6 @@ class Solution {
 }
 ```
 
-# Recursion
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as nodes in tree

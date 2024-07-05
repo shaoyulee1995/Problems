@@ -1,7 +1,5 @@
 # Apply Operations to an Array
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums

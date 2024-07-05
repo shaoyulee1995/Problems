@@ -1,7 +1,5 @@
 # Sort the People
 
-# Array
-
 - Time Complexity: O(HlogH)
 - Space Complexity: O(N)
   - N as length of names

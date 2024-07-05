@@ -18,8 +18,6 @@
  */
 ```
 
-# Recursion
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as number of TreeNode
@@ -44,8 +42,6 @@ class Solution {
     }
 }
 ```
-
-# Iterate
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

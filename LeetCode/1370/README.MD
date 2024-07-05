@@ -1,7 +1,5 @@
 # Increasing Decreasing String
 
-# String
-
 - Time Complexity: O(S)
 - Space Complexity: O(S)
   - S as length of s

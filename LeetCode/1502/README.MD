@@ -1,7 +1,5 @@
 # Can Make Arithmetic Progression From Sequence
 
-# Array
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
   - N as length of nums

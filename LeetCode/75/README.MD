@@ -1,12 +1,10 @@
 # Sort Colors
 
-# 3 Pointers
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public void sortColors(int[] nums) {
         int red = 0,
@@ -33,13 +31,11 @@ class Solution {
 }
 ```
 
-# Counting Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public void sortColors(int[] nums) {
         int sizeZeros = 0,

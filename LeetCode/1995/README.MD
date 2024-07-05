@@ -1,7 +1,5 @@
 # Count Special Quadruplets
 
-# Array
-
 - Time Complexity: O(N<sup>4</sup>)
 - Space Complexity: O(1)
   - N as length of nums
@@ -25,8 +23,6 @@ class Solution {
     }
 }
 ```
-
-# Array
 
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)

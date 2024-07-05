@@ -1,7 +1,5 @@
 # Convert an Array Into a 2D Array With Conditions
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

@@ -1,7 +1,5 @@
 # Count Prefixes of a Given String
 
-# String
-
 - Time Complexity: O(Ww)
 - Space Complexity: O(1)
   - W as length of words

@@ -1,7 +1,5 @@
 # The kth Factor of n
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as n
@@ -21,8 +19,6 @@ class Solution {
     }
 }
 ```
-
-# Math
 
 - Time Complexity: O($\sqrt{N}$)
 - Space Complexity: O($\sqrt{N}$)
@@ -51,8 +47,6 @@ class Solution {
     }
 }
 ```
-
-# Math
 
 - Time Complexity: O($\sqrt{N}$)
 - Space Complexity: O(1)

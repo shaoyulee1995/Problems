@@ -1,7 +1,5 @@
 # Maximum Nesting Depth of the Parentheses
 
-# Counting
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

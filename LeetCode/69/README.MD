@@ -1,11 +1,9 @@
 # Sqrt(x)
 
-# Binary Search
-
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int mySqrt(int x) {
         if(x < 2){

@@ -1,7 +1,5 @@
 # Delete Operation for Two Strings
 
-# Dynamic Programming
-
 - Time Complexity: O(N\*M)
 - Space Complexity: O(N\*M)
   - N is the length of word1

@@ -1,7 +1,5 @@
 # Department Highest Salary
 
-# Group by
-
 ```
 select d.name as 'Department',
         e.name as 'Employee',

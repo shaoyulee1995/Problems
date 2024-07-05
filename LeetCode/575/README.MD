@@ -1,7 +1,5 @@
 # Distribute Candies
 
-# Counting
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 

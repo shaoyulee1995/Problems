@@ -1,7 +1,5 @@
 # Fruit Into Baskets
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 

@@ -12,8 +12,6 @@
  */
 ```
 
-# Recursion
-
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as nodes in tree

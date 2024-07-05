@@ -1,7 +1,5 @@
 # Count Numbers With Unique Digits II
 
-# Math
-
 - Time Complexity: O(ND)
 - Space Complexity: O(D)
   - N as length between A and B

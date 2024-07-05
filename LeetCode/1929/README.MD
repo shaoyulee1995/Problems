@@ -1,7 +1,5 @@
 # Concatenation of Array
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

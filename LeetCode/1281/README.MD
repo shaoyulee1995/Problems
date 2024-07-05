@@ -1,7 +1,5 @@
 # Subtract the Product and Sum of Digits of an Integer
 
-# Math
-
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 

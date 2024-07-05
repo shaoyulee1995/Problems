@@ -1,7 +1,5 @@
 # Find Smallest Letter Greater Than Target
 
-# Binary Search
-
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 

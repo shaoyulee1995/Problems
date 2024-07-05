@@ -1,7 +1,5 @@
 # Minimum Time Visiting All Points
 
-# Math
-
 - Time Complexity: O(P)
 - Space Complexity: O(1)
   - N as length of points

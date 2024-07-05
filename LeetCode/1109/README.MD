@@ -47,8 +47,6 @@ class Solution {
 }
 ```
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as n

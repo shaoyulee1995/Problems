@@ -1,7 +1,5 @@
 # Determine if Two Events Have Conflict
 
-# Math
-
 - Time Complexity: O(T)
 - Space Complexity: O(1)
   - T as length of time

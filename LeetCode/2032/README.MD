@@ -1,7 +1,5 @@
 # Two Out of Three
 
-# Array
-
 - Time Complexity: O(Max(N1,N2,N3))
 - Space Complexity: O(101)
   - N1 as length of nums1

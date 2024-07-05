@@ -1,7 +1,5 @@
 # Find Lucky Integer in an Array
 
-# Counting Array
-
 - Time Complexity: O(A)
 - Space Complexity: O(1)
   - A as length of arr

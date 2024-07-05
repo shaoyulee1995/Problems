@@ -1,7 +1,5 @@
 # Uncrossed Lines
 
-# DP
-
 - Time Complexity: O(NM)
 - Space Complexity: O(MN)
   - N as length of nums1

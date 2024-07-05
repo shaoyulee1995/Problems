@@ -1,7 +1,5 @@
 # Remove Outermost Parentheses
 
-# Counting
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
@@ -23,8 +21,6 @@ class Solution {
     }
 }
 ```
-
-# Counting
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

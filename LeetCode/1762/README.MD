@@ -1,7 +1,5 @@
 # Buildings With an Ocean View
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as number of nodes in tree

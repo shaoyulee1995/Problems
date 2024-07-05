@@ -1,7 +1,5 @@
 # Pascal's Triangle
 
-# BFS
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
   - N as numRows

@@ -1,7 +1,5 @@
 # Longest Palindrome
 
-# Set
-
 - Time Complexity: O(S)
 - Space Complexity: O(S)
   - S as length of s
@@ -23,8 +21,6 @@ class Solution {
     }
 }
 ```
-
-# Set
 
 - Time Complexity: O(S)
 - Space Complexity: O(S)

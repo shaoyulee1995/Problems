@@ -16,13 +16,11 @@ public class TreeNode {
 }
 ```
 
-# DFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     List<Integer> res;
     public List<Integer> inorderTraversal(TreeNode root) {
@@ -42,13 +40,11 @@ class Solution {
 }
 ```
 
-# BFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList();
@@ -70,12 +66,10 @@ class Solution {
 }
 ```
 
-# Thread Binary Tree(Morris Traversal)
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList();

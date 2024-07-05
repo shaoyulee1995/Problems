@@ -1,7 +1,5 @@
 # Maximum Sum With Exactly K Elements
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - S as length of nums

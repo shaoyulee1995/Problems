@@ -1,13 +1,11 @@
 # Unique Paths II
 
-# Dynamic Programming
-
 - Time Complexity: O(MN)
 - Space Complexity: O(MN)
   - M as obstacleGrid's row
   - N as obstacleGrid's column
 
-```
+```java
 class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int m = obstacleGrid.length,

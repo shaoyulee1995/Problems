@@ -1,7 +1,5 @@
 # Make Two Arrays Equal by Reversing Sub-arrays
 
-# Sorting
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
 

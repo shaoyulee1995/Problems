@@ -1,7 +1,5 @@
 # Pascal's Triangle II
 
-# Array
-
 - Time Complexity: O(NR)
 - Space Complexity: O(N)
   - N as length of res

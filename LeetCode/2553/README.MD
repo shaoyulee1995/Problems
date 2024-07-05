@@ -1,7 +1,5 @@
 # Separate the Digits in an Array
 
-# Array
-
 - Time Complexity: O(Nn)
 - Space Complexity: O(N)
   - N as length of nums
@@ -25,8 +23,6 @@ class Solution {
     }
 }
 ```
-
-# Array
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

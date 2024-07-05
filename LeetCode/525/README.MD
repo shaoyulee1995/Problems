@@ -1,7 +1,5 @@
 # Contiguous Array
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 

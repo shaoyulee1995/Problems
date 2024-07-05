@@ -1,7 +1,5 @@
 # Longest Continuous Increasing Subsequence
 
-# 2 Pointers
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums
@@ -24,8 +22,6 @@ class Solution {
 }
 ```
 
-# 2 Pointers
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums
@@ -47,8 +43,6 @@ class Solution {
     }
 }
 ```
-
-# DP
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

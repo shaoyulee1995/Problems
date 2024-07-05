@@ -1,7 +1,5 @@
 # Logger Rate Limiter
 
-# HashMap
-
 - Time Complexity: O(1)
 - Space Complexity: O(N)
   - N as size of map

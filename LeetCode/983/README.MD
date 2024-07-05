@@ -1,7 +1,5 @@
 # Minimum Cost For Tickets
 
-# DP
-
 - Time Complexity: O(D)
 - Space Complexity: O(366)
   - D as lastDay

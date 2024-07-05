@@ -1,7 +1,5 @@
 # Add Strings
 
-# String
-
 - Time Complexity: O(Max(N,M))
 - Space Complexity: O(Max(N,M))
   - N as length of num1

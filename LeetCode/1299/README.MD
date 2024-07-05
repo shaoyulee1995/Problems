@@ -1,7 +1,5 @@
 # Replace Elements with Greatest Element on Right Side
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of arr

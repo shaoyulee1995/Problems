@@ -1,7 +1,5 @@
 # Minimum Cost to Move Chips to The Same Position
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

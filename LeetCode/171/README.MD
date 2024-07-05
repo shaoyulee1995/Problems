@@ -1,7 +1,5 @@
 # Excel Sheet Column Number
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 

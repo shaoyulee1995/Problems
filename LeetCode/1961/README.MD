@@ -1,7 +1,5 @@
 # Check If String Is a Prefix of Array
 
-# String
-
 - Time Complexity: O(WS)
 - Space Complexity: O(W)
   - W as length of words

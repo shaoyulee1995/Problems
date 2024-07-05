@@ -1,7 +1,5 @@
 # Armstrong Number
 
-# Array
-
 - Time Complexity: O(D)
 - Space Complexity: O(D)
   - N as length of digits

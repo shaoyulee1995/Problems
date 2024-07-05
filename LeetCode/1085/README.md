@@ -1,7 +1,5 @@
 # Sum of Digits in the Minimum Number
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums

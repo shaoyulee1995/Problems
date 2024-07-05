@@ -1,7 +1,5 @@
 # Shortest Distance to Target String in a Circular Array
 
-# Array
-
 - Time Complexity: O(NT)
 - Space Complexity: O(1)
   - N as length of words

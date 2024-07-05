@@ -1,7 +1,5 @@
 # Two Sum III - Data structure design
 
-# HashMap
-
 - Space Complexity: O(N)
   - N as added elements
 

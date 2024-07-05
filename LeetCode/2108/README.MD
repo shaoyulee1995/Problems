@@ -1,7 +1,5 @@
 # Find First Palindromic String in the Array
 
-# String
-
 - Time Complexity: O(Wm)
 - Space Complexity: O(1)
   - W as length of words

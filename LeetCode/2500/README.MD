@@ -1,7 +1,5 @@
 # Delete Greatest Value in Each Row
 
-# Matrix
-
 - Time Complexity: O(NMlogM)
 - Space Complexity: O(1)
   - N as length of grid

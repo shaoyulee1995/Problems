@@ -1,7 +1,5 @@
 # Most Frequent Number Following Key In an Array
 
-# HashMap
-
 - Time Complexity: O(NW)
 - Space Complexity: O(N)
   - N as length of nums

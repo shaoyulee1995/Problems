@@ -1,7 +1,5 @@
 # Subarrays with K Different Integers
 
-# Sliding Windows
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

@@ -1,7 +1,5 @@
 # Minimum Changes To Make Alternating Binary String
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

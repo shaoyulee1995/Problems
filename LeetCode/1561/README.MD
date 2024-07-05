@@ -1,7 +1,5 @@
 # Maximum Number of Coins You Can Get
 
-# 2 Pointers
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

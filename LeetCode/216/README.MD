@@ -1,7 +1,5 @@
 # Combination Sum III
 
-# Backtrack
-
 - Time Complexity: O(c(9, k)\*k)
 - Space Complexity: O(9)
   - c as combination

@@ -1,7 +1,5 @@
 # Find Maximum Number of String Pairs
 
-# Array
-
 - Time Complexity: O(NWlog(W))
 - Space Complexity: O(N)
   - N as length of words
@@ -26,8 +24,6 @@ class Solution {
     }
 }
 ```
-
-# Array
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

@@ -1,12 +1,10 @@
 # Merge Sorted Array
 
-# 2 Pointers
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums1
 
-```
+```java
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1,

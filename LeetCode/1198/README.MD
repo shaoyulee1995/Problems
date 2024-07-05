@@ -1,7 +1,5 @@
 # Find Smallest Common Element in All Rows
 
-# Counting Array
-
 - Time Complexity: O(MN)
 - Space Complexity: O(10001)
   - M as length of mat

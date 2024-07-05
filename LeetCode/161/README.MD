@@ -1,7 +1,5 @@
 # One Edit Distance
 
-# String
-
 - Time Complexity: O(S<sup>2</sup>)
 - Space Complexity: O(1)
   - S as length of s
@@ -42,8 +40,6 @@ class Solution {
     }
 }
 ```
-
-# String
 
 - Time Complexity: O(S<sup>2</sup>)
 - Space Complexity: O(1)

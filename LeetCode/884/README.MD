@@ -1,7 +1,5 @@
 # Uncommon Words from Two Sentences
 
-# HashMap
-
 - Time Complexity: O(N+M)
 - Space Complexity: O(N+M)
   - N as length of s1

@@ -1,7 +1,5 @@
 # Find All Anagrams in a String
 
-# Sliding Windows
-
 - Time Complexity: O(S)
 - Space Complexity: O(P)
   - S as length of s
@@ -53,8 +51,6 @@ class Solution {
     }
 }
 ```
-
-# Counting Array
 
 - Time Complexity: O(S)
 - Space Complexity: O(P)

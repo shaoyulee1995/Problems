@@ -1,7 +1,5 @@
 # Find Peak Element
 
-# Binary Search
-
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as length of nums

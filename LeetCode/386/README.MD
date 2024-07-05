@@ -1,7 +1,5 @@
 # Lexicographical Numbers My SubmissionsBack to Contest
 
-# DFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as n

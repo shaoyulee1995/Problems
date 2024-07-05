@@ -1,7 +1,5 @@
 # Count Number of Teams
 
-# 3 Pointers
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(1)
   - N as length of rating

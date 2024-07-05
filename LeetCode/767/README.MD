@@ -1,7 +1,5 @@
 # Reorganize String
 
-# HashMap
-
 - Time Complexity: O(N^2logN)
 - Space Complexity: O(N)
 

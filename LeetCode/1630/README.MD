@@ -1,7 +1,5 @@
 # Arithmetic Subarrays
 
-# Array
-
 - Time Complexity: O(LClog(C))
 - Space Complexity: O(L(R-L))
   - R as right index

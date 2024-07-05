@@ -11,8 +11,6 @@ public class ListNode {
 }
 ```
 
-# Two Pointers
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as nodes in linkedlist

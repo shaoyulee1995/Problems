@@ -1,7 +1,5 @@
 # House Robber II
 
-# Dynamic Programming
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums
@@ -27,8 +25,6 @@ class Solution {
     }
 }
 ```
-
-# Dynamic Programming
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

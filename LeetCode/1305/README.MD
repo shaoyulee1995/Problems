@@ -18,8 +18,6 @@
  */
 ```
 
-# DFS
-
 - Time Complexity: O(ClogC)
 - Space Complexity: O(C)
   - N as number of nodes in root1 tree

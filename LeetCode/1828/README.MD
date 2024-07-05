@@ -1,7 +1,5 @@
 # Queries on Number of Points Inside a Circle
 
-# Array
-
 - Time Complexity: O(QP)
 - Space Complexity: O(Q)
   - Q as length of queries

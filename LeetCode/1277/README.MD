@@ -1,7 +1,5 @@
 # Count Square Submatrices with All Ones
 
-# Matrix
-
 - Time Complexity: O(NM)
 - Space Complexity: O(1)
   - N as matrix.length,

@@ -1,7 +1,5 @@
 # Flipping an Image
 
-# Matrix
-
 - Time Complexity: O(N^2)
 - Space Complexity: O(1)
   - N as length of image

@@ -1,7 +1,5 @@
 # Find Words Containing Character
 
-# Array
-
 - Time Complexity: O(NW)
 - Space Complexity: O(N)
   - N as length of words

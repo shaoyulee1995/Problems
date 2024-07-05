@@ -1,7 +1,5 @@
 # Number of Strings That Appear as Substrings in Word
 
-# String
-
 - Time Complexity: O(PW)
 - Space Complexity: O(1)
   - N as length of patterns

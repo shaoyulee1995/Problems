@@ -1,7 +1,5 @@
 # Find Mode in Binary Search Tree
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as nodes
@@ -49,8 +47,6 @@ class Solution {
     }
 }
 ```
-
-# DFS
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)

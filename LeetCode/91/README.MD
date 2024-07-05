@@ -1,12 +1,10 @@
 # Decode Ways
 
-# DP
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int numDecodings(String s) {
         int[] dp = new int[s.length()+1];

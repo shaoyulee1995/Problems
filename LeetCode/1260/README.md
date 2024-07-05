@@ -1,7 +1,5 @@
 # Shift 2D Grid
 
-# HashSet
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of grid

@@ -17,8 +17,6 @@ class Interval {
 */
 ```
 
-# 2 Pointers
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of schedule

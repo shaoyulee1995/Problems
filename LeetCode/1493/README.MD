@@ -1,7 +1,5 @@
 # Longest Subarray of 1's After Deleting One Element
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums

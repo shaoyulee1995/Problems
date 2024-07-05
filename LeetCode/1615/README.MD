@@ -28,8 +28,6 @@ class Solution {
 }
 ```
 
-# HashSet
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N<sup>2</sup>)
   - N as n

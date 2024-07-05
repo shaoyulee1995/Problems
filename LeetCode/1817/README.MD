@@ -1,7 +1,5 @@
 # Finding the Users Active Minutes
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of logs

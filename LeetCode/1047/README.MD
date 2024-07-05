@@ -1,7 +1,5 @@
 # Remove All Adjacent Duplicates In String
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as chars in String
@@ -22,8 +20,6 @@ class Solution {
     }
 }
 ```
-
-# Stack
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

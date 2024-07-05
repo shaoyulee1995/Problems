@@ -1,7 +1,5 @@
 # Thousand Separator
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as n
@@ -26,8 +24,6 @@ class Solution {
     }
 }
 ```
-
-# String
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

@@ -1,12 +1,10 @@
 # Simplify Path
 
-# Stack
-
 - Time Complexity: O(P)
 - Space Complexity: O(P)
   - P as length of path
 
-```
+```java
 class Solution {
     public String simplifyPath(String path) {
         Stack<String> stack = new Stack();

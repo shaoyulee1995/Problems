@@ -1,7 +1,5 @@
 # Number of Steps to Reduce a Number to Zero
 
-# Math
-
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as num

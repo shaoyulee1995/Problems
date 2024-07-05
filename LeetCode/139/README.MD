@@ -1,7 +1,5 @@
 # Word Break
 
-# DP
-
 - Time Complexity: O(NW)
 - Space Complexity: O(N)
   - W as wordDict.size()

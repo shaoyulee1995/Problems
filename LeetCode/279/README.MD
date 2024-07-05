@@ -1,7 +1,5 @@
 # Perfect Squares
 
-# DP
-
 - Time Complexity: O(Ns)
 - Space Complexity: O(N)
   - N as n

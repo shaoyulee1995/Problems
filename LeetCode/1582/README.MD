@@ -45,8 +45,6 @@ class Solution {
 }
 ```
 
-# Counting Array
-
 - Time Complexity: O(NM)
 - Space Complexity: O(1)
   - N as length of mat

@@ -1,7 +1,5 @@
 # Validate IP Address
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of queryIP

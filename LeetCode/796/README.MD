@@ -1,7 +1,5 @@
 # Rotate String
 
-# String
-
 - Time Complexity: O(M\*N)
   - N and M are the length of the search string and pattern respectively.
 - Space Complexity: O(S)

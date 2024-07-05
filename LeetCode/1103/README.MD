@@ -1,7 +1,5 @@
 # Distribute Candies to People
 
-# Array
-
 - Time Complexity: O(Min(C, N))
 - Space Complexity: O(N)
   - N as num_people

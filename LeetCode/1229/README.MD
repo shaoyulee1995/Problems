@@ -1,7 +1,5 @@
 # Meeting Scheduler
 
-# 2 Pointers
-
 - Time Complexity: O(Max(NlogN, MlogM))
 - Space Complexity: O(1)
   - N as length of slots1

@@ -1,7 +1,5 @@
 # Ransom Note
 
-# Array
-
 - Time Complexity: O(Max(R, M))
 - Space Complexity: O(1)
   - R as length of ransomNote

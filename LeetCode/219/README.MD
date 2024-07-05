@@ -1,7 +1,5 @@
 # Contains Duplicate II
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums
@@ -20,8 +18,6 @@ class Solution {
     }
 }
 ```
-
-# Set
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

@@ -1,7 +1,5 @@
 # Prison Cells After N Days
 
-# HashSet
-
 - Time Complexity: O(NC)
 - Space Complexity: O(NC)
   - N as n

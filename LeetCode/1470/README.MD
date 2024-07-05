@@ -1,7 +1,5 @@
 # Shuffle the Array
 
-# Array
-
 - Time Complexity: O(n)
 - Space Complexity: O(N)
   - N as length of nums

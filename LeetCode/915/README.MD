@@ -1,7 +1,5 @@
 # Partition Array into Disjoint Intervals
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 

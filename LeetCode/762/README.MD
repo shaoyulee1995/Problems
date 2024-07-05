@@ -1,7 +1,5 @@
 # Prime Number of Set Bits in Binary Representation
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as range between left and right

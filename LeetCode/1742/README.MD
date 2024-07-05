@@ -1,7 +1,5 @@
 # Maximum Number of Balls in a Box
 
-# Counting Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

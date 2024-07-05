@@ -1,7 +1,5 @@
 # Perfect Number
 
-# 2 Pointers
-
 - Time Complexity: O((sqrt(N))
 - Space Complexity: O(1)
 

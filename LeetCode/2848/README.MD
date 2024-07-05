@@ -1,7 +1,5 @@
 # Points That Intersect With Cars
 
-# Set
-
 - Time Complexity: O(ND)
 - Space Complexity: O(ND)
   - N as length of nums

@@ -1,7 +1,5 @@
 # Minimum Amount of Time to Fill Cups
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of amount

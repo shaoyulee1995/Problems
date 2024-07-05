@@ -1,7 +1,5 @@
 # Convert 1D Array Into 2D Array
 
-# Array
-
 - Time Complexity: O(MN)
 - Space Complexity: O(MN)
   - M as m

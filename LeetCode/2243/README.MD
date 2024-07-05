@@ -1,7 +1,5 @@
 # Calculate Digit Sum of a String
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s

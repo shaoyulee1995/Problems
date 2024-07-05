@@ -1,7 +1,5 @@
 # First Unique Character in a String
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

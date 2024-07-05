@@ -1,7 +1,5 @@
 # Sum of All Odd Length Subarrays
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

@@ -1,7 +1,5 @@
 # Number of Divisible Substrings
 
-# String
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(1)
   - N as length of nums

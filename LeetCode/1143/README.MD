@@ -1,7 +1,5 @@
 # Longest Common Subsequence
 
-# DP
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N is the length of text1

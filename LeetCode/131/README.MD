@@ -1,7 +1,5 @@
 # Palindrome Partitioning
 
-# Backtrack
-
 - Time Complexity: O(N\*2^N)
 - Space Complexity: O(N^2)
   - N as length of s

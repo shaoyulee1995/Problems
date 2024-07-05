@@ -1,7 +1,5 @@
 # Detect Capital
 
-# Counting
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

@@ -1,7 +1,5 @@
 # Relative Ranks
 
-# Array
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of scores
@@ -30,8 +28,6 @@ class Solution {
     }
 }
 ```
-
-# Array
 
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)

@@ -18,8 +18,6 @@
  */
 ```
 
-# Recursion
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
@@ -40,8 +38,6 @@ class Solution {
     }
 }
 ```
-
-# BFS
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

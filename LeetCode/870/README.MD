@@ -1,7 +1,5 @@
 # Advantage Shuffle
 
-# TreeMap
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 

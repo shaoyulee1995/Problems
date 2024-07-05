@@ -1,7 +1,5 @@
 # Isomorphic Strings
 
-# Counting Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s

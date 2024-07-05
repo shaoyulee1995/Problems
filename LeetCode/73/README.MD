@@ -1,13 +1,11 @@
 # Set Matrix Zeroes
 
-# Queue
-
 - Time Complexity: O(MN)
 - Space Complexity: O(MN)
   - N as length of matrix
   - M as length of matrix[0]
 
-```
+```java
 class Solution {
     public void setZeroes(int[][] matrix) {
         Queue<int[]> q = new LinkedList();

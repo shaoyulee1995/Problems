@@ -1,7 +1,5 @@
 # Reverse String II
 
-# 2 Pointers
-
 - Time Complexity: O((N)
 - Space Complexity: O(N)
 

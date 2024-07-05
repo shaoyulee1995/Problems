@@ -1,7 +1,5 @@
 # Unique Morse Code Words
 
-# HashSet
-
 - Time Complexity: O(Ww)
 - Space Complexity: O(max(W, 26))
   - w as length of word

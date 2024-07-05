@@ -1,7 +1,5 @@
 # N-Repeated Element in Size 2 N Array
 
-# Set
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
@@ -20,8 +18,6 @@ class Solution {
     }
 }
 ```
-
-# Array
 
 - Time Complexity: O(N)
 - Space Complexity: O(10000)

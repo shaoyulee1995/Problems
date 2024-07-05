@@ -1,7 +1,5 @@
 # Greatest English Letter in Upper and Lower Case
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of s

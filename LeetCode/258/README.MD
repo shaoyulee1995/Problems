@@ -1,7 +1,5 @@
 # Add Digits
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as digits of num

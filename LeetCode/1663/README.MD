@@ -1,7 +1,5 @@
 # Smallest String With A Given Numeric Value
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as n

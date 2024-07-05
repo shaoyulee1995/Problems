@@ -1,12 +1,10 @@
 # Climbing Stairs
 
-# Dynamic Programming
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public int climbStairs(int n) {
         if(n <= 1){
@@ -24,13 +22,11 @@ class Solution {
 }
 ```
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 class Solution {
     public int climbStairs(int n) {
         if(n == 1){

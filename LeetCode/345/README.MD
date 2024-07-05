@@ -1,7 +1,5 @@
 # Reverse Vowels of a String
 
-# 2 Pointers
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s

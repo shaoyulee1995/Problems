@@ -1,7 +1,5 @@
 # Third Maximum Number
 
-# TreeSet
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

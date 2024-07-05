@@ -1,7 +1,5 @@
 # Min Cost Climbing Stairs
 
-# Dynamic Programming
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
@@ -31,8 +29,6 @@ class Solution {
     }
 }
 ```
-
-# Array
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)

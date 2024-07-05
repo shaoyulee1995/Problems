@@ -1,7 +1,5 @@
 # Minimum Domino Rotations For Equal Row
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of tops

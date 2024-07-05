@@ -1,7 +1,5 @@
 # Slowest Key
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as lenght of releaseTimes

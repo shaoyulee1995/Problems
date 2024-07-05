@@ -1,7 +1,5 @@
 # Sort the Students by Their Kth Score
 
-# Array
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
   - N as length of score
@@ -14,8 +12,6 @@ class Solution {
     }
 }
 ```
-
-# Array
 
 - Time Complexity: O(NlogN)
 - Space Complexity: O(NM)

@@ -1,7 +1,5 @@
 # Find the Maximum Divisibility Score
 
-# Array
-
 - Time Complexity: O(DN)
 - Space Complexity: O(N)
   - N as length of nums

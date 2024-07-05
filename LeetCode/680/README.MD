@@ -1,7 +1,5 @@
 # Valid Palindrome II
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

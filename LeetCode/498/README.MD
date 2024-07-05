@@ -1,7 +1,5 @@
 # Diagonal Traverse
 
-# Matrix
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - M as length of mat

@@ -1,7 +1,5 @@
 # Excel Sheet Column Title
 
-# String
-
 - Time Complexity: O(log<sub>26</sub>N)
 - Space Complexity: O(1)
   - N as columnNumber

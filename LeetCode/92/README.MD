@@ -1,25 +1,21 @@
 # Reverse Linked List II
 
 ```
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+Definition for singly-linked list.
+public class ListNode {
+    int val;
+    ListNode next;
+    ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+}
 ```
-
-# Recursion
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of linkedlist
 
-```
+```java
 class Solution {
     ListNode successor = null;
     public ListNode reverseBetween(ListNode head, int left, int right) {

@@ -1,7 +1,5 @@
 # Delete Columns to Make Sorted
 
-# String
-
 - Time Complexity: O(CR)
 - Space Complexity: O(1)
   - C as length of cols

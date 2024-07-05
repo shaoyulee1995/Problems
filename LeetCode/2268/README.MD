@@ -1,7 +1,5 @@
 # Minimum Number of Keypresses
 
-# Counting Array
-
 - Time Complexity: O(Max(NlogN, S))
 - Space Complexity: O(N)
   - S as length of s

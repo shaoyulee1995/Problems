@@ -1,7 +1,5 @@
 # Special Array With X Elements Greater Than or Equal X
 
-# Counting Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

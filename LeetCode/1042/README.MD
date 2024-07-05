@@ -1,7 +1,5 @@
 # Flower Planting With No Adjacent
 
-# HashMap
-
 - Time Complexity: O(NP)
 - Space Complexity: O(P)
   - P as length of paths

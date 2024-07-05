@@ -1,7 +1,5 @@
 # Maximum Repeating Substring
 
-# String
-
 - Time Complexity: O(NW)
 - Space Complexity: O(S)
   - N as length of sequence

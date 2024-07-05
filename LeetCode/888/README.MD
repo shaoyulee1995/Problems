@@ -1,7 +1,5 @@
 # Fair Candy Swap
 
-# Math
-
 - Time Complexity: O(A+B)
 - Space Complexity: O(A+B)
   - A as length of aliceSizes

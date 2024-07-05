@@ -13,8 +13,6 @@
  */
 ```
 
-# 2 Pointers
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as 1000

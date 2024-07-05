@@ -1,7 +1,5 @@
 # Check If N and Its Double Exist
 
-# TreeSet
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 

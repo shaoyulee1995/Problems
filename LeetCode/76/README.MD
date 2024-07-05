@@ -1,11 +1,9 @@
 # Minimum Window Substring
 
-# Sliding Windows
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public String minWindow(String s, String t) {
         HashMap<Character, Integer> map = new HashMap();
@@ -48,7 +46,7 @@ class Solution {
 }
 ```
 
-```
+```cpp
 class Solution {
 public:
     string minWindow(string s, string t) {

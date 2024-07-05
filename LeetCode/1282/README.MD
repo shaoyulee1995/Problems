@@ -1,7 +1,5 @@
 # Group the People Given the Group Size They Belong To
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of groupSizes

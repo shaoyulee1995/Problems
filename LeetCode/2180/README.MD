@@ -1,7 +1,5 @@
 # Count Integers With Even Digit Sum
 
-# Array
-
 - Time Complexity: O(ND)
 - Space Complexity: O(1)
   - N as num

@@ -1,7 +1,5 @@
 # Max Consecutive Ones III
 
-# Sliding WIndows
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums

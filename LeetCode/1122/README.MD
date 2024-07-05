@@ -1,7 +1,5 @@
 # Relative Sort Array
 
-# TreeMap
-
 - Time Complexity: O(Max(N,M))
 - Space Complexity: O(N)
   - N as length of arr1

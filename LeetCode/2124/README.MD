@@ -1,7 +1,5 @@
 # Check if All A's Appears Before All B's
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of s
@@ -27,8 +25,6 @@ class Solution {
 }
 ```
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of s
@@ -40,8 +36,6 @@ class Solution {
     }
 }
 ```
-
-# Array
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)

@@ -1,7 +1,5 @@
 # Number of Students Doing Homework at a Given Time
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of startTime

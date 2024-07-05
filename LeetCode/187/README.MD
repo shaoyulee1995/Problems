@@ -1,7 +1,5 @@
 # Repeated DNA Sequences
 
-# HashSet
-
 - Time Complexity: O(NL)
 - Space Complexity: O(NL)
   - N as length of s

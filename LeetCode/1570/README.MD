@@ -1,7 +1,5 @@
 # Dot Product of Two Sparse Vectors
 
-# Array
-
 - Time Complexity:
   - dotProduct: O(N)
 - Space Complexity: O(N)

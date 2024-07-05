@@ -1,7 +1,5 @@
 # Decode the Message
 
-# HashMap
-
 - Time Complexity: O(Max(K, M))
 - Space Complexity: O(26)
   - K as length of key
@@ -29,8 +27,6 @@ class Solution {
     }
 }
 ```
-
-# Counting Array
 
 - Time Complexity: O(Max(K, M))
 - Space Complexity: O(26)

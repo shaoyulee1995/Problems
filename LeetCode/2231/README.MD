@@ -1,7 +1,5 @@
 # Largest Number After Digit Swaps by Parity
 
-# String
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
   - N as length of num

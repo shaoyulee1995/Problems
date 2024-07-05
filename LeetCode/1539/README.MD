@@ -1,7 +1,5 @@
 # Kth Missing Positive Number
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of arr

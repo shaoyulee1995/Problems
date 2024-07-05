@@ -1,7 +1,5 @@
 # Make The String Great
 
-# Stack
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s

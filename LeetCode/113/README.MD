@@ -18,8 +18,6 @@
  */
 ```
 
-# Tree
-
 - Time Complexity: O(N)
 - Space Complexity: O(logN)
 

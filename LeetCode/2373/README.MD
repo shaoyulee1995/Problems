@@ -1,7 +1,5 @@
 # Largest Local Values in a Matrix
 
-# Matrix
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of grid

@@ -1,7 +1,5 @@
 # Sorting the Sentence
 
-# HashMap
-
 - Time Complexity: O(S)
 - Space Complexity: O(S)
   - S as length of s
@@ -26,8 +24,6 @@ class Solution {
     }
 }
 ```
-
-# Array
 
 - Time Complexity: O(S)
 - Space Complexity: O(S)

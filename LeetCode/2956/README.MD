@@ -1,7 +1,5 @@
 # Find Common Elements Between Two Arrays
 
-# Array
-
 - Time Complexity: O(Max(N,M))
 - Space Complexity: O(Max(N,M))
   - N as length of nums1

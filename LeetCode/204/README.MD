@@ -1,7 +1,5 @@
 # Count Primes
 
-# Array
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
   - N as n

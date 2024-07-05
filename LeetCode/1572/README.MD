@@ -1,7 +1,5 @@
 # Matrix Diagonal Sum
 
-# Matrix
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

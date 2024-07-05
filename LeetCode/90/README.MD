@@ -1,12 +1,10 @@
 # Subsets II
 
-# Backtrack
-
 - Time Complexity: O(N\*2<sup>N</sup>)
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     List<List<Integer>> res;
     LinkedList<Integer> path;

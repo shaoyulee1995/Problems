@@ -1,7 +1,5 @@
 # Array Transformation
 
-# Array
-
 - Time Complexity: O(cN)
 - Space Complexity: O(N)
   - N as length of arr

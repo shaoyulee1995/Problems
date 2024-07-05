@@ -1,7 +1,5 @@
 # Replace All Digits with Characters
 
-# Sorting
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s

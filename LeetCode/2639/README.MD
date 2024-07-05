@@ -1,7 +1,5 @@
 # Find the Width of Columns of a Grid
 
-# Matrix
-
 - Time Complexity: O(NM)
 - Space Complexity: O(1)
   - N as length of grid

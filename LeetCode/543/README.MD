@@ -18,8 +18,6 @@
  */
 ```
 
-# DFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - H as height of tree

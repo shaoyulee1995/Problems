@@ -1,13 +1,11 @@
 # Edit Distance
 
-# DP
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N is length of word1
   - M is length of word2
 
-```
+```java
 class Solution {
     public int minDistance(String word1, String word2) {
         int n = word1.length(),
@@ -39,14 +37,12 @@ class Solution {
 }
 ```
 
-# Memorized Recursion
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N is length of word1
   - M is length of word2
 
-```
+```java
 class Solution {
     Integer[][] dp;
     public int minDistance(String word1, String word2) {

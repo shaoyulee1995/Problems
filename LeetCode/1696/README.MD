@@ -1,7 +1,5 @@
 # Jump Game VI
 
-# Sliding windows
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

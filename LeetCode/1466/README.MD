@@ -1,7 +1,5 @@
 # Reorder Routes to Make All Paths Lead to the City Zero
 
-# BFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of connections

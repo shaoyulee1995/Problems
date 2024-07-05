@@ -1,7 +1,5 @@
 # Longest Repeating Character Replacement
 
-# 2 Pointers
-
 - Time Complexity: O(S)
 - Space Complexity: O(26)
   - S as length of s

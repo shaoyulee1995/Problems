@@ -1,7 +1,5 @@
 # To Lower Case
 
-# Array
-
 - Time Complexity: O(S)
 - Space Complexity: O(S)
   - S as length of s

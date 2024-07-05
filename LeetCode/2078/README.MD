@@ -1,7 +1,5 @@
 # Two Furthest Houses With Different Colors
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of colors

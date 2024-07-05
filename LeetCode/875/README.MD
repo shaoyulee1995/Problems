@@ -1,7 +1,5 @@
 # Koko Eating Bananas
 
-# Binary Search
-
 - Time Complexity: O(PlogM)
 - Space Complexity: O(1)
   - P represents length of piles

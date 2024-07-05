@@ -1,7 +1,5 @@
 # Maximum Population Year
 
-# Array
-
 - Time Complexity: O(L)
 - Space Complexity: O(1)
   - L as L of logs

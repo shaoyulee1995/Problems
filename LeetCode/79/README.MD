@@ -1,13 +1,11 @@
 # Word Search
 
-# DFS
-
 - Time Complexity: O(N\*3<sup>L</sup>)
 - Space Complexity: O(L)
   - N as length of cells in the board
   - L as length of word
 
-```
+```java
 class Solution {
     public boolean exist(char[][] board, String word) {
         boolean[][] visited = new boolean[board.length][board[0].length];
@@ -45,14 +43,12 @@ class Solution {
 }
 ```
 
-# DFS
-
 - Time Complexity: O(N\*3<sup>L</sup>)
 - Space Complexity: O(L)
   - N as length of cells in the board
   - L as length of word
 
-```
+```java
 class Solution {
     int[][] dirs = new int[][]{{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
     boolean[][] visited;

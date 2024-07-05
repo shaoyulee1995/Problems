@@ -1,7 +1,5 @@
 # Final Prices With a Special Discount in a Shop
 
-# Two Pointers
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(1)
   - N as length of prices
@@ -21,8 +19,6 @@ class Solution {
     }
 }
 ```
-
-# Stack
 
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)

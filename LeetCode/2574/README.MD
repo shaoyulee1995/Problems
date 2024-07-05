@@ -1,7 +1,5 @@
 # Left and Right Sum Differences
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

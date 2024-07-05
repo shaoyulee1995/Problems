@@ -16,13 +16,11 @@ public class TreeNode {
 }
 ```
 
-# DFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as nodes
 
-```
+```java
 class Solution {
     public boolean isValidBST(TreeNode root) {
         return dfs(root, null, null);
@@ -42,13 +40,11 @@ class Solution {
 }
 ```
 
-# DFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as nodes
 
-```
+```java
 class Solution {
     long prev = Long.MIN_VALUE;
     public boolean isValidBST(TreeNode root) {
@@ -67,13 +63,11 @@ class Solution {
 }
 ```
 
-# BFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as nodes
 
-```
+```java
 class Solution {
     public boolean isValidBST(TreeNode root) {
         if(root == null){

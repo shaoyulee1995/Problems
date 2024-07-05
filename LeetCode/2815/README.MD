@@ -1,7 +1,5 @@
 # Max Pair Sum in an Array
 
-# HashMap
-
 - Time Complexity: O(KlogK)
 - Space Complexity: O(N)
   - N as length of nums

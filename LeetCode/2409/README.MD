@@ -1,7 +1,5 @@
 # Count Days Spent Together
 
-# String
-
 - Time Complexity: O(M)
 - Space Complexity: O(1)
   - M as length of months

@@ -1,7 +1,5 @@
 # Three Consecutive Odds
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of arr
@@ -21,8 +19,6 @@ class Solution {
     }
 }
 ```
-
-# Array
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)

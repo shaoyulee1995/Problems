@@ -1,7 +1,5 @@
 # Count Number of Distinct Integers After Reverse Operations
 
-# Set
-
 - Time Complexity: O(NlogM)
 - Space Complexity: O(N)
   - N as length of nums

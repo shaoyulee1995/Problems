@@ -1,7 +1,5 @@
 # Reverse Words in a String II
 
-# 2 Pointers
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of s

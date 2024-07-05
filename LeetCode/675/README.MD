@@ -1,7 +1,5 @@
 # Cut Off Trees for Golf Event
 
-# BFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s

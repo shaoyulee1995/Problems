@@ -1,7 +1,5 @@
 # My Calendar I
 
-# TreeMap
-
 - Time Complexity: O(logN)
 - Space Complexity: O(N)
   - N as values in the books

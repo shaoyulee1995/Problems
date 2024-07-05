@@ -1,7 +1,5 @@
 # Subdomain Visit Count
 
-# HashMap
-
 - Time Complexity: O(NC)
 - Space Complexity: O(N)
   - N as length of cpdomains

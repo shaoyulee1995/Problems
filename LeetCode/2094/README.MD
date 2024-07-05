@@ -1,7 +1,5 @@
 # Finding 3-Digit Even Numbers
 
-# Counting Array
-
 - Time Complexity: O(D)
 - Space Complexity: O(D!)
   - D as length of digits

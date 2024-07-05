@@ -18,8 +18,6 @@
  */
 ```
 
-# Divide and Conquer
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as nodes in tree
@@ -51,8 +49,6 @@ class Solution {
     }
 }
 ```
-
-# Backtrack
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

@@ -1,7 +1,5 @@
 # Number of Common Factors
 
-# Loop
-
 - Time Complexity: O(A)
 - Space Complexity: O(1)
   - A as a

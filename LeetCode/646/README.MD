@@ -1,7 +1,5 @@
 # Maximum Length of Pair Chain
 
-# Array
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
   - N as length of pairs

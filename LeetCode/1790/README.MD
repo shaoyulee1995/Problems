@@ -1,7 +1,5 @@
 # Check if One String Swap Can Make Strings Equal
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

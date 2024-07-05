@@ -1,7 +1,5 @@
 # Shortest Word Distance
 
-# Array
-
 - Time Complexity: O(W)
 - Space Complexity: O(1)
   - N as length of wordsDict

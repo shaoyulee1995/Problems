@@ -1,7 +1,5 @@
 # Reconstruct Itinerary
 
-# DFS
-
 - Time Complexity: O()
 - Space Complexity: O(V+E)
   - V as vertices

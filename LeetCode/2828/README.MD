@@ -1,7 +1,5 @@
 # Check if a String Is an Acronym of Words
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of dominoes

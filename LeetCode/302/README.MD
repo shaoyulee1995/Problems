@@ -1,7 +1,5 @@
 # Smallest Rectangle Enclosing Black Pixels
 
-# BFS
-
 - Time Complexity: O(MN)
 - Space Complexity: O(MN)
   - M as length of image

@@ -68,8 +68,6 @@ class Solution {
 }
 ```
 
-# DP
-
 - Time Complexity: O(NS)
 - Space Complexity: O(2\*S + 1)
   - N is length of nums
@@ -101,8 +99,6 @@ class Solution {
     }
 }
 ```
-
-# DP
 
 - Time Complexity: O(NS)
 - Space Complexity: O(S)

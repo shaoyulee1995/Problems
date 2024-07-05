@@ -1,12 +1,10 @@
 # Largest Rectangle in Histogram
 
-# Stack
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of heights
 
-```
+```java
 class Solution {
     public int largestRectangleArea(int[] heights) {
         Stack<Integer> stack = new Stack();
@@ -26,13 +24,11 @@ class Solution {
 }
 ```
 
-# Divide and Conquer
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
   - N as length of heights
 
-```
+```java
 class Solution {
     public int largestRectangleArea(int[] heights) {
         return largestRectangleArea(heights, 0, heights.length - 1);

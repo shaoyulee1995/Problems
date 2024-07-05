@@ -1,7 +1,5 @@
 # Long Pressed Name
 
-# Array
-
 - Time Complexity: O(Max(N,M))
 - Space Complexity: O(1)
   - N as length of name

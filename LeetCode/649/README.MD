@@ -1,7 +1,5 @@
 # Dota2 Senate
 
-# String
-
 - Time Complexity: O(S)
 - Space Complexity: O(S)
   - S as lenght of senate

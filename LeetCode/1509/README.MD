@@ -1,7 +1,5 @@
 # Minimum Difference Between Largest and Smallest Value in Three Moves
 
-# Comparison
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
   - N as length of nums

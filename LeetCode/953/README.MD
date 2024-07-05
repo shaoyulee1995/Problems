@@ -1,7 +1,5 @@
 # Verifying an Alien Dictionary
 
-# Counting Array
-
 - Time Complexity: O(W\*MAX(w)
 - Space Complexity: O(W)
   - W as length of words

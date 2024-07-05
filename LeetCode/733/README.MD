@@ -1,7 +1,5 @@
 # Flood Fill
 
-# BFS
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of image
@@ -53,8 +51,6 @@ class Solution {
     }
 }
 ```
-
-# DFS
 
 - Time Complexity: O(NM)
 - Space Complexity: O(1)

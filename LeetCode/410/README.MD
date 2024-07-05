@@ -1,7 +1,5 @@
 # Split Array Largest Sum
 
-# Binary Search
-
 - Time Complexity: O(Nlog(S-Mx))
 - Space Complexity: O(1)
   - S represents sum of nums array

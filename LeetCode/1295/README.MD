@@ -1,7 +1,5 @@
 # Find Numbers with Even Number of Digits
 
-# Array
-
 - Time Complexity: O(NlogM)
 - Space Complexity: O(1)
   - N as length of nums

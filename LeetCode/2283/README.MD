@@ -1,7 +1,5 @@
 # Check if Number Has Equal Digit Count and Digit Value
 
-# Counting
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of num

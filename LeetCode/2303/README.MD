@@ -1,7 +1,5 @@
 # Calculate Amount Paid in Taxes
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of brackets

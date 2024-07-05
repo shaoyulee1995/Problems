@@ -1,7 +1,5 @@
 # Find the Winner of an Array Game
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

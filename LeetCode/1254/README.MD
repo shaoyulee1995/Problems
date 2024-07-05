@@ -1,7 +1,5 @@
 # Number of Closed Islands
 
-# DFS
-
 - Time Complexity: O(MN)
 - Space Complexity: O(1)
   - M as length of grid

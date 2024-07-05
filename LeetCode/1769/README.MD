@@ -1,7 +1,5 @@
 # Minimum Number of Operations to Move All Balls to Each Box
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of boxes

@@ -1,7 +1,5 @@
 # Maximum Nesting Depth of Two Valid Parentheses Strings
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of seq

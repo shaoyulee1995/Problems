@@ -1,7 +1,5 @@
 # Concatenated Words
 
-# DFS
-
 - Time Complexity: O(NW<sup>2</sup>)
 - Space Complexity: O(N)
   - N as length of words

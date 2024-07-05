@@ -1,7 +1,5 @@
 # Unique Paths III
 
-# DFS
-
 - Time Complexity: O(4<sup>MN</sup>)
 - Space Complexity: O(1)
   - M as length of grid

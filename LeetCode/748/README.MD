@@ -1,7 +1,5 @@
 # Shortest Completing Word
 
-# Counting Array
-
 - Time Complexity: O(WL)
 - Space Complexity: O(26)
   - W as length of words

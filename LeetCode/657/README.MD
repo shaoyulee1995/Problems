@@ -1,7 +1,5 @@
 # Robot Return to Origin
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

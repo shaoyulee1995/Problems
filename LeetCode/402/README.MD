@@ -1,7 +1,5 @@
 # Remove K Digits
 
-# Stack
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of num

@@ -1,7 +1,5 @@
 # Find the Array Concatenation Value
 
-# Array
-
 - Time Complexity: O(Nn)
 - Space Complexity: O(1)
   - N as length of nums

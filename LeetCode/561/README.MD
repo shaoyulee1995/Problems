@@ -1,7 +1,5 @@
 # Array Partition I
 
-# Sorting
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
 

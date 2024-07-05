@@ -1,7 +1,5 @@
 # Implement Queue using Stacks
 
-# Stack
-
 - Time Complexity:
   - push: O(1)
   - pop: O(N)

@@ -1,7 +1,5 @@
 # How Many Apples Can You Put into the Basket
 
-# Array
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
   - N as length of weights

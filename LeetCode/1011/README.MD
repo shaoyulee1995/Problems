@@ -1,7 +1,5 @@
 # Capacity To Ship Packages Within D Days
 
-# Binary Search
-
 - Time Complexity: O(Nlog(Sum(W))
 - Space Complexity: O(1)
 

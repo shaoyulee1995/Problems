@@ -1,7 +1,5 @@
 # Bulls and Cows
 
-# Counting Array
-
 - Time Complexity: O(S)
 - Space Complexity: O(10)
   - S as length of secret

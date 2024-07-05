@@ -1,7 +1,5 @@
 # Maximum Number of Words Found in Sentences
 
-# String
-
 - Time Complexity: O(NM)
 - Space Complexity: O(1)
   - N as length of sentences
@@ -18,8 +16,6 @@ class Solution {
     }
 }
 ```
-
-# String
 
 - Time Complexity: O(NM)
 - Space Complexity: O(1)

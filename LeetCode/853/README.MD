@@ -1,7 +1,5 @@
 # Car Fleet
 
-# Array
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of cars

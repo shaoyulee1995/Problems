@@ -1,7 +1,5 @@
 # Check if String Is Decomposable Into Value-Equal Substrings
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of s

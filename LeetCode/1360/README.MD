@@ -1,7 +1,5 @@
 # Number of Days Between Two Dates
 
-# Array
-
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 

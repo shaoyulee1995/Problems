@@ -1,7 +1,5 @@
 # Best Time to Buy and Sell Stock III
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

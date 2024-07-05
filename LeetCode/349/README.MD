@@ -1,7 +1,5 @@
 # Intersection of Two Arrays
 
-# HashSet
-
 - Time Complexity: O(Max(N, M))
 - Space Complexity: O(Min(N, M))
   - N as length of nums1

@@ -1,7 +1,5 @@
 # Find Valid Matrix Given Row and Column Sums
 
-# Matrix
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of rowSum

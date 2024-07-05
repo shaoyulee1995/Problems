@@ -1,7 +1,5 @@
 # Count Subarrays With Score Less Than K
 
-# Sliding windows
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

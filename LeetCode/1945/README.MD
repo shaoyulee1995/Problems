@@ -1,7 +1,5 @@
 # Sum of Digits of String After Convert
 
-# String
-
 - Time Complexity: O(SK)
 - Space Complexity: O(S)
   - K as k

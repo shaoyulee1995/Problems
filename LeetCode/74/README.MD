@@ -1,13 +1,11 @@
 # Search a 2D Matrix
 
-# Matrix
-
 - Time Complexity: O(MN)
 - Space Complexity: O(1)
   - M as length of matrix
     - N as length of matrix[0]
 
-```
+```java
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         int i = 0,

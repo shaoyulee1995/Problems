@@ -1,7 +1,5 @@
 # Max Area of Island
 
-# DFS
-
 - Time Complexity: O(NM)
 - Space Complexity: O(1)
   - N as length of grid

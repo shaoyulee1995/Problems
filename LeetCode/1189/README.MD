@@ -1,7 +1,5 @@
 # Maximum Number of Balloons
 
-# Counting
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

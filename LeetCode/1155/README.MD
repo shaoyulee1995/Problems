@@ -1,7 +1,5 @@
 # Number of Dice Rolls With Target Sum
 
-# Recursion
-
 - Time Complexity: O(DT)
 - Space Complexity: O(DT)
   - D as d

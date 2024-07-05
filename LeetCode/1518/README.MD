@@ -1,7 +1,5 @@
 # Water Bottles
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as numBottles

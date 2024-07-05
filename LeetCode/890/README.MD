@@ -1,7 +1,5 @@
 # Find and Replace Pattern
 
-# HashMap
-
 - Time Complexity: O(WN)
 - Space Complexity: O(WN)
   - W is the length of words string

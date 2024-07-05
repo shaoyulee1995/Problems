@@ -1,7 +1,5 @@
 # Design Browser History
 
-# Stack
-
 - Space Complexity: O(N)
   - N as length of urls
 - visit
@@ -49,8 +47,6 @@ class BrowserHistory {
     }
 }
 ```
-
-# Array
 
 - Space Complexity: O(N)
   - N as length of arr

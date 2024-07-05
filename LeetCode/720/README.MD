@@ -1,7 +1,5 @@
 # Longest Word in Dictionary
 
-# Set
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of words

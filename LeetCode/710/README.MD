@@ -1,7 +1,5 @@
 # Random Pick with Blacklist
 
-# HashMap
-
 - Time Complexity: O(B)
 - Space Complexity: O(N)
 

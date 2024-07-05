@@ -1,7 +1,5 @@
 # Integer Replacement
 
-# BFS
-
 - Time Complexity: O(log<sub>2</sub>N)
 - Space Complexity: O(N)
   - N as n

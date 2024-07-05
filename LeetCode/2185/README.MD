@@ -1,7 +1,5 @@
 # Counting Words With a Given Prefix
 
-# String
-
 - Time Complexity: O(WP)
 - Space Complexity: O(1)
   - W as length of words
@@ -20,8 +18,6 @@ class Solution {
     }
 }
 ```
-
-# String
 
 - Time Complexity: O(WP)
 - Space Complexity: O(1)

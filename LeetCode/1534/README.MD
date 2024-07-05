@@ -1,7 +1,5 @@
 # Count Good Triplets
 
-# Sliding Windows
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

@@ -1,7 +1,5 @@
 # Minimum Remove to Make Valid Parentheses
 
-# String
-
 - Time Complexity: O(S))
 - Space Complexity: O(S)
   - S as length of s

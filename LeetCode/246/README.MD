@@ -1,7 +1,5 @@
 # Strobogrammatic Number
 
-# Map
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of salary
@@ -31,8 +29,6 @@ class Solution {
     }
 }
 ```
-
-# Map
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)

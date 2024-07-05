@@ -1,7 +1,5 @@
 # Find the Difference
 
-# String
-
 - Time Complexity: O(T)
 - Space Complexity: O(26)
   - T as length of t

@@ -1,7 +1,5 @@
 # Minimum Deletions to Make String Balanced
 
-# Stack
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s
@@ -23,8 +21,6 @@ class Solution {
     }
 }
 ```
-
-# DP
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)

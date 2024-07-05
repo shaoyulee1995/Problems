@@ -1,7 +1,5 @@
 # Defuse the Bomb
 
-# String
-
 - Time Complexity: O(CK)
 - Space Complexity: O(C)
   - C as length of code

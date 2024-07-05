@@ -1,7 +1,5 @@
 # Minimum Size Subarray Sum
 
-# 2 Pointers
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums

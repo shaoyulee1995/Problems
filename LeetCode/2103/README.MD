@@ -1,7 +1,5 @@
 # Rings and Rods
 
-# Counting Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(10)
   - N as length of rings
@@ -33,8 +31,6 @@ class Solution {
     }
 }
 ```
-
-# HashMap
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

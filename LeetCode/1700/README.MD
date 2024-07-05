@@ -1,7 +1,5 @@
 # Number of Students Unable to Eat Lunch
 
-# Counting Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of students

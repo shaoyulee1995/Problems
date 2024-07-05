@@ -1,7 +1,5 @@
 # Longest Nice Substring
 
-# Divide and conquer
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
   - N as length of s

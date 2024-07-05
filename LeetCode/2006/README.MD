@@ -1,7 +1,5 @@
 # Count Number of Pairs With Absolute Difference K
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as len of nums

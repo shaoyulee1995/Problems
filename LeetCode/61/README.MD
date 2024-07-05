@@ -12,13 +12,11 @@ public class ListNode {
 
 ```
 
-# ListNode
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of singly-linked list
 
-```
+```java
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
         if(head == null){

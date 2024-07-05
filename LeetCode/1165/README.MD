@@ -1,7 +1,5 @@
 # Single-Row Keyboard
 
-# Counting Array
-
 - Time Complexity: O(Max(K, W))
 - Space Complexity: O(26)
   - K as length of keyboard

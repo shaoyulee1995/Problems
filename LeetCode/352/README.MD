@@ -1,7 +1,5 @@
 # Data Stream as Disjoint Intervals
 
-# TreeSet
-
 - Time Complexity:
   - addNum: O(logN)
   - getIntervals: O(N)

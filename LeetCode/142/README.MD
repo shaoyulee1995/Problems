@@ -45,8 +45,6 @@ public class Solution {
 }
 ```
 
-# Set
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as number of ListNode

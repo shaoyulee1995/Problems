@@ -1,7 +1,5 @@
 # Divide Array Into Equal Pairs
 
-# Counting Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(501)
   - N as length of nums
@@ -22,8 +20,6 @@ class Solution {
     }
 }
 ```
-
-# Set
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

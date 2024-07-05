@@ -1,14 +1,12 @@
 # Text Justification
 
-# String
-
 - Time Complexity: O(WMc)
 - Space Complexity: O(W)
   - W as length of words
   - M as maxWidth
   - c as number of lines
 
-```
+```java
 class Solution {
     public List<String> fullJustify(String[] words, int maxWidth) {
         int i = 0;

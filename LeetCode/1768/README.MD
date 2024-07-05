@@ -1,7 +1,5 @@
 # Merge Strings Alternately
 
-# String
-
 - Time Complexity: O(Max(N, M))
 - Space Complexity: O(N+M)
   - N as length of word1

@@ -21,8 +21,6 @@ class Node {
 */
 ```
 
-# Iterate
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as number of Node

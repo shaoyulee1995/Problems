@@ -25,8 +25,6 @@ class Node {
 */
 ```
 
-# HashSet
-
 - Time Complexity: O(NC)
 - Space Complexity: O(N)
   - N as number of Nodes in tree

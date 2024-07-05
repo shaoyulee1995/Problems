@@ -1,7 +1,5 @@
 # Intersection of Two Arrays II
 
-# HashMap
-
 - Time Complexity: O(N+M)
 - Space Complexity: O(N+M)
   - N as length of nums1

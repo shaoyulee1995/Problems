@@ -1,7 +1,5 @@
 # Remove Letter To Equalize Frequency
 
-# Counting Array
-
 - Time Complexity: O(W)
 - Space Complexity: O(26)
   - W as length of word

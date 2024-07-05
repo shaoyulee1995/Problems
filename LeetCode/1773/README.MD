@@ -1,7 +1,5 @@
 # Count Items Matching a Rule
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of items
@@ -25,8 +23,6 @@ class Solution {
     }
 }
 ```
-
-# Map
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)

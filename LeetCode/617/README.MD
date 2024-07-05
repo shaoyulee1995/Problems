@@ -18,8 +18,6 @@
  */
 ```
 
-# DFS
-
 - Time Complexity: O(Max(M, N))
 - Space Complexity: O(Max(M, N))
 
@@ -39,8 +37,6 @@ class Solution {
     }
 }
 ```
-
-# BFS
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

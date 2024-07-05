@@ -1,7 +1,5 @@
 # Intersection of Three Sorted Arrays
 
-# 3 Pointers
-
 - Time Complexity: O(A+B+C)
 - Space Complexity: O(A+B+C)
   - A as length of arr1
@@ -31,8 +29,6 @@ class Solution {
     }
 }
 ```
-
-# 3 Pointers
 
 - Time Complexity: O(Max(A, B, C))
 - Space Complexity: O(1)

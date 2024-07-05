@@ -1,7 +1,5 @@
 # The Employee That Worked on the Longest Task
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of logs

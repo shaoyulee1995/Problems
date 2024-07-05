@@ -1,7 +1,5 @@
 # Power of Two
 
-# Math
-
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as n

@@ -1,7 +1,5 @@
 # Check if Numbers Are Ascending in a Sentence
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s

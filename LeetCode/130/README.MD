@@ -1,7 +1,5 @@
 # Surrounded Regions
 
-# DFS
-
 - Time Complexity: O(MN)
 - Space Complexity: O(MN)
 

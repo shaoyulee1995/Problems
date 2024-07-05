@@ -1,7 +1,5 @@
 # Remove Vowels from a String
 
-# HashSet
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s

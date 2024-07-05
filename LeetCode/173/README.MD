@@ -18,8 +18,6 @@
  */
 ```
 
-# DFS
-
 ## next
 
 - Time Complexity: O(1)

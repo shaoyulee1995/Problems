@@ -1,7 +1,5 @@
 # Valid Anagram
 
-# Counting Array
-
 - Time Complexity: O(Max(S,T))
 - Space Complexity: O(26)
   - S as length of s.
@@ -27,8 +25,6 @@ class Solution {
     }
 }
 ```
-
-# HashMap
 
 - Time Complexity: O(Max(S,T))
 - Space Complexity: O(26)

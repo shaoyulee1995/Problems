@@ -1,7 +1,5 @@
 # Goal Parser Interpretation
 
-# HashSet
-
 - Time Complexity: O(C)
 - Space Complexity: O(C)
   - C as length of command

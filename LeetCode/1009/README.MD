@@ -1,7 +1,5 @@
 # Complement of Base 10 Integer
 
-# Math
-
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as n
@@ -23,8 +21,6 @@ class Solution {
     }
 }
 ```
-
-# Math
 
 - Time Complexity: O(logN)
 - Space Complexity: O(1)

@@ -1,7 +1,5 @@
 # Is Subsequence
 
-# String
-
 - Time Complexity: O(S)
 - Space Complexity: O(1)
   - S as length of s
@@ -23,8 +21,6 @@ class Solution {
     }
 }
 ```
-
-# DP
 
 - Time Complexity: O(ST)
 - Space Complexity: O(ST)

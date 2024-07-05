@@ -1,7 +1,5 @@
 # Check if Every Row and Column Contains All Numbers
 
-# HashSet
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of matrix

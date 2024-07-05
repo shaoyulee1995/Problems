@@ -1,7 +1,5 @@
 # K Items With the Maximum Sum
 
-# Math
-
 - Time Complexity: O(k)
 - Space Complexity: O(1)
   - N as k

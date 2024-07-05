@@ -1,7 +1,5 @@
 # Two Sum II - Input array is sorted
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of numbers
@@ -16,8 +14,6 @@ class Solution:
                 return [seen[remaining]+1, i+1]
             seen[value] = i
 ```
-
-# Two Pointers
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)
@@ -58,8 +54,6 @@ class Solution {
     }
 }
 ```
-
-# HashMap
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

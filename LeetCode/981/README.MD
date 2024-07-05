@@ -1,7 +1,5 @@
 # Time Based Key-Value Store
 
-# TreeMap
-
 - Space Complexity: O(1)
 - set
   - Time Complexity: O(logN)

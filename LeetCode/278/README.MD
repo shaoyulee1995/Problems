@@ -5,8 +5,6 @@
       boolean isBadVersion(int version); */
 ```
 
-# Binary Search
-
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
   - N as n

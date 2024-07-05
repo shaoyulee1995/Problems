@@ -1,7 +1,5 @@
 # Distance Between Bus Stops
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of distance

@@ -1,7 +1,5 @@
 # Longest Palindromic Subsequence
 
-# Dynamic Programming
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N is number of rows
@@ -26,8 +24,6 @@ class Solution {
     }
 }
 ```
-
-# Dynamic Programming
 
 - Time Complexity: O(NM)
 - Space Complexity: O(N)

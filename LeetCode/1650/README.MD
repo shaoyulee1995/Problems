@@ -10,8 +10,6 @@ class Node {
 };
 ```
 
-# Tree
-
 - Time Complexity: O(P+Q)
 - Space Complexity: O(1)
   - P as length of p

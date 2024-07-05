@@ -1,12 +1,10 @@
 # Remove Duplicates from Sorted Array II
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int removeDuplicates(int[] nums) {
         int j = 2;

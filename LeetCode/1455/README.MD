@@ -1,7 +1,5 @@
 # Check If a Word Occurs As a Prefix of Any Word in a Sentence
 
-# String
-
 - Time Complexity: O(NW)
 - Space Complexity: O(N)
   - N as length of sentence

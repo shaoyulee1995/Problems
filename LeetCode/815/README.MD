@@ -1,7 +1,5 @@
 # Bus Routes
 
-# BFS
-
 - Time Complexity: O(NS)
 - Space Complexity: O(NS)
   - N as length of routes

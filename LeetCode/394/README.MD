@@ -1,7 +1,5 @@
 # Decode String
 
-# Stack
-
 - Time Complexity: O(S)
 - Space Complexity: O(S)
   - S as length of s
@@ -35,8 +33,6 @@ class Solution {
     }
 }
 ```
-
-# Recursion
 
 - Time Complexity: O(S)
 - Space Complexity: O(S)

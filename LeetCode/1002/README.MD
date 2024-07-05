@@ -1,7 +1,5 @@
 # Find Common Characters
 
-# Counting Array
-
 - Time Complexity: O(WC)
 - Space Complexity: O(W)
   - W as length of words

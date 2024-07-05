@@ -1,7 +1,5 @@
 # Binary Search
 
-# Binary Search
-
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 

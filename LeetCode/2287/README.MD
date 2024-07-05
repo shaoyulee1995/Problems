@@ -1,7 +1,5 @@
 # Rearrange Characters to Make Target String
 
-# Counting Array
-
 - Time Complexity: O(Min(S, T))
 - Space Complexity: O(26)
   - S as length of s

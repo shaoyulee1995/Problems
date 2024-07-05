@@ -1,7 +1,5 @@
 # Subarray Sum Equals K
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

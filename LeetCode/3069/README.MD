@@ -1,7 +1,5 @@
 # Distribute Elements Into Two Arrays I
 
-# Stack
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

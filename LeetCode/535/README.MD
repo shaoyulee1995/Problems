@@ -1,7 +1,5 @@
 # Encode and Decode TinyURL
 
-# HashMap
-
 - Time Complexity: O(U)
 - Space Complexity: O(N)
   - U as length of url

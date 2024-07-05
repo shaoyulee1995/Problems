@@ -45,8 +45,6 @@ class Solution {
 }
 ```
 
-# String
-
 - Time Complexity: O(Wlog<sub>1000</sub>(N))
 - Space Complexity: O(1)
   - W aS length of word

@@ -18,8 +18,6 @@
  */
 ```
 
-# Iterate
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
@@ -51,8 +49,6 @@ class Solution {
     }
 }
 ```
-
-# Stack
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

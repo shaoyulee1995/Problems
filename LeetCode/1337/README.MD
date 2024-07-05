@@ -1,7 +1,5 @@
 # The K Weakest Rows in a Matrix
 
-# TreeMap
-
 - Time Complexity: O(M\*Max(N, logM))
 - Space Complexity: O(M)
   - M as mat.length
@@ -31,8 +29,6 @@ class Solution {
     }
 }
 ```
-
-# Binary Search
 
 - Time Complexity: O(MlogN)
 - Space Complexity: O(K)

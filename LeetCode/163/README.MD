@@ -1,7 +1,5 @@
 # Missing Ranges
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as len of nums

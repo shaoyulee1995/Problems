@@ -5,8 +5,6 @@
 // https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html
 ```
 
-# String
-
 - PeekingIterator
   - Time Complexity: O(1)
   - Space Complexity: O(N)

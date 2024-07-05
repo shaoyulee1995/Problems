@@ -1,7 +1,5 @@
 # Reconstruct Original Digits from English
 
-# Counting Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(26)
   - N as length of s

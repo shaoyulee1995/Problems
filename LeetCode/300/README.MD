@@ -1,7 +1,5 @@
 # Longest Increasing Subsequence
 
-# Dynamic Programming
-
 - Time Complexity: O(N^2)
 - Space Complexity: O(N)
 
@@ -25,8 +23,6 @@ class Solution {
     }
 }
 ```
-
-# Binary Search
 
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)

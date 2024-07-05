@@ -1,7 +1,5 @@
 # Positions of Large Groups
 
-# Array
-
 - Time Complexity: O(S<sup>2</sup>)
 - Space Complexity: O(log<sub>3</sub>S)
   - S as length of s

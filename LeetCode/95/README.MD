@@ -1,29 +1,25 @@
 # Unique Binary Search Trees II
 
 ```
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+Definition for a binary tree node.
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
 ```
 
-# Recursion
+- Time Complexity: O((4<sup>n</sup>)/(n<sup>0.5</sup>))
+- Space Complexity: O((4<sup>n</sup>)/(n<sup>0.5</sup>))
 
-- Time Complexity: O((4^n)/(n^(1/2))
-- Space Complexity: O((4^n)/(n^(1/2))
-
-```
+```java
 class Solution {
     public List<TreeNode> generateTrees(int n) {
         if(n == 0){

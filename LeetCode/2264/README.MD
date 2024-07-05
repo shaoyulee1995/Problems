@@ -1,7 +1,5 @@
 # Largest 3-Same-Digit Number in String
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of num

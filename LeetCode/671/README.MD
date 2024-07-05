@@ -16,8 +16,6 @@ public class TreeNode {
 }
 ```
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as nodes in tree

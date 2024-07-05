@@ -1,7 +1,5 @@
 # Count Nice Pairs in an Array
 
-# HashMap
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 

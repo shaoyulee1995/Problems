@@ -1,7 +1,5 @@
 # Apple Redistribution into Boxes
 
-# Array
-
 - Time Complexity: O(ClogC)
 - Space Complexity: O(1)
   - C as lenght of capacity

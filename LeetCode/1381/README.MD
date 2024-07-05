@@ -1,7 +1,5 @@
 # Design a Stack With Increment Operation
 
-# Array
-
 - CustomStack
   - Space Complexity: O(N)
     - N as maxSize

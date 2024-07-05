@@ -1,13 +1,11 @@
 # Interleaving String
 
-# DFS
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of s1
   - M as length of s2
 
-```
+```java
 class Solution {
     boolean[][] invalid;
     public boolean isInterleave(String s1, String s2, String s3) {

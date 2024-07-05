@@ -1,7 +1,5 @@
 # Subrectangle Queries
 
-# Matrix
-
 - Time Complexity: O(RC)
 - Space Complexity: O(NM)
   - R as row2-row1

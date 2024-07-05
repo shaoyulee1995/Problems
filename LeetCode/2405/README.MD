@@ -1,7 +1,5 @@
 # Optimal Partition of String
 
-# Counting
-
 - Time Complexity: O(N)
 - Space Complexity: O(26)
   - N as length of s

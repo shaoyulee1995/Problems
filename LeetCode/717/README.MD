@@ -1,7 +1,5 @@
 # 1-bit and 2-bit Characters
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

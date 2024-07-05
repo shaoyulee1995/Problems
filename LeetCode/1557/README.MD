@@ -1,7 +1,5 @@
 # Minimum Number of Vertices to Reach All Nodes
 
-# Counting Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of edge

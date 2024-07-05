@@ -26,8 +26,6 @@ class Solution {
 }
 ```
 
-# Matrix
-
 - Time Complexity: O(Max(MD, ND))
 - Space Complexity: O(1)
   - M as mat.length

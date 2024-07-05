@@ -1,7 +1,5 @@
 # Check If It Is a Straight Line
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

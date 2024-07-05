@@ -18,8 +18,6 @@
  */
 ```
 
-# DFS
-
 - Time Complexity: O(2<sup>N</sup>)
 - Space Complexity: O(2<sup>N</sup>)
 

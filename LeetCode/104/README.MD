@@ -16,8 +16,6 @@ public class TreeNode {
 }
 ```
 
-# Recursion
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as nodes in tree
@@ -34,8 +32,6 @@ class Solution {
     }
 }
 ```
-
-# BFS
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

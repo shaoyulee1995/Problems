@@ -1,7 +1,5 @@
 # Alternating Digit Sum
 
-# Stack
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of n

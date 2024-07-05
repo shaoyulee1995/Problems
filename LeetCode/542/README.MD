@@ -1,7 +1,5 @@
 # 01 Matrix
 
-# BFS
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of mat

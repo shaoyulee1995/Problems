@@ -1,7 +1,5 @@
 # Count the Number of Consistent Strings
 
-# HashSet
-
 - Time Complexity: O(SW)
 - Space Complexity: O(A)
   - S as length of strs

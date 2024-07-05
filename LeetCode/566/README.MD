@@ -1,7 +1,5 @@
 # Reshape the Matrix
 
-# Matrix
-
 - Time Complexity: O(NM)
 - Space Complexity: O(RC)
   - N as length of mat

@@ -1,7 +1,5 @@
 # Best Time to Buy and Sell Stock IV
 
-# Dynamic Programming
-
 - Time Complexity: O(Nk)
 - Space Complexity: O(k)
 

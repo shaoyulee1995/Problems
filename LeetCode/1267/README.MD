@@ -1,7 +1,5 @@
 # Count Servers that Communicate
 
-# Matrix
-
 - Time Complexity: O(MN)
 - Space Complexity: O(MN)
 

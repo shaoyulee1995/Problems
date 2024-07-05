@@ -1,7 +1,5 @@
 # Custom Sort String
 
-# String
-
 - Time Complexity: O(O+S)
 - Space Complexity: O(26)
 

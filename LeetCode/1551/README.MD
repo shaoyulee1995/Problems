@@ -1,7 +1,5 @@
 # Minimum Operations to Make Array Equal
 
-# Math
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as n

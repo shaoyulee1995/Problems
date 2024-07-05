@@ -1,7 +1,5 @@
 # Maximum Number of Words You Can Type
 
-# Set
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of text

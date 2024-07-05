@@ -1,7 +1,5 @@
 # Intersection of Multiple Arrays
 
-# Counting Array
-
 - Time Complexity: O(Max(NM, 1001))
 - Space Complexity: O(1001)
   - N as length of num

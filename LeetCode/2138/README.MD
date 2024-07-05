@@ -1,7 +1,5 @@
 # Divide a String Into Groups of Size k
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s

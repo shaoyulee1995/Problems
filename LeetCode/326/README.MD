@@ -1,7 +1,5 @@
 # Power of Three
 
-# Math
-
 - Time Complexity: O(log3(N))
 - Space Complexity: O(1)
 

@@ -1,7 +1,5 @@
 # Range Addition II
 
-# Matrix
-
 - Time Complexity: O(NM)
 - Space Complexity: O(1)
   - N as n

@@ -1,7 +1,5 @@
 # Minimum Add to Make Parentheses Valid
 
-# Stack
-
 - Time Complexity: O(S)
 - Space Complexity: O(S)
   - S as length of s

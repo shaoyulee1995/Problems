@@ -1,7 +1,5 @@
 # Partitioning Into Minimum Number Of Deci-Binary Numbers
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

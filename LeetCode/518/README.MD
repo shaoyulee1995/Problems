@@ -1,7 +1,5 @@
 # Coin Change 2
 
-# DP
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 

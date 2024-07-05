@@ -21,8 +21,6 @@ class Node {
 */
 ```
 
-# Recursion
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as number of nodes
@@ -45,8 +43,6 @@ class Solution {
     }
 }
 ```
-
-# Iterate
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

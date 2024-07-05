@@ -1,7 +1,5 @@
 # Find Center of Star Graph
 
-# Logic
-
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 
@@ -13,8 +11,6 @@ class Solution {
     }
 }
 ```
-
-# HashMap
 
 - Time Complexity: O(E)
 - Space Complexity: O(E)

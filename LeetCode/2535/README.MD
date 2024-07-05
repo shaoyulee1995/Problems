@@ -1,7 +1,5 @@
 # Difference Between Element Sum and Digit Sum of an Array
 
-# Array
-
 - Time Complexity: O(ND)
 - Space Complexity: O(1)
   - N as length of nums

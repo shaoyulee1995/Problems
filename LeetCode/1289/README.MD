@@ -1,7 +1,5 @@
 # Minimum Falling Path Sum II
 
-# Matrix
-
 - Time Complexity: O(NM)
 - Space Complexity: O(1)
   - N as length of grid

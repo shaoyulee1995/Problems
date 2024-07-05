@@ -1,7 +1,5 @@
 # Find the Divisibility Array of a String
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of word

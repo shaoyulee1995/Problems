@@ -1,7 +1,5 @@
 # Design Twitter
 
-# HashMap
-
 - Space Complexity: O(N)
 
 ```

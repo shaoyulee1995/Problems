@@ -1,7 +1,5 @@
 # Keyboard Row
 
-# String
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of words
@@ -27,8 +25,6 @@ class Solution {
     }
 }
 ```
-
-# String
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

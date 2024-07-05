@@ -1,7 +1,5 @@
 # Number Of Rectangles That Can Form The Largest Square
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

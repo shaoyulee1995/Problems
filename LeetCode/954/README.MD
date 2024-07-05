@@ -27,8 +27,6 @@ class Solution {
 }
 ```
 
-# HashMap
-
 - Time Complexity: O(Nlog(K))
 - Space Complexity: O(N)
   - K as different number of arr

@@ -1,7 +1,5 @@
 # Binary Prefix Divisible By 5
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

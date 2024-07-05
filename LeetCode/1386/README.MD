@@ -1,7 +1,5 @@
 # Cinema Seat Allocation
 
-# HashMap
-
 - Time Complexity: O(SN)
 - Space Complexity: O(S)
   - N as n

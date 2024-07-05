@@ -1,7 +1,5 @@
 # Convert Integer to the Sum of Two No-Zero Integers
 
-# Math
-
 - Time Complexity: O(Nlog<sub>10</sub>N)
 - Space Complexity: O(1)
   - N as n

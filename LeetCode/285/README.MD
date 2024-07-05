@@ -10,8 +10,6 @@ public class TreeNode {
 }
 ```
 
-# BFS
-
 - Time Complexity: O(H)
 - Space Complexity: O(1)
   - H as height of tree

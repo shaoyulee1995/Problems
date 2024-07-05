@@ -18,8 +18,6 @@
  */
 ```
 
-# DFS
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as number of nodes in tree
@@ -38,8 +36,6 @@ class Solution {
     }
 }
 ```
-
-# BFS
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

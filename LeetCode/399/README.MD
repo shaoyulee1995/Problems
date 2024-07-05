@@ -1,7 +1,5 @@
 # Evaluate Division
 
-# DFS
-
 - Time Complexity: O(E+QE)
 - Space Complexity: O(E+N)
   - N as total numbers of node

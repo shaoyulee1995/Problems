@@ -1,7 +1,5 @@
 # Capitalize the Title
 
-# String
-
 - Time Complexity: O(WN)
 - Space Complexity: O(N)
   - K as length of title

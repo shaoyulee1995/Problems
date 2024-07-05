@@ -1,7 +1,5 @@
 # Maximum Product of Two Elements in an Array
 
-# Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

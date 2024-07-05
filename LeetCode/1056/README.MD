@@ -1,7 +1,5 @@
 # Confusing Number
 
-# HashMap
-
 - Time Complexity: O(log<sub>10</sub>N)
 - Space Complexity: O(N)
   - N as n

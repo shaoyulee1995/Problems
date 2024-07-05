@@ -1,7 +1,5 @@
 # Merge Similar Items
 
-# Array
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of Max(items1, items2)

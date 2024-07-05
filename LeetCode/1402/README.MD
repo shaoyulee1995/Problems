@@ -1,7 +1,5 @@
 # Reducing Dishes
 
-# Array
-
 - Time Complexity: O(SlogS)
 - Space Complexity: O(1)
   - S as length of satisfaction

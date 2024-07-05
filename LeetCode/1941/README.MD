@@ -1,7 +1,5 @@
 # Check if All Characters Have Equal Number of Occurrences
 
-# Counting Array
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of s
@@ -28,8 +26,6 @@ class Solution {
     }
 }
 ```
-
-# HashMap
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

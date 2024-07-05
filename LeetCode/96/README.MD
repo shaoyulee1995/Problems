@@ -1,11 +1,9 @@
 # Unique Binary Search Trees
 
-# Dynamic Programming
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int numTrees(int n) {
         int[] dp = new int[n+1];
@@ -20,13 +18,11 @@ class Solution {
 }
 ```
 
-# Recursion for N space
-
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public int numTrees(int n) {
         int[] memo = new int[n+1];
@@ -49,12 +45,10 @@ class Solution {
 }
 ```
 
-# Recursion for N^2 space
-
 - Time Complexity: O(N^2)
 - Space Complexity: O(N^2)
 
-```
+```java
 class Solution {
     int[][] memo;
     public int numTrees(int n) {

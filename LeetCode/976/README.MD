@@ -1,7 +1,5 @@
 # Largest Perimeter Triangle
 
-# Math
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of nums

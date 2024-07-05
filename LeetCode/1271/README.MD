@@ -1,7 +1,5 @@
 # Hexspeak
 
-# HashMap
-
 - Time Complexity: O(log<sub>16</sub>N)
 - Space Complexity: O(N)
   - N as length of num
@@ -33,8 +31,6 @@ class Solution {
     }
 }
 ```
-
-# Math
 
 - Time Complexity: O(log<sub>16</sub>N)
 - Space Complexity: O(N)

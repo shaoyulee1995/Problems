@@ -1,7 +1,5 @@
 # Goat Latin
 
-# Math
-
 - Time Complexity: O(NWn)
 - Space Complexity: O(N)
   - N as length of sentence
