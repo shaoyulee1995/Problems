@@ -1,3 +1,5 @@
+# Sales Analysis II
+
 ```sql
 with iphone_buyers as (
     select buyer_id

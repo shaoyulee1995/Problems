@@ -1,4 +1,4 @@
-# Minimum Number of Pushes to Type Word I
+# Type of Triangle
 
 - Time Complexity: O(1)
 - Space Complexity: O(1)
