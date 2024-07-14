@@ -6,8 +6,8 @@
 - Space Complexity: O(26)
   - N as length of tiles
 
-```
-class Solution {
+```java
+class Solution{
 
     public int numTilePossibilities(String tiles) {
         int[] cnt = new int[26];

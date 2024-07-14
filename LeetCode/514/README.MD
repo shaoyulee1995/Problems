@@ -7,8 +7,8 @@
   - n = ring.length()
   - m = key.length()
 
-```
-class Solution {
+```java
+class Solution{
     Map<Character, Set<Integer>> map;
     int[][] dp;
     public int findRotateSteps(String ring, String key) {

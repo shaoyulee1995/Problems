@@ -5,8 +5,8 @@
   - c as combination
   - k as k
 
-```
-class Solution {
+```java
+class Solution{
     List<List<Integer>> res = new ArrayList();
     LinkedList<Integer> path = new LinkedList();
     public List<List<Integer>> combinationSum3(int k, int n) {

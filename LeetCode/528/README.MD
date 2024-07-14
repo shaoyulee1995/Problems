@@ -6,8 +6,8 @@
 - Space Complexity: O(W)
   - W as length of w
 
-```
-class Solution {
+```java
+class Solution{
 
     int[] w_sum;
     public Solution(int[] w) {

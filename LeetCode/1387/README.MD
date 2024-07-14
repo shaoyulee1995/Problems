@@ -7,8 +7,8 @@
   - N as length of [lo, hi]
   - IDK as I don't know
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<Integer, Integer> map;
     public int getKth(int lo, int hi, int k) {
         map = new HashMap();

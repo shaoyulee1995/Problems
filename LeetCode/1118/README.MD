@@ -3,8 +3,8 @@
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 
-```
-class Solution {
+```java
+class Solution{
     private static final int[] months = {0, 31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     public int numberOfDays(int year, int month) {
         if(month != 2){

@@ -54,8 +54,8 @@ class Solution {
 - Time Complexity: O(2<sup>N</sup>)
 - Space Complexity: O(2<sup>N</sup>)
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<Integer, List<TreeNode>> map = new HashMap();
     public List<TreeNode> allPossibleFBT(int n) {
         if(!map.containsKey(n)){

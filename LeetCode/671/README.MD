@@ -20,8 +20,8 @@ public class TreeNode {
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     Integer min1 = null,
             min2 = null;
     public int findSecondMinimumValue(TreeNode root) {

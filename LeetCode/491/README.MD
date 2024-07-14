@@ -4,8 +4,8 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
-class Solution {
+```java
+class Solution{
     Set<List<Integer>> list = new HashSet();
     LinkedList<Integer> path = new LinkedList();
     public List<List<Integer>> findSubsequences(int[] nums) {

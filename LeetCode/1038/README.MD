@@ -20,8 +20,8 @@ public class TreeNode {
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     int sum;
     public TreeNode bstToGst(TreeNode root) {
         sum = 0;

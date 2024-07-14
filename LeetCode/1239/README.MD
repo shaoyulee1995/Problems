@@ -4,8 +4,8 @@
 - Space Complexity: O(N)
   - N as size of arr
 
-```
-class Solution {
+```java
+class Solution{
     int res = 0;
     public int maxLength(List<String> arr) {
         dfs(arr, 0, new String());

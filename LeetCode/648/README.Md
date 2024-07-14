@@ -24,8 +24,8 @@
 - Space Complexity: O(1)
   - N as length of word
 
-```
-class Solution {
+```java
+class Solution{
     TrieNode root;
     public String replaceWords(List<String> dictionary, String sentence) {
         root = new TrieNode();

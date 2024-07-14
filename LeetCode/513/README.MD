@@ -21,8 +21,8 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
-class Solution {
+```java
+class Solution{
     int h, res;
     public int findBottomLeftValue(TreeNode root) {
         h = 0;

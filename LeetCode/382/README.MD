@@ -17,8 +17,8 @@ public class ListNode {
 - Space Complexity: O(N)
   - N as nodes
 
-```
-class Solution {
+```java
+class Solution{
     ListNode head;
     Random rand;
 

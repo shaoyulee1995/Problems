@@ -49,8 +49,8 @@ class Solution {
   - M as length of image
   - N as length of image[0]
 
-```
-class Solution {
+```java
+class Solution{
 	char[][] image;
     public int minArea(char[][] image, int x, int y) {
         this.image = image;

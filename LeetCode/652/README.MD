@@ -24,8 +24,8 @@
 - Space Complexity: O(N)
   - N as nodes
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<String, Integer> map = new HashMap();
     LinkedList<TreeNode> res = new LinkedList();
     public List<TreeNode> findDuplicateSubtrees(TreeNode root) {

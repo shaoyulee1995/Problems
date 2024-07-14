@@ -22,8 +22,8 @@
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<Integer, Integer> map;
     int maxFreq = 0;
     public int[] findFrequentTreeSum(TreeNode root) {

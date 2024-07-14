@@ -72,8 +72,8 @@ class Solution {
 - Space Complexity: O(N)
   - N as n
 
-```
-class Solution {
+```java
+class Solution{
     char[] vowels = new char[]{'a','e','i','o','u'};
     public int countVowelStrings(int n) {
         int res = 0;

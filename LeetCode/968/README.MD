@@ -20,8 +20,8 @@ public class TreeNode {
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     int res;
     public enum Camera {HAS_CAMERA, COVERED, PLEASE_COVER};
     public int minCameraCover(TreeNode root) {

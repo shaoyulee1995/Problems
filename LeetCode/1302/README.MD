@@ -50,8 +50,8 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     int maxDepth = 0,
         sum = 0;
     public int deepestLeavesSum(TreeNode root) {

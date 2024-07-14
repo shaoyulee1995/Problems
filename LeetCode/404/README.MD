@@ -23,8 +23,8 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
-class Solution {
+```java
+class Solution{
     int sum = 0;
     public int sumOfLeftLeaves(TreeNode root) {
         if(root == null){

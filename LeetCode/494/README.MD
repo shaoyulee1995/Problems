@@ -5,8 +5,8 @@
 - Time Complexity: O(2<sup>N</sup>)
 - Space Complexity: O(N)
 
-```
-class Solution {
+```java
+class Solution{
     int res;
     public int findTargetSumWays(int[] nums, int target) {
         res = 0;
@@ -38,8 +38,8 @@ class Solution {
   - N is length of nums
   - S is the sum of nums
 
-```
-class Solution {
+```java
+class Solution{
 
     HashMap<String, Integer> map;
     public int findTargetSumWays(int[] nums, int target) {

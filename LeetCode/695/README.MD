@@ -5,8 +5,8 @@
   - N as length of grid
   - M as length of grid[0]
 
-```
-class Solution {
+```java
+class Solution{
     int maxArea = 0;
     public int maxAreaOfIsland(int[][] grid) {
         int n = grid.length,
@@ -46,8 +46,8 @@ class Solution {
   - N as length of grid
   - M as length of grid[0]
 
-```
-class Solution {
+```java
+class Solution{
     int maxArea = 0;
     int[][] dirs = new int[][]{{-1,0}, {1,0}, {0,1}, {0,-1}};
     public int maxAreaOfIsland(int[][] grid) {

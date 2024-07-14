@@ -24,8 +24,8 @@ class Node {
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
-class Solution {
+```java
+class Solution{
     List<Integer> list = new ArrayList();
     public List<Integer> postorder(Node root) {
         if(root == null){

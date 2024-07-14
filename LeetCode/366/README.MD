@@ -24,8 +24,8 @@
 - Space Complexity: O(N)
   - N as number of TreeNodes
 
-```
-class Solution {
+```java
+class Solution{
     List<List<Integer>> res;
     public List<List<Integer>> findLeaves(TreeNode root) {
         res = new ArrayList();

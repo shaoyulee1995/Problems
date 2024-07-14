@@ -6,8 +6,8 @@
 - Space Complexity: O(N)
   - N as length of token
 
-```
-class Solution {
+```java
+class Solution{
     private static Map<String, BiFunction<Integer, Integer, Integer>> OPERATIONS = new HashMap();
 
     static{

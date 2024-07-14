@@ -52,8 +52,8 @@ class Solution {
 - Space Complexity: O(1)
   - N as nodes
 
-```
-class Solution {
+```java
+class Solution{
     TreeNode prev;
     int count;
     int maxCount;

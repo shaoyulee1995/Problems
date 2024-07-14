@@ -4,8 +4,8 @@
 - Space Complexity: O(1)
   - A as a
 
-```
-class Solution {
+```java
+class Solution{
     int res = 1;
     public int commonFactors(int a, int b) {
         if(a > b){

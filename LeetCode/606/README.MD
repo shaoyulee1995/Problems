@@ -22,8 +22,8 @@
 - Space Complexity: O(N)
   - N as nodes
 
-```
-class Solution {
+```java
+class Solution{
     StringBuilder sb;
     public String tree2str(TreeNode root) {
         sb = new StringBuilder();

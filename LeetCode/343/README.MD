@@ -25,8 +25,8 @@ class Solution {
 - Space Complexity: O(N)
   - N as n
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<Integer, Integer> map;
     public int integerBreak(int n) {
         if(n == 2 || n == 3){

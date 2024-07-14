@@ -4,8 +4,8 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
-class Solution {
+```java
+class Solution{
     int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
     public int cutOffTree(List<List<Integer>> forest) {
         PriorityQueue<int[]> paths = traverse(forest);

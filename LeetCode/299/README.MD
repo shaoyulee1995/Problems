@@ -4,8 +4,8 @@
 - Space Complexity: O(10)
   - S as length of secret
 
-```
-class Solution {
+```java
+class Solution{
     public String getHint(String secret, String guess) {
         int bulls = 0,
             cows = 0;

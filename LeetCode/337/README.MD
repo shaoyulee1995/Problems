@@ -22,8 +22,8 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<TreeNode, Integer> map = new HashMap();
     public int rob(TreeNode root) {
         if(root == null){

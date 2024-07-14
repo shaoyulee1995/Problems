@@ -5,8 +5,8 @@
   - D as d
   - T as target
 
-```
-class Solution {
+```java
+class Solution{
     final int mod = (int)1e9+7;
     HashMap<String, Integer> map = new HashMap();
     public int numRollsToTarget(int d, int f, int target) {

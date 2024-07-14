@@ -6,8 +6,8 @@
 - Space Complexity: O(N<sup>2</sup>)
   - N as length of expression
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<String, List<Integer>> map = new HashMap();
     public List<Integer> diffWaysToCompute(String expression) {
         if(map.containsKey(expression)){

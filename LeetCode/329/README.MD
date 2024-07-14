@@ -5,8 +5,8 @@
   - N as length of matrix
   - M as length of matrix[0]
 
-```
-class Solution {
+```java
+class Solution{
     final int[][] dirs = new int[][]{{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
     int[][] cache;
     public int longestIncreasingPath(int[][] matrix) {

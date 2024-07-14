@@ -5,8 +5,8 @@
   - N as length of students
     - M as length of mentors
 
-```
-class Solution {
+```java
+class Solution{
     int res;
     boolean[] visited;
     public int maxCompatibilitySum(int[][] students, int[][] mentors) {

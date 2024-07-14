@@ -29,8 +29,8 @@ class Node {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
-class Solution {
+```java
+class Solution{
     int path = 0;
     public int diameter(Node root) {
         if(root == null){

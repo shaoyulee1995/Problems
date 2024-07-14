@@ -7,8 +7,8 @@
   - W aS length of word
   - N as num
 
-```
-class Solution {
+```java
+class Solution{
     String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
                              "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen",
                              "Eighteen", "Nineteen"};
@@ -50,8 +50,8 @@ class Solution {
   - W aS length of word
   - N as num
 
-```
-class Solution {
+```java
+class Solution{
 
     private final String[] Thousand = {"", "Thousand", "Million", "Billion"};
     private final String[] lessTwenty = {"","One", "Two", "Three","Four","Five","Six",

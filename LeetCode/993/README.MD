@@ -22,8 +22,8 @@
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     TreeNode xParent, yParent;
     int xDepth, yDepth;
     public boolean isCousins(TreeNode root, int x, int y) {

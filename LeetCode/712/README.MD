@@ -7,8 +7,8 @@
   - N is the length of s1
   - M is the length of s2
 
-```
-class Solution {
+```java
+class Solution{
     int[][] memo;
     public int minimumDeleteSum(String s1, String s2) {
         memo = new int[s1.length()][s2.length()];

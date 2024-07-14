@@ -4,8 +4,8 @@
 - Space Complexity: O(N)
   - N as length of n
 
-```
-class Solution {
+```java
+class Solution{
     private static final String FIZZ = "Fizz";
     private static final String BUZZ = "Buzz";
     public List<String> fizzBuzz(int n) {

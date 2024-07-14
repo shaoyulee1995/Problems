@@ -4,8 +4,8 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
-class Solution {
+```java
+class Solution{
     int i = 0;
     public int calculate(String s) {
         Stack<Integer> stack = new Stack();

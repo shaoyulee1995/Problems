@@ -4,8 +4,8 @@
 - Space Complexity: O(N)
   - N as n
 
-```
-class Solution {
+```java
+class Solution{
     List<Integer> res;
     public List<Integer> lexicalOrder(int n) {
         res = new ArrayList();

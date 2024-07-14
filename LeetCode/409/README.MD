@@ -4,8 +4,8 @@
 - Space Complexity: O(S)
   - S as length of s
 
-```
-class Solution {
+```java
+class Solution{
     public int longestPalindrome(String s) {
         Set<Character> set = new HashSet();
         int pairs = 0;

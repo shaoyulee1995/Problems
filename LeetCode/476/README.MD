@@ -6,8 +6,8 @@
 - Space Complexity: O(1)
   - N as length of num in bits
 
-```
-class Solution {
+```java
+class Solution{
 public:
     int findComplement(int num) {
         int ones = 0;

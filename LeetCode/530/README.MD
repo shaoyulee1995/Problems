@@ -24,8 +24,8 @@
 - Space Complexity: O(1)
   - N as nodes in the tree
 
-```
-class Solution {
+```java
+class Solution{
     Integer prev = null;
     int res = Integer.MAX_VALUE;
     public int getMinimumDifference(TreeNode root) {

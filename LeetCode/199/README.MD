@@ -56,8 +56,8 @@ class Solution {
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     List<Integer> res;
     public List<Integer> rightSideView(TreeNode root) {
         res = new ArrayList();

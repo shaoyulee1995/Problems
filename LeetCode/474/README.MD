@@ -8,8 +8,8 @@
   - M is m
   - N is n
 
-```
-class Solution {
+```java
+class Solution{
     int[][][] dp;
     public int findMaxForm(String[] strs, int m, int n) {
         dp = new int[strs.length][m+1][n+1];

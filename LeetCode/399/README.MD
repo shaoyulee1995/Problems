@@ -6,8 +6,8 @@
     - Q as size of queries
     - E as edges
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<String, HashMap<String, Double>> map;
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
         map = new HashMap();

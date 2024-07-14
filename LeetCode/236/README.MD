@@ -42,8 +42,8 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<TreeNode, TreeNode> parentMap = new HashMap();
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root == null){

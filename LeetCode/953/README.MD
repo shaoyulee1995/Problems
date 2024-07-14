@@ -5,8 +5,8 @@
   - W as length of words
   - w as longest word in words
 
-```
-class Solution {
+```java
+class Solution{
     int[] pattern;
     public boolean isAlienSorted(String[] words, String order) {
         pattern = new int[order.length()];

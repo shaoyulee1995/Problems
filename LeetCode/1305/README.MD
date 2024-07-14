@@ -24,8 +24,8 @@
   - M as number of nodes in root2 tree
   - C as N + M
 
-```
-class Solution {
+```java
+class Solution{
     List<Integer> list = new ArrayList();
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
         inOrder(root1);

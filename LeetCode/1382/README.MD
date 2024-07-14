@@ -23,8 +23,8 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
-class Solution {
+```java
+class Solution{
     List<TreeNode> list;
     public TreeNode balanceBST(TreeNode root) {
         list = new ArrayList();

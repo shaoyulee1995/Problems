@@ -5,8 +5,8 @@
   - M as length of grid
     - N as length of grid[0]
 
-```
-class Solution {
+```java
+class Solution{
     int empty, res;
     public int uniquePathsIII(int[][] grid) {
         int startX = 0,

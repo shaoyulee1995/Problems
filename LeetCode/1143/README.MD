@@ -30,8 +30,8 @@ class Solution {
   - N is the length of text1
   - M is the length of text2
 
-```
-class Solution {
+```java
+class Solution{
     int[][] dp;
     public int longestCommonSubsequence(String text1, String text2) {
         dp = new int[text1.length()][text2.length()];

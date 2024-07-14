@@ -5,8 +5,8 @@
   - N as length of words
     - W as length of word
 
-```
-class Solution {
+```java
+class Solution{
     List<String> res;
     HashMap<String, Boolean> map;
     HashSet<String> set;

@@ -4,8 +4,8 @@
 - Space Complexity: O(1)
   - M as length of months
 
-```
-class Solution {
+```java
+class Solution{
     int[] months = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     public int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
         int[] a = new int[]{getDays(arriveAlice), getDays(leaveAlice)},

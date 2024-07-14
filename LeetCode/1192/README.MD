@@ -7,8 +7,8 @@
   - V as vertices
   - E as edges
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<Integer, List<Integer>> map;
     List<List<Integer>> res;
     int[] timeStamp;

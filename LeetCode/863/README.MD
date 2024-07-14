@@ -17,8 +17,8 @@ public class TreeNode {
   - E as edges
   - V as vertices
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<TreeNode, List<TreeNode>> map;
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
         map = new HashMap();

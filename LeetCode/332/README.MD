@@ -5,8 +5,8 @@
   - V as vertices
     - E as edges
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<String, PriorityQueue<String>> map;
     LinkedList<String> res;
     public List<String> findItinerary(List<List<String>> tickets) {

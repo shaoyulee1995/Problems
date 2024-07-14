@@ -7,8 +7,8 @@
   - N as length of maze
   - M as length of maze[0]
 
-```
-class Solution {
+```java
+class Solution{
     int[][] dirs = new int[][]{{-1,0}, {1,0}, {0,1}, {0,-1}};
     public int shortestDistance(int[][] maze, int[] start, int[] destination) {
         int n = maze.length,

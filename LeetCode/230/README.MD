@@ -22,8 +22,8 @@
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     int res = 0, rank = 0;
     public int kthSmallest(TreeNode root, int k) {
         traverse(root, k);

@@ -4,8 +4,8 @@
 - Space Complexity: O(26)
   - T as length of t
 
-```
-class Solution {
+```java
+class Solution{
     public char findTheDifference(String s, String t) {
         int[] cntS = new int[26],
               cntT = new int[26];

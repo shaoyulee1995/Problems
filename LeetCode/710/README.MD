@@ -3,8 +3,8 @@
 - Time Complexity: O(B)
 - Space Complexity: O(N)
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<Integer, Integer> map;
     int M;
     Random r;

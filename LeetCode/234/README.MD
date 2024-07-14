@@ -16,8 +16,8 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
-class Solution {
+```java
+class Solution{
     ListNode left;
     public boolean isPalindrome(ListNode head) {
         left = head;

@@ -4,8 +4,8 @@
 - Space Complexity: O(N)
   - N as length of date
 
-```
-class Solution {
+```java
+class Solution{
     String[] months = {"0", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
     public String reformatDate(String date) {
         String[] s = date.split("\\s+");

@@ -29,8 +29,8 @@ class Solution {
   - N as length of nums
   - T as target
 
-```
-class Solution {
+```java
+class Solution{
     Integer[] dp;
     public int combinationSum4(int[] nums, int target) {
         dp = new Integer[target+1];

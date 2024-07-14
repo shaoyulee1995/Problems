@@ -41,8 +41,8 @@ class Solution {
   - N is the length of nums
   - S is the sum of nums
 
-```
-class Solution {
+```java
+class Solution{
     Boolean[][] dp;
     public boolean canPartition(int[] nums) {
         int n = nums.length,

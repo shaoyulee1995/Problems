@@ -21,8 +21,8 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
-class Solution {
+```java
+class Solution{
     int maxSum = 0;
     public int maxSumBST(TreeNode root) {
         isBST(root);

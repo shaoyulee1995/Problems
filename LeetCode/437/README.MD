@@ -54,8 +54,8 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     HashMap<Integer, Integer> map = new HashMap();
     int count = 0, k = 0;
     public int pathSum(TreeNode root, int targetSum) {

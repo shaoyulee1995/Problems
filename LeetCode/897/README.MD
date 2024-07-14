@@ -24,8 +24,8 @@
 - Space Complexity: O(N)
   - N as number of nodes in tree
 
-```
-class Solution {
+```java
+class Solution{
     List<TreeNode> res;
     public TreeNode increasingBST(TreeNode root) {
         res = new ArrayList();

@@ -4,8 +4,8 @@
 - Space Complexity: O(N)
   - N as length of isConnected
 
-```
-class Solution {
+```java
+class Solution{
     boolean[] visited;
     public int findCircleNum(int[][] isConnected) {
         visited = new boolean[isConnected.length];
