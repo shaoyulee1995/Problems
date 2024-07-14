@@ -12,13 +12,11 @@ class ListNode {
 }
 ```
 
-# LinkedList
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as nodes in linkedlist
 
-```
+```java
 public class Solution {
     public boolean hasCycle(ListNode head) {
         ListNode slow = head,

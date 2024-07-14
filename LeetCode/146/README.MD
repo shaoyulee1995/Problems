@@ -1,7 +1,5 @@
 # LRU Cache
 
-# LRU
-
 - get:
   - Time Complexity: O(1)
 - put:
@@ -9,7 +7,7 @@
 - LRU:
   - Space Complexity: O(N) \* N as capacity
 
-```
+```java
 class LRUCache {
     LRU_LinkedList lru;
     HashMap<Integer, Node> map;

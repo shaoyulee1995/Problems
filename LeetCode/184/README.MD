@@ -13,8 +13,6 @@ where (e.departmentId, e.salary) in (
 )
 ```
 
-# join
-
 ```sql
 select d.name as 'Department',
         e.name as 'Employee',

@@ -60,8 +60,6 @@ class Solution {
 }
 ```
 
-# LinkedList
-
 - Time Complexity: O(Max(L1, L2))
 - Space Complexity: O(Max(L1, L2))
   - L1 as length of l1

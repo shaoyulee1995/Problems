@@ -9,13 +9,11 @@ int param_3 = obj.top();
 int param_4 = obj.getMin();
 ```
 
-# ListNode
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nodes
 
-```
+```java
 class MinStack {
 
     private Node head;

@@ -13,5 +13,4 @@ group by
     s1.id
 order by
     s1.score desc
-
 ```

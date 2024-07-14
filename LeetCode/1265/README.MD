@@ -1,7 +1,5 @@
 # Print Immutable Linked List in Reverse
 
-# LinkedList
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of linkedlist

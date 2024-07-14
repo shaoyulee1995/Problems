@@ -1,12 +1,10 @@
 # Read N Characters Given Read4
 
-# Lambda
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of buf
 
-```
+```java
 The read4 API is defined in the parent class Reader4.
     int read4(char[] buf4);
 

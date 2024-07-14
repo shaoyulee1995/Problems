@@ -1,7 +1,5 @@
 # Dungeon Game
 
-# Memorization Recursion
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
 

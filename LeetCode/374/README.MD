@@ -15,7 +15,7 @@
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 public class Solution extends GuessGame {
     public int guessNumber(int n) {
         int low = 1, high = n;

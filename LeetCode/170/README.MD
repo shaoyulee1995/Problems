@@ -14,7 +14,7 @@
 - Space Complexity: O(N)
   - N as added elements
 
-```
+```java
 class TwoSum {
     HashMap<Integer, Integer> map;
     public TwoSum() {
@@ -43,7 +43,8 @@ class TwoSum {
         return false;
     }
 }
-
+```
+```
 Your TwoSum object will be instantiated and called as such:
 TwoSum obj = new TwoSum();
 obj.add(number);

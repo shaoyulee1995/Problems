@@ -1,7 +1,5 @@
 # Design Linked List
 
-# LinkedList
-
 - MyLinkedList:
   - Time Complexity: O(1)
   - Space Complexity: O(1)

@@ -47,6 +47,10 @@ class Solution {
 }
 ```
 
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
 ```java
 class Solution {
     public int rob(int[] nums) {
@@ -64,8 +68,6 @@ class Solution {
 }
 ```
 
-# BottomUp
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums
@@ -81,8 +83,6 @@ class Solution {
     }
 }
 ```
-
-# StateTransition
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)

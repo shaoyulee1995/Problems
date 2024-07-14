@@ -1,7 +1,5 @@
 # Customers Who Never Order
 
-# Not exists
-
 ```sql
 select c.name as Customers
 from Customers c
@@ -11,8 +9,6 @@ where not exists (
     where o.customerId = c.id
 )
 ```
-
-# Not in
 
 ```sql
 select

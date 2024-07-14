@@ -1,7 +1,5 @@
 # Minimum Number of Arrows to Burst Balloons
 
-# LinkedList
-
 - Time Complexity: O(PlogP)
 - Space Complexity: O(1)
   - P as length of points

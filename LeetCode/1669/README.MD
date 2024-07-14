@@ -13,8 +13,6 @@
  */
 ```
 
-# LinkedList
-
 - Time Complexity: O(L1 + L2)
 - Space Complexity: O(1)
   - L1 is length of list1

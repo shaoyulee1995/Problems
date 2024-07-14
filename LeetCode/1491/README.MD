@@ -1,7 +1,5 @@
 # Average Salary Excluding the Minimum and Maximum Salary
 
-# Lambda
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of salary

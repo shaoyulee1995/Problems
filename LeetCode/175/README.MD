@@ -9,5 +9,4 @@ select
 from
     Person left join Address
     using(personId)
-
 ```

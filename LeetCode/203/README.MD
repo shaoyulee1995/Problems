@@ -13,8 +13,6 @@
  */
 ```
 
-# Iteration
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as number of nodes

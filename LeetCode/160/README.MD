@@ -1,27 +1,23 @@
 # Intersection of Two Linked Lists
 
 ```
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
+Definition for singly-linked list.
+public class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+}
 ```
-
-# LinkedList
 
 - Time Complexity: O(A+B)
 - Space Complexity: O(1)
   - A as length of headA
   - B as length of headB
 
-```
+```java
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         if(headA == null || headB == null){

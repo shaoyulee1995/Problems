@@ -1,6 +1,6 @@
 # Nth Highest Salary
 
-```
+```sql
 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
 BEGIN
 set N = N-1;

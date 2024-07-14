@@ -36,8 +36,6 @@ class Solution {
 }
 ```
 
-# Iteration
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as nodes in tree

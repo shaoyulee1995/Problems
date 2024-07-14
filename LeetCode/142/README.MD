@@ -1,26 +1,22 @@
 # Linked List Cycle II
 
 ```
-/**
- * Definition for singly-linked list.
- * class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) {
- *         val = x;
- *         next = null;
- *     }
- * }
- */
+Definition for singly-linked list.
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) {
+        val = x;
+        next = null;
+    }
+}
 ```
-
-# LinkedList
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as number of ListNode
 
-```
+```java
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         ListNode fast, slow;
@@ -49,7 +45,7 @@ public class Solution {
 - Space Complexity: O(N)
   - N as number of ListNode
 
-```
+```java
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         Set<ListNode> set = new HashSet();

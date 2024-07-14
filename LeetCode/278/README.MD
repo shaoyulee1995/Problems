@@ -9,7 +9,7 @@
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 public class Solution extends VersionControl {
     public int firstBadVersion(int n) {
         int i = 0,

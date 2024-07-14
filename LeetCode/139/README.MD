@@ -2,8 +2,8 @@
 
 - Time Complexity: O(NW)
 - Space Complexity: O(N)
-  - W as wordDict.size()
-  - N as s.length()
+  - W as size of wordDict
+  - N as length of s
 
 ```java
 class Solution {

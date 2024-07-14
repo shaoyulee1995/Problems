@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of numbers
 
-```
+```python
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         seen = {}
@@ -16,10 +16,10 @@ class Solution:
 ```
 
 - Time Complexity: O(N)
-- Space Complexity: O(N)
+- Space Complexity: O(1)
   - N as length of numbers
 
-```
+```python
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         for left in range(len(numbers) - 1):
@@ -34,6 +34,10 @@ class Solution:
                     right -= 1
 
 ```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of numbers
 
 ```java
 class Solution {

@@ -1,7 +1,5 @@
 # Queries on a Permutation With Key
 
-# LinkedList
-
 - Time Complexity: O(Max(M, Q))
 - Space Complexity: O(Max(M, Q))
   - M as m
