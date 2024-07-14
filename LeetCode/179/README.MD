@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public String largestNumber(int[] nums) {
         String[] strs = new String[nums.length];

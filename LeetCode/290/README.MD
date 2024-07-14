@@ -3,7 +3,7 @@
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public boolean wordPattern(String pattern, String s) {
         HashMap<Character, String> map = new HashMap();

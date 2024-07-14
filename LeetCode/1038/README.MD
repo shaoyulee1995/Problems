@@ -44,7 +44,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public TreeNode bstToGst(TreeNode root) {
         if(root == null){

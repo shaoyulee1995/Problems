@@ -1,6 +1,6 @@
 # The Latest Login in 2020
 
-```
+```sql
 select user_id, max(time_stamp) as 'last_stamp'
 from Logins
 where time_stamp like '2020%'

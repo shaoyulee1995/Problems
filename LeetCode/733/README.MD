@@ -57,7 +57,7 @@ class Solution {
   - N as length of image
   - M as length of image[0]
 
-```
+```java
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         if(image[sr][sc] == color){

@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of values
 
-```
+```java
 class Solution {
     public int largestValsFromLabels(int[] values, int[] labels, int numWanted, int useLimit) {
         List<Item> list = new ArrayList();

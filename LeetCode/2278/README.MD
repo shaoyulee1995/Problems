@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public int percentageLetter(String s, char letter) {
         int cnt = 0;

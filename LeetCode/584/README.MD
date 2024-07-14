@@ -1,6 +1,6 @@
 # Find Customer Referee
 
-```
+```sql
 select
     name
 from

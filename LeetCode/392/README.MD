@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - S as length of s
 
-```
+```java
 class Solution {
     public boolean isSubsequence(String s, String t) {
         int i = 0,
@@ -27,7 +27,7 @@ class Solution {
   - S as length of s
   - T as length of t
 
-```
+```java
 class Solution {
     public boolean isSubsequence(String s, String t) {
         int[][] dp = new int[s.length()+1][t.length()+1];

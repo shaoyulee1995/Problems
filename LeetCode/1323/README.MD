@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of num
 
-```
+```java
 class Solution {
     public int maximum69Number (int num) {
         StringBuilder sb = new StringBuilder();
@@ -28,7 +28,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of num
 
-```
+```java
 class Solution {
     public int maximum69Number (int num) {
         char[] res = String.valueOf(num).toCharArray();

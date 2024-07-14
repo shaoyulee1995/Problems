@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of intervals
 
-```
+```java
 class Solution {
     public List<List<Integer>> removeInterval(int[][] intervals, int[] toBeRemoved) {
         List<List<Integer>> list = new ArrayList();

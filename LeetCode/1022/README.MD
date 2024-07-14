@@ -21,7 +21,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int sumRootToLeaf(TreeNode root) {
         return sumRootToLeaf(root, 0);

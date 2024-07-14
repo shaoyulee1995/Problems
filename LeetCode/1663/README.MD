@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public String getSmallestString(int n, int k) {
         char[] res = new char[n];

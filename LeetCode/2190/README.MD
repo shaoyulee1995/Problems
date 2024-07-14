@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int mostFrequent(int[] nums, int key) {
         Map<Integer, Integer> map = new HashMap();

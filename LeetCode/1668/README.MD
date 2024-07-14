@@ -5,7 +5,7 @@
   - N as length of sequence
   - W as length of word
 
-```
+```java
 class Solution {
     public int maxRepeating(String sequence, String word) {
         int res = 0;

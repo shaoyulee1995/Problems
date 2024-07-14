@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean canPermutePalindrome(String s) {
         char[] cnt = new char[26];

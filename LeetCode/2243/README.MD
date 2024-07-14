@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String digitSum(String s, int k) {
         while(s.length() > k){

@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] nextGreaterElements(int[] nums) {
         int n = nums.length;

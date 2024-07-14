@@ -7,7 +7,7 @@
   - N as row of words
   - M as col of word
 
-```
+```java
 class Solution {
     public boolean validWordSquare(List<String> words) {
         int n = words.size();
@@ -39,7 +39,7 @@ class Solution {
   - N as row of words
   - M as col of word
 
-```
+```java
 class Solution {
     public boolean validWordSquare(List<String> words) {
         for(int i = 0; i < words.size(); i++){

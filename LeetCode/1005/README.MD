@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int largestSumAfterKNegations(int[] nums, int k) {
         PriorityQueue<Integer> pq = new PriorityQueue();
@@ -32,7 +32,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int largestSumAfterKNegations(int[] nums, int k) {
         nums = IntStream.of(nums)

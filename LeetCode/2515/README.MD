@@ -5,7 +5,7 @@
   - N as length of words
   - T as target
 
-```
+```java
 class Solution {
     public int closetTarget(String[] words, String target, int startIndex) {
         int res = Integer.MAX_VALUE;

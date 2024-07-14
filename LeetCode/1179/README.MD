@@ -1,6 +1,6 @@
 # Reformat Department Table
 
-```
+```sql
 select
     id,
     sum(if(month = 'Jan', revenue, NULL)) as Jan_Revenue,

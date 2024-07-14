@@ -5,7 +5,7 @@
   - C as length of code
   - K as k
 
-```
+```java
 class Solution {
     public int[] decrypt(int[] code, int k) {
         int[] res = new int[code.length];

@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap();
@@ -23,7 +23,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         HashSet<Integer> set = new HashSet();

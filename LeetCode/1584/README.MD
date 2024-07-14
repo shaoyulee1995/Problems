@@ -5,7 +5,7 @@
 - Time Complexity: O(ELog(E))
 - Space Complexity: O(E+V)
 
-```
+```java
 class Solution {
     public int minCostConnectPoints(int[][] points) {
         List<int[]> edges = new ArrayList();
@@ -89,7 +89,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of points
 
-```
+```java
 class Solution {
     public int minCostConnectPoints(int[][] points) {
         int n = points.length,

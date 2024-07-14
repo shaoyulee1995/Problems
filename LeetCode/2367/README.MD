@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int arithmeticTriplets(int[] nums, int diff) {
         HashSet<Integer> set = new HashSet();

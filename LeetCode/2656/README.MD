@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - S as length of nums
 
-```
+```java
 class Solution {
     public int maximizeSum(int[] nums, int k) {
         int max = Arrays.stream(nums).max().getAsInt(),

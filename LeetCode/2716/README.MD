@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public int minimizedStringLength(String s) {
       return (int) s.chars().distinct().count();
@@ -16,7 +16,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public int minimizedStringLength(String s) {
       int[] cnt = new int[26];

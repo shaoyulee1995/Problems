@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - S as length of current
 
-```
+```java
 class Solution {
     public int convertTime(String current, String correct) {
         int start = getSeconds(current),

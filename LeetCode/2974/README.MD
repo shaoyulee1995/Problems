@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] numberGame(int[] nums) {
         PriorityQueue<Integer> pq = new PriorityQueue();
@@ -30,7 +30,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] numberGame(int[] nums) {
         Arrays.sort(nums);

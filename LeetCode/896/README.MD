@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public boolean isMonotonic(int[] nums) {
        return increase(nums) || decrease(nums);
@@ -34,7 +34,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public boolean isMonotonic(int[] nums) {
         boolean increase = true,

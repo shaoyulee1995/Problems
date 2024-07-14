@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int countElements(int[] nums) {
         int min = Arrays.stream(nums).min().getAsInt(),
@@ -24,7 +24,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int countElements(int[] nums) {
         int min = Arrays.stream(nums).min().getAsInt(),

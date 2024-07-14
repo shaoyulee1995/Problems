@@ -5,7 +5,7 @@
   - N as length of box
   - M as length of box[0]
 
-```
+```java
 class Solution {
     public char[][] rotateTheBox(char[][] box) {
         box = rotate(box);

@@ -48,7 +48,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as number of TreeNode
 
-```
+```java
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList();

@@ -5,7 +5,7 @@
   - N as num
   - D as digits of num
 
-```
+```java
 class Solution {
     public int countEven(int num) {
         int res = 0;

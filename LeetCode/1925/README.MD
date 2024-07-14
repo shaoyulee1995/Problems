@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public int countTriples(int n) {
         HashSet<Integer> set = new HashSet();

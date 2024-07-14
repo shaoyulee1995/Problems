@@ -38,7 +38,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of token
 
-```
+```java
 class Solution {
     public int evalRPN(String[] tokens) {
         ArrayDeque<Integer> stack = new ArrayDeque();
@@ -75,7 +75,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of token
 
-```
+```java
 class Solution {
     public int evalRPN(String[] tokens) {
         ArrayDeque<Integer> deque = new ArrayDeque();

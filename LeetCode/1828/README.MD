@@ -5,7 +5,7 @@
   - Q as length of queries
   - P as length of points
 
-```
+```java
 class Solution {
     public int[] countPoints(int[][] points, int[][] queries) {
         int[] res = new int[queries.length];

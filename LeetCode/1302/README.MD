@@ -22,7 +22,7 @@
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public int deepestLeavesSum(TreeNode root) {
         LinkedList<TreeNode> bfs = new LinkedList();

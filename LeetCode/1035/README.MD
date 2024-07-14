@@ -5,7 +5,7 @@
   - N as length of nums1
   - M as length of nums2
 
-```
+```java
 class Solution {
     public int maxUncrossedLines(int[] nums1, int[] nums2) {
         int[][] dp = new int[nums1.length+1][nums2.length+1];

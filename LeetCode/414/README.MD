@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int thirdMax(int[] nums) {
         TreeSet<Integer> set = new TreeSet<>();

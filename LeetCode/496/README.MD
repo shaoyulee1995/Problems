@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums2
 
-```
+```java
 class Solution {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         HashMap<Integer, Integer> map = new HashMap();

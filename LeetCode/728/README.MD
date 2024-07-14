@@ -5,7 +5,7 @@
 - Time Complexity: O(Size(R-L))
 - Space Complexity: O(Size(R-L))
 
-```
+```java
 class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
         List<Integer> ans = new ArrayList();

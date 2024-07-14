@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of path
 
-```
+```java
 class Solution {
     public boolean isPathCrossing(String path) {
         int x = 0,

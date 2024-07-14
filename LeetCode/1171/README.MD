@@ -19,7 +19,7 @@
 - Space Complexity: O(N)
   - N as nodes in list
 
-```
+```java
 class Solution {
     public ListNode removeZeroSumSublists(ListNode head) {
         HashMap<Integer, ListNode> map = new HashMap();

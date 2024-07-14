@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public String maxValue(String n, int x) {
         for(int i = 0; i < n.length(); i++){

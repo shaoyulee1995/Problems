@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of pairs
 
-```
+```java
 class Solution {
     public int findLongestChain(int[][] pairs) {
         Arrays.sort(pairs, (a, b) -> a[1] - b[1]);

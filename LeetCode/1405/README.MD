@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as a + b + c
 
-```
+```java
 class Solution {
     public String longestDiverseString(int a, int b, int c) {
         return generate(a, b, c, "a", "b", "c");

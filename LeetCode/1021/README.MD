@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public String removeOuterParentheses(String S) {
         int opened = 0;
@@ -25,7 +25,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public String removeOuterParentheses(String s) {
         int res = 0;

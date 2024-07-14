@@ -5,7 +5,7 @@
   - N as length of nums1
     - M as length of nums2
 
-```
+```java
 class Solution {
     public int[] findIntersectionValues(int[] nums1, int[] nums2) {
         int[] res = new int[2];

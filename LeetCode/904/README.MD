@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int totalFruit(int[] fruits) {
         HashMap<Integer, Integer> map = new HashMap();

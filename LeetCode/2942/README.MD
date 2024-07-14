@@ -5,7 +5,7 @@
   - N as length of words
     - W as length of word
 
-```
+```java
 class Solution {
     public List<Integer> findWordsContaining(String[] words, char x) {
         List<Integer> res = new ArrayList();

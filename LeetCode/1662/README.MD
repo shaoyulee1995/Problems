@@ -3,7 +3,7 @@
 - Time Complexity: O(Max(W1, W2))
 - Space Complexity: O(M1+M2)
 
-```
+```java
 class Solution {
     public boolean arrayStringsAreEqual(String[] W1, String[] W2) {
         StringBuilder sb1 = new StringBuilder();

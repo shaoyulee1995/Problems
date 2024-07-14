@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of str1 and str2
 
-```
+```java
 class Solution {
     public String gcdOfStrings(String str1, String str2) {
         if(!(str1+str2).equals(str2+str1)){
@@ -23,7 +23,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of str1 and str2
 
-```
+```java
 class Solution {
     public String gcdOfStrings(String str1, String str2) {
         if(!(str1+str2).equals(str2+str1)){

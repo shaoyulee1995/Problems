@@ -1,6 +1,6 @@
 # Article Views I
 
-```
+```sql
 select
     distinct author_id as 'id'
 from

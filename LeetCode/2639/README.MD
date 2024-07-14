@@ -5,7 +5,7 @@
   - N as length of grid
   - M as length of grid[0]
 
-```
+```java
 class Solution {
     public int[] findColumnWidth(int[][] grid) {
         int[] res = new int[grid[0].length];

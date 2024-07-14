@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as numBottles
 
-```
+```java
 class Solution {
     public int numWaterBottles(int numBottles, int numExchange) {
         int res = numBottles;

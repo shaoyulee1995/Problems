@@ -56,7 +56,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of prices
 
-```
+```java
 class Solution {
     public int maxProfit(int[] prices) {
         int n = prices.length;

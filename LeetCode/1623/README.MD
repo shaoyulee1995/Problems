@@ -1,6 +1,6 @@
 # All Valid Triplets That Can Represent a Country
 
-```
+```sql
 select
     a.student_name AS 'member_A',
     b.student_name AS 'member_B',

@@ -5,7 +5,7 @@
   - M as length of mat
   - N as length of mat[0]
 
-```
+```java
 class Solution {
     public int smallestCommonElement(int[][] mat) {
         int[] freq = new int[10001];

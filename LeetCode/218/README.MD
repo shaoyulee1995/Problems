@@ -5,7 +5,7 @@
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public List<List<Integer>> getSkyline(int[][] buildings) {
         List<List<Integer>> res = new ArrayList();

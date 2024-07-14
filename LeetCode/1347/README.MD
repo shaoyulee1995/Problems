@@ -5,7 +5,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(26)
 
-```
+```java
 class Solution {
     public int minSteps(String s, String t) {
         int[] cnt = new int[26];

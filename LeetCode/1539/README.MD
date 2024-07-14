@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of arr
 
-```
+```java
 class Solution {
     public int findKthPositive(int[] arr, int k) {
         for(int a: arr){

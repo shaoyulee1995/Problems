@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of logs
 
-```
+```java
 class Solution {
     public int hardestWorker(int n, int[][] logs) {
         int id = logs[0][0],

@@ -4,7 +4,7 @@
 - Space Complexity: O(S)
   - S as length of s
 
-```
+```java
 class Solution {
     public int minAddToMakeValid(String s) {
         Stack<Character> stack = new Stack();

@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of text
 
-```
+```java
 class Solution {
     public String[] findOcurrences(String text, String first, String second) {
         List<String> res = new ArrayList();

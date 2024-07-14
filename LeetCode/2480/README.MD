@@ -1,6 +1,6 @@
 # Form a Chemical Bond
 
-```
+```sql
 select
     e1.symbol as 'metal',
     e2.symbol as 'nonmetal'

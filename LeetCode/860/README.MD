@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of bills
 
-```
+```java
 class Solution {
     public boolean lemonadeChange(int[] bills) {
         int five = 0,

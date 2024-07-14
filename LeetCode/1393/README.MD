@@ -1,6 +1,6 @@
 # Capital GainLoss
 
-```
+```sql
 select stock_name, sum(case
                        when operation = 'Buy' then -price
                        else price

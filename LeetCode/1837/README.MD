@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - K as k
 
-```
+```java
 class Solution {
     public int sumBase(int n, int k) {
         int res = 0;

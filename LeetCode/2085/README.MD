@@ -5,7 +5,7 @@
   - N as length of words1
   - M as length of words2
 
-```
+```java
 class Solution {
     public int countWords(String[] words1, String[] words2) {
         HashMap<String, Integer> map1 = new HashMap(),

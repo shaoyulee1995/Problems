@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int longestOnes(int[] nums, int k) {
         int i = 0, j = 0;

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of weights
 
-```
+```java
 class Solution {
     public int maxNumberOfApples(int[] weights) {
         Arrays.sort(weights);

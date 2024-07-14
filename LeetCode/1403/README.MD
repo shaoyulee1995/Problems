@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public List<Integer> minSubsequence(int[] nums) {
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());

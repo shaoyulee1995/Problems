@@ -5,7 +5,7 @@
   - N as n
   - s as square root of n
 
-```
+```java
 class Solution {
     public int numSquares(int n) {
         int[] dp = new int[n+1];
@@ -28,7 +28,7 @@ class Solution {
   - N as n
   - s as square root of n
 
-```
+```java
 class Solution {
     public int numSquares(int n) {
         int[] dp = new int[n+1];

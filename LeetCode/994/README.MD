@@ -7,7 +7,7 @@
   - N as length of grid
   - M as length of grid[0]
 
-```
+```java
 class Solution {
     public int orangesRotting(int[][] grid) {
         HashSet<String> fresh = new HashSet(),
@@ -65,7 +65,7 @@ class Solution {
   - N as length of grid
   - M as length of grid[0]
 
-```
+```java
 class Solution {
     public int orangesRotting(int[][] grid) {
         Queue<int[]> queue = new LinkedList();

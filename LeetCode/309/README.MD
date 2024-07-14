@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxProfit(int[] prices) {
         int n = prices.length;
@@ -23,7 +23,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxProfit(int[] prices) {
         int sell = 0,
@@ -43,7 +43,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxProfit(int[] prices) {
         if(prices.length < 2){

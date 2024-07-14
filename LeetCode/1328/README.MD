@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of palindrome
 
-```
+```java
 class Solution {
     public String breakPalindrome(String palindrome) {
         char[] s = palindrome.toCharArray();

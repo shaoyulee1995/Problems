@@ -21,7 +21,7 @@
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public TreeNode insertIntoBST(TreeNode root, int val) {
         if(root == null){
@@ -42,7 +42,7 @@ class Solution {
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public TreeNode insertIntoBST(TreeNode root, int val) {
         TreeNode insert = new TreeNode(val);

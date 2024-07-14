@@ -25,7 +25,7 @@ class Node {
 - Space Complexity: O(N)
   - N as number of nodes
 
-```
+```java
 class Solution {
     public List<Integer> preorder(Node root) {
         List<Integer> res = new ArrayList();
@@ -48,7 +48,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as number of nodes
 
-```
+```java
 class Solution {
     public List<Integer> preorder(Node root) {
         List<Integer> list = new ArrayList();

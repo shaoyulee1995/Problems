@@ -51,7 +51,7 @@ class Solution {
   - N as number of nodes in root1 tree
   - M as number of nodes in root2 tree
 
-```
+```java
 class Solution {
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
         Stack<TreeNode> stack1 = new Stack(),

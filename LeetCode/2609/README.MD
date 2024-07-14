@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int findTheLongestBalancedSubstring(String s) {
         int res = 0;

@@ -1,6 +1,6 @@
 # Sales Person
 
-```
+```sql
 select
     name
 from

@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of arr
 
-```
+```java
 class Solution {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
         List<List<Integer>> res = new ArrayList();

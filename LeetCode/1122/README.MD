@@ -5,7 +5,7 @@
   - N as length of arr1
   - M as length of arr2
 
-```
+```java
 class Solution {
     public int[] relativeSortArray(int[] arr1, int[] arr2) {
         TreeMap<Integer, Integer> map = new TreeMap();

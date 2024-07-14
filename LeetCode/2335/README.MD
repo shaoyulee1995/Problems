@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of amount
 
-```
+```java
 class Solution {
     public int fillCups(int[] amount) {
         int res = 0,

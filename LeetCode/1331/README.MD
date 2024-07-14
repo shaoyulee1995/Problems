@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of arr
 
-```
+```java
 class Solution {
     public int[] arrayRankTransform(int[] arr) {
         int[] clone = arr.clone();

@@ -5,7 +5,7 @@
   - N as length of board
   - M as length of board[0]
 
-```
+```java
 class Solution {
     public int numRookCaptures(char[][] board) {
         int x = 0,

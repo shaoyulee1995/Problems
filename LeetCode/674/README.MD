@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int findLengthOfLCIS(int[] nums) {
         int left = 0, right = left + 1;
@@ -26,7 +26,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int findLengthOfLCIS(int[] nums) {
         int cur_right = 0,
@@ -48,7 +48,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int findLengthOfLCIS(int[] nums) {
         if(nums.length == 1){

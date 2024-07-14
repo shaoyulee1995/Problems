@@ -5,7 +5,7 @@
   - N as length of names
     - H as length of heights
 
-```
+```java
 class Solution {
     public String[] sortPeople(String[] names, int[] heights) {
         HashMap<Integer, List<String>> map = new HashMap();

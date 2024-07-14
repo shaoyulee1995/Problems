@@ -4,7 +4,7 @@
 - Space Complexity: O(26)
   - N as length of s
 
-```
+```java
 class Solution {
     public int partitionString(String s) {
         int[] seen = new int[26];

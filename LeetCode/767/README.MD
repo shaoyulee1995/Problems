@@ -3,7 +3,7 @@
 - Time Complexity: O(N<sup>2</sup>logN)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public String reorganizeString(String S) {
         HashMap<Character, Integer> map = new HashMap();

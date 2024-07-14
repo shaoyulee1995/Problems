@@ -1,6 +1,6 @@
 # Users That Actively Request Confirmation Messages
 
-```
+```sql
 select
     distinct c1.user_id
 from

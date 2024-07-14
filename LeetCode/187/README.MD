@@ -5,7 +5,7 @@
   - N as length of s
   - L as length of DNA
 
-```
+```java
 class Solution {
     public List<String> findRepeatedDnaSequences(String s) {
         HashSet<String> seen = new HashSet(),

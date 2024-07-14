@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public String thousandSeparator(int n) {
         if(n == 0){
@@ -29,7 +29,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public String thousandSeparator(int n) {
         String num = Integer.toString(n);

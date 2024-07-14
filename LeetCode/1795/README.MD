@@ -1,6 +1,6 @@
 # Rearrange Products Table
 
-```
+```sql
 select
     product_id,
     'store1' as store,

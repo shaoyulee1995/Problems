@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of arr
 
-```
+```java
 class Solution {
     public boolean threeConsecutiveOdds(int[] arr) {
         for(int i = 1; i + 1 < arr.length; i++){
@@ -24,7 +24,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of arr
 
-```
+```java
 class Solution {
     public boolean threeConsecutiveOdds(int[] arr) {
         for(int i = 0, count = 0; i < arr.length; i++){

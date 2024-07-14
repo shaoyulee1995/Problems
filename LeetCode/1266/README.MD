@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of points
 
-```
+```java
 class Solution {
     public int minTimeToVisitAllPoints(int[][] points) {
         int res = 0;

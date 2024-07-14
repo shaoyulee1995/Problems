@@ -73,7 +73,7 @@ class Solution {
   - N is length of nums
   - S is the sum of nums
 
-```
+```java
 class Solution {
     public int findTargetSumWays(int[] nums, int target) {
         int sum = 0;
@@ -105,7 +105,7 @@ class Solution {
   - N as length of nums
   - S as size
 
-```
+```java
 class Solution {
     public int findTargetSumWays(int[] nums, int target) {
         int sum = Arrays.stream(nums).sum();

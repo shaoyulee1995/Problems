@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of target
 
-```
+```java
 class Solution {
     public int minFlips(String target) {
         int state = 0,

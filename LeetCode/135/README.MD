@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of ratings
 
-```
+```java
 class Solution {
     public int candy(int[] ratings) {
         int[] dp = new int[ratings.length];

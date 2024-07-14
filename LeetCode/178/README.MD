@@ -1,6 +1,6 @@
 # Rank Scores
 
-```
+```sql
 select
     s1.score,
     count(s2.score) as 'rank'

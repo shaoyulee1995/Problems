@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of text
 
-```
+```java
 class Solution {
     public String reorderSpaces(String text) {
         String[] words = text.trim().split("\\s+");

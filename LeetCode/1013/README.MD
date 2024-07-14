@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of arr
 
-```
+```java
 class Solution {
     public boolean canThreePartsEqualSum(int[] arr) {
         int sum = Arrays.stream(arr).sum(),

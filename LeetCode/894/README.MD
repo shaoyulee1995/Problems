@@ -21,7 +21,7 @@
 - Time Complexity: O(2<sup>N</sup>)
 - Space Complexity: O(2<sup>N</sup>)
 
-```
+```java
 class Solution {
     public List<TreeNode> allPossibleFBT(int n) {
         if(n%2 == 0 || n <= 0){

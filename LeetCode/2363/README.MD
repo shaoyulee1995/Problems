@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of Max(items1, items2)
 
-```
+```java
 class Solution {
     public List<List<Integer>> mergeSimilarItems(int[][] items1, int[][] items2) {
         TreeMap<Integer, Integer> map = new TreeMap();

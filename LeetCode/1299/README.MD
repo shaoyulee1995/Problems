@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of arr
 
-```
+```java
 class Solution {
     public int[] replaceElements(int[] arr) {
         for(int max = arr[arr.length-1], i = arr.length-2; i >= 0; i--){

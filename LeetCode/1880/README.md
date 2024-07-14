@@ -6,7 +6,7 @@
   - S as length of secondWord
   - T as length of targetWord
 
-```
+```java
 class Solution {
     public boolean isSumEqual(String firstWord, String secondWord, String targetWord) {
         return getInt(targetWord) == getInt(firstWord) + getInt(secondWord);

@@ -5,7 +5,7 @@
   - P as length of paths
   - N as n
 
-```
+```java
 class Solution {
     public int[] gardenNoAdj(int n, int[][] paths) {
         HashMap<Integer, HashSet<Integer>> map = new HashMap();

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 class Solution {
     public int bitwiseComplement(int n) {
         if(n == 0){
@@ -26,7 +26,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 class Solution {
     public int bitwiseComplement(int n) {
         int allOnes = 1;

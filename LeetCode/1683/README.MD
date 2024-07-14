@@ -1,6 +1,6 @@
 # Invalid Tweets
 
-```
+```sql
 select
     tweet_id
 from

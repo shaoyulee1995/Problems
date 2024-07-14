@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int dominantIndex(int[] nums) {
         int max = Arrays.stream(nums).max().getAsInt(),

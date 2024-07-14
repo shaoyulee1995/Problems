@@ -5,7 +5,7 @@
   - N as length of num
   - M as length of num[0]
 
-```
+```java
 class Solution {
     public List<Integer> intersection(int[][] nums) {
         List<Integer> res = new ArrayList();

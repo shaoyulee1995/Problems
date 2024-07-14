@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of items
 
-```
+```java
 class Solution {
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         int idx = 0;
@@ -28,7 +28,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of items
 
-```
+```java
 class Solution {
     public int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
         HashMap<String, Integer> map = new HashMap();

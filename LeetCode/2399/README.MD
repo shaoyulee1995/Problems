@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean checkDistances(String s, int[] distance) {
         HashMap<Character, Integer> map = new HashMap();
@@ -27,7 +27,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean checkDistances(String s, int[] distance) {
         for(int i = 0; i < s.length(); i++){
@@ -50,7 +50,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean checkDistances(String s, int[] distance) {
         int[] arr = new int[26];

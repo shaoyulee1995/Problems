@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int shortestSubarray(int[] nums, int k) {
         long[] sum = new long[nums.length + 1];

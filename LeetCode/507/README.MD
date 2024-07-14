@@ -3,7 +3,7 @@
 - Time Complexity: O((sqrt(N))
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public boolean checkPerfectNumber(int num) {
         if(num == 1 || num <= 0){

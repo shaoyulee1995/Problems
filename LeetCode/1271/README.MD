@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of num
 
-```
+```java
 class Solution {
     public String toHexspeak(String num) {
         HashMap<Integer, Character> map = new HashMap();
@@ -36,7 +36,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of num
 
-```
+```java
 class Solution {
     public String toHexspeak(String num) {
         Long n = Long.valueOf(num);

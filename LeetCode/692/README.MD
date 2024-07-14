@@ -7,7 +7,7 @@
   - N as length of words
   - K as k
 
-```
+```java
 class Solution {
     public List<String> topKFrequent(String[] words, int k) {
         HashMap<String, Integer> map = new HashMap();

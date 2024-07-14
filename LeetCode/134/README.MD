@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of gas
 
-```
+```java
 class Solution {
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int minSum = 0,

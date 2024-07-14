@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public List<String> cellsInRange(String s) {
         List<String> res = new ArrayList();

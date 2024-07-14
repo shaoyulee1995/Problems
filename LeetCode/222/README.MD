@@ -20,7 +20,7 @@ public class TreeNode {
 - Space Complexity: O(1)
   - N as nodes
 
-```
+```java
 class Solution {
     public int countNodes(TreeNode root) {
         return (root != null)? 1 + countNodes(root.left) + countNodes(root.right): 0;
@@ -28,7 +28,7 @@ class Solution {
 }
 ```
 
-```
+```java
 class Solution {
     public int countNodes(TreeNode root) {
         if(root == null){
@@ -45,7 +45,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as nodes
 
-```
+```java
 class Solution {
     public int countNodes(TreeNode root) {
         if(root == null){
@@ -81,7 +81,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes
 
-```
+```java
 class Solution {
     public int countNodes(TreeNode root) {
         if(root == null){

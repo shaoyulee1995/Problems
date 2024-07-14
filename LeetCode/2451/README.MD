@@ -7,7 +7,7 @@
   - N as length of words
   - M as length of word
 
-```
+```java
 class Solution {
     public String oddString(String[] words) {
         int[][] matrix = new int[words.length][words[0].length()-1];

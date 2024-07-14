@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - A as length of area
 
-```
+```java
 class Solution {
     public int[] constructRectangle(int area) {
         int L = area,
@@ -26,7 +26,7 @@ class Solution {
 - Space Complexity: O(1)
   - A as length of area
 
-```
+```java
 class Solution {
     public int[] constructRectangle(int area) {
         int W = (int)Math.sqrt(area);

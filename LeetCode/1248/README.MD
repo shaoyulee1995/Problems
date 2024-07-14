@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int numberOfSubarrays(int[] nums, int k) {
         return atMost(nums, k) - atMost(nums, k-1);

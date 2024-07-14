@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int countGoodTriplets(int[] arr, int a, int b, int c) {
         int i = 0,

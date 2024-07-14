@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int minimumDeletions(String s) {
         Deque<Character> stack = new ArrayDeque();
@@ -26,7 +26,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public int minimumDeletions(String s) {
         int b_count = 0,

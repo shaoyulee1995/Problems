@@ -21,7 +21,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public TreeNode removeLeafNodes(TreeNode root, int target) {
         if(root == null){

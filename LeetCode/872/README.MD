@@ -22,7 +22,7 @@
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
         List<Integer> tree1 = new ArrayList(),

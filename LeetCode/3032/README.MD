@@ -5,7 +5,7 @@
   - N as length between A and B
     - D as length of digits
 
-```
+```java
 class Solution {
     public int numberCount(int a, int b) {
         int res = 0;

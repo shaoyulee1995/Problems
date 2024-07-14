@@ -1,6 +1,6 @@
 # Classes More Than 5 Students
 
-```
+```sql
 select
     class
 from
@@ -11,7 +11,7 @@ having
     count(*) >= 5
 ```
 
-```
+```sql
 select
     class
 from (

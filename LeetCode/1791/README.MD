@@ -3,7 +3,7 @@
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int findCenter(int[][] edges) {
         return (edges[0][0] == edges[1][0] || edges[0][0] == edges[1][1])?
@@ -16,7 +16,7 @@ class Solution {
 - Space Complexity: O(E)
   - E as length of edges
 
-```
+```java
 class Solution {
     public int findCenter(int[][] edges) {
         HashMap<Integer,Integer> map = new HashMap();

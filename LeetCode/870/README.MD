@@ -3,7 +3,7 @@
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int[] advantageCount(int[] nums1, int[] nums2) {
         TreeMap<Integer, Integer> map = new TreeMap();

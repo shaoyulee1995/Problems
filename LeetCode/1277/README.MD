@@ -5,7 +5,7 @@
   - N as matrix.length,
   - M as matrix[0].length
 
-```
+```java
 class Solution {
     public int countSquares(int[][] matrix) {
         int res = 0;

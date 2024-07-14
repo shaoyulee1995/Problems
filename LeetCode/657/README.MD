@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public boolean judgeCircle(String moves) {
         int upDown = 0, leftRight = 0;

@@ -1,6 +1,6 @@
 # List the Products Ordered in a Period
 
-```
+```sql
 select
     p.product_name as 'product_name',
     sum(o.unit) as 'unit'

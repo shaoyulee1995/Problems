@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of word
 
-```
+```java
 class Solution {
     public int[] divisibilityArray(String word, int m) {
         long v = 0;

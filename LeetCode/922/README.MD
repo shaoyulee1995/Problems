@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] sortArrayByParityII(int[] nums) {
         int[] res = new int[nums.length];
@@ -31,7 +31,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] sortArrayByParityII(int[] nums) {
         int[] res = new int[nums.length];
@@ -55,7 +55,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] sortArrayByParityII(int[] nums) {
         for(int odd = 1, even = 0; even < nums.length; even += 2){

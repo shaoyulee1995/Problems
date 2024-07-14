@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public int minLength(String s) {
         while(s.indexOf("AB") >= 0 || s.indexOf("CD") >= 0){
@@ -23,7 +23,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int minLength(String s) {
         Stack<Character> stack = new Stack();

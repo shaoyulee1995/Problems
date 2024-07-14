@@ -5,7 +5,7 @@
   - N as length of mat
   - M as length of mat[0]
 
-```
+```java
 class Solution {
     public int[][] updateMatrix(int[][] mat) {
         int[][] dirs = new int[][]{{-1,0}, {1,0}, {0,-1}, {0,1}};

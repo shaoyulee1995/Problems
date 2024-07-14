@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of startTime
 
-```
+```java
 class Solution {
     public int busyStudent(int[] startTime, int[] endTime, int queryTime) {
         int cnt = 0;

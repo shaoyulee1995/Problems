@@ -6,7 +6,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int maxRotateFunction(int[] nums) {
         int sum = Arrays.stream(nums).sum();

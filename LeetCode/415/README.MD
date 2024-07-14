@@ -5,7 +5,7 @@
   - N as length of num1
   - M as length of num2
 
-```
+```java
 class Solution {
     public String addStrings(String num1, String num2) {
         StringBuilder sb = new StringBuilder();

@@ -22,7 +22,7 @@
 - Space Complexity: O(N)
   - N as nodes of tree
 
-```
+```java
 class Solution {
     public boolean findTarget(TreeNode root, int k) {
         HashSet<Integer> set = new HashSet();

@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] findErrorNums(int[] nums) {
         int[] cnt = new int[nums.length+1];

@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String frequencySort(String s) {
         HashMap<Character, Integer> map = new HashMap();

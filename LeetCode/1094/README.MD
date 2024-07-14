@@ -6,7 +6,7 @@
   - increment: O(1)
 - Space Complexity: O(1001)
 
-```
+```java
 class Solution {
     public boolean carPooling(int[][] trips, int capacity) {
         int[] res = new int[1001];
@@ -57,7 +57,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of trips
 
-```
+```java
 class Solution {
     public boolean carPooling(int[][] trips, int capacity) {
         TreeMap<Integer, Integer> map = new TreeMap();

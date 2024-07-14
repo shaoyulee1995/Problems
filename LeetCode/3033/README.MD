@@ -5,7 +5,7 @@
   - N as length of matrix
     - M as length of matrix[0]
 
-```
+```java
 class Solution {
     public int[][] modifiedMatrix(int[][] matrix) {
         int[] cols = new int[matrix[0].length];

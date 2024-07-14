@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of num
 
-```
+```java
 class Solution {
     public String largestGoodInteger(String num) {
         Character c = null;

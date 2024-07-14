@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public void reverseWords(char[] s) {
         reverse(s, 0, s.length-1);

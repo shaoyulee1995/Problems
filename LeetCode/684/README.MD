@@ -4,7 +4,7 @@
 - Space Complexity: O(E)
   - E as length of edges
 
-```
+```java
 class Solution {
     public int[] findRedundantConnection(int[][] edges) {
         UnionFind uf = new UnionFind(edges.length);

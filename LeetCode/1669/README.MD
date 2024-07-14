@@ -20,7 +20,7 @@
   - L1 is length of list1
   - L2 is length of list2
 
-```
+```java
 class Solution {
     public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
         ListNode start = list1;

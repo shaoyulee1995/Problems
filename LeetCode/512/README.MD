@@ -1,6 +1,6 @@
 # Game Play Analysis II
 
-```
+```sql
 select player_id, device_id
 from Activity
 where (player_id, event_date) in (

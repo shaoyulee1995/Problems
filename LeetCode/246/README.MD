@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of salary
 
-```
+```java
 class Solution {
     public boolean isStrobogrammatic(String num) {
         HashMap<Character, Character> map = new HashMap<Character, Character>(
@@ -34,7 +34,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of salary
 
-```
+```java
 class Solution {
     public boolean isStrobogrammatic(String num) {
       for(int i = 0, j = num.length()-1; i <= j; i++, j--){

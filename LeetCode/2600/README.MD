@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as k
 
-```
+```java
 class Solution {
     public int kItemsWithMaximumSum(int numOnes, int numZeros, int numNegOnes, int k) {
         int res = 0;

@@ -4,7 +4,7 @@
 - Space Complexity: O(S)
   - S as lenght of senate
 
-```
+```java
 class Solution {
     public String predictPartyVictory(String senate) {
         Queue<Integer> radiant = new LinkedList(),

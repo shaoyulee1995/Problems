@@ -7,7 +7,7 @@
   - N as length of str1
     - M as length of str2
 
-```
+```java
 class Solution {
     public String shortestCommonSupersequence(String str1, String str2) {
         int[][] dp = new int[str1.length()+1][str2.length()+1];

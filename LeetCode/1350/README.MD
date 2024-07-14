@@ -1,6 +1,6 @@
 # Students With Invalid Departments
 
-```
+```sql
 select
     id,
     name

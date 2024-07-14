@@ -5,7 +5,7 @@
   - N as n
   - M as m
 
-```
+```java
 class Solution {
     public int maxCount(int m, int n, int[][] ops) {
         int r = Integer.MAX_VALUE,

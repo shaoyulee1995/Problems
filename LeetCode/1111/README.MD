@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of seq
 
-```
+```java
 class Solution {
     public int[] maxDepthAfterSplit(String seq) {
         int[] res = new int[seq.length()];

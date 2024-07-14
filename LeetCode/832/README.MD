@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of image
 
-```
+```java
 class Solution {
     public int[][] flipAndInvertImage(int[][] image) {
         for(int[] img: image){

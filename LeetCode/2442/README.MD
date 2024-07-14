@@ -5,7 +5,7 @@
   - N as length of nums
     - M as max of num reverse
 
-```
+```java
 class Solution {
     public int countDistinctIntegers(int[] nums) {
         HashSet<Integer> set = new HashSet();

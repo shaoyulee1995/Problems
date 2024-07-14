@@ -1,6 +1,6 @@
 # Employees With Missing Information
 
-```
+```sql
 select
     employee_id
 from Employees

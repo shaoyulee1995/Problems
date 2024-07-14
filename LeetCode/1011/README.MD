@@ -3,7 +3,7 @@
 - Time Complexity: O(Nlog(Sum(W))
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
         int min = 0, max = 0;

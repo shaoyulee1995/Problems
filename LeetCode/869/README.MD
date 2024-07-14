@@ -6,7 +6,7 @@
 - Space Complexity: O(1)
   - N as length of abbr
 
-```
+```java
 class Solution {
     public boolean reorderedPowerOf2(int n) {
         long target = counter(n);
@@ -34,7 +34,7 @@ class Solution {
 - Space Complexity: O(logN)
   - N as length of abbr
 
-```
+```java
 class Solution {
     public boolean reorderedPowerOf2(int n) {
         int[] res = count(n);

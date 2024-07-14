@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxSubarraySumCircular(int[] nums) {
         int curMax = 0, maxSum = nums[0],

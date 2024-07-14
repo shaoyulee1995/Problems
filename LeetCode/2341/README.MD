@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] numberOfPairs(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap();
@@ -25,7 +25,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] numberOfPairs(int[] nums) {
         int[] cnt = new int[101];

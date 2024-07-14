@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public List<Integer> partitionLabels(String s) {
         int[] cnt = new int[26];

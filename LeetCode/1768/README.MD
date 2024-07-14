@@ -5,7 +5,7 @@
   - N as length of word1
   - M as length of word2
 
-```
+```java
 class Solution {
     public String mergeAlternately(String word1, String word2) {
         int i = 0,

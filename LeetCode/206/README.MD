@@ -6,7 +6,7 @@
 - Space Complexity: O(1)
   - N as nodes of linkedlist
 
-```
+```java
 class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;

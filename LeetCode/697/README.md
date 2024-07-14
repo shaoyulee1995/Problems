@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int findShortestSubArray(int[] nums) {
         HashMap<Integer, Integer> freq = new HashMap(),

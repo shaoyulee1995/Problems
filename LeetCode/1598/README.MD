@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of logs
 
-```
+```java
 class Solution {
     public int minOperations(String[] logs) {
         int res = 0;

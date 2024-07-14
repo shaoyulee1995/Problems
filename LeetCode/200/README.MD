@@ -5,7 +5,7 @@
   - N as length of grid
   - M as length of grid[0]
 
-```
+```java
 class Solution {
     public int numIslands(char[][] grid) {
         int res = 0;
@@ -37,7 +37,7 @@ class Solution {
   - N as length of grid
   - M as length of grid[0]
 
-```
+```java
 class Solution {
     public int numIslands(char[][] grid) {
         int res = 0;

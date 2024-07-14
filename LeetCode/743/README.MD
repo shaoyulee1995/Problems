@@ -7,7 +7,7 @@
   - N as n
   - T as length of times
 
-```
+```java
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
         HashMap<Integer, HashMap<Integer, Integer> > map = new HashMap();
@@ -48,7 +48,7 @@ class Solution {
 - Space Complexity: O(N<sup>2</sup>)
   - N as n
 
-```
+```java
 class Solution {
     public int networkDelayTime(int[][] times, int n, int K) {
         int[][] graph = new int[n+1][n+1];
@@ -91,7 +91,7 @@ class Solution {
   - k as stops
   - N as n
 
-```
+```java
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
         int[] distance = new int[n+1];

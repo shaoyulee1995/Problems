@@ -6,7 +6,7 @@
 - Space Complexity: O(1)
   - P as length of points
 
-```
+```java
 class Solution {
     public int maxWidthOfVerticalArea(int[][] points) {
         Arrays.sort(points, (a, b) -> a[0] -b[0]);

@@ -6,7 +6,7 @@
 - Space Complexity: O(N\*6)
   - N as n
 
-```
+```java
 class Solution {
     public int countVowelStrings(int n) {
         int[][] dp = new int[n+1][6];
@@ -25,7 +25,7 @@ class Solution {
 
 # 1D DP Optimize
 
-```
+```java
 class Solution {
     public int countVowelStrings(int n) {
         int[] dp = new int[]{0,1,1,1,1,1};
@@ -45,7 +45,7 @@ class Solution {
 - Space Complexity: O(N\*5)
   - N as n
 
-```
+```java
 class Solution {
     public int countVowelStrings(int n) {
         int[][] dp = new int[n+1][6];

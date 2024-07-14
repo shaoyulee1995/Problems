@@ -5,7 +5,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public String defangIPaddr(String address) {
         StringBuilder sb = new StringBuilder();
@@ -20,7 +20,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public String defangIPaddr(String address) {
         return address.replace(".", "[.]");

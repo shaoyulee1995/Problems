@@ -5,7 +5,7 @@
   - N as length of nums
   - D as length of divisors
 
-```
+```java
 class Solution {
     public int maxDivScore(int[] nums, int[] divisors) {
         int maxCount = 0,

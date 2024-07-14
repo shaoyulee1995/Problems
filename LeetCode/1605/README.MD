@@ -5,7 +5,7 @@
   - N as length of rowSum
   - M as length of colSum
 
-```
+```java
 class Solution {
     public int[][] restoreMatrix(int[] rowSum, int[] colSum) {
         int n = rowSum.length,

@@ -4,7 +4,7 @@
 - Space Complexity: O(26)
   - N as length of s
 
-```
+```java
 class Solution {
     public int minDeletions(String s) {
         int[] cnt = new int[26];

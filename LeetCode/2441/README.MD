@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int findMaxK(int[] nums) {
         Set<Integer> set = new HashSet();

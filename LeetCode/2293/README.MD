@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int minMaxGame(int[] nums) {
         while(nums.length > 1){
@@ -27,7 +27,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int minMaxGame(int[] nums) {
         while(nums.length > 1){

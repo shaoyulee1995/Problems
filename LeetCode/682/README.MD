@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of ops
 
-```
+```java
 class Solution {
     public int calPoints(String[] ops) {
         LinkedList<Integer> list = new LinkedList();

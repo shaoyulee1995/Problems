@@ -5,7 +5,7 @@
   - K as length of title
     - W as length of word
 
-```
+```java
 class Solution {
     public String capitalizeTitle(String title) {
         String[] words = title.split(" ");

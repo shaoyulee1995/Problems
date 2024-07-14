@@ -3,7 +3,7 @@
 - Time Complexity: O(Nk)
 - Space Complexity: O(k)
 
-```
+```java
 class Solution {
     public int maxProfit(int k, int[] prices) {
         int[] buy = new int[k+1],

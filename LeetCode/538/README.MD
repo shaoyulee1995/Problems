@@ -44,7 +44,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public TreeNode convertBST(TreeNode root) {
         dfs(root, new TreeNode());
@@ -67,7 +67,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public TreeNode convertBST(TreeNode root) {
         if(root == null){

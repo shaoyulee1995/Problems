@@ -6,7 +6,7 @@
   - H as height of tree
   - N as n
 
-```
+```java
 class Solution {
     public boolean validTree(int n, int[][] edges) {
         UF uf = new UF(n);

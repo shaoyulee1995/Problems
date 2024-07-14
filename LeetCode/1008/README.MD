@@ -24,7 +24,7 @@
 - Space Complexity: O(N)
   - N as length of preorder
 
-```
+```java
 class Solution {
     public TreeNode bstFromPreorder(int[] preorder) {
         TreeNode root = new TreeNode(preorder[0]);

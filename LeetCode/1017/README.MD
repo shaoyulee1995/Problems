@@ -6,7 +6,7 @@
 - Space Complexity: O(logN)
   - N as n
 
-```
+```java
 class Solution {
     public String baseNeg2(int n) {
         StringBuilder sb = new StringBuilder();

@@ -1,6 +1,6 @@
 # All the Matches of the League
 
-```
+```sql
 select
     home.team_name as 'home_team',
     opponent.team_name as 'away_team'

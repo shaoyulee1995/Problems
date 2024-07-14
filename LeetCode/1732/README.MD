@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of gain
 
-```
+```java
 class Solution {
     public int largestAltitude(int[] gain) {
         int res = 0;

@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int secondHighest(String s) {
         TreeSet<Integer> set = new TreeSet<>();
@@ -27,7 +27,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public int secondHighest(String s) {
         int max1 = Integer.MIN_VALUE,

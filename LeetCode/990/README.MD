@@ -7,7 +7,7 @@
   - N as length of equations
   - C as length of lowercase alphabet
 
-```
+```java
 class Solution {
     public boolean equationsPossible(String[] equations) {
         UnionFind uf = new UnionFind(26);

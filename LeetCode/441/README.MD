@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of colors
 
-```
+```java
 class Solution {
     public int arrangeCoins(int n) {
         long i = 0,

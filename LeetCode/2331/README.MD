@@ -20,7 +20,7 @@ public class TreeNode {
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public boolean evaluateTree(TreeNode root) {
         if(root.val == 0){

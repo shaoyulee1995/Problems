@@ -21,7 +21,7 @@
 - Time Complexity: O(Max(M, N))
 - Space Complexity: O(Max(M, N))
 
-```
+```java
 class Solution {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if(root1 == null){
@@ -41,7 +41,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if(root1 == null || root2 == null){

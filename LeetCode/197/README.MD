@@ -1,6 +1,6 @@
 # Rising Temperature
 
-```
+```sql
 select
     today.id as 'Id'
 from

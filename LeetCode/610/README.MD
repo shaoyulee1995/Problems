@@ -1,6 +1,6 @@
 # Triangle Judgement
 
-```
+```sql
 select
     x,
     y,

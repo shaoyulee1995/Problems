@@ -4,7 +4,7 @@
   - N and M are the length of the search string and pattern respectively.
 - Space Complexity: O(S)
 
-```
+```java
 class Solution {
     public boolean rotateString(String s, String goal) {
         if(s.length() != goal.length()){

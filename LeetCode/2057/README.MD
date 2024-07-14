@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int smallestEqual(int[] nums) {
         for(int i = 0; i < nums.length; i++){

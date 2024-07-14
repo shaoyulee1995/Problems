@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public String removeDuplicateLetters(String s) {
         boolean[] visited = new boolean[26];

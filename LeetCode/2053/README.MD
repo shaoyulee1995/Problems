@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of arr
 
-```
+```java
 class Solution {
     public String kthDistinct(String[] arr, int k) {
         HashMap<String, Integer> map = new HashMap();
@@ -35,7 +35,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of arr
 
-```
+```java
 class Solution {
     public String kthDistinct(String[] arr, int k) {
         Map<String, Boolean> map = new HashMap();

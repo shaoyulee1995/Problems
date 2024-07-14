@@ -38,7 +38,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public boolean isPalindrome(ListNode head) {
         ListNode fast = head, slow = head;
@@ -79,7 +79,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public boolean isPalindrome(ListNode head) {
         Stack<Integer> stack = new Stack<>();

@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int constrainedSubsetSum(int[] nums, int k) {
         ArrayDeque<Integer> deque = new ArrayDeque();

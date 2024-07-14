@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of timeSeries
 
-```
+```java
 class Solution {
     public int findPoisonedDuration(int[] timeSeries, int duration) {
         int res = 0,

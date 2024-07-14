@@ -1,6 +1,6 @@
 # Weather Type in Each Country
 
-```
+```sql
 select
 	c.country_name,
 	case

@@ -7,7 +7,7 @@
   - T as time
   - C as length of clips
 
-```
+```java
 class Solution {
     public int videoStitching(int[][] clips, int time) {
         int clip = 0,

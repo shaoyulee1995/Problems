@@ -4,7 +4,7 @@
 - Space Complexity: O(26)
   - W as length of word
 
-```
+```java
 class Solution {
     public boolean equalFrequency(String word) {
         int[] cnt = new int[26];

@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxNumberOfBalloons(String text) {
         int b = 0, a = 0, l = 0, o = 0, n = 0;

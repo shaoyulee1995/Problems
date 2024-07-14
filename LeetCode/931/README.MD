@@ -5,7 +5,7 @@
   - N is number of rows
   - M is number of cols
 
-```
+```java
 class Solution {
     public int minFallingPathSum(int[][] matrix) {
         int[][] dp = new int[matrix.length][matrix[0].length];

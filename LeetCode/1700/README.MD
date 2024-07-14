@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of students
 
-```
+```java
 class Solution {
     public int countStudents(int[] students, int[] sandwiches) {
         int[] counter = new int[]{0, 0};

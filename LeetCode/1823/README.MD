@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as nums from 1 to n
 
-```
+```java
 class Solution {
     public int findTheWinner(int n, int k) {
         Queue<Integer> q = new LinkedList();

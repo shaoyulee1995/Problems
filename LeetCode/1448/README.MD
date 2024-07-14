@@ -22,7 +22,7 @@
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public int goodNodes(TreeNode root) {
         return goodNodes(root, root.val);

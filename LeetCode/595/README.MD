@@ -1,6 +1,6 @@
 # Big Countries
 
-```
+```sql
 select
     name,
     population,

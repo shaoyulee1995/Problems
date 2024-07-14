@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as len of nums
 
-```
+```java
 class Solution {
     public int countKDifference(int[] nums, int k) {
         int res = 0;
@@ -25,7 +25,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as len of nums
 
-```
+```java
 class Solution {
     public int countKDifference(int[] nums, int k) {
         int res = 0;

@@ -5,7 +5,7 @@
   - W as length of words
     - S as length of s
 
-```
+```java
 class Solution {
     public boolean isPrefixString(String s, String[] words) {
         StringBuilder sb = new StringBuilder();

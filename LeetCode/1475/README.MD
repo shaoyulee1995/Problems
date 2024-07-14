@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of prices
 
-```
+```java
 class Solution {
     public int[] finalPrices(int[] prices) {
         for(int i = 0; i+1 < prices.length; i++){
@@ -24,7 +24,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of prices
 
-```
+```java
 class Solution {
     public int[] finalPrices(int[] prices) {
         Stack<Integer> stack = new Stack();

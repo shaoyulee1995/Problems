@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of boxes
 
-```
+```java
 class Solution {
     public int[] minOperations(String boxes) {
         int n = boxes.length();
@@ -37,7 +37,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of boxes
 
-```
+```java
 class Solution {
     public int[] minOperations(String boxes) {
         int n = boxes.length();

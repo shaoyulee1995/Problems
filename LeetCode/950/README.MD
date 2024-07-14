@@ -5,7 +5,7 @@ Queue
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int[] deckRevealedIncreasing(int[] deck) {
         Arrays.sort(deck);

@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String reformat(String s) {
         StringBuilder letters = new StringBuilder(),
@@ -33,7 +33,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String reformat(String s) {
         int charSize = 0,

@@ -5,7 +5,7 @@
   - K as length of key
   - M as length of message
 
-```
+```java
 class Solution {
     public String decodeMessage(String key, String message) {
         HashMap<Character, Character> map = new HashMap();
@@ -33,7 +33,7 @@ class Solution {
   - K as length of key
   - M as length of message
 
-```
+```java
 class Solution {
     public String decodeMessage(String key, String message) {
         int[] encode = new int[26];

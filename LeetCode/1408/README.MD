@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public List<String> stringMatching(String[] words) {
         List<String> res = new ArrayList();

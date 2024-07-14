@@ -1,6 +1,6 @@
 # Number of Comments per Post
 
-```
+```sql
 select
     s1.sub_id as 'post_id',
     count(distinct s2.sub_id) as 'number_of_comments'

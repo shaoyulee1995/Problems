@@ -21,7 +21,7 @@ class Interval {
 - Space Complexity: O(N)
   - N as length of schedule
 
-```
+```java
 class Solution {
     public List<Interval> employeeFreeTime(List<List<Interval>> schedule) {
         List<Interval> res = new ArrayList();

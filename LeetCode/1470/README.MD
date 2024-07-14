@@ -5,7 +5,7 @@
   - N as length of nums
   - n as the num gap
 
-```
+```java
 class Solution {
     public int[] shuffle(int[] nums, int n) {
         int i = 0, j = n;

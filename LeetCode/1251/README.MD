@@ -1,6 +1,6 @@
 # Average Selling Price
 
-```
+```sql
 select
     p.product_id,
     ifnull(round(sum(p.price*u.units)/sum(u.units)

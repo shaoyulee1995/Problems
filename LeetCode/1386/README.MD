@@ -5,7 +5,7 @@
   - N as n
   - S as length of seats
 
-```
+```java
 class Solution {
     public int maxNumberOfFamilies(int n, int[][] seats) {
         HashMap<Integer, List<Integer>> map = new HashMap();

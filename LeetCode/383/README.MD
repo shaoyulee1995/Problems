@@ -5,7 +5,7 @@
   - R as length of ransomNote
   - M as length of magazine
 
-```
+```java
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
         int[] cnt = new int[26];

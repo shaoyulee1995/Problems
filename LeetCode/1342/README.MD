@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as num
 
-```
+```java
 class Solution {
     public int numberOfSteps(int num) {
         int step = 0;
@@ -27,7 +27,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as num
 
-```
+```java
 class Solution {
     public int numberOfSteps(int num) {
         int res = 0;

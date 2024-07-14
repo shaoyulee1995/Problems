@@ -61,7 +61,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as number of nodes in tree
 
-```
+```java
 class Solution {
     public List<List<Integer>> verticalOrder(TreeNode root) {
         List<List<Integer>> list = new ArrayList();

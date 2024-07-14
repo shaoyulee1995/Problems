@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String[] divideString(String s, int k, char fill) {
         List<String> res = new ArrayList();

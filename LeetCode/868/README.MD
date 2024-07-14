@@ -6,7 +6,7 @@
 - Space Complexity: O(1)
   - N as bit length of n
 
-```
+```java
 class Solution {
     public int binaryGap(int n) {
         int lastPos = -1,

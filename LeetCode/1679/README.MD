@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int maxOperations(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap();

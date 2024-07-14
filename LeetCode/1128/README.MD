@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of dominoes
 
-```
+```java
 class Solution {
     public int numEquivDominoPairs(int[][] dominoes) {
         int res = 0;

@@ -1,6 +1,6 @@
 # Combine Two Tables
 
-```
+```sql
 select
     firstName,
     lastName,

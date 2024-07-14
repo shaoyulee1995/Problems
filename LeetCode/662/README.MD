@@ -22,7 +22,7 @@
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public int widthOfBinaryTree(TreeNode root) {
         if(root == null){

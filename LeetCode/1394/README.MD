@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - A as length of arr
 
-```
+```java
 class Solution {
     public int findLucky(int[] arr) {
         int[] cnt = new int[501];

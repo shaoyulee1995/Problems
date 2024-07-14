@@ -5,7 +5,7 @@
   - S as length of s.
   - T as length of T.
 
-```
+```java
 class Solution {
     public boolean isAnagram(String s, String t) {
         if(s.length() != t.length()){
@@ -31,7 +31,7 @@ class Solution {
   - S as length of s.
   - T as length of T.
 
-```
+```java
 class Solution {
     public boolean isAnagram(String s, String t) {
         HashMap<Character, Integer> map = new HashMap();

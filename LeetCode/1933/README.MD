@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean isDecomposable(String s) {
         if(s.length() % 3 != 2){

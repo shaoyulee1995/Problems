@@ -6,7 +6,7 @@
 - Space Complexity: O(N<sup>2</sup>)
   - N as n
 
-```
+```java
 class Solution {
     public int maximalNetworkRank(int n, int[][] roads) {
         boolean[][] connect = new boolean[n][n];
@@ -32,7 +32,7 @@ class Solution {
 - Space Complexity: O(N<sup>2</sup>)
   - N as n
 
-```
+```java
 class Solution {
     public int maximalNetworkRank(int n, int[][] roads) {
         HashSet<Integer>[] rows = new HashSet[n];

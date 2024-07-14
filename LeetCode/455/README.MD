@@ -5,7 +5,7 @@
   - N as length of g
   - M as length of s
 
-```
+```java
 class Solution {
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);

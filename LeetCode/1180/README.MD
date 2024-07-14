@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int countLetters(String s) {
         int[] dp = new int[s.length()+1];
@@ -25,7 +25,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int countLetters(String s) {
         int total = 1,

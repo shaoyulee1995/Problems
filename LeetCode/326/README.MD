@@ -3,7 +3,7 @@
 - Time Complexity: O(log3(N))
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public boolean isPowerOfThree(int n) {
         if(n < 1){

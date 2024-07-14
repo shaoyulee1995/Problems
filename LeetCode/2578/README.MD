@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of num
 
-```
+```java
 class Solution {
     public int splitNum(int num) {
         char[] s = String.valueOf(num).toCharArray();

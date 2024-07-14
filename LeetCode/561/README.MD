@@ -3,7 +3,7 @@
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int arrayPairSum(int[] nums) {
         Arrays.sort(nums);

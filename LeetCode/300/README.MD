@@ -3,7 +3,7 @@
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int lengthOfLIS(int[] nums) {
         int[] dp = new int[nums.length];
@@ -27,7 +27,7 @@ class Solution {
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int lengthOfLIS(int[] nums) {
         int[] top = new int[nums.length];

@@ -5,7 +5,7 @@
   - S represents sum of nums array
   - Mx represets the current max for that group
 
-```
+```java
 class Solution {
     public int splitArray(int[] nums, int k) {
         int sum = Arrays.stream(nums).sum(),

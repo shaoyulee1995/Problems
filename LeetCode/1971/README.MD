@@ -7,7 +7,7 @@
   - V as vertices
   - E as edges
 
-```
+```java
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         Map<Integer, List<Integer>> map = new HashMap();
@@ -49,7 +49,7 @@ class Solution {
   - V as vertices
   - E as edges
 
-```
+```java
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         Map<Integer, List<Integer>> map = new HashMap();

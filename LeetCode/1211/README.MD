@@ -1,6 +1,6 @@
 # Queries Quality and Percentage
 
-```
+```sql
 select
     query_name,
     round(avg(rating/position), 2)as 'quality',

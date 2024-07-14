@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int findMaxLength(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap();

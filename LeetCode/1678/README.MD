@@ -4,7 +4,7 @@
 - Space Complexity: O(C)
   - C as length of command
 
-```
+```java
 class Solution {
     public String interpret(String command) {
         StringBuilder sb = new StringBuilder();

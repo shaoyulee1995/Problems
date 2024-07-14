@@ -4,7 +4,7 @@
 - Space Complexity: O(D!)
   - D as length of digits
 
-```
+```java
 class Solution {
     public int[] findEvenNumbers(int[] digits) {
         int[] cnt = new int[10];

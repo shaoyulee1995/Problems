@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - S as nodes in stones
 
-```
+```java
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
         int[] cnt = new int['z'-'A'+1];
@@ -24,7 +24,7 @@ class Solution {
 - Space Complexity: O(S)
   - S as nodes in stones
 
-```
+```java
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
         HashSet<Character> set = new HashSet();
@@ -48,7 +48,7 @@ class Solution {
 - Space Complexity: O(S)
   - S as nodes in stones
 
-```
+```java
 class Solution {
     public int numJewelsInStones(String jewels, String stones) {
         Set<Character> jewels_set = jewels

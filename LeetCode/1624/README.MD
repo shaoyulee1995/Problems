@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int maxLengthBetweenEqualCharacters(String s) {
         HashMap<Character, Integer> firstOccurance = new HashMap();
@@ -27,7 +27,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public int maxLengthBetweenEqualCharacters(String s) {
         int[] cnt = new int[26];

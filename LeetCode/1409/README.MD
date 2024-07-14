@@ -7,7 +7,7 @@
   - M as m
   - Q as length of queries
 
-```
+```java
 class Solution {
     public int[] processQueries(int[] queries, int m) {
         LinkedList<Integer> list = new LinkedList();

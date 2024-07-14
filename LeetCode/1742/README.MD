@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int countBalls(int lowLimit, int highLimit) {
         int[] cnt = new int[46];

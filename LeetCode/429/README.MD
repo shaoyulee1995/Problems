@@ -25,7 +25,7 @@ class Node {
 - Space Complexity: O(N)
   - N as number of Node
 
-```
+```java
 class Solution {
     public List<List<Integer>> levelOrder(Node root) {
         List<List<Integer>> res = new ArrayList();

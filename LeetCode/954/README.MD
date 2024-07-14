@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of arr
 
-```
+```java
 class Solution {
     public boolean canReorderDoubled(int[] arr) {
         PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)-> {
@@ -32,7 +32,7 @@ class Solution {
   - K as different number of arr
   - N as length of arr
 
-```
+```java
 class Solution {
     public boolean canReorderDoubled(int[] arr) {
         TreeMap<Integer, Integer> map = new TreeMap<>();

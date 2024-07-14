@@ -49,7 +49,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int sumOfLeftLeaves(TreeNode root) {
         if(root == null){
@@ -68,7 +68,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int sumOfLeftLeaves(TreeNode root) {
         return helper(root, false);

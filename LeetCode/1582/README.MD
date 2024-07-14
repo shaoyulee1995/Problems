@@ -7,7 +7,7 @@
   - N as length of mat
   - M as length of mat[0]
 
-```
+```java
 class Solution {
     public int numSpecial(int[][] mat) {
         int res = 0;
@@ -50,7 +50,7 @@ class Solution {
   - N as length of mat
   - M as length of mat[0]
 
-```
+```java
 class Solution {
     public int numSpecial(int[][] mat) {
         int[] rows = new int[mat.length],

@@ -5,7 +5,7 @@
   - N is the length of text1
   - M is the length of text2
 
-```
+```java
 class Solution {
     public int longestCommonSubsequence(String text1, String text2) {
         int[][] dp = new int[text1.length()+1][text2.length()+1];

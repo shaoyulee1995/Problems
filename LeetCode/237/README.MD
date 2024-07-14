@@ -17,7 +17,7 @@
 - Space Complexity: O(1)
   - N length of linkedlist
 
-```
+```java
 class Solution {
     public void deleteNode(ListNode node) {
         while(node.next != null){

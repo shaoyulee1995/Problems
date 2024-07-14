@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public boolean validMountainArray(int[] arr) {
         if(arr.length < 3){

@@ -5,7 +5,7 @@
   - N as length of list1
   - M as length of list2
 
-```
+```java
 class Solution {
     public String[] findRestaurant(String[] list1, String[] list2) {
         HashMap<String, Integer> map = new HashMap();

@@ -17,7 +17,7 @@ public class ListNode {
 - Space Complexity: O(N)
   - N as length of LinkedList
 
-```
+```java
 class Solution {
     public ListNode doubleIt(ListNode head) {
         if(head.val > 4){

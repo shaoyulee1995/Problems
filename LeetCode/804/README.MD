@@ -5,7 +5,7 @@
   - w as length of word
   - W as length of words
 
-```
+```java
 class Solution {
     public int uniqueMorseRepresentations(String[] words) {
         String[] alphabet = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};

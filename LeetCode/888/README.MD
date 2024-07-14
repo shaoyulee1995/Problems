@@ -5,7 +5,7 @@
   - A as length of aliceSizes
   - B as length of bobSizes
 
-```
+```java
 class Solution {
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
         int sumA = Arrays.stream(aliceSizes).sum(),

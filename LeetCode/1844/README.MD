@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String replaceDigits(String s) {
         StringBuilder sb = new StringBuilder();

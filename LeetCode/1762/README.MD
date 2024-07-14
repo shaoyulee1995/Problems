@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as number of nodes in tree
 
-```
+```java
 class Solution {
     public int[] findBuildings(int[] heights) {
         ArrayList<Integer> list = new ArrayList();

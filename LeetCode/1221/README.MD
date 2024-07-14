@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int balancedStringSplit(String s) {
         int cnt = 0, res =0;

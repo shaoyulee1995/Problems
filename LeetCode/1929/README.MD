@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] getConcatenation(int[] nums) {
         int[] res = new int[nums.length*2];

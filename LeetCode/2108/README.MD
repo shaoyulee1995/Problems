@@ -5,7 +5,7 @@
   - W as length of words
   - m as maximum length of word
 
-```
+```java
 class Solution {
     public String firstPalindrome(String[] words) {
         for(String word: words){

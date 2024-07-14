@@ -5,7 +5,7 @@
   - N as length of grid
   - M as length of grid[0]
 
-```
+```java
 class Solution {
     public int deleteGreatestValue(int[][] grid) {
         for(int i = 0; i < grid.length; i++){

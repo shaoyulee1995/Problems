@@ -1,6 +1,6 @@
 # Bank Account Summary II
 
-```
+```sql
 select u.name, sum(t.amount) as 'balance'
 from Users u
 inner join Transactions t on u.account = t.account

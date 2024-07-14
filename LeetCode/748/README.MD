@@ -5,7 +5,7 @@
   - W as length of words
   - L as length of word
 
-```
+```java
 class Solution {
     public String shortestCompletingWord(String licensePlate, String[] words) {
         licensePlate = licensePlate.toLowerCase();

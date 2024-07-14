@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public String largestOddNumber(String num) {
         for(int i = num.length() - 1; i >= 0; i--){

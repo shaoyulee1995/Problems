@@ -1,6 +1,6 @@
 # Employee Bonus
 
-```
+```sql
 select
     name,
     bonus

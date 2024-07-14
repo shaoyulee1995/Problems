@@ -6,7 +6,7 @@
   - B as length of arr2
   - C as length of arr3
 
-```
+```java
 class Solution {
     public List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {
         List<Integer> res = new ArrayList();
@@ -36,7 +36,7 @@ class Solution {
   - B as length of arr2
   - C as length of arr3
 
-```
+```java
 class Solution {
     public List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {
         int i = 0,

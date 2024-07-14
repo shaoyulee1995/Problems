@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 class Solution {
     public int sumOfMultiples(int n) {
         int res = 0;

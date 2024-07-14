@@ -4,7 +4,7 @@
 - Space Complexity: O(log<sub>3</sub>S)
   - S as length of s
 
-```
+```java
 class Solution {
     public List<List<Integer>> largeGroupPositions(String s) {
         List<List<Integer>> res = new ArrayList();

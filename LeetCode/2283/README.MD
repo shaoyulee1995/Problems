@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of num
 
-```
+```java
 class Solution {
     public boolean digitCount(String num) {
         int[] cnt = new int[10];

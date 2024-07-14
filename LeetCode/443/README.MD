@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of chars
 
-```
+```java
 class Solution {
     public int compress(char[] chars) {
         int i = 0,

@@ -17,7 +17,7 @@
 - Space Complexity: O(N)
   - N as 1000
 
-```
+```java
 class Solution {
     public List<List<Integer>> findSolution(CustomFunction customfunction, int z) {
         List<List<Integer>> res = new ArrayList();

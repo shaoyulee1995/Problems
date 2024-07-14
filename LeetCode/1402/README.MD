@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - S as length of satisfaction
 
-```
+```java
 class Solution {
     public int maxSatisfaction(int[] satisfaction) {
         int res = 0;

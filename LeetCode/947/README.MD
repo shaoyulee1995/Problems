@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of stones
 
-```
+```java
 class Solution {
     public int removeStones(int[][] stones) {
         int n = stones.length;

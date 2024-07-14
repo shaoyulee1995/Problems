@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of startTime
 
-```
+```java
 class Solution {
     public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
         int n = startTime.length;

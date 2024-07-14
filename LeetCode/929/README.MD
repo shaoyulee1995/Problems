@@ -5,7 +5,7 @@
   - N represents length of email
 - Space Complexity: O(E)
 
-```
+```java
 class Solution {
     public int numUniqueEmails(String[] emails) {
         HashSet<String> seen = new HashSet();

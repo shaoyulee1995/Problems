@@ -5,7 +5,7 @@
   - N as length of matrix
   - M as length of matrix[0]
 
-```
+```java
 class Solution {
     public boolean isToeplitzMatrix(int[][] matrix) {
         for(int i = 0; i < matrix.length; i++){

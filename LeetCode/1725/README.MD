@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int countGoodRectangles(int[][] rectangles) {
         int res = 0,

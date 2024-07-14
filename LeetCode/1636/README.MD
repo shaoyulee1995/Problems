@@ -7,7 +7,7 @@
   - N as length of nums
   - K as key of map
 
-```
+```java
 class Solution {
     public int[] frequencySort(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap();

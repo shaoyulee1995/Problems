@@ -5,7 +5,7 @@
   - N as length of nums
     - D as range between each distance
 
-```
+```java
 class Solution {
     public int numberOfPoints(List<List<Integer>> nums) {
         HashSet<Integer> set = new HashSet();

@@ -5,7 +5,7 @@
   - W as length of words
   - P as pref
 
-```
+```java
 class Solution {
     public int prefixCount(String[] words, String pref) {
         int res = 0;
@@ -24,7 +24,7 @@ class Solution {
   - W as length of words
   - P as pref
 
-```
+```java
 class Solution {
     public int prefixCount(String[] words, String pref) {
         int res = 0;

@@ -70,7 +70,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int rob(int[] nums) {
         int[] dp = new int[nums.length+2];
@@ -88,7 +88,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int rob(int[] nums) {
         int n = nums.length;
@@ -108,7 +108,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int rob(int[] nums) {
         if(nums.length == 1){

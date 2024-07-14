@@ -5,7 +5,7 @@
   - N as length of nums
   - D as digits of num
 
-```
+```java
 class Solution {
     public int differenceOfSum(int[] nums) {
         int min = 0,

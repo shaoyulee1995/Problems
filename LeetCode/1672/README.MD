@@ -7,7 +7,7 @@
   - A as length of accounts
   - N as length of accounts[0]
 
-```
+```java
 class Solution {
     public int maximumWealth(int[][] accounts) {
         int res = 0;

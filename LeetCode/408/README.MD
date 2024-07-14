@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of abbr
 
-```
+```java
 class Solution {
     public boolean validWordAbbreviation(String word, String abbr) {
         int i = 0,
@@ -35,7 +35,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of abbr
 
-```
+```java
 class Solution {
     public boolean validWordAbbreviation(String word, String abbr) {
         return validWordAbbreviation(word, 0, abbr, 0);

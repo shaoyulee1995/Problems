@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public boolean isThree(int n) {
         int d = 1;

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of wordsDict
 
-```
+```java
 class Solution {
     public int shortestDistance(String[] wordsDict, String word1, String word2) {
         int a = Integer.MAX_VALUE,

@@ -3,7 +3,7 @@
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int countOdds(int low, int high) {
         if((low&1) == 0){

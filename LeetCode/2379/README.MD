@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of blocks
 
-```
+```java
 class Solution {
     public int minimumRecolors(String blocks, int k) {
         int whiteBlock = 0,

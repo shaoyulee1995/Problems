@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int[] diStringMatch(String s) {
         int[] res = new int[s.length() + 1];

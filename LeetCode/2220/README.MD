@@ -7,7 +7,7 @@
   - S as start
     - G as goal
 
-```
+```java
 class Solution {
     public int minBitFlips(int start, int goal) {
         int res = 0;

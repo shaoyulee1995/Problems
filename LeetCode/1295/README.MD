@@ -5,7 +5,7 @@
   - N as length of nums
   - M as largest value in nums
 
-```
+```java
 class Solution {
     public int findNumbers(int[] nums) {
         int res = 0;

@@ -3,7 +3,7 @@
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public String categorizeBox(int length, int width, int height, int mass) {
         long volume = (long)length*width*height;

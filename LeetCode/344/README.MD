@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public void reverseString(char[] s) {
         int i = 0, j = s.length - 1;

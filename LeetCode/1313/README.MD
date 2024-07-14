@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] decompressRLElist(int[] nums) {
         List<Integer> list = new ArrayList();
@@ -26,7 +26,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] decompressRLElist(int[] nums) {
         int sumFreq = 0;

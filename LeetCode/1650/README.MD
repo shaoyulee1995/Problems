@@ -15,7 +15,7 @@ class Node {
   - P as length of p
   - Q as length of q
 
-```
+```java
 class Solution {
     public Node lowestCommonAncestor(Node p, Node q) {
         Node a = p,

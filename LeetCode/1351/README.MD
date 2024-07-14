@@ -5,7 +5,7 @@
   - N as length of grid
   - M as length of grid[0]
 
-```
+```java
 class Solution {
     public int countNegatives(int[][] grid) {
         int res = 0;
@@ -27,7 +27,7 @@ class Solution {
   - N as length of grid
   - M as length of grid[0]
 
-```
+```java
 class Solution {
     public int countNegatives(int[][] grid) {
         int res = 0;

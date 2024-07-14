@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
         Map<Character, Integer> map = new HashMap();

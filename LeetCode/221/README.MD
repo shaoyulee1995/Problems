@@ -5,7 +5,7 @@
   - N as length of matrix
   - M as length of matrix[0]
 
-```
+```java
 class Solution {
     public int maximalSquare(char[][] matrix) {
         int n = matrix.length,

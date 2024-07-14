@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String freqAlphabets(String s) {
         StringBuilder sb = new StringBuilder();
@@ -32,7 +32,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String freqAlphabets(String s) {
         StringBuilder sb = new StringBuilder();

@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public boolean checkIfExist(int[] arr) {
         TreeSet<Integer> set = new TreeSet();

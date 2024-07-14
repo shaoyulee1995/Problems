@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public double findMaxAverage(int[] nums, int k) {
         if(nums.length == 1 && k == 1){

@@ -1,6 +1,6 @@
 # Customer Who Visited but Did Not Make Any Transactions
 
-```
+```sql
 select
     v.customer_id,
     count(v.visit_id) as 'count_no_trans'

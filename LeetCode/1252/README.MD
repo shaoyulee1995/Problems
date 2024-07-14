@@ -6,7 +6,7 @@
 - Space Complexity: O(MN)
   - L is the length of indices array
 
-```
+```java
 class Solution {
     public int oddCells(int m, int n, int[][] indices) {
         boolean[] rows = new boolean[m];

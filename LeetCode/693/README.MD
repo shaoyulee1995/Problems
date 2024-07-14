@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of bits n
 
-```
+```java
 class Solution {
     public boolean hasAlternatingBits(int n) {
         String bits = Integer.toBinaryString(n);
@@ -22,7 +22,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 class Solution {
     public boolean hasAlternatingBits(int n) {
         int bit = n%2;

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - S as length of s
 
-```
+```java
 class Solution {
     public boolean isOneEditDistance(String s, String t) {
         if(s.equals(t)){
@@ -45,7 +45,7 @@ class Solution {
 - Space Complexity: O(1)
   - S as length of s
 
-```
+```java
 class Solution {
     public boolean isOneEditDistance(String s, String t) {
         if(s.equals(t)){

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - L as L of logs
 
-```
+```java
 class Solution {
     public int maximumPopulation(int[][] logs) {
         int[] years = new int[2051];

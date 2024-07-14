@@ -5,7 +5,7 @@
   - N as length of nums
     - W as length of key in map
 
-```
+```java
 class Solution {
     public int maxSum(int[] nums) {
         HashMap<Integer, List<Integer>> map = new HashMap();

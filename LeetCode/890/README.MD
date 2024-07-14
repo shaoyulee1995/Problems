@@ -5,7 +5,7 @@
   - W is the length of words string
   - N is the length of each word
 
-```
+```java
 class Solution {
     public List<String> findAndReplacePattern(String[] words, String pattern) {
         int[] p = getPattern(pattern);

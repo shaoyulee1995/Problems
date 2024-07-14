@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as lenght of releaseTimes
 
-```
+```java
 class Solution {
     public char slowestKey(int[] releaseTimes, String keysPressed) {
         char res = keysPressed.charAt(0);

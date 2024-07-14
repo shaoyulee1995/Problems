@@ -5,7 +5,7 @@
   - N as length of board
   - M as length of board[0]
 
-```
+```java
 class Solution {
     public int countBattleships(char[][] board) {
         int res = 0;

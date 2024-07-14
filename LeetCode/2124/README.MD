@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean checkString(String s) {
         int aPos = Integer.MIN_VALUE,
@@ -29,7 +29,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean checkString(String s) {
         return !s.contains("ba");
@@ -41,7 +41,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean checkString(String s) {
         for(int i = 1; i < s.length(); i++){

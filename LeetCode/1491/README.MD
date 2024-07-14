@@ -6,7 +6,7 @@
 - Space Complexity: O(1)
   - N as length of salary
 
-```
+```java
 class Solution {
     public double average(int[] salary) {
         int max = Arrays.stream(salary).max().getAsInt(),
@@ -22,7 +22,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of salary
 
-```
+```java
 class Solution {
     public double average(int[] salary) {
         int max = Integer.MIN_VALUE,

@@ -6,7 +6,7 @@
   - W as maximum length of word
   - n as size of words
 
-```
+```java
 class Solution {
     public String toGoatLatin(String sentence) {
         Set<Character> set = new HashSet(Arrays.asList('A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'));

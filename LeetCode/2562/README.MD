@@ -5,7 +5,7 @@
   - N as length of nums
     - n as max length of num
 
-```
+```java
 class Solution {
     public long findTheArrayConcVal(int[] nums) {
         long res = 0;

@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of matchsticks
 
-```
+```java
 class Solution {
     public boolean makesquare(int[] matchsticks) {
         int sum = Arrays.stream(matchsticks).sum();

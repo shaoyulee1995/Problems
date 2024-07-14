@@ -5,7 +5,7 @@
   - N as length of cpdomains
   - C as length of each domain
 
-```
+```java
 class Solution {
     public List<String> subdomainVisits(String[] cpdomains) {
         List<String> res = wnew ArrayList();

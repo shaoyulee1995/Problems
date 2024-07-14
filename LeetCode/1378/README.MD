@@ -1,6 +1,6 @@
 # Replace Employee ID With The Unique Identifier
 
-```
+```sql
 select
     unique_id,
     name

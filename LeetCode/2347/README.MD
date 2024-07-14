@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of ranks
 
-```
+```java
 class Solution {
     public String bestHand(int[] ranks, char[] s) {
         if(s[0] == s[1] && s[1] == s[2] && s[2] == s[3] && s[3] == s[4]){
@@ -35,7 +35,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of ranks
 
-```
+```java
 class Solution {
     public String bestHand(int[] ranks, char[] suits) {
         HashMap<Integer, Integer> rankMap = new HashMap();
@@ -64,7 +64,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of ranks
 
-```
+```java
 class Solution {
     public String bestHand(int[] ranks, char[] suits) {
         if(suits[0] == suits[1] && suits[1] == suits[2] && suits[2] == suits[3]&& suits[3] == suits[4]){

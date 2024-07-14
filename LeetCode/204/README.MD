@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public int countPrimes(int n) {
         boolean[] notPrime = new boolean[n];

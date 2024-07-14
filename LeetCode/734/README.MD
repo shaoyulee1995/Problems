@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean areSentencesSimilar(String[] A, String[] B, List<List<String>> words) {
         if(A.length != B.length){

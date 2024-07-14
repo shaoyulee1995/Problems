@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int partitionDisjoint(int[] nums) {
         int[] L = new int[nums.length],

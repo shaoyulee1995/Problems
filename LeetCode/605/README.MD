@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of flowerbed
 
-```
+```java
 class Solution {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
         if(n == 0){

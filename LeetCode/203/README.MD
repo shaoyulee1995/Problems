@@ -19,7 +19,7 @@
 - Space Complexity: O(1)
   - N as number of nodes
 
-```
+```java
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
         ListNode dummy = new ListNode(0);
@@ -43,7 +43,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as number of nodes
 
-```
+```java
 class Solution {
     public ListNode removeElements(ListNode head, int val) {
         if(head == null){

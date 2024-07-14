@@ -7,7 +7,7 @@
   - N as length of s
   - M as length of t
 
-```
+```java
 class Solution {
     public boolean backspaceCompare(String s, String t) {
         Stack<Character> x = new Stack(),
@@ -46,7 +46,7 @@ class Solution {
   - N as length of s
   - M as length of t
 
-```
+```java
 class Solution {
     public boolean backspaceCompare(String s, String t) {
         return buildString(s).equals(buildString(t));

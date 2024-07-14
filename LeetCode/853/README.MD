@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of cars
 
-```
+```java
 class Solution {
     public int carFleet(int target, int[] position, int[] speed) {
         Car[] cars = new Car[position.length];

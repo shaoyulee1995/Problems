@@ -1,6 +1,6 @@
 # Customer Placing the Largest Number of Orders
 
-```
+```sql
 select customer_number
 from orders
 group by customer_number

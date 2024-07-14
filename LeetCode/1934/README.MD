@@ -1,6 +1,6 @@
 # Confirmation Rate
 
-```
+```sql
 select
     s.user_id,
     ifnull(round(sum(c.action='confirmed')/

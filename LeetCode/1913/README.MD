@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int maxProductDifference(int[] nums) {
         Arrays.sort(nums);
@@ -18,7 +18,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int maxProductDifference(int[] nums) {
         if(nums.length < 4){

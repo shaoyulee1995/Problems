@@ -5,7 +5,7 @@
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
 
-```
+```java
 class Solution {
     public int calculateMinimumHP(int[][] dungeon) {
         int n = dungeon.length,

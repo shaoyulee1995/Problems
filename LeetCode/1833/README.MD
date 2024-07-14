@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of costs
 
-```
+```java
 class Solution {
     public int maxIceCream(int[] costs, int coins) {
         int res = 0;

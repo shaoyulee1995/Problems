@@ -5,7 +5,7 @@
   - N is number of rows
   - M is number of cols
 
-```
+```java
 class Solution {
     public int longestPalindromeSubseq(String s) {
         int m = s.length();
@@ -30,7 +30,7 @@ class Solution {
   - N is number of rows
   - M is number of cols
 
-```
+```java
 class Solution {
     public int longestPalindromeSubseq(String s) {
         int n = s.length();

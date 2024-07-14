@@ -8,7 +8,7 @@
   - k as stops
   - N as n
 
-```
+```java
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         int[] dist = new int[n];
@@ -38,7 +38,7 @@ class Solution {
   - V as edges
   - E as stops
 
-```
+```java
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         HashMap<Integer, Integer>[] graph = new HashMap[n];

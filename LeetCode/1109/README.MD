@@ -6,7 +6,7 @@
   - increment: O(1)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int[] corpFlightBookings(int[][] bookings, int n) {
         int[] res = new int[n];
@@ -51,7 +51,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public int[] corpFlightBookings(int[][] bookings, int n) {
         int[] res = new int[n];

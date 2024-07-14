@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int getWinner(int[] arr, int k) {
         int cur = arr[0], wins = 0;

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of details
 
-```
+```java
 class Solution {
     public int countSeniors(String[] details) {
         int res = 0;

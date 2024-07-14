@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int countDivisibleSubstrings(String word) {
         String[] digits = {"", "ab","cde", "fgh", "ijk", "lmn", "opq", "rst", "uvw", "xyz"};

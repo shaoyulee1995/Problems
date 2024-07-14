@@ -6,7 +6,7 @@
 - Space Complexity: O(1)
   - C as length of costs
 
-```
+```java
 class Solution {
     public int twoCitySchedCost(int[][] costs) {
         Arrays.sort(costs, (a, b)-> (a[0]-a[1]) - (b[0] - b[1]));

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of sentence
 
-```
+```java
 class Solution {
     public boolean checkIfPangram(String sentence) {
         int[] cnt = new int[26];
@@ -25,7 +25,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of sentence
 
-```
+```java
 class Solution {
     public boolean checkIfPangram(String sentence) {
         if(sentence.length() < 26){

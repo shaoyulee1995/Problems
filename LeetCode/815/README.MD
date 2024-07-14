@@ -5,7 +5,7 @@
   - N as length of routes
   - S as number of stop in route[0]
 
-```
+```java
 class Solution {
     public int numBusesToDestination(int[][] routes, int source, int target) {
         if(source == target){

@@ -7,7 +7,7 @@
   - S as length of stones
   - T as sum of stones/2
 
-```
+```java
 class Solution {
     public int lastStoneWeightII(int[] stones) {
         int sum = 0;

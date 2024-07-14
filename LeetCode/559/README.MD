@@ -24,7 +24,7 @@ class Node {
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int maxDepth(Node root) {
         if(root == null){
@@ -50,7 +50,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxDepth(Node root) {
         if(root == null){

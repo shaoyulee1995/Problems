@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String reverseWords(String s) {
         String[] strs = s.split(" ");
@@ -27,7 +27,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String reverseWords(String s) {
         int i = 0,

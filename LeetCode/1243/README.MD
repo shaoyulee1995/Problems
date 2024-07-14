@@ -5,7 +5,7 @@
   - N as length of arr
   - c as cycles
 
-```
+```java
 class Solution {
     public List<Integer> transformArray(int[] arr) {
         List<Integer> res = new ArrayList();

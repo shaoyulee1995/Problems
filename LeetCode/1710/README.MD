@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of boxTypes
 
-```
+```java
 class Solution {
     public int maximumUnits(int[][] boxTypes, int truckSize) {
         Arrays.sort(boxTypes, (a, b) -> Integer.compare(b[1], a[1]));

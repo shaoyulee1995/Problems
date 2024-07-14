@@ -2,7 +2,7 @@
 
 # Not exists
 
-```
+```sql
 select c.name as Customers
 from Customers c
 where not exists (
@@ -14,7 +14,7 @@ where not exists (
 
 # Not in
 
-```
+```sql
 select
     name as 'Customers'
 from Customers c

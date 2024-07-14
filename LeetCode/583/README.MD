@@ -5,7 +5,7 @@
   - N is the length of word1
   - M is the length of word2
 
-```
+```java
 class Solution {
     public int minDistance(String word1, String word2) {
         int n = word1.length(),

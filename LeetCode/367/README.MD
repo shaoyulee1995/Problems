@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as num
 
-```
+```java
 class Solution {
     public boolean isPerfectSquare(int num) {
         int i = 1,

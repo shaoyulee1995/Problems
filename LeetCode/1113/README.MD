@@ -1,6 +1,6 @@
 # Reported Posts
 
-```
+```sql
 select
     extra as 'report_reason',
     count(distinct post_id) as 'report_count'

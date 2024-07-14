@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
         int count = 0, sum = 0;
@@ -28,7 +28,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
         int[] sums = new int[nums.length+1];
@@ -55,7 +55,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
         int res = 0;

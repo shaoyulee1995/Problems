@@ -1,6 +1,6 @@
 # Sales Analysis III
 
-```
+```sql
 select product_id, product_name
 from product
 where product_id in (select s.product_id

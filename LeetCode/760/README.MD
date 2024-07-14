@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums1
 
-```
+```java
 class Solution {
     public int[] anagramMappings(int[] nums1, int[] nums2) {
         HashMap<Integer, Integer> map = new HashMap();

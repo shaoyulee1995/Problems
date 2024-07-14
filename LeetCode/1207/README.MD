@@ -4,7 +4,7 @@
 - Space Complexity: O(A)
   - A as length of arr
 
-```
+```java
 class Solution {
     public boolean uniqueOccurrences(int[] arr) {
         HashMap<Integer, Integer> map = new HashMap();
@@ -26,7 +26,7 @@ class Solution {
 - Space Complexity: O(1)
   - A as length of arr
 
-```
+```java
 class Solution {
     public boolean uniqueOccurrences(int[] arr) {
         int[] cnt = new int[2001];

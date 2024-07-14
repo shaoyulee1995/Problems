@@ -21,7 +21,7 @@
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public TreeNode searchBST(TreeNode root, int val) {
         if(root == null){
@@ -40,7 +40,7 @@ class Solution {
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public TreeNode searchBST(TreeNode root, int val) {
         while(root != null && root.val != val){

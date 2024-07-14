@@ -16,7 +16,7 @@ public class ListNode {
   - L1 as length of l1
   - L2 as length of l2
 
-```
+```java
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         Stack<Integer> list1 = new Stack(),
@@ -67,7 +67,7 @@ class Solution {
   - L1 as length of l1
   - L2 as length of l2
 
-```
+```java
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         l1 = reverse(l1);

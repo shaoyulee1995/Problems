@@ -1,6 +1,6 @@
 # Not Boring Movies
 
-```
+```sql
 select
     *
 from

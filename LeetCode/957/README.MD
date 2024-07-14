@@ -5,7 +5,7 @@
   - N as n
   - C as length of cells
 
-```
+```java
 class Solution {
     public int[] prisonAfterNDays(int[] cells, int n) {
         HashSet<String> set = new HashSet();

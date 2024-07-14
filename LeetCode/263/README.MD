@@ -3,7 +3,7 @@
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public boolean isUgly(int n) {
         if(n <= 0){

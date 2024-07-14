@@ -5,7 +5,7 @@
   - N as length of arr1
   - M as length of arr2
 
-```
+```java
 class Solution {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
         int res = 0;

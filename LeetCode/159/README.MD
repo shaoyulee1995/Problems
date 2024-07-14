@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int lengthOfLongestSubstringTwoDistinct(String s) {
         HashMap<Character, Integer> map = new HashMap();

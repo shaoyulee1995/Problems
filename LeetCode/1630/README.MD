@@ -6,7 +6,7 @@
   - L as left index
   - C as length of copy
 
-```
+```java
 class Solution {
     public List<Boolean> checkArithmeticSubarrays(int[] nums, int[] l, int[] r) {
         List<Boolean> res = new ArrayList();

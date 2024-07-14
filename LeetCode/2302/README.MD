@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public long countSubarrays(int[] nums, long k) {
         long res = 0,

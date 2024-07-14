@@ -7,7 +7,7 @@
   - V as numCourses
   - E as course relates to
 
-```
+```java
 class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         HashMap<Integer, List<Integer>> map = new HashMap();

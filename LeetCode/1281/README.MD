@@ -3,7 +3,7 @@
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int subtractProductAndSum(int n) {
         int sum = 0, product = 1;

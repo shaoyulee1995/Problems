@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of num
 
-```
+```java
 class Solution {
     public String removeTrailingZeros(String num) {
         for(int i = num.length()-1; i >= 0; i--){

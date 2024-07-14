@@ -5,7 +5,7 @@
   - N as length of nums
     - n as num
 
-```
+```java
 class Solution {
     public int[] separateDigits(int[] nums) {
         List<Integer> res = new ArrayList();
@@ -28,7 +28,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] separateDigits(int[] nums) {
         StringBuilder sb = new StringBuilder();

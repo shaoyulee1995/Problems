@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length nums
 
-```
+```java
 class Solution {
     public int countPairs(List<Integer> nums, int target) {
         int res = 0;

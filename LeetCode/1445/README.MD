@@ -1,6 +1,6 @@
 # Apples & Oranges
 
-```
+```sql
 select
     a.sale_date,
     a.sold_num - b.sold_num as 'diff'

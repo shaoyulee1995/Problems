@@ -6,7 +6,7 @@
 - Space Complexity: O(N<sup>2</sup>)
   - N as n
 
-```
+```java
 class Solution {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
         List<int[]>[] adj = new List[n];
@@ -78,7 +78,7 @@ class Solution {
   - N as n
   - E as length of edges
 
-```
+```java
 class Solution {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
         List<int[]>[] adj = new List[n];
@@ -143,7 +143,7 @@ class Solution {
 - Time Complexity: O((N<sup>3</sup>)
 - Space Complexity: O(N<sup>2</sup>)
 
-```
+```java
 class Solution {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
         int[][] dist = new int[n][n];

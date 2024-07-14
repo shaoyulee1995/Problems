@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of rating
 
-```
+```java
 class Solution {
     public int numTeams(int[] arr) {
         int res = 0, n = arr.length;

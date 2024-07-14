@@ -5,7 +5,7 @@
   - K as number of eggs
   - N as number of floors
 
-```
+```java
 class Solution {
     public int superEggDrop(int k, int n) {
         int[][] dp = new int[k+1][n+1];

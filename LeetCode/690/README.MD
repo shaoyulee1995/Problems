@@ -16,7 +16,7 @@ class Employee {
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int getImportance(List<Employee> employees, int id) {
         HashMap<Integer, Employee> map = new HashMap();

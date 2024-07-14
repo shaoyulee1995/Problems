@@ -22,7 +22,7 @@
 - Space Complexity: O(1)
   - N as number of TreeNode
 
-```
+```java
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList();
@@ -47,7 +47,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as number of TreeNode
 
-```
+```java
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
         LinkedList<Integer> list =  new LinkedList();

@@ -4,7 +4,7 @@
 - Space Complexity: O(366)
   - D as lastDay
 
-```
+```java
 class Solution {
     public int mincostTickets(int[] days, int[] costs) {
         int[] dp = new int[366];

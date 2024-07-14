@@ -4,7 +4,7 @@
 - Space Complexity: O(S)
   - S as length of s
 
-```
+```java
 class Solution {
     public String decodeString(String s) {
         Stack<Integer> intStack = new Stack();
@@ -38,7 +38,7 @@ class Solution {
 - Space Complexity: O(S)
   - S as length of s
 
-```
+```java
 class Solution {
     public String decodeString(String s) {
         Deque<Character> deque = new ArrayDeque();

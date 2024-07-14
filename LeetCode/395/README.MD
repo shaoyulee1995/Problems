@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public int longestSubstring(String s, int k) {
         if(s == null || s.length() == 0){

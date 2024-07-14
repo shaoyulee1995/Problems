@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of paths
 
-```
+```java
 class Solution {
     public String destCity(List<List<String>> paths) {
         HashSet<String> set = new HashSet();
@@ -31,7 +31,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of paths
 
-```
+```java
 class Solution {
     public String destCity(List<List<String>> paths) {
         HashSet<String> cityA = new HashSet(),

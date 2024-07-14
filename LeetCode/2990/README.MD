@@ -1,6 +1,6 @@
 # Loan Types
 
-```
+```sql
 select
     user_id
 from

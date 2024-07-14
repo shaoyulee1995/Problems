@@ -6,7 +6,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean checkValidString(String s) {
         int openMin = 0, openMax = 0;
@@ -37,7 +37,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean checkValidString(String s) {
         int bal = 0;

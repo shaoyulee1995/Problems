@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - C as lenght of capacity
 
-```
+```java
 class Solution {
     public int minimumBoxes(int[] apple, int[] capacity) {
         int sum = Arrays.stream(apple).sum();

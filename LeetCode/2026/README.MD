@@ -18,7 +18,7 @@ order by
     1
 ```
 
-```
+```sql
 select
     problem_id
 from

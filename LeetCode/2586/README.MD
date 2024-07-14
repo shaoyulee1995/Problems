@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length between left and right
 
-```
+```java
 class Solution {
     public int vowelStrings(String[] words, int left, int right) {
         HashSet<Character> set = new HashSet(Arrays.asList('a', 'e','i', 'o', 'u'));

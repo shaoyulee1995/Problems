@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int[] countBits(int n) {
         int[] res = new int[n+1];
@@ -23,7 +23,7 @@ class Solution {
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int[] countBits(int n) {
         int[] res = new int[n+1];

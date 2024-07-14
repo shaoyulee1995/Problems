@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of asteroids
 
-```
+```java
 class Solution {
     public int[] asteroidCollision(int[] asteroids) {
         Stack<Integer> stack = new Stack();

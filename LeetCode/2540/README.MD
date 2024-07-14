@@ -7,7 +7,7 @@
   - N as length of nums1
   - M as length of nums2
 
-```
+```java
 class Solution {
     public int getCommon(int[] nums1, int[] nums2) {
         int res = Integer.MAX_VALUE,

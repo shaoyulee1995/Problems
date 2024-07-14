@@ -19,7 +19,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] nextLargerNodes(ListNode head) {
         List<Integer> list = new ArrayList();

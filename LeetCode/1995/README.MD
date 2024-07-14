@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int countQuadruplets(int[] nums) {
         int res = 0;
@@ -28,7 +28,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int countQuadruplets(int[] nums) {
         int res = 0;

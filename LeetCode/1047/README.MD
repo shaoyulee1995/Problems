@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as chars in String
 
-```
+```java
 class Solution {
     public String removeDuplicates(String s) {
         StringBuilder sb = new StringBuilder();
@@ -25,7 +25,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as chars in String
 
-```
+```java
 class Solution {
     public String removeDuplicates(String s) {
         Stack<Character> stack = new Stack();

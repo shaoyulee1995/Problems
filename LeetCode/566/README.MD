@@ -7,7 +7,7 @@
   - R as r
   - C as c
 
-```
+```java
 class Solution {
     public int[][] matrixReshape(int[][] mat, int r, int c) {
         if(r*c != mat.length * mat[0].length || mat.length == 0){

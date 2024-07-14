@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of brackets
 
-```
+```java
 class Solution {
     public double calculateTax(int[][] brackets, int income) {
         double tax = 0;

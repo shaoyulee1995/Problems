@@ -5,7 +5,7 @@
   - N as length of heights
   - M as length of heights[0]
 
-```
+```java
 class Solution {
     public int minimumEffortPath(int[][] heights) {
         int n = heights.length,

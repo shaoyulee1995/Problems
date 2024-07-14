@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of queryIP
 
-```
+```java
 class Solution {
     public String validIPAddress(String queryIP) {
         if(isIPv4(queryIP)){

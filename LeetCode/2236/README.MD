@@ -22,7 +22,7 @@
 - Space Complexity: O(1)
   - N as number of nodes
 
-```
+```java
 class Solution {
     public boolean checkTree(TreeNode root) {
         if(root == null){

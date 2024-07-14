@@ -5,7 +5,7 @@
   - N as length of patterns
     - W as length of word
 
-```
+```java
 class Solution {
     public int numOfStrings(String[] patterns, String word) {
         int res = 0;

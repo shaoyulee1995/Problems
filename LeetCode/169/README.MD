@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int majorityElement(int[] nums) {
         Arrays.sort(nums);
@@ -19,7 +19,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int majorityElement(int[] nums) {
         int res = 0,
@@ -39,7 +39,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int majorityElement(int[] nums) {
         return divide(nums, 0, nums.length - 1);

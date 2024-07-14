@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as columnNumber
 
-```
+```java
 class Solution {
     public String convertToTitle(int columnNumber) {
         StringBuilder sb = new StringBuilder();

@@ -7,7 +7,7 @@
   - N as length of points
   - K as k
 
-```
+```java
 class Solution {
     public int[][] kClosest(int[][] points, int k) {
         PriorityQueue<int[]> pq = new PriorityQueue<int[]> (Comparator.comparing(
@@ -30,7 +30,7 @@ class Solution {
   - N as length of points
   - K as k
 
-```
+```java
 class Solution {
     public int[][] kClosest(int[][] points, int k) {
         PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a,b)->(b[0]*b[0]+b[1]*b[1])-(a[0]*a[0]+a[1]*a[1]));

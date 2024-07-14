@@ -5,7 +5,7 @@
   - N as length of sentences
     - M as length of sentence
 
-```
+```java
 class Solution {
     public int mostWordsFound(String[] sentences) {
         int res = 0;
@@ -22,7 +22,7 @@ class Solution {
   - N as length of sentences
     - M as length of sentence
 
-```
+```java
 class Solution {
     public int mostWordsFound(String[] sentences) {
         int res = 0;

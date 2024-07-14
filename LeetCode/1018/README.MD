@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public List<Boolean> prefixesDivBy5(int[] nums) {
         int k = 0;

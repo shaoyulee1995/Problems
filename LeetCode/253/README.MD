@@ -4,7 +4,7 @@
 - Space Complexity: O(T)
   - T as length of intervals
 
-```
+```java
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
         TreeMap<Integer, Integer> map = new TreeMap();
@@ -27,7 +27,7 @@ class Solution {
 - Space Complexity: O(T)
   - T as length of intervals
 
-```
+```java
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
         List<int[]> rooms = new ArrayList();

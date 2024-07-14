@@ -5,7 +5,7 @@
   - S as length of source
     - T as length of target
 
-```
+```java
 class Solution {
     public int shortestWay(String source, String target) {
         int[] cnt = new int[26];

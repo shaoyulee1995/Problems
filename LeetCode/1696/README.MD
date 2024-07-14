@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int maxResult(int[] nums, int k) {
         int[] dp = new int[nums.length];

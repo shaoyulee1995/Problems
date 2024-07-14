@@ -5,7 +5,7 @@
   - N as length of grid
   - M as length of grid[0]
 
-```
+```java
 class Solution {
     public int minFallingPathSum(int[][] grid) {
         for(int i = 1; i < grid.length; i++){

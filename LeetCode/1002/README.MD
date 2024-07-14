@@ -5,7 +5,7 @@
   - W as length of words
     - C as length of word
 
-```
+```java
 class Solution {
     public List<String> commonChars(String[] words) {
         int[] common = new int[26];

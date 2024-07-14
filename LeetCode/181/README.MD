@@ -1,6 +1,6 @@
 # Employees Earning More Than Their Managers
 
-```
+```sql
 select
     employees.name as 'Employee'
 from

@@ -6,7 +6,7 @@
 - Space Complexity: O(H)
   - H as length of heights
 
-```
+```java
 class Solution {
     public int heightChecker(int[] heights) {
         int[] copy = heights.clone();
@@ -28,7 +28,7 @@ class Solution {
 - Space Complexity: O(1)
   - H as length of heights
 
-```
+```java
 class Solution {
     public int heightChecker(int[] heights) {
         int[] cnt = new int[101];

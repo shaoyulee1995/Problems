@@ -5,7 +5,7 @@
   - S as length of s
   - P as length of p
 
-```
+```java
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
         HashMap<Character, Integer> map = new HashMap();
@@ -57,7 +57,7 @@ class Solution {
   - S as length of s
   - P as length of p
 
-```
+```java
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> res = new ArrayList();

@@ -5,7 +5,7 @@
   - N as num_people
   - C as candy
 
-```
+```java
 class Solution {
     public int[] distributeCandies(int candies, int num_people) {
         int[] res = new int[num_people];

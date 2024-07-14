@@ -1,6 +1,6 @@
 # Customer Order Frequency
 
-```
+```sql
 select
     customer_id,
     name

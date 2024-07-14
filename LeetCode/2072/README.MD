@@ -1,6 +1,6 @@
 # The Winner University
 
-```
+```sql
 select
     case
         when sum(n.score >= 90) > sum(c.score>= 90) then 'New York University'

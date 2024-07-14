@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String makeSmallestPalindrome(String s) {
         StringBuilder sb = new StringBuilder();
@@ -20,7 +20,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String makeSmallestPalindrome(String s) {
         char[] c = s.toCharArray();
@@ -42,7 +42,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String makeSmallestPalindrome(String s) {
         char[] c = s.toCharArray();

@@ -3,7 +3,7 @@
 - Time Complexity: O((N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public String reverseStr(String s, int k) {
         char[] arr = s.toCharArray();

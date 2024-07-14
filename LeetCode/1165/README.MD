@@ -5,7 +5,7 @@
   - K as length of keyboard
   - W as length of word
 
-```
+```java
 class Solution {
     public int calculateTime(String keyboard, String word) {
         int res = 0,

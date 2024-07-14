@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String sortVowels(String s) {
         ArrayList<Character> vowels = new ArrayList();
@@ -36,7 +36,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String sortVowels(String s) {
         int[] ascii = new int[128];

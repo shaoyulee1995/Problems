@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of score
 
-```
+```java
 class Solution {
     public int[][] sortTheStudents(int[][] score, int k) {
         Arrays.sort(score, (a, b) -> b[k] - a[k]);
@@ -18,7 +18,7 @@ class Solution {
   - N as length of score
     - M as length of score[0]
 
-```
+```java
 class Solution {
     public int[][] sortTheStudents(int[][] score, int k) {
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> b[0] - a[0]);

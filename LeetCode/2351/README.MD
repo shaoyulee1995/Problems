@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public char repeatedCharacter(String s) {
         HashSet<Character> set = new HashSet();
@@ -24,7 +24,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public char repeatedCharacter(String s) {
         int[] cnt = new int[26];

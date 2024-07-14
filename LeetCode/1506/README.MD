@@ -30,7 +30,7 @@ class Node {
   - N as number of Nodes in tree
   - C as maximum node for node.children
 
-```
+```java
 class Solution {
     public Node findRoot(List<Node> tree) {
         HashSet<Node> set = new HashSet();
@@ -56,7 +56,7 @@ class Solution {
   - N as number of Nodes in tree
   - C as maximum node for node.children
 
-```
+```java
 class Solution {
     public Node findRoot(List<Node> tree) {
         Integer res = 0;

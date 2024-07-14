@@ -1,6 +1,6 @@
 # Ad-Free Sessions
 
-```
+```sql
 select
     p.session_id
 from

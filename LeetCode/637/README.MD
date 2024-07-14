@@ -22,7 +22,7 @@
 - Space Complexity: O(N)
   - N as number of TreeNode
 
-```
+```java
 class Solution {
     public List<Double> averageOfLevels(TreeNode root) {
         if(root == null){

@@ -5,7 +5,7 @@
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public String[] reorderLogFiles(String[] logs) {
         Comparator<String> myCompare = new Comparator<String>(){
@@ -38,7 +38,7 @@ class Solution {
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public String[] reorderLogFiles(String[] logs) {
         Arrays.sort(logs, (logA, logB) ->{

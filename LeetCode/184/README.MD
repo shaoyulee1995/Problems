@@ -1,6 +1,6 @@
 # Department Highest Salary
 
-```
+```sql
 select d.name as 'Department',
         e.name as 'Employee',
         e.salary
@@ -15,7 +15,7 @@ where (e.departmentId, e.salary) in (
 
 # join
 
-```
+```sql
 select d.name as 'Department',
         e.name as 'Employee',
         e.salary as 'Salary'

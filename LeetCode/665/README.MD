@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public boolean checkPossibility(int[] nums) {
         int k = 0;

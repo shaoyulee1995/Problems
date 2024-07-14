@@ -4,7 +4,7 @@
 - Space Complexity: O(501)
   - N as length of nums
 
-```
+```java
 class Solution {
     public boolean divideArray(int[] nums) {
         int[] cnt = new int[501];
@@ -25,7 +25,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public boolean divideArray(int[] nums) {
         Set<Integer> set = new HashSet();

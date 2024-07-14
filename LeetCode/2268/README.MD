@@ -5,7 +5,7 @@
   - S as length of s
   - N as 26
 
-```
+```java
 class Solution {
     public int minimumKeypresses(String s) {
         int[] cnt = new int[26];
@@ -37,7 +37,7 @@ class Solution {
   - S as length of s
   - N as 26
 
-```
+```java
 class Solution {
     public int minimumKeypresses(String s) {
         Integer[] freq = new Integer[26];

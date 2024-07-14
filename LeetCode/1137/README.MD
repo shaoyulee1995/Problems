@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of n
 
-```
+```java
 class Solution {
     public int tribonacci(int n) {
         if(n < 3){

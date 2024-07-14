@@ -4,7 +4,7 @@
 - Space Complexity: O(10)
   - N as length of rings
 
-```
+```java
 class Solution {
     public int countPoints(String rings) {
         int[] R = new int[10],
@@ -36,7 +36,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of rings
 
-```
+```java
 class Solution {
     public int countPoints(String rings) {
         HashMap<Integer, HashSet<Character>> map = new HashMap();

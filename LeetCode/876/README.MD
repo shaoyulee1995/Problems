@@ -15,7 +15,7 @@ public class ListNode {
 - Space Complexity: O(1)
   - N as nodes in linkedlist
 
-```
+```java
 class Solution {
     public ListNode middleNode(ListNode head) {
         ListNode slow = head,

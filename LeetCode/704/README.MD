@@ -3,7 +3,7 @@
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int search(int[] nums, int target) {
         int i = 0,

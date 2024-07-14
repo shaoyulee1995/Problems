@@ -1,6 +1,6 @@
 # Primary Department for Each Employee
 
-```
+```sql
 select
     employee_id,
     department_id

@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxProduct(int[] nums) {
         int max1 = Integer.MIN_VALUE,

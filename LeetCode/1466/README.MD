@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of connections
 
-```
+```java
 class Solution {
     public int minReorder(int n, int[][] connections) {
         HashMap<Integer, ArrayList<dest>> map = new HashMap();

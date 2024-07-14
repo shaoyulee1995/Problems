@@ -5,7 +5,7 @@
   - N as length of words
     - W as length of word
 
-```
+```java
 class Solution {
     public int maximumNumberOfStringPairs(String[] words) {
         HashMap<String, Integer> map = new HashMap();
@@ -29,7 +29,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of words
 
-```
+```java
 class Solution {
     public int maximumNumberOfStringPairs(String[] words) {
         HashMap<String, Integer> map = new HashMap();

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of seats
 
-```
+```java
 class Solution {
     public int minMovesToSeat(int[] seats, int[] students) {
         Arrays.sort(seats);

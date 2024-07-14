@@ -5,7 +5,7 @@
   - N as length of mat
   - M as length of mat[0]
 
-```
+```java
 class Solution {
     public int[][] matrixBlockSum(int[][] mat, int k) {
         int n = mat.length,

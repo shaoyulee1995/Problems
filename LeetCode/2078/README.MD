@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of colors
 
-```
+```java
 class Solution {
     public int maxDistance(int[] colors) {
         HashMap<Integer, Integer> firstHouse = new HashMap(),
@@ -33,7 +33,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of colors
 
-```
+```java
 class Solution {
     public int maxDistance(int[] colors) {
         int i = 0,

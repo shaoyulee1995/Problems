@@ -5,7 +5,7 @@
   - C as length of cols
   - R as length of rows
 
-```
+```java
 class Solution {
     public int minDeletionSize(String[] strs) {
         int len = strs[0].length(),

@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int countNicePairs(int[] nums) {
         HashMap<Long, Integer> map = new HashMap();

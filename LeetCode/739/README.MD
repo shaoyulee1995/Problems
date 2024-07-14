@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of list
 
-```
+```java
 class Solution {
     public int[] dailyTemperatures(int[] list) {
         Stack<Integer> stack = new Stack();

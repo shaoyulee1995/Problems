@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean areOccurrencesEqual(String s) {
         int[] cnt = new int[26];
@@ -31,7 +31,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean areOccurrencesEqual(String s) {
         if(s == null || s.length() == 0){

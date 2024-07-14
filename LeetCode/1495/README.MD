@@ -1,6 +1,6 @@
 # Friendly Movies Streamed Last Month
 
-```
+```sql
 select
     distinct title
 from

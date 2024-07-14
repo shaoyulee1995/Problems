@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public boolean isConsecutive(int[] nums) {
         Arrays.sort(nums);
@@ -22,7 +22,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public boolean isConsecutive(int[] nums) {
         int min = IntStream.of(nums).min().getAsInt();

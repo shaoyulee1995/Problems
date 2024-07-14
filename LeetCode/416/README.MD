@@ -2,7 +2,7 @@
 
 # TLE
 
-```
+```java
 class Solution {
     public boolean canPartition(int[] nums) {
         int sum = 0;
@@ -80,7 +80,7 @@ class Solution {
   - N is the length of nums
   - S is the sum of nums
 
-```
+```java
 class Solution {
     public boolean canPartition(int[] nums) {
         int sum = 0;
@@ -110,7 +110,7 @@ class Solution {
   - N is the length of nums
   - S is the sum of nums
 
-```
+```java
 class Solution {
     public boolean canPartition(int[] nums) {
         int sum = 0;

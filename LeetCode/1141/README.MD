@@ -1,6 +1,6 @@
 # User Activity for the Past 30 Days I
 
-```
+```sql
 select
     activity_date as 'day',
     count(distinct user_id) as 'active_users'

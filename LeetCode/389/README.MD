@@ -31,7 +31,7 @@ class Solution {
 - Space Complexity: O(1)
   - T as length of t
 
-```
+```java
 class Solution {
     public char findTheDifference(String s, String t) {
         char res = 0;

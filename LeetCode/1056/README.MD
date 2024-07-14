@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public boolean confusingNumber(int n) {
         HashMap<Integer, Integer> map = new HashMap();

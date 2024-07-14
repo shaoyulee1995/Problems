@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public int minFlipsMonoIncr(String s) {
         int one_count = 0,

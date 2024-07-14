@@ -5,7 +5,7 @@
   - N as length of img
     - M as length of img[0]
 
-```
+```java
 class Solution {
     public int[][] imageSmoother(int[][] img) {
         int[][] res = new int[img.length][img[0].length];

@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as len of nums
 
-```
+```java
 class Solution {
     public List<List<Integer>> findMissingRanges(int[] nums, int lower, int upper) {
         List<List<Integer>> res = new ArrayList();

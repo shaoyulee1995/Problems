@@ -8,7 +8,7 @@
   - B as length of banned
   - w as length of word
 
-```
+```java
 class Solution {
     public String mostCommonWord(String paragraph, String[] banned) {
         paragraph = paragraph + ".";
@@ -52,7 +52,7 @@ class Solution {
   - P as length of paragraph
   - B as length of banned
 
-```
+```java
 class Solution {
     public String mostCommonWord(String paragraph, String[] banned) {
         String[] words = paragraph.toLowerCase().split("\\W+");

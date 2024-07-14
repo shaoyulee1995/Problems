@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public boolean validPalindrome(String s) {
         int L = 0, R = s.length() - 1;

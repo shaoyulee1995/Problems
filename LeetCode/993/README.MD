@@ -58,7 +58,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public boolean isCousins(TreeNode root, int x, int y) {
         if(root == null){

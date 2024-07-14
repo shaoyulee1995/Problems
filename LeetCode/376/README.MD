@@ -5,7 +5,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int wiggleMaxLength(int[] nums) {
         if(nums.length == 1){

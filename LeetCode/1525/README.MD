@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(26)
 
-```
+```java
 class Solution {
     public int numSplits(String s) {
         int[] cntL = new int[26],

@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of scores
 
-```
+```java
 class Solution {
     public String[] findRelativeRanks(int[] score) {
         Integer[] index = new Integer[score.length];
@@ -33,7 +33,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of scores
 
-```
+```java
 class Solution {
     public String[] findRelativeRanks(int[] score) {
         int[] temp = score.clone();

@@ -1,6 +1,6 @@
 # Find Winner on a Tic Tac Toe Game
 
-```
+```java
 class Solution {
     public String tictactoe(int[][] moves) {
         int[] a = new int[8],

@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] createTargetArray(int[] nums, int[] index) {
         ArrayList<Integer> list = new ArrayList();

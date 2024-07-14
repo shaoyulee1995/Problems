@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of tops
 
-```
+```java
 class Solution {
     public int minDominoRotations(int[] tops, int[] bottoms) {
         int[] cntT = new int[7],

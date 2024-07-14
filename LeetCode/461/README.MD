@@ -6,7 +6,7 @@
 - Space Complexity: O(1)
   - N as length of Max(x, y)
 
-```
+```java
 class Solution {
     public int hammingDistance(int x, int y) {
         int res = 0;

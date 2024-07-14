@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int minSubArrayLen(int target, int[] nums) {
         int i = 0, sum = 0, res = Integer.MAX_VALUE;

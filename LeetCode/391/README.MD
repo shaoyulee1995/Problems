@@ -4,7 +4,7 @@
 - Space Complexity: O(R)
   - R as length of rectangles
 
-```
+```java
 class Solution {
     public boolean isRectangleCover(int[][] rectangles) {
         if(rectangles == null || rectangles.length == 0 || rectangles[0].length == 0){

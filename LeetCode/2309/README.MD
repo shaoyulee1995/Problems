@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public String greatestLetter(String s) {
         int[] cnt = new int[128];

@@ -5,7 +5,7 @@
   - N as length of nums1
   - M as length of nums2
 
-```
+```java
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
         HashSet<Integer> set = new HashSet();

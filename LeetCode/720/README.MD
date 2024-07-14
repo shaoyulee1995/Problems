@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of words
 
-```
+```java
 class Solution {
     public String longestWord(String[] words) {
         String res = "";

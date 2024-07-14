@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as digits of num
 
-```
+```java
 class Solution {
     public int addDigits(int num) {
         while(num > 9){

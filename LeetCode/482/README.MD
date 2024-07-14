@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String licenseKeyFormatting(String s, int k) {
         StringBuilder sb = new StringBuilder();
@@ -28,7 +28,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String licenseKeyFormatting(String s, int k) {
         StringBuilder sb = new StringBuilder();

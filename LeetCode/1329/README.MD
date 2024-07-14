@@ -7,7 +7,7 @@
   - M as mat.length
   - N as mat[0].length
 
-```
+```java
 class Solution {
     public int[][] diagonalSort(int[][] mat) {
         HashMap<Integer, PriorityQueue<Integer>> map = new HashMap();
@@ -32,7 +32,7 @@ class Solution {
   - N as mat[0].length
   - D as diagonal of matrix
 
-```
+```java
 class Solution {
     public int[][] diagonalSort(int[][] mat) {
         for(int row = 0; row < mat.length; row++){

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 class Solution {
     public int[] getNoZeroIntegers(int n) {
         for(int i = 1; i <= n; i++){

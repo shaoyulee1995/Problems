@@ -5,7 +5,7 @@
   - M as length of mat
   - N as length of mat[0]
 
-```
+```java
 class Solution {
     public int[] findDiagonalOrder(int[][] mat) {
         int[] res = new int[mat.length*mat[0].length];

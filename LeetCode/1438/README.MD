@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int longestSubarray(int[] nums, int limit) {
         ArrayDeque<Integer> maxD = new ArrayDeque(),

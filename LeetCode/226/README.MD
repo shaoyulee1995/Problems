@@ -22,7 +22,7 @@
 - Space Complexity: O(N)
   - N as number of nodes in tree
 
-```
+```java
 class Solution {
     public TreeNode invertTree(TreeNode root) {
         if(root == null){
@@ -41,7 +41,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as number of nodes in tree
 
-```
+```java
 class Solution {
     public TreeNode invertTree(TreeNode root) {
         if(root == null){

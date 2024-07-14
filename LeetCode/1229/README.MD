@@ -5,7 +5,7 @@
   - N as length of slots1
   - M as length of slots2
 
-```
+```java
 class Solution {
     public List<Integer> minAvailableDuration(int[][] slots1, int[][] slots2, int duration) {
         int i = 0,

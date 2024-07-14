@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
         int[] dp = new int[cost.length + 1];
@@ -18,7 +18,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
         for(int i = 2; i < cost.length; i++){
@@ -33,7 +33,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int minCostClimbingStairs(int[] cost) {
         int prev2 = cost[0],

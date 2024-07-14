@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] resultArray(int[] nums) {
         Stack<Integer> arr1 = new Stack(),

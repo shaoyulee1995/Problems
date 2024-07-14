@@ -21,7 +21,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public TreeNode trimBST(TreeNode root, int low, int high) {
         if(root == null){

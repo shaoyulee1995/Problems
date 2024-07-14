@@ -51,7 +51,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public int rob(TreeNode root) {
         int[] res = dfs(root);

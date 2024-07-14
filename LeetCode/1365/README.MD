@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] res = new int[nums.length];
@@ -26,7 +26,7 @@ class Solution {
 - Space Complexity: O(102)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int[] cnt = new int[102];
@@ -51,7 +51,7 @@ class Solution {
   - N as length of nums
   - m as max
 
-```
+```java
 class Solution {
     public int[] smallerNumbersThanCurrent(int[] nums) {
         int max = 0;

@@ -35,7 +35,7 @@ class Solution:
 
 ```
 
-```
+```java
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
         int i = 0, j = numbers.length - 1;
@@ -59,7 +59,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of numbers
 
-```
+```java
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
         HashMap<Integer, Integer> map = new HashMap();

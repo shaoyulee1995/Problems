@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 class Solution {
     public boolean isPowerOfFour(int n) {
         if(n <= 0){

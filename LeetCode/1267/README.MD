@@ -3,7 +3,7 @@
 - Time Complexity: O(MN)
 - Space Complexity: O(MN)
 
-```
+```java
 class Solution {
     public int countServers(int[][] grid) {
         int m = grid.length,

@@ -5,7 +5,7 @@
   - W as length of words
   - w as the maximum length word
 
-```
+```java
 class Solution {
     public int countPrefixes(String[] words, String s) {
         int res = 0;

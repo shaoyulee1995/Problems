@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean buddyStrings(String s, String goal) {
         if(s.length() != goal.length()){

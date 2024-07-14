@@ -5,7 +5,7 @@
   - N as length of name
   - M as length of typed
 
-```
+```java
 class Solution {
     public boolean isLongPressedName(String name, String typed) {
         if(name.equals(typed)){

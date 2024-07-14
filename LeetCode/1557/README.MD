@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of edge
 
-```
+```java
 class Solution {
     public List<Integer> findSmallestSetOfVertices(int n, List<List<Integer>> edges) {
         List<Integer> list = new ArrayList();

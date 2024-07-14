@@ -4,7 +4,7 @@
 - Space Complexity: O(S)
   - S as length of s
 
-```
+```java
 class Solution {
     public String sortSentence(String s) {
         String[] strs = s.split(" ");
@@ -29,7 +29,7 @@ class Solution {
 - Space Complexity: O(S)
   - S as length of s
 
-```
+```java
 class Solution {
     public String sortSentence(String s) {
         String[] strs = s.split(" ");

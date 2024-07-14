@@ -5,7 +5,7 @@
   - N as length of nums1
   - M as length of nums2
 
-```
+```java
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         HashMap<Integer, Integer> map = new HashMap();
@@ -31,7 +31,7 @@ class Solution {
   - N as length of nums1
   - M as length of nums2
 
-```
+```java
 class Solution {
     public int[] intersect(int[] nums1, int[] nums2) {
         if(nums1.length > nums2.length){

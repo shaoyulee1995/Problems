@@ -5,7 +5,7 @@
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int maxEnvelopes(int[][] envelopes) {
         Arrays.sort(envelopes, new Comparator<int[]>(){
@@ -39,7 +39,7 @@ class Solution {
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int maxEnvelopes(int[][] envelopes) {
         Arrays.sort(envelopes, (a, b)-> (a[0] == b[0])?b[1]-a[1]:a[0]-b[0]);

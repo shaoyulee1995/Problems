@@ -1,6 +1,6 @@
 # Unique Orders and Customers Per Month
 
-```
+```sql
 select
     date_format(order_date, '%Y-%m') as 'month',
     count(order_id) as 'order_count',

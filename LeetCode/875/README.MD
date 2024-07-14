@@ -5,7 +5,7 @@
   - P represents length of piles
   - M represents max
 
-```
+```java
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
         int min = 1,

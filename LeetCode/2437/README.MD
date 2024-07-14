@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of time
 
-```
+```java
 class Solution {
     public int countTime(String time) {
         int res = 1;

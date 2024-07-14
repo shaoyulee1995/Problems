@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public int[] shortestToChar(String s, char t) {
         int[] res = new int[s.length()];

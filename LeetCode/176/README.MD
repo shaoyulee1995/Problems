@@ -1,6 +1,6 @@
 # Second Highest Salary
 
-```
+```sql
 select
     max(salary) as 'SecondHighestSalary'
 from
@@ -9,7 +9,7 @@ where
     salary not in (select max(salary) from Employee)
 ```
 
-```
+```sql
 select
     ifnull(
         (select

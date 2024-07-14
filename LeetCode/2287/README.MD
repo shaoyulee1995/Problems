@@ -5,7 +5,7 @@
   - S as length of s
   - T as length of target
 
-```
+```java
 class Solution {
     public int rearrangeCharacters(String s, String target) {
         int[] targetCnt = new int[26];

@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int numIdenticalPairs(int[] nums) {
         int[] count = new int[101];
@@ -19,7 +19,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int numIdenticalPairs(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap();

@@ -3,7 +3,7 @@
 - Time Complexity: O(O+S)
 - Space Complexity: O(26)
 
-```
+```java
 class Solution {
     public String customSortString(String order, String s) {
         int[] arr = new int[26];

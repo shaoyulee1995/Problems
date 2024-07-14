@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of text
 
-```
+```java
 class Solution {
     public int[][] indexPairs(String text, String[] words) {
         List<int[]> res = new ArrayList();

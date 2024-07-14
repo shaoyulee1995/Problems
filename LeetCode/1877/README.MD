@@ -5,7 +5,7 @@
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int minPairSum(int[] nums) {
         Arrays.sort(nums);

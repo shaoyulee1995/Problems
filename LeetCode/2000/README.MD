@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of words
 
-```
+```java
 class Solution {
     public String reversePrefix(String word, char ch) {
         StringBuilder sb = new StringBuilder();

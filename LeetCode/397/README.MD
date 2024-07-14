@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public int integerReplacement(int n) {
         Queue<Long> queue = new LinkedList();

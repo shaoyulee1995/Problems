@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int subarraysWithKDistinct(int[] nums, int k) {
         return atMost(nums, k) - `atMost`(nums, k-1);

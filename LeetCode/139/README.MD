@@ -5,7 +5,7 @@
   - W as wordDict.size()
   - N as s.length()
 
-```
+```java
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
         int n = s.length();

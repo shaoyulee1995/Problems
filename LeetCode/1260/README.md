@@ -5,7 +5,7 @@
   - N as length of grid
   - M as length of grid[0]
 
-```
+```java
 class Solution {
     public List<List<Integer>> shiftGrid(int[][] grid, int k) {
         int n = grid.length,

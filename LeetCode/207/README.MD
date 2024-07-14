@@ -7,7 +7,7 @@
   - V as numCourses
   - E as course relates to
 
-```
+```java
 class Solution {
     public boolean canFinish(int numCourses, int[][] pairs) {
         List<Integer>[] outGoingEdge = new LinkedList[numCourses];
@@ -47,7 +47,7 @@ class Solution {
   - V as numCourses
   - E as course relates to
 
-```
+```java
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         HashMap<Integer, List<Integer>> map = new HashMap();

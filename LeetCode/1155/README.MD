@@ -38,7 +38,7 @@ class Solution {
   - T as target
   - K as k
 
-```
+```java
 class Solution {
     public int numRollsToTarget(int n, int k, int target) {
         int[][] dp = new int[n+1][target+1];

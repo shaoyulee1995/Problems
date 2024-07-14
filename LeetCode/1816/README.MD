@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String truncateSentence(String s, int k) {
         String[] parse = s.split(" ");
@@ -25,7 +25,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String truncateSentence(String s, int k) {
         StringBuilder sb = new StringBuilder();

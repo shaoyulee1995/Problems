@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int maxDepth(String s) {
         int cnt = 0, max = Integer.MIN_VALUE;

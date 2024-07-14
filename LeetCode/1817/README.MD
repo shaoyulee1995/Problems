@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of logs
 
-```
+```java
 class Solution {
     public int[] findingUsersActiveMinutes(int[][] logs, int k) {
         HashMap<Integer, HashSet<Integer>> map = new HashMap();

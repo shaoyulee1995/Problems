@@ -4,7 +4,7 @@
 - Space Complexity: O(D)
   - N as length of digits
 
-```
+```java
 class Solution {
     public boolean isArmstrong(int n) {
         int original = n;

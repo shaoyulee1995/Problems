@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of mountain
 
-```
+```java
 class Solution {
     public List<Integer> findPeaks(int[] mountain) {
         List<Integer> res = new ArrayList();

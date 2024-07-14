@@ -4,7 +4,7 @@
 - Space Complexity: O(N<sup>2</sup>)
   - N as length of s
 
-```
+```java
 class Solution {
     List<List<String>> list = new ArrayList();
     LinkedList<String> path = new LinkedList();

@@ -3,7 +3,7 @@
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public boolean isRectangleOverlap(int[] rec1, int[] rec2) {
         int x1 = rec1[0],

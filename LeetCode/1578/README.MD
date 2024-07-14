@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of colors
 
-```
+```java
 class Solution {
     public int minCost(String colors, int[] neededTime) {
         int res = 0;

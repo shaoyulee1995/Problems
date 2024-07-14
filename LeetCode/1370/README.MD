@@ -4,7 +4,7 @@
 - Space Complexity: O(S)
   - S as length of s
 
-```
+```java
 class Solution {
     public String sortString(String s) {
         StringBuilder sb = new StringBuilder();

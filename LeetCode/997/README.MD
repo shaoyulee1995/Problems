@@ -5,7 +5,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int findJudge(int N, int[][] trust) {
         int[] cnt = new int[N+1];

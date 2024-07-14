@@ -5,7 +5,7 @@
   - M as length of image
   - N as length of image[0]
 
-```
+```java
 class Solution {
     public int minArea(char[][] image, int x, int y) {
 		Queue<int[]> queue = new LinkedList();

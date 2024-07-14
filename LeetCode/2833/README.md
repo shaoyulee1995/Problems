@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of moves
 
-```
+```java
 class Solution {
     public int furthestDistanceFromOrigin(String moves) {
         int dash = 0,

@@ -6,7 +6,7 @@
 - Space Complexity: O(1)
   - N as length of arr
 
-```
+```java
 class Solution {
     public String largestTimeFromDigits(int[] arr) {
         String res = "";

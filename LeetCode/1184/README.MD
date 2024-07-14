@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of distance
 
-```
+```java
 class Solution {
     public int distanceBetweenBusStops(int[] distance, int start, int destination) {
         return Math.min(getDistance(distance, start, destination), getDistance(distance, destination, start));

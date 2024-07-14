@@ -1,6 +1,6 @@
 # Employees Whose Manager Left the Company
 
-```
+```sql
 select
     employee_id
 from

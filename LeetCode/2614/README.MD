@@ -5,7 +5,7 @@
   - N as length of nums
   - M as length of nums[0]
 
-```
+```java
 class Solution {
     public int diagonalPrime(int[][] nums) {
         int res = 0;

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of number
 
-```
+```java
 class Solution {
     public String removeDigit(String number, char digit) {
         for(int i = 1; i < number.length(); i++){

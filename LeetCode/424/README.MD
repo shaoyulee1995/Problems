@@ -4,7 +4,7 @@
 - Space Complexity: O(26)
   - S as length of s
 
-```
+```java
 class Solution {
     public int characterReplacement(String s, int k) {
         int i = 0,

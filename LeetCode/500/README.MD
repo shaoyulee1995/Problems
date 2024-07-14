@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of words
 
-```
+```java
 class Solution {
     public String[] findWords(String[] words) {
         List<String> res = new ArrayList();
@@ -30,7 +30,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of words
 
-```
+```java
 class Solution {
     public String[] findWords(String[] words) {
         List<String> res = new ArrayList();

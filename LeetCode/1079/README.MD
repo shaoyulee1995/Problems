@@ -37,7 +37,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of tiles
 
-```
+```java
 class Solution {
     public int numTilePossibilities(String tiles) {
         HashSet<String> set = new HashSet();

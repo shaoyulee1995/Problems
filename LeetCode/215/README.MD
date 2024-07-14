@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int findKthLargest(int[] nums, int k) {
         Arrays.sort(nums);
@@ -20,7 +20,7 @@ class Solution {
   - N as length of nums
   - K as k
 
-```
+```java
 class Solution {
     public int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> pq = new PriorityQueue();
@@ -41,7 +41,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int findKthLargest(int[] nums, int k) {
         int start = 0,

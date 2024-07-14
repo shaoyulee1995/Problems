@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of operations
 
-```
+```java
 class Solution {
     public int finalValueAfterOperations(String[] operations) {
         int res = 0;

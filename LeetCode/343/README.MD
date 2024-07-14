@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public int integerBreak(int n) {
         int[] dp = new int[n+1];

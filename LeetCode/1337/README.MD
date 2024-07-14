@@ -5,7 +5,7 @@
   - M as mat.length
   - N as mat[0].length
 
-```
+```java
 class Solution {
     public int[] kWeakestRows(int[][] mat, int k) {
         int[] res = new int[k];
@@ -36,7 +36,7 @@ class Solution {
   - N as mat[0].length
   - K as k
 
-```
+```java
 class Solution {
     public int[] kWeakestRows(int[][] mat, int k) {
         PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a,b)-> a[1] == b[1]? b[0] - a[0]: b[1] - a[1]);

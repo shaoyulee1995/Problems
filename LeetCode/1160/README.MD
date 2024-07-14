@@ -5,7 +5,7 @@
   - W as length of words
   - L as length of word
 
-```
+```java
 class Solution {
     public int countCharacters(String[] words, String chars) {
         int[] cnt = new int[26];

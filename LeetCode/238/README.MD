@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int[] res = new int[nums.length];
@@ -29,7 +29,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int[] productExceptSelf(int[] nums) {
         int n = nums.length;

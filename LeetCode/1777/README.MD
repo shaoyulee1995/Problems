@@ -1,6 +1,6 @@
 # Product's Price for Each Store
 
-```
+```sql
 select
     product_id,
     max(case when store = 'store1' then price end) as 'store1',

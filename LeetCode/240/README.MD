@@ -7,7 +7,7 @@
   - N as length of matrix
   - M as length of matrix[0]
 
-```
+```java
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         int n = matrix.length,

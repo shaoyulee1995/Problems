@@ -21,7 +21,7 @@
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public TreeNode deleteNode(TreeNode root, int key) {
         if(root == null){

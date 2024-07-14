@@ -23,7 +23,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public int sumEvenGrandparent(TreeNode root) {
         if(root == null){

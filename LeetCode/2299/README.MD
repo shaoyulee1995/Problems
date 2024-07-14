@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of password
 
-```
+```java
 class Solution {
     public boolean strongPasswordCheckerII(String password) {
         if(password.length() < 8){

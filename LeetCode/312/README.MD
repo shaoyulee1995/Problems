@@ -5,7 +5,7 @@
 - Time Complexity: O(NN)
 - Space Complexity: O(NN)
 
-```
+```java
 class Solution {
     public int maxCoins(int[] nums) {
         int n = nums.length;

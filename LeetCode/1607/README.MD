@@ -1,6 +1,6 @@
 # Sellers With No Sales
 
-```
+```sql
 select
     s.seller_name
 from

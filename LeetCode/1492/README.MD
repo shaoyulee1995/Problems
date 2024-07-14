@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 class Solution {
     public int kthFactor(int n, int k) {
         for(int i = 1; i <= n; i++){
@@ -24,7 +24,7 @@ class Solution {
 - Space Complexity: O($\sqrt{N}$)
   - N as n
 
-```
+```java
 class Solution {
     public int kthFactor(int n, int k) {
         List<Integer> list = new ArrayList();
@@ -52,7 +52,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as n
 
-```
+```java
 class Solution {
     public int kthFactor(int n, int k) {
         for(int i = 1; i < Math.sqrt(n); i++){

@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int largestUniqueNumber(int[] nums) {
         int[] cnt = new int[1000+1];
@@ -25,7 +25,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int largestUniqueNumber(int[] nums) {
         Arrays.sort(nums);
@@ -46,7 +46,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public int largestUniqueNumber(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap();

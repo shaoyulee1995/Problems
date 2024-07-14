@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 
-```
+```java
 class Solution {
     public int rotatedDigits(int N) {
         int[] dp = new int[N+1];

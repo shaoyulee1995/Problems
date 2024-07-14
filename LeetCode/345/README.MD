@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String reverseVowels(String s) {
         return reverse(s.toCharArray());
@@ -47,7 +47,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public String reverseVowels(String s) {
         HashSet<Character> set = new HashSet<>(Arrays.asList('a','e','i','o','u','A','I','O','U','E'));

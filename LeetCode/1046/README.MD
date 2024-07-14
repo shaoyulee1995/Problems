@@ -6,7 +6,7 @@
 - Space Complexity: O(N)
   - N as length of stones
 
-```
+```java
 class Solution {
     public int lastStoneWeight(int[] stones) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();

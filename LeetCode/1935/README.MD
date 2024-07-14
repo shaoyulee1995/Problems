@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of text
 
-```
+```java
 class Solution {
     public int canBeTypedWords(String text, String brokenLetters) {
         Set<Character> set = new HashSet();

@@ -5,7 +5,7 @@
   - K as k
     - S as length of s
 
-```
+```java
 class Solution {
     public int getLucky(String s, int k) {
         StringBuilder sb = new StringBuilder();

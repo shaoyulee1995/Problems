@@ -3,7 +3,7 @@
 - Time Complexity: O(1)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public String dayOfTheWeek(int day, int month, int year) {
         String[] names = {"Friday", "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"};

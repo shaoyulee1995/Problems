@@ -6,7 +6,7 @@
   - A as length of A
   - W as length of word
 
-```
+```java
 class Solution {
     public int countConsistentStrings(String A, String[] strs) {
         HashSet<Character> set = new HashSet();

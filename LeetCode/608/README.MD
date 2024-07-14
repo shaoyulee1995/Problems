@@ -1,6 +1,6 @@
 # Tree Node
 
-```
+```sql
 select
     id,
     (case

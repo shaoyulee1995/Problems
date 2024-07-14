@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of groupSizes
 
-```
+```java
 class Solution {
     public List<List<Integer>> groupThePeople(int[] groupSizes) {
         HashMap<Integer, List<Integer> > map = new HashMap<>();

@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as n
 
-```
+```java
 class Solution {
     public int[] sumZero(int n) {
         int[] res = new int[n];

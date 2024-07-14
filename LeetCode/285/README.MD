@@ -14,7 +14,7 @@ public class TreeNode {
 - Space Complexity: O(1)
   - H as height of tree
 
-```
+```java
 class Solution {
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         TreeNode successor = null;

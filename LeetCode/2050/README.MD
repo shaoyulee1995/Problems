@@ -7,7 +7,7 @@
   - V as vertices
   - E as edges
 
-```
+```java
 class Solution {
     public int minimumTime(int n, int[][] relations, int[] time) {
         HashMap<Integer, List<Integer>> map = new HashMap();

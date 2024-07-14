@@ -3,7 +3,7 @@
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
         if(target >= letters[letters.length-1]){
@@ -28,7 +28,7 @@ class Solution {
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
         char ans = ' ';

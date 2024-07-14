@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as length of s
 
-```
+```java
 class Solution {
     public boolean isIsomorphic(String s, String t) {
         if(s.length() != t.length()){

@@ -50,7 +50,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public int kthSmallest(TreeNode root, int k) {
         List<Integer> inOrder = new ArrayList();

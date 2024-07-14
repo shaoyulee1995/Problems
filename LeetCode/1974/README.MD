@@ -4,7 +4,7 @@
 - Space Complexity: O(1)
   - N as length of word
 
-```
+```java
 class Solution {
     public int minTimeToType(String word) {
         int res = word.length();

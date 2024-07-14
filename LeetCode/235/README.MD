@@ -16,7 +16,7 @@
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         if(root.val > p.val && root.val > q.val){
@@ -36,7 +36,7 @@ class Solution {
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         while(true){

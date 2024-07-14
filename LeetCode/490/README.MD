@@ -5,7 +5,7 @@
   - N as length of maze
   - M as length of maze[0]
 
-```
+```java
 class Solution {
     public boolean hasPath(int[][] maze, int[] start, int[] destination) {
         int n = maze.length,

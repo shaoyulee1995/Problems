@@ -5,7 +5,7 @@
   - N as length of mat
     - M as length[0] of mat
 
-```
+```java
 class Solution {
     public boolean areSimilar(int[][] mat, int k) {
         for(int i = 0; i < mat.length; i++){
