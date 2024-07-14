@@ -1,7 +1,7 @@
 # Palindrome Partitioning
 
-- Time Complexity: O(N\*2^N)
-- Space Complexity: O(N^2)
+- Time Complexity: O(N\*2<sup>N</sup>)
+- Space Complexity: O(N<sup>2</sup>)
   - N as length of s
 
 ```

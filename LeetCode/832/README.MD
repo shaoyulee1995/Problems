@@ -1,6 +1,6 @@
 # Flipping an Image
 
-- Time Complexity: O(N^2)
+- Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(1)
   - N as length of image
 

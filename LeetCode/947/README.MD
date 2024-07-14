@@ -1,7 +1,5 @@
 # Most Stones Removed with Same Row or Column
 
-# Union Find
-
 - Time Complexity: O(N<sup>2</sup>logN)
 - Space Complexity: O(N)
   - N as length of stones

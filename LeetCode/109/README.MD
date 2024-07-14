@@ -31,7 +31,7 @@ public class TreeNode {
 - Space Complexity: O(N)
   - N as length of linked list
 
-```
+```java
 class Solution {
     public TreeNode sortedListToBST(ListNode head) {
         if(head == null){

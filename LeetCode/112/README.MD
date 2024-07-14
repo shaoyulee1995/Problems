@@ -20,7 +20,7 @@ public class TreeNode {
 - Space Complexity: O(1)
   - N as nodes
 
-```
+```java
 class Solution {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if(root == null){

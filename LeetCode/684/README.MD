@@ -1,7 +1,5 @@
 # Redundant Connection
 
-# Union Find
-
 - Time Complexity: O(E)
 - Space Complexity: O(E)
   - E as length of edges

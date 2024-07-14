@@ -1,6 +1,6 @@
 # House Robber
 
-- Time Complexity: O(N^N)
+- Time Complexity: O(N<sup>N</sup>)
 - Space Complexity: O(1)
   - N as length of nums
 

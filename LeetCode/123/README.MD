@@ -2,8 +2,9 @@
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
+  - N as length of prices
 
-```
+```java
 class Solution {
     public int maxProfit(int[] prices) {
         int buy1 = Integer.MIN_VALUE,

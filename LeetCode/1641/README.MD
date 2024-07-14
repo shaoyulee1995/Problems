@@ -68,7 +68,7 @@ class Solution {
 }
 ```
 
-- Time Complexity: O(5^N)
+- Time Complexity: O(5<sup>N</sup>)
 - Space Complexity: O(N)
   - N as n
 

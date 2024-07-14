@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as numRows
 
-```
+```java
 class Solution {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> rows = new LinkedList();

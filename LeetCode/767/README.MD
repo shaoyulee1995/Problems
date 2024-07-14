@@ -1,6 +1,6 @@
 # Reorganize String
 
-- Time Complexity: O(N^2logN)
+- Time Complexity: O(N<sup>2</sup>logN)
 - Space Complexity: O(N)
 
 ```

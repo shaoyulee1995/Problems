@@ -2,7 +2,7 @@
 
 # BackTracking
 
-- Time Complexity: O(2^N)
+- Time Complexity: O(2<sup>N</sup>)
 - Space Complexity: O(N)
 
 ```

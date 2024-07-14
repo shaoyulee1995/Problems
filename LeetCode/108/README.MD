@@ -20,7 +20,7 @@ public class TreeNode {
 - Space Complexity: O(N)
   - N as length of nums
 
-```
+```java
 class Solution {
     public TreeNode sortedArrayToBST(int[] nums) {
         return build(nums, 0, nums.length-1);

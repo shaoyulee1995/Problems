@@ -1,7 +1,7 @@
 # Lowest Common Ancestor of a Binary Tree III
 
 ```
-// Definition for a Node.
+
 class Node {
     public int val;
     public Node left;

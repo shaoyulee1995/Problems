@@ -5,7 +5,7 @@
   - N as length of res
   - R as rowIndex
 
-```
+```java
 class Solution {
     public List<Integer> getRow(int rowIndex) {
         List<Integer> res = new LinkedList();

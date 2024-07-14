@@ -3,7 +3,7 @@
 - Time Complexity: O(MN)
 - Space Complexity: O(MN)
 
-```
+```java
 class Solution {
     public void solve(char[][] board) {
         int n = board.length,
@@ -45,14 +45,12 @@ class Solution {
 }
 ```
 
-# Union Find
-
 - Time Complexity: O(MN)
 - Space Complexity: O(MN)
   - N as rows
   - M as cols
 
-```
+```java
 class Solution {
     class UnionFind{
         private int[] parents;

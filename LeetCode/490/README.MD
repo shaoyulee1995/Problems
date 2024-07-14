@@ -1,7 +1,5 @@
 # The Maze
 
-# One direction BFS
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of maze

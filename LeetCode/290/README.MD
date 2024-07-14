@@ -1,6 +1,6 @@
 # Word Pattern
 
-- Time Complexity: O(N^2)
+- Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
 
 ```

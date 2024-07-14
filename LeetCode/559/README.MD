@@ -2,7 +2,7 @@
 
 ```
 /*
-// Definition for a Node.
+
 class Node {
     public int val;
     public List<Node> children;

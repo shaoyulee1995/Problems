@@ -5,7 +5,7 @@
   - N as length of triangle
     - M as length of triangle[0]
 
-```
+```java
 class Solution {
     public int minimumTotal(List<List<Integer>> triangle) {
         int[] sum = new int[triangle.size()+1];

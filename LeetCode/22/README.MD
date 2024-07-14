@@ -1,6 +1,6 @@
 # Generate Parentheses
 
-- Time Complexity: O($\frac{4^N}{\sqrt{N}}$)
+- Time Complexity: O($\frac{4<sup>N</sup>}{\sqrt{N}}$)
 - Space Complexity: O(N)
   - N as n
 

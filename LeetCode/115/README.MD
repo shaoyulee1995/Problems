@@ -5,7 +5,7 @@
   - N as length of t
     - M as length of s
 
-```
+```java
 class Solution {
     public int numDistinct(String s, String t) {
         int[][] dp = new int[t.length()+1][s.length()+1];
@@ -22,5 +22,4 @@ class Solution {
         return dp[t.length()][s.length()];
     }
 }
-
 ```

@@ -1,7 +1,7 @@
 # All Paths From Source to Target
 
-- Time Complexity: O((2^N)\*(N^2))
-- Space Complexity: O((2^N)\*N)
+- Time Complexity: O((2<sup>N</sup>)\*(N<sup>2</sup>))
+- Space Complexity: O((2<sup>N</sup>)\*N)
 
 ```java
 class Solution {

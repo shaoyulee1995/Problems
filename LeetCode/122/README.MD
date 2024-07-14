@@ -2,6 +2,7 @@
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
+  - N as length of prices
 
 ```java
 class Solution {
@@ -20,6 +21,7 @@ class Solution {
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
+  - N as length of prices
 
 ```java
 class Solution {
@@ -35,6 +37,7 @@ class Solution {
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
+  - N as length of prices
 
 ```python
 class Solution:

@@ -1,8 +1,6 @@
 # Populating Next Right Pointers in Each Node
 
 ```
-/*
-// Definition for a Node.
 class Node {
     public int val;
     public Node left;
@@ -22,13 +20,12 @@ class Node {
         next = _next;
     }
 };
-*/
 ```
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
-```
+```java
 class Solution {
     public Node connect(Node root) {
         if(root == null){
@@ -54,7 +51,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as number of TreeNode
 
-```
+```java
 class Solution {
     public Node connect(Node root) {
         if(root == null){

@@ -2,8 +2,8 @@
 
 # Recursion Map
 
-- Time Complexity: O(N^2)
-- Space Complexity: O(N^2)
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N<sup>2</sup>)
   - N as length of expression
 
 ```

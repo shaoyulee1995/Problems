@@ -1,13 +1,11 @@
 # Word Ladder
 
-# One direction BFS
-
 - Time Complexity: O(NW<sup>2</sup>)
 - Space Complexity: O(NW)
   - N as length of wordList
   - W as length of word
 
-```
+```java
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         HashSet<String> set = new HashSet(wordList);
@@ -36,14 +34,12 @@ class Solution {
 }
 ```
 
-# Two directions DFS
-
 - Time Complexity: O(NW<sup>2</sup>)
 - Space Complexity: O(NW)
   - N as length of wordList
   - W as length of word in wordList
 
-```
+```java
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         if(!wordList.contains(endWord)){
@@ -88,14 +84,12 @@ class Solution {
 }
 ```
 
-# Two directions BFS
-
 - Time Complexity: O(NW<sup>2</sup>)
 - Space Complexity: O(NW)
   - N as length of wordList
   - W as length of word in wordList
 
-```
+```java
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         HashSet<String> words = new HashSet(wordList),

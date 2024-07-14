@@ -1,28 +1,26 @@
 # Binary Tree Level Order Traversal
 
 ```
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+Definition for a binary tree node.
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
 ```
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         if(root == null){
@@ -54,7 +52,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     List<List<Integer>> res;
     public List<List<Integer>> levelOrder(TreeNode root) {

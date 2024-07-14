@@ -20,7 +20,7 @@ public class TreeNode {
 - Space Complexity: O(1)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public int maxDepth(TreeNode root) {
         if(root == null){
@@ -37,7 +37,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public int maxDepth(TreeNode root) {
         if(root == null){

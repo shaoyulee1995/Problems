@@ -45,8 +45,8 @@ class Solution {
 }
 ```
 
-- Time Complexity: O(N^2)
-- Space Complexity: O(N^2)
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N<sup>2</sup>)
 
 ```java
 class Solution {

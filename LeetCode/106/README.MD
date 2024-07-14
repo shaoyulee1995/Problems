@@ -1,28 +1,26 @@
 # Construct Binary Tree from Inorder and Postorder Traversal
 
 ```
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+Definition for a binary tree node.
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
 ```
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         return buildTree(inorder, 0, inorder.length - 1,
@@ -56,7 +54,7 @@ class Solution {
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 class Solution {
     Map<Integer, Integer> map;
     public TreeNode buildTree(int[] inorder, int[] postorder) {
