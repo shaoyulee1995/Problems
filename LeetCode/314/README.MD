@@ -1,21 +1,19 @@
 # Binary Tree Vertical Order Traversal
 
 ```
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode() {}
- *     TreeNode(int val) { this.val = val; }
- *     TreeNode(int val, TreeNode left, TreeNode right) {
- *         this.val = val;
- *         this.left = left;
- *         this.right = right;
- *     }
- * }
- */
+Definition for a binary tree node.
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
 ```
 
 - Time Complexity: O(NClog(C))
@@ -23,39 +21,36 @@
   - C as column nodes in tree
   - N as number of nodes in tree
 
-```
+```java
 class Solution {
     TreeMap<Integer, List<int[]>> map;
     public List<List<Integer>> verticalOrder(TreeNode root) {
         map = new TreeMap();
+        List<List<Integer>> res = new ArrayList();
         dfs(root, 0, 0);
-        List<List<Integer>> list = new ArrayList();
         for(Integer key: map.keySet()){
-            List<int[]> arr = map.get(key);
-            Collections.sort(arr, (a, b)->a[0] - b[0]);
-            List<Integer> nums = new ArrayList();
-            for(int i = 0; i < arr.size(); i++){
-                nums.add(arr.get(i)[1]);
-            }
-            list.add(nums);
+            List<int[]> list = map.get(key);
+            Collections.sort(list, (a, b) -> a[0] - b[0]);
+            List<Integer> tmp = new ArrayList();
+            list.stream().forEach(x -> tmp.add(x[1]));
+            res.add(tmp);
         }
-        return list;
+        return res;
     }
-    public void dfs(TreeNode root, int depth, int offset){
-        if(root == null){
+
+    public void dfs(TreeNode node, int depth, int offset){
+        if(node == null){
             return;
         }
         if(!map.containsKey(offset)){
             map.put(offset, new LinkedList());
         }
-        map.get(offset).add(new int[]{depth, root.val});
-        dfs(root.left,  depth+1, offset-1);
-        dfs(root.right, depth+1, offset+1);
+        map.get(offset).add(new int[]{depth, node.val});
+        dfs(node.left, depth+1, offset-1);
+        dfs(node.right, depth+1, offset+1);
     }
 }
 ```
-
-# BFS without Pair
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)
@@ -102,22 +97,21 @@ class Solution {
 }
 ```
 
-# BFS with Pair
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as number of nodes in tree
 
-```
+```java
 class Solution {
-	class Pair{
-		TreeNode node;
-		int col;
-		public Pair(TreeNode node, int col){
-			this.col = col;
-			this.node = node;
-		}
-	}
+    class Pair{
+        TreeNode node;
+        int col;
+        public Pair(TreeNode node, int col){
+            this.col = col;
+            this.node = node;
+        }
+    }
+    
     TreeMap<Integer, List<Integer>> map;
     public List<List<Integer>> verticalOrder(TreeNode root) {
         map = new TreeMap();
