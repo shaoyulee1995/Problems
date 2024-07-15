@@ -1,22 +1,20 @@
 # Serialize and Deserialize Binary Tree
 
 ```
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+Definition for a binary tree node.
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
+}
 ```
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as nodes in tree
 
-```
+```java
 public class Codec {
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {

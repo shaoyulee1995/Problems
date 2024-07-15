@@ -1,7 +1,5 @@
 # Array of Doubled Pairs
 
-# PriorityQueue
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of arr

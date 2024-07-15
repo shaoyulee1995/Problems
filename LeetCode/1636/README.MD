@@ -1,7 +1,5 @@
 # Sort Array by Increasing Frequency
 
-# PriorityQueue
-
 - Time Complexity: O(KlogK)
 - Space Complexity: O(N)
   - N as length of nums

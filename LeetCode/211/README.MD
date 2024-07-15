@@ -1,7 +1,5 @@
 # Design Add and Search Words Data Structure
 
-# Trie
-
 ## addWord
 
 - Time Complexity: O(N)
@@ -14,7 +12,7 @@
 - Space Complexity: O(1)
   - N as length of word
 
-```
+```java
 class WordDictionary {
 
     TrieNode root;

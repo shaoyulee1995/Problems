@@ -1,7 +1,5 @@
 # The Maze II
 
-# PriorityQueue
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of maze

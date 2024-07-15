@@ -1,7 +1,5 @@
 # Shortest Subarray with Sum at Least K
 
-# ArrayDeque
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

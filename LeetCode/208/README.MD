@@ -1,7 +1,5 @@
 # Implement Trie (Prefix Tree)
 
-# Trie
-
 ## insert
 
 - Time Complexity: O(N)
@@ -20,7 +18,7 @@
 - Space Complexity: O(1)
   - N as length of prefix
 
-```
+```java
 class Trie {
     TrieNode root;
 

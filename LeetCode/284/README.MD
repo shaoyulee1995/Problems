@@ -1,25 +1,21 @@
 # Peeking Iterator
 
 ```
-// Java Iterator interface reference:
-// https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html
+Java Iterator interface reference:
+https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html
 ```
-
-- PeekingIterator
-  - Time Complexity: O(1)
-  - Space Complexity: O(N)
+- Time Complexity
+  - PeekingIterator: O(1)
+  - peek: O(1)
+  - next: O(1)
+  - hasNext: O(1)
+- Space Complexity
+  - PeekingIterator: O(N)
+  - peek: O(1)
+  - next: O(1)
+  - hasNext: O(1)
     - N as size of iterator
-- peek
-  - Time Complexity: O(1)
-  - Space Complexity: O(1)
-- next
-  - Time Complexity: O(1)
-  - Space Complexity: O(1)
-- hasNext
-  - Time Complexity: O(1)
-  - Space Complexity: O(1)
-
-```
+```java
 class PeekingIterator implements Iterator<Integer> {
     Iterator<Integer> it;
     Integer next;

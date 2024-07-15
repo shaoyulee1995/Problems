@@ -1,7 +1,5 @@
 # Largest Values From Labels
 
-# PriorityQueue
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of values

@@ -28,6 +28,10 @@ class Solution {
 }
 ```
 
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes
+
 ```java
 class Solution {
     public int countNodes(TreeNode root) {

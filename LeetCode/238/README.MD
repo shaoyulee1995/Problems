@@ -1,7 +1,5 @@
 # Product of Array Except Self
 
-# 1 Prefix Sum
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums
@@ -22,8 +20,6 @@ class Solution {
     }
 }
 ```
-
-# 2 Prefix Sum
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)

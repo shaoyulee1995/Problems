@@ -1,11 +1,9 @@
 # Find Median from Data Stream
 
-# Heap
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
-```
+```java
 class MedianFinder {
 
     private PriorityQueue<Integer> small;

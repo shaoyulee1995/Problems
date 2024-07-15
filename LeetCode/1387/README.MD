@@ -1,7 +1,5 @@
 # Sort Integers by The Power Value
 
-# PriorityQueue
-
 - Time Complexity: O(IDK)
 - Space Complexity: O(N)
   - N as length of [lo, hi]

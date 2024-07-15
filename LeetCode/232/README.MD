@@ -7,7 +7,7 @@
   - empty: O(1)
 - Space Complexity: O(N)
 
-```
+```java
 class MyQueue {
 
     Stack<Integer> stackIn, stackOut;
@@ -43,7 +43,8 @@ class MyQueue {
         return stackOut.isEmpty() && stackIn.isEmpty();
     }
 }
-
+```
+```
 Your MyQueue object will be instantiated and called as such:
 MyQueue obj = new MyQueue();
 obj.push(x);

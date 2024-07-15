@@ -13,8 +13,6 @@ class Solution {
 }
 ```
 
-# PriorityQueue
-
 - Time Complexity: O(Nlog(K))
 - Space Complexity: O(K)
   - N as length of nums
@@ -34,8 +32,6 @@ class Solution {
     }
 }
 ```
-
-# Quick Sort
 
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(1)

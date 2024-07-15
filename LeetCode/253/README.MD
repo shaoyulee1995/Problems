@@ -21,8 +21,6 @@ class Solution {
 }
 ```
 
-# Sweep Line
-
 - Time Complexity: O(TlogT)
 - Space Complexity: O(T)
   - T as length of intervals

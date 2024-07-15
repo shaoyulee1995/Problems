@@ -1,7 +1,5 @@
 # Kth Largest Element in a Stream
 
-# PriorityQueue
-
 - Time Complexity: O(Nlog(k))
 - Space Complexity: O(k)
 

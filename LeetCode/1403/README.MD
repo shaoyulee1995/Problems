@@ -1,7 +1,5 @@
 # Minimum Subsequence in Non-Increasing Order
 
-# PriorityQueue
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of nums

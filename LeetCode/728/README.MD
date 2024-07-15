@@ -1,7 +1,5 @@
 # Self Dividing Numbers
 
-# PriorityQueue
-
 - Time Complexity: O(Size(R-L))
 - Space Complexity: O(Size(R-L))
 

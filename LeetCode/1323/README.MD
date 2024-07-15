@@ -1,7 +1,5 @@
 # Maximum 69 Number
 
-# StringBuilder
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of num

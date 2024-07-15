@@ -1,7 +1,5 @@
 # Course Schedule
 
-# BFS using List
-
 - Time Complexity: O(V+E)
 - Space Complexity: O(V+E)
   - V as numCourses
@@ -39,8 +37,6 @@ class Solution {
     }
 }
 ```
-
-# BFS using HashMap
 
 - Time Complexity: O(V+E)
 - Space Complexity: O(V+E)

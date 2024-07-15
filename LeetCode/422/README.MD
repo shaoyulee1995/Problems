@@ -1,7 +1,5 @@
 # Valid Word Square
 
-# StringBuilder
-
 - Time Complexity: O(NM)
 - Space Complexity: O(N)
   - N as row of words
@@ -31,8 +29,6 @@ class Solution {
     }
 }
 ```
-
-# StringBuilder
 
 - Time Complexity: O(NM)
 - Space Complexity: O(1)

@@ -1,14 +1,12 @@
 # Delete Node in a Linked List
 
 ```
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
+Definition for singly-linked list.
+public class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
+}
 ```
 
 - Time Complexity: O(N)

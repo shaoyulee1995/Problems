@@ -1,19 +1,15 @@
 # Encode and Decode Strings
 
-# Data Structor
-
-- encode
-  - Time Complexity: O(MN)
-  - Space Complexity: O(MN)
-    - N as length of strs
-    - M as length of str
-- decode
-  - Time Complexity: O(MN)
-  - Space Complexity: O(MN)
+- Time Complexity
+  - encode:O(MN)
+  - decode:O(MN)
+- Space Complexity
+  - encode:O(MN)
+  - decode:O(MN)
     - N as length of strs
     - M as length of str
 
-```
+```java
 public class Codec {
 
     public String encode(List<String> strs) {
@@ -36,8 +32,9 @@ public class Codec {
         return res;
     }
 }
-
-// Your Codec object will be instantiated and called as such:
-// Codec codec = new Codec();
-// codec.decode(codec.encode(strs));
+```
+```
+Your Codec object will be instantiated and called as such:
+Codec codec = new Codec();
+codec.decode(codec.encode(strs));
 ```

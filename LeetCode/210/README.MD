@@ -1,7 +1,5 @@
 # Course Schedule II
 
-# BFS using HashMap
-
 - Time Complexity: O(V+E)
 - Space Complexity: O(V+E)
   - V as numCourses

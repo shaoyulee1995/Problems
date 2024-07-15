@@ -1,7 +1,5 @@
 # Find the Duplicate Number
 
-# Negation
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 
@@ -19,8 +17,6 @@ class Solution {
     }
 }
 ```
-
-# Fast Slow Pointer
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)

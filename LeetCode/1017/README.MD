@@ -1,7 +1,5 @@
 # Convert to Base -2
 
-# StringBuilder
-
 - Time Complexity: O(logN)
 - Space Complexity: O(logN)
   - N as n

@@ -1,7 +1,5 @@
 # Implement Stack using Queues
 
-# Queue Array
-
 - Space Complexity: O(N)
 - push
   - Time Complexity: O(1)
@@ -12,7 +10,7 @@
 - empty
   - Time Complexity: O(1)
 
-```
+```java
 class MyStack {
     Queue<Integer> queue;
     int topElement;
@@ -45,7 +43,8 @@ class MyStack {
         return queue.isEmpty();
     }
 }
-
+```
+```
 Your MyStack object will be instantiated and called as such:
 MyStack obj = new MyStack();
 obj.push(x);

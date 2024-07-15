@@ -1,7 +1,5 @@
 # Search a 2D Matrix II
 
-# Search Space Reduction
-
 - Time Complexity: O(N+M)
 - Space Complexity: O(1)
   - N as length of matrix

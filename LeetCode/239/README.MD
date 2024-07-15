@@ -1,7 +1,5 @@
 # Sliding Window Maximum
 
-# ArrayDeque
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums

@@ -1,7 +1,5 @@
 # Defanging an IP Address
 
-# StringBuilder
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
 

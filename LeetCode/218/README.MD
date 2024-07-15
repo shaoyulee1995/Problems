@@ -1,7 +1,5 @@
 # The Skyline Problem
 
-# Sweep Line
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 
