@@ -1,7 +1,5 @@
 # Sort the Matrix Diagonally
 
-# HashMap with PriorityQueue
-
 - Time Complexity: O(MNlog(Min(M,N)))
 - Space Complexity: O(MN)
   - M as mat.length

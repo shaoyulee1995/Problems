@@ -18,8 +18,8 @@ class Solution {
                     return res;
                 }
                 for(int j = 0; j < word.length(); j++){
+                    StringBuilder sb = new StringBuilder(word);
                     for(char c = 'a'; c <= 'z'; c++){
-                        StringBuilder sb = new StringBuilder(word);
                         sb.setCharAt(j, c);
                         if(set.contains(sb.toString())){
                             queue.offer(sb.toString());

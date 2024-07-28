@@ -1,8 +1,8 @@
 # Is Subsequence
 
-- Time Complexity: O(S)
+- Time Complexity: O(T)
 - Space Complexity: O(1)
-  - S as length of s
+  - T as length of t
 
 ```java
 class Solution {

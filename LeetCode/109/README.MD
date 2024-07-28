@@ -47,10 +47,10 @@ class Solution {
             fast = fast.next.next;
         }
         prev.next = null;
-        TreeNode root = new TreeNode(slow.val);
-        root.left = sortedListToBST(head);
-        root.right = sortedListToBST(slow.next);
-        return root;
+        TreeNode node = new TreeNode(slow.val);
+        node.left = sortedListToBST(head);
+        node.right = sortedListToBST(slow.next);
+        return node;
     }
 }
 ```

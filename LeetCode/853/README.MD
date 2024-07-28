@@ -9,15 +9,15 @@ class Solution {
     public int carFleet(int target, int[] position, int[] speed) {
         Car[] cars = new Car[position.length];
         for(int i = 0; i < position.length; i++){
-            cars[i] = new Car(position[i], (double)(target-position[i])/speed[i]);
+            cars[i] = new Car(position[i], (double) (target - position[i])/speed[i]);
         }
         Arrays.sort(cars, (a, b) -> b.position - a.position);
         int res = 0;
-        double time = 0;
+        double lastCarTime = 0;
         for(int i = 0; i < cars.length; i++){
-            if(cars[i].time > time){
+            if(cars[i].time > lastCarTime){
                 res++;
-                time = cars[i].time;
+                lastCarTime = cars[i].time;
             }
         }
         return res;
@@ -26,7 +26,6 @@ class Solution {
     class Car{
         int position;
         double time;
-
         public Car(int position, double time){
             this.position = position;
             this.time = time;
