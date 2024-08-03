@@ -10,34 +10,37 @@ class Solution {
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {
         if(n == 1){
             return Arrays.asList(0);
-        }    
+        }
         List<List<Integer>> graph = new ArrayList();
+        for(int i = 0; i < n; i++){
+            graph.add(new ArrayList());
+        }
         int[] inDegree = buildGraph(n, edges, graph);
         List<Integer> leaves = new ArrayList();
-        for(int i = 0; i< n; i++){
+        for(int i = 0; i < n; i++){
             if(inDegree[i] == 1){
                 leaves.add(i);
             }
         }
-        while(n > 2){
-            n -= leaves.size();
+        while(true){
             List<Integer> newLeaves = new ArrayList();
             for(int leave: leaves){
                 for(int neighbor: graph.get(leave)){
-                    if(--inDegree[neighbor] == 1){
+                    --inDegree[neighbor];
+                    if(inDegree[neighbor] == 1){
                         newLeaves.add(neighbor);
                     }
                 }
             }
+            if(newLeaves.isEmpty()){
+                return leaves;
+            }
             leaves = newLeaves;
         }
-        return leaves;
+
     }
 
     public int[] buildGraph(int n, int[][] edges, List<List<Integer>> graph){
-        for(int i = 0; i < n; i++){
-            graph.add(new ArrayList());
-        } 
         int[] inDegree = new int[n];
         for(int[] edge: edges){
             int a = edge[0],

@@ -2,6 +2,7 @@
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
+    - N as length of bits
 
 ```java
 class Solution {
