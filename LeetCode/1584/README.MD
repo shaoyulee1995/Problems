@@ -1,41 +1,10 @@
 # Min Cost to Connect All Points
 
-# Union
-
 - Time Complexity: O(ELog(E))
 - Space Complexity: O(E+V)
 
 ```java
 class Solution {
-    public int minCostConnectPoints(int[][] points) {
-        List<int[]> edges = new ArrayList();
-        int n = points.length;
-        for(int i = 0; i < n; i++){
-            for(int j = i + 1; j < n; j++){
-                int xi = points[i][0], yi = points[i][1],
-                    xj = points[j][0], yj = points[j][1];
-                edges.add(new int[]{
-                    i, j, Math.abs(xi - xj)+ Math.abs(yi - yj)
-                });
-            }
-        }
-        Collections.sort(edges, (a,b)->{
-            return a[2]-b[2];
-        });
-        int mst = 0;
-        UF uf = new UF(n);
-        for(int[] edge: edges){
-            int u = edge[0];
-            int v = edge[1];
-            int weight = edge[2];
-            if(uf.isConnect(u,v)){
-                continue;
-            }
-            mst += weight;
-            uf.union(u,v);
-        }
-        return mst;
-    }
     class UF{
         private int count;
         private int[] parent, size;
@@ -80,10 +49,38 @@ class Solution {
             return count;
         }
     }
+
+    public int minCostConnectPoints(int[][] points) {
+        List<int[]> edges = new ArrayList();
+        int n = points.length;
+        for(int i = 0; i < n; i++){
+            for(int j = i + 1; j < n; j++){
+                int xi = points[i][0], yi = points[i][1],
+                    xj = points[j][0], yj = points[j][1];
+                edges.add(new int[]{
+                    i, j, Math.abs(xi - xj)+ Math.abs(yi - yj)
+                });
+            }
+        }
+        Collections.sort(edges, (a,b)->{
+            return a[2]-b[2];
+        });
+        int mst = 0;
+        UF uf = new UF(n);
+        for(int[] edge: edges){
+            int u = edge[0];
+            int v = edge[1];
+            int weight = edge[2];
+            if(uf.isConnect(u,v)){
+                continue;
+            }
+            mst += weight;
+            uf.union(u,v);
+        }
+        return mst;
+    }
 }
 ```
-
-# Prim's Algorithm
 
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
@@ -122,6 +119,82 @@ class Solution {
             }
         }
         return minCost;
+    }
+}
+```
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of points
+
+```java
+class Solution {
+    public int minCostConnectPoints(int[][] points) {
+        int n = points.length;
+        int[][] matrix = new int[n][n];
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                matrix[i][j] = Math.abs(points[i][0] - points[j][0]) + Math.abs(points[i][1] - points[j][1]);
+            }
+        }
+        int[] minDistance = new int[n];
+        Arrays.fill(minDistance, Integer.MAX_VALUE);
+        boolean[] visited = new boolean[n];
+        minDistance[0] = 0;
+        for(int i = 0; i < n; i++){
+            int nextPoint = -1;
+            for(int j = 0; j < n; j++){
+                if(!visited[j] && (nextPoint == -1 || minDistance[j] < minDistance[nextPoint])){
+                    nextPoint = j;
+                }
+            }
+            visited[nextPoint] = true;
+            for(int j = 0; j < n; j++){
+                if(!visited[j]){
+                    minDistance[j] = Math.min(minDistance[j], matrix[nextPoint][j]);
+                }
+            }
+        }
+        return Arrays.stream(minDistance).sum();
+    }
+}
+```
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of points
+  
+```java
+class Solution {
+    public int minCostConnectPoints(int[][] points) {
+        int n = points.length,
+            minCost = 0;
+        HashSet<Integer> visited = new HashSet();
+        int[] minDistance = new int[n];
+        Arrays.fill(minDistance, Integer.MAX_VALUE);
+        minDistance[0] = 0;
+        while(visited.size() < n){
+            int curMinEdge = Integer.MAX_VALUE,
+                node = -1;
+            for(int i = 0; i < n; i++){
+                if(!visited.contains(i) && minDistance[i] < curMinEdge){
+                    curMinEdge = minDistance[i];
+                    node = i;
+                }
+            }
+            if(curMinEdge == Integer.MAX_VALUE){
+                return -1;
+            }
+            minCost += curMinEdge;
+            visited.add(node);
+            for(int next = 0; next < n; next++){
+                int weight = Math.abs(points[node][0] - points[next][0]) + Math.abs(points[node][1] - points[next][1]);
+                if(!visited.contains(next) && minDistance[next] > weight){
+                    minDistance[next] = weight;
+                }
+            }
+        }
+        return (visited.size() == n)? minCost: -1;
     }
 }
 ```
