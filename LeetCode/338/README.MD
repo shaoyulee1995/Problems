@@ -18,8 +18,6 @@ class Solution {
 }
 ```
 
-# Bit Operation
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
 

@@ -1,6 +1,6 @@
 # Reconstruct Itinerary
 
-- Time Complexity: O()
+- Time Complexity: O(V+E)
 - Space Complexity: O(V+E)
   - V as vertices
     - E as edges

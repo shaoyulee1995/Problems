@@ -1,7 +1,5 @@
 # Maximum Length of Repeated Subarray
 
-# 2DP
-
 - Time Complexity: O(NM)
 - Space Complexity: O(NM)
   - N as length of nums1

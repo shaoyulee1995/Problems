@@ -21,7 +21,6 @@ class NumMatrix {
         return preSum[row2+1][col2+1] - preSum[row1][col2+1] - preSum[row2+1][col1] + preSum[row1][col1];
     }
 }
-
 ```
 
 ```

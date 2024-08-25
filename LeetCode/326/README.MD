@@ -1,6 +1,6 @@
 # Power of Three
 
-- Time Complexity: O(log3(N))
+- Time Complexity: O(log<sub>3</sub>(N))
 - Space Complexity: O(1)
 
 ```java

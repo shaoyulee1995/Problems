@@ -22,8 +22,6 @@ class MyCalendar {
 }
 ```
 
-# List
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as values in the books

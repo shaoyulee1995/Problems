@@ -1,7 +1,5 @@
 # Range Sum Query - Mutable
 
-# Segment Tree
-
 - Space Complexity: O(N)
   - N as length of nums
 - buildTree
@@ -11,7 +9,7 @@
 - sumRange
   - Time Complexity: O(logN)
 
-```
+```java
 class NumArray {
     TreeNode root;
     public NumArray(int[] nums) {
@@ -82,10 +80,8 @@ class TreeNode{
 ```
 
 ```
-/**
- * Your NumArray object will be instantiated and called as such:
- * NumArray obj = new NumArray(nums);
- * obj.update(index,val);
- * int param_2 = obj.sumRange(left,right);
- */
+Your NumArray object will be instantiated and called as such:
+NumArray obj = new NumArray(nums);
+obj.update(index,val);
+int param_2 = obj.sumRange(left,right);
 ```

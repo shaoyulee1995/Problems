@@ -1,7 +1,5 @@
 # Burst Balloons
 
-# 2DP
-
 - Time Complexity: O(NN)
 - Space Complexity: O(NN)
 

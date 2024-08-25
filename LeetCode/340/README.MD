@@ -1,7 +1,5 @@
 # Longest Substring with At Most K Distinct Characters
 
-# Sliding Window
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s
