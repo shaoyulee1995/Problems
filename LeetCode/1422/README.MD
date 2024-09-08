@@ -1,7 +1,7 @@
 # Maximum Score After Splitting a String
 
-- Time Complexity: O(N)
-- Space Complexity: O(1)
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
   - N as length of s
 
 ```java

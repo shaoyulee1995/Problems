@@ -13,14 +13,18 @@ class Solution {
         for(int i = 2; i <= s.length(); i++){
             int ones = Integer.parseInt(s.substring(i-1, i)),
                 tens = Integer.parseInt(s.substring(i-2, i));
-            if(ones <= 9 && ones >= 1){
+            if(between(1, 9, ones)){
                 dp[i] += dp[i-1];
             }
-            if(tens <= 26 && tens >= 10){
+            if(between(10, 26, tens)){
                 dp[i] += dp[i-2];
             }
         }
         return dp[s.length()];
+    }
+
+    private boolean between(int start, int end, int val){
+        return val >= start && val <= end;
     }
 }
 ```
