@@ -7,22 +7,20 @@
 ```java
 class Solution {
     public String simplifyPath(String path) {
-        Stack<String> stack = new Stack();
         String[] strs = path.split("/");
+        Stack<String> stack = new Stack();
         for(String str: strs){
-            if(str.equals("")){
-                continue;
-            }else if(str.equals(".")){
+            if(str.length() == 0 || str.equals(".")){
                 continue;
             }else if(str.equals("..")){
                 if(!stack.isEmpty()){
                     stack.pop();
                 }
             }else{
-                stack.add(str);
+                stack.push(str);
             }
         }
-        return "/" + String.join("/", stack);
+        return "/"+ String.join("/", stack);
     }
 }
 ```
