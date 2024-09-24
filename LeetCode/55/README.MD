@@ -17,3 +17,23 @@ class Solution {
     }
 }
 ```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+
+```java
+class Solution {
+    public boolean canJump(int[] nums) {
+        int gas = 0;
+        for(int num: nums){
+            if(gas < 0){
+                return false;
+            }else if(num > gas){
+                gas = num;
+            }
+            gas--;
+        }
+        return true;
+    }
+}
+```

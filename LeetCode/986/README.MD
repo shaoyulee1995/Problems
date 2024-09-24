@@ -1,7 +1,5 @@
 # Interval List Intersections
 
-# Arrays
-
 - Time Complexity: O(Min(M, N))
 - Space Complexity: O(Min(M, N))
   - M as length of firstList

@@ -1,7 +1,5 @@
 # Minimum Bit Flips to Convert Number
 
-# Bit
-
 - Time Complexity: O(Max(S, G))
 - Space Complexity: O(1)
   - S as start

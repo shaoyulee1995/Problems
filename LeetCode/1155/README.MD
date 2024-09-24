@@ -30,8 +30,6 @@ class Solution{
 }
 ```
 
-# KnapSack
-
 - Time Complexity: O(NTK)
 - Space Complexity: O(NT)
   - N as n

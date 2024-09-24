@@ -1,7 +1,5 @@
 # Cells with Odd Values in a Matrix
 
-# Arrays
-
 - Time Complexity: O(L)
 - Space Complexity: O(MN)
   - L is the length of indices array

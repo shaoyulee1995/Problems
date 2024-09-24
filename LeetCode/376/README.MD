@@ -1,7 +1,5 @@
 # Wiggle Subsequence
 
-# Traversal
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
 

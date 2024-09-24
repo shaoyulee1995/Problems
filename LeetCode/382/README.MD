@@ -11,8 +11,6 @@ public class ListNode {
 }
 ```
 
-# ArrayList
-
 - Time Complexity: O(1)
 - Space Complexity: O(N)
   - N as nodes

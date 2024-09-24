@@ -8,7 +8,7 @@
   - getIntervals: O(N)
     - N as length of intervals
 
-```
+```java
 class SummaryRanges {
     TreeSet<int[]> set;
     public SummaryRanges() {
@@ -47,10 +47,8 @@ class SummaryRanges {
 ```
 
 ```
-/**
- * Your SummaryRanges object will be instantiated and called as such:
- * SummaryRanges obj = new SummaryRanges();
- * obj.addNum(val);
- * int[][] param_2 = obj.getIntervals();
- */
+Your SummaryRanges object will be instantiated and called as such:
+SummaryRanges obj = new SummaryRanges();
+obj.addNum(val);
+int[][] param_2 = obj.getIntervals();
 ```

@@ -1,7 +1,5 @@
 # Last Stone Weight II
 
-# Knapsack
-
 - Time Complexity: O(ST)
 - Space Complexity: O(T)
   - S as length of stones

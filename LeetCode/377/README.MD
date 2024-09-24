@@ -1,7 +1,5 @@
 # Combination Sum IV
 
-# KnapSack
-
 - Time Complexity: O(NT)
 - Space Complexity: O(T)
   - N as length of nums

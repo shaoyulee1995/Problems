@@ -1,7 +1,5 @@
 # Height Checker
 
-# Arrays
-
 - Time Complexity: O(HLog(H))
 - Space Complexity: O(H)
   - H as length of heights

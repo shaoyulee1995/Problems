@@ -4,7 +4,7 @@
 - Space Complexity: O(N)
   - N as size of map
 
-```
+```java
 class Logger {
 
     Map<String, Integer> map;

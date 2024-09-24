@@ -1,7 +1,5 @@
 # Insert Delete GetRandom O(1)
 
-# HashMap, Swap
-
 - insert
   - Time Complexity: O(1)
 - remove
@@ -10,7 +8,7 @@
 - Space Complexity: O(N)
   - N as number of val in map
 
-```
+```java
 class RandomizedSet {
     HashMap<Integer, Integer> map;
     ArrayList<Integer> list;
@@ -51,11 +49,9 @@ class RandomizedSet {
 ```
 
 ```
-/**
- * Your RandomizedSet object will be instantiated and called as such:
- * RandomizedSet obj = new RandomizedSet();
- * boolean param_1 = obj.insert(val);
- * boolean param_2 = obj.remove(val);
- * int param_3 = obj.getRandom();
- */
+Your RandomizedSet object will be instantiated and called as such:
+RandomizedSet obj = new RandomizedSet();
+boolean param_1 = obj.insert(val);
+boolean param_2 = obj.remove(val);
+int param_3 = obj.getRandom();
 ```

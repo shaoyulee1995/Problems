@@ -16,8 +16,6 @@ public class TreeNode {
 }
 ```
 
-# DFS height
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as number of TreeNodes

@@ -1,7 +1,5 @@
 # Reordered Power of 2
 
-# Bit
-
 - Time Complexity: O(32)
 - Space Complexity: O(1)
   - N as length of abbr
