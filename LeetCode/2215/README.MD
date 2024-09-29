@@ -1,7 +1,5 @@
 # Find the Difference of Two Arrays
 
-# Bits
-
 - Time Complexity: O(max(N, M))
 - Space Complexity: O(max(N, M))
   - N as length of nums1

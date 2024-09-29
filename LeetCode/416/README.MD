@@ -1,7 +1,5 @@
 # Partition Equal Subset Sum
 
-# TLE
-
 ```java
 class Solution {
     public boolean canPartition(int[] nums) {
@@ -33,8 +31,6 @@ class Solution {
     }
 }
 ```
-
-# Memorized DP
 
 - Time Complexity: O(NS)
 - Space Complexity: O(NS)
@@ -73,8 +69,6 @@ class Solution{
 }
 ```
 
-# DP (0/1 knapsack)
-
 - Time Complexity: O(N\*S)
 - Space Complexity: O(S)
   - N is the length of nums
@@ -102,8 +96,6 @@ class Solution {
     }
 }
 ```
-
-# DP (0/1 knapsack)
 
 - Time Complexity: O(NS)
 - Space Complexity: O(NS)

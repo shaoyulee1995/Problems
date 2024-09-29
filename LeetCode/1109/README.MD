@@ -1,7 +1,5 @@
 # Corporate Flight Bookings
 
-# Prefix Sum
-
 - Time Complexity: O(N)
   - increment: O(1)
 - Space Complexity: O(N)

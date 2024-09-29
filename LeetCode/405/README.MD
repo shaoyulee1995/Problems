@@ -1,7 +1,5 @@
 # Convert a Number to Hexadecimal
 
-# Bits
-
 - Time Complexity: O(log4(N))
 - Space Complexity: O(log4(N))
   - N as length of num

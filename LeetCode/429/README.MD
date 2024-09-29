@@ -1,8 +1,6 @@
 # N-ary Tree Level Order Traversal
 
-```
-/*
-
+```java
 class Node {
     public int val;
     public List<Node> children;
@@ -18,7 +16,6 @@ class Node {
         children = _children;
     }
 };
-*/
 ```
 
 - Time Complexity: O(N)
