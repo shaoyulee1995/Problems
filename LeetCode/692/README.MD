@@ -1,7 +1,5 @@
 # Top K Frequent Words
 
-# PriorityQueue, HashMap
-
 - Time Complexity: O(NlogK)
 - Space Complexity: O(N)
   - N as length of words

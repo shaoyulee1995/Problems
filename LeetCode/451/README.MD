@@ -1,7 +1,5 @@
 # Sort Characters By Frequency
 
-# PriorityQueue, HashMap
-
 - Time Complexity: O(NlogN)
 - Space Complexity: O(N)
   - N as length of s
@@ -27,6 +25,5 @@ class Solution {
         }
         return sb.toString();
     }
-}  }
-}
+} 
 ```

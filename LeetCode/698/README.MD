@@ -1,7 +1,5 @@
 # Partition to K Equal Sum Subsets
 
-# Backtracking
-
 - Time Complexity: O(N\*2<sup>N</sup>)
 - Space Complexity: O(N)
   - N as length of nums

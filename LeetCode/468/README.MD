@@ -2,7 +2,7 @@
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)
-  - N as length of queryIP
+    - N as length of queryIP
 
 ```java
 class Solution {

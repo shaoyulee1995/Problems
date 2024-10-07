@@ -3,7 +3,7 @@
 - Time Complexity: O(NW<sup>2</sup>)
 - Space Complexity: O(N)
   - N as length of words
-    - W as length of word
+  - W as length of word
 
 ```java
 class Solution{

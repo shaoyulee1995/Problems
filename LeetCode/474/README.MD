@@ -1,7 +1,5 @@
 # Ones and Zeroes
 
-# Recursion Memorized
-
 - Time Complexity: O(SMN)
 - Space Complexity: O(SMN)
   - S is length of strs
@@ -41,8 +39,6 @@ class Solution{
     }
 }
 ```
-
-# DP (Knapsack)
 
 - Time Complexity: O(SMN)
 - Space Complexity: O(MN)

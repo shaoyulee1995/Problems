@@ -1,7 +1,5 @@
 # Number Complement
 
-# Bit Manipulation
-
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of num in bits

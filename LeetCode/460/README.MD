@@ -1,11 +1,9 @@
 # LFU Cache
 
-# LFU
-
 - Time Complexity: O(1)
 - Space Complexity: O(N)
 
-```
+```java
 class LFUCache {
     final int capacity;
     int size, minFreq;
@@ -68,7 +66,7 @@ class LFUCache {
 }
 ```
 
-```
+```java
 class Node{
     int key, val, freq;
     Node prev, next;
@@ -82,7 +80,7 @@ class Node{
 }
 ```
 
-```
+```java
 class doubleLinkedList{
     Node head, tail;
     int size;
@@ -120,10 +118,8 @@ class doubleLinkedList{
 ```
 
 ```
-/**
- * Your LFUCache object will be instantiated and called as such:
- * LFUCache obj = new LFUCache(capacity);
- * int param_1 = obj.get(key);
- * obj.put(key,value);
- */
+Your LFUCache object will be instantiated and called as such:
+LFUCache obj = new LFUCache(capacity);
+int param_1 = obj.get(key);
+obj.put(key,value);
 ```

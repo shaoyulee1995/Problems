@@ -1,6 +1,6 @@
 # Assign Cookies
 
-- Time Complexity: O(Max(NlogN, MlogM)
+- Time Complexity: O(Max(NlogN, MlogM))
 - Space Complexity: O(1)
   - N as length of g
   - M as length of s

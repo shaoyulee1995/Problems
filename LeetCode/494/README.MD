@@ -1,7 +1,5 @@
 # Target Sum
 
-# BackTracking
-
 - Time Complexity: O(2<sup>N</sup>)
 - Space Complexity: O(N)
 
@@ -30,8 +28,6 @@ class Solution{
     }
 }
 ```
-
-# Recursion Memorized
 
 - Time Complexity: O(NS)
 - Space Complexity: O(NS)
@@ -69,7 +65,7 @@ class Solution{
 ```
 
 - Time Complexity: O(NS)
-- Space Complexity: O(2\*S + 1)
+- Space Complexity: O(S)
   - N is length of nums
   - S is the sum of nums
 

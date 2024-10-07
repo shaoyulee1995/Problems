@@ -1,7 +1,5 @@
 # Matchsticks to Square
 
-# Backtracking
-
 - Time Complexity: O(N\*2<sup>N</sup>)
 - Space Complexity: O(N)
   - N as length of matchsticks
