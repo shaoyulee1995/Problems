@@ -56,7 +56,7 @@ class Solution {
                 j = k-1;
             }
         }
-        if(j  < 0 || nums[j] != target){
+        if(j < 0 || nums[j] != target){
             return -1;
         }
         return j;

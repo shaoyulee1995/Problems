@@ -14,21 +14,20 @@ class Solution {
             if(nums[k] == target){
                 return k;
             }
-            if(nums[k] >= nums[i]){
-                if(target >= nums[i] && target < nums[k]){
+            if(nums[i] <= nums[k]){
+                if(nums[i] <= target && target < nums[k]){
                     j = k-1;
                 }else{
                     i = k+1;
                 }
             }else{
-                if(target > nums[k] && target <= nums[j]){
+                if(nums[k] < target && target <= nums[j]){
                     i = k+1;
                 }else{
                     j = k-1;
                 }
             }
         }
-
         return -1;
     }
 }

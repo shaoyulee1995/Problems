@@ -1,9 +1,9 @@
 # Bus Routes
 
-- Time Complexity: O(NS)
-- Space Complexity: O(NS)
+- Time Complexity: O(NM)
+- Space Complexity: O(NM)
   - N as length of routes
-  - S as number of stop in route[0]
+  - M as number of buses
 
 ```java
 class Solution {

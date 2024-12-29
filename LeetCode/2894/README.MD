@@ -1,0 +1,22 @@
+# Find the Maximum Divisibility Score
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as n
+  
+```java
+class Solution {
+    public int differenceOfSums(int n, int m) {
+        int num1 = 0,
+            num2 = 0;
+        for(int i = 1; i <= n; i++){
+            if(i%m != 0){
+                num1 += i;
+            }else{
+                num2 += i;
+            }
+        }
+        return num1 - num2;
+    }
+}
+```

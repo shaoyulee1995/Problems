@@ -127,3 +127,77 @@ class Solution {
     }
 }
 ```
+
+- Time Complexity: O(NlogN)
+- Space Complexity: O(N)
+  - N as the number of nodes
+
+```java
+class Solution {
+   class UnionFind{
+        int[] weights;
+        int[] parents;
+
+        public UnionFind(int n){
+            weights = new int[n+1];
+            parents = new int[n+1];
+            for(int i = 0; i <= n; i++){
+                weights[i] = i;
+                parents[i] = i;
+            }
+        }
+
+        public boolean isConnected(int nodeA, int nodeB){
+            return find(nodeA) == find(nodeB);
+        }
+
+        public int find(int x){
+            while(x != parents[x]){
+                parents[x] = parents[parents[x]];
+                x = parents[x];
+            }
+            return x;
+        }
+
+        public void union(int nodeA, int nodeB){
+            int rootA = find(nodeA),
+                rootB = find(nodeB);
+            if(rootA == rootB){
+                return;
+            }
+            if(weights[rootA] > weights[rootB]){
+                parents[rootB] = rootA;
+                weights[rootA] += weights[rootB];
+            }else{
+                parents[rootA] = rootB;
+                weights[rootB] += weights[rootA];
+            }
+        }
+    }
+    public int minimumCost(int n, int[][] connections) {
+        if(connections.length < n-1){
+            return -1;
+        }
+        UnionFind uf = new UnionFind(n);
+        Arrays.sort(connections, (a, b) -> a[2] - b[2]);
+        int res = 0,   
+            visited = 0;
+        for(int[] connection: connections){
+            int src = connection[0],
+                dest = connection[1],
+                cost = connection[2];
+            if(uf.isConnected(src, dest)){
+                continue;
+            }
+            uf.union(src, dest);
+            res += cost;
+            visited++;
+            if(visited == n-1){
+                return res;
+            }
+        }
+    
+        return visited == n-1? res: -1;
+    }
+}
+```

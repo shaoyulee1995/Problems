@@ -10,10 +10,10 @@ class Solution {
         int res = 0,
             count = 0;
         for(int num: nums){
-            if(num == 1){
-                res = Math.max(res, ++count);
-            }else{
+            if(num != 1){
                 count = 0;
+            }else{
+                res = Math.max(res, ++count);
             }
         }
         return res;

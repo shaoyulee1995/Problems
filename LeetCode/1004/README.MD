@@ -7,7 +7,8 @@
 ```java
 class Solution {
     public int longestOnes(int[] nums, int k) {
-        int i = 0, j = 0;
+        int i = 0,
+            j = 0;
         for(; j < nums.length; j++){
             if(nums[j] == 0){
                 k--;

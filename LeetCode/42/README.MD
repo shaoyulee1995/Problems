@@ -7,8 +7,10 @@
 ```java
 class Solution {
     public int trap(int[] height) {
-        int i = 0, j = height.length - 1,
-            MaxL = 0, MaxR = 0,
+        int i = 0, 
+            j = height.length - 1,
+            MaxL = 0, 
+            MaxR = 0,
             res = 0;
         while(i < j){
             MaxL = Math.max(MaxL, height[i]);

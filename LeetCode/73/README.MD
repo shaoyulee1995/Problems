@@ -32,3 +32,32 @@ class Solution {
     }
 }
 ```
+
+- Time Complexity: O(MN)
+- Space Complexity: O(M + N)
+  - M as length of matrix
+  - N as length of matrix[0]
+
+```java
+class Solution {
+    public void setZeroes(int[][] matrix) {
+        boolean[] rows = new boolean[matrix.length],
+                  columns = new boolean[matrix[0].length];
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[0].length; j++){
+                if(matrix[i][j] == 0){
+                    rows[i] = true;
+                    columns[j] = true;
+                }
+            }
+        }
+        for(int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[0].length; j++){
+                if(rows[i] || columns[j]){
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+    }
+}
+```

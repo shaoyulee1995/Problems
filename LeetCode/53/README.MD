@@ -39,3 +39,21 @@ class Solution {
     }
 }
 ```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of nums
+
+```java
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int res = nums[0],
+            max = nums[0];
+        for(int num: nums){
+            max = Math.max(max + num, num);
+            res = Math.max(max, res);
+        }
+        return res;
+    }
+}
+```

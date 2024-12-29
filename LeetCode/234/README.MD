@@ -13,20 +13,24 @@ public class ListNode {
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
-
+  - N as length of head
 ```java
-class Solution{
+class Solution {
     ListNode left;
     public boolean isPalindrome(ListNode head) {
         left = head;
         return traverse(head);
     }
-    public boolean traverse(ListNode right){
+
+    boolean traverse(ListNode right){
         if(right == null){
             return true;
         }
         boolean res = traverse(right.next);
         res = res && (right.val == left.val);
+        if(!res){
+            return false;
+        }
         left = left.next;
         return res;
     }
@@ -35,36 +39,36 @@ class Solution{
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
-
+  - N as length of head
 ```java
 class Solution {
     public boolean isPalindrome(ListNode head) {
-        ListNode fast = head, slow = head;
+        ListNode slow = head,
+                 fast = head;
         while(fast != null && fast.next != null){
             slow = slow.next;
             fast = fast.next.next;
         }
-        if(fast != null){//for odd length
+        if(fast != null){
             slow = slow.next;
         }
-        ListNode rightPart = reverse(slow);
-        ListNode leftPart = head;
-        while(rightPart!=null){
-            if(rightPart.val != leftPart.val){
+        ListNode right = reverse(slow),
+                 left = head;
+        while(right != null){
+            if(right.val != left.val){
                 return false;
             }
-            rightPart = rightPart.next;
-            leftPart = leftPart.next;
+            right = right.next;
+            left = left.next;
         }
         return true;
     }
-    public ListNode reverse(ListNode node){
-        ListNode prev, cur, next;
-        prev = null;
-        cur = node;
-        next = node;
+
+    ListNode reverse(ListNode node){
+        ListNode prev = null,
+                 cur = node;
         while(cur != null){
-            next = cur.next;
+            ListNode next = cur.next;
             cur.next = prev;
             prev = cur;
             cur = next;
@@ -76,6 +80,7 @@ class Solution {
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)
+  - N as length of head
 
 ```java
 class Solution {
