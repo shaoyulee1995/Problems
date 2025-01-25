@@ -8,16 +8,15 @@
 ```java
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
-        int n = s.length();
-        boolean[] dp = new boolean[n + 1];
+        boolean[] dp = new boolean[1+s.length()];
         dp[0] = true;
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < s.length(); i++){
             if(!dp[i]){
                 continue;
             }
             for(String word: wordDict){
                 int j = i + word.length();
-                if(j <= n && s.substring(i, j).equals(word)){
+                if(j <= s.length() && s.substring(i, j).equals(word)){
                     dp[j] = true;
                 }
             }

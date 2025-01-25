@@ -5,30 +5,27 @@
 
 ```java
 class MedianFinder {
-
-    private PriorityQueue<Integer> small;
-    private PriorityQueue<Integer> large;
-    boolean even;
-    /** initialize your data structure here. */
+    PriorityQueue<Integer> small, large;
+    boolean isEven;
     public MedianFinder() {
         small = new PriorityQueue<>(Collections.reverseOrder());
         large = new PriorityQueue<>();
-        even = true;
+        isEven = true;
     }
-
+    
     public void addNum(int num) {
-        if(even){
+        if(isEven){
             large.add(num);
             small.add(large.poll());
         }else{
             small.add(num);
             large.add(small.poll());
         }
-        even = !even;
+        isEven = !isEven;
     }
-
+    
     public double findMedian() {
-        return !even? small.peek(): (small.peek() + large.peek())/2.0;
+        return isEven? (small.peek() + large.peek())/2.0: small.peek();
     }
 }
 ```
