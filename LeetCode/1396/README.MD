@@ -1,6 +1,12 @@
 # Design Underground System
 
-# HashMap, Pair
+```
+Your UndergroundSystem object will be instantiated and called as such:
+UndergroundSystem obj = new UndergroundSystem();
+obj.checkIn(id,stationName,t);
+obj.checkOut(id,stationName,t);
+double param_3 = obj.getAverageTime(startStation,endStation);
+```
 
 - UndergroundSystem
   - Space Complexity: O(N)
@@ -15,11 +21,10 @@
   - Time Complexity: O(1)
   - Space Complexity: O(1)
 
-```
+```java
 class UndergroundSystem {
-
-    HashMap<String, Pair<Integer, Integer>> checkOutMap;//route, (totalTime, count)
-    HashMap<Integer, Pair<String, Integer>> checkInMap;//id,(station, t)
+    HashMap<String, Pair<Integer, Integer>> checkOutMap;
+    HashMap<Integer, Pair<String, Integer>> checkInMap;
     public UndergroundSystem() {
         checkOutMap = new HashMap();
         checkInMap = new HashMap();
@@ -31,25 +36,35 @@ class UndergroundSystem {
 
     public void checkOut(int id, String stationName, int t) {
         Pair<String, Integer> checkIn = checkInMap.get(id);
-        String route = checkIn.getKey() + "-" + stationName;
+        String route = generateRoute(checkIn.getKey(), stationName);
         int totalTime = t - checkIn.getValue();
         Pair<Integer, Integer> checkOut = checkOutMap.getOrDefault(route, new Pair<>(0,0));
         checkOutMap.put(route, new Pair<>(checkOut.getKey() + totalTime, checkOut.getValue() + 1));
 
+
     }
 
     public double getAverageTime(String startStation, String endStation) {
-        String route = startStation + "-" + endStation;
+        String route = generateRoute(startStation, endStation);
         Pair<Integer, Integer> checkout = checkOutMap.get(route);
         return (double)checkout.getKey() / checkout.getValue();
+    }
+
+
+    private String generateRoute(String startStation, String endStation){
+        return startStation + "-" + endStation;
     }
 }
 ```
 
-# OOP
+- Time Complexity: O(1)
+- Space Complexity: O(N)
 
-```
+  - N as number of stations
+
+```java
 class Passenger{
+
     String checkInStation, checkOutStation;
     int checkInTime, checkOutTime;
 
@@ -106,26 +121,24 @@ class UndergroundSystem {
             Passenger p = passengerMap.get(id);
             p.checkout(stationName, t);
 
-            String routePath = p.checkInStation + "," + p.checkOutStation;
+            String routePath = generateRoute(p.checkInStation, p.checkOutStation);
             Route route = routeMap.getOrDefault(routePath, new Route(p.checkInStation, p.checkOutStation));
             route.addTrip(p.checkInTime, p.checkOutTime);
             routeMap.put(routePath, route);
             passengerMap.remove(id);
+
         }
     }
 
     public double getAverageTime(String startStation, String endStation) {
-        return routeMap.get(startStation+","+endStation).getAverage();
+        String routePath = generateRoute(startStation, endStation);
+        return routeMap.get(routePath).getAverage();
+    }
+
+
+    private String generateRoute(String startStation, String endStation){
+        return startStation + "-" + endStation;
     }
 }
 ```
 
-```
-/**
- * Your UndergroundSystem object will be instantiated and called as such:
- * UndergroundSystem obj = new UndergroundSystem();
- * obj.checkIn(id,stationName,t);
- * obj.checkOut(id,stationName,t);
- * double param_3 = obj.getAverageTime(startStation,endStation);
- */
-```

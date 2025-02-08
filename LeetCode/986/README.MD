@@ -10,25 +10,22 @@ class Solution {
     public int[][] intervalIntersection(int[][] firstList, int[][] secondList) {
         LinkedList<int[]> res = new LinkedList();
         int i = 0,
-            j = 0,
-            n = firstList.length,
-            m = secondList.length;
-        while(i < n && j < m){
+            j = 0;
+        while(i < firstList.length && j < secondList.length){
             int[] a = firstList[i],
                   b = secondList[j];
-            if(b[1] >= a[0] && a[1] >= b[0]){
+            if(a[0] <= b[1] && b[0] <= a[1]){
                 res.add(new int[]{Math.max(a[0], b[0]), Math.min(a[1], b[1])});
             }
-            if(a[1] < b[1]){
+            if(a[1]< b[1]){
                 i++;
             }else{
                 j++;
             }
         }
-        return res.toArray(new int[0][]);
+        return res.toArray(int[][]:: new);
     }
 }
-`
 ```
 
 ```python

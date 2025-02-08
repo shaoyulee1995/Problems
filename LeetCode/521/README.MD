@@ -1,9 +1,8 @@
 # Longest Uncommon Subsequence I
 
-# Brian
-
-- Time Complexity: O(1)
+- Time Complexity: O(N)
 - Space Complexity: O(1)
+  - N as Max(a.length(), b.length())
 
 ```java
 public class Solution {

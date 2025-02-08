@@ -1,6 +1,6 @@
 # Number of Beautiful Pairs
 
-- Time Complexity: O(N^2)
+- Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(1)
   - N as nums.length
 
