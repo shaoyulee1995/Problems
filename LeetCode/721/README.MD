@@ -6,72 +6,57 @@
   - M as the maximum length of an account
 
 ```java
+class UnionFind{
+    int[] parent;
+    public UnionFind(int n){
+        parent = new int[n];
+        for(int i = 0; i < n; i++){
+            parent[i] = i;
+        }
+    }
+
+    public void union(int x, int y){
+        parent[find(x)] = parent[find(y)];
+    }
+
+    public int find(int x){
+        if(x != parent[x]){
+            parent[x] = find(parent[x]);
+        }
+        return parent[x];
+    }
+}
+
 class Solution {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
-        if(accounts.size() == 0){
-            return new ArrayList();
-        }
-        HashMap<String, Integer> emailIndex = new HashMap();
-        int n = accounts.size();
-        UnionFind uf = new UnionFind(n);
-
+        HashMap<String, Integer> emailToIndex = new HashMap();
+        UnionFind uf = new UnionFind(accounts.size());
         for(int i = 0; i < accounts.size(); i++){
             List<String> account = accounts.get(i);
             for(int j = 1; j < account.size(); j++){
                 String email = account.get(j);
-                if(emailIndex.containsKey(email)){
-                    int parentIndex = emailIndex.get(email);
-                    uf.union(parentIndex, i);
-                }else{
-                    emailIndex.put(email, i);
-                }
+                emailToIndex.putIfAbsent(email, i);
+                uf.union(emailToIndex.get(email), i);
             }
         }
 
-        HashMap<Integer, Set<String>> disjointSet = new HashMap();
-
-        for(int i = 0; i < n; i++){
-            int parentIndex = uf.find(i);
-            disjointSet.putIfAbsent(parentIndex, new HashSet());
-            Set<String> setEmails = disjointSet.get(parentIndex);
-            for(int j = 1; j < accounts.get(i).size(); j++){
-                setEmails.add(accounts.get(i).get(j));
-            }
-            disjointSet.put(parentIndex, setEmails);
+        HashMap<Integer, TreeSet<String>> mergedAccounts = new HashMap();
+        for(Map.Entry<String, Integer> entry: emailToIndex.entrySet()){
+            String email = entry.getKey();
+            int parentIndex = uf.find(entry.getValue());
+            mergedAccounts.computeIfAbsent(parentIndex, x -> new TreeSet()).add(email);
         }
 
         List<List<String>> res = new ArrayList();
-        for(int idx: disjointSet.keySet()){
-            List<String> emails = new ArrayList();
-            emails.addAll(disjointSet.get(idx));
-            Collections.sort(emails);
-            emails.add(0, accounts.get(idx).get(0));
-            res.add(emails);
+        
+        for(Map.Entry<Integer, TreeSet<String>> entry: mergedAccounts.entrySet()){
+            List<String> records = new ArrayList<>(entry.getValue());
+            String name = accounts.get(entry.getKey()).get(0);
+            records.add(0, name);
+            res.add(records);
         }
+
         return res;
-    }
-
-    class UnionFind{
-        int[] parent;
-        int size;
-        public UnionFind(int n){
-            this.size = n;
-            parent = new int[n];
-            for(int i = 0; i < n; i++){
-                parent[i] = i;
-            }
-        }
-
-        public void union(int a, int b){
-            parent[find(a)] = parent[find(b)];
-        }
-
-        public int find(int a){
-            if(a != parent[a]){
-                parent[a] = find(parent[a]);
-            }
-            return parent[a];
-        }
     }
 }
 ```
@@ -82,6 +67,25 @@ class Solution {
   - M as the maximum length of an account
 
 ```java
+class DSU{
+    HashMap<String, String> map;
+    public DSU(){
+        map = new HashMap();
+    }
+    public void union(String x, String y){
+        map.put(find(x), find(y));
+    }
+
+    public String find(String x){
+        String xParent = map.getOrDefault(x, x);
+        if(!xParent.equals(x)){
+            xParent = find(xParent);
+        }
+        map.put(x, xParent);
+        return xParent;
+    }
+}
+
 class Solution {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
         HashMap<String, String> emailToName = new HashMap();
@@ -112,25 +116,6 @@ class Solution {
             res.add(account);
         }
         return res;
-    }
-
-    class DSU{
-        HashMap<String, String> map;
-        public DSU(){
-            map = new HashMap();
-        }
-        public void union(String x, String y){
-            map.put(find(x), find(y));
-        }
-
-        public String find(String x){
-            String xParent = map.getOrDefault(x, x);
-            if(!xParent.equals(x)){
-                xParent = find(xParent);
-            }
-            map.put(x, xParent);
-            return xParent;
-        }
     }
 }
 ```

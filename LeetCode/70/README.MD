@@ -36,12 +36,12 @@ class Solution {
             return 2;
         }
         int cur = 0,
-            prev1 = 2,
-            prev2 = 1;
+            prev = 2,
+            prev_prev = 1;
         for(int i = 3; i <= n; i++){
-            cur = prev1+prev2;
-            prev2 = prev1;
-            prev1 = cur;
+            cur = prev + prev_prev;
+            prev_prev = prev;
+            prev = cur;
         }
         return cur;
     }

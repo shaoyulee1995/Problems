@@ -93,3 +93,41 @@ class Solution {
     }
 }
 ```
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(1)
+  - N as length of s
+
+```java
+class Solution {
+    public int longestSubstring(String s, int k) {
+        if(s == null || s.length() == 0){
+            return 0;
+        }
+        if(k < 2){
+            return s.length();
+        }
+        return dfs(s, 0, s.length(), k);
+    }
+
+    public int dfs(String s, int l, int r, int k){
+        if(r-l < k){
+            return 0;
+        }
+        int[] cnt = new int[26];
+        for(int i = l; i < r; i++){
+            char c = s.charAt(i);
+            cnt[c-'a']++;
+        }
+        for(int i = l; i < r; i++){
+            char c = s.charAt(i);
+            if(cnt[c-'a'] < k){
+                int left = dfs(s, l, i, k),
+                    right = dfs(s, i+1, r, k);
+                return Math.max(left, right);
+            }
+        }
+        return r - l;
+    }
+}
+```
