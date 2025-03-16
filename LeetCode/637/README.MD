@@ -1,6 +1,6 @@
 # Average of Levels in Binary Tree
 
-```
+```java
 Definition for a binary tree node.
 public class TreeNode {
     int val;
@@ -23,26 +23,23 @@ public class TreeNode {
 ```java
 class Solution {
     public List<Double> averageOfLevels(TreeNode root) {
-        if(root == null){
-            return new ArrayList();
-        }
         List<Double> res = new ArrayList();
         Queue<TreeNode> queue = new LinkedList();
         queue.offer(root);
         while(!queue.isEmpty()){
             int size = queue.size();
-            Double avg = 0.0;
+            double sum = 0d;
             for(int i = 0; i < size; i++){
                 TreeNode node = queue.poll();
-                avg += node.val;
                 if(node.left != null){
                     queue.offer(node.left);
                 }
                 if(node.right != null){
                     queue.offer(node.right);
                 }
+                sum += node.val;
             }
-            res.add(new Double(avg/size));
+            res.add(1d*sum/size);
         }
         return res;
     }

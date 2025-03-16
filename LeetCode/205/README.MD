@@ -10,19 +10,18 @@ class Solution {
         if(s.length() != t.length()){
             return false;
         }
-        Integer[] cntS = new Integer[256],
-                  cntT = new Integer[256];
-        int n = s.length();
-        for(int i = 0; i < n; i++){
-            char sChar = s.charAt(i),
-                 tChar = t.charAt(i);
-            if(cntT[tChar] == null){
-                cntT[tChar] = i;
+        Integer[] patternS = new Integer[256],
+                  patternT = new Integer[256];
+        for(int i = 0; i < s.length(); i++){
+            char a = s.charAt(i),
+                 b = t.charAt(i);
+            if(patternS[a] == null){
+                patternS[a] = i;
             }
-            if(cntS[sChar] == null){
-                cntS[sChar] = i;
+            if(patternT[b] == null){
+                patternT[b] = i;
             }
-            if(cntS[sChar] != cntT[tChar]){
+            if(patternS[a] != patternT[b]){
                 return false;
             }
         }

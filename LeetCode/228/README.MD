@@ -2,26 +2,28 @@
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)
+    - N as length of nums
 
 ```java
 class Solution {
     public List<String> summaryRanges(int[] nums) {
-        int start = 0, end = 0;
-        List<String> list = new ArrayList();
+        List<String> res = new ArrayList();
+        int start = 0,
+            end = 0;
         for(int i = 0; i < nums.length; i++){
-            while(i < nums.length -1 && nums[i] + 1 == nums[i+1]){
+            while(i < nums.length-1 && nums[i]+1 == nums[i+1]){
                 i++;
                 end++;
             }
             if(start == end){
-                list.add(new String(""+nums[start]));
+                res.add(""+nums[start]);
             }else{
-                list.add(new String(nums[start]+"->"+nums[end]));
+                res.add(""+nums[start]+"->"+nums[end]);
             }
             end++;
             start = end;
         }
-        return list;
+        return res;
     }
 }
 ```

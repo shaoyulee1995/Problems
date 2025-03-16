@@ -8,9 +8,7 @@
 class Solution {
     public int searchInsert(int[] nums, int target) {
         for(int i = 0; i < nums.length; i++){
-            if(target == nums[i]){
-                return i;
-            }else if(target < nums[i]){
+            if(nums[i] == target || nums[i] > target){
                 return i;
             }
         }
@@ -26,19 +24,20 @@ class Solution {
 ```java
 class Solution {
     public int searchInsert(int[] nums, int target) {
-        int i = 0, j = nums.length;
+        int i = 0,
+            j = nums.length-1;
         while(i < j){
-            int mid = i + (j-i)/2;
-            if(nums[mid] == target){
-                return mid;
+            int k = i + (j-i)/2;
+            if(nums[k] == target){
+                return k;
             }
-            if(nums[mid] > target){
-                j = mid;
+            if(nums[k] > target){
+                j = k;
             }else{
-                i = mid + 1;
+                i = k+1;
             }
         }
-        return i;
+        return nums[i] < target? i+1: i;
     }
 }
 ```

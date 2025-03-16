@@ -2,29 +2,32 @@
 
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
+    - N as length of s
 
 ```java
 class Solution {
     public boolean wordPattern(String pattern, String s) {
-        HashMap<Character, String> map = new HashMap();
         String[] strs = s.split(" ");
         if(strs.length != pattern.length()){
             return false;
         }
+        HashMap<Character, String> map = new HashMap();
         for(int i = 0; i < strs.length; i++){
-            char c = pattern.charAt(i);
-            if(map.containsKey(c)){
-                if(!map.get(c).equals(strs[i])){
+            String word = strs[i];
+            char index = pattern.charAt(i);
+            if(map.containsKey(index)){
+                if(!map.get(index).equals(word)){
                     return false;
                 }
             }else{
-                if(map.containsValue(strs[i])){
+                if(map.containsValue(word)){
                     return false;
                 }
-                map.put(c, strs[i]);
+                map.put(index, word);
             }
         }
         return true;
     }
+} }
 }
 ```

@@ -34,3 +34,33 @@ class Solution {
     }
 }
 ```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+  
+```java
+class Solution {
+    public boolean isPalindrome(String s) {
+        int i = 0,
+            j = s.length()-1;
+        while(i < j){
+            while(i < j && !isValidCharacter(s.charAt(i))){
+                i++;
+            }
+            while(i < j && !isValidCharacter(s.charAt(j))){
+                j--;
+            }
+            if(Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j))){
+                return false;
+            }
+            i++;
+            j--;
+        }
+        return true;
+    }
+    private boolean isValidCharacter(char c){
+        return Character.isLetter(c) || Character.isDigit(c);
+    }
+}
+```

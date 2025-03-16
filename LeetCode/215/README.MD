@@ -81,3 +81,32 @@ class Solution {
     }
 }
 ```
+
+- Time Complexity: O(N)
+- Space Complexity: O(N)
+  - N as length of nums
+
+```java
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        int min = Integer.MAX_VALUE,
+            max = Integer.MIN_VALUE;
+        for(int num: nums){
+            min = Math.min(min, num);
+            max = Math.max(max, num);
+        }
+        int[] bucket = new int[max-min+1];
+        for(int num: nums){
+            bucket[num-min]++;
+        }
+        int remain = k;
+        for(int i = bucket.length-1; i >= 0; i--){
+            remain -= bucket[i];
+            if(remain <= 0){
+                return i + min;
+            }
+        }
+        return -1;
+    }
+}
+```

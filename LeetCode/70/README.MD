@@ -7,7 +7,7 @@
 ```java
 class Solution {
     public int climbStairs(int n) {
-        if(n <= 1){
+        if(n <= 2){
             return n;
         }
         int[] dp = new int[n+1];
@@ -29,15 +29,12 @@ class Solution {
 ```java
 class Solution {
     public int climbStairs(int n) {
-        if(n == 1){
-            return 1;
+        if(n <= 2){
+            return n;
         }
-        if(n == 2){
-            return 2;
-        }
-        int cur = 0,
+        int prev_prev = 1,
             prev = 2,
-            prev_prev = 1;
+            cur = 0;
         for(int i = 3; i <= n; i++){
             cur = prev + prev_prev;
             prev_prev = prev;

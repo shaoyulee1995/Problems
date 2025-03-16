@@ -45,12 +45,11 @@ class Solution {
         if(root == null){
             return null;
         }
-        TreeNode dummy = root;
         Queue<TreeNode> queue = new LinkedList();
         queue.offer(root);
-        while(!queue.isEmpty()){
+        while(!queue.isEmpty()){ 
             int size = queue.size();
-            while(size-- > 0){
+            for(; size > 0; size--){
                 TreeNode node = queue.poll();
                 if(node.left != null){
                     queue.offer(node.left);
@@ -61,7 +60,7 @@ class Solution {
                 swapChildren(node);
             }
         }
-        return dummy;
+        return root;
     }
 
     public void swapChildren(TreeNode node){

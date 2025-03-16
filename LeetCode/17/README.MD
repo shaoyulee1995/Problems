@@ -1,6 +1,6 @@
 # Letter Combinations of a Phone Number
 
-- Time Complexity: O(3<sup>M</sup> \* 4<sup>N</sup>)
+- Time Complexity: O(3<sup>M</sup>4<sup>N</sup>)
 - Space Complexity: O(M+N)
   - M as digits 2, 3, 4, 5, 6, 8
   - N as digits 7, 9
@@ -34,7 +34,7 @@ class Solution {
 }
 ```
 
-- Time Complexity: O(MAX(3^M,4<sup>N</sup>))
+- Time Complexity: O(MAX(3<sup>M</sup>,4<sup>N</sup>))
 - Space Complexity: O(M+N)
   - M as digits 2, 3, 4, 5, 6, 8
   - N as digits 7, 9

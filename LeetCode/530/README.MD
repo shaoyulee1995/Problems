@@ -23,23 +23,25 @@ public class TreeNode {
   - N as nodes in the tree
 
 ```java
-class Solution{
-    Integer prev = null;
-    int res = Integer.MAX_VALUE;
+class Solution {
+    TreeNode prev;
+    Integer res;
     public int getMinimumDifference(TreeNode root) {
-        inOrder(root);
+        prev = null;
+        res = Integer.MAX_VALUE;
+        dfs(root);
         return res;
     }
-    public void inOrder(TreeNode node){
+    public void dfs(TreeNode node){
         if(node == null){
             return;
         }
-        inOrder(node.left);
+        dfs(node.left);
         if(prev != null){
-            res = Math.min(res, node.val - prev);
+            res = Math.min(res, Math.abs(node.val - prev.val));
         }
-        prev = node.val;
-        inOrder(node.right);
+        prev = node;
+        dfs(node.right);
     }
 }
 ```

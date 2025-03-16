@@ -2,28 +2,28 @@
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
+  - N as the length of the string
 
 ```java
 class Solution {
     public boolean validPalindrome(String s) {
-        int L = 0, R = s.length() - 1;
-        while(L < R){
-            if(s.charAt(L) == s.charAt(R)){
-                R--;
-                L++;
-            }else{
-                return validPalindrome(s, L+1, R) || validPalindrome(s, L, R-1);
+        for(int i = 0, j = s.length()-1; i < j; i++, j--){
+            if(s.charAt(i) != s.charAt(j)){
+                boolean deleteLeftPosition = isPalindrome(s, i+1, j),
+                        deleteRightPosition = isPalindrome(s, i, j-1);
+                return deleteLeftPosition || deleteRightPosition;
             }
         }
         return true;
     }
-    public boolean validPalindrome(String s, int L, int R) {
-        while(L < R){
-            if(s.charAt(L) != s.charAt(R)){
+
+    private boolean isPalindrome(String s, int i, int j){
+        while(i < j){
+            if(s.charAt(i) != s.charAt(j)){
                 return false;
             }
-            L++;
-            R--;
+            i++;
+            j--;
         }
         return true;
     }

@@ -1,6 +1,6 @@
 # Symmetric Tree
 
-```
+```java
 Definition for a binary tree node.
 public class TreeNode {
     int val;
@@ -18,7 +18,7 @@ public class TreeNode {
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
-
+  - N as nodes in tree
 ```java
 class Solution {
     public boolean isSymmetric(TreeNode root) {
@@ -41,6 +41,9 @@ class Solution {
     }
 }
 ```
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
 
 ```cpp
 class Solution {
@@ -65,7 +68,8 @@ public:
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)
-
+  - N as nodes in tree
+  
 ```java
 class Solution {
     public boolean isSymmetric(TreeNode root) {

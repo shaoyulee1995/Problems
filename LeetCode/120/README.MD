@@ -3,7 +3,7 @@
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of triangle
-    - M as length of triangle[0]
+  - M as length of triangle[0]
 
 ```java
 class Solution {
