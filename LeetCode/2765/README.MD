@@ -2,7 +2,7 @@
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
-  - P as length of nums
+  - N as length of nums
 
 ```java
 class Solution {
