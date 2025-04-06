@@ -28,7 +28,7 @@ class Solution {
 - Time Complexity: O(NM)
 - Space Complexity: O(N)
   - N as length of nums1
-  - N as length of nums2
+  - M as length of nums2
 
 ```java
 class Solution {
