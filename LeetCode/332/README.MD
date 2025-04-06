@@ -3,7 +3,7 @@
 - Time Complexity: O(V+E)
 - Space Complexity: O(V+E)
   - V as vertices
-    - E as edges
+  - E as edges
 
 ```java
 class Solution{
