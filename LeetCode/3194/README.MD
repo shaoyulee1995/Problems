@@ -2,7 +2,7 @@
 
 - Time Complexity: O(NlogN)
 - Space Complexity: O(1)
-  - P as length of path
+  - N as length of path
 
 ```java
 class Solution {
