@@ -16,6 +16,20 @@ int param_4 = obj.getMin();
 ```java
 class MinStack {
 
+    private class Node{
+        private int data, min;
+        Node next;
+
+        public Node(int data, int min){
+            this(data, min, null);
+        }
+        public Node(int data, int min, Node next){
+            this.data = data;
+            this.min = min;
+            this.next = next;
+        }
+    }
+    
     private Node head;
     public MinStack() {
     }
@@ -38,19 +52,6 @@ class MinStack {
 
     public int getMin() {
         return head.min;
-    }
-    private class Node{
-        private int data, min;
-        Node next;
-
-        public Node(int data, int min){
-            this(data, min, null);
-        }
-        public Node(int data, int min, Node next){
-            this.data = data;
-            this.min = min;
-            this.next = next;
-        }
     }
 }
 ```
