@@ -60,20 +60,17 @@ class Solution {
         dfs(root, 0);
         return res;
     }
-    public void dfs(TreeNode node, int height){
+
+    private void dfs(TreeNode node, int height){
         if(node == null){
             return;
         }
-        if(res.size() <= height){
+        if(height == res.size()){
             res.add(new ArrayList());
         }
         res.get(height).add(node.val);
-        if(node.left != null){
-            dfs(node.left, height + 1);
-        }
-        if(node.right != null){
-            dfs(node.right, height + 1);
-        }
+        dfs(node.left, height+1);
+        dfs(node.right, height+1);
     }
 }
 ```
