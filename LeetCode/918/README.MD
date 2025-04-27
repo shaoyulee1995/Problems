@@ -6,9 +6,11 @@
 ```java
 class Solution {
     public int maxSubarraySumCircular(int[] nums) {
-        int curMax = 0, maxSum = nums[0],
-            curMin = 0,  minSum = nums[0];
-        int total = 0;
+        int curMax = 0,
+            maxSum = nums[0],
+            curMin = 0,
+            minSum = nums[0],
+            total = 0;
         for(int num: nums){
             curMax = Math.max(num, curMax + num);
             maxSum = Math.max(maxSum, curMax);
@@ -16,7 +18,7 @@ class Solution {
             minSum = Math.min(curMin, minSum);
             total += num;
         }
-        return maxSum > 0? Math.max(total - minSum, maxSum):maxSum;
+        return maxSum > 0? Math.max(total - minSum, maxSum): maxSum;
     }
 }
 ```
