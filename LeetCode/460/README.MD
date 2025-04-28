@@ -5,6 +5,54 @@
 
 ```java
 class LFUCache {
+    
+    class Node{
+        int key, val, freq;
+        Node prev, next;
+        public Node(int key, int val){
+            prev = null;
+            next = null;
+            freq = 1;
+            this.key = key;
+            this.val = val;
+        }
+    }
+    
+    class doubleLinkedList{
+        Node head, tail;
+        int size;
+        public doubleLinkedList(){
+            head = new Node(0,0);
+            tail = new Node(0,0);
+            head.next = tail;
+            tail.prev = head;
+            size = 0;
+        }
+        public void addNodeToHead(Node node){
+            Node oldHead = head.next;
+            node.next = oldHead;
+            node.prev = head;
+            head.next = node;
+            oldHead.prev = node;
+            size++;
+        }
+        public void removeNode(Node node){
+            Node prevNode = node.prev;
+            Node nextNode = node.next;
+            prevNode.next = nextNode;
+            nextNode.prev = prevNode;
+            size--;
+        }
+        public Node removeTail(){
+            if(size > 0){
+                Node node = tail.prev;
+                removeNode(node);
+                return node;
+            }
+            return null;
+        }
+    }
+    
     final int capacity;
     int size, minFreq;
     HashMap<Integer, Node> cache;
@@ -65,58 +113,6 @@ class LFUCache {
     }
 }
 ```
-
-```java
-class Node{
-    int key, val, freq;
-    Node prev, next;
-    public Node(int key, int val){
-        prev = null;
-        next = null;
-        freq = 1;
-        this.key = key;
-        this.val = val;
-    }
-}
-```
-
-```java
-class doubleLinkedList{
-    Node head, tail;
-    int size;
-    public doubleLinkedList(){
-        head = new Node(0,0);
-        tail = new Node(0,0);
-        head.next = tail;
-        tail.prev = head;
-        size = 0;
-    }
-    public void addNodeToHead(Node node){
-        Node oldHead = head.next;
-        node.next = oldHead;
-        node.prev = head;
-        head.next = node;
-        oldHead.prev = node;
-        size++;
-    }
-    public void removeNode(Node node){
-        Node prevNode = node.prev;
-        Node nextNode = node.next;
-        prevNode.next = nextNode;
-        nextNode.prev = prevNode;
-        size--;
-    }
-    public Node removeTail(){
-        if(size > 0){
-            Node node = tail.prev;
-            removeNode(node);
-            return node;
-        }
-        return null;
-    }
-}
-```
-
 ```
 Your LFUCache object will be instantiated and called as such:
 LFUCache obj = new LFUCache(capacity);
