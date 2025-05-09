@@ -2,17 +2,17 @@
 
 - Time Complexity: O(NM)
 - Space Complexity: O(1)
-
+    - N as length of grid
+    - M as length of grid[0]
 ```java
 class Solution {
     public int minPathSum(int[][] grid) {
-        int n = grid.length,
-            m = grid[0].length;
-        for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++){
+        for(int i = 0; i < grid.length; i++){
+            for(int j = 0; j < grid[0].length; j++){
                 if(i == 0 && j == 0){
-                   continue;
-                }else if(i == 0){
+                    continue;
+                }
+                if(i == 0){
                     grid[i][j] += grid[i][j-1];
                 }else if(j == 0){
                     grid[i][j] += grid[i-1][j];
@@ -21,13 +21,15 @@ class Solution {
                 }
             }
         }
-        return grid[n-1][m-1];
+        return grid[grid.length-1][grid[0].length-1];
     }
 }
 ```
 
 - Time Complexity: O(NM)
 - Space Complexity: O(1)
+    - N as length of grid
+    - M as length of grid[0]
 
 ```java
 class Solution {
