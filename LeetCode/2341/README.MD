@@ -11,12 +11,15 @@ class Solution {
         for(int num: nums){
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
-        int[] res = new int[2];
+        int pairs = 0,
+            remain = 0;
         for(Map.Entry<Integer, Integer> entry: map.entrySet()){
-            res[0] += entry.getValue()/2;
-            res[1] += entry.getValue()%2;
+            pairs += entry.getValue()/2;
+            if(entry.getValue()%2 != 0){
+                remain += 1;
+            }
         }
-        return res;
+        return new int[]{pairs, remain};
     }
 }
 ```
@@ -32,13 +35,13 @@ class Solution {
         for(int num: nums){
             cnt[num]++;
         }
-        int pair = 0,
-            leftOver = 0;
-        for(int c: cnt){
-            pair += c/2;
-            leftOver += c%2;
+        int pairs = 0,
+            remain = 0;
+        for(int num: cnt){
+            pairs += num/2;
+            remain += num%2;
         }
-        return new int[]{pair, leftOver};
+        return new int[]{pairs, remain};
     }
 }
 ```
