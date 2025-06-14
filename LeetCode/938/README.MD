@@ -18,6 +18,31 @@ public class TreeNode {
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
+  - N as nodes in tree
+
+```java
+class Solution {
+    public int rangeSumBST(TreeNode root, int low, int high) {
+        return dfs(root, low, high);
+    }
+
+    public int dfs(TreeNode node, int low, int high){
+        if(node == null){
+            return 0;
+        }
+        int sum = dfs(node.left, low, high);
+        if(node.val >= low && node.val <= high){
+            sum += node.val;
+        }
+        sum += dfs(node.right, low, high);
+        return sum;
+    }
+}
+```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
 
 ```java
 class Solution {
@@ -39,6 +64,7 @@ class Solution {
 
 - Time Complexity: O(N)
 - Space Complexity: O(N)
+  - N as nodes in tree
 
 ```java
 class Solution {
