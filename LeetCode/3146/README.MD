@@ -23,3 +23,26 @@ class Solution {
     }
 }
 ```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of s
+  
+```java
+class Solution {
+    public int findPermutationDifference(String s, String t) {
+        int[] cnt = new int[26];
+        for(int i = 0; i < s.length(); i++){
+            cnt[s.charAt(i) - 'a'] = i;
+        }
+        for(int i = 0; i < t.length(); i++){
+            cnt[t.charAt(i) - 'a'] -= i;
+        }
+        int res = 0;
+        for(int i = 0; i < cnt.length; i++){
+            res += Math.abs(cnt[i]);
+        }
+        return res;
+    }
+}
+```
