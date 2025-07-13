@@ -46,7 +46,7 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         for (int w = i; w <= j; w++) {
             sb.append(words[w])
-                    .append(eachSpace);
+              .append(eachSpace);
             if (remainSpace > 0) {
                 sb.append(SPACE);
                 remainSpace--;
