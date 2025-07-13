@@ -8,60 +8,67 @@
 
 ```java
 class Solution {
+    int SPACE_LENGTH = 1;
+    char SPACE = ' ';
+
     public List<String> fullJustify(String[] words, int maxWidth) {
-        int i = 0;
-        List<String> list = new ArrayList();
-        while(i < words.length){
-            int j = goRight(i, words, maxWidth);
-            list.add(justify(i, j, words, maxWidth));
+        List<String> res = new ArrayList();
+        for (int i = 0, j; i < words.length;) {
+            j = goRight(i, words, maxWidth);
+            String eachLine = justify(i, j, words, maxWidth);
+            res.add(eachLine);
             i = j + 1;
         }
-        return list;
+        return res;
     }
 
-    public int goRight(int start, String[] words, int maxWidth){
-        int end = start;
-        int sum = words[end++].length();
-
-        while(end < words.length && sum + 1 + words[end].length() <= maxWidth){
-            sum += 1 + words[end++].length();
+    public int goRight(int i, String[] words, int maxWidth) {
+        int sumWidth = words[i].length(),
+            j = i + 1;
+        while (j < words.length && (sumWidth + SPACE_LENGTH + words[j].length()) <= maxWidth) {
+            sumWidth += SPACE_LENGTH + words[j].length();
+            j++;
         }
-        return end - 1;
+        return j - 1;
     }
 
-    public String justify(int start, int end, String[] words, int maxWidth){
-        if(start == end){
-            return padResult(words[start], maxWidth);
+    public String justify(int i, int j, String[] words, int maxWidth) {
+        if (i == j) {
+            return padResult(words[i], maxWidth);
         }
-        boolean lastLine = (end == words.length - 1);
-        int numSpace = end - start;
-        int totalSpace = maxWidth  - wordsSpace(start, end, words);
-        String space = lastLine? " ": blank(totalSpace / numSpace);
-        int remainder = lastLine? 0: totalSpace % numSpace;
+        boolean lastLine = (j == words.length - 1);
+
+        int minSpace = j - i,
+            totalSpace = maxWidth - wordsInLine(i, j, words),
+            remainSpace = lastLine ? 0 : totalSpace % minSpace;
+        String eachSpace = lastLine ? " " : blank(totalSpace / minSpace);
 
         StringBuilder sb = new StringBuilder();
-        for(int i = start; i <= end; i++){
-            sb.append(words[i])
-                .append(space)
-                .append(remainder-- > 0?" ": "");
+        for (int w = i; w <= j; w++) {
+            sb.append(words[w])
+                    .append(eachSpace);
+            if (remainSpace > 0) {
+                sb.append(SPACE);
+                remainSpace--;
+            }
         }
         return padResult(sb.toString().trim(), maxWidth);
     }
 
-    public int wordsSpace(int i, int j, String[] words){
-        int wordLength = 0;
-        for(int w = i; w <= j; w++){
-            wordLength += words[w].length();
+    public int wordsInLine(int i, int j, String[] words) {
+        int res = 0;
+        for (int w = i; w <= j; w++) {
+            res += words[w].length();
         }
-        return wordLength;
+        return res;
     }
 
-    public String padResult(String word, int maxWidth){
+    public String padResult(String word, int maxWidth) {
         return word + blank(maxWidth - word.length());
     }
 
-    public String blank(int spaces){
-        return new String(new char[spaces]).replace('\0', ' ');
+    public String blank(int space) {
+        return new String(new char[space]).replace('\0', SPACE);
     }
 }
 ```
