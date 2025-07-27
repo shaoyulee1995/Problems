@@ -1,5 +1,4 @@
 # Path with Maximum Probability
-
 - Time Complexity: O((V + E)logV)
 - Space Complexity: O(V + E)
   - V as number of vertices
