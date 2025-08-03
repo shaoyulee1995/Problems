@@ -5,27 +5,26 @@
   - N as length of token
 
 ```java
-class Solution{
-    private static Map<String, BiFunction<Integer, Integer, Integer>> OPERATIONS = new HashMap();
-
+class Solution {
+    static HashMap<String, BiFunction<Integer, Integer, Integer>> OPERATIONS = new HashMap();
     static{
-        OPERATIONS.put("+", (a,b) -> a + b);
-        OPERATIONS.put("-", (a,b) -> a - b);
-        OPERATIONS.put("*", (a,b) -> a * b);
-        OPERATIONS.put("/", (a,b) -> a / b);
+        OPERATIONS.put("+", (a, b) -> a+b);
+        OPERATIONS.put("-", (a, b) -> a-b);
+        OPERATIONS.put("*", (a, b) -> a*b);
+        OPERATIONS.put("/", (a, b) -> a/b);
     }
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack();
         for(String token: tokens){
-            if(!OPERATIONS.containsKey(token)){
+            if(OPERATIONS.containsKey(token)){
+                int right = stack.pop(),
+                    left = stack.pop();
+                BiFunction<Integer, Integer, Integer> currentOp = OPERATIONS.get(token);
+                int res = currentOp.apply(left, right);
+                stack.push(res);
+            }else{
                 stack.push(Integer.valueOf(token));
-                continue;
             }
-            int num2 = stack.pop(),
-                num1 = stack.pop();
-            BiFunction<Integer, Integer, Integer> op = OPERATIONS.get(token);
-            int res = op.apply(num1, num2);
-            stack.push(res);
         }
         return stack.peek();
     }
