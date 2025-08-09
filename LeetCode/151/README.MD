@@ -21,8 +21,6 @@ class Solution {
 }
 ```
 
-# Deque
-
 - Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of s
@@ -32,19 +30,19 @@ class Solution {
     public String reverseWords(String s) {
         int i = 0,
             j = s.length()-1;
-        while(i < j && s.charAt(i) == ' '){
+        while(i <= j && s.charAt(i) == ' '){
             i++;
         }
-        while(j >= i && s.charAt(j) == ' '){
+        while(i <= j && s.charAt(j) == ' '){
             j--;
         }
-        ArrayDeque<String> deque = new ArrayDeque();
+        Deque<String> deque = new ArrayDeque();
         StringBuilder sb = new StringBuilder();
         while(i <= j){
             char c = s.charAt(i);
             if(c != ' '){
                 sb.append(c);
-            }else if(c == ' ' && sb.length() != 0){
+            }else if(c == ' ' && sb.length() > 0){
                 deque.offerFirst(sb.toString());
                 sb.setLength(0);
             }
