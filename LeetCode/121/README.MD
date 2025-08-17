@@ -3,6 +3,27 @@
 - Time Complexity: O(N)
 - Space Complexity: O(1)
   - N as length of prices
+  
+```java
+class Solution {
+    public int maxProfit(int[] prices) {
+        int res = 0,
+            minSoFar = prices[0];
+        for(int price: prices){
+            int currentProfit = price - minSoFar;
+            if(currentProfit > res){
+                res = currentProfit;
+            }
+            minSoFar = Math.min(minSoFar, price);
+        }
+        return res;
+    }
+}
+```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as length of prices
 
 ```java
 class Solution {
