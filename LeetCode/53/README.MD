@@ -1,27 +1,6 @@
 # Maximum Subarray
 
 - Time Complexity: O(N)
-- Space Complexity: O(1)
-  - N as length of nums
-
-```java
-class Solution {
-    public int maxSubArray(int[] nums) {
-        int res = Integer.MIN_VALUE,
-            count = 0;
-        for(int i = 0; i < nums.length; i++){
-            count += nums[i];
-            res = Math.max(count, res);
-            if(count < 0){
-                count = 0;
-            }
-        }
-        return res;
-    }
-}
-```
-
-- Time Complexity: O(N)
 - Space Complexity: O(N)
   - N as length of nums
 
@@ -48,10 +27,10 @@ class Solution {
 class Solution {
     public int maxSubArray(int[] nums) {
         int res = nums[0],
-            max = nums[0];
-        for(int i = 1; i < nums.length; i++){
-            max = Math.max(max + nums[i], nums[i]);
-            res = Math.max(max, res);
+            currentSum = 0;
+        for(int num: nums){
+            currentSum = Math.max(currentSum + num, num);
+            res = Math.max(res, currentSum);
         }
         return res;
     }
