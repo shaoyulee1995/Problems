@@ -9,45 +9,20 @@
 
 ```java
 class LRUCache {
-    LRU_LinkedList lru;
-    HashMap<Integer, Node> map;
-    int capacity;
-    public LRUCache(int capacity) {
-        this.capacity = capacity;
-        map = new HashMap();
-        lru = new LRU_LinkedList();
-    }
-
-    public int get(int key) {
-        Node node = map.get(key);
-        if(node == null){
-            return -1;
-        }
-        lru.moveToHead(node);
-        return node.val;
-    }
-
-    public void put(int key, int value) {
-        Node node = map.get(key);
-        if(node != null){
-            node.val = value;
-            lru.moveToHead(node);
-        }else{
-            if(map.size() == capacity){
-                Node tail = lru.getTail();
-                lru.removeTail();
-                map.remove(tail.key);
-            }
-            node = new Node(key, value);
-            lru.addToHead(node);
-            map.put(key, node);
+    class Node{
+        int key, value;
+        Node prev, next;
+        public Node(){}
+        public Node(int key, int value){
+            this.key = key;
+            this.value = value;
         }
     }
 
-    class LRU_LinkedList{
+    class LruLinkedListed{
         Node dummyHead, dummyTail;
 
-        public LRU_LinkedList(){
+        public LruLinkedListed(){
             dummyHead = new Node();
             dummyTail = new Node();
             dummyHead.next = dummyTail;
@@ -55,37 +30,67 @@ class LRUCache {
         }
 
         public void removeTail(){
-            Node tail = getTail();
-            tail.prev.next = dummyTail;
-            dummyTail.prev = tail.prev;
+            Node originalTail = getTail();
+            this.disconnectedNode(originalTail);
         }
 
         public Node getTail(){
             return dummyTail.prev;
         }
 
-        public void addToHead(Node node){
-            Node srcHead = dummyHead.next;
-            node.next = srcHead;
-            srcHead.prev = node;
+        public void moveNodeToHead(Node node){
+            disconnectedNode(node);
+            insertAtHead(node);
+        }
+
+        public void insertAtHead(Node node){
+            Node originalHead = dummyHead.next;
+            node.next = originalHead;
+            originalHead.prev = node;
             dummyHead.next = node;
             node.prev = dummyHead;
         }
 
-        public void moveToHead(Node node){
+        public void disconnectedNode(Node node){
             node.prev.next = node.next;
             node.next.prev = node.prev;
-            addToHead(node);
         }
     }
 
-    class Node{
-        Node prev, next;
-        int key, val;
-        public Node(){}
-        public Node(int key, int val){
-            this.key = key;
-            this.val = val;
+    LruLinkedListed lru;
+    HashMap<Integer, Node> map;
+    int capacity;
+
+    public LRUCache(int capacity) {
+        this.capacity = capacity;
+        lru = new LruLinkedListed();
+        map = new HashMap();
+    }
+    
+    public int get(int key) {
+        Node node = map.get(key);
+        if(node == null){
+            return -1;
+        }
+        lru.moveNodeToHead(node);
+        map.put(key, node);
+        return node.value;
+    }
+    
+    public void put(int key, int value) {
+        Node node = map.get(key);
+        if(node == null){
+            if(capacity == map.size()){
+                Node tail = lru.getTail();
+                lru.removeTail();
+                map.remove(tail.key);
+            }
+            Node insertNode = new Node(key, value);
+            lru.insertAtHead(insertNode);
+            map.put(key, insertNode);
+        }else{
+            node.value = value;
+            lru.moveNodeToHead(node);
         }
     }
 }
