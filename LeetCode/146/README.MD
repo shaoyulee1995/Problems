@@ -73,7 +73,6 @@ class LRUCache {
             return -1;
         }
         lru.moveNodeToHead(node);
-        map.put(key, node);
         return node.value;
     }
     
