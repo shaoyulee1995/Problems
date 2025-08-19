@@ -21,34 +21,36 @@ public class TreeNode {
   - N as number of nodes
 
 ```java
+
 class Solution {
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList();
         if(root == null){
             return res;
         }
-        LinkedList<TreeNode> queue = new LinkedList();
-        queue.add(root);
+        Queue<TreeNode> queue = new ArrayDeque();
+        queue.offer(root);
         boolean shift = false;
+        
         while(!queue.isEmpty()){
             int size = queue.size();
-            LinkedList<Integer> arr = new LinkedList();
+            ArrayDeque<Integer> tmp = new ArrayDeque();
             for(int i = 0; i < size; i++){
-                TreeNode node = queue.poll();
+                TreeNode node = queue.poll();   
                 if(shift){
-                    arr.add(0, node.val);
+                    tmp.offerFirst(node.val);
                 }else{
-                    arr.add(node.val);
+                    tmp.addLast(node.val);
                 }
                 if(node.left != null){
-                    queue.add(node.left);
+                    queue.offer(node.left);
                 }
                 if(node.right != null){
-                    queue.add(node.right);
+                    queue.offer(node.right);
                 }
             }
+            res.add(new ArrayList(tmp));
             shift = !shift;
-            res.add(arr);
         }
         return res;
     }
