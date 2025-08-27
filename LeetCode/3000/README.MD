@@ -7,18 +7,33 @@
 ```java
 class Solution {
     public int areaOfMaxDiagonal(int[][] dimensions) {
-        int res = 0;
-        double maxDiagonal = 0;
+        int maxArea = 0;
+        double maxDiagonal = 0d;
         for(int[] dimension: dimensions){
-            double currentDiagonal = Math.sqrt((double)Math.pow(dimension[0], 2) + (double)Math.pow(dimension[1], 2));
+            double currentDiagonal = getDiagonal(dimension);
             if(currentDiagonal > maxDiagonal){
                 maxDiagonal = currentDiagonal;
-                res = dimension[0] * dimension[1];
+                maxArea = getArea(dimension);
             }else if(currentDiagonal == maxDiagonal){
-                res = Math.max(res, dimension[0] * dimension[1]);
+                maxArea = Math.max(maxArea, getArea(dimension));
             }
         }
-        return res;
+        return maxArea;
+    }
+
+    private int getArea(int[] dimension){
+        return dimension[0] * dimension[1];
+    }
+
+
+    private double getDiagonal(int[] dimension){
+        int width = dimension[0],
+            length = dimension[1];
+        return Math.sqrt(square(width) + square(length));
+    }
+
+    private double square(int x){
+        return (double) x*x;
     }
 }
 ```
