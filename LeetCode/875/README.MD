@@ -8,12 +8,17 @@
 ```java
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
-        int min = 1,
-            max = Arrays.stream(piles).max().getAsInt();
+        int min = Integer.MAX_VALUE,
+            max = Integer.MIN_VALUE,
+            res = 0;
+        for(int pile: piles){
+            min = Math.min(min, pile);
+            max = Math.max(max, pile);
+        }
         while(min < max){
             int k = min + (max-min)/2;
-            int eatenHours = getHoursByBanana(piles, k);
-            if(eatenHours > h){
+            int consumeHours = getConsumeHours(piles, k);
+            if(consumeHours > h){
                 min = k+1;
             }else{
                 max = k;
@@ -22,10 +27,10 @@ class Solution {
         return min;
     }
 
-    public int getHoursByBanana(int[] piles, int banana){
+    private int getConsumeHours(int[] piles, int k){
         int res = 0;
         for(int pile: piles){
-            res += Math.ceil((double)pile/banana);
+            res += Math.ceil((double)pile/k);
         }
         return res;
     }
