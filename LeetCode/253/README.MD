@@ -8,13 +8,15 @@
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
         TreeMap<Integer, Integer> map = new TreeMap();
-        for(int[] t: intervals){
-            map.put(t[0], map.getOrDefault(t[0], 0) + 1);
-            map.put(t[1], map.getOrDefault(t[1], 0) - 1);
+        for(int[] interval: intervals){
+            map.merge(interval[0], 1, Integer::sum);
+            map.merge(interval[1], -1, Integer::sum);
         }
-        int res = 0, cur = 0;
+        int cur = 0,    
+            res = 0;
         for(int v: map.values()){
-            res = Math.max(res, cur += v);
+            cur += v;
+            res = Math.max(res, cur);
         }
         return res;
     }
