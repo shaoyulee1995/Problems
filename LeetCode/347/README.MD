@@ -9,7 +9,7 @@ class Solution {
     public int[] topKFrequent(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap();
         for(int num: nums){
-            map.put(num, map.getOrDefault(num, 0) + 1);
+            map.merge(num, 1, Integer::sum);
         }
         List<Integer>[] buckets = new List[nums.length+1];
         for(int key: map.keySet()){
