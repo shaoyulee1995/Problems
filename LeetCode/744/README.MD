@@ -2,6 +2,7 @@
 
 - Time Complexity: O(logN)
 - Space Complexity: O(1)
+  - N as length of letters
 
 ```java
 class Solution {
@@ -27,6 +28,7 @@ class Solution {
 
 - Time Complexity: O(N)
 - Space Complexity: O(1)
+  - N as length of letters
 
 ```java
 class Solution {
