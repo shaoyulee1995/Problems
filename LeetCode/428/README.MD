@@ -17,9 +17,15 @@ class Node {
     }
 };
 ```
-- Time Complexity: O(N)
-- Space Complexity: O(N)
-  - N as nodes in tree
+
+- serialize
+  - Time Complexity: O(N)
+  - Space Complexity: O(N)
+    - N as nodes in tree
+- deserialize
+  - Time Complexity: O(N)
+  - Space Complexity: O(N)
+    - N as nodes in tree
 
 ```java
 class Codec {
@@ -40,7 +46,7 @@ class Codec {
             serialize(res, child);
         }
     }
-	
+
     // Decodes your encoded data to tree.
     public Node deserialize(String data) {
         if(data == null || data.length() == 0){
