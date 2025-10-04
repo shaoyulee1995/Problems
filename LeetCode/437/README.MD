@@ -51,30 +51,39 @@ class Solution {
   - N as nodes in tree
 
 ```java
-class Solution{
-    HashMap<Integer, Integer> map = new HashMap();
-    int count = 0, k = 0;
+class Solution {
+    int res, targetSum;
+    HashMap<Long, Integer> map;
+
     public int pathSum(TreeNode root, int targetSum) {
-        if(root == null){
-            return 0;
-        }
-        k = targetSum;
-        dfs(root, 0);
-        return count;
+        map = new HashMap();
+        res = 0;
+        this.targetSum = targetSum;
+        preOrder(root, 0l);
+        return res;
     }
-    public void dfs(TreeNode root, int curSum){
-        if(root == null){
+
+    private void preOrder(TreeNode node, long currentSum) {
+        if (node == null) {
             return;
         }
-        curSum += root.val;
-        if(curSum == k){
-            count++;
+        currentSum += node.val;
+
+        if (currentSum == targetSum) {
+            res++;
         }
-        count += map.getOrDefault(curSum - k, 0);
-        map.put(curSum, map.getOrDefault(curSum, 0) + 1);
-        dfs(root.left, curSum);
-        dfs(root.right, curSum);
-        map.put(curSum, map.get(curSum) - 1);
+
+        res += map.getOrDefault(currentSum - targetSum, 0);
+
+        map.put(currentSum, map.getOrDefault(currentSum, 0) + 1);
+
+        preOrder(node.left, currentSum);
+        preOrder(node.right, currentSum);
+
+        map.put(currentSum, map.get(currentSum) - 1);
+        if (map.get(currentSum) == 0) {
+            map.remove(currentSum);
+        }
     }
 }
 ```
