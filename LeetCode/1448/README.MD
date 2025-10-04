@@ -34,3 +34,33 @@ class Solution {
     }
 }
 ```
+
+- Time Complexity: O(N)
+- Space Complexity: O(1)
+  - N as nodes in tree
+  
+```java
+class Solution {
+    int res;
+
+    public int goodNodes(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        res = 0;
+        dfs(root, root.val);
+        return res;
+    }
+
+    private void dfs(TreeNode node, int val) {
+        if (node == null) {
+            return;
+        }
+        if (node.val >= val) {
+            res++;
+        }
+        dfs(node.left, Math.max(node.val, val));
+        dfs(node.right, Math.max(node.val, val));
+    }
+}
+```
