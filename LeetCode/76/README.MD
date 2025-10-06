@@ -2,49 +2,97 @@
 
 - Time Complexity: O(N<sup>2</sup>)
 - Space Complexity: O(N)
+  - N as length of s
 
 ```java
 class Solution {
     public String minWindow(String s, String t) {
         HashMap<Character, Integer> map = new HashMap();
-        for(char c: t.toCharArray()){
-            map.put(c, map.getOrDefault(c, 0) + 1);
+        for (char c : t.toCharArray()) {
+            map.merge(c, 1, Integer::sum);
         }
-        int size = map.size(),
-            i = 0,
+        int i = 0,
             j = 0,
             minStart = 0,
-            minEnd = Integer.MAX_VALUE;
-        while(j < s.length()){
-            while(j < s.length() && size > 0){
-                char c = s.charAt(j);
-                if(map.containsKey(c)){
-                    map.put(c, map.get(c)-1);
-                    if(map.get(c) == 0){
-                        size--;
-                    }
+            minEnd = Integer.MAX_VALUE,
+            size = map.size();
+        while (j < s.length()) {
+            char c = s.charAt(j++);
+            if (map.containsKey(c)) {
+                map.merge(c, -1, Integer::sum);
+                if (map.get(c) == 0) {
+                    size--;
                 }
-                j++;
             }
-            while(size == 0 && i < s.length()){
-                if(minEnd - minStart > j - i){
+            while (size == 0 && i < s.length()) {
+                if (j - i < minEnd - minStart) {
                     minEnd = j;
                     minStart = i;
                 }
-                char c = s.charAt(i);
-                if(map.containsKey(c)){
-                    map.put(c, map.get(c)+1);
-                    if(map.get(c) == 1){
+                c = s.charAt(i++);
+                if (map.containsKey(c)) {
+                    map.merge(c, 1, Integer::sum);
+                    if (map.get(c) == 1) {
                         size++;
                     }
                 }
-                i++;
             }
         }
-        return minEnd == Integer.MAX_VALUE? "": s.substring(minStart, minEnd);
+        return (minEnd == Integer.MAX_VALUE) ? "" : s.substring(minStart, minEnd);
     }
 }
 ```
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of s
+  
+```java
+class Solution {
+    public String minWindow(String s, String t) {
+        int[] tFreq = new int[128],
+              sFreq = new int[128];
+        int i = 0,
+            j = 0,
+            minStart = 0,
+            minEnd = Integer.MAX_VALUE,
+            size = 0;
+        for (char c : t.toCharArray()) {
+            if (tFreq[c] == 0) {
+                size++;
+            }
+            tFreq[c]++;
+        }
+        while (j < s.length()) {
+            char c = s.charAt(j++);
+            if (tFreq[c] > 0) {
+                sFreq[c]++;
+                if (sFreq[c] == tFreq[c]) {
+                    size--;
+                }
+            }
+            while (size == 0 && i < s.length()) {
+                if (j - i < minEnd - minStart) {
+                    minEnd = j;
+                    minStart = i;
+                }
+                c = s.charAt(i++);
+                if (tFreq[c] > 0) {
+                    sFreq[c]--;
+                    if (sFreq[c] < tFreq[c]) {
+                        size++;
+                    }
+                }
+            }
+        }
+        return (minEnd == Integer.MAX_VALUE) ? "" : s.substring(minStart, minEnd);
+    }
+}
+```
+
+- Time Complexity: O(N<sup>2</sup>)
+- Space Complexity: O(N)
+  - N as length of s
 
 ```cpp
 class Solution {
