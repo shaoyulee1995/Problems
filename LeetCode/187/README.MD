@@ -10,14 +10,13 @@ class Solution {
     public List<String> findRepeatedDnaSequences(String s) {
         HashSet<String> seen = new HashSet(),
                         duplicated = new HashSet();
-        for(int i = 0; i + 9 < s.length(); i++){
-            String temp = s.substring(i, i+10);
-            if(seen.contains(temp)){
-                duplicated.add(temp);
+        for (int i = 0; i + 9 < s.length(); i++) {
+            String word = s.substring(i, i + 10);
+            if (!seen.add(word)) {
+                duplicated.add(word);
             }
-            seen.add(temp);
         }
-        return new ArrayList(duplicated);
+        return new ArrayList<>(duplicated);
     }
 }
 ```
