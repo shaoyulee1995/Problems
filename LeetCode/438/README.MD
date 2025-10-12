@@ -8,46 +8,43 @@
 ```java
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
+        List<Integer> res = new ArrayList();
         HashMap<Character, Integer> map = new HashMap();
-        for(char c: p.toCharArray()){
-            map.put(c, map.getOrDefault(c, 0) + 1);
+        for (char c : p.toCharArray()) {
+            map.merge(c, 1, Integer::sum);
         }
-        int size = map.size(),
-            left = 0,
-            right = 0,
-            n = s.length(),
-            m = p.length();
-        if(n < m){
+        if (s.length() < p.length()) {
             return new ArrayList();
         }
-        List<Integer> list = new ArrayList();
-
-        while(left < n && right < n){
-            while(right < n && size > 0){
-                char r = s.charAt(right);
-                if(map.containsKey(r)){
-                    map.put(r, map.get(r) - 1);
-                    if(map.get(r) == 0){
+        int i = 0,
+            j = 0,
+            size = map.size();
+        while (i < s.length() && j < s.length()) {
+            while (j < s.length() && size > 0) {
+                char c = s.charAt(j);
+                if (map.containsKey(c)) {
+                    map.merge(c, -1, Integer::sum);
+                    if (map.get(c) == 0) {
                         size--;
                     }
                 }
-                right++;
+                j++;
             }
-            while(size == 0){
-                char l = s.charAt(left);
-                if(map.containsKey(l)){
-                    map.put(l, map.get(l) + 1);
-                    if(map.get(l) > 0){
+            while (size == 0) {
+                char c = s.charAt(i);
+                if (map.containsKey(c)) {
+                    map.merge(c, 1, Integer::sum);
+                    if (map.get(c) > 0) {
                         size++;
                     }
                 }
-                if(right - left == m){
-                    list.add(left);
+                if (j - i == p.length()) {
+                    res.add(i);
                 }
-                left++;
+                i++;
             }
         }
-        return list;
+        return res;
     }
 }
 ```
