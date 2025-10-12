@@ -7,30 +7,69 @@
 
 ```java
 class Solution {
-    public boolean checkInclusion(String t, String p) {
-        int len1 = t.length(), len2 = p.length();
-        if(len1 > len2){
+    public boolean checkInclusion(String s1, String s2) {
+        if (s1.length() > s2.length()) {
             return false;
         }
         int[] cnt = new int[26];
-        for(int i = 0; i < len1; i++){
-            cnt[t.charAt(i)-'a']++;
+        for (char c : s1.toCharArray()) {
+            cnt[c - 'a']++;
         }
-
-        for(int i = 0; i < len2; i++){
-            if(i - len1 >= 0){
-                cnt[p.charAt(i-len1)-'a']++;
+        for (int i = 0; i < s2.length(); i++) {
+            if (i - s1.length() >= 0) {
+                char added = s2.charAt(i - s1.length());
+                cnt[added - 'a']++;
             }
-            cnt[p.charAt(i)-'a']--;
-            if(zeroCheck(cnt)){
+            char removed = s2.charAt(i);
+            cnt[removed - 'a']--;
+            if (isZero(cnt)) {
                 return true;
             }
         }
         return false;
     }
-    private boolean zeroCheck(int[] cnt){
-        for(int i = 0; i < cnt.length; i++){
-            if(cnt[i] != 0){
+
+    private boolean isZero(int[] cnt) {
+        for (int i = 0; i < cnt.length; i++) {
+            if (cnt[i] != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+```
+
+- Time Complexity: O(max(N, M))
+- Space Complexity: O(26)
+  - N: length of s1
+  - M: length of s2
+
+```java
+class Solution {
+    public boolean checkInclusion(String s1, String s2) {
+        HashMap<Character, Integer> map = new HashMap();
+        for (char c : s1.toCharArray()) {
+            map.merge(c, 1, Integer::sum);
+        }
+        int size = map.size();
+        for (int i = 0; i < s2.length(); i++) {
+            if (i - s1.length() >= 0) {
+                char added = s2.charAt(i - s1.length());
+                map.merge(added, 1, Integer::sum);
+            }
+            char removed = s2.charAt(i);
+            map.merge(removed, -1, Integer::sum);
+            if (isFreqZero(map)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean isFreqZero(HashMap<Character, Integer> map) {
+        for (Character key : map.keySet()) {
+            if (map.get(key) != 0) {
                 return false;
             }
         }
